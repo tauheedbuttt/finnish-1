@@ -230,8 +230,15 @@ class OllaQuiz {
     // Update visual component
     this.updateVisual(question);
 
-    // Update question text
-    document.getElementById("questionText").textContent = question.question;
+    // Update question text - handle different question formats
+    const questionText =
+      question.question ||
+      question.prompt ||
+      question.english ||
+      "Translate to Finnish:";
+    document.getElementById("questionText").textContent = question.question
+      ? question.question
+      : `Translate: "${questionText}"`;
 
     // Show appropriate input mode
     if (this.mode === "mcq") {
@@ -254,28 +261,150 @@ class OllaQuiz {
     const structureDisplay = document.getElementById("structureDisplay");
 
     // Show the English prompt in the visual
-    promptDisplay.textContent = question.question
+    const displayText =
+      question.english || question.prompt || question.question || "";
+    promptDisplay.textContent = displayText
       .replace("Translate: ", "")
       .replace(/['"]/g, "");
 
-    // Show structure hint based on subtopic
-    if (question.subtopic === "olen") {
+    // Show structure hint based on subtopic or structure field
+    if (question.structure) {
+      structureDisplay.textContent = question.structure;
+    } else if (
+      question.subtopic === "olen" ||
+      question.subtopic === "olen-positive"
+    ) {
       structureDisplay.textContent = "subject + olen/olet/on...";
-    } else if (question.subtopic === "minulla-on") {
+    } else if (
+      question.subtopic === "minulla-on" ||
+      question.subtopic === "on-positive"
+    ) {
       structureDisplay.textContent = "minulla/sinulla/hänellä + on + noun";
-    } else if (question.subtopic === "negative") {
+    } else if (
+      question.subtopic === "negative" ||
+      question.subtopic === "olen-negative" ||
+      question.subtopic === "on-negative"
+    ) {
       structureDisplay.textContent = "en ole / ei ole / minulla ei ole...";
     } else {
       structureDisplay.textContent = "olla = to be / to have";
     }
   }
 
+  // Generate wrong options for MCQ
+  generateWrongOptions(correctAnswer, question) {
+    const wrongOptions = [];
+    const correctLower = correctAnswer.toLowerCase();
+
+    // Common variations to generate wrong answers
+    const variations = [
+      // Swap pronouns
+      { from: "minä", to: "sinä" },
+      { from: "sinä", to: "minä" },
+      { from: "hän", to: "me" },
+      { from: "me", to: "he" },
+      { from: "te", to: "me" },
+      { from: "he", to: "te" },
+      // Swap verb forms
+      { from: "olen", to: "olet" },
+      { from: "olet", to: "on" },
+      { from: "on", to: "olen" },
+      { from: "olemme", to: "olette" },
+      { from: "olette", to: "ovat" },
+      { from: "ovat", to: "olemme" },
+      // Swap possession forms
+      { from: "minulla", to: "sinulla" },
+      { from: "sinulla", to: "hänellä" },
+      { from: "hänellä", to: "meillä" },
+      { from: "meillä", to: "teillä" },
+      { from: "teillä", to: "heillä" },
+      { from: "heillä", to: "minulla" },
+      // Negative variations
+      { from: "en ole", to: "et ole" },
+      { from: "et ole", to: "ei ole" },
+      { from: "ei ole", to: "emme ole" },
+      { from: "emme ole", to: "ette ole" },
+      { from: "ette ole", to: "eivät ole" },
+      { from: "eivät ole", to: "en ole" },
+      // Possession negative
+      { from: "minulla ei ole", to: "sinulla ei ole" },
+      { from: "sinulla ei ole", to: "hänellä ei ole" },
+      // Common mistakes
+      { from: "minulla on", to: "minä on" },
+      { from: "hänellä on", to: "hän on" },
+      { from: "olen", to: "minulla on" },
+      { from: "minulla on", to: "olen" },
+    ];
+
+    // Generate wrong options by applying variations
+    for (const variation of variations) {
+      if (correctLower.includes(variation.from) && wrongOptions.length < 3) {
+        const wrongAnswer = correctAnswer.replace(
+          new RegExp(variation.from, "gi"),
+          variation.to
+        );
+        if (
+          wrongAnswer.toLowerCase() !== correctLower &&
+          !wrongOptions.includes(wrongAnswer)
+        ) {
+          wrongOptions.push(wrongAnswer);
+        }
+      }
+    }
+
+    // If we don't have enough wrong options, add some generic ones
+    const genericWrong = [
+      "minä olen",
+      "sinä olet",
+      "hän on",
+      "minulla on",
+      "sinulla on",
+      "hänellä on",
+      "en ole",
+      "et ole",
+      "ei ole",
+      "minulla ei ole",
+      "sinulla ei ole",
+      "me olemme",
+      "te olette",
+      "he ovat",
+      "meillä on",
+      "teillä on",
+      "heillä on",
+    ];
+
+    for (const option of genericWrong) {
+      if (wrongOptions.length >= 3) break;
+      if (
+        option.toLowerCase() !== correctLower &&
+        !wrongOptions.includes(option)
+      ) {
+        wrongOptions.push(option);
+      }
+    }
+
+    return wrongOptions.slice(0, 3);
+  }
+
   showOptions(question) {
     const container = document.getElementById("optionsContainer");
     container.innerHTML = "";
 
+    // Get correct answer - handle different formats
+    const correctAnswer = question.correct || question.answer;
+
+    // Check if options exist, otherwise generate them
+    let options;
+    if (question.options && question.options.length > 0) {
+      options = [...question.options];
+    } else {
+      // Generate options from correct answer
+      const wrongOptions = this.generateWrongOptions(correctAnswer, question);
+      options = [correctAnswer, ...wrongOptions];
+    }
+
     // Shuffle options
-    const options = [...question.options].sort(() => Math.random() - 0.5);
+    options = options.sort(() => Math.random() - 0.5);
 
     options.forEach((option) => {
       const btn = document.createElement("button");
@@ -299,11 +428,13 @@ class OllaQuiz {
 
   checkAnswer(selectedOption, question) {
     const buttons = document.querySelectorAll(".option-btn");
-    const isCorrect = selectedOption === question.correct;
+    const correctAnswer = question.correct || question.answer;
+    const isCorrect =
+      selectedOption.toLowerCase() === correctAnswer.toLowerCase();
 
     buttons.forEach((btn) => {
       btn.disabled = true;
-      if (btn.textContent === question.correct) {
+      if (btn.textContent.toLowerCase() === correctAnswer.toLowerCase()) {
         btn.classList.add("correct");
       } else if (btn.textContent === selectedOption && !isCorrect) {
         btn.classList.add("incorrect");
@@ -323,9 +454,12 @@ class OllaQuiz {
     input.disabled = true;
     document.getElementById("submitWrittenBtn").disabled = true;
 
+    // Get correct answer - handle different formats
+    const correctAnswer = question.correct || question.answer;
+
     // Normalize answers for comparison
     const normalizedUser = this.normalizeAnswer(userAnswer);
-    const normalizedCorrect = this.normalizeAnswer(question.correct);
+    const normalizedCorrect = this.normalizeAnswer(correctAnswer);
 
     // Allow some flexibility (fuzzy matching)
     const isCorrect = this.fuzzyMatch(normalizedUser, normalizedCorrect);
@@ -338,7 +472,7 @@ class OllaQuiz {
       document.getElementById("writtenHint").classList.remove("hidden");
       document.getElementById(
         "hintText"
-      ).textContent = `Oikea vastaus: ${question.correct}`;
+      ).textContent = `Oikea vastaus: ${correctAnswer}`;
     }
 
     this.processAnswer(isCorrect, userAnswer, question);
@@ -392,10 +526,15 @@ class OllaQuiz {
       this.score++;
     }
 
+    // Get correct answer - handle different formats
+    const correctAnswer = question.correct || question.answer;
+    const questionText =
+      question.question || question.prompt || question.english;
+
     this.answers.push({
-      question: question.question,
+      question: questionText,
       userAnswer: userAnswer,
-      correctAnswer: question.correct,
+      correctAnswer: correctAnswer,
       isCorrect: isCorrect,
       explanation: question.explanation,
     });
@@ -414,9 +553,9 @@ class OllaQuiz {
     } else {
       feedback.classList.add("incorrect");
       feedbackIcon.textContent = "✗";
-      feedbackText.textContent = `${question.explanation || "Oikea vastaus:"} ${
-        question.correct
-      }`;
+      feedbackText.textContent = `${
+        question.explanation || "Oikea vastaus:"
+      } ${correctAnswer}`;
     }
 
     document.getElementById("nextBtn").classList.remove("hidden");
