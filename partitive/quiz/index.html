@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finnish Partitive Quiz - Partitiivi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back Button -->
+      <a href="../../" class="back-link">← Takaisin aiheisiin</a>
+
+      <!-- Header -->
+      <header class="quiz-header">
+        <h1>🇫🇮 Partitiivi</h1>
+        <p class="subtitle" id="topicTitle">The Partitive Case</p>
+      </header>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Partitive Quiz</h2>
+          <p id="quizDescription">Practice the Finnish partitive case!</p>
+
+          <!-- Rules Reference -->
+          <div class="rules-section">
+            <h3>📚 When to Use Partitive?</h3>
+
+            <div class="rules-box usage-box">
+              <h4>🎯 Three Main Cases:</h4>
+              <div class="usage-grid">
+                <div class="usage-item">
+                  <span class="usage-icon">🚫</span>
+                  <span class="usage-title">1. Negative</span>
+                  <span class="usage-example"
+                    >Minulla ei ole <strong>autoa</strong></span
+                  >
+                  <span class="usage-trans">(I don't have a car)</span>
+                </div>
+                <div class="usage-item">
+                  <span class="usage-icon">🔢</span>
+                  <span class="usage-title">2. Numbers (2+)</span>
+                  <span class="usage-example"
+                    >Kolme <strong>lasta</strong></span
+                  >
+                  <span class="usage-trans">(Three children)</span>
+                </div>
+                <div class="usage-item">
+                  <span class="usage-icon">🏃</span>
+                  <span class="usage-title">3. Partitive Verbs</span>
+                  <span class="usage-example"
+                    >Minä juon <strong>kahvia</strong></span
+                  >
+                  <span class="usage-trans">(I drink coffee)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="rules-box endings-box">
+              <h4>📝 How to Form Partitive:</h4>
+              <table class="endings-table">
+                <thead>
+                  <tr>
+                    <th>Word Ending</th>
+                    <th>Add</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Vowel (not E)</td>
+                    <td><strong>-a / -ä</strong></td>
+                    <td>kahvi → kahvi<strong>a</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Two vowels (aa, uu, ie...)</td>
+                    <td><strong>-ta / -tä</strong></td>
+                    <td>maa → maa<strong>ta</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Consonant</td>
+                    <td><strong>-ta / -tä</strong></td>
+                    <td>puhelin → puhelin<strong>ta</strong></td>
+                  </tr>
+                  <tr>
+                    <td>-e ending</td>
+                    <td><strong>-tta / -ttä</strong></td>
+                    <td>huone → huone<strong>tta</strong></td>
+                  </tr>
+                  <tr>
+                    <td>-nen ending</td>
+                    <td><strong>-sta / -stä</strong></td>
+                    <td>nainen → nai<strong>sta</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="rules-box verbs-box">
+              <h4>🏃 Common Partitive Verbs:</h4>
+              <div class="verbs-grid">
+                <span class="verb-chip">juoda (drink)</span>
+                <span class="verb-chip">syödä (eat)</span>
+                <span class="verb-chip">rakastaa (love)</span>
+                <span class="verb-chip">odottaa (wait)</span>
+                <span class="verb-chip">haluta (want)</span>
+                <span class="verb-chip">tarvita (need)</span>
+                <span class="verb-chip">kuunnella (listen)</span>
+                <span class="verb-chip">katsoa (watch)</span>
+                <span class="verb-chip">pelata (play)</span>
+                <span class="verb-chip">opiskella (study)</span>
+                <span class="verb-chip">puhua (speak)</span>
+                <span class="verb-chip">lukea (read)</span>
+              </div>
+            </div>
+
+            <div class="rules-box quantity-box">
+              <h4>📏 Quantity Expressions:</h4>
+              <div class="quantity-examples">
+                <div class="quantity-item">
+                  <span class="finnish">litra maitoa</span>
+                  <span class="english">a liter of milk</span>
+                </div>
+                <div class="quantity-item">
+                  <span class="finnish">kuppi kahvia</span>
+                  <span class="english">a cup of coffee</span>
+                </div>
+                <div class="quantity-item">
+                  <span class="finnish">lasi vettä</span>
+                  <span class="english">a glass of water</span>
+                </div>
+                <div class="quantity-item">
+                  <span class="finnish">kilo omenoita</span>
+                  <span class="english">a kilo of apples</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="rules-box special-box">
+              <h4>⚠️ Special Words:</h4>
+              <div class="special-grid">
+                <div class="special-item">
+                  <span class="word">vesi → vettä</span>
+                </div>
+                <div class="special-item">
+                  <span class="word">käsi → kättä</span>
+                </div>
+                <div class="special-item">
+                  <span class="word">vuosi → vuotta</span>
+                </div>
+                <div class="special-item">
+                  <span class="word">lapsi → lasta</span>
+                </div>
+                <div class="special-item">
+                  <span class="word">uusi → uutta</span>
+                </div>
+                <div class="special-item">
+                  <span class="word">yksi → yhtä</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mode Tabs -->
+          <div class="mode-tabs">
+            <button class="mode-tab active" data-mode="mcq">
+              <span class="mode-icon">📝</span>
+              <span class="mode-label">MCQ</span>
+            </button>
+            <button class="mode-tab" data-mode="written">
+              <span class="mode-icon">✍️</span>
+              <span class="mode-label">Written</span>
+            </button>
+          </div>
+
+          <!-- Subtopic Filter with Checkboxes -->
+          <div class="filter-container">
+            <div class="filter-header">
+              <span class="filter-label">🎯 Select subtopics:</span>
+              <div class="filter-actions">
+                <button id="selectAllBtn" class="filter-action-btn">
+                  Select All
+                </button>
+                <button id="clearAllBtn" class="filter-action-btn">
+                  Clear All
+                </button>
+              </div>
+            </div>
+            <div id="subtopicCheckboxes" class="subtopic-checkboxes">
+              <!-- Checkboxes will be inserted here by JS -->
+            </div>
+            <span id="questionCount" class="question-count"
+              >80 questions available</span
+            >
+          </div>
+
+          <div class="stats-preview">
+            <span>📝 10 Questions</span>
+            <span>🎯 Random Selection</span>
+          </div>
+          <button id="startBtn" class="btn btn-primary">Aloita Quiz!</button>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <!-- Mode Indicator -->
+        <div class="mode-indicator">
+          <span id="currentModeIcon">📝</span>
+          <span id="currentModeText">MCQ Mode</span>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+          <span id="progressText">1 / 10</span>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card">
+          <!-- Visual Component -->
+          <div id="visualContainer" class="visual-container">
+            <div id="partitiveComponent" class="partitive-component">
+              <div id="wordDisplay" class="word-display">kahvi</div>
+              <div id="contextDisplay" class="context-display">
+                Minulla ei ole ___.
+              </div>
+              <div id="ruleDisplay" class="rule-display">+ a/ä</div>
+            </div>
+          </div>
+
+          <!-- Question -->
+          <h2 id="questionText" class="question-text">
+            What is the partitive form?
+          </h2>
+
+          <!-- Options (MCQ Mode) -->
+          <div id="optionsContainer" class="options-container">
+            <!-- Options will be inserted here -->
+          </div>
+
+          <!-- Written Input (Written Mode) -->
+          <div id="writtenContainer" class="written-container hidden">
+            <input
+              type="text"
+              id="writtenInput"
+              class="written-input"
+              placeholder="Kirjoita partitiivi tähän..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button id="submitWrittenBtn" class="btn btn-primary">
+              Tarkista
+            </button>
+            <div id="writtenHint" class="written-hint hidden">
+              <span class="hint-label">💡 Vihje:</span>
+              <span id="hintText"></span>
+            </div>
+          </div>
+
+          <!-- Feedback -->
+          <div id="feedback" class="feedback hidden">
+            <div id="feedbackIcon" class="feedback-icon">✓</div>
+            <p id="feedbackText" class="feedback-text">Explanation here</p>
+          </div>
+
+          <!-- Next Button -->
+          <button id="nextBtn" class="btn btn-secondary hidden">
+            Seuraava →
+          </button>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>Quiz Complete!</h2>
+          <div class="score-circle">
+            <span id="scorePercent">0%</span>
+          </div>
+          <p class="score-text">
+            Sait <span id="correctCount">0</span> /
+            <span id="totalCount">10</span> oikein!
+          </p>
+          <div class="grade-message" id="gradeMessage">Hyvä työ!</div>
+          <div class="results-actions">
+            <button id="retryBtn" class="btn btn-primary">
+              Yritä uudelleen
+            </button>
+            <button id="reviewBtn" class="btn btn-secondary">
+              Tarkista vastaukset
+            </button>
+          </div>
+        </div>
+
+        <!-- Review Section -->
+        <div id="reviewSection" class="review-section hidden">
+          <h3>Vastausten tarkistus</h3>
+          <div id="reviewContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

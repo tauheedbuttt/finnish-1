@@ -56,6 +56,43 @@
       "questionCount": 45,
       "difficulty": "beginner",
       "tags": ["vaatteet", "värit", "pukeutuminen"]
+    },
+    {
+      "id": "kpt",
+      "title": "Astevaihtelu (KPT)",
+      "titleEn": "Consonant Gradation",
+      "description": "Practice KPT consonant changes with Type 1 verbs, negatives, nouns, and special cases!",
+      "icon": "🔄",
+      "path": "kpt/quiz/",
+      "questionCount": 111,
+      "difficulty": "intermediate",
+      "tags": [
+        "astevaihtelu",
+        "kpt",
+        "kielioppi",
+        "grammar",
+        "verb-type1",
+        "negative"
+      ]
+    },
+    {
+      "id": "partitive",
+      "title": "Partitiivi",
+      "titleEn": "Partitive Case",
+      "description": "Practice the partitive case with negatives, numbers (2+), and partitive verbs!",
+      "icon": "📊",
+      "path": "partitive/quiz/",
+      "questionCount": 80,
+      "difficulty": "intermediate",
+      "tags": [
+        "partitiivi",
+        "sijamuodot",
+        "kielioppi",
+        "grammar",
+        "negative",
+        "numbers",
+        "verbs"
+      ]
     }
   ]
 }

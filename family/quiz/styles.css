@@ -812,3 +812,128 @@ body {
         font-size: 0.75rem;
     }
 }
+
+/* ========================================
+   Example Sentences Box
+======================================== */
+
+.example-sentences-box {
+    background: linear-gradient(135deg, #fff9e6 0%, #fff3cc 100%);
+    border: 2px solid #f0d060;
+    border-radius: var(--radius);
+    padding: 25px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.example-sentences-box h3 {
+    color: var(--family-primary);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.example-intro {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.example-family-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: var(--radius-sm);
+}
+
+.family-figure {
+    font-size: 2.5rem;
+}
+
+.family-figure.baby {
+    font-size: 1.8rem;
+}
+
+.example-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.example-item {
+    background: var(--white);
+    padding: 12px 15px;
+    border-radius: var(--radius-sm);
+    border-left: 4px solid var(--family-primary);
+}
+
+.example-item .finnish {
+    display: block;
+    color: var(--family-primary);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 3px;
+}
+
+.example-item .english {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.useful-words {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: var(--radius-sm);
+}
+
+.useful-words h4 {
+    color: var(--family-primary);
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.word-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.word-chip {
+    background: var(--white);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: var(--text-dark);
+    border: 1px solid #e0e0e0;
+}
+
+@media (max-width: 480px) {
+    .example-sentences-box {
+        padding: 15px;
+    }
+    
+    .family-figure {
+        font-size: 2rem;
+    }
+    
+    .family-figure.baby {
+        font-size: 1.5rem;
+    }
+    
+    .example-item {
+        padding: 10px 12px;
+    }
+    
+    .word-chip {
+        font-size: 0.75rem;
+        padding: 5px 10px;
+    }
+}

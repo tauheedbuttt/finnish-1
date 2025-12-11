@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KPT Consonant Gradation - Astevaihtelu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back Button -->
+      <a href="../../" class="back-link">← Takaisin aiheisiin</a>
+
+      <!-- Header -->
+      <header class="quiz-header">
+        <h1>🔄 Astevaihtelu - KPT</h1>
+        <p class="subtitle" id="topicTitle">Consonant Gradation</p>
+      </header>
+
+      <!-- Mode Tabs -->
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">
+          📝 Multiple Choice
+        </button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">KPT Consonant Gradation Quiz</h2>
+          <p id="quizDescription">Practice Finnish consonant gradation</p>
+
+          <!-- KPT Rules Reference -->
+          <div class="rules-box">
+            <h3>📖 KPT Rules (Strong → Weak)</h3>
+            <div class="rules-grid" id="rulesGrid">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- No KPT Rules -->
+          <div class="rules-box no-kpt-box">
+            <h3>🚫 Ei k-p-t-vaihtelua (No KPT Change)</h3>
+            <div class="no-kpt-list">
+              <div class="no-kpt-item">
+                <span class="no-kpt-pattern">hk, sk, st, tk</span>
+                <span class="no-kpt-example"
+                  >posti → postissa, matka → matkalla</span
+                >
+              </div>
+              <div class="no-kpt-item">
+                <span class="no-kpt-pattern">2 vowels at end</span>
+                <span class="no-kpt-example"
+                  >vapaa → vapaassa, keittiö → keittiössä</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Verb Type 1 Reference -->
+          <div class="rules-box verb-box">
+            <h3>🏃 Verb Type 1 - Consonant Gradation</h3>
+            <div class="verb-type1-info">
+              <div class="verb-type-card type-has-kpt">
+                <div class="verb-type-header">
+                  <span class="verb-type-number">1️⃣</span>
+                  <span class="verb-type-ending"
+                    >-a/-ä, -ea/-eä, -aa/-ää, -oa/-öä, -ua/-yä</span
+                  >
+                </div>
+                <div class="verb-type-rule">
+                  <span class="strong-label">Strong:</span> infinitive + hän +
+                  he
+                  <br />
+                  <span class="weak-label">Weak:</span> minä + sinä + me + te +
+                  negative
+                </div>
+              </div>
+              <div class="verb-examples-grid">
+                <div class="verb-ex">
+                  <span class="verb-inf">lukea</span>
+                  <span
+                    >lu<strong>∅</strong>en, lu<strong>∅</strong>et,
+                    lu<strong>k</strong>ee, lu<strong>∅</strong>emme</span
+                  >
+                </div>
+                <div class="verb-ex">
+                  <span class="verb-inf">nukkua</span>
+                  <span
+                    >nu<strong>k</strong>un, nu<strong>k</strong>ut,
+                    nu<strong>kk</strong>uu, nu<strong>k</strong>umme</span
+                  >
+                </div>
+                <div class="verb-ex">
+                  <span class="verb-inf">ottaa</span>
+                  <span
+                    >o<strong>t</strong>an, o<strong>t</strong>at,
+                    o<strong>tt</strong>aa, o<strong>t</strong>amme</span
+                  >
+                </div>
+                <div class="verb-ex">
+                  <span class="verb-inf">antaa</span>
+                  <span
+                    >a<strong>nn</strong>an, a<strong>nn</strong>at,
+                    a<strong>nt</strong>aa, a<strong>nn</strong>amme</span
+                  >
+                </div>
+                <div class="verb-ex">
+                  <span class="verb-inf">tietää</span>
+                  <span
+                    >tie<strong>d</strong>än, tie<strong>d</strong>ät,
+                    tie<strong>t</strong>ää, tie<strong>d</strong>ämme</span
+                  >
+                </div>
+                <div class="verb-ex">
+                  <span class="verb-inf">leipoa</span>
+                  <span
+                    >lei<strong>v</strong>on, lei<strong>v</strong>ot,
+                    lei<strong>p</strong>oo, lei<strong>v</strong>omme</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Noun Rules -->
+          <div class="rules-box noun-box">
+            <h3>📝 Nouns - When KPT Applies</h3>
+            <div class="noun-rules-list">
+              <div class="noun-rule yes">
+                ✓ Nominative → t-plural (can change)
+              </div>
+              <div class="noun-rule yes">
+                ✓ Nominative → genitive (can change)
+              </div>
+              <div class="noun-rule no">
+                ✗ Nominative → partitive (NO change)
+              </div>
+            </div>
+          </div>
+
+          <!-- Negative Rules -->
+          <div class="rules-box negative-box">
+            <h3>🚫 Negative (Kieltomuoto) - Conjugation</h3>
+            <div class="negative-rules-content">
+              <div class="negative-formula">
+                <strong>Formula:</strong> ei-word + verb stem (weak for Type 1,
+                strong for Types 3,4,6)
+              </div>
+              <table class="negative-table">
+                <tr>
+                  <td><strong>en</strong> (minä)</td>
+                  <td><strong>emme</strong> (me)</td>
+                </tr>
+                <tr>
+                  <td><strong>et</strong> (sinä)</td>
+                  <td><strong>ette</strong> (te)</td>
+                </tr>
+                <tr>
+                  <td><strong>ei</strong> (hän)</td>
+                  <td><strong>eivät</strong> (he)</td>
+                </tr>
+              </table>
+              <div class="negative-examples">
+                <div class="neg-example">
+                  <span class="neg-verb">lukea:</span>
+                  <span
+                    >en lu<strong>e</strong>, et lu<strong>e</strong>, ei
+                    lu<strong>e</strong> (k→∅)</span
+                  >
+                </div>
+                <div class="neg-example">
+                  <span class="neg-verb">nukkua:</span>
+                  <span
+                    >en nu<strong>k</strong>u, et nu<strong>k</strong>u, ei
+                    nu<strong>k</strong>u (kk→k)</span
+                  >
+                </div>
+                <div class="neg-example">
+                  <span class="neg-verb">olla:</span>
+                  <span>en ole, et ole, ei ole, emme ole, eivät ole</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Subtopic Filter - Multi-select -->
+          <div class="filter-container">
+            <label class="filter-label">🎯 Select KPT types to practice:</label>
+            <div class="subtopic-checkboxes" id="subtopicCheckboxes">
+              <!-- Populated by JS -->
+            </div>
+            <div class="filter-actions">
+              <button type="button" class="btn-filter" id="selectAllBtn">
+                Select All
+              </button>
+              <button type="button" class="btn-filter" id="clearAllBtn">
+                Clear All
+              </button>
+            </div>
+            <span id="questionCount" class="question-count"
+              >47 questions available</span
+            >
+          </div>
+
+          <div class="stats-preview">
+            <span id="modeDisplay">📝 Multiple Choice</span>
+            <span>🔄 KPT Changes</span>
+          </div>
+          <button id="startBtn" class="btn btn-primary">Aloita!</button>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <!-- Progress Bar -->
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+          <span id="progressText">1 / 10</span>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card">
+          <!-- KPT Display -->
+          <div class="kpt-display">
+            <div class="word-box">
+              <span class="word-label">Word:</span>
+              <span class="word-text" id="wordText">kauppa</span>
+            </div>
+            <div class="ending-box">
+              <span class="ending-label">Add:</span>
+              <span class="ending-text" id="endingText">+n</span>
+            </div>
+            <div class="rule-hint" id="ruleHint">
+              <span class="rule-badge">pp → p</span>
+            </div>
+          </div>
+
+          <!-- Question -->
+          <h2 id="questionText" class="question-text">What is kauppa + n?</h2>
+          <p class="english-hint" id="englishHint">(shop - genitive)</p>
+
+          <!-- MCQ Options -->
+          <div id="mcqContainer" class="options-container">
+            <!-- Options populated by JS -->
+          </div>
+
+          <!-- Written Input -->
+          <div id="writtenContainer" class="written-container hidden">
+            <input
+              type="text"
+              id="writtenAnswer"
+              class="written-input"
+              placeholder="Type your answer..."
+              autocomplete="off"
+              autocapitalize="off"
+            />
+            <button id="submitWrittenBtn" class="btn btn-primary">
+              Check ✓
+            </button>
+          </div>
+
+          <!-- Feedback -->
+          <div id="feedback" class="feedback hidden">
+            <div class="feedback-icon"></div>
+            <div class="feedback-text"></div>
+            <div class="explanation" id="explanationText"></div>
+          </div>
+
+          <!-- Next Button -->
+          <button id="nextBtn" class="btn btn-secondary hidden">
+            Seuraava →
+          </button>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <div class="results-icon" id="resultsIcon">🎉</div>
+          <h2>Harjoitus valmis!</h2>
+          <div class="score-display">
+            <span class="score-number" id="scoreNumber">8</span>
+            <span class="score-divider">/</span>
+            <span class="score-total" id="scoreTotal">10</span>
+          </div>
+          <p class="score-percentage" id="scorePercentage">80%</p>
+          <p class="score-message" id="scoreMessage">Hyvä työ!</p>
+
+          <div class="results-actions">
+            <button id="retryBtn" class="btn btn-primary">
+              Harjoittele lisää
+            </button>
+            <a href="../../" class="btn btn-secondary">Takaisin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>
