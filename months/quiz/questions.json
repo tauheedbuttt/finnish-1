@@ -11,18 +11,78 @@
   ],
   "vocabulary": {
     "months": [
-      { "base": "tammikuu", "inessive": "tammikuussa", "english": "January", "season": "winter" },
-      { "base": "helmikuu", "inessive": "helmikuussa", "english": "February", "season": "winter" },
-      { "base": "maaliskuu", "inessive": "maaliskuussa", "english": "March", "season": "spring" },
-      { "base": "huhtikuu", "inessive": "huhtikuussa", "english": "April", "season": "spring" },
-      { "base": "toukokuu", "inessive": "toukokuussa", "english": "May", "season": "spring" },
-      { "base": "kesäkuu", "inessive": "kesäkuussa", "english": "June", "season": "summer" },
-      { "base": "heinäkuu", "inessive": "heinäkuussa", "english": "July", "season": "summer" },
-      { "base": "elokuu", "inessive": "elokuussa", "english": "August", "season": "summer" },
-      { "base": "syyskuu", "inessive": "syyskuussa", "english": "September", "season": "autumn" },
-      { "base": "lokakuu", "inessive": "lokakuussa", "english": "October", "season": "autumn" },
-      { "base": "marraskuu", "inessive": "marraskuussa", "english": "November", "season": "autumn" },
-      { "base": "joulukuu", "inessive": "joulukuussa", "english": "December", "season": "winter" }
+      {
+        "base": "tammikuu",
+        "inessive": "tammikuussa",
+        "english": "January",
+        "season": "winter"
+      },
+      {
+        "base": "helmikuu",
+        "inessive": "helmikuussa",
+        "english": "February",
+        "season": "winter"
+      },
+      {
+        "base": "maaliskuu",
+        "inessive": "maaliskuussa",
+        "english": "March",
+        "season": "spring"
+      },
+      {
+        "base": "huhtikuu",
+        "inessive": "huhtikuussa",
+        "english": "April",
+        "season": "spring"
+      },
+      {
+        "base": "toukokuu",
+        "inessive": "toukokuussa",
+        "english": "May",
+        "season": "spring"
+      },
+      {
+        "base": "kesäkuu",
+        "inessive": "kesäkuussa",
+        "english": "June",
+        "season": "summer"
+      },
+      {
+        "base": "heinäkuu",
+        "inessive": "heinäkuussa",
+        "english": "July",
+        "season": "summer"
+      },
+      {
+        "base": "elokuu",
+        "inessive": "elokuussa",
+        "english": "August",
+        "season": "summer"
+      },
+      {
+        "base": "syyskuu",
+        "inessive": "syyskuussa",
+        "english": "September",
+        "season": "autumn"
+      },
+      {
+        "base": "lokakuu",
+        "inessive": "lokakuussa",
+        "english": "October",
+        "season": "autumn"
+      },
+      {
+        "base": "marraskuu",
+        "inessive": "marraskuussa",
+        "english": "November",
+        "season": "autumn"
+      },
+      {
+        "base": "joulukuu",
+        "inessive": "joulukuussa",
+        "english": "December",
+        "season": "winter"
+      }
     ],
     "seasons": [
       { "finnish": "talvi", "inessive": "talvella", "english": "winter" },
@@ -218,7 +278,12 @@
       "type": "mcq",
       "subtopic": "weather-months",
       "question": "Millainen sää on Suomessa tammikuussa?",
-      "options": ["On kylmä ja sataa lunta", "On kuuma ja aurinko paistaa", "On lämmin ja sataa vettä", "On leutoa"],
+      "options": [
+        "On kylmä ja sataa lunta",
+        "On kuuma ja aurinko paistaa",
+        "On lämmin ja sataa vettä",
+        "On leutoa"
+      ],
       "correct": 0,
       "explanation": "In January in Finland, it's cold and snowy."
     },
@@ -227,7 +292,12 @@
       "type": "mcq",
       "subtopic": "weather-months",
       "question": "Millainen sää on Suomessa heinäkuussa?",
-      "options": ["On kylmä ja pakkasta", "Sataa lunta", "On lämmin ja aurinkoista", "On pilvistä ja kylmä"],
+      "options": [
+        "On kylmä ja pakkasta",
+        "Sataa lunta",
+        "On lämmin ja aurinkoista",
+        "On pilvistä ja kylmä"
+      ],
       "correct": 2,
       "explanation": "In July in Finland, it's warm and sunny."
     },
@@ -236,7 +306,12 @@
       "type": "mcq",
       "subtopic": "weather-months",
       "question": "Millainen sää on Suomessa lokakuussa?",
-      "options": ["On kuuma", "On pilvistä ja sataa vettä", "Aurinko paistaa", "On pakkasta"],
+      "options": [
+        "On kuuma",
+        "On pilvistä ja sataa vettä",
+        "Aurinko paistaa",
+        "On pakkasta"
+      ],
       "correct": 1,
       "explanation": "In October in Finland, it's cloudy and rainy (loka = mud)."
     },
@@ -245,7 +320,12 @@
       "type": "mcq",
       "subtopic": "weather-months",
       "question": "Millainen sää on Suomessa kesäkuussa?",
-      "options": ["Sataa lunta", "On kylmä", "On lämmin ja valoisaa", "On pimeää"],
+      "options": [
+        "Sataa lunta",
+        "On kylmä",
+        "On lämmin ja valoisaa",
+        "On pimeää"
+      ],
       "correct": 2,
       "explanation": "In June in Finland, it's warm and light (midnight sun in the north!)."
     },
@@ -254,7 +334,12 @@
       "type": "mcq",
       "subtopic": "weather-months",
       "question": "Millainen sää on Suomessa joulukuussa?",
-      "options": ["On kuuma", "On kylmä ja pimeää", "Aurinko paistaa", "On lämmin"],
+      "options": [
+        "On kuuma",
+        "On kylmä ja pimeää",
+        "Aurinko paistaa",
+        "On lämmin"
+      ],
       "correct": 1,
       "explanation": "In December in Finland, it's cold and dark."
     },
@@ -263,7 +348,12 @@
       "type": "mcq",
       "subtopic": "seasons",
       "question": "Which months are 'talvi' (winter) in Finland?",
-      "options": ["kesäkuu, heinäkuu, elokuu", "joulukuu, tammikuu, helmikuu", "maaliskuu, huhtikuu, toukokuu", "syyskuu, lokakuu, marraskuu"],
+      "options": [
+        "kesäkuu, heinäkuu, elokuu",
+        "joulukuu, tammikuu, helmikuu",
+        "maaliskuu, huhtikuu, toukokuu",
+        "syyskuu, lokakuu, marraskuu"
+      ],
       "correct": 1,
       "explanation": "Winter = December, January, February"
     },
@@ -272,7 +362,12 @@
       "type": "mcq",
       "subtopic": "seasons",
       "question": "Which months are 'kesä' (summer) in Finland?",
-      "options": ["kesäkuu, heinäkuu, elokuu", "joulukuu, tammikuu, helmikuu", "maaliskuu, huhtikuu, toukokuu", "syyskuu, lokakuu, marraskuu"],
+      "options": [
+        "kesäkuu, heinäkuu, elokuu",
+        "joulukuu, tammikuu, helmikuu",
+        "maaliskuu, huhtikuu, toukokuu",
+        "syyskuu, lokakuu, marraskuu"
+      ],
       "correct": 0,
       "explanation": "Summer = June, July, August"
     },
@@ -281,7 +376,12 @@
       "type": "mcq",
       "subtopic": "seasons",
       "question": "Which months are 'syksy' (autumn) in Finland?",
-      "options": ["kesäkuu, heinäkuu, elokuu", "joulukuu, tammikuu, helmikuu", "maaliskuu, huhtikuu, toukokuu", "syyskuu, lokakuu, marraskuu"],
+      "options": [
+        "kesäkuu, heinäkuu, elokuu",
+        "joulukuu, tammikuu, helmikuu",
+        "maaliskuu, huhtikuu, toukokuu",
+        "syyskuu, lokakuu, marraskuu"
+      ],
       "correct": 3,
       "explanation": "Autumn = September, October, November"
     },
@@ -290,7 +390,12 @@
       "type": "mcq",
       "subtopic": "seasons",
       "question": "Which months are 'kevät' (spring) in Finland?",
-      "options": ["kesäkuu, heinäkuu, elokuu", "joulukuu, tammikuu, helmikuu", "maaliskuu, huhtikuu, toukokuu", "syyskuu, lokakuu, marraskuu"],
+      "options": [
+        "kesäkuu, heinäkuu, elokuu",
+        "joulukuu, tammikuu, helmikuu",
+        "maaliskuu, huhtikuu, toukokuu",
+        "syyskuu, lokakuu, marraskuu"
+      ],
       "correct": 2,
       "explanation": "Spring = March, April, May"
     },
@@ -299,7 +404,12 @@
       "type": "mcq",
       "subtopic": "seasons",
       "question": "What season is 'lokakuu' in?",
-      "options": ["talvi (winter)", "kevät (spring)", "kesä (summer)", "syksy (autumn)"],
+      "options": [
+        "talvi (winter)",
+        "kevät (spring)",
+        "kesä (summer)",
+        "syksy (autumn)"
+      ],
       "correct": 3,
       "explanation": "October is in autumn (syksy)"
     },
@@ -353,7 +463,12 @@
       "type": "mcq",
       "subtopic": "weather-months",
       "question": "Millainen sää on Suomessa huhtikuussa?",
-      "options": ["On kuuma", "On kylmä ja sataa lunta", "On viileää ja aurinko alkaa paistaa", "On pakkasta"],
+      "options": [
+        "On kuuma",
+        "On kylmä ja sataa lunta",
+        "On viileää ja aurinko alkaa paistaa",
+        "On pakkasta"
+      ],
       "correct": 2,
       "explanation": "In April in Finland, it's chilly but the sun starts to shine more."
     },
@@ -362,7 +477,12 @@
       "type": "mcq",
       "subtopic": "weather-months",
       "question": "Millainen sää on Suomessa marraskuussa?",
-      "options": ["On lämmin", "On pimeää ja sataa vettä", "Aurinko paistaa", "On kuuma"],
+      "options": [
+        "On lämmin",
+        "On pimeää ja sataa vettä",
+        "Aurinko paistaa",
+        "On kuuma"
+      ],
       "correct": 1,
       "explanation": "In November in Finland, it's dark and rainy."
     },
@@ -371,7 +491,12 @@
       "type": "mcq",
       "subtopic": "seasons",
       "question": "What season is 'toukokuu' in?",
-      "options": ["talvi (winter)", "kevät (spring)", "kesä (summer)", "syksy (autumn)"],
+      "options": [
+        "talvi (winter)",
+        "kevät (spring)",
+        "kesä (summer)",
+        "syksy (autumn)"
+      ],
       "correct": 1,
       "explanation": "May is in spring (kevät)"
     },
@@ -380,7 +505,12 @@
       "type": "mcq",
       "subtopic": "seasons",
       "question": "What season is 'helmikuu' in?",
-      "options": ["talvi (winter)", "kevät (spring)", "kesä (summer)", "syksy (autumn)"],
+      "options": [
+        "talvi (winter)",
+        "kevät (spring)",
+        "kesä (summer)",
+        "syksy (autumn)"
+      ],
       "correct": 0,
       "explanation": "February is in winter (talvi)"
     },
@@ -389,7 +519,12 @@
       "type": "mcq",
       "subtopic": "seasons",
       "question": "What season is 'elokuu' in?",
-      "options": ["talvi (winter)", "kevät (spring)", "kesä (summer)", "syksy (autumn)"],
+      "options": [
+        "talvi (winter)",
+        "kevät (spring)",
+        "kesä (summer)",
+        "syksy (autumn)"
+      ],
       "correct": 2,
       "explanation": "August is in summer (kesä)"
     }

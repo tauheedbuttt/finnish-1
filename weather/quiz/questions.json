@@ -14,6 +14,26 @@
     { "id": "cold", "name": "Cold/Freezing", "icon": "🥶" },
     { "id": "warm", "name": "Warm/Hot", "icon": "🥵" }
   ],
+  "dialogues": [
+    {
+      "id": "greeting",
+      "title": "Greeting Dialogue - Weather & Clothes",
+      "icon": "👋",
+      "lines": [
+        { "speaker": "A", "line": "Hei" },
+        { "speaker": "B", "line": "Hei, kuka sinä olet?" },
+        { "speaker": "A", "line": "Hyvä, kiitos" },
+        { "speaker": "B", "line": "Sulla on päällä kaunis t-paita" },
+        {
+          "speaker": "A",
+          "line": "Kiitos, mulla on päällä musta t-paita ja farkut"
+        },
+        { "speaker": "B", "line": "Joo, mikä sää on?" },
+        { "speaker": "A", "line": "On kaunis sää" },
+        { "speaker": "B", "line": "Joo, aurinko paistaa" }
+      ]
+    }
+  ],
   "vocabulary": {
     "weather_types": [
       { "finnish": "Aurinko paistaa", "english": "Sun is shining" },

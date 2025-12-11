@@ -287,6 +287,88 @@ body {
 }
 
 /* ========================================
+   Dialogue Card
+======================================== */
+
+.dialogue-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow-lg);
+  margin-top: 20px;
+}
+
+.dialogue-card h3 {
+  color: var(--primary);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.dialogue-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.dialogue-line {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.dialogue-line.speaker-a {
+  justify-content: flex-start;
+}
+
+.dialogue-line.speaker-b {
+  justify-content: flex-end;
+}
+
+.speaker-label {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.speaker-a .speaker-label {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.speaker-b .speaker-label {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.dialogue-bubble {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.speaker-a .dialogue-bubble {
+  background: #e3f2fd;
+  color: var(--text-dark);
+  border-bottom-left-radius: 4px;
+}
+
+.speaker-b .dialogue-bubble {
+  background: var(--secondary);
+  color: var(--white);
+  border-bottom-right-radius: 4px;
+}
+
+/* ========================================
    Buttons
 ======================================== */
 

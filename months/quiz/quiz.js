@@ -83,31 +83,47 @@ class MonthsQuiz {
   }
 
   setupEventListeners() {
-    document.getElementById("startBtn").addEventListener("click", () => this.startQuiz());
-    document.getElementById("nextBtn").addEventListener("click", () => this.nextQuestion());
-    document.getElementById("retryBtn").addEventListener("click", () => this.retryQuiz());
-    document.getElementById("reviewBtn").addEventListener("click", () => this.toggleReview());
+    document
+      .getElementById("startBtn")
+      .addEventListener("click", () => this.startQuiz());
+    document
+      .getElementById("nextBtn")
+      .addEventListener("click", () => this.nextQuestion());
+    document
+      .getElementById("retryBtn")
+      .addEventListener("click", () => this.retryQuiz());
+    document
+      .getElementById("reviewBtn")
+      .addEventListener("click", () => this.toggleReview());
 
     // Mode tabs
     document.querySelectorAll(".mode-tab").forEach((tab) => {
-      tab.addEventListener("click", (e) => this.switchMode(e.currentTarget.dataset.mode));
+      tab.addEventListener("click", (e) =>
+        this.switchMode(e.currentTarget.dataset.mode)
+      );
     });
 
     // Written mode submit
-    document.getElementById("submitWrittenBtn").addEventListener("click", () => this.checkWrittenAnswer());
+    document
+      .getElementById("submitWrittenBtn")
+      .addEventListener("click", () => this.checkWrittenAnswer());
 
     // Enter key for written input
-    document.getElementById("writtenInput").addEventListener("keypress", (e) => {
-      if (e.key === "Enter") {
-        this.checkWrittenAnswer();
-      }
-    });
+    document
+      .getElementById("writtenInput")
+      .addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          this.checkWrittenAnswer();
+        }
+      });
 
     // Subtopic filter
-    document.getElementById("subtopicFilter").addEventListener("change", (e) => {
-      this.selectedSubtopic = e.target.value;
-      this.updateQuestionCount();
-    });
+    document
+      .getElementById("subtopicFilter")
+      .addEventListener("change", (e) => {
+        this.selectedSubtopic = e.target.value;
+        this.updateQuestionCount();
+      });
   }
 
   switchMode(mode) {
@@ -168,9 +184,12 @@ class MonthsQuiz {
     const question = this.selectedQuestions[this.currentIndex];
 
     // Update progress
-    const progress = ((this.currentIndex + 1) / this.selectedQuestions.length) * 100;
+    const progress =
+      ((this.currentIndex + 1) / this.selectedQuestions.length) * 100;
     document.getElementById("progressFill").style.width = `${progress}%`;
-    document.getElementById("progressText").textContent = `${this.currentIndex + 1} / ${this.selectedQuestions.length}`;
+    document.getElementById("progressText").textContent = `${
+      this.currentIndex + 1
+    } / ${this.selectedQuestions.length}`;
 
     // Hide feedback and next button
     document.getElementById("feedback").classList.add("hidden");
@@ -204,18 +223,18 @@ class MonthsQuiz {
 
     // Determine which month to display based on question
     const monthData = this.getMonthFromQuestion(question);
-    
+
     if (monthData) {
       monthDisplay.textContent = monthData.base;
-      
+
       // Set season badge and styling
       const seasonInfo = {
         winter: { emoji: "❄️", label: "talvi" },
         spring: { emoji: "🌸", label: "kevät" },
         summer: { emoji: "☀️", label: "kesä" },
-        autumn: { emoji: "🍂", label: "syksy" }
+        autumn: { emoji: "🍂", label: "syksy" },
       };
-      
+
       const season = seasonInfo[monthData.season] || seasonInfo.winter;
       seasonBadge.textContent = `${season.emoji} ${season.label}`;
       monthComponent.classList.add(monthData.season);
@@ -234,9 +253,11 @@ class MonthsQuiz {
     const searchText = `${question.question} ${correctAnswer}`.toLowerCase();
 
     for (const month of this.vocabulary.months) {
-      if (searchText.includes(month.base.toLowerCase()) || 
-          searchText.includes(month.inessive.toLowerCase()) ||
-          searchText.includes(month.english.toLowerCase())) {
+      if (
+        searchText.includes(month.base.toLowerCase()) ||
+        searchText.includes(month.inessive.toLowerCase()) ||
+        searchText.includes(month.english.toLowerCase())
+      ) {
         return month;
       }
     }
@@ -258,7 +279,8 @@ class MonthsQuiz {
 
     const correctAnswer = question.options[question.correct];
     const hintLength = Math.min(3, Math.floor(correctAnswer.length / 3));
-    document.getElementById("hintText").textContent = correctAnswer.substring(0, hintLength) + "...";
+    document.getElementById("hintText").textContent =
+      correctAnswer.substring(0, hintLength) + "...";
   }
 
   checkWrittenAnswer() {
@@ -272,7 +294,9 @@ class MonthsQuiz {
     const normalizedUser = normalize(userAnswer);
     const normalizedCorrect = normalize(correctAnswer);
 
-    const isCorrect = normalizedUser === normalizedCorrect || this.fuzzyMatch(normalizedUser, normalizedCorrect);
+    const isCorrect =
+      normalizedUser === normalizedCorrect ||
+      this.fuzzyMatch(normalizedUser, normalizedCorrect);
 
     this.userAnswers.push({
       question: question,
@@ -294,7 +318,9 @@ class MonthsQuiz {
     if (!isCorrect) {
       const correctDisplay = document.createElement("div");
       correctDisplay.className = "correct-answer-display";
-      correctDisplay.innerHTML = `<strong>Oikea vastaus:</strong> ${question.options[question.correct]}`;
+      correctDisplay.innerHTML = `<strong>Oikea vastaus:</strong> ${
+        question.options[question.correct]
+      }`;
       document.getElementById("writtenContainer").appendChild(correctDisplay);
     }
 
@@ -302,12 +328,16 @@ class MonthsQuiz {
     feedback.classList.remove("hidden", "correct", "incorrect");
     feedback.classList.add(isCorrect ? "correct" : "incorrect");
 
-    document.getElementById("feedbackIcon").textContent = isCorrect ? "✓ Oikein!" : "✗ Väärin!";
+    document.getElementById("feedbackIcon").textContent = isCorrect
+      ? "✓ Oikein!"
+      : "✗ Väärin!";
     document.getElementById("feedbackText").textContent = question.explanation;
 
     document.getElementById("nextBtn").classList.remove("hidden");
     document.getElementById("nextBtn").textContent =
-      this.currentIndex < this.selectedQuestions.length - 1 ? "Seuraava →" : "Näytä tulokset";
+      this.currentIndex < this.selectedQuestions.length - 1
+        ? "Seuraava →"
+        : "Näytä tulokset";
   }
 
   fuzzyMatch(userAnswer, correctAnswer) {
@@ -391,12 +421,16 @@ class MonthsQuiz {
     feedback.classList.remove("hidden", "correct", "incorrect");
     feedback.classList.add(isCorrect ? "correct" : "incorrect");
 
-    document.getElementById("feedbackIcon").textContent = isCorrect ? "✓ Oikein!" : "✗ Väärin!";
+    document.getElementById("feedbackIcon").textContent = isCorrect
+      ? "✓ Oikein!"
+      : "✗ Väärin!";
     document.getElementById("feedbackText").textContent = question.explanation;
 
     document.getElementById("nextBtn").classList.remove("hidden");
     document.getElementById("nextBtn").textContent =
-      this.currentIndex < this.selectedQuestions.length - 1 ? "Seuraava →" : "Näytä tulokset";
+      this.currentIndex < this.selectedQuestions.length - 1
+        ? "Seuraava →"
+        : "Näytä tulokset";
   }
 
   nextQuestion() {
@@ -419,10 +453,13 @@ class MonthsQuiz {
   showResults() {
     this.showScreen("resultsScreen");
 
-    const percent = Math.round((this.score / this.selectedQuestions.length) * 100);
+    const percent = Math.round(
+      (this.score / this.selectedQuestions.length) * 100
+    );
     document.getElementById("scorePercent").textContent = `${percent}%`;
     document.getElementById("correctCount").textContent = this.score;
-    document.getElementById("totalCount").textContent = this.selectedQuestions.length;
+    document.getElementById("totalCount").textContent =
+      this.selectedQuestions.length;
 
     const gradeMessage = document.getElementById("gradeMessage");
     gradeMessage.className = "grade-message";
@@ -437,7 +474,8 @@ class MonthsQuiz {
       gradeMessage.textContent = "📚 Jatka harjoittelua! (Keep practicing!)";
       gradeMessage.classList.add("ok");
     } else {
-      gradeMessage.textContent = "💪 Tarvitset lisää harjoitusta! (You need more practice!)";
+      gradeMessage.textContent =
+        "💪 Tarvitset lisää harjoitusta! (You need more practice!)";
       gradeMessage.classList.add("needs-work");
     }
 
@@ -477,11 +515,19 @@ class MonthsQuiz {
       }
 
       div.innerHTML = `
-        <div class="review-question">${statusIcon} ${index + 1}. ${answer.question.question}</div>
+        <div class="review-question">${statusIcon} ${index + 1}. ${
+        answer.question.question
+      }</div>
         <div class="review-answers">
-          ${!answer.correct ? `<span class="your-answer">Sinun vastaus: ${yourAnswer}</span>` : ""}
+          ${
+            !answer.correct
+              ? `<span class="your-answer">Sinun vastaus: ${yourAnswer}</span>`
+              : ""
+          }
           <span class="correct-answer">Oikea vastaus: ${correctAnswer}</span>
-          <span style="color: #666; font-style: italic; margin-top: 5px;">${answer.question.explanation}</span>
+          <span style="color: #666; font-style: italic; margin-top: 5px;">${
+            answer.question.explanation
+          }</span>
         </div>
       `;
 

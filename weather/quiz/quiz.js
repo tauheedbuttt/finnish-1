@@ -7,6 +7,7 @@ class WeatherQuiz {
     this.questions = [];
     this.subtopics = [];
     this.vocabulary = {};
+    this.dialogues = [];
     this.selectedQuestions = [];
     this.currentIndex = 0;
     this.questionsPerQuiz = 10;
@@ -19,6 +20,7 @@ class WeatherQuiz {
     await this.loadQuestions();
     this.setupEventListeners();
     this.populateVocabulary();
+    this.populateDialogues();
   }
 
   async loadQuestions() {
@@ -28,6 +30,7 @@ class WeatherQuiz {
       this.questions = data.questions;
       this.subtopics = data.subtopics || [];
       this.vocabulary = data.vocabulary || {};
+      this.dialogues = data.dialogues || [];
       this.topicTitle = data.title;
       this.topicDescription = data.description;
 
@@ -98,6 +101,25 @@ class WeatherQuiz {
         this.vocabulary.adjectives
       );
     }
+  }
+
+  populateDialogues() {
+    const container = document.getElementById("dialogueContainer");
+    if (!container || !this.dialogues.length) return;
+
+    container.innerHTML = "";
+
+    this.dialogues.forEach((dialogue) => {
+      dialogue.lines.forEach((line) => {
+        const speakerClass = line.speaker === "A" ? "speaker-a" : "speaker-b";
+        container.innerHTML += `
+          <div class="dialogue-line ${speakerClass}">
+            <span class="speaker-label">${line.speaker}</span>
+            <span class="dialogue-bubble">${line.line}</span>
+          </div>
+        `;
+      });
+    });
   }
 
   createVocabSection(title, items) {

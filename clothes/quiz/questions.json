@@ -12,19 +12,58 @@
   "vocabulary": {
     "clothes": [
       { "finnish": "takki", "english": "jacket/coat", "plural": "takit" },
-      { "finnish": "housut", "english": "pants/trousers", "plural": "housut", "alwaysPlural": true },
-      { "finnish": "farkut", "english": "jeans", "plural": "farkut", "alwaysPlural": true },
+      {
+        "finnish": "housut",
+        "english": "pants/trousers",
+        "plural": "housut",
+        "alwaysPlural": true
+      },
+      {
+        "finnish": "farkut",
+        "english": "jeans",
+        "plural": "farkut",
+        "alwaysPlural": true
+      },
       { "finnish": "t-paita", "english": "t-shirt", "plural": "t-paidat" },
       { "finnish": "paita", "english": "shirt", "plural": "paidat" },
-      { "finnish": "villapaita", "english": "sweater/jumper", "plural": "villapaidat" },
+      {
+        "finnish": "villapaita",
+        "english": "sweater/jumper",
+        "plural": "villapaidat"
+      },
       { "finnish": "hame", "english": "skirt", "plural": "hameet" },
       { "finnish": "mekko", "english": "dress", "plural": "mekot" },
-      { "finnish": "shortsit", "english": "shorts", "plural": "shortsit", "alwaysPlural": true },
+      {
+        "finnish": "shortsit",
+        "english": "shorts",
+        "plural": "shortsit",
+        "alwaysPlural": true
+      },
       { "finnish": "puku", "english": "suit", "plural": "puvut" },
-      { "finnish": "kengät", "english": "shoes", "plural": "kengät", "alwaysPlural": true },
-      { "finnish": "saappaat", "english": "boots", "plural": "saappaat", "alwaysPlural": true },
-      { "finnish": "lenkkarit", "english": "sneakers/trainers", "plural": "lenkkarit", "alwaysPlural": true },
-      { "finnish": "sukkahousut", "english": "tights/pantyhose", "plural": "sukkahousut", "alwaysPlural": true },
+      {
+        "finnish": "kengät",
+        "english": "shoes",
+        "plural": "kengät",
+        "alwaysPlural": true
+      },
+      {
+        "finnish": "saappaat",
+        "english": "boots",
+        "plural": "saappaat",
+        "alwaysPlural": true
+      },
+      {
+        "finnish": "lenkkarit",
+        "english": "sneakers/trainers",
+        "plural": "lenkkarit",
+        "alwaysPlural": true
+      },
+      {
+        "finnish": "sukkahousut",
+        "english": "tights/pantyhose",
+        "plural": "sukkahousut",
+        "alwaysPlural": true
+      },
       { "finnish": "villatakki", "english": "cardigan", "plural": "villatakit" }
     ],
     "colors": [
@@ -40,10 +79,26 @@
       { "finnish": "ruskea", "english": "brown", "plural": "ruskeat" },
       { "finnish": "harmaa", "english": "gray", "plural": "harmaat" },
       { "finnish": "beige", "english": "beige", "plural": "beiget" },
-      { "finnish": "tummanpunainen", "english": "dark red", "plural": "tummanpunaiset" },
-      { "finnish": "tummansininen", "english": "dark blue", "plural": "tummansiniset" },
-      { "finnish": "vaaleansininen", "english": "light blue", "plural": "vaaleansiniset" },
-      { "finnish": "vaaleanpunainen", "english": "light pink", "plural": "vaaleanpunaiset" }
+      {
+        "finnish": "tummanpunainen",
+        "english": "dark red",
+        "plural": "tummanpunaiset"
+      },
+      {
+        "finnish": "tummansininen",
+        "english": "dark blue",
+        "plural": "tummansiniset"
+      },
+      {
+        "finnish": "vaaleansininen",
+        "english": "light blue",
+        "plural": "vaaleansiniset"
+      },
+      {
+        "finnish": "vaaleanpunainen",
+        "english": "light pink",
+        "plural": "vaaleanpunaiset"
+      }
     ],
     "grammar_notes": {
       "question": "Mitä sulla on päällä? = What are you wearing?",
@@ -330,7 +385,12 @@
       "type": "mcq",
       "subtopic": "plural",
       "question": "How do you say 'black jeans' in Finnish?",
-      "options": ["musta farkut", "mustat farkut", "mustia farkkuja", "musta farkku"],
+      "options": [
+        "musta farkut",
+        "mustat farkut",
+        "mustia farkkuja",
+        "musta farkku"
+      ],
       "correct": 1,
       "explanation": "mustat farkut. Both adjective and noun take plural: musta → mustat"
     },
@@ -339,7 +399,12 @@
       "type": "mcq",
       "subtopic": "plural",
       "question": "How do you say 'white sneakers' in Finnish?",
-      "options": ["valkoinen lenkkarit", "valkoiset lenkkarit", "valkoisia lenkkareita", "valkoinen lenkkari"],
+      "options": [
+        "valkoinen lenkkarit",
+        "valkoiset lenkkarit",
+        "valkoisia lenkkareita",
+        "valkoinen lenkkari"
+      ],
       "correct": 1,
       "explanation": "valkoiset lenkkarit. valkoinen → valkoiset (plural adjective)"
     },
@@ -348,7 +413,12 @@
       "type": "mcq",
       "subtopic": "plural",
       "question": "How do you say 'blue shoes' in Finnish?",
-      "options": ["sininen kengät", "siniset kengät", "sinisiä kenkiä", "sininen kenkä"],
+      "options": [
+        "sininen kengät",
+        "siniset kengät",
+        "sinisiä kenkiä",
+        "sininen kenkä"
+      ],
       "correct": 1,
       "explanation": "siniset kengät. sininen → siniset"
     },
@@ -366,7 +436,12 @@
       "type": "mcq",
       "subtopic": "sentences",
       "question": "What does 'Mitä sulla on päällä?' mean?",
-      "options": ["What do you like?", "What are you wearing?", "What do you have?", "What are you doing?"],
+      "options": [
+        "What do you like?",
+        "What are you wearing?",
+        "What do you have?",
+        "What are you doing?"
+      ],
       "correct": 1,
       "explanation": "Mitä sulla on päällä? = What are you wearing? (literally: What do you have on?)"
     },
@@ -375,7 +450,12 @@
       "type": "mcq",
       "subtopic": "sentences",
       "question": "How do you say 'I'm wearing a dress'?",
-      "options": ["Mulla on mekko.", "Mulla on päällä mekko.", "Mä tykkään mekosta.", "Mä ostan mekon."],
+      "options": [
+        "Mulla on mekko.",
+        "Mulla on päällä mekko.",
+        "Mä tykkään mekosta.",
+        "Mä ostan mekon."
+      ],
       "correct": 1,
       "explanation": "Mulla on päällä mekko. = I'm wearing a dress."
     },
@@ -384,7 +464,12 @@
       "type": "mcq",
       "subtopic": "sentences",
       "question": "How do you say 'I'm wearing a yellow dress'?",
-      "options": ["Mulla on päällä keltainen mekko.", "Mulla on päällä keltaiset mekot.", "Mulla on keltainen.", "Keltainen mekko on päällä."],
+      "options": [
+        "Mulla on päällä keltainen mekko.",
+        "Mulla on päällä keltaiset mekot.",
+        "Mulla on keltainen.",
+        "Keltainen mekko on päällä."
+      ],
       "correct": 0,
       "explanation": "Mulla on päällä keltainen mekko. (singular: no -t suffix)"
     },
@@ -393,7 +478,12 @@
       "type": "mcq",
       "subtopic": "sentences",
       "question": "How do you say 'I'm wearing black pants'?",
-      "options": ["Mulla on päällä musta housut.", "Mulla on päällä mustat housut.", "Mulla on musta housu.", "Mustat housut on päällä."],
+      "options": [
+        "Mulla on päällä musta housut.",
+        "Mulla on päällä mustat housut.",
+        "Mulla on musta housu.",
+        "Mustat housut on päällä."
+      ],
       "correct": 1,
       "explanation": "Mulla on päällä mustat housut. (plural: both adjective and noun take -t)"
     },
@@ -402,7 +492,12 @@
       "type": "mcq",
       "subtopic": "sentences",
       "question": "What does 'Mulla on päällä vihreä villatakki' mean?",
-      "options": ["I have a green cardigan.", "I'm wearing a green cardigan.", "I like green cardigans.", "I want a green cardigan."],
+      "options": [
+        "I have a green cardigan.",
+        "I'm wearing a green cardigan.",
+        "I like green cardigans.",
+        "I want a green cardigan."
+      ],
       "correct": 1,
       "explanation": "Mulla on päällä vihreä villatakki = I'm wearing a green cardigan"
     },
@@ -429,7 +524,12 @@
       "type": "mcq",
       "subtopic": "plural",
       "question": "Which clothing items are ALWAYS plural in Finnish?",
-      "options": ["mekko, takki, paita", "housut, farkut, kengät", "hame, puku, villapaita", "t-paita, villatakki, mekko"],
+      "options": [
+        "mekko, takki, paita",
+        "housut, farkut, kengät",
+        "hame, puku, villapaita",
+        "t-paita, villatakki, mekko"
+      ],
       "correct": 1,
       "explanation": "housut, farkut, kengät, shortsit, saappaat, lenkkarit are always plural (like 'pants' in English)"
     },
@@ -474,7 +574,12 @@
       "type": "mcq",
       "subtopic": "plural",
       "question": "How do you say 'red shoes' in Finnish?",
-      "options": ["punainen kengät", "punaiset kengät", "punaisia kenkiä", "punainen kenkä"],
+      "options": [
+        "punainen kengät",
+        "punaiset kengät",
+        "punaisia kenkiä",
+        "punainen kenkä"
+      ],
       "correct": 1,
       "explanation": "punaiset kengät. punainen → punaiset (-nen → -set)"
     },
@@ -492,7 +597,12 @@
       "type": "mcq",
       "subtopic": "sentences",
       "question": "Translate: 'Mulla on päällä siniset farkut ja valkoinen t-paita.'",
-      "options": ["I have blue jeans and a white t-shirt.", "I'm wearing blue jeans and a white t-shirt.", "I like blue jeans and white t-shirts.", "I'm buying blue jeans and a white t-shirt."],
+      "options": [
+        "I have blue jeans and a white t-shirt.",
+        "I'm wearing blue jeans and a white t-shirt.",
+        "I like blue jeans and white t-shirts.",
+        "I'm buying blue jeans and a white t-shirt."
+      ],
       "correct": 1,
       "explanation": "I'm wearing blue jeans and a white t-shirt."
     },

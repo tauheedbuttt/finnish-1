@@ -196,7 +196,12 @@
       "type": "mcq",
       "subtopic": "extended",
       "question": "What does 'setä' mean?",
-      "options": ["aunt", "uncle (mother's brother)", "uncle (father's brother)", "grandfather"],
+      "options": [
+        "aunt",
+        "uncle (mother's brother)",
+        "uncle (father's brother)",
+        "grandfather"
+      ],
       "correct": 2,
       "explanation": "setä = uncle (specifically father's brother)"
     },
@@ -205,7 +210,12 @@
       "type": "mcq",
       "subtopic": "extended",
       "question": "What does 'eno' mean?",
-      "options": ["aunt", "uncle (mother's brother)", "uncle (father's brother)", "cousin"],
+      "options": [
+        "aunt",
+        "uncle (mother's brother)",
+        "uncle (father's brother)",
+        "cousin"
+      ],
       "correct": 1,
       "explanation": "eno = uncle (specifically mother's brother)"
     },
@@ -223,7 +233,12 @@
       "type": "mcq",
       "subtopic": "extended",
       "question": "What does 'mummi' mean?",
-      "options": ["grandmother (informal)", "grandfather (informal)", "aunt", "mother"],
+      "options": [
+        "grandmother (informal)",
+        "grandfather (informal)",
+        "aunt",
+        "mother"
+      ],
       "correct": 0,
       "explanation": "mummi = grandma (informal). Also: mummo"
     },
@@ -232,7 +247,12 @@
       "type": "mcq",
       "subtopic": "extended",
       "question": "What does 'ukki' mean?",
-      "options": ["grandmother (informal)", "grandfather (informal)", "uncle", "father"],
+      "options": [
+        "grandmother (informal)",
+        "grandfather (informal)",
+        "uncle",
+        "father"
+      ],
       "correct": 1,
       "explanation": "ukki = grandpa (informal). Also: vaari"
     },
@@ -286,7 +306,12 @@
       "type": "mcq",
       "subtopic": "questions",
       "question": "How do you ask 'Do you have siblings?' informally?",
-      "options": ["Oletko sä sisko?", "Onko sulla sisaruksia?", "Kuinka monta sisarusta?", "Mulla on sisko."],
+      "options": [
+        "Oletko sä sisko?",
+        "Onko sulla sisaruksia?",
+        "Kuinka monta sisarusta?",
+        "Mulla on sisko."
+      ],
       "correct": 1,
       "explanation": "Onko sulla ___? = Do you have ___? (informal)"
     },
@@ -295,7 +320,12 @@
       "type": "mcq",
       "subtopic": "questions",
       "question": "How do you say 'Yes, I have a brother' informally?",
-      "options": ["Mulla on veli.", "Joo, mulla on veli.", "Mä en oo veli.", "Onko sulla veli?"],
+      "options": [
+        "Mulla on veli.",
+        "Joo, mulla on veli.",
+        "Mä en oo veli.",
+        "Onko sulla veli?"
+      ],
       "correct": 1,
       "explanation": "Joo, mulla on ___ = Yes, I have ___"
     },
@@ -304,7 +334,12 @@
       "type": "mcq",
       "subtopic": "questions",
       "question": "How do you say 'I don't have siblings' informally?",
-      "options": ["Mulla on sisaruksia.", "Onko sulla sisaruksia?", "Mulla ei oo sisaruksia.", "Joo, mulla on sisko."],
+      "options": [
+        "Mulla on sisaruksia.",
+        "Onko sulla sisaruksia?",
+        "Mulla ei oo sisaruksia.",
+        "Joo, mulla on sisko."
+      ],
       "correct": 2,
       "explanation": "Mulla ei oo ___ = I don't have ___"
     },
@@ -313,7 +348,12 @@
       "type": "mcq",
       "subtopic": "questions",
       "question": "How do you ask 'How many siblings do you have?'",
-      "options": ["Onko sulla sisaruksia?", "Kuinka monta sisarusta sulla on?", "Mulla on sisaruksia.", "Oletko sä sisko?"],
+      "options": [
+        "Onko sulla sisaruksia?",
+        "Kuinka monta sisarusta sulla on?",
+        "Mulla on sisaruksia.",
+        "Oletko sä sisko?"
+      ],
       "correct": 1,
       "explanation": "Kuinka monta ___a/ä sulla on? = How many ___ do you have?"
     },
@@ -322,7 +362,12 @@
       "type": "mcq",
       "subtopic": "questions",
       "question": "What does 'Mulla on kaksi siskoa' mean?",
-      "options": ["I have a sister", "I have two sisters", "Do you have sisters?", "I don't have sisters"],
+      "options": [
+        "I have a sister",
+        "I have two sisters",
+        "Do you have sisters?",
+        "I don't have sisters"
+      ],
       "correct": 1,
       "explanation": "Mulla on *numero* ___a/ä = I have *number* ___"
     },
@@ -331,7 +376,12 @@
       "type": "mcq",
       "subtopic": "questions",
       "question": "How do you say 'I am a sister' informally?",
-      "options": ["Mulla on sisko.", "Mä oon sisko.", "Onko sulla sisko?", "Mä en oo sisko."],
+      "options": [
+        "Mulla on sisko.",
+        "Mä oon sisko.",
+        "Onko sulla sisko?",
+        "Mä en oo sisko."
+      ],
       "correct": 1,
       "explanation": "Mä oon ___ = I am ___"
     },
@@ -340,7 +390,12 @@
       "type": "mcq",
       "subtopic": "questions",
       "question": "How do you say 'I am not a brother' informally?",
-      "options": ["Mä oon veli.", "Mulla on veli.", "Mä en oo veli.", "Onko sulla veli?"],
+      "options": [
+        "Mä oon veli.",
+        "Mulla on veli.",
+        "Mä en oo veli.",
+        "Onko sulla veli?"
+      ],
       "correct": 2,
       "explanation": "Mä en oo ___ = I am not ___"
     },
@@ -367,7 +422,12 @@
       "type": "mcq",
       "subtopic": "extended",
       "question": "In Finnish, 'eno' and 'setä' both mean uncle. What's the difference?",
-      "options": ["No difference", "eno = mother's brother, setä = father's brother", "eno = older, setä = younger", "eno = formal, setä = informal"],
+      "options": [
+        "No difference",
+        "eno = mother's brother, setä = father's brother",
+        "eno = older, setä = younger",
+        "eno = formal, setä = informal"
+      ],
       "correct": 1,
       "explanation": "Finnish distinguishes: eno = mother's brother, setä = father's brother"
     },
