@@ -1,0 +1,397 @@
+{
+  "topic": "months",
+  "title": "Finnish Months Quiz - Kuukaudet",
+  "description": "Learn the months in Finnish and their suffixes (-ssa/-ssä)",
+  "subtopics": [
+    { "id": "all", "name": "All Topics", "icon": "📚" },
+    { "id": "month-names", "name": "Month Names", "icon": "📅" },
+    { "id": "inessive", "name": "In Month (-ssa/-ssä)", "icon": "📍" },
+    { "id": "weather-months", "name": "Weather + Months", "icon": "🌤️" },
+    { "id": "seasons", "name": "Seasons", "icon": "🍂" }
+  ],
+  "vocabulary": {
+    "months": [
+      { "base": "tammikuu", "inessive": "tammikuussa", "english": "January", "season": "winter" },
+      { "base": "helmikuu", "inessive": "helmikuussa", "english": "February", "season": "winter" },
+      { "base": "maaliskuu", "inessive": "maaliskuussa", "english": "March", "season": "spring" },
+      { "base": "huhtikuu", "inessive": "huhtikuussa", "english": "April", "season": "spring" },
+      { "base": "toukokuu", "inessive": "toukokuussa", "english": "May", "season": "spring" },
+      { "base": "kesäkuu", "inessive": "kesäkuussa", "english": "June", "season": "summer" },
+      { "base": "heinäkuu", "inessive": "heinäkuussa", "english": "July", "season": "summer" },
+      { "base": "elokuu", "inessive": "elokuussa", "english": "August", "season": "summer" },
+      { "base": "syyskuu", "inessive": "syyskuussa", "english": "September", "season": "autumn" },
+      { "base": "lokakuu", "inessive": "lokakuussa", "english": "October", "season": "autumn" },
+      { "base": "marraskuu", "inessive": "marraskuussa", "english": "November", "season": "autumn" },
+      { "base": "joulukuu", "inessive": "joulukuussa", "english": "December", "season": "winter" }
+    ],
+    "seasons": [
+      { "finnish": "talvi", "inessive": "talvella", "english": "winter" },
+      { "finnish": "kevät", "inessive": "keväällä", "english": "spring" },
+      { "finnish": "kesä", "inessive": "kesällä", "english": "summer" },
+      { "finnish": "syksy", "inessive": "syksyllä", "english": "autumn" }
+    ],
+    "suffix_rule": "Add -ssa/-ssä to the month name to say 'in [month]'. All months use -ssa because 'kuu' has back vowels."
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "subtopic": "month-names",
+      "question": "What is 'January' in Finnish?",
+      "options": ["tammikuu", "helmikuu", "joulukuu", "maaliskuu"],
+      "correct": 0,
+      "explanation": "January = tammikuu (tammi = oak)"
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "subtopic": "month-names",
+      "question": "What is 'December' in Finnish?",
+      "options": ["marraskuu", "joulukuu", "lokakuu", "tammikuu"],
+      "correct": 1,
+      "explanation": "December = joulukuu (joulu = Christmas)"
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "subtopic": "month-names",
+      "question": "What is 'July' in Finnish?",
+      "options": ["kesäkuu", "elokuu", "heinäkuu", "toukokuu"],
+      "correct": 2,
+      "explanation": "July = heinäkuu (heinä = hay)"
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "subtopic": "month-names",
+      "question": "What is 'March' in Finnish?",
+      "options": ["huhtikuu", "helmikuu", "maaliskuu", "toukokuu"],
+      "correct": 2,
+      "explanation": "March = maaliskuu"
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "subtopic": "month-names",
+      "question": "What is 'September' in Finnish?",
+      "options": ["lokakuu", "syyskuu", "elokuu", "marraskuu"],
+      "correct": 1,
+      "explanation": "September = syyskuu (syys = autumn)"
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "subtopic": "month-names",
+      "question": "What is 'June' in Finnish?",
+      "options": ["heinäkuu", "toukokuu", "kesäkuu", "elokuu"],
+      "correct": 2,
+      "explanation": "June = kesäkuu (kesä = summer)"
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "subtopic": "month-names",
+      "question": "Which month is 'lokakuu'?",
+      "options": ["September", "October", "November", "August"],
+      "correct": 1,
+      "explanation": "lokakuu = October (loka = mud/dirt)"
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "subtopic": "month-names",
+      "question": "Which month is 'huhtikuu'?",
+      "options": ["March", "April", "May", "June"],
+      "correct": 1,
+      "explanation": "huhtikuu = April"
+    },
+    {
+      "id": 9,
+      "type": "mcq",
+      "subtopic": "month-names",
+      "question": "Which month is 'marraskuu'?",
+      "options": ["October", "November", "December", "September"],
+      "correct": 1,
+      "explanation": "marraskuu = November (marras = dead/dying - nature dying)"
+    },
+    {
+      "id": 10,
+      "type": "mcq",
+      "subtopic": "month-names",
+      "question": "Which month is 'toukokuu'?",
+      "options": ["April", "May", "June", "March"],
+      "correct": 1,
+      "explanation": "toukokuu = May (touko = spring sowing)"
+    },
+    {
+      "id": 11,
+      "type": "mcq",
+      "subtopic": "inessive",
+      "question": "How do you say 'in January' in Finnish?",
+      "options": ["tammikuu", "tammikuussa", "tammikuuta", "tammikuulla"],
+      "correct": 1,
+      "explanation": "Add -ssa to say 'in [month]': tammikuu → tammikuussa"
+    },
+    {
+      "id": 12,
+      "type": "mcq",
+      "subtopic": "inessive",
+      "question": "How do you say 'in July' in Finnish?",
+      "options": ["heinäkuussa", "heinäkuulla", "heinäkuu", "heinäkuuta"],
+      "correct": 0,
+      "explanation": "heinäkuu + -ssa = heinäkuussa"
+    },
+    {
+      "id": 13,
+      "type": "mcq",
+      "subtopic": "inessive",
+      "question": "How do you say 'in December' in Finnish?",
+      "options": ["joulukuulla", "joulukuuta", "joulukuussa", "joulukuu"],
+      "correct": 2,
+      "explanation": "joulukuu + -ssa = joulukuussa"
+    },
+    {
+      "id": 14,
+      "type": "mcq",
+      "subtopic": "inessive",
+      "question": "How do you say 'in May' in Finnish?",
+      "options": ["toukokuussa", "toukokuulla", "toukokuu", "toukokuuta"],
+      "correct": 0,
+      "explanation": "toukokuu + -ssa = toukokuussa"
+    },
+    {
+      "id": 15,
+      "type": "mcq",
+      "subtopic": "inessive",
+      "question": "How do you say 'in October' in Finnish?",
+      "options": ["lokakuulla", "lokakuussa", "lokakuuta", "lokakuu"],
+      "correct": 1,
+      "explanation": "lokakuu + -ssa = lokakuussa"
+    },
+    {
+      "id": 16,
+      "type": "mcq",
+      "subtopic": "inessive",
+      "question": "What suffix is used to say 'in [month]'?",
+      "options": ["-lla/-llä", "-ssa/-ssä", "-sta/-stä", "-na/-nä"],
+      "correct": 1,
+      "explanation": "Inessive case -ssa/-ssä is used. Months use -ssa because 'kuu' has back vowels."
+    },
+    {
+      "id": 17,
+      "type": "mcq",
+      "subtopic": "inessive",
+      "question": "'Maaliskuussa' means:",
+      "options": ["in March", "from March", "to March", "March"],
+      "correct": 0,
+      "explanation": "maaliskuussa = in March (inessive case)"
+    },
+    {
+      "id": 18,
+      "type": "mcq",
+      "subtopic": "inessive",
+      "question": "'Elokuussa' means:",
+      "options": ["August", "in August", "from August", "until August"],
+      "correct": 1,
+      "explanation": "elokuussa = in August"
+    },
+    {
+      "id": 19,
+      "type": "mcq",
+      "subtopic": "inessive",
+      "question": "How do you say 'in February' in Finnish?",
+      "options": ["helmikuuta", "helmikuussa", "helmikuulla", "helmikuu"],
+      "correct": 1,
+      "explanation": "helmikuu + -ssa = helmikuussa"
+    },
+    {
+      "id": 20,
+      "type": "mcq",
+      "subtopic": "inessive",
+      "question": "How do you say 'in November' in Finnish?",
+      "options": ["marraskuussa", "marraskuulla", "marraskuu", "marraskuuta"],
+      "correct": 0,
+      "explanation": "marraskuu + -ssa = marraskuussa"
+    },
+    {
+      "id": 21,
+      "type": "mcq",
+      "subtopic": "weather-months",
+      "question": "Millainen sää on Suomessa tammikuussa?",
+      "options": ["On kylmä ja sataa lunta", "On kuuma ja aurinko paistaa", "On lämmin ja sataa vettä", "On leutoa"],
+      "correct": 0,
+      "explanation": "In January in Finland, it's cold and snowy."
+    },
+    {
+      "id": 22,
+      "type": "mcq",
+      "subtopic": "weather-months",
+      "question": "Millainen sää on Suomessa heinäkuussa?",
+      "options": ["On kylmä ja pakkasta", "Sataa lunta", "On lämmin ja aurinkoista", "On pilvistä ja kylmä"],
+      "correct": 2,
+      "explanation": "In July in Finland, it's warm and sunny."
+    },
+    {
+      "id": 23,
+      "type": "mcq",
+      "subtopic": "weather-months",
+      "question": "Millainen sää on Suomessa lokakuussa?",
+      "options": ["On kuuma", "On pilvistä ja sataa vettä", "Aurinko paistaa", "On pakkasta"],
+      "correct": 1,
+      "explanation": "In October in Finland, it's cloudy and rainy (loka = mud)."
+    },
+    {
+      "id": 24,
+      "type": "mcq",
+      "subtopic": "weather-months",
+      "question": "Millainen sää on Suomessa kesäkuussa?",
+      "options": ["Sataa lunta", "On kylmä", "On lämmin ja valoisaa", "On pimeää"],
+      "correct": 2,
+      "explanation": "In June in Finland, it's warm and light (midnight sun in the north!)."
+    },
+    {
+      "id": 25,
+      "type": "mcq",
+      "subtopic": "weather-months",
+      "question": "Millainen sää on Suomessa joulukuussa?",
+      "options": ["On kuuma", "On kylmä ja pimeää", "Aurinko paistaa", "On lämmin"],
+      "correct": 1,
+      "explanation": "In December in Finland, it's cold and dark."
+    },
+    {
+      "id": 26,
+      "type": "mcq",
+      "subtopic": "seasons",
+      "question": "Which months are 'talvi' (winter) in Finland?",
+      "options": ["kesäkuu, heinäkuu, elokuu", "joulukuu, tammikuu, helmikuu", "maaliskuu, huhtikuu, toukokuu", "syyskuu, lokakuu, marraskuu"],
+      "correct": 1,
+      "explanation": "Winter = December, January, February"
+    },
+    {
+      "id": 27,
+      "type": "mcq",
+      "subtopic": "seasons",
+      "question": "Which months are 'kesä' (summer) in Finland?",
+      "options": ["kesäkuu, heinäkuu, elokuu", "joulukuu, tammikuu, helmikuu", "maaliskuu, huhtikuu, toukokuu", "syyskuu, lokakuu, marraskuu"],
+      "correct": 0,
+      "explanation": "Summer = June, July, August"
+    },
+    {
+      "id": 28,
+      "type": "mcq",
+      "subtopic": "seasons",
+      "question": "Which months are 'syksy' (autumn) in Finland?",
+      "options": ["kesäkuu, heinäkuu, elokuu", "joulukuu, tammikuu, helmikuu", "maaliskuu, huhtikuu, toukokuu", "syyskuu, lokakuu, marraskuu"],
+      "correct": 3,
+      "explanation": "Autumn = September, October, November"
+    },
+    {
+      "id": 29,
+      "type": "mcq",
+      "subtopic": "seasons",
+      "question": "Which months are 'kevät' (spring) in Finland?",
+      "options": ["kesäkuu, heinäkuu, elokuu", "joulukuu, tammikuu, helmikuu", "maaliskuu, huhtikuu, toukokuu", "syyskuu, lokakuu, marraskuu"],
+      "correct": 2,
+      "explanation": "Spring = March, April, May"
+    },
+    {
+      "id": 30,
+      "type": "mcq",
+      "subtopic": "seasons",
+      "question": "What season is 'lokakuu' in?",
+      "options": ["talvi (winter)", "kevät (spring)", "kesä (summer)", "syksy (autumn)"],
+      "correct": 3,
+      "explanation": "October is in autumn (syksy)"
+    },
+    {
+      "id": 31,
+      "type": "mcq",
+      "subtopic": "month-names",
+      "question": "Which month is 'helmikuu'?",
+      "options": ["January", "February", "March", "December"],
+      "correct": 1,
+      "explanation": "helmikuu = February (helmi = pearl)"
+    },
+    {
+      "id": 32,
+      "type": "mcq",
+      "subtopic": "month-names",
+      "question": "Which month is 'elokuu'?",
+      "options": ["July", "August", "September", "June"],
+      "correct": 1,
+      "explanation": "elokuu = August (elo = harvest/life)"
+    },
+    {
+      "id": 33,
+      "type": "mcq",
+      "subtopic": "inessive",
+      "question": "How do you say 'in April' in Finnish?",
+      "options": ["huhtikuu", "huhtikuussa", "huhtikuulla", "huhtikuuta"],
+      "correct": 1,
+      "explanation": "huhtikuu + -ssa = huhtikuussa"
+    },
+    {
+      "id": 34,
+      "type": "mcq",
+      "subtopic": "inessive",
+      "question": "How do you say 'in September' in Finnish?",
+      "options": ["syyskuulla", "syyskuussa", "syyskuu", "syyskuuta"],
+      "correct": 1,
+      "explanation": "syyskuu + -ssa = syyskuussa"
+    },
+    {
+      "id": 35,
+      "type": "mcq",
+      "subtopic": "inessive",
+      "question": "How do you say 'in June' in Finnish?",
+      "options": ["kesäkuuta", "kesäkuulla", "kesäkuussa", "kesäkuu"],
+      "correct": 2,
+      "explanation": "kesäkuu + -ssa = kesäkuussa"
+    },
+    {
+      "id": 36,
+      "type": "mcq",
+      "subtopic": "weather-months",
+      "question": "Millainen sää on Suomessa huhtikuussa?",
+      "options": ["On kuuma", "On kylmä ja sataa lunta", "On viileää ja aurinko alkaa paistaa", "On pakkasta"],
+      "correct": 2,
+      "explanation": "In April in Finland, it's chilly but the sun starts to shine more."
+    },
+    {
+      "id": 37,
+      "type": "mcq",
+      "subtopic": "weather-months",
+      "question": "Millainen sää on Suomessa marraskuussa?",
+      "options": ["On lämmin", "On pimeää ja sataa vettä", "Aurinko paistaa", "On kuuma"],
+      "correct": 1,
+      "explanation": "In November in Finland, it's dark and rainy."
+    },
+    {
+      "id": 38,
+      "type": "mcq",
+      "subtopic": "seasons",
+      "question": "What season is 'toukokuu' in?",
+      "options": ["talvi (winter)", "kevät (spring)", "kesä (summer)", "syksy (autumn)"],
+      "correct": 1,
+      "explanation": "May is in spring (kevät)"
+    },
+    {
+      "id": 39,
+      "type": "mcq",
+      "subtopic": "seasons",
+      "question": "What season is 'helmikuu' in?",
+      "options": ["talvi (winter)", "kevät (spring)", "kesä (summer)", "syksy (autumn)"],
+      "correct": 0,
+      "explanation": "February is in winter (talvi)"
+    },
+    {
+      "id": 40,
+      "type": "mcq",
+      "subtopic": "seasons",
+      "question": "What season is 'elokuu' in?",
+      "options": ["talvi (winter)", "kevät (spring)", "kesä (summer)", "syksy (autumn)"],
+      "correct": 2,
+      "explanation": "August is in summer (kesä)"
+    }
+  ]
+}

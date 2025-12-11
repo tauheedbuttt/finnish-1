@@ -1,0 +1,99 @@
+### Exact time is
+
+TIME is EXACTLY 4
+
+Kello on tasan nelja
+
+Time is exactly 6:50
+
+kello on tasan kuusi viisikymmenen
+
+![Screenshot 2025-12-10 at 6.52.06 PM.png](attachment:d5f14f87-5997-4b9c-aab5-8acbc9121a6f:Screenshot_2025-12-10_at_6.52.06_PM.png)
+
+### Time is in first half
+
+first divison: yli
+
+Time is minutes + current hour
+
+Kello on kaksikymmentaviisi **yli** nelja
+
+![Screenshot 2025-12-10 at 6.54.18 PM.png](attachment:76f56208-87b4-4edf-a782-030a86efa800:Screenshot_2025-12-10_at_6.54.18_PM.png)
+
+### Time is in exactly half
+
+puoli = half
+
+kella on kolmekymmenta seitseman = NO
+
+kella on puoli seitseman = YES
+
+Time is minutes LEFT + next hour
+
+Kello on puoli seitseman - 6:30
+
+![Screenshot 2025-12-10 at 6.59.16 PM.png](attachment:831f2555-4126-4588-8a54-bc06562566e3:Screenshot_2025-12-10_at_6.59.16_PM.png)
+
+### Time is in last half
+
+last division is = vaille
+
+15 minute = vartti
+
+kella on viisi vaille seitseman - 6:55
+
+![Screenshot 2025-12-10 at 6.59.42 PM.png](attachment:f757c2c9-3913-4021-8be1-52b68e1c4706:Screenshot_2025-12-10_at_6.59.42_PM.png)
+
+### Time words
+
+- sekunti - second
+- minuutti - minute
+- tunti - hour
+- vartti - quarter - 15
+- puoli - half
+
+### Time of the day
+
+- aamulla - morning
+- aamupäivällä - before afternoon but after morning
+- päivällä - afternoon
+- iltapäivällä - between after noon and evening
+- illalla - evening
+- yöllä - night
+
+### On what Time?
+
+add lta/ltä at end of number
+
+- yksi → yhdelta
+- kaksi → kahdelta
+- nelja → neljalta
+- yksitoista → yhde**lta**toista
+
+## Examples
+
+### Example yksi
+
+kella on virtti yli nelja OR
+
+kella on viisitoista yli nelja
+
+![Screenshot 2025-12-10 at 7.01.50 PM.png](attachment:28a07fec-4044-48ed-bc0e-6ce4233b27c6:Screenshot_2025-12-10_at_7.01.50_PM.png)
+
+### Example kaksi
+
+kella on viisi vaille yksi
+
+![image.png](attachment:30a12ac9-9a54-4138-96c5-f9241daa33b1:image.png)
+
+### Example kolme
+
+kella on puoli kahdeksan
+
+![image.png](attachment:eae20221-e855-4cf7-bf4e-e3a1bcf30b26:image.png)
+
+### Example nelja
+
+kella on kaksikymmenta vaille kuusi
+
+![image.png](attachment:dbaac9ef-0348-449f-94bc-8b5682b22c18:image.png)

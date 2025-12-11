@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finnish Language Quiz - Suomen kieli</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back Button -->
+      <a href="../../" class="back-link">← Takaisin aiheisiin</a>
+
+      <!-- Header -->
+      <header class="quiz-header">
+        <h1>🇫🇮 Suomen kieli - Quiz</h1>
+        <p class="subtitle" id="topicTitle">Loading...</p>
+      </header>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Finnish Quiz</h2>
+          <p id="quizDescription">Test your Finnish knowledge!</p>
+
+          <!-- Mode Tabs -->
+          <div class="mode-tabs">
+            <button class="mode-tab active" data-mode="mcq">
+              <span class="mode-icon">📝</span>
+              <span class="mode-label">MCQ</span>
+            </button>
+            <button class="mode-tab" data-mode="written">
+              <span class="mode-icon">✍️</span>
+              <span class="mode-label">Written</span>
+            </button>
+          </div>
+
+          <!-- Subtopic Filter -->
+          <div class="filter-container">
+            <label for="subtopicFilter" class="filter-label"
+              >🎯 Filter by subtopic:</label
+            >
+            <select id="subtopicFilter" class="filter-select">
+              <option value="all">📚 All Topics</option>
+              <!-- Options will be populated from JSON -->
+            </select>
+            <span id="questionCount" class="question-count"
+              >25 questions available</span
+            >
+          </div>
+
+          <div class="stats-preview">
+            <span>📝 10 Questions</span>
+            <span>🎯 Random Selection</span>
+          </div>
+          <button id="startBtn" class="btn btn-primary">Aloita Quiz!</button>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <!-- Mode Indicator -->
+        <div class="mode-indicator">
+          <span id="currentModeIcon">📝</span>
+          <span id="currentModeText">MCQ Mode</span>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+          <span id="progressText">1 / 10</span>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card">
+          <!-- Visual Component (Clock/Scenario) -->
+          <div id="visualContainer" class="visual-container">
+            <!-- Clock Component -->
+            <div id="clockComponent" class="clock-component hidden">
+              <svg viewBox="0 0 200 200" class="clock-svg">
+                <circle cx="100" cy="100" r="95" class="clock-face" />
+                <circle cx="100" cy="100" r="90" class="clock-inner" />
+                <!-- Hour markers -->
+                <g class="hour-markers">
+                  <line x1="100" y1="15" x2="100" y2="25" />
+                  <line x1="100" y1="175" x2="100" y2="185" />
+                  <line x1="15" y1="100" x2="25" y2="100" />
+                  <line x1="175" y1="100" x2="185" y2="100" />
+                </g>
+                <!-- Hour numbers -->
+                <text x="100" y="40" class="clock-number">12</text>
+                <text x="160" y="105" class="clock-number">3</text>
+                <text x="100" y="170" class="clock-number">6</text>
+                <text x="40" y="105" class="clock-number">9</text>
+                <!-- Clock hands -->
+                <line
+                  id="hourHand"
+                  x1="100"
+                  y1="100"
+                  x2="100"
+                  y2="55"
+                  class="hour-hand"
+                />
+                <line
+                  id="minuteHand"
+                  x1="100"
+                  y1="100"
+                  x2="100"
+                  y2="30"
+                  class="minute-hand"
+                />
+                <circle cx="100" cy="100" r="5" class="clock-center" />
+              </svg>
+            </div>
+
+            <!-- Scenario Component -->
+            <div id="scenarioComponent" class="scenario-component hidden">
+              <div class="scenario-icon" id="scenarioIcon">🍽️</div>
+              <div class="scenario-time" id="scenarioTime">18:00</div>
+            </div>
+
+            <!-- Time of Day Component -->
+            <div id="timeOfDayComponent" class="time-of-day-component hidden">
+              <div class="time-display" id="timeDisplay">07:00</div>
+              <div class="sky-indicator" id="skyIndicator"></div>
+            </div>
+          </div>
+
+          <!-- Question -->
+          <h2 id="questionText" class="question-text">Question goes here?</h2>
+
+          <!-- Options (MCQ Mode) -->
+          <div id="optionsContainer" class="options-container">
+            <!-- Options will be inserted here -->
+          </div>
+
+          <!-- Written Input (Written Mode) -->
+          <div id="writtenContainer" class="written-container hidden">
+            <input
+              type="text"
+              id="writtenInput"
+              class="written-input"
+              placeholder="Kirjoita vastauksesi tähän..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button id="submitWrittenBtn" class="btn btn-primary">
+              Tarkista
+            </button>
+            <div id="writtenHint" class="written-hint hidden">
+              <span class="hint-label">💡 Vihje:</span>
+              <span id="hintText"></span>
+            </div>
+          </div>
+
+          <!-- Feedback -->
+          <div id="feedback" class="feedback hidden">
+            <div id="feedbackIcon" class="feedback-icon">✓</div>
+            <p id="feedbackText" class="feedback-text">Explanation here</p>
+          </div>
+
+          <!-- Next Button -->
+          <button id="nextBtn" class="btn btn-secondary hidden">
+            Seuraava →
+          </button>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>Quiz Complete!</h2>
+          <div class="score-circle">
+            <span id="scorePercent">0%</span>
+          </div>
+          <p class="score-text">
+            Sait <span id="correctCount">0</span> /
+            <span id="totalCount">10</span> oikein!
+          </p>
+          <div class="grade-message" id="gradeMessage">Hyvä työ!</div>
+          <div class="results-actions">
+            <button id="retryBtn" class="btn btn-primary">
+              Yritä uudelleen
+            </button>
+            <button id="reviewBtn" class="btn btn-secondary">
+              Tarkista vastaukset
+            </button>
+          </div>
+        </div>
+
+        <!-- Review Section -->
+        <div id="reviewSection" class="review-section hidden">
+          <h3>Vastausten tarkistus</h3>
+          <div id="reviewContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

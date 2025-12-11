@@ -1,0 +1,359 @@
+{
+  "topic": "time",
+  "title": "Finnish Time Quiz - Kellonaika",
+  "description": "Test your knowledge of telling time in Finnish",
+  "questions": [
+    {
+      "id": 1,
+      "type": "clock",
+      "time": "04:00",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on tasan neljä",
+        "Kello on tasan viisi",
+        "Kello on puoli neljä",
+        "Kello on neljä yli"
+      ],
+      "correct": 0,
+      "explanation": "Exact time uses 'tasan' + hour number"
+    },
+    {
+      "id": 2,
+      "type": "clock",
+      "time": "06:30",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on puoli kuusi",
+        "Kello on puoli seitsemän",
+        "Kello on kolmekymmentä kuusi",
+        "Kello on tasan kuusi"
+      ],
+      "correct": 1,
+      "explanation": "For half past, use 'puoli' + NEXT hour. 6:30 = puoli seitsemän"
+    },
+    {
+      "id": 3,
+      "type": "clock",
+      "time": "04:25",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on kaksikymmentäviisi vaille viisi",
+        "Kello on kaksikymmentäviisi yli neljä",
+        "Kello on puoli viisi",
+        "Kello on kaksikymmentäviisi yli viisi"
+      ],
+      "correct": 1,
+      "explanation": "First half uses 'yli' (past). Minutes + yli + current hour"
+    },
+    {
+      "id": 4,
+      "type": "clock",
+      "time": "06:55",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on viisi yli kuusi",
+        "Kello on viisi yli seitsemän",
+        "Kello on viisi vaille seitsemän",
+        "Kello on viisi vaille kuusi"
+      ],
+      "correct": 2,
+      "explanation": "Last half uses 'vaille' (to). Minutes remaining + vaille + next hour"
+    },
+    {
+      "id": 5,
+      "type": "clock",
+      "time": "04:15",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on vartti vaille viisi",
+        "Kello on vartti yli neljä",
+        "Kello on puoli neljä",
+        "Kello on vartti yli viisi"
+      ],
+      "correct": 1,
+      "explanation": "15 minutes = vartti (quarter). First half uses 'yli'"
+    },
+    {
+      "id": 6,
+      "type": "clock",
+      "time": "07:30",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on puoli seitsemän",
+        "Kello on puoli kahdeksan",
+        "Kello on kolmekymmentä seitsemän",
+        "Kello on puoli yhdeksän"
+      ],
+      "correct": 1,
+      "explanation": "7:30 = puoli kahdeksan (half to eight)"
+    },
+    {
+      "id": 7,
+      "type": "clock",
+      "time": "12:55",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on viisi vaille kaksitoista",
+        "Kello on viisi yli kaksitoista",
+        "Kello on viisi vaille yksi",
+        "Kello on viisi yli yksi"
+      ],
+      "correct": 2,
+      "explanation": "5 minutes to 1:00 = viisi vaille yksi"
+    },
+    {
+      "id": 8,
+      "type": "clock",
+      "time": "05:40",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on neljäkymmentä yli viisi",
+        "Kello on kaksikymmentä vaille kuusi",
+        "Kello on kaksikymmentä yli viisi",
+        "Kello on kaksikymmentä vaille viisi"
+      ],
+      "correct": 1,
+      "explanation": "5:40 = 20 minutes to 6 = kaksikymmentä vaille kuusi"
+    },
+    {
+      "id": 9,
+      "type": "clock",
+      "time": "08:45",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on vartti vaille yhdeksän",
+        "Kello on vartti yli kahdeksan",
+        "Kello on vartti vaille kahdeksan",
+        "Kello on puoli yhdeksän"
+      ],
+      "correct": 0,
+      "explanation": "8:45 = quarter to 9 = vartti vaille yhdeksän"
+    },
+    {
+      "id": 10,
+      "type": "clock",
+      "time": "03:10",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on kymmenen vaille neljä",
+        "Kello on kymmenen yli kolme",
+        "Kello on kymmenen yli neljä",
+        "Kello on puoli kolme"
+      ],
+      "correct": 1,
+      "explanation": "3:10 = 10 past 3 = kymmenen yli kolme"
+    },
+    {
+      "id": 11,
+      "type": "scenario",
+      "scenario": "dinner",
+      "time": "18:00",
+      "question": "Illallinen on kello kuusi. Milloin syöt illallista?",
+      "options": [
+        "Syön illallista kuudelta",
+        "Syön illallista seitsemältä",
+        "Syön illallista viideltä",
+        "Syön illallista kahdeksalta"
+      ],
+      "correct": 0,
+      "explanation": "kuusi → kuudelta (at six). Add -lta/-ltä for 'at what time'"
+    },
+    {
+      "id": 12,
+      "type": "scenario",
+      "scenario": "course",
+      "time": "09:00",
+      "question": "Kurssi alkaa kello yhdeksän. Mihin aikaan menet kurssille?",
+      "options": [
+        "Menen kurssille kahdeksalta",
+        "Menen kurssille kymmeneltä",
+        "Menen kurssille yhdeksältä",
+        "Menen kurssille seitsemältä"
+      ],
+      "correct": 2,
+      "explanation": "yhdeksän → yhdeksältä (at nine)"
+    },
+    {
+      "id": 13,
+      "type": "scenario",
+      "scenario": "meeting",
+      "time": "14:00",
+      "question": "Kokous on kello kaksi. Milloin kokous alkaa?",
+      "options": [
+        "Kokous alkaa yhdeltä",
+        "Kokous alkaa kahdelta",
+        "Kokous alkaa kolmelta",
+        "Kokous alkaa neljältä"
+      ],
+      "correct": 1,
+      "explanation": "kaksi → kahdelta (at two)"
+    },
+    {
+      "id": 14,
+      "type": "time-of-day",
+      "question": "Kello on 07:00. Mikä aika päivästä on?",
+      "options": [
+        "illalla",
+        "yöllä",
+        "aamulla",
+        "päivällä"
+      ],
+      "correct": 2,
+      "explanation": "7:00 AM is morning = aamulla"
+    },
+    {
+      "id": 15,
+      "type": "time-of-day",
+      "question": "Kello on 22:00. Mikä aika päivästä on?",
+      "options": [
+        "aamulla",
+        "päivällä",
+        "iltapäivällä",
+        "illalla"
+      ],
+      "correct": 3,
+      "explanation": "22:00 (10 PM) is evening = illalla"
+    },
+    {
+      "id": 16,
+      "type": "time-of-day",
+      "question": "Kello on 15:00. Mikä aika päivästä on?",
+      "options": [
+        "aamupäivällä",
+        "iltapäivällä",
+        "yöllä",
+        "aamulla"
+      ],
+      "correct": 1,
+      "explanation": "15:00 (3 PM) is late afternoon = iltapäivällä"
+    },
+    {
+      "id": 17,
+      "type": "scenario",
+      "scenario": "breakfast",
+      "time": "08:00",
+      "question": "Aamiainen on kello kahdeksan. Milloin syöt aamiaista?",
+      "options": [
+        "Syön aamiaista seitsemältä",
+        "Syön aamiaista kahdeksalta",
+        "Syön aamiaista yhdeksältä",
+        "Syön aamiaista kuudelta"
+      ],
+      "correct": 1,
+      "explanation": "kahdeksan → kahdeksalta (at eight)"
+    },
+    {
+      "id": 18,
+      "type": "clock",
+      "time": "11:30",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on puoli yksitoista",
+        "Kello on puoli kaksitoista",
+        "Kello on puoli kymmenen",
+        "Kello on kolmekymmentä yksitoista"
+      ],
+      "correct": 1,
+      "explanation": "11:30 = puoli kaksitoista (half to twelve)"
+    },
+    {
+      "id": 19,
+      "type": "clock",
+      "time": "02:05",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on viisi vaille kaksi",
+        "Kello on viisi yli yksi",
+        "Kello on viisi yli kaksi",
+        "Kello on viisi vaille kolme"
+      ],
+      "correct": 2,
+      "explanation": "2:05 = viisi yli kaksi (five past two)"
+    },
+    {
+      "id": 20,
+      "type": "clock",
+      "time": "09:50",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on kymmenen yli yhdeksän",
+        "Kello on kymmenen vaille kymmenen",
+        "Kello on kymmenen vaille yhdeksän",
+        "Kello on puoli kymmenen"
+      ],
+      "correct": 1,
+      "explanation": "9:50 = 10 minutes to 10 = kymmenen vaille kymmenen"
+    },
+    {
+      "id": 21,
+      "type": "scenario",
+      "scenario": "bus",
+      "time": "07:30",
+      "question": "Bussi lähtee puoli kahdeksan. Mihin aikaan sinun pitää olla pysäkillä?",
+      "options": [
+        "Minun pitää olla pysäkillä seitsemältä",
+        "Minun pitää olla pysäkillä puoli seitsemältä",
+        "Minun pitää olla pysäkillä puoli kahdeksalta",
+        "Minun pitää olla pysäkillä kahdeksalta"
+      ],
+      "correct": 2,
+      "explanation": "puoli kahdeksan → puoli kahdeksalta (at half past seven)"
+    },
+    {
+      "id": 22,
+      "type": "clock",
+      "time": "10:35",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on viisi yli puoli yksitoista",
+        "Kello on kaksikymmentäviisi vaille yksitoista",
+        "Kello on kolmekymmentäviisi yli kymmenen",
+        "Kello on viisi yli puoli kymmenen"
+      ],
+      "correct": 0,
+      "explanation": "10:35 = 5 minutes past half to eleven = viisi yli puoli yksitoista"
+    },
+    {
+      "id": 23,
+      "type": "scenario",
+      "scenario": "lunch",
+      "time": "12:00",
+      "question": "Lounas on keskipäivällä. Mihin aikaan syöt lounasta?",
+      "options": [
+        "Syön lounasta yhdeltätoista",
+        "Syön lounasta kahdeltatoista",
+        "Syön lounasta yhdeltä",
+        "Syön lounasta kahdelta"
+      ],
+      "correct": 1,
+      "explanation": "kaksitoista → kahdeltatoista (at twelve)"
+    },
+    {
+      "id": 24,
+      "type": "time-of-day",
+      "question": "Kello on 11:00. Mikä aika päivästä on?",
+      "options": [
+        "aamulla",
+        "aamupäivällä",
+        "päivällä",
+        "illalla"
+      ],
+      "correct": 1,
+      "explanation": "11:00 AM is late morning = aamupäivällä"
+    },
+    {
+      "id": 25,
+      "type": "clock",
+      "time": "01:00",
+      "question": "Paljonko kello on?",
+      "options": [
+        "Kello on tasan kaksi",
+        "Kello on tasan yksi",
+        "Kello on puoli yksi",
+        "Kello on tasan kaksitoista"
+      ],
+      "correct": 1,
+      "explanation": "1:00 = tasan yksi (exactly one)"
+    }
+  ]
+}

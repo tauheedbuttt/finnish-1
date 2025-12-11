@@ -1,0 +1,332 @@
+{
+  "topic": "weather",
+  "title": "Finnish Weather Quiz - Sää",
+  "description": "Practice describing weather in Finnish - write 3 sentences for each weather condition",
+  "mode": "writing-practice",
+  "instructions": "Look at the weather condition and write 3 Finnish sentences describing it. Include weather type, temperature, and an adjective!",
+  "subtopics": [
+    { "id": "all", "name": "All Weather", "icon": "🌤️" },
+    { "id": "sunny", "name": "Sunny/Clear", "icon": "☀️" },
+    { "id": "cloudy", "name": "Cloudy", "icon": "☁️" },
+    { "id": "rainy", "name": "Rainy", "icon": "🌧️" },
+    { "id": "snowy", "name": "Snowy", "icon": "🌨️" },
+    { "id": "stormy", "name": "Stormy", "icon": "⛈️" },
+    { "id": "cold", "name": "Cold/Freezing", "icon": "🥶" },
+    { "id": "warm", "name": "Warm/Hot", "icon": "🥵" }
+  ],
+  "vocabulary": {
+    "weather_types": [
+      { "finnish": "Aurinko paistaa", "english": "Sun is shining" },
+      { "finnish": "On aurinkoista", "english": "It's sunny" },
+      { "finnish": "Tuulee", "english": "It's windy" },
+      { "finnish": "On tuulista", "english": "It's windy" },
+      { "finnish": "On pilvistä", "english": "It's cloudy" },
+      { "finnish": "On puolipilvistä", "english": "It's partly cloudy" },
+      { "finnish": "On sumuista", "english": "It's foggy" },
+      { "finnish": "On loskaista", "english": "It's slushy" },
+      { "finnish": "On myrsky", "english": "There's a storm" },
+      { "finnish": "On ukkonen", "english": "There's thunder" }
+    ],
+    "precipitation": [
+      { "finnish": "Sataa vettä", "english": "It's raining" },
+      { "finnish": "Sataa lunta", "english": "It's snowing" },
+      { "finnish": "Sataa räntää", "english": "It's sleeting" },
+      { "finnish": "Sataa rakeita", "english": "It's hailing" }
+    ],
+    "temperature": [
+      { "finnish": "On kuuma", "english": "It's hot" },
+      { "finnish": "On lämmin", "english": "It's warm" },
+      { "finnish": "On leutoa", "english": "It's mild" },
+      { "finnish": "On viileää", "english": "It's chilly" },
+      { "finnish": "On kylmä", "english": "It's cold" },
+      { "finnish": "On pakkasta", "english": "It's below zero" }
+    ],
+    "degrees": [
+      { "finnish": "aste", "english": "degree (1)" },
+      { "finnish": "astetta", "english": "degrees (0 or >2)" }
+    ],
+    "adjectives": [
+      { "finnish": "hyvä", "english": "good" },
+      { "finnish": "kaunis", "english": "beautiful" },
+      { "finnish": "huono", "english": "bad" }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "subtopic": "sunny",
+      "weatherIcon": "sunny",
+      "temperature": "+25",
+      "city": "Dakar",
+      "prompt": "Describe the sunny, hot weather",
+      "hints": [
+        "On aurinkoista",
+        "On kuuma/lämmin",
+        "Kaksikymmentäviisi astetta"
+      ],
+      "exampleSentences": [
+        "Aurinko paistaa.",
+        "On kuuma.",
+        "On kaksikymmentäviisi astetta."
+      ]
+    },
+    {
+      "id": 2,
+      "subtopic": "cloudy",
+      "weatherIcon": "cloudy",
+      "temperature": "+14",
+      "city": "Berliini",
+      "prompt": "Describe the cloudy weather",
+      "hints": ["On pilvistä", "On viileää/leutoa", "Neljätoista astetta"],
+      "exampleSentences": [
+        "On pilvistä.",
+        "On viileää.",
+        "On neljätoista astetta."
+      ]
+    },
+    {
+      "id": 3,
+      "subtopic": "rainy",
+      "weatherIcon": "rainy",
+      "temperature": "+17",
+      "city": "Caracas",
+      "prompt": "Describe the rainy weather",
+      "hints": ["Sataa vettä", "On lämmin", "Seitsemäntoista astetta"],
+      "exampleSentences": [
+        "Sataa vettä.",
+        "On lämmin.",
+        "On seitsemäntoista astetta."
+      ]
+    },
+    {
+      "id": 4,
+      "subtopic": "snowy",
+      "weatherIcon": "snowy",
+      "temperature": "-5",
+      "city": "Novosibirsk",
+      "prompt": "Describe the snowy, cold weather",
+      "hints": ["Sataa lunta", "On kylmä/pakkasta", "Viisi astetta pakkasta"],
+      "exampleSentences": [
+        "Sataa lunta.",
+        "On pakkasta.",
+        "On viisi astetta pakkasta."
+      ]
+    },
+    {
+      "id": 5,
+      "subtopic": "cloudy",
+      "weatherIcon": "partly-cloudy",
+      "temperature": "+15",
+      "city": "New York",
+      "prompt": "Describe the partly cloudy weather",
+      "hints": ["On puolipilvistä", "On leutoa", "Viisitoista astetta"],
+      "exampleSentences": [
+        "On puolipilvistä.",
+        "On leutoa.",
+        "On viisitoista astetta."
+      ]
+    },
+    {
+      "id": 6,
+      "subtopic": "warm",
+      "weatherIcon": "sunny",
+      "temperature": "+39",
+      "city": "Delhi",
+      "prompt": "Describe the very hot, sunny weather",
+      "hints": ["Aurinko paistaa", "On kuuma", "Kolmekymmentäyhdeksän astetta"],
+      "exampleSentences": [
+        "Aurinko paistaa.",
+        "On kuuma.",
+        "On kolmekymmentäyhdeksän astetta."
+      ]
+    },
+    {
+      "id": 7,
+      "subtopic": "rainy",
+      "weatherIcon": "rainy",
+      "temperature": "+22",
+      "city": "Nairobi",
+      "prompt": "Describe the rainy, warm weather",
+      "hints": ["Sataa vettä", "On lämmin", "Kaksikymmentäkaksi astetta"],
+      "exampleSentences": [
+        "Sataa vettä.",
+        "On lämmin.",
+        "On kaksikymmentäkaksi astetta."
+      ]
+    },
+    {
+      "id": 8,
+      "subtopic": "cold",
+      "weatherIcon": "snowy",
+      "temperature": "0",
+      "city": "Nuuk",
+      "prompt": "Describe the snowy, freezing weather",
+      "hints": ["Sataa lunta", "On kylmä", "Nolla astetta"],
+      "exampleSentences": ["Sataa lunta.", "On kylmä.", "On nolla astetta."]
+    },
+    {
+      "id": 9,
+      "subtopic": "warm",
+      "weatherIcon": "sunny",
+      "temperature": "+32",
+      "city": "Riad",
+      "prompt": "Describe the hot desert weather",
+      "hints": ["Aurinko paistaa", "On kuuma", "Kolmekymmentäkaksi astetta"],
+      "exampleSentences": [
+        "Aurinko paistaa.",
+        "On kuuma.",
+        "On kolmekymmentäkaksi astetta."
+      ]
+    },
+    {
+      "id": 10,
+      "subtopic": "sunny",
+      "weatherIcon": "sunny",
+      "temperature": "+20",
+      "city": "Tokio",
+      "prompt": "Describe the pleasant sunny weather",
+      "hints": ["On aurinkoista", "On lämmin", "Kaksikymmentä astetta"],
+      "exampleSentences": [
+        "On aurinkoista.",
+        "On lämmin.",
+        "On kaksikymmentä astetta."
+      ]
+    },
+    {
+      "id": 11,
+      "subtopic": "rainy",
+      "weatherIcon": "rainy",
+      "temperature": "+28",
+      "city": "Singapore",
+      "prompt": "Describe the tropical rainy weather",
+      "hints": [
+        "Sataa vettä",
+        "On lämmin/kuuma",
+        "Kaksikymmentäkahdeksan astetta"
+      ],
+      "exampleSentences": [
+        "Sataa vettä.",
+        "On lämmin.",
+        "On kaksikymmentäkahdeksan astetta."
+      ]
+    },
+    {
+      "id": 12,
+      "subtopic": "cloudy",
+      "weatherIcon": "windy",
+      "temperature": "+19",
+      "city": "Kapkaupunki",
+      "prompt": "Describe the windy weather",
+      "hints": ["Tuulee/On tuulista", "On leutoa", "Yhdeksäntoista astetta"],
+      "exampleSentences": [
+        "Tuulee.",
+        "On leutoa.",
+        "On yhdeksäntoista astetta."
+      ]
+    },
+    {
+      "id": 13,
+      "subtopic": "sunny",
+      "weatherIcon": "sunny",
+      "temperature": "+15",
+      "city": "Buenos Aires",
+      "prompt": "Describe the mild sunny weather",
+      "hints": ["On aurinkoista", "On leutoa", "Viisitoista astetta"],
+      "exampleSentences": [
+        "Aurinko paistaa.",
+        "On leutoa.",
+        "On viisitoista astetta."
+      ]
+    },
+    {
+      "id": 14,
+      "subtopic": "cloudy",
+      "weatherIcon": "foggy",
+      "temperature": "+9",
+      "city": "Vancouver",
+      "prompt": "Describe the foggy, chilly weather",
+      "hints": ["On sumuista", "On viileää", "Yhdeksän astetta"],
+      "exampleSentences": [
+        "On sumuista.",
+        "On viileää.",
+        "On yhdeksän astetta."
+      ]
+    },
+    {
+      "id": 15,
+      "subtopic": "warm",
+      "weatherIcon": "sunny",
+      "temperature": "+10",
+      "city": "Sydney",
+      "prompt": "Describe the pleasant weather",
+      "hints": ["On aurinkoista", "On leutoa", "Kymmenen astetta"],
+      "exampleSentences": [
+        "On aurinkoista.",
+        "On leutoa.",
+        "On kymmenen astetta."
+      ]
+    },
+    {
+      "id": 16,
+      "subtopic": "stormy",
+      "weatherIcon": "stormy",
+      "temperature": "+18",
+      "city": "Helsinki",
+      "prompt": "Describe the stormy weather",
+      "hints": ["On myrsky", "Sataa vettä", "Kahdeksantoista astetta"],
+      "exampleSentences": [
+        "On myrsky.",
+        "Sataa vettä.",
+        "On kahdeksantoista astetta."
+      ]
+    },
+    {
+      "id": 17,
+      "subtopic": "stormy",
+      "weatherIcon": "thunder",
+      "temperature": "+22",
+      "city": "Miami",
+      "prompt": "Describe the thunderstorm",
+      "hints": ["On ukkonen", "Sataa vettä", "Kaksikymmentäkaksi astetta"],
+      "exampleSentences": [
+        "On ukkonen.",
+        "Sataa vettä.",
+        "On kaksikymmentäkaksi astetta."
+      ]
+    },
+    {
+      "id": 18,
+      "subtopic": "snowy",
+      "weatherIcon": "sleet",
+      "temperature": "+1",
+      "city": "Oslo",
+      "prompt": "Describe the sleeting weather",
+      "hints": ["Sataa räntää", "On kylmä", "Yksi aste"],
+      "exampleSentences": ["Sataa räntää.", "On kylmä.", "On yksi aste."]
+    },
+    {
+      "id": 19,
+      "subtopic": "cold",
+      "weatherIcon": "snowy",
+      "temperature": "-15",
+      "city": "Moskova",
+      "prompt": "Describe the very cold, snowy weather",
+      "hints": ["Sataa lunta", "On pakkasta", "Viisitoista astetta pakkasta"],
+      "exampleSentences": [
+        "Sataa lunta.",
+        "On pakkasta.",
+        "On viisitoista astetta pakkasta."
+      ]
+    },
+    {
+      "id": 20,
+      "subtopic": "cloudy",
+      "weatherIcon": "slushy",
+      "temperature": "+2",
+      "city": "Tukholma",
+      "prompt": "Describe the slushy weather",
+      "hints": ["On loskaista", "On kylmä", "Kaksi astetta"],
+      "exampleSentences": ["On loskaista.", "On kylmä.", "On kaksi astetta."]
+    }
+  ]
+}

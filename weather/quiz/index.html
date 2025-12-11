@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finnish Weather Quiz - Sää</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back Button -->
+      <a href="../../" class="back-link">← Takaisin aiheisiin</a>
+
+      <!-- Header -->
+      <header class="quiz-header">
+        <h1>🌤️ Sää - Weather</h1>
+        <p class="subtitle" id="topicTitle">Loading...</p>
+      </header>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Finnish Weather Quiz</h2>
+          <p id="quizDescription">Practice describing weather in Finnish</p>
+
+          <!-- Instructions -->
+          <div class="instructions-box">
+            <h3>📝 How it works:</h3>
+            <p>
+              Look at each weather card and write
+              <strong>3 Finnish sentences</strong> describing:
+            </p>
+            <ul>
+              <li>🌤️ Weather type (e.g., Sataa vettä, On aurinkoista)</li>
+              <li>🌡️ Temperature feeling (e.g., On kylmä, On lämmin)</li>
+              <li>🔢 Degrees (e.g., On kymmenen astetta)</li>
+            </ul>
+          </div>
+
+          <!-- Subtopic Filter -->
+          <div class="filter-container">
+            <label for="subtopicFilter" class="filter-label"
+              >🎯 Filter by weather type:</label
+            >
+            <select id="subtopicFilter" class="filter-select">
+              <option value="all">🌤️ All Weather</option>
+            </select>
+            <span id="questionCount" class="question-count"
+              >20 questions available</span
+            >
+          </div>
+
+          <div class="stats-preview">
+            <span>📝 10 Questions</span>
+            <span>✍️ Writing Practice</span>
+          </div>
+          <button id="startBtn" class="btn btn-primary">Aloita!</button>
+        </div>
+
+        <!-- Vocabulary Reference -->
+        <div class="vocab-card">
+          <h3>📚 Vocabulary Reference</h3>
+          <div class="vocab-grid" id="vocabGrid">
+            <!-- Will be populated by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <!-- Progress Bar -->
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+          <span id="progressText">1 / 10</span>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card">
+          <!-- Weather Display -->
+          <div class="weather-display">
+            <div class="weather-icon-large" id="weatherIcon">☀️</div>
+            <div class="weather-info">
+              <div class="weather-city" id="weatherCity">Helsinki</div>
+              <div class="weather-temp" id="weatherTemp">+15°</div>
+            </div>
+          </div>
+
+          <!-- Prompt -->
+          <h2 id="questionText" class="question-text">
+            Describe this weather in Finnish
+          </h2>
+
+          <!-- Writing Input -->
+          <div class="writing-container">
+            <div class="sentence-inputs">
+              <div class="sentence-row">
+                <span class="sentence-number">1.</span>
+                <input
+                  type="text"
+                  class="sentence-input"
+                  id="sentence1"
+                  placeholder="Weather type (e.g., Sataa vettä)..."
+                />
+              </div>
+              <div class="sentence-row">
+                <span class="sentence-number">2.</span>
+                <input
+                  type="text"
+                  class="sentence-input"
+                  id="sentence2"
+                  placeholder="Temperature (e.g., On kylmä)..."
+                />
+              </div>
+              <div class="sentence-row">
+                <span class="sentence-number">3.</span>
+                <input
+                  type="text"
+                  class="sentence-input"
+                  id="sentence3"
+                  placeholder="Degrees (e.g., On viisi astetta)..."
+                />
+              </div>
+            </div>
+
+            <!-- Hints Toggle -->
+            <button id="showHintsBtn" class="btn btn-hint">
+              💡 Show Hints
+            </button>
+            <div id="hintsContainer" class="hints-container hidden">
+              <div class="hints-title">Helpful words:</div>
+              <div id="hintsList" class="hints-list"></div>
+            </div>
+
+            <!-- Submit Button -->
+            <button id="submitBtn" class="btn btn-primary">Valmis! ✓</button>
+          </div>
+
+          <!-- Example Sentences (shown after submit) -->
+          <div id="exampleSection" class="example-section hidden">
+            <h3>📖 Example Sentences:</h3>
+            <div id="exampleSentences" class="example-sentences"></div>
+            <p class="compare-note">
+              Compare your sentences with the examples above!
+            </p>
+          </div>
+
+          <!-- Next Button -->
+          <button id="nextBtn" class="btn btn-secondary hidden">
+            Seuraava →
+          </button>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>Harjoitus valmis! 🎉</h2>
+          <p class="results-text">
+            You practiced describing <span id="completedCount">10</span> weather
+            conditions!
+          </p>
+
+          <div class="results-summary">
+            <h3>What you practiced:</h3>
+            <ul>
+              <li>☁️ Weather types (Sää)</li>
+              <li>🌡️ Temperature words</li>
+              <li>🔢 Degrees (astetta/aste)</li>
+            </ul>
+          </div>
+
+          <div class="results-actions">
+            <button id="retryBtn" class="btn btn-primary">
+              Harjoittele lisää
+            </button>
+            <button id="reviewVocabBtn" class="btn btn-secondary">
+              Review Vocabulary
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

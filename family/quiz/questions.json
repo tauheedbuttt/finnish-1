@@ -1,0 +1,411 @@
+{
+  "topic": "family",
+  "title": "Finnish Family Quiz - Suku ja sukulaiset",
+  "description": "Learn Finnish family vocabulary and relationships",
+  "subtopics": [
+    { "id": "all", "name": "All Topics", "icon": "📚" },
+    { "id": "immediate", "name": "Immediate Family", "icon": "👨‍👩‍👧‍👦" },
+    { "id": "extended", "name": "Extended Family", "icon": "👴" },
+    { "id": "step", "name": "Step-family (-puoli)", "icon": "🔗" },
+    { "id": "questions", "name": "Asking About Family", "icon": "❓" }
+  ],
+  "vocabulary": {
+    "immediate": [
+      { "finnish": "äiti", "english": "mother" },
+      { "finnish": "isä", "english": "father" },
+      { "finnish": "vanhemmat", "english": "parents" },
+      { "finnish": "vanhempi", "english": "parent" },
+      { "finnish": "lapsi", "english": "child" },
+      { "finnish": "lapset", "english": "children" },
+      { "finnish": "tytär", "english": "daughter" },
+      { "finnish": "poika", "english": "son, boy" },
+      { "finnish": "sisko", "english": "sister" },
+      { "finnish": "veli", "english": "brother" },
+      { "finnish": "sisarus", "english": "sibling" },
+      { "finnish": "vauva", "english": "baby" },
+      { "finnish": "vaimo", "english": "wife" },
+      { "finnish": "mies", "english": "husband" }
+    ],
+    "extended": [
+      { "finnish": "isovanhemmat", "english": "grandparents" },
+      { "finnish": "isoäiti", "english": "grandmother" },
+      { "finnish": "mummi", "english": "grandma" },
+      { "finnish": "mummo", "english": "grandma" },
+      { "finnish": "isoisä", "english": "grandfather" },
+      { "finnish": "ukki", "english": "grandpa" },
+      { "finnish": "vaari", "english": "grandpa" },
+      { "finnish": "täti", "english": "aunt" },
+      { "finnish": "setä", "english": "uncle (father's brother)" },
+      { "finnish": "eno", "english": "uncle (mother's brother)" },
+      { "finnish": "serkku", "english": "cousin" }
+    ],
+    "step": [
+      { "finnish": "isäpuoli", "english": "stepfather" },
+      { "finnish": "äitipuoli", "english": "stepmother" },
+      { "finnish": "sisarpuoli", "english": "stepsister/half-sister" },
+      { "finnish": "velipuoli", "english": "stepbrother/half-brother" }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What is 'mother' in Finnish?",
+      "options": ["äiti", "isä", "täti", "sisko"],
+      "correct": 0,
+      "explanation": "äiti = mother"
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What is 'father' in Finnish?",
+      "options": ["äiti", "isä", "setä", "veli"],
+      "correct": 1,
+      "explanation": "isä = father"
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What is 'sister' in Finnish?",
+      "options": ["veli", "sisko", "täti", "tytär"],
+      "correct": 1,
+      "explanation": "sisko = sister"
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What is 'brother' in Finnish?",
+      "options": ["sisko", "poika", "veli", "setä"],
+      "correct": 2,
+      "explanation": "veli = brother"
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What is 'daughter' in Finnish?",
+      "options": ["poika", "tytär", "sisko", "lapsi"],
+      "correct": 1,
+      "explanation": "tytär = daughter"
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What is 'son' in Finnish?",
+      "options": ["poika", "tytär", "veli", "mies"],
+      "correct": 0,
+      "explanation": "poika = son (also means 'boy')"
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What does 'vanhemmat' mean?",
+      "options": ["grandparents", "parents", "children", "siblings"],
+      "correct": 1,
+      "explanation": "vanhemmat = parents"
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What does 'lapsi' mean?",
+      "options": ["baby", "child", "sibling", "daughter"],
+      "correct": 1,
+      "explanation": "lapsi = child (singular), lapset = children (plural)"
+    },
+    {
+      "id": 9,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What is 'baby' in Finnish?",
+      "options": ["lapsi", "poika", "vauva", "tytär"],
+      "correct": 2,
+      "explanation": "vauva = baby"
+    },
+    {
+      "id": 10,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What does 'sisarus' mean?",
+      "options": ["sister", "sibling", "cousin", "daughter"],
+      "correct": 1,
+      "explanation": "sisarus = sibling (gender-neutral term for brother/sister)"
+    },
+    {
+      "id": 11,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What is 'wife' in Finnish?",
+      "options": ["mies", "vaimo", "äiti", "nainen"],
+      "correct": 1,
+      "explanation": "vaimo = wife"
+    },
+    {
+      "id": 12,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What is 'husband' in Finnish?",
+      "options": ["vaimo", "isä", "mies", "poika"],
+      "correct": 2,
+      "explanation": "mies = husband (also means 'man')"
+    },
+    {
+      "id": 13,
+      "type": "mcq",
+      "subtopic": "extended",
+      "question": "What is 'grandmother' in Finnish?",
+      "options": ["isoisä", "isoäiti", "täti", "mummi"],
+      "correct": 1,
+      "explanation": "isoäiti = grandmother (formal). Also: mummi, mummo (informal)"
+    },
+    {
+      "id": 14,
+      "type": "mcq",
+      "subtopic": "extended",
+      "question": "What is 'grandfather' in Finnish?",
+      "options": ["isoäiti", "isoisä", "setä", "ukki"],
+      "correct": 1,
+      "explanation": "isoisä = grandfather (formal). Also: ukki, vaari (informal)"
+    },
+    {
+      "id": 15,
+      "type": "mcq",
+      "subtopic": "extended",
+      "question": "What does 'isovanhemmat' mean?",
+      "options": ["parents", "grandparents", "great-grandparents", "ancestors"],
+      "correct": 1,
+      "explanation": "isovanhemmat = grandparents"
+    },
+    {
+      "id": 16,
+      "type": "mcq",
+      "subtopic": "extended",
+      "question": "What is 'aunt' in Finnish?",
+      "options": ["setä", "eno", "täti", "serkku"],
+      "correct": 2,
+      "explanation": "täti = aunt"
+    },
+    {
+      "id": 17,
+      "type": "mcq",
+      "subtopic": "extended",
+      "question": "What does 'setä' mean?",
+      "options": ["aunt", "uncle (mother's brother)", "uncle (father's brother)", "grandfather"],
+      "correct": 2,
+      "explanation": "setä = uncle (specifically father's brother)"
+    },
+    {
+      "id": 18,
+      "type": "mcq",
+      "subtopic": "extended",
+      "question": "What does 'eno' mean?",
+      "options": ["aunt", "uncle (mother's brother)", "uncle (father's brother)", "cousin"],
+      "correct": 1,
+      "explanation": "eno = uncle (specifically mother's brother)"
+    },
+    {
+      "id": 19,
+      "type": "mcq",
+      "subtopic": "extended",
+      "question": "What is 'cousin' in Finnish?",
+      "options": ["sisarus", "serkku", "täti", "veli"],
+      "correct": 1,
+      "explanation": "serkku = cousin"
+    },
+    {
+      "id": 20,
+      "type": "mcq",
+      "subtopic": "extended",
+      "question": "What does 'mummi' mean?",
+      "options": ["grandmother (informal)", "grandfather (informal)", "aunt", "mother"],
+      "correct": 0,
+      "explanation": "mummi = grandma (informal). Also: mummo"
+    },
+    {
+      "id": 21,
+      "type": "mcq",
+      "subtopic": "extended",
+      "question": "What does 'ukki' mean?",
+      "options": ["grandmother (informal)", "grandfather (informal)", "uncle", "father"],
+      "correct": 1,
+      "explanation": "ukki = grandpa (informal). Also: vaari"
+    },
+    {
+      "id": 22,
+      "type": "mcq",
+      "subtopic": "step",
+      "question": "What is 'stepfather' in Finnish?",
+      "options": ["isä", "isäpuoli", "setä", "isoisä"],
+      "correct": 1,
+      "explanation": "isäpuoli = stepfather. The suffix -puoli means 'half/step'"
+    },
+    {
+      "id": 23,
+      "type": "mcq",
+      "subtopic": "step",
+      "question": "What is 'stepmother' in Finnish?",
+      "options": ["äiti", "täti", "äitipuoli", "isoäiti"],
+      "correct": 2,
+      "explanation": "äitipuoli = stepmother"
+    },
+    {
+      "id": 24,
+      "type": "mcq",
+      "subtopic": "step",
+      "question": "What is 'stepsister' in Finnish?",
+      "options": ["sisko", "sisarpuoli", "serkku", "tytär"],
+      "correct": 1,
+      "explanation": "sisarpuoli = stepsister / half-sister"
+    },
+    {
+      "id": 25,
+      "type": "mcq",
+      "subtopic": "step",
+      "question": "What is 'stepbrother' in Finnish?",
+      "options": ["veli", "velipuoli", "serkku", "poika"],
+      "correct": 1,
+      "explanation": "velipuoli = stepbrother / half-brother"
+    },
+    {
+      "id": 26,
+      "type": "mcq",
+      "subtopic": "step",
+      "question": "What does the suffix '-puoli' mean in family terms?",
+      "options": ["grand-", "step- / half-", "great-", "in-law"],
+      "correct": 1,
+      "explanation": "-puoli means 'step-' or 'half-' (e.g., isäpuoli = stepfather)"
+    },
+    {
+      "id": 27,
+      "type": "mcq",
+      "subtopic": "questions",
+      "question": "How do you ask 'Do you have siblings?' informally?",
+      "options": ["Oletko sä sisko?", "Onko sulla sisaruksia?", "Kuinka monta sisarusta?", "Mulla on sisko."],
+      "correct": 1,
+      "explanation": "Onko sulla ___? = Do you have ___? (informal)"
+    },
+    {
+      "id": 28,
+      "type": "mcq",
+      "subtopic": "questions",
+      "question": "How do you say 'Yes, I have a brother' informally?",
+      "options": ["Mulla on veli.", "Joo, mulla on veli.", "Mä en oo veli.", "Onko sulla veli?"],
+      "correct": 1,
+      "explanation": "Joo, mulla on ___ = Yes, I have ___"
+    },
+    {
+      "id": 29,
+      "type": "mcq",
+      "subtopic": "questions",
+      "question": "How do you say 'I don't have siblings' informally?",
+      "options": ["Mulla on sisaruksia.", "Onko sulla sisaruksia?", "Mulla ei oo sisaruksia.", "Joo, mulla on sisko."],
+      "correct": 2,
+      "explanation": "Mulla ei oo ___ = I don't have ___"
+    },
+    {
+      "id": 30,
+      "type": "mcq",
+      "subtopic": "questions",
+      "question": "How do you ask 'How many siblings do you have?'",
+      "options": ["Onko sulla sisaruksia?", "Kuinka monta sisarusta sulla on?", "Mulla on sisaruksia.", "Oletko sä sisko?"],
+      "correct": 1,
+      "explanation": "Kuinka monta ___a/ä sulla on? = How many ___ do you have?"
+    },
+    {
+      "id": 31,
+      "type": "mcq",
+      "subtopic": "questions",
+      "question": "What does 'Mulla on kaksi siskoa' mean?",
+      "options": ["I have a sister", "I have two sisters", "Do you have sisters?", "I don't have sisters"],
+      "correct": 1,
+      "explanation": "Mulla on *numero* ___a/ä = I have *number* ___"
+    },
+    {
+      "id": 32,
+      "type": "mcq",
+      "subtopic": "questions",
+      "question": "How do you say 'I am a sister' informally?",
+      "options": ["Mulla on sisko.", "Mä oon sisko.", "Onko sulla sisko?", "Mä en oo sisko."],
+      "correct": 1,
+      "explanation": "Mä oon ___ = I am ___"
+    },
+    {
+      "id": 33,
+      "type": "mcq",
+      "subtopic": "questions",
+      "question": "How do you say 'I am not a brother' informally?",
+      "options": ["Mä oon veli.", "Mulla on veli.", "Mä en oo veli.", "Onko sulla veli?"],
+      "correct": 2,
+      "explanation": "Mä en oo ___ = I am not ___"
+    },
+    {
+      "id": 34,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What does 'sisko' mean?",
+      "options": ["brother", "sister", "sibling", "cousin"],
+      "correct": 1,
+      "explanation": "sisko = sister"
+    },
+    {
+      "id": 35,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What does 'veli' mean?",
+      "options": ["brother", "sister", "sibling", "cousin"],
+      "correct": 0,
+      "explanation": "veli = brother"
+    },
+    {
+      "id": 36,
+      "type": "mcq",
+      "subtopic": "extended",
+      "question": "In Finnish, 'eno' and 'setä' both mean uncle. What's the difference?",
+      "options": ["No difference", "eno = mother's brother, setä = father's brother", "eno = older, setä = younger", "eno = formal, setä = informal"],
+      "correct": 1,
+      "explanation": "Finnish distinguishes: eno = mother's brother, setä = father's brother"
+    },
+    {
+      "id": 37,
+      "type": "mcq",
+      "subtopic": "immediate",
+      "question": "What is the plural of 'lapsi' (child)?",
+      "options": ["lapsit", "lapset", "lapsia", "lapsi"],
+      "correct": 1,
+      "explanation": "lapsi → lapset (child → children)"
+    },
+    {
+      "id": 38,
+      "type": "mcq",
+      "subtopic": "extended",
+      "question": "Which word is NOT used for grandmother?",
+      "options": ["isoäiti", "mummi", "mummo", "vaari"],
+      "correct": 3,
+      "explanation": "vaari = grandpa (informal). Grandmother: isoäiti, mummi, mummo"
+    },
+    {
+      "id": 39,
+      "type": "mcq",
+      "subtopic": "extended",
+      "question": "Which word is NOT used for grandfather?",
+      "options": ["isoisä", "ukki", "vaari", "mummi"],
+      "correct": 3,
+      "explanation": "mummi = grandma (informal). Grandfather: isoisä, ukki, vaari"
+    },
+    {
+      "id": 40,
+      "type": "mcq",
+      "subtopic": "questions",
+      "question": "Complete: 'Mulla on kolme ___' (I have three brothers)",
+      "options": ["veli", "veliä", "veljä", "velipuoli"],
+      "correct": 2,
+      "explanation": "With numbers, use partitive: veli → veljä. 'Mulla on kolme veljä' = I have three brothers"
+    }
+  ]
+}

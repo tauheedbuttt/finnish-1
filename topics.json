@@ -1,0 +1,61 @@
+{
+  "title": "Suomen kieli - Finnish Language Quizzes",
+  "description": "Practice your Finnish language skills with interactive quizzes",
+  "topics": [
+    {
+      "id": "time",
+      "title": "Kellonaika",
+      "titleEn": "Telling Time",
+      "description": "Learn to tell time in Finnish - yli, vaille, puoli, and more!",
+      "icon": "🕐",
+      "path": "time/quiz/",
+      "questionCount": 25,
+      "difficulty": "beginner",
+      "tags": ["kello", "aika", "numerot"]
+    },
+    {
+      "id": "weather",
+      "title": "Sää",
+      "titleEn": "Weather",
+      "description": "Describe weather in Finnish - sataa, aurinko paistaa, astetta, and more!",
+      "icon": "🌤️",
+      "path": "weather/quiz/",
+      "questionCount": 20,
+      "difficulty": "beginner",
+      "tags": ["sää", "ilma", "lämpötila"]
+    },
+    {
+      "id": "months",
+      "title": "Kuukaudet",
+      "titleEn": "Months",
+      "description": "Learn Finnish month names and inessive suffixes (-ssa/-ssä) - tammikuussa, helmikuussa, and more!",
+      "icon": "📅",
+      "path": "months/quiz/",
+      "questionCount": 40,
+      "difficulty": "beginner",
+      "tags": ["kuukaudet", "aika", "vuodenajat", "inessive"]
+    },
+    {
+      "id": "family",
+      "title": "Suku ja sukulaiset",
+      "titleEn": "Family",
+      "description": "Learn Finnish family vocabulary - äiti, isä, sisko, veli, and asking about family!",
+      "icon": "👨‍👩‍👧‍👦",
+      "path": "family/quiz/",
+      "questionCount": 40,
+      "difficulty": "beginner",
+      "tags": ["perhe", "suku", "sukulaiset", "kysymykset"]
+    },
+    {
+      "id": "clothes",
+      "title": "Vaatteet ja värit",
+      "titleEn": "Clothes & Colors",
+      "description": "Learn Finnish clothing vocabulary and colors - paita, housut, punainen, sininen!",
+      "icon": "👕",
+      "path": "clothes/quiz/",
+      "questionCount": 45,
+      "difficulty": "beginner",
+      "tags": ["vaatteet", "värit", "pukeutuminen"]
+    }
+  ]
+}
