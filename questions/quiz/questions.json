@@ -6,7 +6,8 @@
     { "id": "ko-questions", "name": "-ko Questions (Yes/No)", "icon": "❓" },
     { "id": "mika-mita", "name": "Mikä / Mitä", "icon": "🤔" },
     { "id": "basic-words", "name": "Basic Question Words", "icon": "📝" },
-    { "id": "minka-inen", "name": "Minkä + -inen", "icon": "🎨" }
+    { "id": "minka-inen", "name": "Minkä + -inen", "icon": "🎨" },
+    { "id": "answers", "name": "Answer with Full Sentence", "icon": "💬" }
   ],
   "questions": [
     {
@@ -963,6 +964,266 @@
       "correct": "All are correct",
       "explanation": "All ways are correct to answer no!",
       "subtopic": "ko-questions"
+    },
+    {
+      "id": 81,
+      "question": "Answer: 'Mitä kello on nyt?' (It's 3 o'clock)",
+      "options": [
+        "Kello on kolme.",
+        "Kello on kolme nyt.",
+        "Nyt on kello kolme.",
+        "All are correct"
+      ],
+      "correct": "All are correct",
+      "explanation": "Kello on kolme. / Nyt on kello kolme.",
+      "subtopic": "answers"
+    },
+    {
+      "id": 82,
+      "question": "Answer: 'Mitä kello on nyt?' (It's half past two)",
+      "options": [
+        "Kello on puoli kolme.",
+        "On puoli kolme.",
+        "Puoli kolme.",
+        "All are correct"
+      ],
+      "correct": "All are correct",
+      "explanation": "Kello on puoli kolme. (Half towards three = 2:30)",
+      "subtopic": "answers"
+    },
+    {
+      "id": 83,
+      "question": "Answer: 'Millainen sinä olet?' (I am happy and friendly)",
+      "options": [
+        "Minä olen iloinen ja ystävällinen.",
+        "Olen iloinen ja ystävällinen.",
+        "Minä olen ilonen.",
+        "Olen iloinen."
+      ],
+      "correct": "Minä olen iloinen ja ystävällinen.",
+      "explanation": "Use nominative adjectives: Minä olen iloinen ja ystävällinen.",
+      "subtopic": "answers"
+    },
+    {
+      "id": 84,
+      "question": "Answer: 'Millainen sinä olet?' (I am tall and thin)",
+      "options": [
+        "Minä olen pitkä ja hoikka.",
+        "Minä olen pitkä.",
+        "Olen lyhyt ja lihava.",
+        "Minä olen isoa."
+      ],
+      "correct": "Minä olen pitkä ja hoikka.",
+      "explanation": "Adjectives in nominative: pitkä (tall), hoikka (thin)",
+      "subtopic": "answers"
+    },
+    {
+      "id": 85,
+      "question": "Answer: 'Minkävärinen sinun paita on?' (My shirt is blue)",
+      "options": [
+        "Minun paita on sininen.",
+        "Minun paitani on sininen.",
+        "Se on sininen.",
+        "All are correct"
+      ],
+      "correct": "All are correct",
+      "explanation": "Minun paita on sininen. / Se on sininen.",
+      "subtopic": "answers"
+    },
+    {
+      "id": 86,
+      "question": "Answer: 'Minkävärinen sinun paita on?' (My shirt is red and white)",
+      "options": [
+        "Minun paita on punainen ja valkoinen.",
+        "Se on punainenvalkoinen.",
+        "Minun paita on punaista.",
+        "Paita on punaisella."
+      ],
+      "correct": "Minun paita on punainen ja valkoinen.",
+      "explanation": "Colors in nominative: punainen ja valkoinen",
+      "subtopic": "answers"
+    },
+    {
+      "id": 87,
+      "question": "Answer: 'Mikä on sinun lempiruoka?' (My favorite food is pizza)",
+      "options": [
+        "Minun lempiruoka on pizza.",
+        "Minun lempiruokani on pizza.",
+        "Pizza on minun lempiruoka.",
+        "All are correct"
+      ],
+      "correct": "All are correct",
+      "explanation": "Minun lempiruoka on pizza.",
+      "subtopic": "answers"
+    },
+    {
+      "id": 88,
+      "question": "Answer: 'Mikä on sinun lempiruoka?' (My favorite food is pasta)",
+      "options": [
+        "Minun lempiruoka on pasta.",
+        "Pasta.",
+        "Pidän pastasta.",
+        "Lempiruokani on pasta."
+      ],
+      "correct": "Minun lempiruoka on pasta.",
+      "explanation": "Minun lempiruoka on pasta. (lempi = favorite)",
+      "subtopic": "answers"
+    },
+    {
+      "id": 89,
+      "question": "Answer: 'Milloin aurinko paistaa?' (The sun shines in summer)",
+      "options": [
+        "Aurinko paistaa kesällä.",
+        "Kesällä aurinko paistaa.",
+        "Aurinko paistaa kesä.",
+        "Kesässä aurinko paistaa."
+      ],
+      "correct": "Aurinko paistaa kesällä.",
+      "explanation": "Kesällä (in summer) - adessive for seasons!",
+      "subtopic": "answers"
+    },
+    {
+      "id": 90,
+      "question": "Answer: 'Milloin aurinko paistaa?' (The sun shines in July)",
+      "options": [
+        "Aurinko paistaa heinäkuussa.",
+        "Heinäkuussa aurinko paistaa.",
+        "Aurinko paistaa heinäkuu.",
+        "Heinäkuulla aurinko paistaa."
+      ],
+      "correct": "Aurinko paistaa heinäkuussa.",
+      "explanation": "Heinäkuussa (in July) - inessive for months!",
+      "subtopic": "answers"
+    },
+    {
+      "id": 91,
+      "question": "Answer: 'Missä sinä asut?' (I live in Helsinki)",
+      "options": [
+        "Minä asun Helsingissä.",
+        "Asun Helsingissä.",
+        "Minä asun Helsinki.",
+        "Helsingissä."
+      ],
+      "correct": "Minä asun Helsingissä.",
+      "explanation": "Helsingissä (in Helsinki) - inessive case",
+      "subtopic": "answers"
+    },
+    {
+      "id": 92,
+      "question": "Answer: 'Missä sinä asut?' (I live in Vaasa)",
+      "options": [
+        "Minä asun Vaasassa.",
+        "Asun Vaasassa.",
+        "Minä asun Vaasa.",
+        "All are correct"
+      ],
+      "correct": "Minä asun Vaasassa.",
+      "explanation": "Vaasassa (in Vaasa) - inessive case",
+      "subtopic": "answers"
+    },
+    {
+      "id": 93,
+      "question": "Answer: 'Mistä sinä olet kotoisin?' (I am from Pakistan)",
+      "options": [
+        "Minä olen kotoisin Pakistanista.",
+        "Olen Pakistanista.",
+        "Olen kotoisin Pakistanista.",
+        "All are correct"
+      ],
+      "correct": "All are correct",
+      "explanation": "Pakistanista (from Pakistan) - elative case",
+      "subtopic": "answers"
+    },
+    {
+      "id": 94,
+      "question": "Answer: 'Mikä sinun nimi on?' (My name is Ali)",
+      "options": [
+        "Minun nimi on Ali.",
+        "Minun nimeni on Ali.",
+        "Olen Ali.",
+        "All are correct"
+      ],
+      "correct": "All are correct",
+      "explanation": "Minun nimi on Ali. / Olen Ali.",
+      "subtopic": "answers"
+    },
+    {
+      "id": 95,
+      "question": "Answer: 'Minkäikäinen sinä olet?' (I am 25 years old)",
+      "options": [
+        "Minä olen 25-vuotias.",
+        "Olen 25 vuotta vanha.",
+        "Minä olen 25.",
+        "All are correct"
+      ],
+      "correct": "All are correct",
+      "explanation": "All are acceptable: 25-vuotias, 25 vuotta, kaksikymmentäviisi",
+      "subtopic": "answers"
+    },
+    {
+      "id": 96,
+      "question": "Answer: 'Minkämaalainen sinä olet?' (I am Pakistani)",
+      "options": [
+        "Minä olen pakistanilainen.",
+        "Olen pakistanilainen.",
+        "Minä olen Pakistanista.",
+        "All are correct"
+      ],
+      "correct": "All are correct",
+      "explanation": "Nationality: pakistanilainen (Pakistani)",
+      "subtopic": "answers"
+    },
+    {
+      "id": 97,
+      "question": "Answer: 'Mitä sinä opiskelet?' (I study computer science)",
+      "options": [
+        "Minä opiskelen tietotekniikkaa.",
+        "Opiskelen tietotekniikkaa.",
+        "Minä opiskelen tietotekniikka.",
+        "Tietotekniikka."
+      ],
+      "correct": "Minä opiskelen tietotekniikkaa.",
+      "explanation": "Partitive after opiskella: tietotekniikkaa",
+      "subtopic": "answers"
+    },
+    {
+      "id": 98,
+      "question": "Answer: 'Mitä sinä syöt?' (I eat bread)",
+      "options": [
+        "Minä syön leipää.",
+        "Syön leipää.",
+        "Minä syön leipä.",
+        "Leipää."
+      ],
+      "correct": "Minä syön leipää.",
+      "explanation": "Partitive after syödä: leipää",
+      "subtopic": "answers"
+    },
+    {
+      "id": 99,
+      "question": "Answer: 'Mitä sinä juot?' (I drink coffee)",
+      "options": [
+        "Minä juon kahvia.",
+        "Juon kahvia.",
+        "Minä juon kahvi.",
+        "Kahvia."
+      ],
+      "correct": "Minä juon kahvia.",
+      "explanation": "Partitive after juoda: kahvia",
+      "subtopic": "answers"
+    },
+    {
+      "id": 100,
+      "question": "Answer: 'Onko sinulla koira?' (Yes, I have a dog)",
+      "options": [
+        "Kyllä, minulla on koira.",
+        "Joo, minulla on.",
+        "On.",
+        "All are correct"
+      ],
+      "correct": "All are correct",
+      "explanation": "Kyllä/Joo + minulla on koira",
+      "subtopic": "answers"
     }
   ]
 }

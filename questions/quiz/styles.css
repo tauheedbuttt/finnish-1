@@ -272,6 +272,44 @@ body {
   font-size: 0.85rem;
 }
 
+/* Answer Box */
+.answer-box {
+  border-left-color: #2196f3;
+  background: #e3f2fd;
+}
+
+.answer-box h4 {
+  color: #1565c0;
+}
+
+.answer-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.answer-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  align-items: center;
+}
+
+.answer-item .q {
+  color: #1565c0;
+  font-weight: 500;
+  min-width: 200px;
+}
+
+.answer-item .a {
+  color: #2e7d32;
+  font-style: italic;
+}
+
 /* Mode Tabs */
 .mode-tabs {
   display: flex;

@@ -119,7 +119,7 @@
       "description": "Practice Finnish yes/no questions (-ko) and question words!",
       "icon": "❓",
       "path": "questions/quiz/",
-      "questionCount": 80,
+      "questionCount": 100,
       "difficulty": "beginner",
       "tags": [
         "kysymykset",
