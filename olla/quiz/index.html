@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finnish Olla Quiz - I am vs. I have</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back Button -->
+      <a href="../../" class="back-link">← Takaisin aiheisiin</a>
+
+      <!-- Header -->
+      <header class="quiz-header">
+        <h1>🇫🇮 Olla-verbi</h1>
+        <p class="subtitle" id="topicTitle">I am vs. I have</p>
+      </header>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Olla Quiz</h2>
+          <p id="quizDescription">Practice being and having in Finnish!</p>
+
+          <!-- Rules Reference -->
+          <div class="rules-section">
+            <h3>📚 Olla-verbi = "to be" AND "to have"</h3>
+
+            <!-- Being Something -->
+            <div class="rules-box being-box">
+              <h4>😊 BEING SOMETHING (I am...)</h4>
+              <p class="rule-note">
+                Subject in <strong>nominative</strong> + olla in personal form
+              </p>
+
+              <div class="conjugation-tables">
+                <div class="conj-table">
+                  <h5>✅ Positive</h5>
+                  <table>
+                    <tr>
+                      <td>minä <strong>olen</strong></td>
+                      <td>I am</td>
+                    </tr>
+                    <tr>
+                      <td>sinä <strong>olet</strong></td>
+                      <td>you are</td>
+                    </tr>
+                    <tr>
+                      <td>hän <strong>on</strong></td>
+                      <td>he/she is</td>
+                    </tr>
+                    <tr>
+                      <td>me <strong>olemme</strong></td>
+                      <td>we are</td>
+                    </tr>
+                    <tr>
+                      <td>te <strong>olette</strong></td>
+                      <td>you are</td>
+                    </tr>
+                    <tr>
+                      <td>he <strong>ovat</strong></td>
+                      <td>they are</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="conj-table">
+                  <h5>❌ Negative</h5>
+                  <table>
+                    <tr>
+                      <td>minä <strong>en ole</strong></td>
+                      <td>I'm not</td>
+                    </tr>
+                    <tr>
+                      <td>sinä <strong>et ole</strong></td>
+                      <td>you aren't</td>
+                    </tr>
+                    <tr>
+                      <td>hän <strong>ei ole</strong></td>
+                      <td>he/she isn't</td>
+                    </tr>
+                    <tr>
+                      <td>me <strong>emme ole</strong></td>
+                      <td>we aren't</td>
+                    </tr>
+                    <tr>
+                      <td>te <strong>ette ole</strong></td>
+                      <td>you aren't</td>
+                    </tr>
+                    <tr>
+                      <td>he <strong>eivät ole</strong></td>
+                      <td>they aren't</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+
+              <div class="example-box">
+                <p>
+                  <strong>NB!</strong> Complement stays
+                  <span class="highlight">NOMINATIVE</span> in both positive AND
+                  negative!
+                </p>
+                <p class="example">
+                  ✅ Minä olen <strong>väsynyt</strong>. → Minä en ole
+                  <strong>väsynyt</strong>.
+                </p>
+                <p class="example">
+                  ✅ Minä olen <strong>opettaja</strong>. → Minä en ole
+                  <strong>opettaja</strong>.
+                </p>
+              </div>
+            </div>
+
+            <!-- Having Something -->
+            <div class="rules-box having-box">
+              <h4>🎁 HAVING SOMETHING (I have...)</h4>
+              <p class="rule-note">
+                Subject in <strong>adessive (-lla/llä)</strong> + on/ei ole
+              </p>
+
+              <div class="conjugation-tables">
+                <div class="conj-table">
+                  <h5>✅ Positive (+ nominative)</h5>
+                  <table>
+                    <tr>
+                      <td>minu<strong>lla</strong> on</td>
+                      <td>I have</td>
+                    </tr>
+                    <tr>
+                      <td>sinu<strong>lla</strong> on</td>
+                      <td>you have</td>
+                    </tr>
+                    <tr>
+                      <td>häne<strong>llä</strong> on</td>
+                      <td>he/she has</td>
+                    </tr>
+                    <tr>
+                      <td>mei<strong>llä</strong> on</td>
+                      <td>we have</td>
+                    </tr>
+                    <tr>
+                      <td>tei<strong>llä</strong> on</td>
+                      <td>you have</td>
+                    </tr>
+                    <tr>
+                      <td>hei<strong>llä</strong> on</td>
+                      <td>they have</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="conj-table">
+                  <h5>❌ Negative (+ PARTITIVE!)</h5>
+                  <table>
+                    <tr>
+                      <td>minu<strong>lla</strong> ei ole</td>
+                      <td>I don't have</td>
+                    </tr>
+                    <tr>
+                      <td>sinu<strong>lla</strong> ei ole</td>
+                      <td>you don't have</td>
+                    </tr>
+                    <tr>
+                      <td>häne<strong>llä</strong> ei ole</td>
+                      <td>he/she doesn't</td>
+                    </tr>
+                    <tr>
+                      <td>mei<strong>llä</strong> ei ole</td>
+                      <td>we don't have</td>
+                    </tr>
+                    <tr>
+                      <td>tei<strong>llä</strong> ei ole</td>
+                      <td>you don't have</td>
+                    </tr>
+                    <tr>
+                      <td>hei<strong>llä</strong> ei ole</td>
+                      <td>they don't have</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+
+              <div class="example-box warning">
+                <p><strong>⚠️ IMPORTANT!</strong></p>
+                <p class="example">
+                  ✅ Minulla on <strong>kirja</strong>. (nominative)
+                </p>
+                <p class="example">
+                  ❌ Minulla ei ole <strong>kirjaa</strong>. (PARTITIVE!)
+                </p>
+              </div>
+            </div>
+
+            <!-- Clothes & Appearance -->
+            <div class="rules-box clothes-box">
+              <h4>👕 What are you wearing? / What do you look like?</h4>
+              <div class="clothes-examples">
+                <div class="clothes-item">
+                  <span class="finnish"
+                    >Hänellä on vaaleanpunainen laukku.</span
+                  >
+                  <span class="english">She has a pink bag.</span>
+                </div>
+                <div class="clothes-item">
+                  <span class="finnish">Hänellä on mustat housut.</span>
+                  <span class="english">He has black pants.</span>
+                </div>
+                <div class="clothes-item">
+                  <span class="finnish">Hänellä on pitkä vaalea tukka.</span>
+                  <span class="english">She has long blonde hair.</span>
+                </div>
+                <div class="clothes-item">
+                  <span class="finnish">Hänellä on siniset silmät.</span>
+                  <span class="english">He has blue eyes.</span>
+                </div>
+              </div>
+              <p class="rule-note">
+                Use <strong>hänellä on</strong> for describing appearance and
+                clothes!
+              </p>
+            </div>
+          </div>
+
+          <!-- Mode Tabs -->
+          <div class="mode-tabs">
+            <button class="mode-tab active" data-mode="mcq">
+              <span class="mode-icon">📝</span>
+              <span class="mode-label">MCQ</span>
+            </button>
+            <button class="mode-tab" data-mode="written">
+              <span class="mode-icon">✍️</span>
+              <span class="mode-label">Written</span>
+            </button>
+          </div>
+
+          <!-- Subtopic Filter with Checkboxes -->
+          <div class="filter-container">
+            <div class="filter-header">
+              <span class="filter-label">🎯 Select subtopics:</span>
+              <div class="filter-actions">
+                <button id="selectAllBtn" class="filter-action-btn">
+                  Select All
+                </button>
+                <button id="clearAllBtn" class="filter-action-btn">
+                  Clear All
+                </button>
+              </div>
+            </div>
+            <div id="subtopicCheckboxes" class="subtopic-checkboxes">
+              <!-- Checkboxes will be inserted here by JS -->
+            </div>
+            <span id="questionCount" class="question-count"
+              >80 questions available</span
+            >
+          </div>
+
+          <div class="stats-preview">
+            <span>📝 10 Questions</span>
+            <span>🎯 Random Selection</span>
+          </div>
+          <button id="startBtn" class="btn btn-primary">Aloita Quiz!</button>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <!-- Mode Indicator -->
+        <div class="mode-indicator">
+          <span id="currentModeIcon">📝</span>
+          <span id="currentModeText">MCQ Mode</span>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+          <span id="progressText">1 / 10</span>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card">
+          <!-- Visual Component -->
+          <div id="visualContainer" class="visual-container">
+            <div id="ollaComponent" class="olla-component">
+              <div id="promptDisplay" class="prompt-display">I have a book</div>
+              <div id="structureDisplay" class="structure-display">
+                ___lla on + noun
+              </div>
+            </div>
+          </div>
+
+          <!-- Question -->
+          <h2 id="questionText" class="question-text">Translate to Finnish:</h2>
+
+          <!-- Options (MCQ Mode) -->
+          <div id="optionsContainer" class="options-container">
+            <!-- Options will be inserted here -->
+          </div>
+
+          <!-- Written Input (Written Mode) -->
+          <div id="writtenContainer" class="written-container hidden">
+            <input
+              type="text"
+              id="writtenInput"
+              class="written-input"
+              placeholder="Kirjoita suomeksi..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button id="submitWrittenBtn" class="btn btn-primary">
+              Tarkista
+            </button>
+            <div id="writtenHint" class="written-hint hidden">
+              <span class="hint-label">💡 Vihje:</span>
+              <span id="hintText"></span>
+            </div>
+          </div>
+
+          <!-- Feedback -->
+          <div id="feedback" class="feedback hidden">
+            <div id="feedbackIcon" class="feedback-icon">✓</div>
+            <p id="feedbackText" class="feedback-text">Explanation here</p>
+          </div>
+
+          <!-- Next Button -->
+          <button id="nextBtn" class="btn btn-secondary hidden">
+            Seuraava →
+          </button>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>Quiz Complete!</h2>
+          <div class="score-circle">
+            <span id="scorePercent">0%</span>
+          </div>
+          <p class="score-text">
+            Sait <span id="correctCount">0</span> /
+            <span id="totalCount">10</span> oikein!
+          </p>
+          <div class="grade-message" id="gradeMessage">Hyvä työ!</div>
+          <div class="results-actions">
+            <button id="retryBtn" class="btn btn-primary">
+              Yritä uudelleen
+            </button>
+            <button id="reviewBtn" class="btn btn-secondary">
+              Tarkista vastaukset
+            </button>
+          </div>
+        </div>
+
+        <!-- Review Section -->
+        <div id="reviewSection" class="review-section hidden">
+          <h3>Vastausten tarkistus</h3>
+          <div id="reviewContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

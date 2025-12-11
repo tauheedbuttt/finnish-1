@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finnish Questions Quiz - Kysymyslauseet</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back Button -->
+      <a href="../../" class="back-link">← Takaisin aiheisiin</a>
+
+      <!-- Header -->
+      <header class="quiz-header">
+        <h1>🇫🇮 Kysymyslauseet</h1>
+        <p class="subtitle" id="topicTitle">Finnish Question Sentences</p>
+      </header>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Questions Quiz</h2>
+          <p id="quizDescription">Master Finnish question formation!</p>
+
+          <!-- Rules Reference -->
+          <div class="rules-section">
+            <h3>📚 Two Ways to Ask Questions</h3>
+
+            <!-- Ko-questions -->
+            <div class="rules-box ko-box">
+              <h4>❓ a) -ko/-kö Questions (Yes/No)</h4>
+              <p class="rule-note">
+                Change word order: <strong>SVO → VSO</strong>, then add
+                <strong>-ko/-kö</strong> to the verb
+              </p>
+
+              <div class="example-table">
+                <div class="example-row header">
+                  <span>BASIC SENTENCE</span>
+                  <span>→</span>
+                  <span>QUESTION</span>
+                </div>
+                <div class="example-row">
+                  <span>Sinä olet opiskelija.</span>
+                  <span>→</span>
+                  <span
+                    >Olet<strong class="highlight">ko</strong> sinä
+                    opiskelija?</span
+                  >
+                </div>
+                <div class="example-row">
+                  <span>Hän asuu Turussa.</span>
+                  <span>→</span>
+                  <span
+                    >Asuu<strong class="highlight">ko</strong> hän
+                    Turussa?</span
+                  >
+                </div>
+                <div class="example-row">
+                  <span>Te puhutte ranskaa.</span>
+                  <span>→</span>
+                  <span
+                    >Puhutte<strong class="highlight">ko</strong> te
+                    ranskaa?</span
+                  >
+                </div>
+                <div class="example-row">
+                  <span>Hans puhuu saksaa.</span>
+                  <span>→</span>
+                  <span
+                    >Puhuu<strong class="highlight">ko</strong> Hans
+                    saksaa?</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Question Words -->
+            <div class="rules-box words-box">
+              <h4>📝 b) Question Words</h4>
+
+              <div class="question-words-grid">
+                <div class="qword-card important">
+                  <div class="qword">mikä</div>
+                  <div class="qword-meaning">what/which</div>
+                  <div class="qword-note">Used with <strong>olla</strong></div>
+                </div>
+                <div class="qword-card important">
+                  <div class="qword">mitä</div>
+                  <div class="qword-meaning">what (partitive)</div>
+                  <div class="qword-note">
+                    Used with <strong>other verbs</strong>
+                  </div>
+                </div>
+                <div class="qword-card">
+                  <div class="qword">kuka</div>
+                  <div class="qword-meaning">who</div>
+                  <div class="qword-note">With olla</div>
+                </div>
+                <div class="qword-card">
+                  <div class="qword">ketä</div>
+                  <div class="qword-meaning">who (partitive)</div>
+                  <div class="qword-note">With other verbs</div>
+                </div>
+                <div class="qword-card">
+                  <div class="qword">missä</div>
+                  <div class="qword-meaning">where (at)</div>
+                  <div class="qword-note">Missä sinä asut?</div>
+                </div>
+                <div class="qword-card">
+                  <div class="qword">mistä</div>
+                  <div class="qword-meaning">where from</div>
+                  <div class="qword-note">Mistä sinä tulet?</div>
+                </div>
+                <div class="qword-card">
+                  <div class="qword">mihin</div>
+                  <div class="qword-meaning">where to</div>
+                  <div class="qword-note">Mihin sinä menet?</div>
+                </div>
+                <div class="qword-card">
+                  <div class="qword">milloin</div>
+                  <div class="qword-meaning">when</div>
+                  <div class="qword-note">Milloin joulu on?</div>
+                </div>
+                <div class="qword-card">
+                  <div class="qword">miksi</div>
+                  <div class="qword-meaning">why</div>
+                  <div class="qword-note">Miksi täällä on kylmä?</div>
+                </div>
+                <div class="qword-card">
+                  <div class="qword">millainen</div>
+                  <div class="qword-meaning">what kind of</div>
+                  <div class="qword-note">Millainen hän on?</div>
+                </div>
+                <div class="qword-card">
+                  <div class="qword">montako</div>
+                  <div class="qword-meaning">how many</div>
+                  <div class="qword-note">Countable</div>
+                </div>
+                <div class="qword-card">
+                  <div class="qword">paljonko</div>
+                  <div class="qword-meaning">how much</div>
+                  <div class="qword-note">Uncountable</div>
+                </div>
+                <div class="qword-card">
+                  <div class="qword">kenen</div>
+                  <div class="qword-meaning">whose</div>
+                  <div class="qword-note">Kenen kirja?</div>
+                </div>
+                <div class="qword-card">
+                  <div class="qword">miten</div>
+                  <div class="qword-meaning">how</div>
+                  <div class="qword-note">Miten voit?</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Minkä + inen -->
+            <div class="rules-box minka-box">
+              <h4>🎨 Minkä + quality + inen</h4>
+              <p class="rule-note">Ask about specific qualities!</p>
+
+              <div class="minka-grid">
+                <div class="minka-item">
+                  <span class="quality">maa (country)</span>
+                  <span class="arrow">→</span>
+                  <span class="word">minkä<strong>maa</strong>lainen</span>
+                  <span class="meaning">"What nationality?"</span>
+                </div>
+                <div class="minka-item">
+                  <span class="quality">ikä (age)</span>
+                  <span class="arrow">→</span>
+                  <span class="word">minkä<strong>ikä</strong>inen</span>
+                  <span class="meaning">"How old?"</span>
+                </div>
+                <div class="minka-item">
+                  <span class="quality">näkö (look)</span>
+                  <span class="arrow">→</span>
+                  <span class="word">minkä<strong>näkö</strong>inen</span>
+                  <span class="meaning">"What does look like?"</span>
+                </div>
+                <div class="minka-item">
+                  <span class="quality">pituus (height)</span>
+                  <span class="arrow">→</span>
+                  <span class="word">minkä<strong>pitu</strong>inen</span>
+                  <span class="meaning">"How tall?"</span>
+                </div>
+                <div class="minka-item">
+                  <span class="quality">koko (size)</span>
+                  <span class="arrow">→</span>
+                  <span class="word">minkä<strong>koko</strong>inen</span>
+                  <span class="meaning">"What size?"</span>
+                </div>
+                <div class="minka-item">
+                  <span class="quality">väri (colour)</span>
+                  <span class="arrow">→</span>
+                  <span class="word">minkä<strong>väri</strong>nen</span>
+                  <span class="meaning">"What colour?"</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mode Tabs -->
+          <div class="mode-tabs">
+            <button class="mode-tab active" data-mode="mcq">
+              <span class="mode-icon">📝</span>
+              <span class="mode-label">MCQ</span>
+            </button>
+            <button class="mode-tab" data-mode="written">
+              <span class="mode-icon">✍️</span>
+              <span class="mode-label">Written</span>
+            </button>
+          </div>
+
+          <!-- Subtopic Filter with Checkboxes -->
+          <div class="filter-container">
+            <div class="filter-header">
+              <span class="filter-label">🎯 Select subtopics:</span>
+              <div class="filter-actions">
+                <button id="selectAllBtn" class="filter-action-btn">
+                  Select All
+                </button>
+                <button id="clearAllBtn" class="filter-action-btn">
+                  Clear All
+                </button>
+              </div>
+            </div>
+            <div id="subtopicCheckboxes" class="subtopic-checkboxes">
+              <!-- Checkboxes will be inserted here by JS -->
+            </div>
+            <span id="questionCount" class="question-count"
+              >80 questions available</span
+            >
+          </div>
+
+          <div class="stats-preview">
+            <span>📝 10 Questions</span>
+            <span>🎯 Random Selection</span>
+          </div>
+          <button id="startBtn" class="btn btn-primary">Aloita Quiz!</button>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <!-- Mode Indicator -->
+        <div class="mode-indicator">
+          <span id="currentModeIcon">📝</span>
+          <span id="currentModeText">MCQ Mode</span>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+          <span id="progressText">1 / 10</span>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card">
+          <!-- Visual Component -->
+          <div id="visualContainer" class="visual-container">
+            <div id="questionComponent" class="question-component">
+              <div id="promptDisplay" class="prompt-display">
+                Form the question...
+              </div>
+              <div id="structureDisplay" class="structure-display">
+                verb + ko + subject?
+              </div>
+            </div>
+          </div>
+
+          <!-- Question -->
+          <h2 id="questionText" class="question-text">Question here...</h2>
+
+          <!-- Options (MCQ Mode) -->
+          <div id="optionsContainer" class="options-container">
+            <!-- Options will be inserted here -->
+          </div>
+
+          <!-- Written Input (Written Mode) -->
+          <div id="writtenContainer" class="written-container hidden">
+            <input
+              type="text"
+              id="writtenInput"
+              class="written-input"
+              placeholder="Kirjoita suomeksi..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button id="submitWrittenBtn" class="btn btn-primary">
+              Tarkista
+            </button>
+            <div id="writtenHint" class="written-hint hidden">
+              <span class="hint-label">💡 Vihje:</span>
+              <span id="hintText"></span>
+            </div>
+          </div>
+
+          <!-- Feedback -->
+          <div id="feedback" class="feedback hidden">
+            <div id="feedbackIcon" class="feedback-icon">✓</div>
+            <p id="feedbackText" class="feedback-text">Explanation here</p>
+          </div>
+
+          <!-- Next Button -->
+          <button id="nextBtn" class="btn btn-secondary hidden">
+            Seuraava →
+          </button>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>Quiz Complete!</h2>
+          <div class="score-circle">
+            <span id="scorePercent">0%</span>
+          </div>
+          <p class="score-text">
+            Sait <span id="correctCount">0</span> /
+            <span id="totalCount">10</span> oikein!
+          </p>
+          <div class="grade-message" id="gradeMessage">Hyvä työ!</div>
+          <div class="results-actions">
+            <button id="retryBtn" class="btn btn-primary">
+              Yritä uudelleen
+            </button>
+            <button id="reviewBtn" class="btn btn-secondary">
+              Tarkista vastaukset
+            </button>
+          </div>
+        </div>
+
+        <!-- Review Section -->
+        <div id="reviewSection" class="review-section hidden">
+          <h3>Vastausten tarkistus</h3>
+          <div id="reviewContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

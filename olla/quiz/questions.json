@@ -1,0 +1,820 @@
+{
+  "topic": "Olla-verbi (I am vs. I have)",
+  "description": "Practice olla verb for being (olen) and having (minulla on)",
+  "subtopics": [
+    { "id": "all", "name": "All Olla", "icon": "🔄" },
+    { "id": "olen-positive", "name": "I am (Positive)", "icon": "😊" },
+    { "id": "olen-negative", "name": "I am not (Negative)", "icon": "😔" },
+    { "id": "on-positive", "name": "I have (Positive)", "icon": "✅" },
+    { "id": "on-negative", "name": "I don't have (Negative)", "icon": "❌" },
+    { "id": "clothes", "name": "What are you wearing?", "icon": "👕" },
+    { "id": "appearance", "name": "What do you look like?", "icon": "👤" }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "subtopic": "olen-positive",
+      "type": "conjugation",
+      "subject": "minä",
+      "english": "I am",
+      "answer": "minä olen",
+      "structure": "Subject + olen",
+      "explanation": "minä olen = I am (subject in nominative + personal form of olla)"
+    },
+    {
+      "id": 2,
+      "subtopic": "olen-positive",
+      "type": "conjugation",
+      "subject": "sinä",
+      "english": "you are",
+      "answer": "sinä olet",
+      "structure": "Subject + olet",
+      "explanation": "sinä olet = you are"
+    },
+    {
+      "id": 3,
+      "subtopic": "olen-positive",
+      "type": "conjugation",
+      "subject": "hän",
+      "english": "he/she is",
+      "answer": "hän on",
+      "structure": "Subject + on",
+      "explanation": "hän on = he/she is"
+    },
+    {
+      "id": 4,
+      "subtopic": "olen-positive",
+      "type": "conjugation",
+      "subject": "me",
+      "english": "we are",
+      "answer": "me olemme",
+      "structure": "Subject + olemme",
+      "explanation": "me olemme = we are"
+    },
+    {
+      "id": 5,
+      "subtopic": "olen-positive",
+      "type": "conjugation",
+      "subject": "te",
+      "english": "you are (plural/formal)",
+      "answer": "te olette",
+      "structure": "Subject + olette",
+      "explanation": "te olette = you are (plural or formal)"
+    },
+    {
+      "id": 6,
+      "subtopic": "olen-positive",
+      "type": "conjugation",
+      "subject": "he",
+      "english": "they are",
+      "answer": "he ovat",
+      "structure": "Subject + ovat",
+      "explanation": "he ovat = they are"
+    },
+    {
+      "id": 7,
+      "subtopic": "olen-positive",
+      "type": "sentence",
+      "prompt": "I am tired",
+      "english": "I am tired",
+      "answer": "minä olen väsynyt",
+      "structure": "Subject + olen + adjective",
+      "explanation": "olen + adjective (nominative) for describing state"
+    },
+    {
+      "id": 8,
+      "subtopic": "olen-positive",
+      "type": "sentence",
+      "prompt": "I am a teacher",
+      "english": "I am a teacher",
+      "answer": "minä olen opettaja",
+      "structure": "Subject + olen + noun",
+      "explanation": "olen + noun (nominative) for profession"
+    },
+    {
+      "id": 9,
+      "subtopic": "olen-positive",
+      "type": "sentence",
+      "prompt": "I am a student",
+      "english": "I am a student",
+      "answer": "minä olen opiskelija",
+      "structure": "Subject + olen + noun",
+      "explanation": "olen + noun (nominative) for profession"
+    },
+    {
+      "id": 10,
+      "subtopic": "olen-positive",
+      "type": "sentence",
+      "prompt": "I am happy",
+      "english": "I am happy",
+      "answer": "minä olen iloinen",
+      "structure": "Subject + olen + adjective",
+      "explanation": "olen + adjective (nominative) for describing state"
+    },
+    {
+      "id": 11,
+      "subtopic": "olen-positive",
+      "type": "sentence",
+      "prompt": "He is tall",
+      "english": "He is tall",
+      "answer": "hän on pitkä",
+      "structure": "Subject + on + adjective",
+      "explanation": "on + adjective (nominative) for describing"
+    },
+    {
+      "id": 12,
+      "subtopic": "olen-positive",
+      "type": "sentence",
+      "prompt": "She is Finnish",
+      "english": "She is Finnish",
+      "answer": "hän on suomalainen",
+      "structure": "Subject + on + adjective",
+      "explanation": "on + nationality (nominative)"
+    },
+    {
+      "id": 13,
+      "subtopic": "olen-positive",
+      "type": "sentence",
+      "prompt": "We are students",
+      "english": "We are students",
+      "answer": "me olemme opiskelijoita",
+      "structure": "Subject + olemme + noun (partitive plural)",
+      "explanation": "olemme + plural noun in partitive for 'we are [multiple things]'"
+    },
+    {
+      "id": 14,
+      "subtopic": "olen-positive",
+      "type": "sentence",
+      "prompt": "They are teachers",
+      "english": "They are teachers",
+      "answer": "he ovat opettajia",
+      "structure": "Subject + ovat + noun (partitive plural)",
+      "explanation": "ovat + plural noun in partitive for 'they are [multiple things]'"
+    },
+    {
+      "id": 15,
+      "subtopic": "olen-positive",
+      "type": "sentence",
+      "prompt": "I am from Finland",
+      "english": "I am from Finland",
+      "answer": "minä olen Suomesta",
+      "structure": "Subject + olen + place (-sta/-stä)",
+      "explanation": "olen + elative case for origin"
+    },
+
+    {
+      "id": 16,
+      "subtopic": "olen-negative",
+      "type": "conjugation",
+      "subject": "minä",
+      "english": "I am not",
+      "answer": "minä en ole",
+      "structure": "Subject + en + ole",
+      "explanation": "minä en ole = I am not (negative particle + ole)"
+    },
+    {
+      "id": 17,
+      "subtopic": "olen-negative",
+      "type": "conjugation",
+      "subject": "sinä",
+      "english": "you are not",
+      "answer": "sinä et ole",
+      "structure": "Subject + et + ole",
+      "explanation": "sinä et ole = you are not"
+    },
+    {
+      "id": 18,
+      "subtopic": "olen-negative",
+      "type": "conjugation",
+      "subject": "hän",
+      "english": "he/she is not",
+      "answer": "hän ei ole",
+      "structure": "Subject + ei + ole",
+      "explanation": "hän ei ole = he/she is not"
+    },
+    {
+      "id": 19,
+      "subtopic": "olen-negative",
+      "type": "conjugation",
+      "subject": "me",
+      "english": "we are not",
+      "answer": "me emme ole",
+      "structure": "Subject + emme + ole",
+      "explanation": "me emme ole = we are not"
+    },
+    {
+      "id": 20,
+      "subtopic": "olen-negative",
+      "type": "conjugation",
+      "subject": "te",
+      "english": "you are not (plural/formal)",
+      "answer": "te ette ole",
+      "structure": "Subject + ette + ole",
+      "explanation": "te ette ole = you are not (plural)"
+    },
+    {
+      "id": 21,
+      "subtopic": "olen-negative",
+      "type": "conjugation",
+      "subject": "he",
+      "english": "they are not",
+      "answer": "he eivät ole",
+      "structure": "Subject + eivät + ole",
+      "explanation": "he eivät ole = they are not"
+    },
+    {
+      "id": 22,
+      "subtopic": "olen-negative",
+      "type": "sentence",
+      "prompt": "I am not tired",
+      "english": "I am not tired",
+      "answer": "minä en ole väsynyt",
+      "structure": "Subject + en ole + adjective",
+      "explanation": "en ole + adjective (nominative) - stays nominative in negative!"
+    },
+    {
+      "id": 23,
+      "subtopic": "olen-negative",
+      "type": "sentence",
+      "prompt": "I am not a teacher",
+      "english": "I am not a teacher",
+      "answer": "minä en ole opettaja",
+      "structure": "Subject + en ole + noun",
+      "explanation": "en ole + noun (nominative) - complement stays nominative!"
+    },
+    {
+      "id": 24,
+      "subtopic": "olen-negative",
+      "type": "sentence",
+      "prompt": "She is not Finnish",
+      "english": "She is not Finnish",
+      "answer": "hän ei ole suomalainen",
+      "structure": "Subject + ei ole + adjective",
+      "explanation": "ei ole + nationality (nominative)"
+    },
+    {
+      "id": 25,
+      "subtopic": "olen-negative",
+      "type": "sentence",
+      "prompt": "He is not tall",
+      "english": "He is not tall",
+      "answer": "hän ei ole pitkä",
+      "structure": "Subject + ei ole + adjective",
+      "explanation": "ei ole + adjective (nominative)"
+    },
+    {
+      "id": 26,
+      "subtopic": "olen-negative",
+      "type": "sentence",
+      "prompt": "We are not happy",
+      "english": "We are not happy",
+      "answer": "me emme ole iloisia",
+      "structure": "Subject + emme ole + adjective",
+      "explanation": "emme ole + adjective (partitive plural for 'we')"
+    },
+    {
+      "id": 27,
+      "subtopic": "olen-negative",
+      "type": "sentence",
+      "prompt": "I am not hungry",
+      "english": "I am not hungry",
+      "answer": "minä en ole nälkäinen",
+      "structure": "Subject + en ole + adjective",
+      "explanation": "en ole + adjective (nominative)"
+    },
+    {
+      "id": 28,
+      "subtopic": "olen-negative",
+      "type": "sentence",
+      "prompt": "They are not students",
+      "english": "They are not students",
+      "answer": "he eivät ole opiskelijoita",
+      "structure": "Subject + eivät ole + noun",
+      "explanation": "eivät ole + noun (partitive plural)"
+    },
+
+    {
+      "id": 29,
+      "subtopic": "on-positive",
+      "type": "conjugation",
+      "subject": "minä",
+      "english": "I have",
+      "answer": "minulla on",
+      "structure": "Subject (-lla/llä) + on",
+      "explanation": "minulla on = I have (subject in adessive + on)"
+    },
+    {
+      "id": 30,
+      "subtopic": "on-positive",
+      "type": "conjugation",
+      "subject": "sinä",
+      "english": "you have",
+      "answer": "sinulla on",
+      "structure": "Subject (-lla/llä) + on",
+      "explanation": "sinulla on = you have"
+    },
+    {
+      "id": 31,
+      "subtopic": "on-positive",
+      "type": "conjugation",
+      "subject": "hän",
+      "english": "he/she has",
+      "answer": "hänellä on",
+      "structure": "Subject (-lla/llä) + on",
+      "explanation": "hänellä on = he/she has"
+    },
+    {
+      "id": 32,
+      "subtopic": "on-positive",
+      "type": "conjugation",
+      "subject": "me",
+      "english": "we have",
+      "answer": "meillä on",
+      "structure": "Subject (-lla/llä) + on",
+      "explanation": "meillä on = we have"
+    },
+    {
+      "id": 33,
+      "subtopic": "on-positive",
+      "type": "conjugation",
+      "subject": "te",
+      "english": "you have (plural/formal)",
+      "answer": "teillä on",
+      "structure": "Subject (-lla/llä) + on",
+      "explanation": "teillä on = you have (plural)"
+    },
+    {
+      "id": 34,
+      "subtopic": "on-positive",
+      "type": "conjugation",
+      "subject": "he",
+      "english": "they have",
+      "answer": "heillä on",
+      "structure": "Subject (-lla/llä) + on",
+      "explanation": "heillä on = they have"
+    },
+    {
+      "id": 35,
+      "subtopic": "on-positive",
+      "type": "sentence",
+      "prompt": "I have a book",
+      "english": "I have a book",
+      "answer": "minulla on kirja",
+      "structure": "___lla on + noun (nominative)",
+      "explanation": "minulla on + nominative = I have [thing]"
+    },
+    {
+      "id": 36,
+      "subtopic": "on-positive",
+      "type": "sentence",
+      "prompt": "I have a car",
+      "english": "I have a car",
+      "answer": "minulla on auto",
+      "structure": "___lla on + noun (nominative)",
+      "explanation": "minulla on + nominative = I have [thing]"
+    },
+    {
+      "id": 37,
+      "subtopic": "on-positive",
+      "type": "sentence",
+      "prompt": "I have a sister",
+      "english": "I have a sister",
+      "answer": "minulla on sisko",
+      "structure": "___lla on + noun (nominative)",
+      "explanation": "minulla on + nominative = I have [thing]"
+    },
+    {
+      "id": 38,
+      "subtopic": "on-positive",
+      "type": "sentence",
+      "prompt": "I have a brother",
+      "english": "I have a brother",
+      "answer": "minulla on veli",
+      "structure": "___lla on + noun (nominative)",
+      "explanation": "minulla on + nominative = I have [thing]"
+    },
+    {
+      "id": 39,
+      "subtopic": "on-positive",
+      "type": "sentence",
+      "prompt": "I have money",
+      "english": "I have money",
+      "answer": "minulla on rahaa",
+      "structure": "___lla on + noun (partitive for uncountable)",
+      "explanation": "minulla on + partitive for uncountable things"
+    },
+    {
+      "id": 40,
+      "subtopic": "on-positive",
+      "type": "sentence",
+      "prompt": "I have time",
+      "english": "I have time",
+      "answer": "minulla on aikaa",
+      "structure": "___lla on + noun (partitive for uncountable)",
+      "explanation": "minulla on + partitive for uncountable things"
+    },
+    {
+      "id": 41,
+      "subtopic": "on-positive",
+      "type": "sentence",
+      "prompt": "She has a dog",
+      "english": "She has a dog",
+      "answer": "hänellä on koira",
+      "structure": "___lla on + noun (nominative)",
+      "explanation": "hänellä on + nominative = she has [thing]"
+    },
+    {
+      "id": 42,
+      "subtopic": "on-positive",
+      "type": "sentence",
+      "prompt": "We have a house",
+      "english": "We have a house",
+      "answer": "meillä on talo",
+      "structure": "___lla on + noun (nominative)",
+      "explanation": "meillä on + nominative = we have [thing]"
+    },
+    {
+      "id": 43,
+      "subtopic": "on-positive",
+      "type": "sentence",
+      "prompt": "I have two children",
+      "english": "I have two children",
+      "answer": "minulla on kaksi lasta",
+      "structure": "___lla on + number + noun (partitive)",
+      "explanation": "minulla on + number + partitive"
+    },
+
+    {
+      "id": 44,
+      "subtopic": "on-negative",
+      "type": "conjugation",
+      "subject": "minä",
+      "english": "I don't have",
+      "answer": "minulla ei ole",
+      "structure": "Subject (-lla/llä) + ei ole",
+      "explanation": "minulla ei ole = I don't have"
+    },
+    {
+      "id": 45,
+      "subtopic": "on-negative",
+      "type": "conjugation",
+      "subject": "sinä",
+      "english": "you don't have",
+      "answer": "sinulla ei ole",
+      "structure": "Subject (-lla/llä) + ei ole",
+      "explanation": "sinulla ei ole = you don't have"
+    },
+    {
+      "id": 46,
+      "subtopic": "on-negative",
+      "type": "conjugation",
+      "subject": "hän",
+      "english": "he/she doesn't have",
+      "answer": "hänellä ei ole",
+      "structure": "Subject (-lla/llä) + ei ole",
+      "explanation": "hänellä ei ole = he/she doesn't have"
+    },
+    {
+      "id": 47,
+      "subtopic": "on-negative",
+      "type": "conjugation",
+      "subject": "me",
+      "english": "we don't have",
+      "answer": "meillä ei ole",
+      "structure": "Subject (-lla/llä) + ei ole",
+      "explanation": "meillä ei ole = we don't have"
+    },
+    {
+      "id": 48,
+      "subtopic": "on-negative",
+      "type": "conjugation",
+      "subject": "te",
+      "english": "you don't have (plural)",
+      "answer": "teillä ei ole",
+      "structure": "Subject (-lla/llä) + ei ole",
+      "explanation": "teillä ei ole = you don't have (plural)"
+    },
+    {
+      "id": 49,
+      "subtopic": "on-negative",
+      "type": "conjugation",
+      "subject": "he",
+      "english": "they don't have",
+      "answer": "heillä ei ole",
+      "structure": "Subject (-lla/llä) + ei ole",
+      "explanation": "heillä ei ole = they don't have"
+    },
+    {
+      "id": 50,
+      "subtopic": "on-negative",
+      "type": "sentence",
+      "prompt": "I don't have a book",
+      "english": "I don't have a book",
+      "answer": "minulla ei ole kirjaa",
+      "structure": "___lla ei ole + noun (PARTITIVE!)",
+      "explanation": "Negative possession = PARTITIVE! kirja → kirjaa"
+    },
+    {
+      "id": 51,
+      "subtopic": "on-negative",
+      "type": "sentence",
+      "prompt": "I don't have a car",
+      "english": "I don't have a car",
+      "answer": "minulla ei ole autoa",
+      "structure": "___lla ei ole + noun (PARTITIVE!)",
+      "explanation": "Negative possession = PARTITIVE! auto → autoa"
+    },
+    {
+      "id": 52,
+      "subtopic": "on-negative",
+      "type": "sentence",
+      "prompt": "I don't have money",
+      "english": "I don't have money",
+      "answer": "minulla ei ole rahaa",
+      "structure": "___lla ei ole + noun (PARTITIVE!)",
+      "explanation": "Negative possession = PARTITIVE! raha → rahaa"
+    },
+    {
+      "id": 53,
+      "subtopic": "on-negative",
+      "type": "sentence",
+      "prompt": "I don't have time",
+      "english": "I don't have time",
+      "answer": "minulla ei ole aikaa",
+      "structure": "___lla ei ole + noun (PARTITIVE!)",
+      "explanation": "Negative possession = PARTITIVE! aika → aikaa"
+    },
+    {
+      "id": 54,
+      "subtopic": "on-negative",
+      "type": "sentence",
+      "prompt": "I don't have a sister",
+      "english": "I don't have a sister",
+      "answer": "minulla ei ole siskoa",
+      "structure": "___lla ei ole + noun (PARTITIVE!)",
+      "explanation": "Negative possession = PARTITIVE! sisko → siskoa"
+    },
+    {
+      "id": 55,
+      "subtopic": "on-negative",
+      "type": "sentence",
+      "prompt": "I don't have a dog",
+      "english": "I don't have a dog",
+      "answer": "minulla ei ole koiraa",
+      "structure": "___lla ei ole + noun (PARTITIVE!)",
+      "explanation": "Negative possession = PARTITIVE! koira → koiraa"
+    },
+    {
+      "id": 56,
+      "subtopic": "on-negative",
+      "type": "sentence",
+      "prompt": "She doesn't have a phone",
+      "english": "She doesn't have a phone",
+      "answer": "hänellä ei ole puhelinta",
+      "structure": "___lla ei ole + noun (PARTITIVE!)",
+      "explanation": "Negative possession = PARTITIVE! puhelin → puhelinta"
+    },
+    {
+      "id": 57,
+      "subtopic": "on-negative",
+      "type": "sentence",
+      "prompt": "We don't have a house",
+      "english": "We don't have a house",
+      "answer": "meillä ei ole taloa",
+      "structure": "___lla ei ole + noun (PARTITIVE!)",
+      "explanation": "Negative possession = PARTITIVE! talo → taloa"
+    },
+    {
+      "id": 58,
+      "subtopic": "on-negative",
+      "type": "sentence",
+      "prompt": "They don't have children",
+      "english": "They don't have children",
+      "answer": "heillä ei ole lapsia",
+      "structure": "___lla ei ole + noun (PARTITIVE!)",
+      "explanation": "Negative possession = PARTITIVE! lapsi → lapsia (plural)"
+    },
+
+    {
+      "id": 59,
+      "subtopic": "clothes",
+      "type": "sentence",
+      "prompt": "She has a pink bag",
+      "english": "She has a pink bag",
+      "answer": "hänellä on vaaleanpunainen laukku",
+      "structure": "___llä on + adjective + noun",
+      "explanation": "hänellä on + color + item for describing what someone has/wears"
+    },
+    {
+      "id": 60,
+      "subtopic": "clothes",
+      "type": "sentence",
+      "prompt": "She has a pink shirt",
+      "english": "She has a pink shirt",
+      "answer": "hänellä on vaaleanpunainen paita",
+      "structure": "___llä on + adjective + noun",
+      "explanation": "hänellä on + color + clothing item"
+    },
+    {
+      "id": 61,
+      "subtopic": "clothes",
+      "type": "sentence",
+      "prompt": "She has pink shoes",
+      "english": "She has pink shoes",
+      "answer": "hänellä on vaaleanpunaiset kengät",
+      "structure": "___llä on + adjective + noun (plural)",
+      "explanation": "Plural items: adjective and noun both in plural (t-ending)"
+    },
+    {
+      "id": 62,
+      "subtopic": "clothes",
+      "type": "sentence",
+      "prompt": "She has dark pants",
+      "english": "She has dark pants",
+      "answer": "hänellä on tummat housut",
+      "structure": "___llä on + adjective + noun (plural)",
+      "explanation": "tumma → tummat (plural adjective), housut (always plural)"
+    },
+    {
+      "id": 63,
+      "subtopic": "clothes",
+      "type": "sentence",
+      "prompt": "He has a blue jacket",
+      "english": "He has a blue jacket",
+      "answer": "hänellä on sininen takki",
+      "structure": "___llä on + adjective + noun",
+      "explanation": "hänellä on + color + clothing item"
+    },
+    {
+      "id": 64,
+      "subtopic": "clothes",
+      "type": "sentence",
+      "prompt": "He has a white shirt",
+      "english": "He has a white shirt",
+      "answer": "hänellä on valkoinen paita",
+      "structure": "___llä on + adjective + noun",
+      "explanation": "hänellä on + color + clothing item"
+    },
+    {
+      "id": 65,
+      "subtopic": "clothes",
+      "type": "sentence",
+      "prompt": "He has black pants",
+      "english": "He has black pants",
+      "answer": "hänellä on mustat housut",
+      "structure": "___llä on + adjective + noun (plural)",
+      "explanation": "musta → mustat (plural), housut (always plural)"
+    },
+    {
+      "id": 66,
+      "subtopic": "clothes",
+      "type": "sentence",
+      "prompt": "I am wearing a red shirt",
+      "english": "I am wearing a red shirt",
+      "answer": "minulla on päällä punainen paita",
+      "structure": "___lla on päällä + clothes",
+      "explanation": "on päällä = is wearing (literally: is on [me])"
+    },
+    {
+      "id": 67,
+      "subtopic": "clothes",
+      "type": "sentence",
+      "prompt": "I am wearing blue jeans",
+      "english": "I am wearing blue jeans",
+      "answer": "minulla on päällä siniset farkut",
+      "structure": "___lla on päällä + clothes (plural)",
+      "explanation": "on päällä = is wearing, farkut (always plural)"
+    },
+    {
+      "id": 68,
+      "subtopic": "clothes",
+      "type": "sentence",
+      "prompt": "She is wearing a green dress",
+      "english": "She is wearing a green dress",
+      "answer": "hänellä on päällä vihreä mekko",
+      "structure": "___llä on päällä + clothes",
+      "explanation": "on päällä = is wearing"
+    },
+    {
+      "id": 69,
+      "subtopic": "clothes",
+      "type": "sentence",
+      "prompt": "I don't have a blue shirt",
+      "english": "I don't have a blue shirt",
+      "answer": "minulla ei ole sinistä paitaa",
+      "structure": "___lla ei ole + adj (PARTITIVE) + noun (PARTITIVE)",
+      "explanation": "Negative: sininen → sinistä, paita → paitaa (both partitive!)"
+    },
+    {
+      "id": 70,
+      "subtopic": "clothes",
+      "type": "sentence",
+      "prompt": "I am not wearing a red shirt",
+      "english": "I am not wearing a red shirt",
+      "answer": "minulla ei ole päällä punaista paitaa",
+      "structure": "___lla ei ole päällä + adj (PARTITIVE) + noun (PARTITIVE)",
+      "explanation": "Negative: punainen → punaista, paita → paitaa (both partitive!)"
+    },
+
+    {
+      "id": 71,
+      "subtopic": "appearance",
+      "type": "sentence",
+      "prompt": "She has long blonde straight hair",
+      "english": "She has long blonde straight hair",
+      "answer": "hänellä on pitkä vaalea suora tukka",
+      "structure": "___llä on + adjectives + noun",
+      "explanation": "Describing hair: pitkä (long), vaalea (blonde), suora (straight), tukka (hair)"
+    },
+    {
+      "id": 72,
+      "subtopic": "appearance",
+      "type": "sentence",
+      "prompt": "She has blue eyes",
+      "english": "She has blue eyes",
+      "answer": "hänellä on siniset silmät",
+      "structure": "___llä on + adjective + noun (plural)",
+      "explanation": "silmät = eyes (plural), siniset = blue (plural)"
+    },
+    {
+      "id": 73,
+      "subtopic": "appearance",
+      "type": "sentence",
+      "prompt": "She has glasses",
+      "english": "She has glasses",
+      "answer": "hänellä on silmälasit",
+      "structure": "___llä on + noun",
+      "explanation": "silmälasit = glasses (always plural)"
+    },
+    {
+      "id": 74,
+      "subtopic": "appearance",
+      "type": "sentence",
+      "prompt": "He has short brown hair",
+      "english": "He has short brown hair",
+      "answer": "hänellä on lyhyt ruskea tukka",
+      "structure": "___llä on + adjectives + noun",
+      "explanation": "lyhyt (short), ruskea (brown), tukka (hair)"
+    },
+    {
+      "id": 75,
+      "subtopic": "appearance",
+      "type": "sentence",
+      "prompt": "He has brown eyes",
+      "english": "He has brown eyes",
+      "answer": "hänellä on ruskeat silmät",
+      "structure": "___llä on + adjective + noun (plural)",
+      "explanation": "ruskea → ruskeat (plural), silmät (plural)"
+    },
+    {
+      "id": 76,
+      "subtopic": "appearance",
+      "type": "sentence",
+      "prompt": "He has a beard",
+      "english": "He has a beard",
+      "answer": "hänellä on parta",
+      "structure": "___llä on + noun",
+      "explanation": "parta = beard"
+    },
+    {
+      "id": 77,
+      "subtopic": "appearance",
+      "type": "sentence",
+      "prompt": "She is tall",
+      "english": "She is tall",
+      "answer": "hän on pitkä",
+      "structure": "Subject + on + adjective",
+      "explanation": "on + adjective for describing height"
+    },
+    {
+      "id": 78,
+      "subtopic": "appearance",
+      "type": "sentence",
+      "prompt": "He is short",
+      "english": "He is short",
+      "answer": "hän on lyhyt",
+      "structure": "Subject + on + adjective",
+      "explanation": "on + adjective for describing height"
+    },
+    {
+      "id": 79,
+      "subtopic": "appearance",
+      "type": "sentence",
+      "prompt": "What does she look like?",
+      "english": "What does she look like?",
+      "answer": "minkänäköinen hän on",
+      "structure": "Question word + on",
+      "explanation": "minkänäköinen = what kind of looking"
+    },
+    {
+      "id": 80,
+      "subtopic": "appearance",
+      "type": "sentence",
+      "prompt": "I have green eyes",
+      "english": "I have green eyes",
+      "answer": "minulla on vihreät silmät",
+      "structure": "___lla on + adjective + noun (plural)",
+      "explanation": "vihreä → vihreät (plural), silmät (plural)"
+    }
+  ]
+}

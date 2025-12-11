@@ -1,0 +1,968 @@
+{
+  "topic": "Kysymyslauseet (Question Sentences)",
+  "description": "Practice Finnish yes/no questions (-ko) and question words!",
+  "subtopics": [
+    { "id": "all", "name": "All Questions", "icon": "🔄" },
+    { "id": "ko-questions", "name": "-ko Questions (Yes/No)", "icon": "❓" },
+    { "id": "mika-mita", "name": "Mikä / Mitä", "icon": "🤔" },
+    { "id": "basic-words", "name": "Basic Question Words", "icon": "📝" },
+    { "id": "minka-inen", "name": "Minkä + -inen", "icon": "🎨" }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "Make a yes/no question: 'Sinä olet opiskelija.'",
+      "options": [
+        "Oletko sinä opiskelija?",
+        "Sinä oletko opiskelija?",
+        "Opiskelija oletko sinä?",
+        "Sinäkö olet opiskelija?"
+      ],
+      "correct": "Oletko sinä opiskelija?",
+      "explanation": "Add -ko to verb and move it first: Oletko sinä opiskelija?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 2,
+      "question": "Make a yes/no question: 'Hän asuu Turussa.'",
+      "options": [
+        "Asuuko hän Turussa?",
+        "Hän asuuko Turussa?",
+        "Turussakko hän asuu?",
+        "Asuu hänkö Turussa?"
+      ],
+      "correct": "Asuuko hän Turussa?",
+      "explanation": "Add -ko to verb and move it first: Asuuko hän Turussa?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 3,
+      "question": "Make a yes/no question: 'Te puhutte ranskaa.'",
+      "options": [
+        "Puhutteko te ranskaa?",
+        "Te puhutteko ranskaa?",
+        "Ranskaako te puhutte?",
+        "Puhutteko ranskaa te?"
+      ],
+      "correct": "Puhutteko te ranskaa?",
+      "explanation": "Add -ko to verb and move it first: Puhutteko te ranskaa?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 4,
+      "question": "Make a yes/no question: 'Hans puhuu saksaa.'",
+      "options": [
+        "Puhuuko Hans saksaa?",
+        "Hans puhuuko saksaa?",
+        "Saksaako Hans puhuu?",
+        "Puhuu Hansko saksaa?"
+      ],
+      "correct": "Puhuuko Hans saksaa?",
+      "explanation": "Add -ko to verb and move it first: Puhuuko Hans saksaa?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 5,
+      "question": "Make a yes/no question: 'Sinä olet suomalainen.'",
+      "options": [
+        "Oletko sinä suomalainen?",
+        "Sinä oletko suomalainen?",
+        "Suomalainenko sinä olet?",
+        "Olet sinäkö suomalainen?"
+      ],
+      "correct": "Oletko sinä suomalainen?",
+      "explanation": "Add -ko to verb: Oletko sinä suomalainen?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 6,
+      "question": "Make a yes/no question: 'Hän on opettaja.'",
+      "options": [
+        "Onko hän opettaja?",
+        "Hän onko opettaja?",
+        "Opettajako hän on?",
+        "On hänkö opettaja?"
+      ],
+      "correct": "Onko hän opettaja?",
+      "explanation": "Add -ko to verb: Onko hän opettaja?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 7,
+      "question": "Make a yes/no question: 'Me asumme Helsingissä.'",
+      "options": [
+        "Asummeko me Helsingissä?",
+        "Me asummeko Helsingissä?",
+        "Helsingissäkö me asumme?",
+        "Asumme mekö Helsingissä?"
+      ],
+      "correct": "Asummeko me Helsingissä?",
+      "explanation": "Add -ko to verb: Asummeko me Helsingissä?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 8,
+      "question": "Make a yes/no question: 'He ovat väsyneitä.'",
+      "options": [
+        "Ovatko he väsyneitä?",
+        "He ovatkö väsyneitä?",
+        "Väsyneitäkö he ovat?",
+        "Ovat hekö väsyneitä?"
+      ],
+      "correct": "Ovatko he väsyneitä?",
+      "explanation": "Add -ko to verb: Ovatko he väsyneitä?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 9,
+      "question": "Make a yes/no question: 'Sinä syöt leipää.'",
+      "options": [
+        "Syötkö sinä leipää?",
+        "Sinä syötkö leipää?",
+        "Leipääkö sinä syöt?",
+        "Syöt sinäkö leipää?"
+      ],
+      "correct": "Syötkö sinä leipää?",
+      "explanation": "Add -kö to verb (front vowel): Syötkö sinä leipää?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 10,
+      "question": "Make a yes/no question: 'Minulla on koira.'",
+      "options": [
+        "Onko minulla koira?",
+        "Minulla onko koira?",
+        "Koirako minulla on?",
+        "On minullako koira?"
+      ],
+      "correct": "Onko minulla koira?",
+      "explanation": "Add -ko to verb: Onko minulla koira?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 11,
+      "question": "Make a yes/no question: 'Sinä juot kahvia.'",
+      "options": [
+        "Juotko sinä kahvia?",
+        "Sinä juotko kahvia?",
+        "Kahviako sinä juot?",
+        "Juot sinäkö kahvia?"
+      ],
+      "correct": "Juotko sinä kahvia?",
+      "explanation": "Add -ko to verb: Juotko sinä kahvia?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 12,
+      "question": "Make a yes/no question: 'Tämä on hyvä kirja.'",
+      "options": [
+        "Onko tämä hyvä kirja?",
+        "Tämä onko hyvä kirja?",
+        "Kirjako tämä on hyvä?",
+        "On tämäkö hyvä kirja?"
+      ],
+      "correct": "Onko tämä hyvä kirja?",
+      "explanation": "Add -ko to verb: Onko tämä hyvä kirja?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 13,
+      "question": "Make a yes/no question: 'Hän opiskelee suomea.'",
+      "options": [
+        "Opiskeleeko hän suomea?",
+        "Hän opiskeleeko suomea?",
+        "Suomeako hän opiskelee?",
+        "Opiskelee hänkö suomea?"
+      ],
+      "correct": "Opiskeleeko hän suomea?",
+      "explanation": "Add -ko to verb: Opiskeleeko hän suomea?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 14,
+      "question": "Make a yes/no question: 'Te tulette huomenna.'",
+      "options": [
+        "Tuletteko te huomenna?",
+        "Te tuletteko huomenna?",
+        "Huomennako te tulette?",
+        "Tulette tekö huomenna?"
+      ],
+      "correct": "Tuletteko te huomenna?",
+      "explanation": "Add -ko to verb: Tuletteko te huomenna?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 15,
+      "question": "Make a yes/no question: 'Hänellä on siniset silmät.'",
+      "options": [
+        "Onko hänellä siniset silmät?",
+        "Hänellä onko siniset silmät?",
+        "Siniset silmätkö hänellä on?",
+        "On hänelläkö siniset silmät?"
+      ],
+      "correct": "Onko hänellä siniset silmät?",
+      "explanation": "Add -ko to verb: Onko hänellä siniset silmät?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 16,
+      "question": "Translate: 'What is your name?' (use mikä)",
+      "options": [
+        "Mikä sinun nimi on?",
+        "Mitä sinun nimi on?",
+        "Minkä sinun nimi on?",
+        "Kuka sinun nimi on?"
+      ],
+      "correct": "Mikä sinun nimi on?",
+      "explanation": "Mikä is used with olla verb: Mikä sinun nimi on?",
+      "subtopic": "mika-mita"
+    },
+    {
+      "id": 17,
+      "question": "Translate: 'What do you eat?' (use mitä)",
+      "options": [
+        "Mitä sinä syöt?",
+        "Mikä sinä syöt?",
+        "Minkä sinä syöt?",
+        "Kuka sinä syöt?"
+      ],
+      "correct": "Mitä sinä syöt?",
+      "explanation": "Mitä (partitive) is used with other verbs: Mitä sinä syöt?",
+      "subtopic": "mika-mita"
+    },
+    {
+      "id": 18,
+      "question": "Which question word: 'What is this?' - ___ tämä on?",
+      "options": ["Mikä", "Mitä", "Missä", "Kuka"],
+      "correct": "Mikä",
+      "explanation": "Mikä is used with olla verb: Mikä tämä on?",
+      "subtopic": "mika-mita"
+    },
+    {
+      "id": 19,
+      "question": "Which question word: 'What are you drinking?' - ___ sinä juot?",
+      "options": ["Mitä", "Mikä", "Missä", "Mistä"],
+      "correct": "Mitä",
+      "explanation": "Mitä (partitive) with other verbs: Mitä sinä juot?",
+      "subtopic": "mika-mita"
+    },
+    {
+      "id": 20,
+      "question": "Choose: '___ sinun puhelinnumero on?'",
+      "options": ["Mikä", "Mitä", "Missä", "Kuka"],
+      "correct": "Mikä",
+      "explanation": "Mikä is used with olla: Mikä sinun puhelinnumero on?",
+      "subtopic": "mika-mita"
+    },
+    {
+      "id": 21,
+      "question": "Choose: '___ sinä luet?' (What are you reading?)",
+      "options": ["Mitä", "Mikä", "Kuka", "Missä"],
+      "correct": "Mitä",
+      "explanation": "Mitä with other verbs: Mitä sinä luet?",
+      "subtopic": "mika-mita"
+    },
+    {
+      "id": 22,
+      "question": "Choose: '___ tuo mies on?' (Who is that man?)",
+      "options": ["Kuka", "Mikä", "Mitä", "Ketä"],
+      "correct": "Kuka",
+      "explanation": "Kuka means 'who': Kuka tuo mies on?",
+      "subtopic": "mika-mita"
+    },
+    {
+      "id": 23,
+      "question": "Choose: '___ kello on?' (What time is it?)",
+      "options": ["Mitä", "Mikä", "Paljonko", "Kuinka"],
+      "correct": "Mitä",
+      "explanation": "Exception: Mitä kello on? is a fixed expression",
+      "subtopic": "mika-mita"
+    },
+    {
+      "id": 24,
+      "question": "Choose: '___ sinä odotat?' (Who do you wait for?)",
+      "options": ["Ketä", "Kuka", "Mitä", "Mikä"],
+      "correct": "Ketä",
+      "explanation": "Ketä is partitive of kuka (used with verbs): Ketä sinä odotat?",
+      "subtopic": "mika-mita"
+    },
+    {
+      "id": 25,
+      "question": "Translate: 'Where do you live?'",
+      "options": [
+        "Missä sinä asut?",
+        "Mistä sinä asut?",
+        "Mihin sinä asut?",
+        "Mikä sinä asut?"
+      ],
+      "correct": "Missä sinä asut?",
+      "explanation": "Missä = where (in/at): Missä sinä asut?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 26,
+      "question": "Translate: 'Where are you from?'",
+      "options": [
+        "Mistä sinä olet kotoisin?",
+        "Missä sinä olet kotoisin?",
+        "Mihin sinä olet kotoisin?",
+        "Minne sinä olet kotoisin?"
+      ],
+      "correct": "Mistä sinä olet kotoisin?",
+      "explanation": "Mistä = where from: Mistä sinä olet kotoisin?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 27,
+      "question": "Translate: 'Where are you going?'",
+      "options": [
+        "Mihin sinä menet?",
+        "Missä sinä menet?",
+        "Mistä sinä menet?",
+        "Minne sinä menet?"
+      ],
+      "correct": "Mihin sinä menet?",
+      "explanation": "Mihin = where to: Mihin sinä menet? (also: Minne)",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 28,
+      "question": "Translate: 'When is Christmas?'",
+      "options": [
+        "Milloin joulu on?",
+        "Missä joulu on?",
+        "Mikä joulu on?",
+        "Miten joulu on?"
+      ],
+      "correct": "Milloin joulu on?",
+      "explanation": "Milloin = when: Milloin joulu on?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 29,
+      "question": "Translate: 'Why are you wearing a coat?'",
+      "options": [
+        "Miksi sinulla on takki päällä?",
+        "Missä sinulla on takki päällä?",
+        "Miten sinulla on takki päällä?",
+        "Mitä sinulla on takki päällä?"
+      ],
+      "correct": "Miksi sinulla on takki päällä?",
+      "explanation": "Miksi = why: Miksi sinulla on takki päällä?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 30,
+      "question": "Translate: 'How many days are in a week?'",
+      "options": [
+        "Montako päivää on viikossa?",
+        "Mikä päivää on viikossa?",
+        "Paljonko päivää on viikossa?",
+        "Miten päivää on viikossa?"
+      ],
+      "correct": "Montako päivää on viikossa?",
+      "explanation": "Montako = how many: Montako päivää on viikossa?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 31,
+      "question": "Translate: 'How much time do you have?'",
+      "options": [
+        "Paljonko aikaa sinulla on?",
+        "Montako aikaa sinulla on?",
+        "Kuinka aikaa sinulla on?",
+        "Miten aikaa sinulla on?"
+      ],
+      "correct": "Paljonko aikaa sinulla on?",
+      "explanation": "Paljonko = how much: Paljonko aikaa sinulla on?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 32,
+      "question": "Translate: 'What is (s)he like?'",
+      "options": [
+        "Millainen hän on?",
+        "Mikä hän on?",
+        "Kuka hän on?",
+        "Miten hän on?"
+      ],
+      "correct": "Millainen hän on?",
+      "explanation": "Millainen = what kind of: Millainen hän on?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 33,
+      "question": "Translate: 'Whose home country is Brazil?'",
+      "options": [
+        "Kenen kotimaa on Brasilia?",
+        "Kuka kotimaa on Brasilia?",
+        "Mikä kotimaa on Brasilia?",
+        "Ketä kotimaa on Brasilia?"
+      ],
+      "correct": "Kenen kotimaa on Brasilia?",
+      "explanation": "Kenen = whose: Kenen kotimaa on Brasilia?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 34,
+      "question": "Choose: '___ sinä asut?' (Where do you live?)",
+      "options": ["Missä", "Mistä", "Mihin", "Minne"],
+      "correct": "Missä",
+      "explanation": "Missä = where (location): Missä sinä asut?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 35,
+      "question": "Choose: '___ sinä tulet?' (Where do you come from?)",
+      "options": ["Mistä", "Missä", "Mihin", "Milloin"],
+      "correct": "Mistä",
+      "explanation": "Mistä = where from: Mistä sinä tulet?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 36,
+      "question": "Choose: '___ sinä menet?' (Where are you going?)",
+      "options": ["Mihin", "Missä", "Mistä", "Miten"],
+      "correct": "Mihin",
+      "explanation": "Mihin = where to: Mihin sinä menet?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 37,
+      "question": "Choose: '___ se maksaa?' (How much does it cost?)",
+      "options": ["Paljonko", "Montako", "Kuinka", "Mitä"],
+      "correct": "Paljonko",
+      "explanation": "Paljonko = how much: Paljonko se maksaa?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 38,
+      "question": "Choose: '___ lapsia sinulla on?' (How many children do you have?)",
+      "options": ["Montako", "Paljonko", "Kuinka", "Mikä"],
+      "correct": "Montako",
+      "explanation": "Montako = how many: Montako lapsia sinulla on?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 39,
+      "question": "Choose: '___ nähdään taas?' (When will we see again?)",
+      "options": ["Milloin", "Missä", "Miten", "Miksi"],
+      "correct": "Milloin",
+      "explanation": "Milloin = when: Milloin nähdään taas?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 40,
+      "question": "Choose: '___ täällä on kylmä?' (Why is it cold here?)",
+      "options": ["Miksi", "Miten", "Missä", "Milloin"],
+      "correct": "Miksi",
+      "explanation": "Miksi = why: Miksi täällä on kylmä?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 41,
+      "question": "Choose: '___ tämä elokuva kestää?' (How long will this movie last?)",
+      "options": ["Kuinka kauan", "Paljonko", "Montako", "Milloin"],
+      "correct": "Kuinka kauan",
+      "explanation": "Kuinka kauan = how long: Kuinka kauan tämä elokuva kestää?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 42,
+      "question": "Translate: 'Where are you from?' (using minkämaalainen)",
+      "options": [
+        "Minkämaalainen sinä olet?",
+        "Mistämaalainen sinä olet?",
+        "Missämaalainen sinä olet?",
+        "Mikämaalainen sinä olet?"
+      ],
+      "correct": "Minkämaalainen sinä olet?",
+      "explanation": "Minkämaalainen = what nationality: Minkämaalainen sinä olet?",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 43,
+      "question": "Translate: 'How old are you?'",
+      "options": [
+        "Minkäikäinen sinä olet?",
+        "Paljonko sinä olet?",
+        "Kuinka vanha sinä olet?",
+        "Montako sinä olet?"
+      ],
+      "correct": "Minkäikäinen sinä olet?",
+      "explanation": "Minkäikäinen = how old: Minkäikäinen sinä olet?",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 44,
+      "question": "Translate: 'What does she look like?'",
+      "options": [
+        "Minkänäköinen hän on?",
+        "Mikä hän näyttää?",
+        "Millainen hän näyttää?",
+        "Miten hän on?"
+      ],
+      "correct": "Minkänäköinen hän on?",
+      "explanation": "Minkänäköinen = what does (s)he look like: Minkänäköinen hän on?",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 45,
+      "question": "Translate: 'How tall are you?'",
+      "options": [
+        "Minkäpituinen sinä olet?",
+        "Kuinka pitkä sinä olet?",
+        "Paljonko sinä olet pitkä?",
+        "Mikä sinä olet pitkä?"
+      ],
+      "correct": "Minkäpituinen sinä olet?",
+      "explanation": "Minkäpituinen = how tall/long: Minkäpituinen sinä olet?",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 46,
+      "question": "Translate: 'What size is the pizza?'",
+      "options": [
+        "Minkäkokoinen pizza on?",
+        "Mikä pizza on kokoinen?",
+        "Paljonko pizza on?",
+        "Kuinka pizza on iso?"
+      ],
+      "correct": "Minkäkokoinen pizza on?",
+      "explanation": "Minkäkokoinen = what size: Minkäkokoinen pizza on?",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 47,
+      "question": "Translate: 'What colour is a carrot?'",
+      "options": [
+        "Minkävärinen porkkana on?",
+        "Mikä väri porkkana on?",
+        "Millainen väri porkkana on?",
+        "Mitä väriä porkkana on?"
+      ],
+      "correct": "Minkävärinen porkkana on?",
+      "explanation": "Minkävärinen = what colour: Minkävärinen porkkana on?",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 48,
+      "question": "The pattern minkä + quality + inen asks about ___",
+      "options": [
+        "a specific quality (age, size, color, etc.)",
+        "time",
+        "location",
+        "reason"
+      ],
+      "correct": "a specific quality (age, size, color, etc.)",
+      "explanation": "Minkä + inen pattern asks about specific qualities!",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 49,
+      "question": "Match: maa (country) → minkä___?",
+      "options": [
+        "minkämaalainen",
+        "minkäikäinen",
+        "minkävärinen",
+        "minkäkokoinen"
+      ],
+      "correct": "minkämaalainen",
+      "explanation": "maa → minkämaalainen (what nationality)",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 50,
+      "question": "Match: ikä (age) → minkä___?",
+      "options": [
+        "minkäikäinen",
+        "minkämaalainen",
+        "minkäpituinen",
+        "minkänäköinen"
+      ],
+      "correct": "minkäikäinen",
+      "explanation": "ikä → minkäikäinen (how old)",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 51,
+      "question": "Match: väri (colour) → minkä___?",
+      "options": [
+        "minkävärinen",
+        "minkäikäinen",
+        "minkäkokoinen",
+        "minkäpituinen"
+      ],
+      "correct": "minkävärinen",
+      "explanation": "väri → minkävärinen (what colour)",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 52,
+      "question": "Match: koko (size) → minkä___?",
+      "options": [
+        "minkäkokoinen",
+        "minkävärinen",
+        "minkäpituinen",
+        "minkäikäinen"
+      ],
+      "correct": "minkäkokoinen",
+      "explanation": "koko → minkäkokoinen (what size)",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 53,
+      "question": "Match: pituus (length/height) → minkä___?",
+      "options": [
+        "minkäpituinen",
+        "minkäkokoinen",
+        "minkäikäinen",
+        "minkävärinen"
+      ],
+      "correct": "minkäpituinen",
+      "explanation": "pituus → minkäpituinen (how tall/long)",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 54,
+      "question": "Match: ulkonäkö (appearance) → minkä___?",
+      "options": [
+        "minkänäköinen",
+        "minkäpituinen",
+        "minkäkokoinen",
+        "minkämaalainen"
+      ],
+      "correct": "minkänäköinen",
+      "explanation": "ulkonäkö → minkänäköinen (what does look like)",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 55,
+      "question": "What's the difference: 'Mikä' vs 'Mitä'?",
+      "options": [
+        "Mikä with olla, Mitä with other verbs",
+        "They are the same",
+        "Mikä for people, Mitä for things",
+        "Mitä with olla, Mikä with other verbs"
+      ],
+      "correct": "Mikä with olla, Mitä with other verbs",
+      "explanation": "Mikä is used with olla verb, Mitä (partitive) with other verbs!",
+      "subtopic": "mika-mita"
+    },
+    {
+      "id": 56,
+      "question": "What's the difference: 'Kuka' vs 'Ketä'?",
+      "options": [
+        "Kuka with olla, Ketä with other verbs",
+        "They are the same",
+        "Kuka for women, Ketä for men",
+        "Ketä with olla, Kuka with other verbs"
+      ],
+      "correct": "Kuka with olla, Ketä with other verbs",
+      "explanation": "Kuka with olla verb, Ketä (partitive) with other verbs!",
+      "subtopic": "mika-mita"
+    },
+    {
+      "id": 57,
+      "question": "What's the difference: 'Missä' vs 'Mistä' vs 'Mihin'?",
+      "options": [
+        "Missä = where at, Mistä = where from, Mihin = where to",
+        "They are the same",
+        "Missä = when, Mistä = why, Mihin = how",
+        "All mean 'where'"
+      ],
+      "correct": "Missä = where at, Mistä = where from, Mihin = where to",
+      "explanation": "Location trio: Missä (at), Mistä (from), Mihin (to)",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 58,
+      "question": "How to form -ko questions in Finnish?",
+      "options": [
+        "Add -ko to verb and move verb first",
+        "Add -ko to subject",
+        "Add -ko at the end",
+        "Add -ko to object"
+      ],
+      "correct": "Add -ko to verb and move verb first",
+      "explanation": "Word order: SVO → VSO, add -ko to verb",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 59,
+      "question": "Translate: 'Do you speak Finnish?'",
+      "options": [
+        "Puhutko sinä suomea?",
+        "Sinä puhutko suomea?",
+        "Suomeako sinä puhut?",
+        "Puhut sinäko suomea?"
+      ],
+      "correct": "Puhutko sinä suomea?",
+      "explanation": "Add -ko to verb first: Puhutko sinä suomea?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 60,
+      "question": "Translate: 'Are you tired?'",
+      "options": [
+        "Oletko sinä väsynyt?",
+        "Sinä oletko väsynyt?",
+        "Väsynytkö sinä olet?",
+        "Olet sinäkö väsynyt?"
+      ],
+      "correct": "Oletko sinä väsynyt?",
+      "explanation": "Oletko sinä väsynyt?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 61,
+      "question": "Translate: 'Is she a student?'",
+      "options": [
+        "Onko hän opiskelija?",
+        "Hän onko opiskelija?",
+        "Opiskelijako hän on?",
+        "On hänkö opiskelija?"
+      ],
+      "correct": "Onko hän opiskelija?",
+      "explanation": "Onko hän opiskelija?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 62,
+      "question": "Translate: 'Do they live in Finland?'",
+      "options": [
+        "Asuvatko he Suomessa?",
+        "He asuvatko Suomessa?",
+        "Suomessako he asuvat?",
+        "Asuvat hekö Suomessa?"
+      ],
+      "correct": "Asuvatko he Suomessa?",
+      "explanation": "Asuvatko he Suomessa?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 63,
+      "question": "Translate: 'What is your job?'",
+      "options": [
+        "Mikä sinun ammatti on?",
+        "Mitä sinun ammatti on?",
+        "Kuka sinun ammatti on?",
+        "Missä sinun ammatti on?"
+      ],
+      "correct": "Mikä sinun ammatti on?",
+      "explanation": "Mikä with olla: Mikä sinun ammatti on?",
+      "subtopic": "mika-mita"
+    },
+    {
+      "id": 64,
+      "question": "Translate: 'What are you studying?'",
+      "options": [
+        "Mitä sinä opiskelet?",
+        "Mikä sinä opiskelet?",
+        "Missä sinä opiskelet?",
+        "Miten sinä opiskelet?"
+      ],
+      "correct": "Mitä sinä opiskelet?",
+      "explanation": "Mitä with other verbs: Mitä sinä opiskelet?",
+      "subtopic": "mika-mita"
+    },
+    {
+      "id": 65,
+      "question": "Translate: 'Who is your teacher?'",
+      "options": [
+        "Kuka on sinun opettaja?",
+        "Ketä on sinun opettaja?",
+        "Mikä on sinun opettaja?",
+        "Mitä on sinun opettaja?"
+      ],
+      "correct": "Kuka on sinun opettaja?",
+      "explanation": "Kuka with olla: Kuka on sinun opettaja?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 66,
+      "question": "Translate: 'When do you wake up?'",
+      "options": [
+        "Milloin sinä heräät?",
+        "Missä sinä heräät?",
+        "Miten sinä heräät?",
+        "Miksi sinä heräät?"
+      ],
+      "correct": "Milloin sinä heräät?",
+      "explanation": "Milloin = when: Milloin sinä heräät?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 67,
+      "question": "Translate: 'Where do you work?'",
+      "options": [
+        "Missä sinä työskentelet?",
+        "Mistä sinä työskentelet?",
+        "Mihin sinä työskentelet?",
+        "Milloin sinä työskentelet?"
+      ],
+      "correct": "Missä sinä työskentelet?",
+      "explanation": "Missä = where (at): Missä sinä työskentelet?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 68,
+      "question": "Translate: 'Why are you late?'",
+      "options": [
+        "Miksi sinä olet myöhässä?",
+        "Milloin sinä olet myöhässä?",
+        "Missä sinä olet myöhässä?",
+        "Miten sinä olet myöhässä?"
+      ],
+      "correct": "Miksi sinä olet myöhässä?",
+      "explanation": "Miksi = why: Miksi sinä olet myöhässä?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 69,
+      "question": "Translate: 'How do you say that in Finnish?'",
+      "options": [
+        "Miten sen sanoo suomeksi?",
+        "Mikä sen sanoo suomeksi?",
+        "Mitä sen sanoo suomeksi?",
+        "Missä sen sanoo suomeksi?"
+      ],
+      "correct": "Miten sen sanoo suomeksi?",
+      "explanation": "Miten = how: Miten sen sanoo suomeksi?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 70,
+      "question": "Translate: 'What kind of food do you like?'",
+      "options": [
+        "Millaista ruokaa sinä pidät?",
+        "Mitä ruokaa sinä pidät?",
+        "Mikä ruokaa sinä pidät?",
+        "Mistä ruokaa sinä pidät?"
+      ],
+      "correct": "Millaista ruokaa sinä pidät?",
+      "explanation": "Millainen = what kind of: Millaista ruokaa sinä pidät?",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 71,
+      "question": "Answer with correct form: 'Minkämaalainen sinä olet?' - I am Finnish",
+      "options": [
+        "Minä olen suomalainen.",
+        "Minä olen Suomi.",
+        "Minä olen Suomesta.",
+        "Minä olen suomea."
+      ],
+      "correct": "Minä olen suomalainen.",
+      "explanation": "Nationality adjective: Minä olen suomalainen.",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 72,
+      "question": "Answer with correct form: 'Minkäikäinen sinä olet?' - I am 25",
+      "options": [
+        "Minä olen 25-vuotias.",
+        "Minä olen 25 vuotta.",
+        "Minä olen 25.",
+        "All are correct"
+      ],
+      "correct": "All are correct",
+      "explanation": "All answers are acceptable: 25, 25 vuotta, 25-vuotias",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 73,
+      "question": "Answer: 'Minkänäköinen hän on?' - He is tall and thin",
+      "options": [
+        "Hän on pitkä ja hoikka.",
+        "Hän on pitkä ja hoikasta.",
+        "Hän on pitkästi ja hoikasti.",
+        "Hän on pitkänä ja hoikkana."
+      ],
+      "correct": "Hän on pitkä ja hoikka.",
+      "explanation": "Nominative adjectives: Hän on pitkä ja hoikka.",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 74,
+      "question": "Answer: 'Minkävärinen auto on?' - It is red",
+      "options": [
+        "Se on punainen.",
+        "Se on punaisesta.",
+        "Se on punaiseksi.",
+        "Se on punaiseen."
+      ],
+      "correct": "Se on punainen.",
+      "explanation": "Nominative: Se on punainen.",
+      "subtopic": "minka-inen"
+    },
+    {
+      "id": 75,
+      "question": "Make a -ko question: 'Hänellä on kaksi lasta.'",
+      "options": [
+        "Onko hänellä kaksi lasta?",
+        "Hänellä onko kaksi lasta?",
+        "Lapsiko hänellä on kaksi?",
+        "On hänelläkö kaksi lasta?"
+      ],
+      "correct": "Onko hänellä kaksi lasta?",
+      "explanation": "Onko hänellä kaksi lasta?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 76,
+      "question": "Make a -ko question: 'Sinä pidät kahvista.'",
+      "options": [
+        "Pidätkö sinä kahvista?",
+        "Sinä pidätkö kahvista?",
+        "Kahvistako sinä pidät?",
+        "Pidät sinäkö kahvista?"
+      ],
+      "correct": "Pidätkö sinä kahvista?",
+      "explanation": "Pidätkö sinä kahvista?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 77,
+      "question": "Make a -ko question: 'Tämä on hyvä ravintola.'",
+      "options": [
+        "Onko tämä hyvä ravintola?",
+        "Tämä onko hyvä ravintola?",
+        "Ravintolako tämä on hyvä?",
+        "Hyvä onko tämä ravintola?"
+      ],
+      "correct": "Onko tämä hyvä ravintola?",
+      "explanation": "Onko tämä hyvä ravintola?",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 78,
+      "question": "Choose correct question word: '___ Lauri Markkanen?' (Who is Lauri Markkanen?)",
+      "options": ["Kuka on", "Ketä on", "Mikä on", "Mitä on"],
+      "correct": "Kuka on",
+      "explanation": "Kuka with olla for asking about identity",
+      "subtopic": "basic-words"
+    },
+    {
+      "id": 79,
+      "question": "Answer to '-ko question' with yes: 'Oletko sinä opiskelija?'",
+      "options": [
+        "Kyllä, olen.",
+        "Joo, olen opiskelija.",
+        "Olen.",
+        "All are correct"
+      ],
+      "correct": "All are correct",
+      "explanation": "All ways are correct to answer yes!",
+      "subtopic": "ko-questions"
+    },
+    {
+      "id": 80,
+      "question": "Answer to '-ko question' with no: 'Puhutko sinä ranskaa?'",
+      "options": ["En puhu.", "Ei, en puhu.", "En.", "All are correct"],
+      "correct": "All are correct",
+      "explanation": "All ways are correct to answer no!",
+      "subtopic": "ko-questions"
+    }
+  ]
+}

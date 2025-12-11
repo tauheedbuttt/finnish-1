@@ -93,6 +93,43 @@
         "numbers",
         "verbs"
       ]
+    },
+    {
+      "id": "olla",
+      "title": "Olla-verbi",
+      "titleEn": "To Be / To Have",
+      "description": "Practice I am (minä olen) and I have (minulla on) sentences!",
+      "icon": "🙋",
+      "path": "olla/quiz/",
+      "questionCount": 80,
+      "difficulty": "beginner",
+      "tags": [
+        "olla",
+        "olen",
+        "minulla on",
+        "omistusrakenne",
+        "kielioppi",
+        "grammar"
+      ]
+    },
+    {
+      "id": "questions",
+      "title": "Kysymyslauseet",
+      "titleEn": "Question Sentences",
+      "description": "Practice Finnish yes/no questions (-ko) and question words!",
+      "icon": "❓",
+      "path": "questions/quiz/",
+      "questionCount": 80,
+      "difficulty": "beginner",
+      "tags": [
+        "kysymykset",
+        "ko-kysymys",
+        "mikä",
+        "mitä",
+        "missä",
+        "kielioppi",
+        "grammar"
+      ]
     }
   ]
 }
