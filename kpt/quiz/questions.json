@@ -34,16 +34,74 @@
       { "strong": "lt", "weak": "ll", "example": "ilta → illan" },
       { "strong": "rt", "weak": "rr", "example": "parta → parran" }
     ],
-    "no_kpt": [
-      {
-        "pattern": "hk, sk, st, tk",
-        "example": "posti → postissa, matka → matkalla"
-      },
-      {
-        "pattern": "2 vowels at end",
-        "example": "vapaa → vapaassa, keittiö → keittiössä"
-      }
-    ],
+    "when_kpt_applies": {
+      "description": "KPT change happens when K, P, or T is in the LAST syllable",
+      "conditions": [
+        {
+          "pattern": "CC + V (double consonant + vowel)",
+          "example": "kauppa, kukka, matto",
+          "applies": true
+        },
+        {
+          "pattern": "C (single consonant before ending)",
+          "example": "tupa, katu, jalka",
+          "applies": true
+        }
+      ]
+    },
+    "no_kpt": {
+      "description": "KPT change does NOT happen in these cases",
+      "rules": [
+        {
+          "id": "vowel-n",
+          "pattern": "V + N (vowel + n)",
+          "example": "tulen, panen",
+          "reason": "N after a vowel blocks KPT"
+        },
+        {
+          "id": "single-vowel",
+          "pattern": "V (single vowel ending)",
+          "example": "kala → kalaa (partitive)",
+          "reason": "No consonant to change before ending"
+        },
+        {
+          "id": "double-vowel",
+          "pattern": "VV (double vowel / two vowels at end)",
+          "example": "vapaa → vapaassa, keittiö → keittiössä",
+          "reason": "Words ending in two vowels don't have KPT"
+        },
+        {
+          "id": "s-kpt",
+          "pattern": "S + K, P, T (sk, sp, st)",
+          "example": "posti → postissa, ruskea → ruskeassa",
+          "reason": "S before K/P/T blocks the change"
+        },
+        {
+          "id": "h-kpt",
+          "pattern": "H + K (hk)",
+          "example": "nahka → nahkassa",
+          "reason": "H before K blocks the change"
+        },
+        {
+          "id": "mixed-kpt",
+          "pattern": "K, P, T mixed (kp, kt, pk, pt, tk, tp)",
+          "example": "matka → matkalla, oikea → oikeassa",
+          "reason": "When K/P/T are next to each other, no change"
+        },
+        {
+          "id": "loan-words",
+          "pattern": "Loan words (loanwords)",
+          "example": "auto → autossa, bussi → bussissa, shampoo",
+          "reason": "Foreign/borrowed words typically don't follow KPT"
+        },
+        {
+          "id": "names",
+          "pattern": "Person's names",
+          "example": "Matti → Matin (exception: kk/pp/tt still change)",
+          "reason": "Names usually don't change, except double consonants"
+        }
+      ]
+    },
     "verbs": {
       "type1": {
         "ending": "-a/-ä, -ea/-eä, -aa/-ää, -oa/-öä",
@@ -664,7 +722,7 @@
     },
     {
       "id": 52,
-      "subtopic": "no-kpt",
+      "subtopic": "kk-k",
       "type": "ending",
       "word": "Afrikka",
       "ending": "+sta",
@@ -675,7 +733,7 @@
     },
     {
       "id": 53,
-      "subtopic": "no-kpt",
+      "subtopic": "pp-p",
       "type": "ending",
       "word": "Eurooppa",
       "ending": "+ssa",
@@ -686,7 +744,7 @@
     },
     {
       "id": 54,
-      "subtopic": "no-kpt",
+      "subtopic": "tt-t",
       "type": "ending",
       "word": "konsertti",
       "ending": "+n",
@@ -697,7 +755,7 @@
     },
     {
       "id": 55,
-      "subtopic": "no-kpt",
+      "subtopic": "k-removed",
       "type": "ending",
       "word": "Turku",
       "ending": "+ssa",
@@ -708,7 +766,7 @@
     },
     {
       "id": 56,
-      "subtopic": "no-kpt",
+      "subtopic": "p-v",
       "type": "ending",
       "word": "leipä",
       "ending": "+llä",
@@ -719,7 +777,7 @@
     },
     {
       "id": 57,
-      "subtopic": "no-kpt",
+      "subtopic": "nt-nn",
       "type": "ending",
       "word": "Hollanti",
       "ending": "+n",
@@ -730,7 +788,7 @@
     },
     {
       "id": 58,
-      "subtopic": "no-kpt",
+      "subtopic": "mp-mm",
       "type": "ending",
       "word": "rumpu",
       "ending": "+n",
@@ -1323,6 +1381,171 @@
       "answer": "ei pidä",
       "rule": "t → d (Negative)",
       "explanation": "pitää → ei pidä (t→d in negative)"
+    },
+    {
+      "id": 112,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "auto",
+      "ending": "+ssa",
+      "english": "in the car",
+      "answer": "autossa",
+      "rule": "No KPT (loan word)",
+      "explanation": "auto + ssa → autossa (loan words don't have KPT changes)"
+    },
+    {
+      "id": 113,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "bussi",
+      "ending": "+ssa",
+      "english": "on the bus",
+      "answer": "bussissa",
+      "rule": "No KPT (loan word)",
+      "explanation": "bussi + ssa → bussissa (loan words don't have KPT changes)"
+    },
+    {
+      "id": 114,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "taksi",
+      "ending": "+lla",
+      "english": "by taxi",
+      "answer": "taksilla",
+      "rule": "No KPT (loan word)",
+      "explanation": "taksi + lla → taksilla (loan words don't have KPT changes)"
+    },
+    {
+      "id": 115,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "keskusta",
+      "ending": "+ssa",
+      "english": "in the center",
+      "answer": "keskustassa",
+      "rule": "No KPT (s+k cluster)",
+      "explanation": "keskusta + ssa → keskustassa (sk clusters don't change)"
+    },
+    {
+      "id": 116,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "pankki",
+      "ending": "+ssa",
+      "english": "in the bank",
+      "answer": "pankissa",
+      "rule": "No KPT (nk cluster)",
+      "explanation": "pankki + ssa → pankissa (nkk becomes nk, but nk itself doesn't change further)"
+    },
+    {
+      "id": 117,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "ystävä",
+      "ending": "+n",
+      "english": "friend (genitive)",
+      "answer": "ystävän",
+      "rule": "No KPT (no k/p/t)",
+      "explanation": "ystävä + n → ystävän (no k, p, or t to change)"
+    },
+    {
+      "id": 118,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "ravintola",
+      "ending": "+ssa",
+      "english": "in the restaurant",
+      "answer": "ravintolassa",
+      "rule": "No KPT (nt cluster)",
+      "explanation": "ravintola + ssa → ravintolassa (nt doesn't change at start of syllable)"
+    },
+    {
+      "id": 119,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "maa",
+      "ending": "+ssa",
+      "english": "in the country",
+      "answer": "maassa",
+      "rule": "No KPT (double vowel ending)",
+      "explanation": "maa + ssa → maassa (words ending in double vowels don't change)"
+    },
+    {
+      "id": 120,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "museo",
+      "ending": "+ssa",
+      "english": "in the museum",
+      "answer": "museossa",
+      "rule": "No KPT (loan word)",
+      "explanation": "museo + ssa → museossa (loan words don't have KPT changes)"
+    },
+    {
+      "id": 121,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "radio",
+      "ending": "+ssa",
+      "english": "on the radio",
+      "answer": "radiossa",
+      "rule": "No KPT (loan word)",
+      "explanation": "radio + ssa → radiossa (loan words don't have KPT changes)"
+    },
+    {
+      "id": 122,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "video",
+      "ending": "+lla",
+      "english": "on video",
+      "answer": "videolla",
+      "rule": "No KPT (loan word)",
+      "explanation": "video + lla → videolla (loan words don't have KPT changes)"
+    },
+    {
+      "id": 123,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "pasta",
+      "ending": "+a",
+      "english": "pasta (partitive)",
+      "answer": "pastaa",
+      "rule": "No KPT (st cluster)",
+      "explanation": "pasta + a → pastaa (st clusters don't change)"
+    },
+    {
+      "id": 124,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "rasia",
+      "ending": "+n",
+      "english": "box (genitive)",
+      "answer": "rasian",
+      "rule": "No KPT (no k/p/t)",
+      "explanation": "rasia + n → rasian (no k, p, or t to change)"
+    },
+    {
+      "id": 125,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "ruoka",
+      "ending": "+a",
+      "english": "food (partitive)",
+      "answer": "ruokaa",
+      "rule": "No KPT (partitive -a)",
+      "explanation": "ruoka + a → ruokaa (partitive case doesn't trigger KPT)"
+    },
+    {
+      "id": 126,
+      "subtopic": "no-kpt",
+      "type": "ending",
+      "word": "kissa",
+      "ending": "+n",
+      "english": "cat (genitive)",
+      "answer": "kissan",
+      "rule": "No KPT (no k/p/t in position)",
+      "explanation": "kissa + n → kissan (k is at start, not in KPT position)"
     }
   ]
 }
