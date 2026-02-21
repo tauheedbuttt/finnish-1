@@ -1,0 +1,987 @@
+{
+  "topic": "verbtypes",
+  "title": "Finnish Verb Types Quiz - Verbityypit",
+  "description": "Practice conjugating Finnish verbs in spoken Finnish (puhekieli)",
+  "referenceUrl": "https://www.verbix.com/webverbix/finnish/",
+  "subtopics": [
+    { "id": "all", "name": "All Verb Types", "icon": "📚" },
+    { "id": "type1", "name": "Type 1 (-a/-ä)", "icon": "1️⃣" },
+    { "id": "type2", "name": "Type 2 (-da/-dä)", "icon": "2️⃣" },
+    { "id": "type3", "name": "Type 3 (-la/-na/-ra/-sta)", "icon": "3️⃣" },
+    { "id": "type4", "name": "Type 4 (-ata/-ätä/-uta/-ota)", "icon": "4️⃣" },
+    { "id": "type5", "name": "Type 5 (-ita/-itä)", "icon": "5️⃣" },
+    { "id": "type6", "name": "Type 6 (-eta/-etä)", "icon": "6️⃣" }
+  ],
+  "vocabulary": {
+    "type1": [
+      { "finnish": "puhua", "english": "to speak", "stem": "puhu-" },
+      { "finnish": "asua", "english": "to live", "stem": "asu-" },
+      { "finnish": "katsoa", "english": "to watch", "stem": "katso-" },
+      { "finnish": "lukea", "english": "to read", "stem": "lue-" },
+      { "finnish": "sanoa", "english": "to say", "stem": "sano-" },
+      { "finnish": "ottaa", "english": "to take", "stem": "ota-" },
+      { "finnish": "antaa", "english": "to give", "stem": "anna-" },
+      { "finnish": "laulaa", "english": "to sing", "stem": "laula-" }
+    ],
+    "type2": [
+      { "finnish": "syödä", "english": "to eat", "stem": "syö-" },
+      { "finnish": "juoda", "english": "to drink", "stem": "juo-" },
+      { "finnish": "saada", "english": "to get", "stem": "saa-" },
+      { "finnish": "voida", "english": "to be able", "stem": "voi-" },
+      { "finnish": "tuoda", "english": "to bring", "stem": "tuo-" },
+      { "finnish": "viedä", "english": "to take (away)", "stem": "vie-" }
+    ],
+    "type3": [
+      { "finnish": "opiskella", "english": "to study", "stem": "opiskele-" },
+      { "finnish": "mennä", "english": "to go", "stem": "mene-" },
+      { "finnish": "tulla", "english": "to come", "stem": "tule-" },
+      { "finnish": "olla", "english": "to be", "stem": "ole-" },
+      { "finnish": "ajatella", "english": "to think", "stem": "ajattele-" },
+      { "finnish": "pestä", "english": "to wash", "stem": "pese-" },
+      { "finnish": "nousta", "english": "to rise", "stem": "nouse-" },
+      { "finnish": "purra", "english": "to bite", "stem": "pure-" }
+    ],
+    "type4": [
+      { "finnish": "haluta", "english": "to want", "stem": "halua-" },
+      { "finnish": "siivota", "english": "to clean", "stem": "siivoa-" },
+      { "finnish": "tavata", "english": "to meet", "stem": "tapaa-" },
+      { "finnish": "herätä", "english": "to wake up", "stem": "herää-" },
+      { "finnish": "pelata", "english": "to play", "stem": "pelaa-" },
+      { "finnish": "pakata", "english": "to pack", "stem": "pakkaa-" }
+    ],
+    "type5": [
+      { "finnish": "tarvita", "english": "to need", "stem": "tarvitse-" },
+      { "finnish": "häiritä", "english": "to disturb", "stem": "häiritse-" },
+      { "finnish": "valita", "english": "to choose", "stem": "valitse-" },
+      { "finnish": "merkitä", "english": "to mean", "stem": "merkitse-" }
+    ],
+    "type6": [
+      { "finnish": "vanheta", "english": "to age", "stem": "vanhene-" },
+      { "finnish": "lämmetä", "english": "to warm up", "stem": "lämpene-" },
+      { "finnish": "paeta", "english": "to flee", "stem": "pakene-" },
+      { "finnish": "kylmetä", "english": "to get cold", "stem": "kylmene-" }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'I speak' in spoken Finnish? (puhua)",
+      "options": ["mä puhun", "mä puhua", "mä puhuu", "mä puhu"],
+      "correct": 0,
+      "explanation": "puhua → mä puhun (minä puhun in written Finnish)"
+    },
+    {
+      "id": 2,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'you speak' in spoken Finnish? (puhua)",
+      "options": ["sä puhut", "sä puhua", "sä puhuu", "sä puhu"],
+      "correct": 0,
+      "explanation": "puhua → sä puhut (sinä puhut in written Finnish)"
+    },
+    {
+      "id": 3,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'he/she speaks' in spoken Finnish? (puhua)",
+      "options": ["se puhuu", "se puhut", "se puhua", "se puhun"],
+      "correct": 0,
+      "explanation": "puhua → se puhuu (hän puhuu in written Finnish)"
+    },
+    {
+      "id": 4,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'we speak' in spoken Finnish? (puhua)",
+      "options": ["me puhutaan", "me puhun", "me puhuu", "me puhumme"],
+      "correct": 0,
+      "explanation": "puhua → me puhutaan (me puhumme in written Finnish)"
+    },
+    {
+      "id": 5,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'they speak' in spoken Finnish? (puhua)",
+      "options": ["ne puhuu", "ne puhutaan", "ne puhuvat", "ne puhu"],
+      "correct": 0,
+      "explanation": "puhua → ne puhuu (he puhuvat in written Finnish)"
+    },
+    {
+      "id": 6,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'I live' in spoken Finnish? (asua)",
+      "options": ["mä asun", "mä asuu", "mä asua", "mä asu"],
+      "correct": 0,
+      "explanation": "asua → mä asun (minä asun in written Finnish)"
+    },
+    {
+      "id": 7,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'he/she lives' in spoken Finnish? (asua)",
+      "options": ["se asuu", "se asun", "se asua", "se asu"],
+      "correct": 0,
+      "explanation": "asua → se asuu (hän asuu in written Finnish)"
+    },
+    {
+      "id": 8,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'we live' in spoken Finnish? (asua)",
+      "options": ["me asutaan", "me asumme", "me asuu", "me asun"],
+      "correct": 0,
+      "explanation": "asua → me asutaan (me asumme in written Finnish)"
+    },
+    {
+      "id": 9,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'I watch' in spoken Finnish? (katsoa)",
+      "options": ["mä katson", "mä katsoo", "mä katsoa", "mä katso"],
+      "correct": 0,
+      "explanation": "katsoa → mä katson (minä katson in written Finnish)"
+    },
+    {
+      "id": 10,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'he/she watches' in spoken Finnish? (katsoa)",
+      "options": ["se katsoo", "se katson", "se katsoa", "se katso"],
+      "correct": 0,
+      "explanation": "katsoa → se katsoo (hän katsoo in written Finnish)"
+    },
+    {
+      "id": 11,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'I read' in spoken Finnish? (lukea)",
+      "options": ["mä luen", "mä lukee", "mä lukea", "mä luke"],
+      "correct": 0,
+      "explanation": "lukea → mä luen (minä luen in written Finnish)"
+    },
+    {
+      "id": 12,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'he/she reads' in spoken Finnish? (lukea)",
+      "options": ["se lukee", "se luen", "se lukea", "se luke"],
+      "correct": 0,
+      "explanation": "lukea → se lukee (hän lukee in written Finnish)"
+    },
+    {
+      "id": 13,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'I say' in spoken Finnish? (sanoa)",
+      "options": ["mä sanon", "mä sanoo", "mä sanoa", "mä sano"],
+      "correct": 0,
+      "explanation": "sanoa → mä sanon (minä sanon in written Finnish)"
+    },
+    {
+      "id": 14,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'he/she says' in spoken Finnish? (sanoa)",
+      "options": ["se sanoo", "se sanon", "se sanoa", "se sano"],
+      "correct": 0,
+      "explanation": "sanoa → se sanoo (hän sanoo in written Finnish)"
+    },
+    {
+      "id": 15,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'I sing' in spoken Finnish? (laulaa)",
+      "options": ["mä laulan", "mä laulaa", "mä laulu", "mä laula"],
+      "correct": 0,
+      "explanation": "laulaa → mä laulan (minä laulan in written Finnish)"
+    },
+    {
+      "id": 16,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'he/she sings' in spoken Finnish? (laulaa)",
+      "options": ["se laulaa", "se laulan", "se laulu", "se laula"],
+      "correct": 0,
+      "explanation": "laulaa → se laulaa (hän laulaa in written Finnish)"
+    },
+    {
+      "id": 17,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'I eat' in spoken Finnish? (syödä)",
+      "options": ["mä syön", "mä syö", "mä syödä", "mä syöt"],
+      "correct": 0,
+      "explanation": "syödä → mä syön (minä syön in written Finnish). No ending for hän/se!"
+    },
+    {
+      "id": 18,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'you eat' in spoken Finnish? (syödä)",
+      "options": ["sä syöt", "sä syön", "sä syö", "sä syödä"],
+      "correct": 0,
+      "explanation": "syödä → sä syöt (sinä syöt in written Finnish)"
+    },
+    {
+      "id": 19,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'he/she eats' in spoken Finnish? (syödä)",
+      "options": ["se syö", "se syön", "se syöt", "se syödä"],
+      "correct": 0,
+      "explanation": "syödä → se syö (hän syö in written Finnish). Type 2: No ending for hän/se!"
+    },
+    {
+      "id": 20,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'we eat' in spoken Finnish? (syödä)",
+      "options": ["me syödään", "me syömme", "me syö", "me syön"],
+      "correct": 0,
+      "explanation": "syödä → me syödään (me syömme in written Finnish)"
+    },
+    {
+      "id": 21,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'they eat' in spoken Finnish? (syödä)",
+      "options": ["ne syö", "ne syödään", "ne syövät", "ne syön"],
+      "correct": 0,
+      "explanation": "syödä → ne syö (he syövät in written Finnish)"
+    },
+    {
+      "id": 22,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'I drink' in spoken Finnish? (juoda)",
+      "options": ["mä juon", "mä juo", "mä juoda", "mä juot"],
+      "correct": 0,
+      "explanation": "juoda → mä juon (minä juon in written Finnish)"
+    },
+    {
+      "id": 23,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'he/she drinks' in spoken Finnish? (juoda)",
+      "options": ["se juo", "se juon", "se juot", "se juoda"],
+      "correct": 0,
+      "explanation": "juoda → se juo (hän juo in written Finnish). Type 2: No ending for hän/se!"
+    },
+    {
+      "id": 24,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'we drink' in spoken Finnish? (juoda)",
+      "options": ["me juodaan", "me juomme", "me juo", "me juon"],
+      "correct": 0,
+      "explanation": "juoda → me juodaan (me juomme in written Finnish)"
+    },
+    {
+      "id": 25,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'I get/receive' in spoken Finnish? (saada)",
+      "options": ["mä saan", "mä saa", "mä saada", "mä saat"],
+      "correct": 0,
+      "explanation": "saada → mä saan (minä saan in written Finnish)"
+    },
+    {
+      "id": 26,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'he/she gets' in spoken Finnish? (saada)",
+      "options": ["se saa", "se saan", "se saat", "se saada"],
+      "correct": 0,
+      "explanation": "saada → se saa (hän saa in written Finnish). Type 2: No ending for hän/se!"
+    },
+    {
+      "id": 27,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'I can/am able' in spoken Finnish? (voida)",
+      "options": ["mä voin", "mä voi", "mä voida", "mä voit"],
+      "correct": 0,
+      "explanation": "voida → mä voin (minä voin in written Finnish)"
+    },
+    {
+      "id": 28,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'he/she can' in spoken Finnish? (voida)",
+      "options": ["se voi", "se voin", "se voit", "se voida"],
+      "correct": 0,
+      "explanation": "voida → se voi (hän voi in written Finnish). Type 2: No ending for hän/se!"
+    },
+    {
+      "id": 29,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'I study' in spoken Finnish? (opiskella)",
+      "options": [
+        "mä opiskelen",
+        "mä opiskelee",
+        "mä opiskella",
+        "mä opiskele"
+      ],
+      "correct": 0,
+      "explanation": "opiskella → mä opiskelen (minä opiskelen in written Finnish)"
+    },
+    {
+      "id": 30,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'he/she studies' in spoken Finnish? (opiskella)",
+      "options": [
+        "se opiskelee",
+        "se opiskelen",
+        "se opiskella",
+        "se opiskele"
+      ],
+      "correct": 0,
+      "explanation": "opiskella → se opiskelee (hän opiskelee in written Finnish)"
+    },
+    {
+      "id": 31,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'we study' in spoken Finnish? (opiskella)",
+      "options": [
+        "me opiskellaan",
+        "me opiskelemme",
+        "me opiskelee",
+        "me opiskelen"
+      ],
+      "correct": 0,
+      "explanation": "opiskella → me opiskellaan (me opiskelemme in written Finnish)"
+    },
+    {
+      "id": 32,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'I go' in spoken Finnish? (mennä)",
+      "options": ["mä menen", "mä menee", "mä mennä", "mä mene"],
+      "correct": 0,
+      "explanation": "mennä → mä menen (minä menen in written Finnish)"
+    },
+    {
+      "id": 33,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'he/she goes' in spoken Finnish? (mennä)",
+      "options": ["se menee", "se menen", "se mennä", "se mene"],
+      "correct": 0,
+      "explanation": "mennä → se menee (hän menee in written Finnish)"
+    },
+    {
+      "id": 34,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'we go' in spoken Finnish? (mennä)",
+      "options": ["me mennään", "me menemme", "me menee", "me menen"],
+      "correct": 0,
+      "explanation": "mennä → me mennään (me menemme in written Finnish)"
+    },
+    {
+      "id": 35,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'I come' in spoken Finnish? (tulla)",
+      "options": ["mä tulen", "mä tulee", "mä tulla", "mä tule"],
+      "correct": 0,
+      "explanation": "tulla → mä tulen (minä tulen in written Finnish)"
+    },
+    {
+      "id": 36,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'he/she comes' in spoken Finnish? (tulla)",
+      "options": ["se tulee", "se tulen", "se tulla", "se tule"],
+      "correct": 0,
+      "explanation": "tulla → se tulee (hän tulee in written Finnish)"
+    },
+    {
+      "id": 37,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'we come' in spoken Finnish? (tulla)",
+      "options": ["me tullaan", "me tulemme", "me tulee", "me tulen"],
+      "correct": 0,
+      "explanation": "tulla → me tullaan (me tulemme in written Finnish)"
+    },
+    {
+      "id": 38,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'I am' in spoken Finnish? (olla)",
+      "options": ["mä oon", "mä olee", "mä olla", "mä ole"],
+      "correct": 0,
+      "explanation": "olla → mä oon (minä olen in written Finnish)"
+    },
+    {
+      "id": 39,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'you are' in spoken Finnish? (olla)",
+      "options": ["sä oot", "sä oon", "sä olee", "sä ole"],
+      "correct": 0,
+      "explanation": "olla → sä oot (sinä olet in written Finnish)"
+    },
+    {
+      "id": 40,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'he/she is' in spoken Finnish? (olla)",
+      "options": ["se on", "se oon", "se oot", "se olee"],
+      "correct": 0,
+      "explanation": "olla → se on (hän on in written Finnish)"
+    },
+    {
+      "id": 41,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'we are' in spoken Finnish? (olla)",
+      "options": ["me ollaan", "me olemme", "me on", "me oon"],
+      "correct": 0,
+      "explanation": "olla → me ollaan (me olemme in written Finnish)"
+    },
+    {
+      "id": 42,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'I think' in spoken Finnish? (ajatella)",
+      "options": ["mä ajattelen", "mä ajattelee", "mä ajatella", "mä ajattele"],
+      "correct": 0,
+      "explanation": "ajatella → mä ajattelen (minä ajattelen in written Finnish)"
+    },
+    {
+      "id": 43,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'he/she thinks' in spoken Finnish? (ajatella)",
+      "options": ["se ajattelee", "se ajattelen", "se ajatella", "se ajattele"],
+      "correct": 0,
+      "explanation": "ajatella → se ajattelee (hän ajattelee in written Finnish)"
+    },
+    {
+      "id": 44,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'I wash' in spoken Finnish? (pestä)",
+      "options": ["mä pesen", "mä pesee", "mä pestä", "mä pese"],
+      "correct": 0,
+      "explanation": "pestä → mä pesen (minä pesen in written Finnish)"
+    },
+    {
+      "id": 45,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'he/she washes' in spoken Finnish? (pestä)",
+      "options": ["se pesee", "se pesen", "se pestä", "se pese"],
+      "correct": 0,
+      "explanation": "pestä → se pesee (hän pesee in written Finnish)"
+    },
+    {
+      "id": 46,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'I want' in spoken Finnish? (haluta)",
+      "options": ["mä haluan", "mä haluaa", "mä haluta", "mä haluu"],
+      "correct": 0,
+      "explanation": "haluta → mä haluan (minä haluan in written Finnish)"
+    },
+    {
+      "id": 47,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'you want' in spoken Finnish? (haluta)",
+      "options": ["sä haluat", "sä haluan", "sä haluaa", "sä haluu"],
+      "correct": 0,
+      "explanation": "haluta → sä haluat (sinä haluat in written Finnish)"
+    },
+    {
+      "id": 48,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'he/she wants' in spoken Finnish? (haluta)",
+      "options": ["se haluaa", "se haluan", "se haluat", "se haluu"],
+      "correct": 0,
+      "explanation": "haluta → se haluaa (hän haluaa in written Finnish)"
+    },
+    {
+      "id": 49,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'we want' in spoken Finnish? (haluta)",
+      "options": ["me halutaan", "me haluamme", "me haluaa", "me haluan"],
+      "correct": 0,
+      "explanation": "haluta → me halutaan (me haluamme in written Finnish)"
+    },
+    {
+      "id": 50,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'they want' in spoken Finnish? (haluta)",
+      "options": ["ne haluaa", "ne halutaan", "ne haluavat", "ne haluan"],
+      "correct": 0,
+      "explanation": "haluta → ne haluaa (he haluavat in written Finnish)"
+    },
+    {
+      "id": 51,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'I clean' in spoken Finnish? (siivota)",
+      "options": ["mä siivoan", "mä siivoaa", "mä siivota", "mä siivoo"],
+      "correct": 0,
+      "explanation": "siivota → mä siivoan (minä siivoan in written Finnish)"
+    },
+    {
+      "id": 52,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'he/she cleans' in spoken Finnish? (siivota)",
+      "options": ["se siivoaa", "se siivoan", "se siivota", "se siivoo"],
+      "correct": 0,
+      "explanation": "siivota → se siivoaa (hän siivoaa in written Finnish)"
+    },
+    {
+      "id": 53,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'I meet' in spoken Finnish? (tavata)",
+      "options": ["mä tapaan", "mä tapaaa", "mä tavata", "mä tapaa"],
+      "correct": 0,
+      "explanation": "tavata → mä tapaan (minä tapaan in written Finnish)"
+    },
+    {
+      "id": 54,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'he/she meets' in spoken Finnish? (tavata)",
+      "options": ["se tapaa", "se tapaan", "se tavata", "se tapaat"],
+      "correct": 0,
+      "explanation": "tavata → se tapaa (hän tapaa in written Finnish)"
+    },
+    {
+      "id": 55,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'I wake up' in spoken Finnish? (herätä)",
+      "options": ["mä herään", "mä herää", "mä herätä", "mä heräät"],
+      "correct": 0,
+      "explanation": "herätä → mä herään (minä herään in written Finnish)"
+    },
+    {
+      "id": 56,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'he/she wakes up' in spoken Finnish? (herätä)",
+      "options": ["se herää", "se herään", "se herätä", "se heräät"],
+      "correct": 0,
+      "explanation": "herätä → se herää (hän herää in written Finnish)"
+    },
+    {
+      "id": 57,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'I play' in spoken Finnish? (pelata)",
+      "options": ["mä pelaan", "mä pelaa", "mä pelata", "mä pelaat"],
+      "correct": 0,
+      "explanation": "pelata → mä pelaan (minä pelaan in written Finnish)"
+    },
+    {
+      "id": 58,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'he/she plays' in spoken Finnish? (pelata)",
+      "options": ["se pelaa", "se pelaan", "se pelata", "se pelaat"],
+      "correct": 0,
+      "explanation": "pelata → se pelaa (hän pelaa in written Finnish)"
+    },
+    {
+      "id": 59,
+      "type": "mcq",
+      "subtopic": "type5",
+      "verbType": 5,
+      "question": "How do you say 'I need' in spoken Finnish? (tarvita)",
+      "options": ["mä tarvin", "mä tarviin", "mä tarvitsen", "mä tarvita"],
+      "correct": 2,
+      "explanation": "tarvita → mä tarvitsen (minä tarvitsen in written Finnish)"
+    },
+    {
+      "id": 60,
+      "type": "mcq",
+      "subtopic": "type5",
+      "verbType": 5,
+      "question": "How do you say 'you need' in spoken Finnish? (tarvita)",
+      "options": ["sä tarviit", "sä tarvitset", "sä tarvit", "sä tarvita"],
+      "correct": 1,
+      "explanation": "tarvita → sä tarvitset (sinä tarvitset in written Finnish)"
+    },
+    {
+      "id": 61,
+      "type": "mcq",
+      "subtopic": "type5",
+      "verbType": 5,
+      "question": "How do you say 'he/she needs' in spoken Finnish? (tarvita)",
+      "options": ["se tarvii", "se tarvitsee", "se tarvin", "se tarvita"],
+      "correct": 1,
+      "explanation": "tarvita → se tarvitsee (hän tarvitsee in written Finnish)"
+    },
+    {
+      "id": 62,
+      "type": "mcq",
+      "subtopic": "type5",
+      "verbType": 5,
+      "question": "How do you say 'we need' in spoken Finnish? (tarvita)",
+      "options": ["me tarvitaan", "me tarvitsemme", "me tarvii", "me tarvin"],
+      "correct": 0,
+      "explanation": "tarvita → me tarvitaan (me tarvitsemme in written Finnish)"
+    },
+    {
+      "id": 63,
+      "type": "mcq",
+      "subtopic": "type5",
+      "verbType": 5,
+      "question": "How do you say 'I disturb' in spoken Finnish? (häiritä)",
+      "options": ["mä häiritsen", "mä häiriin", "mä häirin", "mä häiritä"],
+      "correct": 0,
+      "explanation": "häiritä → mä häiritsen (minä häiritsen in written Finnish)"
+    },
+    {
+      "id": 64,
+      "type": "mcq",
+      "subtopic": "type5",
+      "verbType": 5,
+      "question": "How do you say 'he/she disturbs' in spoken Finnish? (häiritä)",
+      "options": ["se häiritsee", "se häiriin", "se häirin", "se häiritä"],
+      "correct": 0,
+      "explanation": "häiritä → se häiritsee (hän häiritsee in written Finnish)"
+    },
+    {
+      "id": 65,
+      "type": "mcq",
+      "subtopic": "type5",
+      "verbType": 5,
+      "question": "How do you say 'I choose' in spoken Finnish? (valita)",
+      "options": ["mä valitsen", "mä valiin", "mä valin", "mä valita"],
+      "correct": 0,
+      "explanation": "valita → mä valitsen (minä valitsen in written Finnish)"
+    },
+    {
+      "id": 66,
+      "type": "mcq",
+      "subtopic": "type5",
+      "verbType": 5,
+      "question": "How do you say 'he/she chooses' in spoken Finnish? (valita)",
+      "options": ["se valitsee", "se valiin", "se valin", "se valita"],
+      "correct": 0,
+      "explanation": "valita → se valitsee (hän valitsee in written Finnish)"
+    },
+    {
+      "id": 67,
+      "type": "mcq",
+      "subtopic": "type6",
+      "verbType": 6,
+      "question": "How do you say 'I age/grow old' in spoken Finnish? (vanheta)",
+      "options": ["mä vanhenen", "mä vanhenee", "mä vanheta", "mä vanhene"],
+      "correct": 0,
+      "explanation": "vanheta → mä vanhenen (minä vanhenen in written Finnish)"
+    },
+    {
+      "id": 68,
+      "type": "mcq",
+      "subtopic": "type6",
+      "verbType": 6,
+      "question": "How do you say 'you age' in spoken Finnish? (vanheta)",
+      "options": ["sä vanhenet", "sä vanhenen", "sä vanhenee", "sä vanhene"],
+      "correct": 0,
+      "explanation": "vanheta → sä vanhenet (sinä vanhenet in written Finnish)"
+    },
+    {
+      "id": 69,
+      "type": "mcq",
+      "subtopic": "type6",
+      "verbType": 6,
+      "question": "How do you say 'he/she ages' in spoken Finnish? (vanheta)",
+      "options": ["se vanhenee", "se vanhenen", "se vanheta", "se vanhene"],
+      "correct": 0,
+      "explanation": "vanheta → se vanhenee (hän vanhenee in written Finnish)"
+    },
+    {
+      "id": 70,
+      "type": "mcq",
+      "subtopic": "type6",
+      "verbType": 6,
+      "question": "How do you say 'we age' in spoken Finnish? (vanheta)",
+      "options": [
+        "me vanhetaan",
+        "me vanhenemme",
+        "me vanhenee",
+        "me vanhenen"
+      ],
+      "correct": 0,
+      "explanation": "vanheta → me vanhetaan (me vanhenemme in written Finnish)"
+    },
+    {
+      "id": 71,
+      "type": "mcq",
+      "subtopic": "type6",
+      "verbType": 6,
+      "question": "How do you say 'I warm up' in spoken Finnish? (lämmetä)",
+      "options": ["mä lämpenen", "mä lämpenee", "mä lämmetä", "mä lämpene"],
+      "correct": 0,
+      "explanation": "lämmetä → mä lämpenen (minä lämpenen in written Finnish)"
+    },
+    {
+      "id": 72,
+      "type": "mcq",
+      "subtopic": "type6",
+      "verbType": 6,
+      "question": "How do you say 'he/she warms up' in spoken Finnish? (lämmetä)",
+      "options": ["se lämpenee", "se lämpenen", "se lämmetä", "se lämpene"],
+      "correct": 0,
+      "explanation": "lämmetä → se lämpenee (hän lämpenee in written Finnish)"
+    },
+    {
+      "id": 73,
+      "type": "mcq",
+      "subtopic": "type6",
+      "verbType": 6,
+      "question": "How do you say 'I flee' in spoken Finnish? (paeta)",
+      "options": ["mä pakenen", "mä pakenee", "mä paeta", "mä pakene"],
+      "correct": 0,
+      "explanation": "paeta → mä pakenen (minä pakenen in written Finnish)"
+    },
+    {
+      "id": 74,
+      "type": "mcq",
+      "subtopic": "type6",
+      "verbType": 6,
+      "question": "How do you say 'he/she flees' in spoken Finnish? (paeta)",
+      "options": ["se pakenee", "se pakenen", "se paeta", "se pakene"],
+      "correct": 0,
+      "explanation": "paeta → se pakenee (hän pakenee in written Finnish)"
+    },
+    {
+      "id": 75,
+      "type": "mcq",
+      "subtopic": "type6",
+      "verbType": 6,
+      "question": "How do you say 'I get cold' in spoken Finnish? (kylmetä)",
+      "options": ["mä kylmenen", "mä kylmenee", "mä kylmetä", "mä kylmene"],
+      "correct": 0,
+      "explanation": "kylmetä → mä kylmenen (minä kylmenen in written Finnish)"
+    },
+    {
+      "id": 76,
+      "type": "mcq",
+      "subtopic": "type6",
+      "verbType": 6,
+      "question": "How do you say 'he/she gets cold' in spoken Finnish? (kylmetä)",
+      "options": ["se kylmenee", "se kylmenen", "se kylmetä", "se kylmene"],
+      "correct": 0,
+      "explanation": "kylmetä → se kylmenee (hän kylmenee in written Finnish)"
+    },
+    {
+      "id": 77,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'I take' in spoken Finnish? (ottaa)",
+      "options": ["mä otan", "mä ottaa", "mä ota", "mä ottan"],
+      "correct": 0,
+      "explanation": "ottaa → mä otan (minä otan in written Finnish)"
+    },
+    {
+      "id": 78,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'he/she takes' in spoken Finnish? (ottaa)",
+      "options": ["se ottaa", "se otan", "se ota", "se ottan"],
+      "correct": 0,
+      "explanation": "ottaa → se ottaa (hän ottaa in written Finnish)"
+    },
+    {
+      "id": 79,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'I give' in spoken Finnish? (antaa)",
+      "options": ["mä annan", "mä antaa", "mä anna", "mä anta"],
+      "correct": 0,
+      "explanation": "antaa → mä annan (minä annan in written Finnish)"
+    },
+    {
+      "id": 80,
+      "type": "mcq",
+      "subtopic": "type1",
+      "verbType": 1,
+      "question": "How do you say 'he/she gives' in spoken Finnish? (antaa)",
+      "options": ["se antaa", "se annan", "se anna", "se anta"],
+      "correct": 0,
+      "explanation": "antaa → se antaa (hän antaa in written Finnish)"
+    },
+    {
+      "id": 81,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'I bring' in spoken Finnish? (tuoda)",
+      "options": ["mä tuon", "mä tuo", "mä tuoda", "mä tuot"],
+      "correct": 0,
+      "explanation": "tuoda → mä tuon (minä tuon in written Finnish)"
+    },
+    {
+      "id": 82,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'he/she brings' in spoken Finnish? (tuoda)",
+      "options": ["se tuo", "se tuon", "se tuoda", "se tuot"],
+      "correct": 0,
+      "explanation": "tuoda → se tuo (hän tuo in written Finnish). Type 2: No ending for hän/se!"
+    },
+    {
+      "id": 83,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'I take (away)' in spoken Finnish? (viedä)",
+      "options": ["mä vien", "mä vie", "mä viedä", "mä viet"],
+      "correct": 0,
+      "explanation": "viedä → mä vien (minä vien in written Finnish)"
+    },
+    {
+      "id": 84,
+      "type": "mcq",
+      "subtopic": "type2",
+      "verbType": 2,
+      "question": "How do you say 'he/she takes (away)' in spoken Finnish? (viedä)",
+      "options": ["se vie", "se vien", "se viedä", "se viet"],
+      "correct": 0,
+      "explanation": "viedä → se vie (hän vie in written Finnish). Type 2: No ending for hän/se!"
+    },
+    {
+      "id": 85,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'I rise/get up' in spoken Finnish? (nousta)",
+      "options": ["mä nousen", "mä nousee", "mä nousta", "mä nouse"],
+      "correct": 0,
+      "explanation": "nousta → mä nousen (minä nousen in written Finnish)"
+    },
+    {
+      "id": 86,
+      "type": "mcq",
+      "subtopic": "type3",
+      "verbType": 3,
+      "question": "How do you say 'he/she rises' in spoken Finnish? (nousta)",
+      "options": ["se nousee", "se nousen", "se nousta", "se nouse"],
+      "correct": 0,
+      "explanation": "nousta → se nousee (hän nousee in written Finnish)"
+    },
+    {
+      "id": 87,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'I pack' in spoken Finnish? (pakata)",
+      "options": ["mä pakkaan", "mä pakkaa", "mä pakata", "mä pakka"],
+      "correct": 0,
+      "explanation": "pakata → mä pakkaan (minä pakkaan in written Finnish)"
+    },
+    {
+      "id": 88,
+      "type": "mcq",
+      "subtopic": "type4",
+      "verbType": 4,
+      "question": "How do you say 'he/she packs' in spoken Finnish? (pakata)",
+      "options": ["se pakkaa", "se pakkaan", "se pakata", "se pakka"],
+      "correct": 0,
+      "explanation": "pakata → se pakkaa (hän pakkaa in written Finnish)"
+    },
+    {
+      "id": 89,
+      "type": "mcq",
+      "subtopic": "type5",
+      "verbType": 5,
+      "question": "How do you say 'it means' in spoken Finnish? (merkitä)",
+      "options": ["se merkitsee", "se merkiin", "se merkin", "se merkitä"],
+      "correct": 0,
+      "explanation": "merkitä → se merkitsee (se merkitsee in written Finnish)"
+    },
+    {
+      "id": 90,
+      "type": "mcq",
+      "subtopic": "type5",
+      "verbType": 5,
+      "question": "How do you say 'they need' in spoken Finnish? (tarvita)",
+      "options": ["ne tarvii", "ne tarvitaan", "ne tarvitsevat", "ne tarvin"],
+      "correct": 0,
+      "explanation": "tarvita → ne tarvii (he tarvitsevat in written Finnish)"
+    }
+  ]
+}

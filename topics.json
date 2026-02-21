@@ -130,6 +130,25 @@
         "kielioppi",
         "grammar"
       ]
+    },
+    {
+      "id": "verbtypes",
+      "title": "Verbityypit",
+      "titleEn": "Verb Types (Spoken Finnish)",
+      "description": "Practice conjugating Finnish verbs in spoken Finnish (puhekieli) - all 6 verb types!",
+      "icon": "🔄",
+      "path": "verbtypes/quiz/",
+      "questionCount": 90,
+      "difficulty": "intermediate",
+      "tags": [
+        "verbityypit",
+        "puhekieli",
+        "konjugaatio",
+        "verbit",
+        "kielioppi",
+        "grammar",
+        "spoken-finnish"
+      ]
     }
   ]
 }

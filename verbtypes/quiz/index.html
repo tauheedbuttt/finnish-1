@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finnish Verb Types Quiz - Verbityypit</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back Button -->
+      <a href="../../" class="back-link">← Takaisin aiheisiin</a>
+
+      <!-- Header -->
+      <header class="quiz-header">
+        <h1>🇫🇮 Verbityypit</h1>
+        <p class="subtitle" id="topicTitle">Loading...</p>
+      </header>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Finnish Verb Types Quiz</h2>
+          <p id="quizDescription">
+            Practice conjugating Finnish verbs in spoken Finnish!
+          </p>
+
+          <!-- Verb Types Preview -->
+          <div class="verb-preview">
+            <div class="verb-types-grid">
+              <div class="verb-type-card type1">
+                <span class="type-number">1️⃣</span>
+                <span class="type-ending">-a/-ä</span>
+                <span class="type-example">puhua, asua</span>
+              </div>
+              <div class="verb-type-card type2">
+                <span class="type-number">2️⃣</span>
+                <span class="type-ending">-da/-dä</span>
+                <span class="type-example">syödä, juoda</span>
+              </div>
+              <div class="verb-type-card type3">
+                <span class="type-number">3️⃣</span>
+                <span class="type-ending">-la/-na/-ra/-sta</span>
+                <span class="type-example">tulla, mennä</span>
+              </div>
+              <div class="verb-type-card type4">
+                <span class="type-number">4️⃣</span>
+                <span class="type-ending">-ata/-ätä/-uta/-ota</span>
+                <span class="type-example">haluta, tavata</span>
+              </div>
+              <div class="verb-type-card type5">
+                <span class="type-number">5️⃣</span>
+                <span class="type-ending">-ita/-itä</span>
+                <span class="type-example">tarvita, häiritä</span>
+              </div>
+              <div class="verb-type-card type6">
+                <span class="type-number">6️⃣</span>
+                <span class="type-ending">-eta/-etä</span>
+                <span class="type-example">vanheta, lämmetä</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spoken Finnish Note -->
+          <div class="spoken-note">
+            <h3>🗣️ Puhekieli - Spoken Finnish</h3>
+            <p>
+              This quiz focuses on
+              <strong>spoken Finnish (puhekieli)</strong> conjugations!
+            </p>
+            <div class="spoken-examples">
+              <div class="spoken-example">
+                <span class="written">Written: minä puhun</span>
+                <span class="arrow">→</span>
+                <span class="spoken">Spoken: mä puhun</span>
+              </div>
+              <div class="spoken-example">
+                <span class="written">Written: me puhumme</span>
+                <span class="arrow">→</span>
+                <span class="spoken">Spoken: me puhutaan</span>
+              </div>
+              <div class="spoken-example">
+                <span class="written">Written: he puhuvat</span>
+                <span class="arrow">→</span>
+                <span class="spoken">Spoken: ne puhuu</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reference Links -->
+          <div class="reference-link-box">
+            <a
+              href="../random-verb.html"
+              class="reference-link random-verb-link"
+            >
+              🎲 Random Verb Practice
+            </a>
+            <a
+              href="https://www.verbix.com/webverbix/finnish/opiskella"
+              target="_blank"
+              class="reference-link"
+            >
+              📖 View All Verb Forms (Verbix)
+            </a>
+            <p class="reference-hint">
+              Practice with random verbs or look up any Finnish verb conjugation
+            </p>
+          </div>
+
+          <!-- Mode Tabs -->
+          <div class="mode-tabs">
+            <button class="mode-tab active" data-mode="mcq">
+              <span class="mode-icon">📝</span>
+              <span class="mode-label">MCQ</span>
+            </button>
+            <button class="mode-tab" data-mode="written">
+              <span class="mode-icon">✍️</span>
+              <span class="mode-label">Written</span>
+            </button>
+          </div>
+
+          <!-- Subtopic Filter -->
+          <div class="filter-container">
+            <label for="subtopicFilter" class="filter-label"
+              >🎯 Filter by verb type:</label
+            >
+            <select id="subtopicFilter" class="filter-select">
+              <option value="all">📚 All Verb Types</option>
+            </select>
+            <span id="questionCount" class="question-count"
+              >90 questions available</span
+            >
+          </div>
+
+          <div class="stats-preview">
+            <span>📝 10 Questions</span>
+            <span>🎯 Random Selection</span>
+          </div>
+          <button id="startBtn" class="btn btn-primary">Aloita Quiz!</button>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <!-- Mode Indicator -->
+        <div class="mode-indicator">
+          <span id="currentModeIcon">📝</span>
+          <span id="currentModeText">MCQ Mode</span>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+          <span id="progressText">1 / 10</span>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card">
+          <!-- Visual Component (Verb Display) -->
+          <div id="visualContainer" class="visual-container">
+            <div id="verbComponent" class="verb-component">
+              <div id="verbIcon" class="verb-icon">🔄</div>
+              <div id="verbWord" class="verb-word">puhua</div>
+              <div id="verbCategory" class="verb-category">Type 1</div>
+            </div>
+          </div>
+
+          <!-- Question -->
+          <h2 id="questionText" class="question-text">Question goes here?</h2>
+
+          <!-- Options (MCQ Mode) -->
+          <div id="optionsContainer" class="options-container">
+            <!-- Options will be inserted here -->
+          </div>
+
+          <!-- Written Input (Written Mode) -->
+          <div id="writtenContainer" class="written-container hidden">
+            <input
+              type="text"
+              id="writtenInput"
+              class="written-input"
+              placeholder="Kirjoita vastauksesi tähän..."
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button id="submitWrittenBtn" class="btn btn-primary">
+              Tarkista
+            </button>
+            <div id="writtenHint" class="written-hint hidden">
+              <span class="hint-label">💡 Vihje:</span>
+              <span id="hintText"></span>
+            </div>
+          </div>
+
+          <!-- Feedback -->
+          <div id="feedback" class="feedback hidden">
+            <div id="feedbackIcon" class="feedback-icon">✓</div>
+            <p id="feedbackText" class="feedback-text">Explanation here</p>
+          </div>
+
+          <!-- Next Button -->
+          <button id="nextBtn" class="btn btn-secondary hidden">
+            Seuraava →
+          </button>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>Quiz Complete!</h2>
+          <div class="score-circle">
+            <span id="scorePercent">0%</span>
+          </div>
+          <p class="score-text">
+            Sait <span id="correctCount">0</span> /
+            <span id="totalCount">10</span> oikein!
+          </p>
+          <div class="grade-message" id="gradeMessage">Hyvä työ!</div>
+          <div class="results-actions">
+            <button id="retryBtn" class="btn btn-primary">
+              Yritä uudelleen
+            </button>
+            <button id="reviewBtn" class="btn btn-secondary">
+              Tarkista vastaukset
+            </button>
+          </div>
+        </div>
+
+        <!-- Review Section -->
+        <div id="reviewSection" class="review-section hidden">
+          <h3>Vastausten tarkistus</h3>
+          <div id="reviewContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

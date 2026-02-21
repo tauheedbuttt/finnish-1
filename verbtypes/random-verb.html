@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Finnish Verb - Satunnainen Verbi</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: white;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .back-link {
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+        transition: all 0.2s ease;
+        text-align: left;
+        width: 100%;
+        max-width: 200px;
+      }
+      .back-link:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      h1 {
+        margin-bottom: 30px;
+        font-size: 2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .verb-card {
+        background: linear-gradient(135deg, #2d2d44 0%, #3d3d5c 100%);
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 30px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+      }
+      .verb {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #4caf50;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .verb-type {
+        display: inline-block;
+        padding: 8px 20px;
+        background: rgba(76, 175, 80, 0.2);
+        border: 2px solid #4caf50;
+        border-radius: 25px;
+        font-size: 1rem;
+        color: #81c784;
+        margin-bottom: 20px;
+      }
+      .english {
+        font-size: 1.4rem;
+        color: #b0b0c0;
+        font-style: italic;
+      }
+      .buttons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+      }
+      button {
+        padding: 16px 32px;
+        font-size: 1.1rem;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .random-btn {
+        background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+        color: white;
+        box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+      }
+      .random-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(76, 175, 80, 0.5);
+      }
+      .random-btn:active {
+        transform: translateY(0);
+      }
+      .conjugate-btn {
+        background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);
+        color: white;
+        box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
+      }
+      .conjugate-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(33, 150, 243, 0.5);
+      }
+      .conjugate-btn:disabled {
+        background: #555;
+        cursor: not-allowed;
+        box-shadow: none;
+        transform: none;
+      }
+
+      /* Stats section */
+      .stats {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      .stat-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 0.9rem;
+      }
+      .stat-value {
+        font-weight: bold;
+        color: #4caf50;
+      }
+
+      /* Navigation to quiz */
+      .nav-link {
+        display: inline-block;
+        color: #4caf50;
+        text-decoration: none;
+        padding: 12px 24px;
+        border: 2px solid #4caf50;
+        border-radius: 10px;
+        transition: all 0.3s;
+        margin-top: 10px;
+      }
+      .nav-link:hover {
+        background: #4caf50;
+        color: white;
+      }
+
+      /* Modal for conjugation */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+      }
+      .modal.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: fadeIn 0.3s ease;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .modal-content {
+        width: 95%;
+        max-width: 1000px;
+        height: 85%;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      }
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background: #2e7d32;
+        color: white;
+      }
+      .modal-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+      .modal-close {
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 5px 15px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        transition: all 0.2s;
+      }
+      .modal-close:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+      .modal-body {
+        height: calc(100% - 60px);
+      }
+      .modal iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      /* Loading spinner */
+      .loading-spinner {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: white;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+        .verb {
+          font-size: 2.5rem;
+        }
+        .verb-card {
+          padding: 30px 20px;
+        }
+        button {
+          padding: 14px 24px;
+          font-size: 1rem;
+        }
+        .buttons {
+          flex-direction: column;
+        }
+        .buttons button {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="../" class="back-link">← Takaisin aiheisiin</a>
+
+      <h1>🎲 Satunnainen Verbi</h1>
+
+      <div class="verb-card">
+        <div class="verb" id="verbDisplay">-</div>
+        <div class="verb-type" id="verbType">Verb Type ?</div>
+        <div class="english" id="englishDisplay">
+          Click "Get Random Verb" to start
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="random-btn" onclick="getRandomVerb()" id="randomBtn">
+          🎲 Get Random Verb
+        </button>
+        <button
+          class="conjugate-btn"
+          onclick="viewConjugation()"
+          id="conjugateBtn"
+          disabled
+        >
+          📖 View Conjugation
+        </button>
+      </div>
+
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-value" id="verbsViewed">0</span> verbs viewed
+        </div>
+        <div class="stat-item">
+          Source: <span class="stat-value">Wiktionary</span>
+        </div>
+      </div>
+
+      <a href="quiz/" class="nav-link">📝 Practice with Quiz →</a>
+    </div>
+
+    <!-- Modal for Verbix iframe -->
+    <div class="modal" id="conjugationModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-title" id="modalTitle">Conjugation: -</span>
+          <span class="modal-close" onclick="closeModal()">✕</span>
+        </div>
+        <div class="modal-body">
+          <iframe id="verbixFrame" src=""></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let currentVerb = null;
+      let verbsViewed = 0;
+      let cachedVerbs = [];
+      let lastFetchContinue = "";
+
+      async function getRandomVerb() {
+        const verbDisplay = document.getElementById("verbDisplay");
+        const verbType = document.getElementById("verbType");
+        const englishDisplay = document.getElementById("englishDisplay");
+        const conjugateBtn = document.getElementById("conjugateBtn");
+        const randomBtn = document.getElementById("randomBtn");
+
+        // Show loading state
+        randomBtn.innerHTML =
+          '<span class="loading-spinner"></span> Loading...';
+        randomBtn.disabled = true;
+        verbDisplay.textContent = "...";
+        verbType.textContent = "Loading...";
+        englishDisplay.textContent = "";
+        conjugateBtn.disabled = true;
+
+        try {
+          // Try to get from cached verbs first, or fetch new ones
+          let verb;
+          if (cachedVerbs.length > 0) {
+            const randomIndex = Math.floor(Math.random() * cachedVerbs.length);
+            verb = { word: cachedVerbs.splice(randomIndex, 1)[0] };
+          } else {
+            verb = await fetchRandomFinnishVerb();
+          }
+
+          if (verb && verb.word) {
+            currentVerb = verb.word;
+            verbDisplay.textContent = verb.word;
+            const type = getVerbType(verb.word);
+            verbType.className = "verb-type type" + type;
+
+            // Try to get meaning
+            const meaning = await fetchVerbMeaning(verb.word);
+            englishDisplay.textContent =
+              meaning || "Click conjugation to see details";
+
+            conjugateBtn.disabled = false;
+            verbsViewed++;
+            document.getElementById("verbsViewed").textContent = verbsViewed;
+          } else {
+            throw new Error("No verb found");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          // Fallback to local list
+          const fallbackVerb = getRandomFromLocalList();
+          currentVerb = fallbackVerb.finnish;
+          verbDisplay.textContent = fallbackVerb.finnish;
+          englishDisplay.textContent = fallbackVerb.english;
+          conjugateBtn.disabled = false;
+          verbsViewed++;
+          document.getElementById("verbsViewed").textContent = verbsViewed;
+        }
+
+        // Reset button
+        randomBtn.innerHTML = "🎲 Get Random Verb";
+        randomBtn.disabled = false;
+      }
+
+      async function fetchRandomFinnishVerb() {
+        // Generate random continue parameter for variety
+        const randomOffset = Math.floor(Math.random() * 100);
+        const continueParam = lastFetchContinue
+          ? `&cmcontinue=${lastFetchContinue}`
+          : "";
+
+        const response = await fetch(
+          `https://en.wiktionary.org/w/api.php?` +
+            `action=query&list=categorymembers&cmtitle=Category:Finnish_verbs&` +
+            `cmlimit=50&cmtype=page&format=json`,
+        );
+
+        const data = await response.json();
+
+        // Save continue token for next fetch
+        if (data.continue && data.continue.cmcontinue) {
+          lastFetchContinue = data.continue.cmcontinue;
+        } else {
+          lastFetchContinue = ""; // Reset to start
+        }
+
+        if (data.query && data.query.categorymembers) {
+          const verbs = data.query.categorymembers
+            .map((m) => m.title)
+            .filter(
+              (title) =>
+                !title.includes(":") &&
+                !title.includes(" ") &&
+                title.length > 2 &&
+                (title.endsWith("a") || title.endsWith("ä")),
+            );
+
+          // Cache remaining verbs
+          if (verbs.length > 1) {
+            const randomIndex = Math.floor(Math.random() * verbs.length);
+            const selectedVerb = verbs[randomIndex];
+            cachedVerbs = verbs.filter((v, i) => i !== randomIndex);
+            return { word: selectedVerb };
+          } else if (verbs.length === 1) {
+            return { word: verbs[0] };
+          }
+        }
+        return null;
+      }
+
+      async function fetchVerbMeaning(verb) {
+        try {
+          const response = await fetch(
+            `https://en.wiktionary.org/w/api.php?` +
+              `action=query&titles=${encodeURIComponent(verb)}&prop=extracts&` +
+              `exintro=true&explaintext=true&format=json&origin=*`,
+          );
+
+          const data = await response.json();
+          const pages = data.query.pages;
+          const pageId = Object.keys(pages)[0];
+
+          if (pages[pageId] && pages[pageId].extract) {
+            const extract = pages[pageId].extract;
+
+            // Look for "to " pattern in definition
+            const toMatch = extract.match(
+              /\bto\s+[a-z]+(?:\s+[a-z]+)?(?:\s+[a-z]+)?/i,
+            );
+            if (toMatch) {
+              return toMatch[0];
+            }
+
+            // Alternative: look for parenthetical definition
+            const parenMatch = extract.match(/\(([^)]+)\)/);
+            if (parenMatch && parenMatch[1].length < 50) {
+              return parenMatch[1];
+            }
+          }
+        } catch (e) {
+          console.log("Could not fetch meaning:", e);
+        }
+        return null;
+      }
+
+      function getVerbType(verb) {
+        if (!verb) return "?";
+        verb = verb.toLowerCase();
+
+        if (verb.endsWith("eta") || verb.endsWith("etä")) return "6";
+        if (verb.endsWith("ita") || verb.endsWith("itä")) return "5";
+        if (
+          verb.endsWith("ata") ||
+          verb.endsWith("ätä") ||
+          verb.endsWith("ota") ||
+          verb.endsWith("uta") ||
+          verb.endsWith("otä") ||
+          verb.endsWith("utä")
+        )
+          return "4";
+        if (
+          verb.endsWith("lla") ||
+          verb.endsWith("llä") ||
+          verb.endsWith("nna") ||
+          verb.endsWith("nnä") ||
+          verb.endsWith("rra") ||
+          verb.endsWith("rrä") ||
+          verb.endsWith("sta") ||
+          verb.endsWith("stä") ||
+          verb.endsWith("la") ||
+          verb.endsWith("lä") ||
+          verb.endsWith("na") ||
+          verb.endsWith("nä") ||
+          verb.endsWith("ra") ||
+          verb.endsWith("rä")
+        )
+          return "3";
+        if (verb.endsWith("da") || verb.endsWith("dä")) return "2";
+        if (verb.endsWith("a") || verb.endsWith("ä")) return "1";
+        return "?";
+      }
+
+      // Comprehensive fallback local list
+      function getRandomFromLocalList() {
+        const verbs = [
+          // Type 1
+          { finnish: "puhua", english: "to speak", type: 1 },
+          { finnish: "lukea", english: "to read", type: 1 },
+          { finnish: "kirjoittaa", english: "to write", type: 1 },
+          { finnish: "sanoa", english: "to say", type: 1 },
+          { finnish: "katsoa", english: "to watch", type: 1 },
+          { finnish: "kuulla", english: "to hear", type: 1 },
+          { finnish: "antaa", english: "to give", type: 1 },
+          { finnish: "ottaa", english: "to take", type: 1 },
+          { finnish: "laulaa", english: "to sing", type: 1 },
+          { finnish: "nukkua", english: "to sleep", type: 1 },
+          { finnish: "asua", english: "to live", type: 1 },
+          { finnish: "ostaa", english: "to buy", type: 1 },
+          { finnish: "maksaa", english: "to pay", type: 1 },
+          { finnish: "auttaa", english: "to help", type: 1 },
+          { finnish: "rakastaa", english: "to love", type: 1 },
+          { finnish: "tietää", english: "to know", type: 1 },
+          { finnish: "ymmärtää", english: "to understand", type: 1 },
+          { finnish: "odottaa", english: "to wait", type: 1 },
+          { finnish: "lähteä", english: "to leave", type: 1 },
+          { finnish: "etsiä", english: "to search", type: 1 },
+          // Type 2
+          { finnish: "syödä", english: "to eat", type: 2 },
+          { finnish: "juoda", english: "to drink", type: 2 },
+          { finnish: "saada", english: "to get", type: 2 },
+          { finnish: "voida", english: "to be able", type: 2 },
+          { finnish: "tuoda", english: "to bring", type: 2 },
+          { finnish: "viedä", english: "to take away", type: 2 },
+          { finnish: "myydä", english: "to sell", type: 2 },
+          { finnish: "käydä", english: "to visit", type: 2 },
+          { finnish: "tehdä", english: "to do/make", type: 2 },
+          { finnish: "nähdä", english: "to see", type: 2 },
+          // Type 3
+          { finnish: "opiskella", english: "to study", type: 3 },
+          { finnish: "mennä", english: "to go", type: 3 },
+          { finnish: "tulla", english: "to come", type: 3 },
+          { finnish: "olla", english: "to be", type: 3 },
+          { finnish: "ajatella", english: "to think", type: 3 },
+          { finnish: "kuunnella", english: "to listen", type: 3 },
+          { finnish: "kävellä", english: "to walk", type: 3 },
+          { finnish: "pestä", english: "to wash", type: 3 },
+          { finnish: "nousta", english: "to rise", type: 3 },
+          { finnish: "juosta", english: "to run", type: 3 },
+          { finnish: "purra", english: "to bite", type: 3 },
+          // Type 4
+          { finnish: "haluta", english: "to want", type: 4 },
+          { finnish: "siivota", english: "to clean", type: 4 },
+          { finnish: "tavata", english: "to meet", type: 4 },
+          { finnish: "herätä", english: "to wake up", type: 4 },
+          { finnish: "pelata", english: "to play", type: 4 },
+          { finnish: "pakata", english: "to pack", type: 4 },
+          { finnish: "vastata", english: "to answer", type: 4 },
+          { finnish: "hypätä", english: "to jump", type: 4 },
+          // Type 5
+          { finnish: "tarvita", english: "to need", type: 5 },
+          { finnish: "häiritä", english: "to disturb", type: 5 },
+          { finnish: "valita", english: "to choose", type: 5 },
+          { finnish: "merkitä", english: "to mean", type: 5 },
+          // Type 6
+          { finnish: "vanheta", english: "to age", type: 6 },
+          { finnish: "lämmetä", english: "to warm up", type: 6 },
+          { finnish: "paeta", english: "to flee", type: 6 },
+          { finnish: "kylmetä", english: "to get cold", type: 6 },
+        ];
+        return verbs[Math.floor(Math.random() * verbs.length)];
+      }
+
+      function viewConjugation() {
+        if (!currentVerb) return;
+
+        const modal = document.getElementById("conjugationModal");
+        const iframe = document.getElementById("verbixFrame");
+        const modalTitle = document.getElementById("modalTitle");
+
+        modalTitle.textContent = `Conjugation: ${currentVerb}`;
+        iframe.src = `https://www.verbix.com/webverbix/finnish/${encodeURIComponent(currentVerb)}`;
+        modal.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("conjugationModal");
+        modal.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      // Close modal on escape key
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+
+      // Close modal on background click
+      document
+        .getElementById("conjugationModal")
+        .addEventListener("click", (e) => {
+          if (e.target.classList.contains("modal")) closeModal();
+        });
+
+      // Load a verb on page load
+      window.addEventListener("load", () => {
+        getRandomVerb();
+      });
+    </script>
+  </body>
+</html>
