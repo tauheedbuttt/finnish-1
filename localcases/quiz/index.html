@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paikallissijat - Local Cases (Missä)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back Button -->
+      <a href="../../" class="back-link">← Takaisin aiheisiin</a>
+
+      <!-- Header -->
+      <header class="quiz-header">
+        <h1>📍 Missä? - Where (in/at/on)</h1>
+        <p class="subtitle" id="topicTitle">Local Cases - Static Location</p>
+      </header>
+
+      <!-- Mode Tabs -->
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">
+          📝 Multiple Choice
+        </button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Missä? Quiz</h2>
+          <p id="quizDescription">Practice Finnish location cases</p>
+
+          <!-- Main Rule -->
+          <div class="rules-box main-rule">
+            <h3>📍 Missä = Where (static)</h3>
+            <p class="rules-note">Used with <strong>static verbs</strong> - no movement!</p>
+            <div class="verb-examples">
+              <span class="verb-tag">olla</span>
+              <span class="verb-tag">asua</span>
+              <span class="verb-tag">istua</span>
+              <span class="verb-tag">seistä</span>
+              <span class="verb-tag">nukkua</span>
+              <span class="verb-tag">työskennellä</span>
+            </div>
+          </div>
+
+          <!-- S-Case vs L-Case -->
+          <div class="case-comparison">
+            <!-- S-Case -->
+            <div class="case-box s-case-box">
+              <h3>🏠 S-Case: -ssa / -ssä</h3>
+              <div class="case-rules">
+                <div class="case-rule">
+                  <span class="rule-icon">🏢</span>
+                  <span class="rule-text">Closed places</span>
+                </div>
+                <div class="case-rule">
+                  <span class="rule-icon">📦</span>
+                  <span class="rule-text">Inside something</span>
+                </div>
+                <div class="case-rule">
+                  <span class="rule-icon">🌍</span>
+                  <span class="rule-text">Most cities & countries</span>
+                </div>
+                <div class="case-rule">
+                  <span class="rule-icon">🗺️</span>
+                  <span class="rule-text">Areas/regions</span>
+                </div>
+              </div>
+              <div class="case-examples">
+                <span>kaupa<strong>ssa</strong></span>
+                <span>Helsingi<strong>ssä</strong></span>
+                <span>auto<strong>ssa</strong></span>
+              </div>
+            </div>
+
+            <!-- L-Case -->
+            <div class="case-box l-case-box">
+              <h3>🌳 L-Case: -lla / -llä</h3>
+              <div class="case-rules">
+                <div class="case-rule">
+                  <span class="rule-icon">🌲</span>
+                  <span class="rule-text">Outside/open places</span>
+                </div>
+                <div class="case-rule">
+                  <span class="rule-icon">📋</span>
+                  <span class="rule-text">On a surface</span>
+                </div>
+                <div class="case-rule">
+                  <span class="rule-icon">🚪</span>
+                  <span class="rule-text">Near/at</span>
+                </div>
+              </div>
+              <div class="case-examples">
+                <span>kadu<strong>lla</strong></span>
+                <span>pöydä<strong>llä</strong></span>
+                <span>ranna<strong>lla</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Special Words -->
+          <div class="rules-box special-box">
+            <h3>⭐ Special Words</h3>
+            <div class="special-words">
+              <div class="special-word">
+                <span class="word">koti</span>
+                <span class="arrow">→</span>
+                <span class="form">kotona</span>
+                <span class="meaning">(at home)</span>
+              </div>
+              <div class="special-word">
+                <span class="word">ulko-</span>
+                <span class="arrow">→</span>
+                <span class="form">ulkona</span>
+                <span class="meaning">(outside)</span>
+              </div>
+              <div class="special-word">
+                <span class="word">sisä-</span>
+                <span class="arrow">→</span>
+                <span class="form">sisällä</span>
+                <span class="meaning">(inside)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vowel Harmony Note -->
+          <div class="vowel-harmony-note">
+            <strong>🔤 Vowel Harmony:</strong> 
+            a/o/u → <strong>-ssa/-lla</strong> | 
+            ä/ö/y/e/i → <strong>-ssä/-llä</strong>
+          </div>
+
+          <!-- Subtopic Selection -->
+          <div class="subtopic-selection">
+            <h3>🎯 Select Categories to Practice</h3>
+            <div class="subtopic-checkboxes" id="subtopicCheckboxes">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Question Count -->
+          <div class="question-count">
+            <label for="questionCount">Number of questions:</label>
+            <select id="questionCount">
+              <option value="5">5 questions</option>
+              <option value="10" selected>10 questions</option>
+              <option value="15">15 questions</option>
+              <option value="20">20 questions</option>
+              <option value="all">All questions</option>
+            </select>
+            <span class="available-count" id="availableCount"></span>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita Quiz! 🚀</button>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <!-- Progress -->
+          <div class="progress-container">
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+
+          <!-- Question -->
+          <div class="question-container">
+            <div class="question-type" id="questionType">Ending</div>
+            <div class="question-prompt">
+              <span class="word-display" id="wordDisplay">kauppa</span>
+              <span class="ending-display" id="endingDisplay">+ ?</span>
+            </div>
+            <p class="question-english" id="questionEnglish">in the shop</p>
+          </div>
+
+          <!-- MCQ Options -->
+          <div class="options-container" id="optionsContainer">
+            <!-- Generated by JS -->
+          </div>
+
+          <!-- Written Answer -->
+          <div class="written-container hidden" id="writtenContainer">
+            <input
+              type="text"
+              id="writtenAnswer"
+              class="written-input"
+              placeholder="Kirjoita vastaus..."
+              autocomplete="off"
+            />
+            <button class="submit-btn" id="submitAnswer">
+              Tarkista ✓
+            </button>
+          </div>
+
+          <!-- Feedback -->
+          <div class="feedback hidden" id="feedback">
+            <div class="feedback-icon" id="feedbackIcon">✓</div>
+            <div class="feedback-text" id="feedbackText">Oikein!</div>
+            <div class="feedback-explanation" id="feedbackExplanation"></div>
+          </div>
+
+          <!-- Next Button -->
+          <button class="next-btn hidden" id="nextBtn">
+            Seuraava →
+          </button>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Quiz Complete!</h2>
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-label">/ <span id="totalQuestions">10</span></span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+          <div class="score-message" id="scoreMessage">
+            Hyvää työtä!
+          </div>
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Yritä uudelleen</button>
+            <button class="home-btn" id="homeBtn">🏠 Takaisin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

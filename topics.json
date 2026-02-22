@@ -168,6 +168,26 @@
         "kielioppi",
         "grammar"
       ]
+    },
+    {
+      "id": "localcases",
+      "title": "Paikallissijat (Missä)",
+      "titleEn": "Local Cases - Where",
+      "description": "Practice Finnish location cases - missä? -ssa/-ssä (inside) vs -lla/-llä (outside/surface)",
+      "icon": "📍",
+      "path": "localcases/quiz/",
+      "questionCount": 80,
+      "difficulty": "intermediate",
+      "tags": [
+        "paikallissijat",
+        "missä",
+        "ssa",
+        "lla",
+        "inessiivi",
+        "adessiivi",
+        "sijamuodot",
+        "kielioppi"
+      ]
     }
   ]
 }

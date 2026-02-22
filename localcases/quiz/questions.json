@@ -1,0 +1,889 @@
+{
+  "topic": "localcases",
+  "title": "Paikallissijat - Local Cases (Missä)",
+  "description": "Practice Finnish local cases - where something is located",
+  "instructions": "Add the correct ending (-ssa/-ssä or -lla/-llä) based on the location type",
+  "subtopics": [
+    { "id": "all", "name": "All Missä", "icon": "📚" },
+    { "id": "s-case", "name": "S-Case (-ssa/-ssä)", "icon": "🏠" },
+    { "id": "l-case", "name": "L-Case (-lla/-llä)", "icon": "🌳" },
+    { "id": "special", "name": "Special Words", "icon": "⭐" },
+    { "id": "cities", "name": "Cities & Countries", "icon": "🌍" }
+  ],
+  "rules": {
+    "missä": {
+      "description": "Missä = Where (in/at/on) - used with STATIC verbs",
+      "static_verbs": ["olla", "asua", "istua", "seistä", "maata", "nukkua", "työskennellä"],
+      "note": "No movement - staying in one place"
+    },
+    "s_case": {
+      "ending": "-ssa / -ssä",
+      "when_to_use": [
+        { "rule": "Closed places", "examples": ["kaupassa", "talossa", "autossa"] },
+        { "rule": "Inside something", "examples": ["laatikossa", "laukussa", "taskussa"] },
+        { "rule": "Most city/country names", "examples": ["Helsingissä", "Suomessa", "Turussa"] },
+        { "rule": "Areas/regions", "examples": ["Euroopassa", "Afrikassa", "keskustassa"] }
+      ],
+      "vowel_harmony": {
+        "a/o/u": "-ssa",
+        "ä/ö/y/e/i": "-ssä"
+      }
+    },
+    "l_case": {
+      "ending": "-lla / -llä",
+      "when_to_use": [
+        { "rule": "Outside/open places", "examples": ["kadulla", "torilla", "pihalla"] },
+        { "rule": "On a surface", "examples": ["pöydällä", "lattialla", "seinällä"] },
+        { "rule": "Near/at", "examples": ["ovella", "ikkunalla", "rannalla"] },
+        { "rule": "Some activities", "examples": ["tunnilla", "luennolla", "töissä→töillä (spoken)"] }
+      ],
+      "vowel_harmony": {
+        "a/o/u": "-lla",
+        "ä/ö/y/e/i": "-llä"
+      }
+    },
+    "special_words": {
+      "description": "Some words have special forms",
+      "words": [
+        { "word": "koti", "missä": "kotona", "note": "at home (not kodissa)" },
+        { "word": "ulko", "missä": "ulkona", "note": "outside" },
+        { "word": "sisä", "missä": "sisällä", "note": "inside" }
+      ]
+    }
+  },
+  "vocabulary": {
+    "s_case_places": [
+      { "finnish": "kauppa", "english": "shop/store", "missä": "kaupassa" },
+      { "finnish": "koulu", "english": "school", "missä": "koulussa" },
+      { "finnish": "ravintola", "english": "restaurant", "missä": "ravintolassa" },
+      { "finnish": "kirkko", "english": "church", "missä": "kirkossa" },
+      { "finnish": "pankki", "english": "bank", "missä": "pankissa" },
+      { "finnish": "sairaala", "english": "hospital", "missä": "sairaalassa" },
+      { "finnish": "toimisto", "english": "office", "missä": "toimistossa" },
+      { "finnish": "keittiö", "english": "kitchen", "missä": "keittiössä" },
+      { "finnish": "makuuhuone", "english": "bedroom", "missä": "makuuhuoneessa" },
+      { "finnish": "olohuone", "english": "living room", "missä": "olohuoneessa" },
+      { "finnish": "auto", "english": "car", "missä": "autossa" },
+      { "finnish": "bussi", "english": "bus", "missä": "bussissa" },
+      { "finnish": "juna", "english": "train", "missä": "junassa" },
+      { "finnish": "lentokone", "english": "airplane", "missä": "lentokoneessa" }
+    ],
+    "l_case_places": [
+      { "finnish": "katu", "english": "street", "missä": "kadulla" },
+      { "finnish": "tori", "english": "market square", "missä": "torilla" },
+      { "finnish": "piha", "english": "yard", "missä": "pihalla" },
+      { "finnish": "ranta", "english": "beach/shore", "missä": "rannalla" },
+      { "finnish": "pöytä", "english": "table", "missä": "pöydällä" },
+      { "finnish": "lattia", "english": "floor", "missä": "lattialla" },
+      { "finnish": "seinä", "english": "wall", "missä": "seinällä" },
+      { "finnish": "ovi", "english": "door", "missä": "ovella" },
+      { "finnish": "ikkuna", "english": "window", "missä": "ikkunalla" },
+      { "finnish": "tunti", "english": "lesson/hour", "missä": "tunnilla" },
+      { "finnish": "luento", "english": "lecture", "missä": "luennolla" },
+      { "finnish": "posti", "english": "post office", "missä": "postilla" }
+    ],
+    "cities_countries": [
+      { "finnish": "Helsinki", "missä": "Helsingissä", "case": "s" },
+      { "finnish": "Turku", "missä": "Turussa", "case": "s" },
+      { "finnish": "Tampere", "missä": "Tampereella", "case": "l" },
+      { "finnish": "Suomi", "missä": "Suomessa", "case": "s" },
+      { "finnish": "Ruotsi", "missä": "Ruotsissa", "case": "s" },
+      { "finnish": "Venäjä", "missä": "Venäjällä", "case": "l" }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "kauppa",
+      "english": "in the shop",
+      "answer": "kaupassa",
+      "rule": "-ssa (closed place)",
+      "explanation": "kauppa + ssa → kaupassa (shop is a closed place)"
+    },
+    {
+      "id": 2,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "koulu",
+      "english": "at school",
+      "answer": "koulussa",
+      "rule": "-ssa (closed place)",
+      "explanation": "koulu + ssa → koulussa (school is a closed building)"
+    },
+    {
+      "id": 3,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "ravintola",
+      "english": "in the restaurant",
+      "answer": "ravintolassa",
+      "rule": "-ssa (closed place)",
+      "explanation": "ravintola + ssa → ravintolassa"
+    },
+    {
+      "id": 4,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "kirkko",
+      "english": "in the church",
+      "answer": "kirkossa",
+      "rule": "-ssa (closed place, kk→k)",
+      "explanation": "kirkko + ssa → kirkossa (KPT: kk → k)"
+    },
+    {
+      "id": 5,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "pankki",
+      "english": "in the bank",
+      "answer": "pankissa",
+      "rule": "-ssa (closed place, kk→k)",
+      "explanation": "pankki + ssa → pankissa (KPT: nkk → nk)"
+    },
+    {
+      "id": 6,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "sairaala",
+      "english": "in the hospital",
+      "answer": "sairaalassa",
+      "rule": "-ssa (closed place)",
+      "explanation": "sairaala + ssa → sairaalassa"
+    },
+    {
+      "id": 7,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "toimisto",
+      "english": "in the office",
+      "answer": "toimistossa",
+      "rule": "-ssa (closed place)",
+      "explanation": "toimisto + ssa → toimistossa"
+    },
+    {
+      "id": 8,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "keittiö",
+      "english": "in the kitchen",
+      "answer": "keittiössä",
+      "rule": "-ssä (vowel harmony: ö)",
+      "explanation": "keittiö + ssä → keittiössä (ö needs ssä)"
+    },
+    {
+      "id": 9,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "makuuhuone",
+      "english": "in the bedroom",
+      "answer": "makuuhuoneessa",
+      "rule": "-ssa → -essa (e-ending)",
+      "explanation": "makuuhuone + essa → makuuhuoneessa"
+    },
+    {
+      "id": 10,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "olohuone",
+      "english": "in the living room",
+      "answer": "olohuoneessa",
+      "rule": "-ssa → -essa (e-ending)",
+      "explanation": "olohuone + essa → olohuoneessa"
+    },
+    {
+      "id": 11,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "auto",
+      "english": "in the car",
+      "answer": "autossa",
+      "rule": "-ssa (inside vehicle)",
+      "explanation": "auto + ssa → autossa"
+    },
+    {
+      "id": 12,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "bussi",
+      "english": "on the bus",
+      "answer": "bussissa",
+      "rule": "-ssa (inside vehicle)",
+      "explanation": "bussi + ssa → bussissa"
+    },
+    {
+      "id": 13,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "juna",
+      "english": "on the train",
+      "answer": "junassa",
+      "rule": "-ssa (inside vehicle)",
+      "explanation": "juna + ssa → junassa"
+    },
+    {
+      "id": 14,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "lentokone",
+      "english": "on the airplane",
+      "answer": "lentokoneessa",
+      "rule": "-ssa → -essa (e-ending)",
+      "explanation": "lentokone + essa → lentokoneessa"
+    },
+    {
+      "id": 15,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "katu",
+      "english": "on the street",
+      "answer": "kadulla",
+      "rule": "-lla (outside, t→d)",
+      "explanation": "katu + lla → kadulla (KPT: t → d)"
+    },
+    {
+      "id": 16,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "tori",
+      "english": "at the market square",
+      "answer": "torilla",
+      "rule": "-lla (open place)",
+      "explanation": "tori + lla → torilla"
+    },
+    {
+      "id": 17,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "piha",
+      "english": "in the yard",
+      "answer": "pihalla",
+      "rule": "-lla (outside)",
+      "explanation": "piha + lla → pihalla"
+    },
+    {
+      "id": 18,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "ranta",
+      "english": "at the beach",
+      "answer": "rannalla",
+      "rule": "-lla (outside, nt→nn)",
+      "explanation": "ranta + lla → rannalla (KPT: nt → nn)"
+    },
+    {
+      "id": 19,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "pöytä",
+      "english": "on the table",
+      "answer": "pöydällä",
+      "rule": "-llä (surface, t→d)",
+      "explanation": "pöytä + llä → pöydällä (KPT: t → d, ä needs llä)"
+    },
+    {
+      "id": 20,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "lattia",
+      "english": "on the floor",
+      "answer": "lattialla",
+      "rule": "-lla (surface)",
+      "explanation": "lattia + lla → lattialla"
+    },
+    {
+      "id": 21,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "seinä",
+      "english": "on the wall",
+      "answer": "seinällä",
+      "rule": "-llä (surface)",
+      "explanation": "seinä + llä → seinällä"
+    },
+    {
+      "id": 22,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "ovi",
+      "english": "at the door",
+      "answer": "ovella",
+      "rule": "-lla (near/at)",
+      "explanation": "ovi + lla → ovella"
+    },
+    {
+      "id": 23,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "ikkuna",
+      "english": "at the window",
+      "answer": "ikkunalla",
+      "rule": "-lla (near/at)",
+      "explanation": "ikkuna + lla → ikkunalla"
+    },
+    {
+      "id": 24,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "tunti",
+      "english": "in the lesson",
+      "answer": "tunnilla",
+      "rule": "-lla (activity, nt→nn)",
+      "explanation": "tunti + lla → tunnilla (KPT: nt → nn)"
+    },
+    {
+      "id": 25,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "luento",
+      "english": "at the lecture",
+      "answer": "luennolla",
+      "rule": "-lla (activity, nt→nn)",
+      "explanation": "luento + lla → luennolla (KPT: nt → nn)"
+    },
+    {
+      "id": 26,
+      "subtopic": "special",
+      "type": "special",
+      "word": "koti",
+      "english": "at home",
+      "answer": "kotona",
+      "rule": "Special form",
+      "explanation": "koti → kotona (NOT kodissa)"
+    },
+    {
+      "id": 27,
+      "subtopic": "special",
+      "type": "special",
+      "word": "ulko-",
+      "english": "outside",
+      "answer": "ulkona",
+      "rule": "Special form",
+      "explanation": "ulko- → ulkona"
+    },
+    {
+      "id": 28,
+      "subtopic": "special",
+      "type": "special",
+      "word": "sisä-",
+      "english": "inside",
+      "answer": "sisällä",
+      "rule": "Special form",
+      "explanation": "sisä- → sisällä"
+    },
+    {
+      "id": 29,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Helsinki",
+      "english": "in Helsinki",
+      "answer": "Helsingissä",
+      "rule": "-ssä (city, nk→ng)",
+      "explanation": "Helsinki + ssä → Helsingissä (KPT: nk → ng)"
+    },
+    {
+      "id": 30,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Turku",
+      "english": "in Turku",
+      "answer": "Turussa",
+      "rule": "-ssa (city, k→∅)",
+      "explanation": "Turku + ssa → Turussa (KPT: k disappears)"
+    },
+    {
+      "id": 31,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Tampere",
+      "english": "in Tampere",
+      "answer": "Tampereella",
+      "rule": "-lla (exception: L-case city)",
+      "explanation": "Tampere + ella → Tampereella (some cities use L-case)"
+    },
+    {
+      "id": 32,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Suomi",
+      "english": "in Finland",
+      "answer": "Suomessa",
+      "rule": "-ssa (country)",
+      "explanation": "Suomi + ssa → Suomessa"
+    },
+    {
+      "id": 33,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Ruotsi",
+      "english": "in Sweden",
+      "answer": "Ruotsissa",
+      "rule": "-ssa (country)",
+      "explanation": "Ruotsi + ssa → Ruotsissa"
+    },
+    {
+      "id": 34,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Venäjä",
+      "english": "in Russia",
+      "answer": "Venäjällä",
+      "rule": "-llä (exception: L-case country)",
+      "explanation": "Venäjä + llä → Venäjällä (some countries use L-case)"
+    },
+    {
+      "id": 35,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Eurooppa",
+      "english": "in Europe",
+      "answer": "Euroopassa",
+      "rule": "-ssa (region, pp→p)",
+      "explanation": "Eurooppa + ssa → Euroopassa (KPT: pp → p)"
+    },
+    {
+      "id": 36,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Afrikka",
+      "english": "in Africa",
+      "answer": "Afrikassa",
+      "rule": "-ssa (region, kk→k)",
+      "explanation": "Afrikka + ssa → Afrikassa (KPT: kk → k)"
+    },
+    {
+      "id": 37,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Espanja",
+      "english": "in Spain",
+      "answer": "Espanjassa",
+      "rule": "-ssa (country)",
+      "explanation": "Espanja + ssa → Espanjassa"
+    },
+    {
+      "id": 38,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Saksa",
+      "english": "in Germany",
+      "answer": "Saksassa",
+      "rule": "-ssa (country)",
+      "explanation": "Saksa + ssa → Saksassa"
+    },
+    {
+      "id": 39,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "keskusta",
+      "english": "in the center",
+      "answer": "keskustassa",
+      "rule": "-ssa (area)",
+      "explanation": "keskusta + ssa → keskustassa"
+    },
+    {
+      "id": 40,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "museo",
+      "english": "in the museum",
+      "answer": "museossa",
+      "rule": "-ssa (closed place)",
+      "explanation": "museo + ssa → museossa"
+    },
+    {
+      "id": 41,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "kirjasto",
+      "english": "in the library",
+      "answer": "kirjastossa",
+      "rule": "-ssa (closed place)",
+      "explanation": "kirjasto + ssa → kirjastossa"
+    },
+    {
+      "id": 42,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "teatteri",
+      "english": "in the theater",
+      "answer": "teatterissa",
+      "rule": "-ssa (closed place)",
+      "explanation": "teatteri + ssa → teatterissa"
+    },
+    {
+      "id": 43,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "elokuva",
+      "english": "in the movie",
+      "answer": "elokuvassa",
+      "rule": "-ssa (closed place)",
+      "explanation": "elokuva + ssa → elokuvassa"
+    },
+    {
+      "id": 44,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "hotelli",
+      "english": "in the hotel",
+      "answer": "hotellissa",
+      "rule": "-ssa (closed place)",
+      "explanation": "hotelli + ssa → hotellissa"
+    },
+    {
+      "id": 45,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "kahvila",
+      "english": "in the café",
+      "answer": "kahvilassa",
+      "rule": "-ssa (closed place)",
+      "explanation": "kahvila + ssa → kahvilassa"
+    },
+    {
+      "id": 46,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "baari",
+      "english": "in the bar",
+      "answer": "baarissa",
+      "rule": "-ssa (closed place)",
+      "explanation": "baari + ssa → baarissa"
+    },
+    {
+      "id": 47,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "metro",
+      "english": "on the metro",
+      "answer": "metrossa",
+      "rule": "-ssa (inside vehicle)",
+      "explanation": "metro + ssa → metrossa"
+    },
+    {
+      "id": 48,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "taksi",
+      "english": "in the taxi",
+      "answer": "taksissa",
+      "rule": "-ssa (inside vehicle)",
+      "explanation": "taksi + ssa → taksissa"
+    },
+    {
+      "id": 49,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "meri",
+      "english": "at sea",
+      "answer": "merellä",
+      "rule": "-llä (open water)",
+      "explanation": "meri + llä → merellä"
+    },
+    {
+      "id": 50,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "järvi",
+      "english": "at the lake",
+      "answer": "järvellä",
+      "rule": "-llä (open water)",
+      "explanation": "järvi + llä → järvellä"
+    },
+    {
+      "id": 51,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "silta",
+      "english": "on the bridge",
+      "answer": "sillalla",
+      "rule": "-lla (surface, lt→ll)",
+      "explanation": "silta + lla → sillalla (KPT: lt → ll)"
+    },
+    {
+      "id": 52,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "asema",
+      "english": "at the station",
+      "answer": "asemalla",
+      "rule": "-lla (open area)",
+      "explanation": "asema + lla → asemalla"
+    },
+    {
+      "id": 53,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "lentokenttä",
+      "english": "at the airport",
+      "answer": "lentokentällä",
+      "rule": "-llä (open area, tt→t)",
+      "explanation": "lentokenttä + llä → lentokentällä (KPT: tt → t)"
+    },
+    {
+      "id": 54,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "vessa",
+      "english": "in the toilet",
+      "answer": "vessassa",
+      "rule": "-ssa (closed place)",
+      "explanation": "vessa + ssa → vessassa"
+    },
+    {
+      "id": 55,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "kylpyhuone",
+      "english": "in the bathroom",
+      "answer": "kylpyhuoneessa",
+      "rule": "-ssa → -essa (e-ending)",
+      "explanation": "kylpyhuone + essa → kylpyhuoneessa"
+    },
+    {
+      "id": 56,
+      "subtopic": "s-case",
+      "type": "sentence",
+      "sentence": "I am at home",
+      "answer": "mä oon kotona",
+      "rule": "olla + kotona",
+      "explanation": "olla (mä) = oon + koti special form = kotona"
+    },
+    {
+      "id": 57,
+      "subtopic": "s-case",
+      "type": "sentence",
+      "sentence": "She lives in Helsinki",
+      "answer": "se asuu Helsingissä",
+      "rule": "asua + -ssä",
+      "explanation": "asua (se) = asuu + Helsinki → Helsingissä"
+    },
+    {
+      "id": 58,
+      "subtopic": "l-case",
+      "type": "sentence",
+      "sentence": "The book is on the table",
+      "answer": "kirja on pöydällä",
+      "rule": "olla + -llä (surface)",
+      "explanation": "kirja + on + pöytä → pöydällä (on surface)"
+    },
+    {
+      "id": 59,
+      "subtopic": "s-case",
+      "type": "sentence",
+      "sentence": "I work in an office",
+      "answer": "mä työskentelen toimistossa",
+      "rule": "työskennellä + -ssa",
+      "explanation": "työskennellä (mä) = työskentelen + toimisto → toimistossa"
+    },
+    {
+      "id": 60,
+      "subtopic": "l-case",
+      "type": "sentence",
+      "sentence": "The children are outside",
+      "answer": "lapset on ulkona",
+      "rule": "olla + ulkona (special)",
+      "explanation": "lapset + on + ulko- → ulkona (special form)"
+    },
+    {
+      "id": 61,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "huone",
+      "english": "in the room",
+      "answer": "huoneessa",
+      "rule": "-ssa → -essa (e-ending)",
+      "explanation": "huone + essa → huoneessa"
+    },
+    {
+      "id": 62,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "laukku",
+      "english": "in the bag",
+      "answer": "laukussa",
+      "rule": "-ssa (inside, kk→k)",
+      "explanation": "laukku + ssa → laukussa (KPT: kk → k)"
+    },
+    {
+      "id": 63,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "tasku",
+      "english": "in the pocket",
+      "answer": "taskussa",
+      "rule": "-ssa (inside)",
+      "explanation": "tasku + ssa → taskussa (no KPT: sk doesn't change)"
+    },
+    {
+      "id": 64,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "laatikko",
+      "english": "in the box",
+      "answer": "laatikossa",
+      "rule": "-ssa (inside, kk→k)",
+      "explanation": "laatikko + ssa → laatikossa (KPT: kk → k)"
+    },
+    {
+      "id": 65,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "tuoli",
+      "english": "on the chair",
+      "answer": "tuolilla",
+      "rule": "-lla (surface)",
+      "explanation": "tuoli + lla → tuolilla"
+    },
+    {
+      "id": 66,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "sohva",
+      "english": "on the sofa",
+      "answer": "sohvalla",
+      "rule": "-lla (surface)",
+      "explanation": "sohva + lla → sohvalla"
+    },
+    {
+      "id": 67,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "sänky",
+      "english": "on/in the bed",
+      "answer": "sängyllä",
+      "rule": "-llä (surface, nk→ng)",
+      "explanation": "sänky + llä → sängyllä (KPT: nk → ng)"
+    },
+    {
+      "id": 68,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Oulu",
+      "english": "in Oulu",
+      "answer": "Oulussa",
+      "rule": "-ssa (city)",
+      "explanation": "Oulu + ssa → Oulussa"
+    },
+    {
+      "id": 69,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Lahti",
+      "english": "in Lahti",
+      "answer": "Lahdessa",
+      "rule": "-ssa (city, t→d)",
+      "explanation": "Lahti + essa → Lahdessa (KPT: t → d)"
+    },
+    {
+      "id": 70,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Viro",
+      "english": "in Estonia",
+      "answer": "Virossa",
+      "rule": "-ssa (country)",
+      "explanation": "Viro + ssa → Virossa"
+    },
+    {
+      "id": 71,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Norja",
+      "english": "in Norway",
+      "answer": "Norjassa",
+      "rule": "-ssa (country)",
+      "explanation": "Norja + ssa → Norjassa"
+    },
+    {
+      "id": 72,
+      "subtopic": "cities",
+      "type": "ending",
+      "word": "Tanska",
+      "english": "in Denmark",
+      "answer": "Tanskassa",
+      "rule": "-ssa (country)",
+      "explanation": "Tanska + ssa → Tanskassa (no KPT: sk doesn't change)"
+    },
+    {
+      "id": 73,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "yliopisto",
+      "english": "at the university",
+      "answer": "yliopistossa",
+      "rule": "-ssa (closed place)",
+      "explanation": "yliopisto + ssa → yliopistossa"
+    },
+    {
+      "id": 74,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "kaupunki",
+      "english": "in the city",
+      "answer": "kaupungissa",
+      "rule": "-ssa (area, nk→ng)",
+      "explanation": "kaupunki + ssa → kaupungissa (KPT: nk → ng)"
+    },
+    {
+      "id": 75,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "maaseutu",
+      "english": "in the countryside",
+      "answer": "maaseudulla",
+      "rule": "-lla (area, t→d)",
+      "explanation": "maaseutu + lla → maaseudulla (KPT: t → d)"
+    },
+    {
+      "id": 76,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "puisto",
+      "english": "in the park",
+      "answer": "puistossa",
+      "rule": "-ssa (area)",
+      "explanation": "puisto + ssa → puistossa"
+    },
+    {
+      "id": 77,
+      "subtopic": "s-case",
+      "type": "ending",
+      "word": "metsä",
+      "english": "in the forest",
+      "answer": "metsässä",
+      "rule": "-ssä (area)",
+      "explanation": "metsä + ssä → metsässä"
+    },
+    {
+      "id": 78,
+      "subtopic": "l-case",
+      "type": "ending",
+      "word": "kenttä",
+      "english": "on the field",
+      "answer": "kentällä",
+      "rule": "-llä (open area, tt→t)",
+      "explanation": "kenttä + llä → kentällä (KPT: tt → t)"
+    },
+    {
+      "id": 79,
+      "subtopic": "s-case",
+      "type": "sentence",
+      "sentence": "I am in Finland",
+      "answer": "mä oon Suomessa",
+      "rule": "olla + -ssa (country)",
+      "explanation": "olla (mä) = oon + Suomi → Suomessa"
+    },
+    {
+      "id": 80,
+      "subtopic": "l-case",
+      "type": "sentence",
+      "sentence": "They are at the beach",
+      "answer": "ne on rannalla",
+      "rule": "olla + -lla (outside)",
+      "explanation": "olla (ne) = on + ranta → rannalla (KPT: nt → nn)"
+    }
+  ]
+}
