@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imperfekti - Past Tense Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back Button -->
+      <a href="../../" class="back-link">← Takaisin aiheisiin</a>
+
+      <!-- Header -->
+      <header class="quiz-header">
+        <h1>⏮️ Imperfekti - Past Tense</h1>
+        <p class="subtitle" id="topicTitle">Finnish Past Tense</p>
+      </header>
+
+      <!-- Mode Tabs -->
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">
+          📝 Multiple Choice
+        </button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Past Tense Quiz</h2>
+          <p id="quizDescription">Practice Finnish past tense conjugations</p>
+
+          <!-- Past Tense Formation Rules -->
+          <div class="rules-box">
+            <h3>📖 Past Tense Formation</h3>
+            <p class="rules-note">Add <strong>-i-</strong> before personal endings</p>
+            <div class="formation-example">
+              <span class="formula">verb stem + <strong>i</strong> + personal ending</span>
+            </div>
+          </div>
+
+          <!-- Personal Endings Table -->
+          <div class="rules-box conjugation-box">
+            <h3>👤 Personal Endings (Spoken Finnish)</h3>
+            <table class="conjugation-table">
+              <thead>
+                <tr>
+                  <th>Pronoun</th>
+                  <th>OLLA</th>
+                  <th>KÄYDÄ</th>
+                  <th>TULLA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>mä</strong></td>
+                  <td>olin</td>
+                  <td>kävin</td>
+                  <td>tulin</td>
+                </tr>
+                <tr>
+                  <td><strong>sä</strong></td>
+                  <td>olit</td>
+                  <td>kävit</td>
+                  <td>tulit</td>
+                </tr>
+                <tr>
+                  <td><strong>se</strong></td>
+                  <td>oli</td>
+                  <td>kävi</td>
+                  <td>tuli</td>
+                </tr>
+                <tr class="spoken-row">
+                  <td><strong>me</strong></td>
+                  <td>oltiin*</td>
+                  <td>käytiin*</td>
+                  <td>tultiin*</td>
+                </tr>
+                <tr>
+                  <td><strong>te</strong></td>
+                  <td>olitte</td>
+                  <td>kävitte</td>
+                  <td>tulitte</td>
+                </tr>
+                <tr class="spoken-row">
+                  <td><strong>ne</strong></td>
+                  <td>oli*</td>
+                  <td>kävi*</td>
+                  <td>tuli*</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="table-note">* = Spoken Finnish (puhekieli)</p>
+          </div>
+
+          <!-- Minulla oli -->
+          <div class="rules-box possession-box">
+            <h3>🤲 Minulla oli (I had)</h3>
+            <p class="rules-note">For possession in past tense, just use <strong>oli</strong></p>
+            <div class="possession-examples">
+              <div class="possession-item">
+                <span class="pronoun">mulla</span>
+                <span class="verb">oli</span>
+                <span class="example">auto</span>
+              </div>
+              <div class="possession-item">
+                <span class="pronoun">sulla</span>
+                <span class="verb">oli</span>
+                <span class="example">koira</span>
+              </div>
+              <div class="possession-item">
+                <span class="pronoun">sillä</span>
+                <span class="verb">oli</span>
+                <span class="example">rahaa</span>
+              </div>
+              <div class="possession-item">
+                <span class="pronoun">meillä</span>
+                <span class="verb">oli</span>
+                <span class="example">talo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Subtopic Selection -->
+          <div class="subtopic-selection">
+            <h3>🎯 Select Categories to Practice</h3>
+            <div class="subtopic-checkboxes" id="subtopicCheckboxes">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Question Count -->
+          <div class="question-count">
+            <label for="questionCount">Number of questions:</label>
+            <select id="questionCount">
+              <option value="5">5 questions</option>
+              <option value="10" selected>10 questions</option>
+              <option value="15">15 questions</option>
+              <option value="20">20 questions</option>
+              <option value="all">All questions</option>
+            </select>
+            <span class="available-count" id="availableCount"></span>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita Quiz! 🚀</button>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <!-- Progress -->
+          <div class="progress-container">
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+
+          <!-- Question -->
+          <div class="question-container">
+            <div class="question-type" id="questionType">Conjugation</div>
+            <div class="question-prompt">
+              <span class="verb-display" id="verbDisplay">olla</span>
+              <span class="pronoun-display" id="pronounDisplay">(mä)</span>
+            </div>
+            <p class="question-english" id="questionEnglish">I was</p>
+          </div>
+
+          <!-- MCQ Options -->
+          <div class="options-container" id="optionsContainer">
+            <!-- Generated by JS -->
+          </div>
+
+          <!-- Written Answer -->
+          <div class="written-container hidden" id="writtenContainer">
+            <input
+              type="text"
+              id="writtenAnswer"
+              class="written-input"
+              placeholder="Kirjoita vastaus..."
+              autocomplete="off"
+            />
+            <button class="submit-btn" id="submitAnswer">
+              Tarkista ✓
+            </button>
+          </div>
+
+          <!-- Feedback -->
+          <div class="feedback hidden" id="feedback">
+            <div class="feedback-icon" id="feedbackIcon">✓</div>
+            <div class="feedback-text" id="feedbackText">Oikein!</div>
+            <div class="feedback-explanation" id="feedbackExplanation"></div>
+          </div>
+
+          <!-- Next Button -->
+          <button class="next-btn hidden" id="nextBtn">
+            Seuraava →
+          </button>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Quiz Complete!</h2>
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-label">/ <span id="totalQuestions">10</span></span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+          <div class="score-message" id="scoreMessage">
+            Hyvää työtä!
+          </div>
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Yritä uudelleen</button>
+            <button class="home-btn" id="homeBtn">🏠 Takaisin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

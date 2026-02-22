@@ -149,6 +149,25 @@
         "grammar",
         "spoken-finnish"
       ]
+    },
+    {
+      "id": "pasttense",
+      "title": "Imperfekti",
+      "titleEn": "Past Tense",
+      "description": "Practice Finnish past tense - add -i- before endings! olin, kävin, tulin, mulla oli",
+      "icon": "⏮️",
+      "path": "pasttense/quiz/",
+      "questionCount": 90,
+      "difficulty": "intermediate",
+      "tags": [
+        "imperfekti",
+        "menneisyys",
+        "olin",
+        "oli",
+        "puhekieli",
+        "kielioppi",
+        "grammar"
+      ]
     }
   ]
 }

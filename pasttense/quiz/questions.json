@@ -1,0 +1,972 @@
+{
+  "topic": "pasttense",
+  "title": "Imperfekti - Past Tense",
+  "description": "Practice Finnish past tense (imperfekti) with common verbs",
+  "instructions": "Conjugate the verb in past tense for the given pronoun",
+  "subtopics": [
+    { "id": "all", "name": "All Past Tense", "icon": "📚" },
+    { "id": "olla", "name": "Olla (to be)", "icon": "🔵" },
+    { "id": "type1", "name": "Verb Type 1", "icon": "1️⃣" },
+    { "id": "type2", "name": "Verb Type 2 (-da/-dä)", "icon": "2️⃣" },
+    { "id": "type3", "name": "Verb Type 3 (-la/-na/-ra)", "icon": "3️⃣" },
+    { "id": "minulla-oli", "name": "Minulla oli (I had)", "icon": "🤲" }
+  ],
+  "rules": {
+    "formation": {
+      "description": "Past tense is formed by adding -i- before personal endings",
+      "steps": [
+        "Take the verb stem",
+        "Add -i-",
+        "Add personal ending"
+      ]
+    },
+    "personal_endings": {
+      "minä": "-n",
+      "sinä": "-t",
+      "hän": "- (no ending)",
+      "me": "-tiin (spoken)",
+      "te": "-tte",
+      "he": "- (no ending, same as hän)"
+    },
+    "spoken_forms": {
+      "note": "In spoken Finnish, 'me' uses -tiin ending",
+      "examples": ["olitiin", "käytiin", "tultiin"]
+    },
+    "minulla_oli": {
+      "description": "For 'I had' expressions, use 'oli' with possessive pronouns",
+      "pattern": "mulla/sulla/sillä + oli + noun",
+      "examples": ["Mulla oli auto", "Sulla oli koira"]
+    }
+  },
+  "vocabulary": {
+    "olla": [
+      { "finnish": "olin", "english": "I was" },
+      { "finnish": "olit", "english": "you were" },
+      { "finnish": "oli", "english": "he/she/it was" },
+      { "finnish": "olitiin", "english": "we were (spoken)" },
+      { "finnish": "olitte", "english": "you (pl) were" },
+      { "finnish": "oli", "english": "they were (spoken)" }
+    ],
+    "common_verbs": [
+      { "finnish": "käydä", "english": "to visit (+ssa/ssä)" },
+      { "finnish": "tulla", "english": "to come" },
+      { "finnish": "mennä", "english": "to go" },
+      { "finnish": "syödä", "english": "to eat" },
+      { "finnish": "juoda", "english": "to drink" },
+      { "finnish": "tehdä", "english": "to do/make" },
+      { "finnish": "nähdä", "english": "to see" },
+      { "finnish": "asua", "english": "to live" },
+      { "finnish": "puhua", "english": "to speak" },
+      { "finnish": "sanoa", "english": "to say" }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "subtopic": "olla",
+      "type": "conjugation",
+      "verb": "olla",
+      "pronoun": "mä",
+      "english": "I was",
+      "answer": "olin",
+      "explanation": "olla → ol + i + n = olin"
+    },
+    {
+      "id": 2,
+      "subtopic": "olla",
+      "type": "conjugation",
+      "verb": "olla",
+      "pronoun": "sä",
+      "english": "you were",
+      "answer": "olit",
+      "explanation": "olla → ol + i + t = olit"
+    },
+    {
+      "id": 3,
+      "subtopic": "olla",
+      "type": "conjugation",
+      "verb": "olla",
+      "pronoun": "se",
+      "english": "he/she was",
+      "answer": "oli",
+      "explanation": "olla → ol + i = oli (no ending for 3rd person)"
+    },
+    {
+      "id": 4,
+      "subtopic": "olla",
+      "type": "conjugation",
+      "verb": "olla",
+      "pronoun": "me",
+      "english": "we were",
+      "answer": "oltiin",
+      "spoken": true,
+      "explanation": "olla → ol + tiin = oltiin (spoken Finnish)"
+    },
+    {
+      "id": 5,
+      "subtopic": "olla",
+      "type": "conjugation",
+      "verb": "olla",
+      "pronoun": "te",
+      "english": "you (pl) were",
+      "answer": "olitte",
+      "explanation": "olla → ol + i + tte = olitte"
+    },
+    {
+      "id": 6,
+      "subtopic": "olla",
+      "type": "conjugation",
+      "verb": "olla",
+      "pronoun": "ne",
+      "english": "they were",
+      "answer": "oli",
+      "spoken": true,
+      "explanation": "olla → oli (spoken Finnish uses 3rd person singular)"
+    },
+    {
+      "id": 7,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "käydä",
+      "pronoun": "mä",
+      "english": "I visited",
+      "answer": "kävin",
+      "explanation": "käydä → käv + i + n = kävin"
+    },
+    {
+      "id": 8,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "käydä",
+      "pronoun": "sä",
+      "english": "you visited",
+      "answer": "kävit",
+      "explanation": "käydä → käv + i + t = kävit"
+    },
+    {
+      "id": 9,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "käydä",
+      "pronoun": "se",
+      "english": "he/she visited",
+      "answer": "kävi",
+      "explanation": "käydä → käv + i = kävi"
+    },
+    {
+      "id": 10,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "käydä",
+      "pronoun": "me",
+      "english": "we visited",
+      "answer": "käytiin",
+      "spoken": true,
+      "explanation": "käydä → käy + tiin = käytiin (spoken)"
+    },
+    {
+      "id": 11,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "käydä",
+      "pronoun": "te",
+      "english": "you (pl) visited",
+      "answer": "kävitte",
+      "explanation": "käydä → käv + i + tte = kävitte"
+    },
+    {
+      "id": 12,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "käydä",
+      "pronoun": "ne",
+      "english": "they visited",
+      "answer": "kävi",
+      "spoken": true,
+      "explanation": "käydä → kävi (spoken Finnish)"
+    },
+    {
+      "id": 13,
+      "subtopic": "type3",
+      "type": "conjugation",
+      "verb": "tulla",
+      "pronoun": "mä",
+      "english": "I came",
+      "answer": "tulin",
+      "explanation": "tulla → tul + i + n = tulin"
+    },
+    {
+      "id": 14,
+      "subtopic": "type3",
+      "type": "conjugation",
+      "verb": "tulla",
+      "pronoun": "sä",
+      "english": "you came",
+      "answer": "tulit",
+      "explanation": "tulla → tul + i + t = tulit"
+    },
+    {
+      "id": 15,
+      "subtopic": "type3",
+      "type": "conjugation",
+      "verb": "tulla",
+      "pronoun": "se",
+      "english": "he/she came",
+      "answer": "tuli",
+      "explanation": "tulla → tul + i = tuli"
+    },
+    {
+      "id": 16,
+      "subtopic": "type3",
+      "type": "conjugation",
+      "verb": "tulla",
+      "pronoun": "me",
+      "english": "we came",
+      "answer": "tultiin",
+      "spoken": true,
+      "explanation": "tulla → tul + tiin = tultiin (spoken)"
+    },
+    {
+      "id": 17,
+      "subtopic": "type3",
+      "type": "conjugation",
+      "verb": "tulla",
+      "pronoun": "te",
+      "english": "you (pl) came",
+      "answer": "tulitte",
+      "explanation": "tulla → tul + i + tte = tulitte"
+    },
+    {
+      "id": 18,
+      "subtopic": "type3",
+      "type": "conjugation",
+      "verb": "tulla",
+      "pronoun": "ne",
+      "english": "they came",
+      "answer": "tuli",
+      "spoken": true,
+      "explanation": "tulla → tuli (spoken Finnish)"
+    },
+    {
+      "id": 19,
+      "subtopic": "type3",
+      "type": "conjugation",
+      "verb": "mennä",
+      "pronoun": "mä",
+      "english": "I went",
+      "answer": "menin",
+      "explanation": "mennä → men + i + n = menin"
+    },
+    {
+      "id": 20,
+      "subtopic": "type3",
+      "type": "conjugation",
+      "verb": "mennä",
+      "pronoun": "sä",
+      "english": "you went",
+      "answer": "menit",
+      "explanation": "mennä → men + i + t = menit"
+    },
+    {
+      "id": 21,
+      "subtopic": "type3",
+      "type": "conjugation",
+      "verb": "mennä",
+      "pronoun": "se",
+      "english": "he/she went",
+      "answer": "meni",
+      "explanation": "mennä → men + i = meni"
+    },
+    {
+      "id": 22,
+      "subtopic": "type3",
+      "type": "conjugation",
+      "verb": "mennä",
+      "pronoun": "me",
+      "english": "we went",
+      "answer": "mentiin",
+      "spoken": true,
+      "explanation": "mennä → men + tiin = mentiin (spoken)"
+    },
+    {
+      "id": 23,
+      "subtopic": "type3",
+      "type": "conjugation",
+      "verb": "mennä",
+      "pronoun": "te",
+      "english": "you (pl) went",
+      "answer": "menitte",
+      "explanation": "mennä → men + i + tte = menitte"
+    },
+    {
+      "id": 24,
+      "subtopic": "type3",
+      "type": "conjugation",
+      "verb": "mennä",
+      "pronoun": "ne",
+      "english": "they went",
+      "answer": "meni",
+      "spoken": true,
+      "explanation": "mennä → meni (spoken Finnish)"
+    },
+    {
+      "id": 25,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "syödä",
+      "pronoun": "mä",
+      "english": "I ate",
+      "answer": "söin",
+      "explanation": "syödä → sö + i + n = söin (y → ö before i)"
+    },
+    {
+      "id": 26,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "syödä",
+      "pronoun": "sä",
+      "english": "you ate",
+      "answer": "söit",
+      "explanation": "syödä → sö + i + t = söit"
+    },
+    {
+      "id": 27,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "syödä",
+      "pronoun": "se",
+      "english": "he/she ate",
+      "answer": "söi",
+      "explanation": "syödä → sö + i = söi"
+    },
+    {
+      "id": 28,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "syödä",
+      "pronoun": "me",
+      "english": "we ate",
+      "answer": "syötiin",
+      "spoken": true,
+      "explanation": "syödä → syö + tiin = syötiin (spoken)"
+    },
+    {
+      "id": 29,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "syödä",
+      "pronoun": "te",
+      "english": "you (pl) ate",
+      "answer": "söitte",
+      "explanation": "syödä → sö + i + tte = söitte"
+    },
+    {
+      "id": 30,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "syödä",
+      "pronoun": "ne",
+      "english": "they ate",
+      "answer": "söi",
+      "spoken": true,
+      "explanation": "syödä → söi (spoken Finnish)"
+    },
+    {
+      "id": 31,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "juoda",
+      "pronoun": "mä",
+      "english": "I drank",
+      "answer": "join",
+      "explanation": "juoda → jo + i + n = join (uo → o before i)"
+    },
+    {
+      "id": 32,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "juoda",
+      "pronoun": "sä",
+      "english": "you drank",
+      "answer": "joit",
+      "explanation": "juoda → jo + i + t = joit"
+    },
+    {
+      "id": 33,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "juoda",
+      "pronoun": "se",
+      "english": "he/she drank",
+      "answer": "joi",
+      "explanation": "juoda → jo + i = joi"
+    },
+    {
+      "id": 34,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "juoda",
+      "pronoun": "me",
+      "english": "we drank",
+      "answer": "juotiin",
+      "spoken": true,
+      "explanation": "juoda → juo + tiin = juotiin (spoken)"
+    },
+    {
+      "id": 35,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "juoda",
+      "pronoun": "te",
+      "english": "you (pl) drank",
+      "answer": "joitte",
+      "explanation": "juoda → jo + i + tte = joitte"
+    },
+    {
+      "id": 36,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "juoda",
+      "pronoun": "ne",
+      "english": "they drank",
+      "answer": "joi",
+      "spoken": true,
+      "explanation": "juoda → joi (spoken Finnish)"
+    },
+    {
+      "id": 37,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "tehdä",
+      "pronoun": "mä",
+      "english": "I did/made",
+      "answer": "tein",
+      "explanation": "tehdä → te + i + n = tein"
+    },
+    {
+      "id": 38,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "tehdä",
+      "pronoun": "sä",
+      "english": "you did/made",
+      "answer": "teit",
+      "explanation": "tehdä → te + i + t = teit"
+    },
+    {
+      "id": 39,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "tehdä",
+      "pronoun": "se",
+      "english": "he/she did/made",
+      "answer": "teki",
+      "explanation": "tehdä → tek + i = teki (h → k in past)"
+    },
+    {
+      "id": 40,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "tehdä",
+      "pronoun": "me",
+      "english": "we did/made",
+      "answer": "tehtiin",
+      "spoken": true,
+      "explanation": "tehdä → teh + tiin = tehtiin (spoken)"
+    },
+    {
+      "id": 41,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "tehdä",
+      "pronoun": "te",
+      "english": "you (pl) did/made",
+      "answer": "teitte",
+      "explanation": "tehdä → te + i + tte = teitte"
+    },
+    {
+      "id": 42,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "tehdä",
+      "pronoun": "ne",
+      "english": "they did/made",
+      "answer": "teki",
+      "spoken": true,
+      "explanation": "tehdä → teki (spoken Finnish)"
+    },
+    {
+      "id": 43,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "nähdä",
+      "pronoun": "mä",
+      "english": "I saw",
+      "answer": "näin",
+      "explanation": "nähdä → nä + i + n = näin"
+    },
+    {
+      "id": 44,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "nähdä",
+      "pronoun": "sä",
+      "english": "you saw",
+      "answer": "näit",
+      "explanation": "nähdä → nä + i + t = näit"
+    },
+    {
+      "id": 45,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "nähdä",
+      "pronoun": "se",
+      "english": "he/she saw",
+      "answer": "näki",
+      "explanation": "nähdä → näk + i = näki (h → k in past)"
+    },
+    {
+      "id": 46,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "nähdä",
+      "pronoun": "me",
+      "english": "we saw",
+      "answer": "nähtiin",
+      "spoken": true,
+      "explanation": "nähdä → näh + tiin = nähtiin (spoken)"
+    },
+    {
+      "id": 47,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "nähdä",
+      "pronoun": "te",
+      "english": "you (pl) saw",
+      "answer": "näitte",
+      "explanation": "nähdä → nä + i + tte = näitte"
+    },
+    {
+      "id": 48,
+      "subtopic": "type2",
+      "type": "conjugation",
+      "verb": "nähdä",
+      "pronoun": "ne",
+      "english": "they saw",
+      "answer": "näki",
+      "spoken": true,
+      "explanation": "nähdä → näki (spoken Finnish)"
+    },
+    {
+      "id": 49,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "asua",
+      "pronoun": "mä",
+      "english": "I lived",
+      "answer": "asuin",
+      "explanation": "asua → asu + i + n = asuin"
+    },
+    {
+      "id": 50,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "asua",
+      "pronoun": "sä",
+      "english": "you lived",
+      "answer": "asuit",
+      "explanation": "asua → asu + i + t = asuit"
+    },
+    {
+      "id": 51,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "asua",
+      "pronoun": "se",
+      "english": "he/she lived",
+      "answer": "asui",
+      "explanation": "asua → asu + i = asui"
+    },
+    {
+      "id": 52,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "asua",
+      "pronoun": "me",
+      "english": "we lived",
+      "answer": "asuttiin",
+      "spoken": true,
+      "explanation": "asua → asu + ttiin = asuttiin (spoken)"
+    },
+    {
+      "id": 53,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "asua",
+      "pronoun": "te",
+      "english": "you (pl) lived",
+      "answer": "asuitte",
+      "explanation": "asua → asu + i + tte = asuitte"
+    },
+    {
+      "id": 54,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "asua",
+      "pronoun": "ne",
+      "english": "they lived",
+      "answer": "asui",
+      "spoken": true,
+      "explanation": "asua → asui (spoken Finnish)"
+    },
+    {
+      "id": 55,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "puhua",
+      "pronoun": "mä",
+      "english": "I spoke",
+      "answer": "puhuin",
+      "explanation": "puhua → puhu + i + n = puhuin"
+    },
+    {
+      "id": 56,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "puhua",
+      "pronoun": "sä",
+      "english": "you spoke",
+      "answer": "puhuit",
+      "explanation": "puhua → puhu + i + t = puhuit"
+    },
+    {
+      "id": 57,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "puhua",
+      "pronoun": "se",
+      "english": "he/she spoke",
+      "answer": "puhui",
+      "explanation": "puhua → puhu + i = puhui"
+    },
+    {
+      "id": 58,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "puhua",
+      "pronoun": "me",
+      "english": "we spoke",
+      "answer": "puhuttiin",
+      "spoken": true,
+      "explanation": "puhua → puhu + ttiin = puhuttiin (spoken)"
+    },
+    {
+      "id": 59,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "puhua",
+      "pronoun": "te",
+      "english": "you (pl) spoke",
+      "answer": "puhuitte",
+      "explanation": "puhua → puhu + i + tte = puhuitte"
+    },
+    {
+      "id": 60,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "puhua",
+      "pronoun": "ne",
+      "english": "they spoke",
+      "answer": "puhui",
+      "spoken": true,
+      "explanation": "puhua → puhui (spoken Finnish)"
+    },
+    {
+      "id": 61,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "sanoa",
+      "pronoun": "mä",
+      "english": "I said",
+      "answer": "sanoin",
+      "explanation": "sanoa → sano + i + n = sanoin"
+    },
+    {
+      "id": 62,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "sanoa",
+      "pronoun": "sä",
+      "english": "you said",
+      "answer": "sanoit",
+      "explanation": "sanoa → sano + i + t = sanoit"
+    },
+    {
+      "id": 63,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "sanoa",
+      "pronoun": "se",
+      "english": "he/she said",
+      "answer": "sanoi",
+      "explanation": "sanoa → sano + i = sanoi"
+    },
+    {
+      "id": 64,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "sanoa",
+      "pronoun": "me",
+      "english": "we said",
+      "answer": "sanottiin",
+      "spoken": true,
+      "explanation": "sanoa → sano + ttiin = sanottiin (spoken)"
+    },
+    {
+      "id": 65,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "sanoa",
+      "pronoun": "te",
+      "english": "you (pl) said",
+      "answer": "sanoitte",
+      "explanation": "sanoa → sano + i + tte = sanoitte"
+    },
+    {
+      "id": 66,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "sanoa",
+      "pronoun": "ne",
+      "english": "they said",
+      "answer": "sanoi",
+      "spoken": true,
+      "explanation": "sanoa → sanoi (spoken Finnish)"
+    },
+    {
+      "id": 67,
+      "subtopic": "minulla-oli",
+      "type": "possession",
+      "pronoun": "mulla",
+      "english": "I had (a car)",
+      "context": "auto",
+      "answer": "mulla oli auto",
+      "explanation": "mulla + oli = I had"
+    },
+    {
+      "id": 68,
+      "subtopic": "minulla-oli",
+      "type": "possession",
+      "pronoun": "sulla",
+      "english": "you had (a dog)",
+      "context": "koira",
+      "answer": "sulla oli koira",
+      "explanation": "sulla + oli = you had"
+    },
+    {
+      "id": 69,
+      "subtopic": "minulla-oli",
+      "type": "possession",
+      "pronoun": "sillä",
+      "english": "he/she had (money)",
+      "context": "rahaa",
+      "answer": "sillä oli rahaa",
+      "explanation": "sillä + oli = he/she had"
+    },
+    {
+      "id": 70,
+      "subtopic": "minulla-oli",
+      "type": "possession",
+      "pronoun": "meillä",
+      "english": "we had (a house)",
+      "context": "talo",
+      "answer": "meillä oli talo",
+      "explanation": "meillä + oli = we had"
+    },
+    {
+      "id": 71,
+      "subtopic": "minulla-oli",
+      "type": "possession",
+      "pronoun": "teillä",
+      "english": "you (pl) had (time)",
+      "context": "aikaa",
+      "answer": "teillä oli aikaa",
+      "explanation": "teillä + oli = you (pl) had"
+    },
+    {
+      "id": 72,
+      "subtopic": "minulla-oli",
+      "type": "possession",
+      "pronoun": "niillä",
+      "english": "they had (children)",
+      "context": "lapsia",
+      "answer": "niillä oli lapsia",
+      "explanation": "niillä + oli = they had"
+    },
+    {
+      "id": 73,
+      "subtopic": "olla",
+      "type": "sentence",
+      "sentence": "I was in Turku",
+      "answer": "mä olin Turussa",
+      "explanation": "olla past (mä) = olin + Turku inessive = Turussa"
+    },
+    {
+      "id": 74,
+      "subtopic": "type2",
+      "type": "sentence",
+      "sentence": "I visited Turku",
+      "answer": "mä kävin Turussa",
+      "explanation": "käydä past (mä) = kävin + Turku inessive = Turussa"
+    },
+    {
+      "id": 75,
+      "subtopic": "type3",
+      "type": "sentence",
+      "sentence": "She came home",
+      "answer": "se tuli kotiin",
+      "explanation": "tulla past (se) = tuli + koti illative = kotiin"
+    },
+    {
+      "id": 76,
+      "subtopic": "type3",
+      "type": "sentence",
+      "sentence": "We went to the store",
+      "answer": "me mentiin kauppaan",
+      "explanation": "mennä past (me, spoken) = mentiin + kauppa illative = kauppaan"
+    },
+    {
+      "id": 77,
+      "subtopic": "type2",
+      "type": "sentence",
+      "sentence": "They ate pizza",
+      "answer": "ne söi pizzaa",
+      "explanation": "syödä past (ne, spoken) = söi + pizza partitive = pizzaa"
+    },
+    {
+      "id": 78,
+      "subtopic": "type2",
+      "type": "sentence",
+      "sentence": "I drank coffee",
+      "answer": "mä join kahvia",
+      "explanation": "juoda past (mä) = join + kahvi partitive = kahvia"
+    },
+    {
+      "id": 79,
+      "subtopic": "type1",
+      "type": "sentence",
+      "sentence": "We spoke Finnish",
+      "answer": "me puhuttiin suomea",
+      "explanation": "puhua past (me, spoken) = puhuttiin + suomi partitive = suomea"
+    },
+    {
+      "id": 80,
+      "subtopic": "minulla-oli",
+      "type": "sentence",
+      "sentence": "I had a good day",
+      "answer": "mulla oli hyvä päivä",
+      "explanation": "mulla + oli + hyvä päivä"
+    },
+    {
+      "id": 81,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "ostaa",
+      "pronoun": "mä",
+      "english": "I bought",
+      "answer": "ostin",
+      "explanation": "ostaa → ost + i + n = ostin"
+    },
+    {
+      "id": 82,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "ostaa",
+      "pronoun": "sä",
+      "english": "you bought",
+      "answer": "ostit",
+      "explanation": "ostaa → ost + i + t = ostit"
+    },
+    {
+      "id": 83,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "ostaa",
+      "pronoun": "se",
+      "english": "he/she bought",
+      "answer": "osti",
+      "explanation": "ostaa → ost + i = osti"
+    },
+    {
+      "id": 84,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "lukea",
+      "pronoun": "mä",
+      "english": "I read (past)",
+      "answer": "luin",
+      "explanation": "lukea → lu + i + n = luin"
+    },
+    {
+      "id": 85,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "lukea",
+      "pronoun": "sä",
+      "english": "you read (past)",
+      "answer": "luit",
+      "explanation": "lukea → lu + i + t = luit"
+    },
+    {
+      "id": 86,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "lukea",
+      "pronoun": "se",
+      "english": "he/she read (past)",
+      "answer": "luki",
+      "explanation": "lukea → luk + i = luki"
+    },
+    {
+      "id": 87,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "kirjoittaa",
+      "pronoun": "mä",
+      "english": "I wrote",
+      "answer": "kirjoitin",
+      "explanation": "kirjoittaa → kirjoit + i + n = kirjoitin"
+    },
+    {
+      "id": 88,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "kirjoittaa",
+      "pronoun": "sä",
+      "english": "you wrote",
+      "answer": "kirjoitit",
+      "explanation": "kirjoittaa → kirjoit + i + t = kirjoitit"
+    },
+    {
+      "id": 89,
+      "subtopic": "type1",
+      "type": "conjugation",
+      "verb": "kirjoittaa",
+      "pronoun": "se",
+      "english": "he/she wrote",
+      "answer": "kirjoitti",
+      "explanation": "kirjoittaa → kirjoitt + i = kirjoitti"
+    },
+    {
+      "id": 90,
+      "subtopic": "type3",
+      "type": "conjugation",
+      "verb": "olla",
+      "pronoun": "mä",
+      "english": "I was not",
+      "negative": true,
+      "answer": "en ollut",
+      "explanation": "olla negative past = en + ollut (past participle)"
+    }
+  ]
+}
