@@ -14,11 +14,7 @@
   "rules": {
     "formation": {
       "description": "Past tense is formed by adding -i- before personal endings",
-      "steps": [
-        "Take the verb stem",
-        "Add -i-",
-        "Add personal ending"
-      ]
+      "steps": ["Take the verb stem", "Add -i-", "Add personal ending"]
     },
     "personal_endings": {
       "minä": "-n",

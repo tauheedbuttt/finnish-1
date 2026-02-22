@@ -13,16 +13,36 @@
   "rules": {
     "missä": {
       "description": "Missä = Where (in/at/on) - used with STATIC verbs",
-      "static_verbs": ["olla", "asua", "istua", "seistä", "maata", "nukkua", "työskennellä"],
+      "static_verbs": [
+        "olla",
+        "asua",
+        "istua",
+        "seistä",
+        "maata",
+        "nukkua",
+        "työskennellä"
+      ],
       "note": "No movement - staying in one place"
     },
     "s_case": {
       "ending": "-ssa / -ssä",
       "when_to_use": [
-        { "rule": "Closed places", "examples": ["kaupassa", "talossa", "autossa"] },
-        { "rule": "Inside something", "examples": ["laatikossa", "laukussa", "taskussa"] },
-        { "rule": "Most city/country names", "examples": ["Helsingissä", "Suomessa", "Turussa"] },
-        { "rule": "Areas/regions", "examples": ["Euroopassa", "Afrikassa", "keskustassa"] }
+        {
+          "rule": "Closed places",
+          "examples": ["kaupassa", "talossa", "autossa"]
+        },
+        {
+          "rule": "Inside something",
+          "examples": ["laatikossa", "laukussa", "taskussa"]
+        },
+        {
+          "rule": "Most city/country names",
+          "examples": ["Helsingissä", "Suomessa", "Turussa"]
+        },
+        {
+          "rule": "Areas/regions",
+          "examples": ["Euroopassa", "Afrikassa", "keskustassa"]
+        }
       ],
       "vowel_harmony": {
         "a/o/u": "-ssa",
@@ -32,10 +52,19 @@
     "l_case": {
       "ending": "-lla / -llä",
       "when_to_use": [
-        { "rule": "Outside/open places", "examples": ["kadulla", "torilla", "pihalla"] },
-        { "rule": "On a surface", "examples": ["pöydällä", "lattialla", "seinällä"] },
+        {
+          "rule": "Outside/open places",
+          "examples": ["kadulla", "torilla", "pihalla"]
+        },
+        {
+          "rule": "On a surface",
+          "examples": ["pöydällä", "lattialla", "seinällä"]
+        },
         { "rule": "Near/at", "examples": ["ovella", "ikkunalla", "rannalla"] },
-        { "rule": "Some activities", "examples": ["tunnilla", "luennolla", "töissä→töillä (spoken)"] }
+        {
+          "rule": "Some activities",
+          "examples": ["tunnilla", "luennolla", "töissä→töillä (spoken)"]
+        }
       ],
       "vowel_harmony": {
         "a/o/u": "-lla",
@@ -55,18 +84,34 @@
     "s_case_places": [
       { "finnish": "kauppa", "english": "shop/store", "missä": "kaupassa" },
       { "finnish": "koulu", "english": "school", "missä": "koulussa" },
-      { "finnish": "ravintola", "english": "restaurant", "missä": "ravintolassa" },
+      {
+        "finnish": "ravintola",
+        "english": "restaurant",
+        "missä": "ravintolassa"
+      },
       { "finnish": "kirkko", "english": "church", "missä": "kirkossa" },
       { "finnish": "pankki", "english": "bank", "missä": "pankissa" },
       { "finnish": "sairaala", "english": "hospital", "missä": "sairaalassa" },
       { "finnish": "toimisto", "english": "office", "missä": "toimistossa" },
       { "finnish": "keittiö", "english": "kitchen", "missä": "keittiössä" },
-      { "finnish": "makuuhuone", "english": "bedroom", "missä": "makuuhuoneessa" },
-      { "finnish": "olohuone", "english": "living room", "missä": "olohuoneessa" },
+      {
+        "finnish": "makuuhuone",
+        "english": "bedroom",
+        "missä": "makuuhuoneessa"
+      },
+      {
+        "finnish": "olohuone",
+        "english": "living room",
+        "missä": "olohuoneessa"
+      },
       { "finnish": "auto", "english": "car", "missä": "autossa" },
       { "finnish": "bussi", "english": "bus", "missä": "bussissa" },
       { "finnish": "juna", "english": "train", "missä": "junassa" },
-      { "finnish": "lentokone", "english": "airplane", "missä": "lentokoneessa" }
+      {
+        "finnish": "lentokone",
+        "english": "airplane",
+        "missä": "lentokoneessa"
+      }
     ],
     "l_case_places": [
       { "finnish": "katu", "english": "street", "missä": "kadulla" },

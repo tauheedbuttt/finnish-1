@@ -108,9 +108,7 @@ class LocalCasesQuiz {
     if (this.selectedSubtopics.has("all")) {
       return this.questions;
     }
-    return this.questions.filter((q) =>
-      this.selectedSubtopics.has(q.subtopic)
-    );
+    return this.questions.filter((q) => this.selectedSubtopics.has(q.subtopic));
   }
 
   updateQuestionCount() {
@@ -125,9 +123,9 @@ class LocalCasesQuiz {
     // Mode tabs
     document.querySelectorAll(".mode-tab").forEach((tab) => {
       tab.addEventListener("click", () => {
-        document.querySelectorAll(".mode-tab").forEach((t) =>
-          t.classList.remove("active")
-        );
+        document
+          .querySelectorAll(".mode-tab")
+          .forEach((t) => t.classList.remove("active"));
         tab.classList.add("active");
         this.mode = tab.dataset.mode;
       });
@@ -149,11 +147,13 @@ class LocalCasesQuiz {
     });
 
     // Enter key for written answer
-    document.getElementById("writtenAnswer").addEventListener("keypress", (e) => {
-      if (e.key === "Enter") {
-        this.checkWrittenAnswer();
-      }
-    });
+    document
+      .getElementById("writtenAnswer")
+      .addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          this.checkWrittenAnswer();
+        }
+      });
 
     // Retry button
     document.getElementById("retryBtn").addEventListener("click", () => {
@@ -175,13 +175,13 @@ class LocalCasesQuiz {
     } else {
       this.questionsPerQuiz = Math.min(
         parseInt(countSelect.value),
-        filtered.length
+        filtered.length,
       );
     }
 
     this.selectedQuestions = this.shuffleArray([...filtered]).slice(
       0,
-      this.questionsPerQuiz
+      this.questionsPerQuiz,
     );
     this.currentIndex = 0;
     this.score = 0;
@@ -205,7 +205,9 @@ class LocalCasesQuiz {
 
     // Reset feedback
     document.getElementById("feedback").classList.add("hidden");
-    document.getElementById("feedback").classList.remove("correct", "incorrect");
+    document
+      .getElementById("feedback")
+      .classList.remove("correct", "incorrect");
     document.getElementById("nextBtn").classList.add("hidden");
 
     // Show appropriate input
@@ -228,10 +230,16 @@ class LocalCasesQuiz {
     const questionType = document.getElementById("questionType");
 
     if (question.type === "ending" || question.type === "special") {
-      questionType.textContent = question.subtopic === "s-case" ? "S-Case (-ssa/-ssä)" : 
-                                  question.subtopic === "l-case" ? "L-Case (-lla/-llä)" :
-                                  question.subtopic === "special" ? "Special Form" :
-                                  question.subtopic === "cities" ? "Cities & Countries" : "Missä?";
+      questionType.textContent =
+        question.subtopic === "s-case"
+          ? "S-Case (-ssa/-ssä)"
+          : question.subtopic === "l-case"
+            ? "L-Case (-lla/-llä)"
+            : question.subtopic === "special"
+              ? "Special Form"
+              : question.subtopic === "cities"
+                ? "Cities & Countries"
+                : "Missä?";
       wordDisplay.textContent = question.word;
       endingDisplay.textContent = "+ ?";
       questionEnglish.textContent = question.english;
@@ -268,7 +276,7 @@ class LocalCasesQuiz {
     const similarQuestions = this.questions.filter(
       (q) =>
         q.id !== question.id &&
-        (q.subtopic === question.subtopic || q.word === question.word)
+        (q.subtopic === question.subtopic || q.word === question.word),
     );
 
     // Add wrong answers
@@ -296,13 +304,13 @@ class LocalCasesQuiz {
   generateVariation(question, existing) {
     const word = question.word;
     const endings = ["ssa", "ssä", "lla", "llä", "ssa", "sta", "lta"];
-    
+
     // Get base without common endings
     let base = word;
     if (word.endsWith("i")) {
       base = word.slice(0, -1);
     }
-    
+
     for (const ending of this.shuffleArray(endings)) {
       const variation = base + ending;
       if (!existing.includes(variation) && variation !== question.answer) {
@@ -321,7 +329,8 @@ class LocalCasesQuiz {
       }
     });
 
-    const isCorrect = selected.toLowerCase().trim() === correct.toLowerCase().trim();
+    const isCorrect =
+      selected.toLowerCase().trim() === correct.toLowerCase().trim();
 
     if (isCorrect) {
       button.classList.add("correct");
@@ -364,7 +373,9 @@ class LocalCasesQuiz {
     feedback.classList.add(isCorrect ? "correct" : "incorrect");
 
     icon.textContent = isCorrect ? "✓" : "✗";
-    text.textContent = isCorrect ? "Oikein! 🎉" : `Väärin! Oikea vastaus: ${question.answer}`;
+    text.textContent = isCorrect
+      ? "Oikein! 🎉"
+      : `Väärin! Oikea vastaus: ${question.answer}`;
     explanation.textContent = question.explanation || "";
 
     document.getElementById("nextBtn").classList.remove("hidden");
@@ -392,7 +403,8 @@ class LocalCasesQuiz {
     const percentage = Math.round((this.score / this.questionsPerQuiz) * 100);
 
     document.getElementById("finalScore").textContent = this.score;
-    document.getElementById("totalQuestions").textContent = this.questionsPerQuiz;
+    document.getElementById("totalQuestions").textContent =
+      this.questionsPerQuiz;
     document.getElementById("scorePercentage").textContent = `${percentage}%`;
 
     let message = "";

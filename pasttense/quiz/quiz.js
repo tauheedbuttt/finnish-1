@@ -108,9 +108,7 @@ class PastTenseQuiz {
     if (this.selectedSubtopics.has("all")) {
       return this.questions;
     }
-    return this.questions.filter((q) =>
-      this.selectedSubtopics.has(q.subtopic)
-    );
+    return this.questions.filter((q) => this.selectedSubtopics.has(q.subtopic));
   }
 
   updateQuestionCount() {
@@ -125,9 +123,9 @@ class PastTenseQuiz {
     // Mode tabs
     document.querySelectorAll(".mode-tab").forEach((tab) => {
       tab.addEventListener("click", () => {
-        document.querySelectorAll(".mode-tab").forEach((t) =>
-          t.classList.remove("active")
-        );
+        document
+          .querySelectorAll(".mode-tab")
+          .forEach((t) => t.classList.remove("active"));
         tab.classList.add("active");
         this.mode = tab.dataset.mode;
       });
@@ -149,11 +147,13 @@ class PastTenseQuiz {
     });
 
     // Enter key for written answer
-    document.getElementById("writtenAnswer").addEventListener("keypress", (e) => {
-      if (e.key === "Enter") {
-        this.checkWrittenAnswer();
-      }
-    });
+    document
+      .getElementById("writtenAnswer")
+      .addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          this.checkWrittenAnswer();
+        }
+      });
 
     // Retry button
     document.getElementById("retryBtn").addEventListener("click", () => {
@@ -175,13 +175,13 @@ class PastTenseQuiz {
     } else {
       this.questionsPerQuiz = Math.min(
         parseInt(countSelect.value),
-        filtered.length
+        filtered.length,
       );
     }
 
     this.selectedQuestions = this.shuffleArray([...filtered]).slice(
       0,
-      this.questionsPerQuiz
+      this.questionsPerQuiz,
     );
     this.currentIndex = 0;
     this.score = 0;
@@ -205,7 +205,9 @@ class PastTenseQuiz {
 
     // Reset feedback
     document.getElementById("feedback").classList.add("hidden");
-    document.getElementById("feedback").classList.remove("correct", "incorrect");
+    document
+      .getElementById("feedback")
+      .classList.remove("correct", "incorrect");
     document.getElementById("nextBtn").classList.add("hidden");
 
     // Show appropriate input
@@ -270,7 +272,7 @@ class PastTenseQuiz {
     const similarQuestions = this.questions.filter(
       (q) =>
         q.id !== question.id &&
-        (q.verb === question.verb || q.subtopic === question.subtopic)
+        (q.verb === question.verb || q.subtopic === question.subtopic),
     );
 
     // Add wrong answers
@@ -318,7 +320,8 @@ class PastTenseQuiz {
       }
     });
 
-    const isCorrect = selected.toLowerCase().trim() === correct.toLowerCase().trim();
+    const isCorrect =
+      selected.toLowerCase().trim() === correct.toLowerCase().trim();
 
     if (isCorrect) {
       button.classList.add("correct");
@@ -361,7 +364,9 @@ class PastTenseQuiz {
     feedback.classList.add(isCorrect ? "correct" : "incorrect");
 
     icon.textContent = isCorrect ? "✓" : "✗";
-    text.textContent = isCorrect ? "Oikein! 🎉" : `Väärin! Oikea vastaus: ${question.answer}`;
+    text.textContent = isCorrect
+      ? "Oikein! 🎉"
+      : `Väärin! Oikea vastaus: ${question.answer}`;
     explanation.textContent = question.explanation || "";
 
     document.getElementById("nextBtn").classList.remove("hidden");
@@ -389,7 +394,8 @@ class PastTenseQuiz {
     const percentage = Math.round((this.score / this.questionsPerQuiz) * 100);
 
     document.getElementById("finalScore").textContent = this.score;
-    document.getElementById("totalQuestions").textContent = this.questionsPerQuiz;
+    document.getElementById("totalQuestions").textContent =
+      this.questionsPerQuiz;
     document.getElementById("scorePercentage").textContent = `${percentage}%`;
 
     let message = "";
