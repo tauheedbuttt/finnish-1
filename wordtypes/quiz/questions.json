@@ -1,0 +1,1197 @@
+{
+  "topic": "wordtypes",
+  "title": "Sanatyypit - Word Types",
+  "description": "Practice Finnish nominal (noun/adjective) types and possessive suffixes",
+  "instructions": "Decline the word correctly or identify the word type",
+  "subtopics": [
+    { "id": "all", "name": "All Word Types", "icon": "📚" },
+    { "id": "i-type", "name": "I-Type (i → e)", "icon": "ℹ️" },
+    { "id": "e-type", "name": "E-Type (e → ee)", "icon": "🏠" },
+    { "id": "nen-type", "name": "NEN-Type (nen → se)", "icon": "😊" },
+    { "id": "possessive", "name": "Possessive Suffixes", "icon": "👤" }
+  ],
+  "rules": {
+    "stem_concept": {
+      "description": "Stem = the part of the word that gets endings added. It may have KPT changes embedded.",
+      "note": "Nouns and adjectives (nominals) are divided into word types by: basic form (nominatiivi), stem, and partitive singular"
+    },
+    "i_type": {
+      "description": "Words ending in -i where stem changes to -e-",
+      "pattern": "Nominative -i → Stem -e-",
+      "examples": [
+        { "nominative": "suomi", "stem": "suome-", "genitive": "suomen" },
+        { "nominative": "nimi", "stem": "nime-", "genitive": "nimen" },
+        { "nominative": "vesi", "stem": "vede-", "genitive": "veden" }
+      ],
+      "common_words": [
+        "suomi",
+        "nimi",
+        "kieli",
+        "meri",
+        "vesi",
+        "käsi",
+        "uusi",
+        "vuosi"
+      ],
+      "partitive": "Varies: -ea/-eä or -tta/-ttä for si-words",
+      "exception": "Loan words (bussi, taksi) are NOT i-type - they keep -i"
+    },
+    "e_type": {
+      "description": "Words ending in -e where stem doubles to -ee-",
+      "pattern": "Nominative -e → Stem -ee-",
+      "examples": [
+        { "nominative": "huone", "stem": "huonee-", "genitive": "huoneen" },
+        {
+          "nominative": "Tampere",
+          "stem": "Tamperee-",
+          "genitive": "Tampereen"
+        },
+        { "nominative": "perhe", "stem": "perhee-", "genitive": "perheen" }
+      ],
+      "common_words": ["huone", "perhe", "kappale", "lause", "kirje", "itse"],
+      "partitive": "-tta/-ttä (e + tta = etta)",
+      "note": "The -e doubles in ALL cases except partitive"
+    },
+    "nen_type": {
+      "description": "Words ending in -nen where stem becomes -se-",
+      "pattern": "Nominative -nen → Stem -se-",
+      "examples": [
+        { "nominative": "ihminen", "stem": "ihmise-", "genitive": "ihmisen" },
+        { "nominative": "iloinen", "stem": "iloise-", "genitive": "iloisen" },
+        {
+          "nominative": "suomalainen",
+          "stem": "suomalaise-",
+          "genitive": "suomalaisen"
+        }
+      ],
+      "common_words": [
+        "ihminen",
+        "nainen",
+        "suomalainen",
+        "iloinen",
+        "punainen",
+        "sininen"
+      ],
+      "partitive": "-sta/-stä (just add -sta to stem without -se)",
+      "note": "Very common for nationalities and adjectives!"
+    },
+    "possessive_suffixes": {
+      "description": "Suffixes that show ownership - used in formal/written Finnish",
+      "table": {
+        "minä": "-ni (minun kirjani = my book)",
+        "sinä": "-si (sinun kirjasi = your book)",
+        "hän": "-nsä (hänen kirjansa = his/her book)",
+        "me": "-mme (meidän kirjamme = our book)",
+        "te": "-nne (teidän kirjanne = your book)",
+        "he": "-nsä (heidän kirjansa = their book)"
+      },
+      "spoken_vs_written": "Spoken: mun kirja, sun auto | Written: kirjani, autosi",
+      "common_phrases": ["itsestänsä", "tandemparinsa", "ystäväni", "nimeni"]
+    }
+  },
+  "vocabulary": {
+    "i_type": [
+      { "finnish": "suomi", "english": "Finnish", "stem": "suome-" },
+      { "finnish": "nimi", "english": "name", "stem": "nime-" },
+      { "finnish": "kieli", "english": "language", "stem": "kiele-" },
+      { "finnish": "meri", "english": "sea", "stem": "mere-" },
+      { "finnish": "vesi", "english": "water", "stem": "vede-" },
+      { "finnish": "käsi", "english": "hand", "stem": "käde-" },
+      { "finnish": "uusi", "english": "new", "stem": "uude-" },
+      { "finnish": "vuosi", "english": "year", "stem": "vuode-" }
+    ],
+    "e_type": [
+      { "finnish": "huone", "english": "room", "stem": "huonee-" },
+      { "finnish": "perhe", "english": "family", "stem": "perhee-" },
+      { "finnish": "kappale", "english": "piece/chapter", "stem": "kappalee-" },
+      { "finnish": "lause", "english": "sentence", "stem": "lausee-" },
+      { "finnish": "kirje", "english": "letter", "stem": "kirjee-" },
+      { "finnish": "Tampere", "english": "Tampere (city)", "stem": "Tamperee-" }
+    ],
+    "nen_type": [
+      { "finnish": "ihminen", "english": "human/person", "stem": "ihmise-" },
+      { "finnish": "nainen", "english": "woman", "stem": "naise-" },
+      {
+        "finnish": "suomalainen",
+        "english": "Finnish person",
+        "stem": "suomalaise-"
+      },
+      { "finnish": "iloinen", "english": "happy", "stem": "iloise-" },
+      { "finnish": "punainen", "english": "red", "stem": "punaise-" },
+      { "finnish": "sininen", "english": "blue", "stem": "sinise-" }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+      "subtopic": "i-type",
+      "type": "genitive",
+      "word": "suomi",
+      "ending": "+n (genitive)",
+      "english": "of Finnish / Finnish's",
+      "answer": "suomen",
+      "rule": "i → e",
+      "explanation": "suomi → suome + n = suomen (i-type: i becomes e)"
+    },
+    {
+      "id": 2,
+      "subtopic": "i-type",
+      "type": "genitive",
+      "word": "nimi",
+      "ending": "+n (genitive)",
+      "english": "of name / name's",
+      "answer": "nimen",
+      "rule": "i → e",
+      "explanation": "nimi → nime + n = nimen (i-type: i becomes e)"
+    },
+    {
+      "id": 3,
+      "subtopic": "i-type",
+      "type": "genitive",
+      "word": "kieli",
+      "ending": "+n (genitive)",
+      "english": "of language",
+      "answer": "kielen",
+      "rule": "i → e",
+      "explanation": "kieli → kiele + n = kielen (i-type: i becomes e)"
+    },
+    {
+      "id": 4,
+      "subtopic": "i-type",
+      "type": "genitive",
+      "word": "vesi",
+      "ending": "+n (genitive)",
+      "english": "of water",
+      "answer": "veden",
+      "rule": "si → de",
+      "explanation": "vesi → vede + n = veden (si-words: si → de)"
+    },
+    {
+      "id": 5,
+      "subtopic": "i-type",
+      "type": "genitive",
+      "word": "käsi",
+      "ending": "+n (genitive)",
+      "english": "of hand",
+      "answer": "käden",
+      "rule": "si → de",
+      "explanation": "käsi → käde + n = käden (si-words: si → de)"
+    },
+    {
+      "id": 6,
+      "subtopic": "i-type",
+      "type": "genitive",
+      "word": "uusi",
+      "ending": "+n (genitive)",
+      "english": "of new",
+      "answer": "uuden",
+      "rule": "si → de",
+      "explanation": "uusi → uude + n = uuden (si-words: si → de)"
+    },
+    {
+      "id": 7,
+      "subtopic": "i-type",
+      "type": "genitive",
+      "word": "vuosi",
+      "ending": "+n (genitive)",
+      "english": "of year",
+      "answer": "vuoden",
+      "rule": "si → de",
+      "explanation": "vuosi → vuode + n = vuoden (si-words: si → de)"
+    },
+    {
+      "id": 8,
+      "subtopic": "i-type",
+      "type": "genitive",
+      "word": "meri",
+      "ending": "+n (genitive)",
+      "english": "of sea",
+      "answer": "meren",
+      "rule": "i → e",
+      "explanation": "meri → mere + n = meren (i-type: i becomes e)"
+    },
+    {
+      "id": 9,
+      "subtopic": "i-type",
+      "type": "partitive",
+      "word": "vesi",
+      "ending": "+a/ä (partitive)",
+      "english": "water (some)",
+      "answer": "vettä",
+      "rule": "si → tt + ä",
+      "explanation": "vesi → vet + tä = vettä (si-word partitive doubles t)"
+    },
+    {
+      "id": 10,
+      "subtopic": "i-type",
+      "type": "partitive",
+      "word": "käsi",
+      "ending": "+a/ä (partitive)",
+      "english": "hand (some)",
+      "answer": "kättä",
+      "rule": "si → tt + ä",
+      "explanation": "käsi → kät + tä = kättä (si-word partitive doubles t)"
+    },
+    {
+      "id": 11,
+      "subtopic": "i-type",
+      "type": "partitive",
+      "word": "uusi",
+      "ending": "+a/ä (partitive)",
+      "english": "new (partitive)",
+      "answer": "uutta",
+      "rule": "si → tt + a",
+      "explanation": "uusi → uut + ta = uutta (si-word partitive doubles t)"
+    },
+    {
+      "id": 12,
+      "subtopic": "i-type",
+      "type": "partitive",
+      "word": "suomi",
+      "ending": "+a/ä (partitive)",
+      "english": "Finnish (some)",
+      "answer": "suomea",
+      "rule": "i → e + a",
+      "explanation": "suomi → suome + a = suomea (i-type partitive)"
+    },
+    {
+      "id": 13,
+      "subtopic": "i-type",
+      "type": "inessive",
+      "word": "meri",
+      "ending": "+ssa/ssä (missä)",
+      "english": "in the sea",
+      "answer": "meressä",
+      "rule": "i → e + ssä",
+      "explanation": "meri → mere + ssä = meressä"
+    },
+    {
+      "id": 14,
+      "subtopic": "i-type",
+      "type": "inessive",
+      "word": "vesi",
+      "ending": "+ssa/ssä (missä)",
+      "english": "in water",
+      "answer": "vedessä",
+      "rule": "si → de + ssä",
+      "explanation": "vesi → vede + ssä = vedessä (si → de)"
+    },
+    {
+      "id": 15,
+      "subtopic": "i-type",
+      "type": "identify",
+      "word": "bussi",
+      "question": "Is this an i-type word?",
+      "answer": "no",
+      "rule": "Loan word",
+      "explanation": "bussi is NOT i-type - it's a loan word: bussi → bussin, bussia (i stays)"
+    },
+    {
+      "id": 16,
+      "subtopic": "i-type",
+      "type": "identify",
+      "word": "taksi",
+      "question": "Is this an i-type word?",
+      "answer": "no",
+      "rule": "Loan word",
+      "explanation": "taksi is NOT i-type - it's a loan word: taksi → taksin, taksia (i stays)"
+    },
+    {
+      "id": 17,
+      "subtopic": "i-type",
+      "type": "identify",
+      "word": "vesi",
+      "question": "Is this an i-type word?",
+      "answer": "yes",
+      "rule": "si-word (special i-type)",
+      "explanation": "vesi is i-type (si-word): vesi → veden, vettä, vedessä (si → de)"
+    },
+    {
+      "id": 18,
+      "subtopic": "i-type",
+      "type": "identify",
+      "word": "suomi",
+      "question": "Is this an i-type word?",
+      "answer": "yes",
+      "rule": "Old Finnish -i word",
+      "explanation": "suomi is i-type: suomi → suomen, suomea (i → e)"
+    },
+
+    {
+      "id": 19,
+      "subtopic": "e-type",
+      "type": "genitive",
+      "word": "huone",
+      "ending": "+n (genitive)",
+      "english": "of room / room's",
+      "answer": "huoneen",
+      "rule": "e → ee",
+      "explanation": "huone → huonee + n = huoneen (e-type: e doubles to ee)"
+    },
+    {
+      "id": 20,
+      "subtopic": "e-type",
+      "type": "genitive",
+      "word": "perhe",
+      "ending": "+n (genitive)",
+      "english": "of family / family's",
+      "answer": "perheen",
+      "rule": "e → ee",
+      "explanation": "perhe → perhee + n = perheen (e-type: e doubles to ee)"
+    },
+    {
+      "id": 21,
+      "subtopic": "e-type",
+      "type": "genitive",
+      "word": "Tampere",
+      "ending": "+n (genitive)",
+      "english": "of Tampere",
+      "answer": "Tampereen",
+      "rule": "e → ee",
+      "explanation": "Tampere → Tamperee + n = Tampereen (e-type: e doubles to ee)"
+    },
+    {
+      "id": 22,
+      "subtopic": "e-type",
+      "type": "genitive",
+      "word": "kappale",
+      "ending": "+n (genitive)",
+      "english": "of piece/chapter",
+      "answer": "kappaleen",
+      "rule": "e → ee",
+      "explanation": "kappale → kappalee + n = kappaleen (e-type: e doubles to ee)"
+    },
+    {
+      "id": 23,
+      "subtopic": "e-type",
+      "type": "genitive",
+      "word": "lause",
+      "ending": "+n (genitive)",
+      "english": "of sentence",
+      "answer": "lauseen",
+      "rule": "e → ee",
+      "explanation": "lause → lausee + n = lauseen (e-type: e doubles to ee)"
+    },
+    {
+      "id": 24,
+      "subtopic": "e-type",
+      "type": "genitive",
+      "word": "kirje",
+      "ending": "+n (genitive)",
+      "english": "of letter",
+      "answer": "kirjeen",
+      "rule": "e → ee",
+      "explanation": "kirje → kirjee + n = kirjeen (e-type: e doubles to ee)"
+    },
+    {
+      "id": 25,
+      "subtopic": "e-type",
+      "type": "partitive",
+      "word": "huone",
+      "ending": "+tta/ttä (partitive)",
+      "english": "room (some)",
+      "answer": "huonetta",
+      "rule": "e + tta",
+      "explanation": "huone + tta = huonetta (e-type partitive: add -tta)"
+    },
+    {
+      "id": 26,
+      "subtopic": "e-type",
+      "type": "partitive",
+      "word": "perhe",
+      "ending": "+tta/ttä (partitive)",
+      "english": "family (some)",
+      "answer": "perhettä",
+      "rule": "e + ttä",
+      "explanation": "perhe + ttä = perhettä (e-type partitive: add -ttä)"
+    },
+    {
+      "id": 27,
+      "subtopic": "e-type",
+      "type": "partitive",
+      "word": "Tampere",
+      "ending": "+tta/ttä (partitive)",
+      "english": "Tampere (partitive)",
+      "answer": "Tamperetta",
+      "rule": "e + tta",
+      "explanation": "Tampere + tta = Tamperetta (e-type partitive: add -tta)"
+    },
+    {
+      "id": 28,
+      "subtopic": "e-type",
+      "type": "partitive",
+      "word": "kappale",
+      "ending": "+tta/ttä (partitive)",
+      "english": "piece (some)",
+      "answer": "kappaletta",
+      "rule": "e + tta",
+      "explanation": "kappale + tta = kappaletta (e-type partitive: add -tta)"
+    },
+    {
+      "id": 29,
+      "subtopic": "e-type",
+      "type": "partitive",
+      "word": "lause",
+      "ending": "+tta/ttä (partitive)",
+      "english": "sentence (some)",
+      "answer": "lausetta",
+      "rule": "e + tta",
+      "explanation": "lause + tta = lausetta (e-type partitive: add -tta)"
+    },
+    {
+      "id": 30,
+      "subtopic": "e-type",
+      "type": "inessive",
+      "word": "huone",
+      "ending": "+ssa/ssä (missä)",
+      "english": "in the room",
+      "answer": "huoneessa",
+      "rule": "e → ee + ssa",
+      "explanation": "huone → huonee + ssa = huoneessa (e doubles)"
+    },
+    {
+      "id": 31,
+      "subtopic": "e-type",
+      "type": "adessive",
+      "word": "Tampere",
+      "ending": "+lla/llä (missä)",
+      "english": "in Tampere",
+      "answer": "Tampereella",
+      "rule": "Tampere uses -lla",
+      "explanation": "Tampere + lla = Tampereella (cities often use adessive -lla/-llä)"
+    },
+    {
+      "id": 32,
+      "subtopic": "e-type",
+      "type": "inessive",
+      "word": "perhe",
+      "ending": "+ssa/ssä (missä)",
+      "english": "in the family",
+      "answer": "perheessä",
+      "rule": "e → ee + ssä",
+      "explanation": "perhe → perhee + ssä = perheessä (e doubles)"
+    },
+    {
+      "id": 33,
+      "subtopic": "e-type",
+      "type": "illative",
+      "word": "huone",
+      "ending": "+seen (mihin)",
+      "english": "into the room",
+      "answer": "huoneeseen",
+      "rule": "e → ee + seen",
+      "explanation": "huone → huonee + seen = huoneeseen (e-type illative)"
+    },
+    {
+      "id": 34,
+      "subtopic": "e-type",
+      "type": "illative",
+      "word": "perhe",
+      "ending": "+seen (mihin)",
+      "english": "into the family",
+      "answer": "perheeseen",
+      "rule": "e → ee + seen",
+      "explanation": "perhe → perhee + seen = perheeseen (e-type illative)"
+    },
+    {
+      "id": 35,
+      "subtopic": "e-type",
+      "type": "identify",
+      "word": "huone",
+      "question": "What type is this word?",
+      "answer": "e-type",
+      "rule": "ends in -e",
+      "explanation": "huone ends in -e, stem is huonee- (e doubles)"
+    },
+    {
+      "id": 36,
+      "subtopic": "e-type",
+      "type": "identify",
+      "word": "perhe",
+      "question": "What type is this word?",
+      "answer": "e-type",
+      "rule": "ends in -e",
+      "explanation": "perhe ends in -e, stem is perhee- (e doubles)"
+    },
+
+    {
+      "id": 37,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "ihminen",
+      "ending": "+n (genitive)",
+      "english": "of human / person's",
+      "answer": "ihmisen",
+      "rule": "nen → se",
+      "explanation": "ihminen → ihmise + n = ihmisen (nen-type: nen → se)"
+    },
+    {
+      "id": 38,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "nainen",
+      "ending": "+n (genitive)",
+      "english": "of woman / woman's",
+      "answer": "naisen",
+      "rule": "nen → se",
+      "explanation": "nainen → naise + n = naisen (nen-type: nen → se)"
+    },
+    {
+      "id": 39,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "suomalainen",
+      "ending": "+n (genitive)",
+      "english": "of Finnish person",
+      "answer": "suomalaisen",
+      "rule": "nen → se",
+      "explanation": "suomalainen → suomalaise + n = suomalaisen (nen-type)"
+    },
+    {
+      "id": 40,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "iloinen",
+      "ending": "+n (genitive)",
+      "english": "of happy",
+      "answer": "iloisen",
+      "rule": "nen → se",
+      "explanation": "iloinen → iloise + n = iloisen (nen-type: nen → se)"
+    },
+    {
+      "id": 41,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "punainen",
+      "ending": "+n (genitive)",
+      "english": "of red",
+      "answer": "punaisen",
+      "rule": "nen → se",
+      "explanation": "punainen → punaise + n = punaisen (nen-type: nen → se)"
+    },
+    {
+      "id": 42,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "sininen",
+      "ending": "+n (genitive)",
+      "english": "of blue",
+      "answer": "sinisen",
+      "rule": "nen → se",
+      "explanation": "sininen → sinise + n = sinisen (nen-type: nen → se)"
+    },
+    {
+      "id": 43,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "keltainen",
+      "ending": "+n (genitive)",
+      "english": "of yellow",
+      "answer": "keltaisen",
+      "rule": "nen → se",
+      "explanation": "keltainen → keltaise + n = keltaisen (nen-type: nen → se)"
+    },
+    {
+      "id": 44,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "vihreä",
+      "ending": "+n (genitive)",
+      "english": "of green",
+      "answer": "vihreän",
+      "rule": "NOT nen-type",
+      "explanation": "vihreä is NOT nen-type! It's a regular word: vihreä + n = vihreän"
+    },
+    {
+      "id": 45,
+      "subtopic": "nen-type",
+      "type": "partitive",
+      "word": "ihminen",
+      "ending": "+sta/stä (partitive)",
+      "english": "person (some)",
+      "answer": "ihmistä",
+      "rule": "nen → s + tä",
+      "explanation": "ihminen → ihmis + tä = ihmistä (nen-type partitive: nen → s)"
+    },
+    {
+      "id": 46,
+      "subtopic": "nen-type",
+      "type": "partitive",
+      "word": "nainen",
+      "ending": "+sta/stä (partitive)",
+      "english": "woman (some)",
+      "answer": "naista",
+      "rule": "nen → s + ta",
+      "explanation": "nainen → nais + ta = naista (nen-type partitive: nen → s)"
+    },
+    {
+      "id": 47,
+      "subtopic": "nen-type",
+      "type": "partitive",
+      "word": "suomalainen",
+      "ending": "+sta/stä (partitive)",
+      "english": "Finnish person (some)",
+      "answer": "suomalaista",
+      "rule": "nen → s + ta",
+      "explanation": "suomalainen → suomalais + ta = suomalaista (nen-type partitive)"
+    },
+    {
+      "id": 48,
+      "subtopic": "nen-type",
+      "type": "partitive",
+      "word": "iloinen",
+      "ending": "+sta/stä (partitive)",
+      "english": "happy (partitive)",
+      "answer": "iloista",
+      "rule": "nen → s + ta",
+      "explanation": "iloinen → ilois + ta = iloista (nen-type partitive: nen → s)"
+    },
+    {
+      "id": 49,
+      "subtopic": "nen-type",
+      "type": "partitive",
+      "word": "punainen",
+      "ending": "+sta/stä (partitive)",
+      "english": "red (partitive)",
+      "answer": "punaista",
+      "rule": "nen → s + ta",
+      "explanation": "punainen → punais + ta = punaista (nen-type partitive: nen → s)"
+    },
+    {
+      "id": 50,
+      "subtopic": "nen-type",
+      "type": "inessive",
+      "word": "ihminen",
+      "ending": "+ssa/ssä (missä)",
+      "english": "in the person",
+      "answer": "ihmisessä",
+      "rule": "nen → se + ssä",
+      "explanation": "ihminen → ihmise + ssä = ihmisessä (nen → se)"
+    },
+    {
+      "id": 51,
+      "subtopic": "nen-type",
+      "type": "inessive",
+      "word": "nainen",
+      "ending": "+ssa/ssä (missä)",
+      "english": "in the woman",
+      "answer": "naisessa",
+      "rule": "nen → se + ssa",
+      "explanation": "nainen → naise + ssa = naisessa (nen → se)"
+    },
+    {
+      "id": 52,
+      "subtopic": "nen-type",
+      "type": "illative",
+      "word": "ihminen",
+      "ending": "+seen (mihin)",
+      "english": "into the person",
+      "answer": "ihmiseen",
+      "rule": "nen → se + en",
+      "explanation": "ihminen → ihmise + en = ihmiseen (nen-type illative)"
+    },
+    {
+      "id": 53,
+      "subtopic": "nen-type",
+      "type": "identify",
+      "word": "amerikkalainen",
+      "question": "What type is this word?",
+      "answer": "nen-type",
+      "rule": "ends in -nen",
+      "explanation": "amerikkalainen ends in -nen, stem is amerikkalaise-"
+    },
+    {
+      "id": 54,
+      "subtopic": "nen-type",
+      "type": "identify",
+      "word": "onnellinen",
+      "question": "What type is this word?",
+      "answer": "nen-type",
+      "rule": "ends in -nen",
+      "explanation": "onnellinen (happy) ends in -nen, stem is onnellise-"
+    },
+    {
+      "id": 55,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "onnellinen",
+      "ending": "+n (genitive)",
+      "english": "of happy",
+      "answer": "onnellisen",
+      "rule": "nen → se",
+      "explanation": "onnellinen → onnellise + n = onnellisen (nen-type)"
+    },
+    {
+      "id": 56,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "amerikkalainen",
+      "ending": "+n (genitive)",
+      "english": "of American",
+      "answer": "amerikkalaisen",
+      "rule": "nen → se",
+      "explanation": "amerikkalainen → amerikkalaise + n = amerikkalaisen"
+    },
+
+    {
+      "id": 57,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "my friend (formal: ystävä + ni)",
+      "english": "my friend",
+      "answer": "ystäväni",
+      "rule": "minä → -ni",
+      "explanation": "ystävä + ni = ystäväni (my friend in formal Finnish)"
+    },
+    {
+      "id": 58,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "your friend (formal: ystävä + si)",
+      "english": "your friend",
+      "answer": "ystäväsi",
+      "rule": "sinä → -si",
+      "explanation": "ystävä + si = ystäväsi (your friend in formal Finnish)"
+    },
+    {
+      "id": 59,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "his/her friend (formal: ystävä + nsä)",
+      "english": "his/her friend",
+      "answer": "ystävänsä",
+      "rule": "hän → -nsä",
+      "explanation": "ystävä + nsä = ystävänsä (his/her friend in formal Finnish)"
+    },
+    {
+      "id": 60,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "our friend (formal: ystävä + mme)",
+      "english": "our friend",
+      "answer": "ystävämme",
+      "rule": "me → -mme",
+      "explanation": "ystävä + mme = ystävämme (our friend in formal Finnish)"
+    },
+    {
+      "id": 61,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "your (plural) friend (formal: ystävä + nne)",
+      "english": "your (pl.) friend",
+      "answer": "ystävänne",
+      "rule": "te → -nne",
+      "explanation": "ystävä + nne = ystävänne (your friend in formal Finnish)"
+    },
+    {
+      "id": 62,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "their friend (formal: ystävä + nsä)",
+      "english": "their friend",
+      "answer": "ystävänsä",
+      "rule": "he → -nsä",
+      "explanation": "ystävä + nsä = ystävänsä (same as hän - his/her/their)"
+    },
+    {
+      "id": 63,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "my name (formal: nimi + ni)",
+      "english": "my name",
+      "answer": "nimeni",
+      "rule": "nimi + ni",
+      "explanation": "nimi → nime + ni = nimeni (i-type + possessive)"
+    },
+    {
+      "id": 64,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "my book (formal: kirja + ni)",
+      "english": "my book",
+      "answer": "kirjani",
+      "rule": "kirja + ni",
+      "explanation": "kirja + ni = kirjani (my book in formal Finnish)"
+    },
+    {
+      "id": 65,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "your car (formal: auto + si)",
+      "english": "your car",
+      "answer": "autosi",
+      "rule": "auto + si",
+      "explanation": "auto + si = autosi (your car in formal Finnish)"
+    },
+    {
+      "id": 66,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "his/her tandem partner (tandempari + nsä)",
+      "english": "his/her tandem partner",
+      "answer": "tandemparinsa",
+      "rule": "tandempari + nsä",
+      "explanation": "tandempari + nsä = tandemparinsa (from the example text!)"
+    },
+    {
+      "id": 67,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "about oneself (itsestä + nsä)",
+      "english": "about oneself",
+      "answer": "itsestänsä",
+      "rule": "itsestä + nsä",
+      "explanation": "itsestä + nsä = itsestänsä (about him/herself - formal)"
+    },
+    {
+      "id": 68,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "What's the spoken Finnish for 'kirjani'?",
+      "english": "my book (spoken)",
+      "answer": "mun kirja",
+      "rule": "Spoken = mun + noun",
+      "explanation": "Formal kirjani = Spoken mun kirja"
+    },
+    {
+      "id": 69,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "What's the spoken Finnish for 'autosi'?",
+      "english": "your car (spoken)",
+      "answer": "sun auto",
+      "rule": "Spoken = sun + noun",
+      "explanation": "Formal autosi = Spoken sun auto"
+    },
+    {
+      "id": 70,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "What's the formal Finnish for 'mun äiti'?",
+      "english": "my mother (formal)",
+      "answer": "äitini",
+      "rule": "Formal = noun + ni",
+      "explanation": "Spoken mun äiti = Formal äitini"
+    },
+    {
+      "id": 71,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "What's the formal Finnish for 'sun koira'?",
+      "english": "your dog (formal)",
+      "answer": "koirasi",
+      "rule": "Formal = noun + si",
+      "explanation": "Spoken sun koira = Formal koirasi"
+    },
+    {
+      "id": 72,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "What's the formal Finnish for 'meidän talo'?",
+      "english": "our house (formal)",
+      "answer": "talomme",
+      "rule": "Formal = noun + mme",
+      "explanation": "Spoken meidän talo = Formal talomme"
+    },
+    {
+      "id": 73,
+      "subtopic": "possessive",
+      "type": "identify",
+      "word": "kirjani",
+      "question": "What possessive suffix is this?",
+      "answer": "minä (-ni)",
+      "rule": "-ni = minä",
+      "explanation": "kirjani has -ni suffix = my book (minun kirja)"
+    },
+    {
+      "id": 74,
+      "subtopic": "possessive",
+      "type": "identify",
+      "word": "autosi",
+      "question": "What possessive suffix is this?",
+      "answer": "sinä (-si)",
+      "rule": "-si = sinä",
+      "explanation": "autosi has -si suffix = your car (sinun auto)"
+    },
+    {
+      "id": 75,
+      "subtopic": "possessive",
+      "type": "identify",
+      "word": "ystävämme",
+      "question": "What possessive suffix is this?",
+      "answer": "me (-mme)",
+      "rule": "-mme = me",
+      "explanation": "ystävämme has -mme suffix = our friend (meidän ystävä)"
+    },
+    {
+      "id": 76,
+      "subtopic": "possessive",
+      "type": "identify",
+      "word": "koiranne",
+      "question": "What possessive suffix is this?",
+      "answer": "te (-nne)",
+      "rule": "-nne = te",
+      "explanation": "koiranne has -nne suffix = your (pl.) dog (teidän koira)"
+    },
+    {
+      "id": 77,
+      "subtopic": "possessive",
+      "type": "identify",
+      "word": "talonsa",
+      "question": "What possessive suffix is this?",
+      "answer": "hän/he (-nsä)",
+      "rule": "-nsä = hän or he",
+      "explanation": "talonsa has -nsä suffix = his/her/their house"
+    },
+
+    {
+      "id": 78,
+      "subtopic": "e-type",
+      "type": "genitive",
+      "word": "vene",
+      "ending": "+n (genitive)",
+      "english": "of boat",
+      "answer": "veneen",
+      "rule": "e → ee",
+      "explanation": "vene → venee + n = veneen (e-type: e doubles)"
+    },
+    {
+      "id": 79,
+      "subtopic": "e-type",
+      "type": "partitive",
+      "word": "vene",
+      "ending": "+tta/ttä (partitive)",
+      "english": "boat (some)",
+      "answer": "venettä",
+      "rule": "e + ttä",
+      "explanation": "vene + ttä = venettä (e-type partitive)"
+    },
+    {
+      "id": 80,
+      "subtopic": "e-type",
+      "type": "genitive",
+      "word": "ohje",
+      "ending": "+n (genitive)",
+      "english": "of instruction",
+      "answer": "ohjeen",
+      "rule": "e → ee",
+      "explanation": "ohje → ohjee + n = ohjeen (e-type: e doubles)"
+    },
+    {
+      "id": 81,
+      "subtopic": "e-type",
+      "type": "partitive",
+      "word": "ohje",
+      "ending": "+tta/ttä (partitive)",
+      "english": "instruction (some)",
+      "answer": "ohjetta",
+      "rule": "e + tta",
+      "explanation": "ohje + tta = ohjetta (e-type partitive)"
+    },
+    {
+      "id": 82,
+      "subtopic": "e-type",
+      "type": "inessive",
+      "word": "kirje",
+      "ending": "+ssa/ssä (missä)",
+      "english": "in the letter",
+      "answer": "kirjeessä",
+      "rule": "e → ee + ssä",
+      "explanation": "kirje → kirjee + ssä = kirjeessä (e doubles)"
+    },
+    {
+      "id": 83,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "venäläinen",
+      "ending": "+n (genitive)",
+      "english": "of Russian (person)",
+      "answer": "venäläisen",
+      "rule": "nen → se",
+      "explanation": "venäläinen → venäläise + n = venäläisen"
+    },
+    {
+      "id": 84,
+      "subtopic": "nen-type",
+      "type": "partitive",
+      "word": "venäläinen",
+      "ending": "+sta/stä (partitive)",
+      "english": "Russian (partitive)",
+      "answer": "venäläistä",
+      "rule": "nen → s + tä",
+      "explanation": "venäläinen → venäläis + tä = venäläistä"
+    },
+    {
+      "id": 85,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "kiinalainen",
+      "ending": "+n (genitive)",
+      "english": "of Chinese (person)",
+      "answer": "kiinalaisen",
+      "rule": "nen → se",
+      "explanation": "kiinalainen → kiinalaise + n = kiinalaisen"
+    },
+    {
+      "id": 86,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "ranskalainen",
+      "ending": "+n (genitive)",
+      "english": "of French (person)",
+      "answer": "ranskalaisen",
+      "rule": "nen → se",
+      "explanation": "ranskalainen → ranskalaise + n = ranskalaisen"
+    },
+    {
+      "id": 87,
+      "subtopic": "nen-type",
+      "type": "partitive",
+      "word": "sininen",
+      "ending": "+sta/stä (partitive)",
+      "english": "blue (partitive)",
+      "answer": "sinistä",
+      "rule": "nen → s + tä",
+      "explanation": "sininen → sinis + tä = sinistä"
+    },
+    {
+      "id": 88,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "valkoinen",
+      "ending": "+n (genitive)",
+      "english": "of white",
+      "answer": "valkoisen",
+      "rule": "nen → se",
+      "explanation": "valkoinen → valkoise + n = valkoisen"
+    },
+    {
+      "id": 89,
+      "subtopic": "nen-type",
+      "type": "partitive",
+      "word": "valkoinen",
+      "ending": "+sta/stä (partitive)",
+      "english": "white (partitive)",
+      "answer": "valkoista",
+      "rule": "nen → s + ta",
+      "explanation": "valkoinen → valkois + ta = valkoista"
+    },
+    {
+      "id": 90,
+      "subtopic": "nen-type",
+      "type": "genitive",
+      "word": "musta",
+      "ending": "+n (genitive)",
+      "english": "of black",
+      "answer": "mustan",
+      "rule": "NOT nen-type",
+      "explanation": "musta is NOT nen-type! Regular: musta + n = mustan"
+    },
+    {
+      "id": 91,
+      "subtopic": "i-type",
+      "type": "genitive",
+      "word": "lehti",
+      "ending": "+n (genitive)",
+      "english": "of newspaper/leaf",
+      "answer": "lehden",
+      "rule": "ti → de (+ KPT)",
+      "explanation": "lehti → lehde + n = lehden (i → e, t → d with KPT)"
+    },
+    {
+      "id": 92,
+      "subtopic": "i-type",
+      "type": "genitive",
+      "word": "ääni",
+      "ending": "+n (genitive)",
+      "english": "of voice/sound",
+      "answer": "äänen",
+      "rule": "i → e",
+      "explanation": "ääni → ääne + n = äänen (i-type: i becomes e)"
+    },
+    {
+      "id": 93,
+      "subtopic": "i-type",
+      "type": "partitive",
+      "word": "meri",
+      "ending": "+a/ä (partitive)",
+      "english": "sea (some)",
+      "answer": "merta",
+      "rule": "short partitive",
+      "explanation": "meri → mer + ta = merta (2-syllable i-words: short partitive)"
+    },
+    {
+      "id": 94,
+      "subtopic": "i-type",
+      "type": "partitive",
+      "word": "nimi",
+      "ending": "+a/ä (partitive)",
+      "english": "name (some)",
+      "answer": "nimeä",
+      "rule": "i → e + ä",
+      "explanation": "nimi → nime + ä = nimeä (i-type partitive)"
+    },
+    {
+      "id": 95,
+      "subtopic": "i-type",
+      "type": "genitive",
+      "word": "tuuli",
+      "ending": "+n (genitive)",
+      "english": "of wind",
+      "answer": "tuulen",
+      "rule": "i → e",
+      "explanation": "tuuli → tuule + n = tuulen (i-type: i becomes e)"
+    },
+    {
+      "id": 96,
+      "subtopic": "i-type",
+      "type": "genitive",
+      "word": "lumi",
+      "ending": "+n (genitive)",
+      "english": "of snow",
+      "answer": "lumen",
+      "rule": "i → e",
+      "explanation": "lumi → lume + n = lumen (i-type: i becomes e)"
+    },
+    {
+      "id": 97,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "my room (formal: huone + ni)",
+      "english": "my room",
+      "answer": "huoneeni",
+      "rule": "e-type + ni",
+      "explanation": "huone → huonee + ni = huoneeni (e doubles before possessive)"
+    },
+    {
+      "id": 98,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "your family (formal: perhe + si)",
+      "english": "your family",
+      "answer": "perheesi",
+      "rule": "e-type + si",
+      "explanation": "perhe → perhee + si = perheesi (e doubles before possessive)"
+    },
+    {
+      "id": 99,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "our person (formal: ihminen + mme)",
+      "english": "our person",
+      "answer": "ihmisemme",
+      "rule": "nen-type + mme",
+      "explanation": "ihminen → ihmise + mme = ihmisemme (nen → se before possessive)"
+    },
+    {
+      "id": 100,
+      "subtopic": "possessive",
+      "type": "sentence",
+      "sentence": "their woman (formal: nainen + nsä)",
+      "english": "their woman",
+      "answer": "naisensa",
+      "rule": "nen-type + nsä",
+      "explanation": "nainen → naise + nsä = naisensa (nen → se before possessive)"
+    }
+  ]
+}

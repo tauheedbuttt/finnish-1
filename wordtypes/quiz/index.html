@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanatyypit - Word Types</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back Button -->
+      <a href="../../" class="back-link">← Takaisin aiheisiin</a>
+
+      <!-- Header -->
+      <header class="quiz-header">
+        <h1>📝 Sanatyypit - Word Types</h1>
+        <p class="subtitle" id="topicTitle">
+          Finnish Nominal Declension Patterns
+        </p>
+      </header>
+
+      <!-- Mode Tabs -->
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">
+          📝 Multiple Choice
+        </button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Word Types Quiz</h2>
+          <p id="quizDescription">
+            Practice Finnish noun & adjective declension patterns
+          </p>
+
+          <!-- Stem Concept -->
+          <div class="concept-box">
+            <h3>🧠 What is a Stem?</h3>
+            <p>
+              <strong>Stem</strong> = the part of the word that gets endings
+              added. It may have KPT changes embedded.
+            </p>
+            <p>
+              Nouns and adjectives (nominals) are divided into word types by:
+            </p>
+            <ul>
+              <li>Basic form (nominatiivi)</li>
+              <li>Stem</li>
+              <li>Partitive singular form</li>
+            </ul>
+          </div>
+
+          <!-- Word Types Overview -->
+          <div class="types-overview">
+            <h3>📚 The 3 Main Word Types</h3>
+
+            <!-- I-Type -->
+            <div class="type-section i-type-box">
+              <h4>ℹ️ I-Type (i → e)</h4>
+              <div class="type-rule">
+                <span class="pattern"
+                  >Nominative <strong>-i</strong> → Stem
+                  <strong>-e-</strong></span
+                >
+              </div>
+              <div class="type-examples">
+                <div class="example">
+                  <span class="nom">suomi</span> →
+                  <span class="stem">suome-</span> →
+                  <span class="gen">suomen</span>
+                </div>
+                <div class="example">
+                  <span class="nom">nimi</span> →
+                  <span class="stem">nime-</span> →
+                  <span class="gen">nimen</span>
+                </div>
+                <div class="example special">
+                  <span class="nom">vesi</span> →
+                  <span class="stem">vede-</span> →
+                  <span class="gen">veden</span>
+                  <span class="note">(si → de)</span>
+                </div>
+              </div>
+              <div class="partitive-note">
+                <strong>Partitive:</strong> -ea/-eä or -tta/-ttä for si-words
+                (vettä, kättä)
+              </div>
+              <div class="exception-note">
+                ⚠️ <strong>Exception:</strong> Loan words (bussi, taksi) keep -i
+                → bussin, taksia
+              </div>
+            </div>
+
+            <!-- E-Type -->
+            <div class="type-section e-type-box">
+              <h4>🏠 E-Type (e → ee)</h4>
+              <div class="type-rule">
+                <span class="pattern"
+                  >Nominative <strong>-e</strong> → Stem
+                  <strong>-ee-</strong></span
+                >
+              </div>
+              <div class="type-examples">
+                <div class="example">
+                  <span class="nom">huone</span> →
+                  <span class="stem">huonee-</span> →
+                  <span class="gen">huoneen</span>
+                </div>
+                <div class="example">
+                  <span class="nom">perhe</span> →
+                  <span class="stem">perhee-</span> →
+                  <span class="gen">perheen</span>
+                </div>
+                <div class="example">
+                  <span class="nom">Tampere</span> →
+                  <span class="stem">Tamperee-</span> →
+                  <span class="gen">Tampereen</span>
+                </div>
+              </div>
+              <div class="partitive-note">
+                <strong>Partitive:</strong> -tta/-ttä (e + tta) → huonetta,
+                perhettä
+              </div>
+            </div>
+
+            <!-- NEN-Type -->
+            <div class="type-section nen-type-box">
+              <h4>😊 NEN-Type (nen → se)</h4>
+              <div class="type-rule">
+                <span class="pattern"
+                  >Nominative <strong>-nen</strong> → Stem
+                  <strong>-se-</strong></span
+                >
+              </div>
+              <div class="type-examples">
+                <div class="example">
+                  <span class="nom">ihminen</span> →
+                  <span class="stem">ihmise-</span> →
+                  <span class="gen">ihmisen</span>
+                </div>
+                <div class="example">
+                  <span class="nom">nainen</span> →
+                  <span class="stem">naise-</span> →
+                  <span class="gen">naisen</span>
+                </div>
+                <div class="example">
+                  <span class="nom">suomalainen</span> →
+                  <span class="stem">suomalaise-</span> →
+                  <span class="gen">suomalaisen</span>
+                </div>
+              </div>
+              <div class="partitive-note">
+                <strong>Partitive:</strong> -sta/-stä (nen → s) → ihmistä,
+                naista
+              </div>
+              <div class="common-note">
+                💡 Very common for <strong>nationalities</strong> (suomalainen,
+                amerikkalainen) and <strong>adjectives</strong> (iloinen,
+                punainen)
+              </div>
+            </div>
+          </div>
+
+          <!-- Possessive Suffixes -->
+          <div class="possessive-section">
+            <h3>👤 Possessive Suffixes (Omistusliite)</h3>
+            <p class="usage-note">
+              Used in formal/written Finnish (kirjakieli). In spoken Finnish,
+              use "mun, sun, etc."
+            </p>
+
+            <table class="possessive-table">
+              <thead>
+                <tr>
+                  <th>Pronoun</th>
+                  <th>Suffix</th>
+                  <th>Puhekieli</th>
+                  <th>Kirjakieli</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>minä</td>
+                  <td><strong>-ni</strong></td>
+                  <td>mun ystävä</td>
+                  <td>ystävä<strong>ni</strong></td>
+                </tr>
+                <tr>
+                  <td>sinä</td>
+                  <td><strong>-si</strong></td>
+                  <td>sun ystävä</td>
+                  <td>ystävä<strong>si</strong></td>
+                </tr>
+                <tr>
+                  <td>hän</td>
+                  <td><strong>-nsä</strong></td>
+                  <td>hänen ystävä</td>
+                  <td>ystävä<strong>nsä</strong></td>
+                </tr>
+                <tr>
+                  <td>me</td>
+                  <td><strong>-mme</strong></td>
+                  <td>meidän ystävä</td>
+                  <td>ystävä<strong>mme</strong></td>
+                </tr>
+                <tr>
+                  <td>te</td>
+                  <td><strong>-nne</strong></td>
+                  <td>teidän ystävä</td>
+                  <td>ystävä<strong>nne</strong></td>
+                </tr>
+                <tr>
+                  <td>he</td>
+                  <td><strong>-nsä</strong></td>
+                  <td>heidän ystävä</td>
+                  <td>ystävä<strong>nsä</strong></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="possessive-examples">
+              <h4>📝 Example from text:</h4>
+              <p class="example-sentence">
+                "Lisa tapaa <strong>tandemparinsa</strong> Juuson ensimmäistä
+                kertaa."
+              </p>
+              <p class="example-sentence">
+                "Lisa kertoo Juusolle <strong>itsestänsä</strong>."
+              </p>
+            </div>
+          </div>
+
+          <!-- Subtopic Selection -->
+          <div class="subtopic-selection">
+            <h3>🎯 Select Word Type to Practice</h3>
+            <div class="subtopic-checkboxes" id="subtopicCheckboxes">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Question Count -->
+          <div class="question-count">
+            <label for="questionCount">Number of questions:</label>
+            <select id="questionCount">
+              <option value="5">5 questions</option>
+              <option value="10" selected>10 questions</option>
+              <option value="15">15 questions</option>
+              <option value="20">20 questions</option>
+              <option value="all">All questions</option>
+            </select>
+            <span class="available-count" id="availableCount"></span>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita Quiz! 🚀</button>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <!-- Progress -->
+          <div class="progress-container">
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+
+          <!-- Question -->
+          <div class="question-container">
+            <div class="question-type" id="questionType">Genitive</div>
+            <div class="word-display">
+              <span class="word" id="wordDisplay">suomi</span>
+              <span class="ending" id="endingDisplay">+ n</span>
+            </div>
+            <p class="question-english" id="questionEnglish">of Finnish</p>
+          </div>
+
+          <!-- MCQ Options -->
+          <div class="options-container" id="optionsContainer">
+            <!-- Options will be inserted here -->
+          </div>
+
+          <!-- Written Answer -->
+          <div class="written-container hidden" id="writtenContainer">
+            <input
+              type="text"
+              id="writtenAnswer"
+              placeholder="Type your answer..."
+              autocomplete="off"
+              autocapitalize="none"
+            />
+            <button class="submit-btn" id="submitAnswer">Check ✓</button>
+          </div>
+
+          <!-- Feedback -->
+          <div class="feedback hidden" id="feedback">
+            <span class="feedback-icon" id="feedbackIcon">✓</span>
+            <span class="feedback-text" id="feedbackText">Correct!</span>
+            <p class="feedback-explanation" id="feedbackExplanation"></p>
+          </div>
+
+          <!-- Next Button -->
+          <button class="next-btn hidden" id="nextBtn">Seuraava →</button>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Quiz Complete!</h2>
+
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalQuestions">10</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+
+          <p class="score-message" id="scoreMessage">Keep practicing!</p>
+
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Try Again</button>
+            <button class="home-btn" id="homeBtn">🏠 Back to Topics</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

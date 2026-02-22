@@ -188,6 +188,26 @@
         "sijamuodot",
         "kielioppi"
       ]
+    },
+    {
+      "id": "wordtypes",
+      "title": "Sanatyypit",
+      "titleEn": "Word Types (I, E, NEN)",
+      "description": "Practice i-type (vesi→veden), e-type (huone→huoneen), nen-type (ihminen→ihmisen) + possessive suffixes!",
+      "icon": "�",
+      "path": "wordtypes/quiz/",
+      "questionCount": 100,
+      "difficulty": "intermediate",
+      "tags": [
+        "sanatyypit",
+        "i-tyyppi",
+        "e-tyyppi",
+        "nen-tyyppi",
+        "omistusliite",
+        "genetiivi",
+        "sijamuodot",
+        "kielioppi"
+      ]
     }
   ]
 }
