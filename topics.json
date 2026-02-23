@@ -208,6 +208,27 @@
         "sijamuodot",
         "kielioppi"
       ]
+    },
+    {
+      "id": "possessivesentences",
+      "title": "Omistusrakenne",
+      "titleEn": "Possessive Sentences (I have)",
+      "description": "Practice 'I have' sentences with adessive case - minulla on, sulla on, Liisalla on! + feelings & negatives",
+      "icon": "🎒",
+      "path": "possessivesentences/quiz/",
+      "questionCount": 100,
+      "difficulty": "beginner",
+      "tags": [
+        "omistusrakenne",
+        "minulla on",
+        "adessiivi",
+        "lla",
+        "llä",
+        "partitiivi",
+        "tunteet",
+        "kieltolause",
+        "kielioppi"
+      ]
     }
   ]
 }

@@ -16,8 +16,44 @@
       "note": "Nouns and adjectives (nominals) are divided into word types by: basic form (nominatiivi), stem, and partitive singular"
     },
     "i_type": {
-      "description": "Words ending in -i where stem changes to -e-",
+      "description": "Words ending in -i where stem changes to -e-. Some words ending with 'i' do not follow regular rules. See below for types.",
       "pattern": "Nominative -i → Stem -e-",
+      "types": {
+        "type_1": {
+          "endings": ["hi", "li", "ri", "ni"],
+          "stem_rule": "i → e",
+          "example": "suuri → suure-",
+          "partitive_rule": "i → ta",
+          "partitive_example": "suurta",
+          "kpt_change": false,
+          "note": "No KPT change"
+        },
+        "type_2": {
+          "endings": ["ki", "mi", "pi", "ti", "vi"],
+          "stem_rule": "i → e",
+          "example": "talvi → talve-",
+          "partitive_rule": "i → ea",
+          "partitive_example": "talvea",
+          "kpt_change": true,
+          "note": "Does KPT change"
+        },
+        "type_3": {
+          "ending": "si",
+          "stem_rule": "si → de",
+          "example": "vesi → vede-",
+          "partitive_rule": "si → ttä",
+          "partitive_example": "vettä",
+          "kpt_change": true,
+          "important_words": [
+            "vuosi",
+            "kuukausi",
+            "uusi",
+            "käsi",
+            "viisi",
+            "kuusi"
+          ]
+        }
+      },
       "examples": [
         { "nominative": "suomi", "stem": "suome-", "genitive": "suomen" },
         { "nominative": "nimi", "stem": "nime-", "genitive": "nimen" },
@@ -121,6 +157,575 @@
       { "finnish": "sininen", "english": "blue", "stem": "sinise-" }
     ]
   },
+  "question_sets": [
+    {
+      "id": "set_1",
+      "type": "reading_perusmuoto",
+      "subtopic": "all",
+      "title": "Kirjoita kursivoidun sanan perusmuoto",
+      "instructions_fi": "Kirjoita kursivoidun sanan perusmuoto.",
+      "instructions_en": "Write the basic form / dictionary form of the italicised word.",
+      "passage": {
+        "title": "Kesä Suomessa",
+        "text": "Pekka on tamperelainen opiskelija. Hän asuu 1.[pienessä] kerrostalossa lähellä 2.[järveä]. Kesällä hän käy usein 3.[uudessa] kahvilassa ja tilaa 4.[kylmää] vettä tai 5.[tuoretta] mehua. Viikonloppuna Pekka lähtee 6.[veneellä] hänen 7.[perheensä] kesämökille. 8.[Mökissä] on kaksi 9.[huonetta]. Pekka lukee 10.[pitkää] kirjaa ja nukkuu hyvin.",
+        "italicised_words": [
+          { "number": 1, "word_in_text": "pienessä", "answer": "pieni" },
+          { "number": 2, "word_in_text": "järveä", "answer": "järvi" },
+          { "number": 3, "word_in_text": "uudessa", "answer": "uusi" },
+          { "number": 4, "word_in_text": "kylmää", "answer": "kylmä" },
+          { "number": 5, "word_in_text": "tuoretta", "answer": "tuore" },
+          { "number": 6, "word_in_text": "veneellä", "answer": "vene" },
+          { "number": 7, "word_in_text": "perheensä", "answer": "perhe" },
+          { "number": 8, "word_in_text": "Mökissä", "answer": "mökki" },
+          { "number": 9, "word_in_text": "huonetta", "answer": "huone" },
+          { "number": 10, "word_in_text": "pitkää", "answer": "pitkä" }
+        ]
+      }
+    },
+    {
+      "id": "set_2",
+      "type": "reading_perusmuoto",
+      "subtopic": "all",
+      "title": "Kirjoita kursivoidun sanan perusmuoto",
+      "instructions_fi": "Kirjoita kursivoidun sanan perusmuoto.",
+      "instructions_en": "Write the basic form / dictionary form of the italicised word.",
+      "passage": {
+        "title": "Arki Helsingissä",
+        "text": "Liisa on helsinkiläinen lääkäri. Hän työskentelee 1.[suuressa] 2.[sairaalassa] keskustassa. Aamulla hän juo 3.[mustaa] kahvia ja lukee 4.[uusimman] 5.[lehden]. Töissä hän tapaa paljon 6.[erilaisia] 7.[ihmisiä]. Illalla Liisa menee 8.[italialaiseen] ravintolaan 9.[ystävänsä] kanssa. He tilaavat 10.[herkullista] ruokaa ja puhuvat 11.[suomen] 12.[kielellä].",
+        "italicised_words": [
+          { "number": 1, "word_in_text": "suuressa", "answer": "suuri" },
+          { "number": 2, "word_in_text": "sairaalassa", "answer": "sairaala" },
+          { "number": 3, "word_in_text": "mustaa", "answer": "musta" },
+          { "number": 4, "word_in_text": "uusimman", "answer": "uusi" },
+          { "number": 5, "word_in_text": "lehden", "answer": "lehti" },
+          { "number": 6, "word_in_text": "erilaisia", "answer": "erilainen" },
+          { "number": 7, "word_in_text": "ihmisiä", "answer": "ihminen" },
+          {
+            "number": 8,
+            "word_in_text": "italialaiseen",
+            "answer": "italialainen"
+          },
+          { "number": 9, "word_in_text": "ystävänsä", "answer": "ystävä" },
+          {
+            "number": 10,
+            "word_in_text": "herkullista",
+            "answer": "herkullinen"
+          },
+          { "number": 11, "word_in_text": "suomen", "answer": "suomi" },
+          { "number": 12, "word_in_text": "kielellä", "answer": "kieli" }
+        ]
+      }
+    },
+    {
+      "id": "set_3",
+      "type": "missä_transformation",
+      "subtopic": "e-type",
+      "title": "Kirjoita e-sanat missä-muodossa",
+      "instructions_fi": "Kirjoita sanat missä-muodossa.",
+      "instructions_en": "Write the words in the where-in (inessive) form.",
+      "model_example": {
+        "prompt": "iso huone",
+        "answer": "Mä oon isossa huoneessa."
+      },
+      "note": "Muista: adjektiivi + substantiivi aina samassa sijamuodossa! (Remember: adjective + noun always in the same case!)",
+      "items": [
+        {
+          "number": 1,
+          "prompt": "pieni huone",
+          "answer": "Mä oon pienessä huoneessa."
+        },
+        {
+          "number": 2,
+          "prompt": "vanha kirje",
+          "answer": "Mä oon vanhassa kirjeessä."
+        },
+        {
+          "number": 3,
+          "prompt": "hiljainen huone",
+          "answer": "Mä oon hiljaisessa huoneessa."
+        },
+        {
+          "number": 4,
+          "prompt": "pitkä lause",
+          "answer": "Mä oon pitkässä lauseessa."
+        },
+        {
+          "number": 5,
+          "prompt": "suuri perhe",
+          "answer": "Mä oon suuressa perheessä."
+        },
+        {
+          "number": 6,
+          "prompt": "kaunis vene",
+          "answer": "Mä oon kauniissa veneessä."
+        },
+        {
+          "number": 7,
+          "prompt": "uusi huone",
+          "answer": "Mä oon uudessa huoneessa."
+        },
+        {
+          "number": 8,
+          "prompt": "mukava perhe",
+          "answer": "Mä oon mukavassa perheessä."
+        }
+      ]
+    },
+    {
+      "id": "set_4",
+      "type": "missä_transformation",
+      "subtopic": "nen-type",
+      "title": "Kirjoita nen-sanat missä-muodossa",
+      "instructions_fi": "Kirjoita sanat missä-muodossa.",
+      "instructions_en": "Write the words in the where-in (inessive) form.",
+      "model_example": {
+        "prompt": "suomalainen ravintola",
+        "answer": "Mä oon suomalaisessa ravintolassa."
+      },
+      "note": "Muista: adjektiivi + substantiivi aina samassa sijamuodossa!",
+      "items": [
+        {
+          "number": 1,
+          "prompt": "kiinalainen ravintola",
+          "answer": "Mä oon kiinalaisessa ravintolassa."
+        },
+        {
+          "number": 2,
+          "prompt": "italialainen kahvila",
+          "answer": "Mä oon italialaisessa kahvilassa."
+        },
+        {
+          "number": 3,
+          "prompt": "ranskalainen kauppa",
+          "answer": "Mä oon ranskalaisessa kaupassa."
+        },
+        {
+          "number": 4,
+          "prompt": "amerikkalainen hotelli",
+          "answer": "Mä oon amerikkalaisessa hotellissa."
+        },
+        {
+          "number": 5,
+          "prompt": "venäläinen museo",
+          "answer": "Mä oon venäläisessä museossa."
+        },
+        {
+          "number": 6,
+          "prompt": "punainen talo",
+          "answer": "Mä oon punaisessa talossa."
+        },
+        {
+          "number": 7,
+          "prompt": "sininen huone",
+          "answer": "Mä oon sinisessä huoneessa."
+        },
+        {
+          "number": 8,
+          "prompt": "iloinen perhe",
+          "answer": "Mä oon iloisessa perheessä."
+        }
+      ]
+    },
+    {
+      "id": "set_5",
+      "type": "missing_forms_table",
+      "subtopic": "e-type",
+      "title": "Kirjoita puuttuvat muodot - e-sanat",
+      "instructions_fi": "Kirjoita puuttuvat muodot.",
+      "instructions_en": "Fill in the missing forms.",
+      "note": "Remember the vowel harmony rules! E.g., if the word has only i and e vowels, the case ending is -ä.",
+      "rows": [
+        {
+          "label": "Nominatiivi (basic form)",
+          "cells": [
+            { "word": "huone", "given": true },
+            { "word": "vene", "given": false },
+            { "word": "kirje", "given": true },
+            { "word": "lause", "given": false }
+          ]
+        },
+        {
+          "label": "Partitiivi",
+          "cells": [
+            { "word": "huonetta", "given": false },
+            { "word": "venettä", "given": true },
+            { "word": "kirjettä", "given": false },
+            { "word": "lausetta", "given": true }
+          ]
+        },
+        {
+          "label": "Vartalo (stem)",
+          "cells": [
+            { "word": "huonee-", "given": true },
+            { "word": "venee-", "given": false },
+            { "word": "kirjee-", "given": false },
+            { "word": "lausee-", "given": true }
+          ]
+        },
+        {
+          "label": "Missä? (inessive)",
+          "cells": [
+            { "word": "huoneessa", "given": false },
+            { "word": "veneessä", "given": true },
+            { "word": "kirjeessä", "given": false },
+            { "word": "lauseessa", "given": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "set_6",
+      "type": "missing_forms_table",
+      "subtopic": "nen-type",
+      "title": "Kirjoita puuttuvat muodot - nen-sanat",
+      "instructions_fi": "Kirjoita puuttuvat muodot.",
+      "instructions_en": "Fill in the missing forms.",
+      "note": "Remember the vowel harmony rules!",
+      "rows": [
+        {
+          "label": "Nominatiivi (basic form)",
+          "cells": [
+            { "word": "ihminen", "given": true },
+            { "word": "nainen", "given": false },
+            { "word": "suomalainen", "given": true },
+            { "word": "punainen", "given": false }
+          ]
+        },
+        {
+          "label": "Partitiivi",
+          "cells": [
+            { "word": "ihmistä", "given": false },
+            { "word": "naista", "given": true },
+            { "word": "suomalaista", "given": false },
+            { "word": "punaista", "given": true }
+          ]
+        },
+        {
+          "label": "Vartalo (stem)",
+          "cells": [
+            { "word": "ihmise-", "given": true },
+            { "word": "naise-", "given": false },
+            { "word": "suomalaise-", "given": false },
+            { "word": "punaise-", "given": true }
+          ]
+        },
+        {
+          "label": "Missä? (inessive)",
+          "cells": [
+            { "word": "ihmisessä", "given": false },
+            { "word": "naisessa", "given": true },
+            { "word": "suomalaisessa", "given": false },
+            { "word": "punaisessa", "given": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "set_7",
+      "type": "missing_forms_table",
+      "subtopic": "i-type",
+      "title": "Kirjoita puuttuvat muodot - i-sanat",
+      "instructions_fi": "Kirjoita puuttuvat muodot.",
+      "instructions_en": "Fill in the missing forms.",
+      "note": "Remember: si-words have a special stem change (si → de)!",
+      "rows": [
+        {
+          "label": "Nominatiivi (basic form)",
+          "cells": [
+            { "word": "vesi", "given": true },
+            { "word": "käsi", "given": false },
+            { "word": "vuosi", "given": true },
+            { "word": "uusi", "given": false }
+          ]
+        },
+        {
+          "label": "Partitiivi",
+          "cells": [
+            { "word": "vettä", "given": false },
+            { "word": "kättä", "given": true },
+            { "word": "vuotta", "given": false },
+            { "word": "uutta", "given": true }
+          ]
+        },
+        {
+          "label": "Vartalo (stem)",
+          "cells": [
+            { "word": "vede-", "given": true },
+            { "word": "käde-", "given": false },
+            { "word": "vuode-", "given": false },
+            { "word": "uude-", "given": true }
+          ]
+        },
+        {
+          "label": "Missä? (inessive)",
+          "cells": [
+            { "word": "vedessä", "given": false },
+            { "word": "kädessä", "given": true },
+            { "word": "vuodessa", "given": false },
+            { "word": "uudessa", "given": true }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "set_8",
+      "type": "sentence_transformation",
+      "subtopic": "i-type",
+      "title": "Kirjoita i-sanat oikeassa muodossa",
+      "instructions_fi": "Kirjoita i-sanat oikeassa muodossa.",
+      "instructions_en": "Write the i-words in the right form.",
+      "model_example": {
+        "prompt": "Asun (iso kaupunki).",
+        "answer": "Asun isossa kaupungissa."
+      },
+      "note": "Muista: adjektiivi + substantiivi aina samassa sijamuodossa! (Remember: adjective + noun always in the same case!)",
+      "groups": [
+        {
+          "case": "Missä? (inessive)",
+          "items": [
+            {
+              "number": 1,
+              "prompt": "Asun (suuri kylä).",
+              "answer": "Asun suuressa kylässä."
+            },
+            {
+              "number": 2,
+              "prompt": "Mä oon (pieni kahvila).",
+              "answer": "Mä oon pienessä kahvilassa."
+            },
+            {
+              "number": 3,
+              "prompt": "Hän istuu (pehmeä nojatuoli).",
+              "answer": "Hän istuu pehmeässä nojatuolissa."
+            }
+          ]
+        },
+        {
+          "case": "Mistä? (elative)",
+          "items": [
+            {
+              "number": 4,
+              "prompt": "Mä oon kotoisin (Suomi).",
+              "answer": "Mä oon kotoisin Suomesta."
+            },
+            {
+              "number": 5,
+              "prompt": "Tykkäätkö (uusi hotelli)?",
+              "answer": "Tykkäätkö uudesta hotellista?"
+            },
+            {
+              "number": 6,
+              "prompt": "Elsi on kotoisin (Berliini).",
+              "answer": "Elsi on kotoisin Berliinistä."
+            }
+          ]
+        },
+        {
+          "case": "Mitä? (partitive)",
+          "items": [
+            {
+              "number": 7,
+              "prompt": "Kuinka paljon juot (vesi) päivässä?",
+              "answer": "Kuinka paljon juot vettä päivässä?"
+            },
+            {
+              "number": 8,
+              "prompt": "Kuinka monta (vuosi) vanha sä oot?",
+              "answer": "Kuinka monta vuotta vanha sä oot?"
+            },
+            {
+              "number": 9,
+              "prompt": "Mitä (kieli) te puhutte?",
+              "answer": "Mitä kieltä te puhutte?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "set_9",
+      "type": "sentence_transformation",
+      "subtopic": "e-type",
+      "title": "Kirjoita e-sanat oikeassa muodossa",
+      "instructions_fi": "Kirjoita e-sanat oikeassa muodossa.",
+      "instructions_en": "Write the e-words in the right form.",
+      "model_example": {
+        "prompt": "Mä oon (iso huone).",
+        "answer": "Mä oon isossa huoneessa."
+      },
+      "note": "Muista: adjektiivi + substantiivi aina samassa sijamuodossa!",
+      "groups": [
+        {
+          "case": "Mihin? (illative)",
+          "items": [
+            {
+              "number": 1,
+              "prompt": "Mä meen (pieni huone).",
+              "answer": "Mä meen pieneen huoneeseen."
+            },
+            {
+              "number": 2,
+              "prompt": "He tulevat (suuri perhe).",
+              "answer": "He tulevat suureen perheeseen."
+            },
+            {
+              "number": 3,
+              "prompt": "Kirje menee (vanha kirje).",
+              "answer": "Kirje menee vanhaan kirjeeseen.",
+              "note": "trick: kirje → kirjeeseen"
+            }
+          ]
+        },
+        {
+          "case": "Missä? (inessive)",
+          "items": [
+            {
+              "number": 4,
+              "prompt": "Hän asuu (kaunis huone).",
+              "answer": "Hän asuu kauniissa huoneessa."
+            },
+            {
+              "number": 5,
+              "prompt": "Lapset leikkivät (iso perhe).",
+              "answer": "Lapset leikkivät isossa perheessä."
+            },
+            {
+              "number": 6,
+              "prompt": "Vastaus on (lyhyt lause).",
+              "answer": "Vastaus on lyhyessä lauseessa."
+            }
+          ]
+        },
+        {
+          "case": "Mitä? (partitive)",
+          "items": [
+            {
+              "number": 7,
+              "prompt": "Minulla ei ole (oma huone).",
+              "answer": "Minulla ei ole omaa huonetta."
+            },
+            {
+              "number": 8,
+              "prompt": "Haluatko (uusi vene)?",
+              "answer": "Haluatko uutta venettä?"
+            },
+            {
+              "number": 9,
+              "prompt": "Mä luen (pitkä kirje).",
+              "answer": "Mä luen pitkää kirjettä."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "set_10",
+      "type": "sentence_transformation",
+      "subtopic": "nen-type",
+      "title": "Kirjoita nen-sanat oikeassa muodossa",
+      "instructions_fi": "Kirjoita nen-sanat oikeassa muodossa.",
+      "instructions_en": "Write the nen-words in the right form.",
+      "model_example": {
+        "prompt": "Mä oon (suomalainen opiskelija).",
+        "answer": "Mä oon suomalaisessa opiskelija."
+      },
+      "groups": [
+        {
+          "case": "Missä? (inessive)",
+          "items": [
+            {
+              "number": 1,
+              "prompt": "Mä oon (amerikkalainen ravintola).",
+              "answer": "Mä oon amerikkalaisessa ravintolassa."
+            },
+            {
+              "number": 2,
+              "prompt": "Hän työskentelee (venäläinen yritys).",
+              "answer": "Hän työskentelee venäläisessä yrityksessä."
+            },
+            {
+              "number": 3,
+              "prompt": "Lapsi on (iloinen perhe).",
+              "answer": "Lapsi on iloisessa perheessä."
+            }
+          ]
+        },
+        {
+          "case": "Mistä? (elative)",
+          "items": [
+            {
+              "number": 4,
+              "prompt": "Hän tulee (suomalainen kaupunki).",
+              "answer": "Hän tulee suomalaisesta kaupungista."
+            },
+            {
+              "number": 5,
+              "prompt": "Tykkäätkö (kiinalainen ruoka)?",
+              "answer": "Tykkäätkö kiinalaisesta ruoasta?"
+            },
+            {
+              "number": 6,
+              "prompt": "Puhumme (erilainen ihminen).",
+              "answer": "Puhumme erilaisesta ihmisestä."
+            }
+          ]
+        },
+        {
+          "case": "Mitä? (partitive)",
+          "items": [
+            {
+              "number": 7,
+              "prompt": "Näen paljon (iloinen ihminen).",
+              "answer": "Näen paljon iloisia ihmisiä."
+            },
+            {
+              "number": 8,
+              "prompt": "Minulla ei ole (ranskalainen ystävä).",
+              "answer": "Minulla ei ole ranskalaista ystävää."
+            },
+            {
+              "number": 9,
+              "prompt": "Haluatko (punainen auto)?",
+              "answer": "Haluatko punaista autoa?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "set_11",
+      "type": "reading_perusmuoto",
+      "subtopic": "all",
+      "title": "Kirjoita kursivoidun sanan perusmuoto",
+      "instructions_fi": "Kirjoita kursivoidun sanan perusmuoto.",
+      "instructions_en": "Write the basic form / dictionary form of the italicised word.",
+      "passage": {
+        "title": "Matka Tampereelle",
+        "text": "Jasmin on 1.[ranskalainen] opiskelija. Hän matkustaa 2.[Tampereelle] opiskelemaan 3.[suomea]. Hän asuu 4.[pienessä] 5.[huoneessa] opiskelija-asuntolassa. Hänellä on kaksi 6.[huonekaveria]. He puhuvat 7.[englantia] ja 8.[suomea]. Viikonloppuna Jasmin menee 9.[suureen] 10.[kirjastoon] lukemaan. Hän on hyvin 11.[iloinen] opiskelija!",
+        "italicised_words": [
+          {
+            "number": 1,
+            "word_in_text": "ranskalainen",
+            "answer": "ranskalainen"
+          },
+          { "number": 2, "word_in_text": "Tampereelle", "answer": "Tampere" },
+          { "number": 3, "word_in_text": "suomea", "answer": "suomi" },
+          { "number": 4, "word_in_text": "pienessä", "answer": "pieni" },
+          { "number": 5, "word_in_text": "huoneessa", "answer": "huone" },
+          {
+            "number": 6,
+            "word_in_text": "huonekaveria",
+            "answer": "huonekaveri"
+          },
+          { "number": 7, "word_in_text": "englantia", "answer": "englanti" },
+          { "number": 8, "word_in_text": "suomea", "answer": "suomi" },
+          { "number": 9, "word_in_text": "suureen", "answer": "suuri" },
+          { "number": 10, "word_in_text": "kirjastoon", "answer": "kirjasto" },
+          { "number": 11, "word_in_text": "iloinen", "answer": "iloinen" }
+        ]
+      }
+    }
+  ],
   "questions": [
     {
       "id": 1,
@@ -316,7 +921,6 @@
       "rule": "Old Finnish -i word",
       "explanation": "suomi is i-type: suomi → suomen, suomea (i → e)"
     },
-
     {
       "id": 19,
       "subtopic": "e-type",
@@ -513,7 +1117,6 @@
       "rule": "ends in -e",
       "explanation": "perhe ends in -e, stem is perhee- (e doubles)"
     },
-
     {
       "id": 37,
       "subtopic": "nen-type",
@@ -732,7 +1335,6 @@
       "rule": "nen → se",
       "explanation": "amerikkalainen → amerikkalaise + n = amerikkalaisen"
     },
-
     {
       "id": 57,
       "subtopic": "possessive",
@@ -943,7 +1545,6 @@
       "rule": "-nsä = hän or he",
       "explanation": "talonsa has -nsä suffix = his/her/their house"
     },
-
     {
       "id": 78,
       "subtopic": "e-type",

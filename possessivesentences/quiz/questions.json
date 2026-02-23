@@ -1,0 +1,1014 @@
+{
+  "subtopics": [
+    { "id": "pronouns", "name": "Pronouns (minulla, sinulla)", "icon": "👤" },
+    { "id": "names", "name": "Names & Nouns", "icon": "👥" },
+    { "id": "adjectives", "name": "Adjectives with -lla/-llä", "icon": "✨" },
+    { "id": "negative", "name": "Negative (partitive)", "icon": "❌" },
+    { "id": "feelings", "name": "Feelings", "icon": "😊" }
+  ],
+  "topic": "possessivesentences",
+  "title": "Omistusrakenne - Possessive Sentences",
+  "description": "Practice 'I have' sentences with -lla/-llä and partitive in negatives",
+  "instructions": "Form correct possessive sentences using -lla/-llä",
+
+  "rules": {
+    "basic_structure": {
+      "description": "To say 'X has Y' in Finnish, use: X + -lla/-llä + on + Y",
+      "formula": "OWNER + -lla/-llä + on + THING",
+      "examples": [
+        "Minulla on auto = I have a car",
+        "Sinulla on koira = You have a dog",
+        "Liisalla on kirja = Liisa has a book"
+      ]
+    },
+    "pronouns": {
+      "description": "Add -lla/-llä to pronouns (spoken forms)",
+      "table": {
+        "minä": "minulla / mulla",
+        "sinä": "sinulla / sulla",
+        "hän": "hänellä / sillä",
+        "me": "meillä",
+        "te": "teillä",
+        "he": "heillä / niillä"
+      }
+    },
+    "names_nouns": {
+      "description": "Add -lla/-llä to names and nouns",
+      "vowel_harmony": "Back vowels (a,o,u) → -lla | Front vowels (ä,ö,y) + neutral (e,i) → -llä",
+      "examples": [
+        "Liisa → Liisalla",
+        "Matti → Matilla",
+        "äiti → äidillä (KPT: t→d)",
+        "isä → isällä"
+      ]
+    },
+    "adjectives": {
+      "description": "Adjectives describing the owner also get -lla/-llä",
+      "examples": [
+        "Pienellä lapsella on lelu = The small child has a toy",
+        "Vanhalla miehellä on koira = The old man has a dog",
+        "Uudella autolla on hyvät renkaat = The new car has good tires"
+      ]
+    },
+    "negative": {
+      "description": "Negative sentences use partitive for the object",
+      "formula": "X + -lla/-llä + ei ole + PARTITIVE",
+      "examples": [
+        "Minulla ei ole autoa = I don't have a car",
+        "Sinulla ei ole koiraa = You don't have a dog",
+        "Liisalla ei ole rahaa = Liisa doesn't have money"
+      ],
+      "note": "Remember: ei ole + partitive!"
+    },
+    "feelings": {
+      "description": "Express feelings/states with possessive structure",
+      "common_feelings": [
+        "nälkä (hunger) - Minulla on nälkä = I'm hungry",
+        "jano (thirst) - Minulla on jano = I'm thirsty",
+        "kiire (hurry) - Minulla on kiire = I'm in a hurry",
+        "kylmä (cold) - Minulla on kylmä = I'm cold",
+        "kuuma (hot) - Minulla on kuuma = I'm hot",
+        "väsymys/väsynyt (tired) - Minulla on väsynyt = I'm tired",
+        "ikävä (longing) - Minulla on ikävä = I miss (someone)"
+      ],
+      "negative_feelings": "Feelings in negative do NOT use partitive!",
+      "negative_examples": [
+        "Minulla ei ole nälkä = I'm not hungry (NOT nälkää)",
+        "Minulla ei ole jano = I'm not thirsty (NOT janoa)",
+        "Minulla ei ole kiire = I'm not in a hurry (NOT kiirettä)"
+      ]
+    }
+  },
+  "vocabulary": {
+    "pronouns": [
+      { "nominative": "minä", "adessive": "minulla/mulla", "english": "I" },
+      { "nominative": "sinä", "adessive": "sinulla/sulla", "english": "you" },
+      { "nominative": "hän", "adessive": "hänellä/sillä", "english": "he/she" },
+      { "nominative": "me", "adessive": "meillä", "english": "we" },
+      { "nominative": "te", "adessive": "teillä", "english": "you (pl.)" },
+      { "nominative": "he", "adessive": "heillä/niillä", "english": "they" }
+    ],
+    "common_nouns": [
+      { "nominative": "auto", "partitive": "autoa", "english": "car" },
+      { "nominative": "koira", "partitive": "koiraa", "english": "dog" },
+      { "nominative": "kissa", "partitive": "kissaa", "english": "cat" },
+      { "nominative": "kirja", "partitive": "kirjaa", "english": "book" },
+      { "nominative": "raha", "partitive": "rahaa", "english": "money" },
+      { "nominative": "aika", "partitive": "aikaa", "english": "time" },
+      { "nominative": "työ", "partitive": "työtä", "english": "work/job" },
+      { "nominative": "lapsi", "partitive": "lasta", "english": "child" }
+    ],
+    "feelings": [
+      { "finnish": "nälkä", "english": "hunger/hungry" },
+      { "finnish": "jano", "english": "thirst/thirsty" },
+      { "finnish": "kiire", "english": "hurry" },
+      { "finnish": "kylmä", "english": "cold" },
+      { "finnish": "kuuma", "english": "hot" },
+      { "finnish": "ikävä", "english": "longing/missing" }
+    ]
+  },
+  "questions": [
+    {
+      "id": 1,
+
+      "type": "adessive",
+      "word": "minä",
+      "english": "I (have)",
+      "answer": "minulla",
+      "rule": "minä + lla",
+      "explanation": "minä → minulla (or 'mulla' in spoken Finnish)"
+    },
+    {
+      "id": 2,
+
+      "type": "adessive",
+      "word": "sinä",
+      "english": "you (have)",
+      "answer": "sinulla",
+      "rule": "sinä + lla",
+      "explanation": "sinä → sinulla (or 'sulla' in spoken Finnish)"
+    },
+    {
+      "id": 3,
+
+      "type": "adessive",
+      "word": "hän",
+      "english": "he/she (has)",
+      "answer": "hänellä",
+      "rule": "hän + llä",
+      "explanation": "hän → hänellä (or 'sillä' in spoken Finnish)"
+    },
+    {
+      "id": 4,
+      "subtopic": "pronouns",
+      "type": "adessive",
+      "word": "me",
+      "english": "we (have)",
+      "answer": "meillä",
+      "rule": "me + illä",
+      "explanation": "me → meillä"
+    },
+    {
+      "id": 5,
+      "subtopic": "pronouns",
+      "type": "adessive",
+      "word": "te",
+      "english": "you pl. (have)",
+      "answer": "teillä",
+      "rule": "te + illä",
+      "explanation": "te → teillä"
+    },
+    {
+      "id": 6,
+      "subtopic": "pronouns",
+      "type": "adessive",
+      "word": "he",
+      "english": "they (have)",
+      "answer": "heillä",
+      "rule": "he + illä",
+      "explanation": "he → heillä (or 'niillä' in spoken Finnish)"
+    },
+    {
+      "id": 7,
+      "subtopic": "pronouns",
+      "type": "sentence",
+      "sentence": "I have a car",
+      "english": "I have a car",
+      "answer": "minulla on auto",
+      "rule": "minulla + on + auto",
+      "explanation": "minä → minulla + on + auto"
+    },
+    {
+      "id": 8,
+      "subtopic": "pronouns",
+      "type": "sentence",
+      "sentence": "You have a dog",
+      "english": "You have a dog",
+      "answer": "sinulla on koira",
+      "rule": "sinulla + on + koira",
+      "explanation": "sinä → sinulla + on + koira"
+    },
+    {
+      "id": 9,
+      "subtopic": "pronouns",
+      "type": "sentence",
+      "sentence": "He/She has a cat",
+      "english": "He/She has a cat",
+      "answer": "hänellä on kissa",
+      "rule": "hänellä + on + kissa",
+      "explanation": "hän → hänellä + on + kissa"
+    },
+    {
+      "id": 10,
+      "subtopic": "pronouns",
+      "type": "sentence",
+      "sentence": "We have a house",
+      "english": "We have a house",
+      "answer": "meillä on talo",
+      "rule": "meillä + on + talo",
+      "explanation": "me → meillä + on + talo"
+    },
+    {
+      "id": 11,
+      "subtopic": "pronouns",
+      "type": "sentence",
+      "sentence": "They have money",
+      "english": "They have money",
+      "answer": "heillä on rahaa",
+      "rule": "heillä + on + rahaa",
+      "explanation": "he → heillä + on + rahaa (money often partitive)"
+    },
+    {
+      "id": 12,
+      "subtopic": "pronouns",
+      "type": "sentence",
+      "sentence": "I have a book (spoken)",
+      "english": "I have a book (spoken)",
+      "answer": "mulla on kirja",
+      "rule": "mulla + on + kirja",
+      "explanation": "Spoken: minulla → mulla"
+    },
+    {
+      "id": 13,
+      "subtopic": "pronouns",
+      "type": "sentence",
+      "sentence": "You have time (spoken)",
+      "english": "You have time (spoken)",
+      "answer": "sulla on aikaa",
+      "rule": "sulla + on + aikaa",
+      "explanation": "Spoken: sinulla → sulla (time = aikaa, partitive)"
+    },
+
+    {
+      "id": 14,
+      "type": "adessive",
+      "word": "Liisa",
+      "english": "Liisa (has)",
+      "answer": "Liisalla",
+      "rule": "Liisa + lla",
+      "explanation": "Liisa → Liisalla (back vowel → -lla)"
+    },
+    {
+      "id": 15,
+
+      "type": "adessive",
+      "word": "Matti",
+      "english": "Matti (has)",
+      "answer": "Matilla",
+      "rule": "Matti + lla",
+      "explanation": "Matti → Matilla (back vowel → -lla)"
+    },
+    {
+      "id": 16,
+      "subtopic": "names",
+      "type": "adessive",
+      "word": "Mikko",
+      "english": "Mikko (has)",
+      "answer": "Mikolla",
+      "rule": "Mikko + lla",
+      "explanation": "Mikko → Mikolla (back vowel → -lla)"
+    },
+    {
+      "id": 17,
+      "subtopic": "names",
+      "type": "adessive",
+      "word": "Väinö",
+      "english": "Väinö (has)",
+      "answer": "Väinöllä",
+      "rule": "Väinö + llä",
+      "explanation": "Väinö → Väinöllä (front vowel ö → -llä)"
+    },
+    {
+      "id": 18,
+      "subtopic": "names",
+      "type": "adessive",
+      "word": "äiti",
+      "english": "mother (has)",
+      "answer": "äidillä",
+      "rule": "äiti + llä + KPT",
+      "explanation": "äiti → äidillä (t → d with KPT, front vowel → -llä)"
+    },
+    {
+      "id": 19,
+      "subtopic": "names",
+      "type": "adessive",
+      "word": "isä",
+      "english": "father (has)",
+      "answer": "isällä",
+      "rule": "isä + llä",
+      "explanation": "isä → isällä (front vowel → -llä)"
+    },
+    {
+      "id": 20,
+      "subtopic": "names",
+      "type": "adessive",
+      "word": "veli",
+      "english": "brother (has)",
+      "answer": "veljellä",
+      "rule": "veli + llä",
+      "explanation": "veli → veljellä (i-type: i → e, then + llä)"
+    },
+    {
+      "id": 21,
+      "subtopic": "names",
+      "type": "adessive",
+      "word": "sisko",
+      "english": "sister (has)",
+      "answer": "siskolla",
+      "rule": "sisko + lla",
+      "explanation": "sisko → siskolla (back vowel → -lla)"
+    },
+    {
+      "id": 22,
+      "subtopic": "names",
+      "type": "adessive",
+      "word": "opettaja",
+      "english": "teacher (has)",
+      "answer": "opettajalla",
+      "rule": "opettaja + lla",
+      "explanation": "opettaja → opettajalla"
+    },
+    {
+      "id": 23,
+      "subtopic": "names",
+      "type": "adessive",
+      "word": "lapsi",
+      "english": "child (has)",
+      "answer": "lapsella",
+      "rule": "lapsi + lla",
+      "explanation": "lapsi → lapsella (ps stays, back vowel → -lla)"
+    },
+    {
+      "id": 24,
+      "subtopic": "names",
+      "type": "sentence",
+      "sentence": "Liisa has a car",
+      "english": "Liisa has a car",
+      "answer": "Liisalla on auto",
+      "rule": "Liisalla + on + auto",
+      "explanation": "Liisa → Liisalla + on + auto"
+    },
+    {
+      "id": 25,
+      "subtopic": "names",
+      "type": "sentence",
+      "sentence": "Matti has a dog",
+      "english": "Matti has a dog",
+      "answer": "Matilla on koira",
+      "rule": "Matilla + on + koira",
+      "explanation": "Matti → Matilla + on + koira"
+    },
+    {
+      "id": 26,
+      "subtopic": "names",
+      "type": "sentence",
+      "sentence": "Mother has a book",
+      "english": "Mother has a book",
+      "answer": "äidillä on kirja",
+      "rule": "äidillä + on + kirja",
+      "explanation": "äiti → äidillä (t→d) + on + kirja"
+    },
+    {
+      "id": 27,
+      "subtopic": "names",
+      "type": "sentence",
+      "sentence": "Father has work",
+      "english": "Father has work",
+      "answer": "isällä on työtä",
+      "rule": "isällä + on + työtä",
+      "explanation": "isä → isällä + on + työtä (work often partitive)"
+    },
+    {
+      "id": 28,
+      "subtopic": "names",
+      "type": "sentence",
+      "sentence": "The teacher has a question",
+      "english": "The teacher has a question",
+      "answer": "opettajalla on kysymys",
+      "rule": "opettajalla + on + kysymys",
+      "explanation": "opettaja → opettajalla + on + kysymys"
+    },
+
+    {
+      "id": 29,
+      "type": "adessive",
+      "word": "pieni",
+      "english": "small (on something)",
+      "answer": "pienellä",
+      "rule": "pieni + llä (i-type)",
+      "explanation": "pieni → pienellä (i-type: i → e, front vowel → -llä)"
+    },
+    {
+      "id": 30,
+      "subtopic": "adjectives",
+      "type": "adessive",
+      "word": "iso",
+      "english": "big (on something)",
+      "answer": "isolla",
+      "rule": "iso + lla",
+      "explanation": "iso → isolla (back vowel → -lla)"
+    },
+    {
+      "id": 31,
+      "subtopic": "adjectives",
+      "type": "adessive",
+      "word": "vanha",
+      "english": "old (on something)",
+      "answer": "vanhalla",
+      "rule": "vanha + lla",
+      "explanation": "vanha → vanhalla (back vowel → -lla)"
+    },
+    {
+      "id": 32,
+      "subtopic": "adjectives",
+      "type": "adessive",
+      "word": "nuori",
+      "english": "young (on something)",
+      "answer": "nuorella",
+      "rule": "nuori + lla (i-type)",
+      "explanation": "nuori → nuorella (i-type: i → e, back vowel → -lla)"
+    },
+    {
+      "id": 33,
+      "subtopic": "adjectives",
+      "type": "adessive",
+      "word": "uusi",
+      "english": "new (on something)",
+      "answer": "uudella",
+      "rule": "uusi + lla (si → de)",
+      "explanation": "uusi → uudella (si → de, back vowel → -lla)"
+    },
+    {
+      "id": 34,
+      "subtopic": "adjectives",
+      "type": "adessive",
+      "word": "kaunis",
+      "english": "beautiful (on something)",
+      "answer": "kauniilla",
+      "rule": "kaunis + lla",
+      "explanation": "kaunis → kauniilla (s drops, back vowel → -lla)"
+    },
+    {
+      "id": 35,
+      "subtopic": "adjectives",
+      "type": "sentence",
+      "sentence": "The small child has a toy",
+      "english": "The small child has a toy",
+      "answer": "pienellä lapsella on lelu",
+      "rule": "pienellä + lapsella + on + lelu",
+      "explanation": "Both adjective AND noun get -lla/-llä!"
+    },
+    {
+      "id": 36,
+      "subtopic": "adjectives",
+      "type": "sentence",
+      "sentence": "The old man has a dog",
+      "english": "The old man has a dog",
+      "answer": "vanhalla miehellä on koira",
+      "rule": "vanhalla + miehellä + on + koira",
+      "explanation": "vanha → vanhalla, mies → miehellä (both -lla/-llä)"
+    },
+    {
+      "id": 37,
+      "subtopic": "adjectives",
+      "type": "sentence",
+      "sentence": "The new car has good tires",
+      "english": "The new car has good tires",
+      "answer": "uudella autolla on hyvät renkaat",
+      "rule": "uudella + autolla + on + hyvät renkaat",
+      "explanation": "uusi → uudella (si→de), auto → autolla"
+    },
+    {
+      "id": 38,
+      "subtopic": "adjectives",
+      "type": "sentence",
+      "sentence": "The young woman has a cat",
+      "english": "The young woman has a cat",
+      "answer": "nuorella naisella on kissa",
+      "rule": "nuorella + naisella + on + kissa",
+      "explanation": "nuori → nuorella, nainen → naisella (nen→se)"
+    },
+    {
+      "id": 39,
+      "subtopic": "adjectives",
+      "type": "sentence",
+      "sentence": "The big house has a garden",
+      "english": "The big house has a garden",
+      "answer": "isolla talolla on puutarha",
+      "rule": "isolla + talolla + on + puutarha",
+      "explanation": "iso → isolla, talo → talolla"
+    },
+    {
+      "id": 40,
+      "subtopic": "adjectives",
+      "type": "sentence",
+      "sentence": "The beautiful girl has blue eyes",
+      "english": "The beautiful girl has blue eyes",
+      "answer": "kauniilla tytöllä on siniset silmät",
+      "rule": "kauniilla + tytöllä + on",
+      "explanation": "kaunis → kauniilla, tyttö → tytöllä"
+    },
+
+    {
+      "id": 41,
+      "type": "sentence",
+      "sentence": "I don't have a car",
+      "english": "I don't have a car",
+      "answer": "minulla ei ole autoa",
+      "rule": "ei ole + partitive",
+      "explanation": "Negative → partitive: auto → autoa"
+    },
+    {
+      "id": 42,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "You don't have a dog",
+      "english": "You don't have a dog",
+      "answer": "sinulla ei ole koiraa",
+      "rule": "ei ole + partitive",
+      "explanation": "Negative → partitive: koira → koiraa"
+    },
+    {
+      "id": 43,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "He/She doesn't have money",
+      "english": "He/She doesn't have money",
+      "answer": "hänellä ei ole rahaa",
+      "rule": "ei ole + partitive",
+      "explanation": "Negative → partitive: raha → rahaa"
+    },
+    {
+      "id": 44,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "We don't have time",
+      "english": "We don't have time",
+      "answer": "meillä ei ole aikaa",
+      "rule": "ei ole + partitive",
+      "explanation": "Negative → partitive: aika → aikaa"
+    },
+    {
+      "id": 45,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "They don't have a house",
+      "english": "They don't have a house",
+      "answer": "heillä ei ole taloa",
+      "rule": "ei ole + partitive",
+      "explanation": "Negative → partitive: talo → taloa"
+    },
+    {
+      "id": 46,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "Liisa doesn't have a cat",
+      "english": "Liisa doesn't have a cat",
+      "answer": "Liisalla ei ole kissaa",
+      "rule": "ei ole + partitive",
+      "explanation": "Negative → partitive: kissa → kissaa"
+    },
+    {
+      "id": 47,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "Matti doesn't have a book",
+      "english": "Matti doesn't have a book",
+      "answer": "Matilla ei ole kirjaa",
+      "rule": "ei ole + partitive",
+      "explanation": "Negative → partitive: kirja → kirjaa"
+    },
+    {
+      "id": 48,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "I don't have work",
+      "english": "I don't have work/a job",
+      "answer": "minulla ei ole työtä",
+      "rule": "ei ole + partitive",
+      "explanation": "Negative → partitive: työ → työtä"
+    },
+    {
+      "id": 49,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "I don't have a child (spoken)",
+      "english": "I don't have a child (spoken)",
+      "answer": "mulla ei ole lasta",
+      "rule": "ei ole + partitive",
+      "explanation": "Spoken mulla, partitive: lapsi → lasta"
+    },
+    {
+      "id": 50,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "You don't have a sister",
+      "english": "You don't have a sister",
+      "answer": "sinulla ei ole siskoa",
+      "rule": "ei ole + partitive",
+      "explanation": "Negative → partitive: sisko → siskoa"
+    },
+    {
+      "id": 51,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "Mother doesn't have a car",
+      "english": "Mother doesn't have a car",
+      "answer": "äidillä ei ole autoa",
+      "rule": "ei ole + partitive",
+      "explanation": "äiti → äidillä, auto → autoa (partitive)"
+    },
+    {
+      "id": 52,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "The old man doesn't have money",
+      "english": "The old man doesn't have money",
+      "answer": "vanhalla miehellä ei ole rahaa",
+      "rule": "ei ole + partitive",
+      "explanation": "Adjective + noun both -lla/-llä, partitive: raha → rahaa"
+    },
+    {
+      "id": 53,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "The small child doesn't have a toy",
+      "english": "The small child doesn't have a toy",
+      "answer": "pienellä lapsella ei ole lelua",
+      "rule": "ei ole + partitive",
+      "explanation": "Both -llä, partitive: lelu → lelua"
+    },
+
+    {
+      "id": 54,
+      "type": "sentence",
+      "sentence": "I'm hungry",
+      "english": "I'm hungry (I have hunger)",
+      "answer": "minulla on nälkä",
+      "rule": "minulla on + feeling",
+      "explanation": "Hunger expressed as possession: minulla on nälkä"
+    },
+    {
+      "id": 55,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "I'm thirsty",
+      "english": "I'm thirsty (I have thirst)",
+      "answer": "minulla on jano",
+      "rule": "minulla on + feeling",
+      "explanation": "Thirst expressed as possession: minulla on jano"
+    },
+    {
+      "id": 56,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "I'm in a hurry",
+      "english": "I'm in a hurry",
+      "answer": "minulla on kiire",
+      "rule": "minulla on + feeling",
+      "explanation": "Hurry expressed as possession: minulla on kiire"
+    },
+    {
+      "id": 57,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "I'm cold",
+      "english": "I'm cold (I have cold)",
+      "answer": "minulla on kylmä",
+      "rule": "minulla on + feeling",
+      "explanation": "Cold expressed as possession: minulla on kylmä"
+    },
+    {
+      "id": 58,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "I'm hot",
+      "english": "I'm hot (I have hot)",
+      "answer": "minulla on kuuma",
+      "rule": "minulla on + feeling",
+      "explanation": "Hot expressed as possession: minulla on kuuma"
+    },
+    {
+      "id": 59,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "You're hungry",
+      "english": "You're hungry",
+      "answer": "sinulla on nälkä",
+      "rule": "sinulla on + feeling",
+      "explanation": "sinulla on nälkä"
+    },
+    {
+      "id": 60,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "He/She is thirsty",
+      "english": "He/She is thirsty",
+      "answer": "hänellä on jano",
+      "rule": "hänellä on + feeling",
+      "explanation": "hänellä on jano"
+    },
+    {
+      "id": 61,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "We're in a hurry",
+      "english": "We're in a hurry",
+      "answer": "meillä on kiire",
+      "rule": "meillä on + feeling",
+      "explanation": "meillä on kiire"
+    },
+    {
+      "id": 62,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "I'm hungry (spoken)",
+      "english": "I'm hungry (spoken)",
+      "answer": "mulla on nälkä",
+      "rule": "mulla on + feeling",
+      "explanation": "Spoken: minulla → mulla"
+    },
+    {
+      "id": 63,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "You're cold (spoken)",
+      "english": "You're cold (spoken)",
+      "answer": "sulla on kylmä",
+      "rule": "sulla on + feeling",
+      "explanation": "Spoken: sinulla → sulla"
+    },
+    {
+      "id": 64,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "I miss you (I have longing)",
+      "english": "I miss you",
+      "answer": "minulla on ikävä",
+      "rule": "minulla on ikävä",
+      "explanation": "ikävä = longing, missing someone"
+    },
+    {
+      "id": 65,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "I'm NOT hungry",
+      "english": "I'm not hungry",
+      "answer": "minulla ei ole nälkä",
+      "rule": "NO partitive for feelings!",
+      "explanation": "⚠️ Feelings: negative does NOT use partitive! nälkä stays nälkä"
+    },
+    {
+      "id": 66,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "I'm NOT thirsty",
+      "english": "I'm not thirsty",
+      "answer": "minulla ei ole jano",
+      "rule": "NO partitive for feelings!",
+      "explanation": "⚠️ Feelings: negative does NOT use partitive! jano stays jano"
+    },
+    {
+      "id": 67,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "I'm NOT in a hurry",
+      "english": "I'm not in a hurry",
+      "answer": "minulla ei ole kiire",
+      "rule": "NO partitive for feelings!",
+      "explanation": "⚠️ Feelings: negative does NOT use partitive! kiire stays kiire"
+    },
+    {
+      "id": 68,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "You're NOT cold",
+      "english": "You're not cold",
+      "answer": "sinulla ei ole kylmä",
+      "rule": "NO partitive for feelings!",
+      "explanation": "⚠️ Feelings: negative does NOT use partitive! kylmä stays kylmä"
+    },
+    {
+      "id": 69,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "She's NOT hot",
+      "english": "She's not hot",
+      "answer": "hänellä ei ole kuuma",
+      "rule": "NO partitive for feelings!",
+      "explanation": "⚠️ Feelings: negative does NOT use partitive! kuuma stays kuuma"
+    },
+    {
+      "id": 70,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "We're NOT in a hurry",
+      "english": "We're not in a hurry",
+      "answer": "meillä ei ole kiire",
+      "rule": "NO partitive for feelings!",
+      "explanation": "⚠️ Feelings: negative does NOT use partitive!"
+    },
+
+    {
+      "id": 71,
+      "subtopic": "pronouns",
+      "type": "sentence",
+      "sentence": "I have two children",
+      "english": "I have two children",
+      "answer": "minulla on kaksi lasta",
+      "rule": "numbers → partitive",
+      "explanation": "After numbers 2+, use partitive: lapsi → lasta"
+    },
+    {
+      "id": 72,
+      "subtopic": "pronouns",
+      "type": "sentence",
+      "sentence": "You have three cats",
+      "english": "You have three cats",
+      "answer": "sinulla on kolme kissaa",
+      "rule": "numbers → partitive",
+      "explanation": "After numbers 2+, use partitive: kissa → kissaa"
+    },
+    {
+      "id": 73,
+      "subtopic": "names",
+      "type": "sentence",
+      "sentence": "The friend has a problem",
+      "english": "The friend has a problem",
+      "answer": "ystävällä on ongelma",
+      "rule": "ystävä + llä",
+      "explanation": "ystävä → ystävällä + on + ongelma"
+    },
+    {
+      "id": 74,
+      "subtopic": "names",
+      "type": "sentence",
+      "sentence": "The dog has food",
+      "english": "The dog has food",
+      "answer": "koiralla on ruokaa",
+      "rule": "koira + lla",
+      "explanation": "koira → koiralla + on + ruokaa (food often partitive)"
+    },
+    {
+      "id": 75,
+      "subtopic": "names",
+      "type": "sentence",
+      "sentence": "The student has a question",
+      "english": "The student has a question",
+      "answer": "opiskelijalla on kysymys",
+      "rule": "opiskelija + lla",
+      "explanation": "opiskelija → opiskelijalla + on + kysymys"
+    },
+    {
+      "id": 76,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "I don't have any friends",
+      "english": "I don't have (any) friends",
+      "answer": "minulla ei ole ystäviä",
+      "rule": "ei ole + partitive plural",
+      "explanation": "Negative + plural → partitive plural: ystävät → ystäviä"
+    },
+    {
+      "id": 77,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "She doesn't have a phone",
+      "english": "She doesn't have a phone",
+      "answer": "hänellä ei ole puhelinta",
+      "rule": "ei ole + partitive",
+      "explanation": "puhelin → puhelinta (partitive)"
+    },
+    {
+      "id": 78,
+      "subtopic": "adjectives",
+      "type": "sentence",
+      "sentence": "The Finnish person has a sauna",
+      "english": "The Finnish person has a sauna",
+      "answer": "suomalaisella on sauna",
+      "rule": "suomalainen + lla",
+      "explanation": "suomalainen → suomalaisella (nen → se + lla)"
+    },
+    {
+      "id": 79,
+      "subtopic": "adjectives",
+      "type": "sentence",
+      "sentence": "The happy child has many toys",
+      "english": "The happy child has many toys",
+      "answer": "iloisella lapsella on paljon leluja",
+      "rule": "iloinen + lla",
+      "explanation": "iloinen → iloisella, lapsi → lapsella"
+    },
+    {
+      "id": 80,
+      "subtopic": "adjectives",
+      "type": "sentence",
+      "sentence": "The red car has a problem",
+      "english": "The red car has a problem",
+      "answer": "punaisella autolla on ongelma",
+      "rule": "punainen + lla",
+      "explanation": "punainen → punaisella (nen→se+lla), auto → autolla"
+    },
+    {
+      "id": 81,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "The child is hungry",
+      "english": "The child is hungry",
+      "answer": "lapsella on nälkä",
+      "rule": "noun + lla + feeling",
+      "explanation": "lapsi → lapsella on nälkä"
+    },
+    {
+      "id": 82,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "Liisa is thirsty",
+      "english": "Liisa is thirsty",
+      "answer": "Liisalla on jano",
+      "rule": "name + lla + feeling",
+      "explanation": "Liisa → Liisalla on jano"
+    },
+    {
+      "id": 83,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "Father is in a hurry",
+      "english": "Father is in a hurry",
+      "answer": "isällä on kiire",
+      "rule": "noun + llä + feeling",
+      "explanation": "isä → isällä on kiire"
+    },
+    {
+      "id": 84,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "The child is NOT hungry",
+      "english": "The child is NOT hungry",
+      "answer": "lapsella ei ole nälkä",
+      "rule": "NO partitive for feelings!",
+      "explanation": "⚠️ Even with nouns, feelings don't take partitive in negative!"
+    },
+    {
+      "id": 85,
+      "subtopic": "feelings",
+      "type": "sentence",
+      "sentence": "Matti is NOT in a hurry",
+      "english": "Matti is NOT in a hurry",
+      "answer": "Matilla ei ole kiire",
+      "rule": "NO partitive for feelings!",
+      "explanation": "⚠️ Feelings don't take partitive in negative!"
+    },
+
+    {
+      "id": 86,
+      "subtopic": "pronouns",
+      "type": "adessive",
+      "word": "minä (spoken)",
+      "english": "I (have) - spoken",
+      "answer": "mulla",
+      "rule": "minulla → mulla",
+      "explanation": "Spoken form: minulla → mulla"
+    },
+    {
+      "id": 87,
+      "subtopic": "pronouns",
+      "type": "adessive",
+      "word": "sinä (spoken)",
+      "english": "you (have) - spoken",
+      "answer": "sulla",
+      "rule": "sinulla → sulla",
+      "explanation": "Spoken form: sinulla → sulla"
+    },
+    {
+      "id": 88,
+      "subtopic": "pronouns",
+      "type": "adessive",
+      "word": "hän (spoken)",
+      "english": "he/she (has) - spoken",
+      "answer": "sillä",
+      "rule": "hänellä → sillä",
+      "explanation": "Spoken form: hänellä → sillä"
+    },
+    {
+      "id": 89,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "I don't have a car (spoken)",
+      "english": "I don't have a car (spoken)",
+      "answer": "mulla ei ole autoa",
+      "rule": "mulla + ei ole + partitive",
+      "explanation": "Spoken mulla, still partitive in negative: autoa"
+    },
+    {
+      "id": 90,
+      "subtopic": "negative",
+      "type": "sentence",
+      "sentence": "You don't have time (spoken)",
+      "english": "You don't have time (spoken)",
+      "answer": "sulla ei ole aikaa",
+      "rule": "sulla + ei ole + partitive",
+      "explanation": "Spoken sulla, still partitive in negative: aikaa"
+    }
+  ]
+}

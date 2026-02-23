@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omistusrakenne - Possessive Sentences</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back Button -->
+      <a href="../../" class="back-link">← Takaisin aiheisiin</a>
+
+      <!-- Header -->
+      <header class="quiz-header">
+        <h1>🏠 Omistusrakenne</h1>
+        <p class="subtitle" id="topicTitle">
+          Possessive Sentences - "I have..."
+        </p>
+      </header>
+
+      <!-- Mode Tabs -->
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">
+          📝 Multiple Choice
+        </button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Possessive Sentences Quiz</h2>
+          <p id="quizDescription">Practice "I have" structure with -lla/-llä</p>
+
+          <!-- Basic Structure -->
+          <div class="structure-box">
+            <h3>📐 Basic Structure</h3>
+            <div class="formula">
+              <span class="owner">OWNER</span>
+              <span class="plus">+</span>
+              <span class="lla">-lla/-llä</span>
+              <span class="plus">+</span>
+              <span class="on">on</span>
+              <span class="plus">+</span>
+              <span class="thing">THING</span>
+            </div>
+            <div class="example-sentence">
+              <span class="finnish">Minulla on auto</span>
+              <span class="english">= I have a car</span>
+            </div>
+          </div>
+
+          <!-- Pronouns Table -->
+          <div class="pronouns-section">
+            <h3>👤 Pronouns + -lla/-llä</h3>
+            <table class="pronouns-table">
+              <thead>
+                <tr>
+                  <th>Pronoun</th>
+                  <th>Kirjakieli</th>
+                  <th>Puhekieli</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>minä</td>
+                  <td><strong>minulla</strong></td>
+                  <td>mulla</td>
+                </tr>
+                <tr>
+                  <td>sinä</td>
+                  <td><strong>sinulla</strong></td>
+                  <td>sulla</td>
+                </tr>
+                <tr>
+                  <td>hän</td>
+                  <td><strong>hänellä</strong></td>
+                  <td>sillä</td>
+                </tr>
+                <tr>
+                  <td>me</td>
+                  <td><strong>meillä</strong></td>
+                  <td>meillä</td>
+                </tr>
+                <tr>
+                  <td>te</td>
+                  <td><strong>teillä</strong></td>
+                  <td>teillä</td>
+                </tr>
+                <tr>
+                  <td>he</td>
+                  <td><strong>heillä</strong></td>
+                  <td>niillä</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Names & Nouns -->
+          <div class="names-section">
+            <h3>👥 Names & Nouns + -lla/-llä</h3>
+            <div class="vowel-harmony">
+              <div class="harmony-rule">
+                <span class="vowels back">a, o, u</span> →
+                <span class="ending">-lla</span>
+              </div>
+              <div class="harmony-rule">
+                <span class="vowels front">ä, ö, y + e, i</span> →
+                <span class="ending">-llä</span>
+              </div>
+            </div>
+            <div class="name-examples">
+              <span>Liisa → <strong>Liisalla</strong></span>
+              <span>Matti → <strong>Matilla</strong></span>
+              <span>äiti → <strong>äidillä</strong> (KPT)</span>
+              <span>isä → <strong>isällä</strong></span>
+            </div>
+          </div>
+
+          <!-- Adjectives Rule -->
+          <div class="adjectives-section">
+            <h3>✨ Adjectives ALSO get -lla/-llä!</h3>
+            <p class="rule-note">
+              When describing the owner, the adjective also takes -lla/-llä
+            </p>
+            <div class="adj-examples">
+              <div class="adj-example">
+                <span class="finnish"
+                  ><strong>Pienellä lapsella</strong> on lelu</span
+                >
+                <span class="english"
+                  >= The <em>small</em> child has a toy</span
+                >
+              </div>
+              <div class="adj-example">
+                <span class="finnish"
+                  ><strong>Vanhalla miehellä</strong> on koira</span
+                >
+                <span class="english">= The <em>old</em> man has a dog</span>
+              </div>
+              <div class="adj-example">
+                <span class="finnish"
+                  ><strong>Uudella autolla</strong> on hyvät renkaat</span
+                >
+                <span class="english"
+                  >= The <em>new</em> car has good tires</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Negative Rule -->
+          <div class="negative-section">
+            <h3>❌ Negative = PARTITIVE!</h3>
+            <div class="negative-formula">
+              <span class="owner">OWNER + -lla/-llä</span>
+              <span class="plus">+</span>
+              <span class="ei">ei ole</span>
+              <span class="plus">+</span>
+              <span class="partitive">PARTITIVE</span>
+            </div>
+            <div class="negative-examples">
+              <div class="neg-example">
+                <span class="pos">Minulla on auto</span>
+                <span class="arrow">→</span>
+                <span class="neg">Minulla ei ole <strong>autoa</strong></span>
+              </div>
+              <div class="neg-example">
+                <span class="pos">Sinulla on koira</span>
+                <span class="arrow">→</span>
+                <span class="neg">Sinulla ei ole <strong>koiraa</strong></span>
+              </div>
+              <div class="neg-example">
+                <span class="pos">Heillä on rahaa</span>
+                <span class="arrow">→</span>
+                <span class="neg">Heillä ei ole <strong>rahaa</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feelings Section -->
+          <div class="feelings-section">
+            <h3>😊 Feelings (No Partitive in Negative!)</h3>
+            <p class="rule-note">
+              Feelings use possessive structure, but negative does NOT take
+              partitive!
+            </p>
+
+            <div class="feelings-grid">
+              <div class="feeling">
+                <span class="emoji">🍕</span>
+                <span class="fi">nälkä</span>
+                <span class="en">hungry</span>
+              </div>
+              <div class="feeling">
+                <span class="emoji">💧</span>
+                <span class="fi">jano</span>
+                <span class="en">thirsty</span>
+              </div>
+              <div class="feeling">
+                <span class="emoji">⏰</span>
+                <span class="fi">kiire</span>
+                <span class="en">in a hurry</span>
+              </div>
+              <div class="feeling">
+                <span class="emoji">🥶</span>
+                <span class="fi">kylmä</span>
+                <span class="en">cold</span>
+              </div>
+              <div class="feeling">
+                <span class="emoji">🥵</span>
+                <span class="fi">kuuma</span>
+                <span class="en">hot</span>
+              </div>
+              <div class="feeling">
+                <span class="emoji">💔</span>
+                <span class="fi">ikävä</span>
+                <span class="en">missing</span>
+              </div>
+            </div>
+
+            <div class="feelings-comparison">
+              <div class="feeling-row positive">
+                <span class="label">✓</span>
+                <span>Minulla on nälkä</span>
+                <span class="en">= I'm hungry</span>
+              </div>
+              <div class="feeling-row negative">
+                <span class="label">✗</span>
+                <span>Minulla ei ole <strong>nälkä</strong></span>
+                <span class="en">= I'm NOT hungry</span>
+              </div>
+              <div class="feeling-row wrong">
+                <span class="label">🚫</span>
+                <span><s>Minulla ei ole nälkää</s></span>
+                <span class="en">← WRONG!</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Subtopic selection removed: all questions are unified -->
+
+          <!-- Question Count -->
+          <div class="question-count">
+            <label for="questionCount">Number of questions:</label>
+            <select id="questionCount">
+              <option value="5">5 questions</option>
+              <option value="10" selected>10 questions</option>
+              <option value="15">15 questions</option>
+              <option value="20">20 questions</option>
+              <option value="all">All questions</option>
+            </select>
+            <span class="available-count" id="availableCount"></span>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita Quiz! 🚀</button>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <!-- Progress -->
+          <div class="progress-container">
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+
+          <!-- Question -->
+          <div class="question-container">
+            <div class="question-type" id="questionType">Translate</div>
+            <div class="word-display">
+              <span class="word" id="wordDisplay">minä</span>
+              <span class="ending" id="endingDisplay">+ lla/llä</span>
+            </div>
+            <p class="question-english" id="questionEnglish">I (have)</p>
+          </div>
+
+          <!-- MCQ Options -->
+          <div class="options-container" id="optionsContainer">
+            <!-- Options will be inserted here -->
+          </div>
+
+          <!-- Written Answer -->
+          <div class="written-container hidden" id="writtenContainer">
+            <input
+              type="text"
+              id="writtenAnswer"
+              placeholder="Type your answer..."
+              autocomplete="off"
+              autocapitalize="none"
+            />
+            <button class="submit-btn" id="submitAnswer">Check ✓</button>
+          </div>
+
+          <!-- Feedback -->
+          <div class="feedback hidden" id="feedback">
+            <span class="feedback-icon" id="feedbackIcon">✓</span>
+            <span class="feedback-text" id="feedbackText">Correct!</span>
+            <p class="feedback-explanation" id="feedbackExplanation"></p>
+          </div>
+
+          <!-- Next Button -->
+          <button class="next-btn hidden" id="nextBtn">Seuraava →</button>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Quiz Complete!</h2>
+
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalQuestions">10</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+
+          <p class="score-message" id="scoreMessage">Keep practicing!</p>
+
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Try Again</button>
+            <button class="home-btn" id="homeBtn">🏠 Back to Topics</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>
