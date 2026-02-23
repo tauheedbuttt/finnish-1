@@ -1,0 +1,455 @@
+{
+  "topic": "existential",
+  "title": "Eksistentiaalilause - Existential Sentences",
+  "description": "Practice Finnish existential sentences – expressing what exists where",
+  "instructions": "Identify, form, and understand Finnish existential sentences",
+  "subtopics": [
+    { "id": "all", "name": "All Exercises", "icon": "📚" },
+    { "id": "identify", "name": "Identify Existential", "icon": "🔍" },
+    { "id": "truefalse", "name": "True / False", "icon": "✅" },
+    { "id": "form", "name": "Form the Sentence", "icon": "✏️" },
+    { "id": "object", "name": "Object Form", "icon": "📦" }
+  ],
+  "rules": {
+    "structure": {
+      "description": "Existential sentences describe something existing in a place.",
+      "formula": "PLACE (ssa/lla) + ON/EI OLE + OBJECT (partitive or nominative)",
+      "steps": [
+        "Start with the PLACE in inessive (-ssa/-ssä) or adessive (-lla/-llä) case",
+        "Use ON (positive) or EI OLE (negative) – always in 3rd person singular",
+        "The OBJECT that exists: nominative for one item, partitive for quantities/negatives"
+      ],
+      "examples": [
+        { "finnish": "Talossa on sauna.", "english": "There is a sauna in the house.", "breakdown": "Talo+ssa | on | sauna (nom)" },
+        { "finnish": "Jääkaapissa on maitoa.", "english": "There is milk in the fridge.", "breakdown": "Jääkaappi+ssa | on | maitoa (part)" },
+        { "finnish": "Huoneessa ei ole pöytää.", "english": "There is no table in the room.", "breakdown": "Huone+essa | ei ole | pöytää (part)" },
+        { "finnish": "Lattialla on matto.", "english": "There is a rug on the floor.", "breakdown": "Lattia+lla | on | matto (nom)" }
+      ]
+    },
+    "object_form": {
+      "nominative": "Used for a single, definite countable object: Pöydällä on kirja. (There is a book on the table.)",
+      "partitive": "Used for: mass nouns (maitoa, vettä), negatives (ei ole pöytää), or quantities (kaksi kirjaa)"
+    },
+    "key_places": [
+      { "place": "talo", "form": "talossa", "meaning": "in the house" },
+      { "place": "huone", "form": "huoneessa", "meaning": "in the room" },
+      { "place": "jääkaappi", "form": "jääkaapissa", "meaning": "in the fridge" },
+      { "place": "Helsinki", "form": "Helsingissä", "meaning": "in Helsinki" },
+      { "place": "Turku", "form": "Turussa", "meaning": "in Turku" },
+      { "place": "lattia", "form": "lattialla", "meaning": "on the floor" },
+      { "place": "pöytä", "form": "pöydällä", "meaning": "on the table" },
+      { "place": "seinä", "form": "seinällä", "meaning": "on the wall" },
+      { "place": "sänky", "form": "sängyllä", "meaning": "on the bed" }
+    ]
+  },
+  "question_sets": [
+    {
+      "id": "set_identify_1",
+      "type": "identify_existential",
+      "subtopic": "identify",
+      "title": "Valitse eksistentiaalilause",
+      "instructions_fi": "Valitse, kumpi lause on eksistentiaalilause.",
+      "instructions_en": "Choose which sentence is an existential sentence.",
+      "pairs": [
+        {
+          "number": 1,
+          "options": [
+            { "text": "Turku on kaunis.", "is_existential": false },
+            { "text": "Talossa on sauna.", "is_existential": true }
+          ],
+          "explanation": "\"Talossa on sauna\" is existential – it means 'There is a sauna in the house.' PLACE (talossa) + ON + OBJECT (sauna). 'Turku on kaunis' is a descriptive sentence (Turku is beautiful)."
+        },
+        {
+          "number": 2,
+          "options": [
+            { "text": "Mä juon kahvia.", "is_existential": false },
+            { "text": "Helsingissä on metro.", "is_existential": true }
+          ],
+          "explanation": "\"Helsingissä on metro\" is existential – 'There is a metro in Helsinki.' PLACE (Helsingissä) + ON + OBJECT (metro). 'Mä juon kahvia' is a regular subject-verb-object sentence."
+        },
+        {
+          "number": 3,
+          "options": [
+            { "text": "Lattialla on matto.", "is_existential": true },
+            { "text": "Lisa on kotoisin Saksasta.", "is_existential": false }
+          ],
+          "explanation": "\"Lattialla on matto\" is existential – 'There is a rug on the floor.' PLACE (lattialla) + ON + OBJECT (matto). 'Lisa on kotoisin Saksasta' describes where Lisa is from."
+        },
+        {
+          "number": 4,
+          "options": [
+            { "text": "Huoneessa ei ole pöytää.", "is_existential": true },
+            { "text": "Mä asun Turussa.", "is_existential": false }
+          ],
+          "explanation": "\"Huoneessa ei ole pöytää\" is existential – 'There is no table in the room.' Negative existential: PLACE + EI OLE + OBJECT (partitive). 'Mä asun Turussa' uses a regular verb (asua = to live)."
+        },
+        {
+          "number": 5,
+          "options": [
+            { "text": "Mulla on koira.", "is_existential": false },
+            { "text": "Jääkaapissa on maitoa ja juustoa.", "is_existential": true }
+          ],
+          "explanation": "\"Jääkaapissa on maitoa ja juustoa\" is existential – 'There is milk and cheese in the fridge.' PLACE (jääkaapissa) + ON + OBJECTS (maitoa, juustoa – partitive). 'Mulla on koira' is a possession sentence."
+        },
+        {
+          "number": 6,
+          "options": [
+            { "text": "Pihalla on auto.", "is_existential": true },
+            { "text": "Auto on punainen.", "is_existential": false }
+          ],
+          "explanation": "\"Pihalla on auto\" is existential – 'There is a car in the yard.' PLACE (pihalla) + ON + OBJECT (auto). 'Auto on punainen' is descriptive (The car is red)."
+        },
+        {
+          "number": 7,
+          "options": [
+            { "text": "Kirjastossa on paljon kirjoja.", "is_existential": true },
+            { "text": "Hän lukee kirjaa.", "is_existential": false }
+          ],
+          "explanation": "\"Kirjastossa on paljon kirjoja\" is existential – 'There are many books in the library.' PLACE + ON + OBJECT (partitive, quantity). 'Hän lukee kirjaa' is a regular action sentence."
+        },
+        {
+          "number": 8,
+          "options": [
+            { "text": "Saunassa on kuuma.", "is_existential": false },
+            { "text": "Saunassa on kiuas.", "is_existential": true }
+          ],
+          "explanation": "\"Saunassa on kiuas\" is existential – 'There is a sauna stove in the sauna.' PLACE + ON + OBJECT (kiuas). 'Saunassa on kuuma' describes a quality (it's hot in the sauna)."
+        }
+      ]
+    },
+    {
+      "id": "set_truefalse_1",
+      "type": "true_false_image",
+      "subtopic": "truefalse",
+      "title": "Oikein vai väärin?",
+      "instructions_fi": "Katso kuvaa ja valitse, onko lause oikein vai väärin.",
+      "instructions_en": "Look at the room description and decide if the sentence is correct or incorrect.",
+      "scene_description": "A cosy room: there is a cat on the bed, a clock on the wall, a computer on the table, a book on the floor, and a lamp in the corner. There is no cat on the floor.",
+      "scene_emoji": "🛏️🐱🕐💻📚🪴",
+      "items": [
+        {
+          "number": 1,
+          "sentence": "Sängyllä on kissa.",
+          "english": "There is a cat on the bed.",
+          "correct": true,
+          "explanation": "Oikein! Yes, there is a cat on the bed. Sängyllä (adessive of sänky = bed) + on + kissa (nom)."
+        },
+        {
+          "number": 2,
+          "sentence": "Seinällä on kello.",
+          "english": "There is a clock on the wall.",
+          "correct": true,
+          "explanation": "Oikein! Yes, there is a clock on the wall. Seinällä (adessive of seinä = wall) + on + kello (nom)."
+        },
+        {
+          "number": 3,
+          "sentence": "Pöydällä ei ole tietokonetta.",
+          "english": "There is no computer on the table.",
+          "correct": false,
+          "explanation": "Väärin! There IS a computer on the table. The correct sentence would be: Pöydällä on tietokone."
+        },
+        {
+          "number": 4,
+          "sentence": "Lattialla on kirja.",
+          "english": "There is a book on the floor.",
+          "correct": true,
+          "explanation": "Oikein! Yes, there is a book on the floor. Lattialla (adessive of lattia = floor) + on + kirja (nom)."
+        },
+        {
+          "number": 5,
+          "sentence": "Lattialla on kissa.",
+          "english": "There is a cat on the floor.",
+          "correct": false,
+          "explanation": "Väärin! The cat is on the bed, not the floor. The correct sentence: Sängyllä on kissa."
+        },
+        {
+          "number": 6,
+          "sentence": "Huoneessa on lamppu.",
+          "english": "There is a lamp in the room.",
+          "correct": true,
+          "explanation": "Oikein! Yes, there is a lamp in the room. Huoneessa (inessive of huone = room) + on + lamppu (nom)."
+        },
+        {
+          "number": 7,
+          "sentence": "Sängyllä ei ole kissaa.",
+          "english": "There is no cat on the bed.",
+          "correct": false,
+          "explanation": "Väärin! There IS a cat on the bed. Sängyllä on kissa. When negating, the object takes partitive: kissaa."
+        },
+        {
+          "number": 8,
+          "sentence": "Pöydällä on tietokone.",
+          "english": "There is a computer on the table.",
+          "correct": true,
+          "explanation": "Oikein! Yes, there is a computer on the table. Pöydällä (adessive of pöytä = table) + on + tietokone (nom)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Talossa on sauna.",
+      "question": "Is this an existential sentence?",
+      "answer": "yes",
+      "explanation": "Yes! PLACE (talossa) + ON + OBJECT (sauna). 'There is a sauna in the house.'"
+    },
+    {
+      "id": 2,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Turku on kaunis.",
+      "question": "Is this an existential sentence?",
+      "answer": "no",
+      "explanation": "No – this is descriptive (Turku is beautiful). No place-existence structure."
+    },
+    {
+      "id": 3,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Helsingissä on metro.",
+      "question": "Is this an existential sentence?",
+      "answer": "yes",
+      "explanation": "Yes! PLACE (Helsingissä) + ON + OBJECT (metro). 'There is a metro in Helsinki.'"
+    },
+    {
+      "id": 4,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Lattialla on matto.",
+      "question": "Is this an existential sentence?",
+      "answer": "yes",
+      "explanation": "Yes! PLACE (lattialla) + ON + OBJECT (matto). 'There is a rug on the floor.'"
+    },
+    {
+      "id": 5,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Mä asun Turussa.",
+      "question": "Is this an existential sentence?",
+      "answer": "no",
+      "explanation": "No – this uses a regular verb 'asua' (to live). Not an existential sentence."
+    },
+    {
+      "id": 6,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Jääkaapissa on maitoa.",
+      "question": "Is this an existential sentence?",
+      "answer": "yes",
+      "explanation": "Yes! PLACE (jääkaapissa) + ON + OBJECT (maitoa, partitive). 'There is milk in the fridge.'"
+    },
+    {
+      "id": 7,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Huoneessa ei ole pöytää.",
+      "question": "Is this an existential sentence?",
+      "answer": "yes",
+      "explanation": "Yes! Negative existential: PLACE (huoneessa) + EI OLE + OBJECT (pöytää, partitive). 'There is no table in the room.'"
+    },
+    {
+      "id": 8,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Hän on väsynyt.",
+      "question": "Is this an existential sentence?",
+      "answer": "no",
+      "explanation": "No – 'Hän on väsynyt' means 'He/she is tired.' No place, no existence."
+    },
+    {
+      "id": 9,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Kirjastossa on paljon kirjoja.",
+      "question": "Is this an existential sentence?",
+      "answer": "yes",
+      "explanation": "Yes! PLACE (kirjastossa) + ON + OBJECT (paljon kirjoja, partitive). 'There are many books in the library.'"
+    },
+    {
+      "id": 10,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Mulla on koira.",
+      "question": "Is this an existential sentence?",
+      "answer": "no",
+      "explanation": "No – 'Mulla on koira' is a possession sentence (I have a dog), not existential."
+    },
+    {
+      "id": 11,
+      "subtopic": "form",
+      "type": "sentence",
+      "sentence": "There is a sauna in the house. (talo + sauna)",
+      "english": "There is a sauna in the house.",
+      "answer": "Talossa on sauna.",
+      "explanation": "talo → talossa (inessive) + on + sauna (nominative, single item)"
+    },
+    {
+      "id": 12,
+      "subtopic": "form",
+      "type": "sentence",
+      "sentence": "There is a metro in Helsinki. (Helsinki + metro)",
+      "english": "There is a metro in Helsinki.",
+      "answer": "Helsingissä on metro.",
+      "explanation": "Helsinki → Helsingissä (inessive, KPT: k→∅) + on + metro (nominative)"
+    },
+    {
+      "id": 13,
+      "subtopic": "form",
+      "type": "sentence",
+      "sentence": "There is a rug on the floor. (lattia + matto)",
+      "english": "There is a rug on the floor.",
+      "answer": "Lattialla on matto.",
+      "explanation": "lattia → lattialla (adessive) + on + matto (nominative)"
+    },
+    {
+      "id": 14,
+      "subtopic": "form",
+      "type": "sentence",
+      "sentence": "There is no table in the room. (huone + pöytä, negative)",
+      "english": "There is no table in the room.",
+      "answer": "Huoneessa ei ole pöytää.",
+      "explanation": "huone → huoneessa + ei ole + pöytää (partitive – always partitive in negatives)"
+    },
+    {
+      "id": 15,
+      "subtopic": "form",
+      "type": "sentence",
+      "sentence": "There is milk in the fridge. (jääkaappi + maito, mass noun)",
+      "english": "There is milk in the fridge.",
+      "answer": "Jääkaapissa on maitoa.",
+      "explanation": "jääkaappi → jääkaapissa + on + maitoa (partitive – mass noun)"
+    },
+    {
+      "id": 16,
+      "subtopic": "form",
+      "type": "sentence",
+      "sentence": "There is a clock on the wall. (seinä + kello)",
+      "english": "There is a clock on the wall.",
+      "answer": "Seinällä on kello.",
+      "explanation": "seinä → seinällä (adessive) + on + kello (nominative)"
+    },
+    {
+      "id": 17,
+      "subtopic": "form",
+      "type": "sentence",
+      "sentence": "There is a cat on the bed. (sänky + kissa)",
+      "english": "There is a cat on the bed.",
+      "answer": "Sängyllä on kissa.",
+      "explanation": "sänky → sängyllä (adessive, KPT: k→∅) + on + kissa (nominative)"
+    },
+    {
+      "id": 18,
+      "subtopic": "form",
+      "type": "sentence",
+      "sentence": "There is no cat on the floor. (lattia + kissa, negative)",
+      "english": "There is no cat on the floor.",
+      "answer": "Lattialla ei ole kissaa.",
+      "explanation": "lattia → lattialla + ei ole + kissaa (partitive in negative)"
+    },
+    {
+      "id": 19,
+      "subtopic": "object",
+      "type": "genitive",
+      "word": "kirja",
+      "ending": "Object form: Pöydällä on ___",
+      "english": "There is a book on the table. (single, definite)",
+      "answer": "kirja",
+      "rule": "nominative",
+      "explanation": "A single definite object uses nominative: Pöydällä on kirja."
+    },
+    {
+      "id": 20,
+      "subtopic": "object",
+      "type": "partitive",
+      "word": "maito",
+      "ending": "Object form: Jääkaapissa on ___",
+      "english": "There is milk in the fridge. (mass noun)",
+      "answer": "maitoa",
+      "rule": "partitive – mass noun",
+      "explanation": "Mass nouns always use partitive: maitoa (maito → maito + a)"
+    },
+    {
+      "id": 21,
+      "subtopic": "object",
+      "type": "partitive",
+      "word": "pöytä",
+      "ending": "Object form: Huoneessa ei ole ___",
+      "english": "There is no table in the room. (negative)",
+      "answer": "pöytää",
+      "rule": "partitive – negative",
+      "explanation": "Negatives always use partitive: pöytää (pöytä → pöytä + ä)"
+    },
+    {
+      "id": 22,
+      "subtopic": "object",
+      "type": "partitive",
+      "word": "vesi",
+      "ending": "Object form: Pullossa on ___",
+      "english": "There is water in the bottle. (mass noun)",
+      "answer": "vettä",
+      "rule": "partitive – mass noun (si-word)",
+      "explanation": "Mass noun + si-word: vesi → vettä (si → tt + ä)"
+    },
+    {
+      "id": 23,
+      "subtopic": "object",
+      "type": "genitive",
+      "word": "auto",
+      "ending": "Object form: Pihalla on ___",
+      "english": "There is a car in the yard. (single item)",
+      "answer": "auto",
+      "rule": "nominative",
+      "explanation": "Single countable object uses nominative: Pihalla on auto."
+    },
+    {
+      "id": 24,
+      "subtopic": "object",
+      "type": "partitive",
+      "word": "kirja",
+      "ending": "Object form: Hyllyllä on paljon ___",
+      "english": "There are many books on the shelf. (quantity)",
+      "answer": "kirjoja",
+      "rule": "partitive – quantity/plural",
+      "explanation": "Quantity expressions use partitive plural: kirjoja (kirja → kirjo + ja)"
+    },
+    {
+      "id": 25,
+      "subtopic": "truefalse",
+      "type": "identify",
+      "word": "Sängyllä on kissa.",
+      "question": "True or false? (The cat is on the bed.)",
+      "answer": "yes",
+      "explanation": "Oikein! There is a cat on the bed. Sängyllä on kissa."
+    },
+    {
+      "id": 26,
+      "subtopic": "truefalse",
+      "type": "identify",
+      "word": "Lattialla on kissa.",
+      "question": "True or false? (The cat is on the floor.)",
+      "answer": "no",
+      "explanation": "Väärin! The cat is on the bed, not the floor. Kissa on sängyllä."
+    },
+    {
+      "id": 27,
+      "subtopic": "truefalse",
+      "type": "identify",
+      "word": "Seinällä on kello.",
+      "question": "True or false? (There is a clock on the wall.)",
+      "answer": "yes",
+      "explanation": "Oikein! There is a clock on the wall. Seinällä on kello."
+    },
+    {
+      "id": 28,
+      "subtopic": "truefalse",
+      "type": "identify",
+      "word": "Pöydällä ei ole tietokonetta.",
+      "question": "True or false? (There is no computer on the table.)",
+      "answer": "no",
+      "explanation": "Väärin! There IS a computer on the table. Pöydällä on tietokone."
+    }
+  ]
+}

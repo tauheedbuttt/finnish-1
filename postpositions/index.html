@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postpositiot - Postpositions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../../" class="back-link">← Takaisin aiheisiin</a>
+
+      <header class="quiz-header">
+        <h1>📍 Postpositiot</h1>
+        <p class="subtitle" id="topicTitle">Finnish Postpositions</p>
+      </header>
+
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">📝 Multiple Choice</button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Postpositions Quiz</h2>
+          <p id="quizDescription">Practice Finnish postpositions</p>
+
+          <!-- Formula Box -->
+          <div class="formula-box">
+            <h3>🧠 How Postpositions Work</h3>
+            <p class="formula-intro">Unlike English <em>prepositions</em> which come <strong>before</strong> the noun, Finnish <em>postpositions</em> come <strong>after</strong> the noun. The noun must be in the <strong>genitive case</strong>.</p>
+            <div class="formula-display">
+              <div class="formula-part noun-part">
+                <span class="part-label">NOUN</span>
+                <span class="part-example">talo → talon</span>
+                <span class="part-case">genitive (-n)</span>
+              </div>
+              <div class="formula-plus">+</div>
+              <div class="formula-part post-part">
+                <span class="part-label">POSTPOSITIO</span>
+                <span class="part-example">takana</span>
+                <span class="part-case">comes AFTER</span>
+              </div>
+              <div class="formula-equals">=</div>
+              <div class="formula-part result-part">
+                <span class="part-label">MEANING</span>
+                <span class="part-example">talon takana</span>
+                <span class="part-case">behind the house</span>
+              </div>
+            </div>
+            <div class="formula-examples">
+              <div class="fex"><span class="fex-fi">koiran edessä</span><span class="fex-arrow">→</span><span class="fex-en">in front of the dog</span><span class="fex-break">koira → koira<strong>n</strong> + edessä</span></div>
+              <div class="fex"><span class="fex-fi">pöydän vieressä</span><span class="fex-arrow">→</span><span class="fex-en">next to the table</span><span class="fex-break">pöytä → pöydä<strong>n</strong> + vieressä</span></div>
+              <div class="fex"><span class="fex-fi">peiton alla</span><span class="fex-arrow">→</span><span class="fex-en">under the blanket</span><span class="fex-break">peitto → peito<strong>n</strong> + alla</span></div>
+            </div>
+          </div>
+
+          <!-- Postpositions Reference Table -->
+          <div class="postpos-table-box">
+            <h3>📋 Postpositions Reference</h3>
+            <div class="postpos-grid">
+              <div class="pp-card"><span class="pp-fi">edessä</span><span class="pp-en">in front of</span></div>
+              <div class="pp-card"><span class="pp-fi">takana</span><span class="pp-en">behind</span></div>
+              <div class="pp-card"><span class="pp-fi">vieressä</span><span class="pp-en">next to / beside</span></div>
+              <div class="pp-card"><span class="pp-fi">alla</span><span class="pp-en">under</span></div>
+              <div class="pp-card"><span class="pp-fi">päällä</span><span class="pp-en">on top of</span></div>
+              <div class="pp-card"><span class="pp-fi">sisällä</span><span class="pp-en">inside</span></div>
+              <div class="pp-card"><span class="pp-fi">välissä</span><span class="pp-en">between</span></div>
+              <div class="pp-card"><span class="pp-fi">ääressä</span><span class="pp-en">by / at</span></div>
+              <div class="pp-card"><span class="pp-fi">keskellä</span><span class="pp-en">in the middle of</span></div>
+              <div class="pp-card"><span class="pp-fi">ympärillä</span><span class="pp-en">around</span></div>
+              <div class="pp-card wide"><span class="pp-fi">oikealla puolella</span><span class="pp-en">on the right side of</span></div>
+              <div class="pp-card wide"><span class="pp-fi">vasemmalla puolella</span><span class="pp-en">on the left side of</span></div>
+            </div>
+          </div>
+
+          <!-- Exercise Toggle -->
+          <div class="subtopic-selection">
+            <h3>🎯 Select Exercise Type</h3>
+            <div class="exercise-type-group">
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="questions" checked />
+                <span>📋 Standard Questions (MCQ / Written)</span>
+              </label>
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="question_sets" />
+                <span>📖 Exercises (Drag &amp; Drop / Write)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Standard options -->
+          <div id="standardOptions">
+            <div class="subtopic-selection">
+              <h3>📚 Select Topic</h3>
+              <div class="subtopic-checkboxes" id="subtopicCheckboxes"></div>
+            </div>
+            <div class="question-count">
+              <label for="questionCount">Number of questions:</label>
+              <select id="questionCount">
+                <option value="5">5 questions</option>
+                <option value="10" selected>10 questions</option>
+                <option value="15">15 questions</option>
+                <option value="all">All questions</option>
+              </select>
+              <span class="available-count" id="availableCount"></span>
+            </div>
+          </div>
+
+          <!-- Set options -->
+          <div id="setOptions" class="hidden">
+            <div class="subtopic-selection">
+              <h3>📖 Select an Exercise</h3>
+              <div id="setList" class="set-list"></div>
+            </div>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita! 🚀</button>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <div class="progress-container">
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+          <div class="question-container">
+            <div class="question-type" id="questionType">Translate</div>
+            <div class="word-display">
+              <span class="word" id="wordDisplay"></span>
+              <span class="ending" id="endingDisplay"></span>
+            </div>
+            <p class="question-english" id="questionEnglish"></p>
+          </div>
+          <div class="options-container" id="optionsContainer"></div>
+          <div class="written-container hidden" id="writtenContainer">
+            <input type="text" id="writtenAnswer" placeholder="Kirjoita vastaus..." autocomplete="off" autocapitalize="none" />
+            <button class="submit-btn" id="submitAnswer">Tarkista ✓</button>
+          </div>
+          <div class="feedback hidden" id="feedback">
+            <span class="feedback-icon" id="feedbackIcon">✓</span>
+            <span class="feedback-text" id="feedbackText"></span>
+            <p class="feedback-explanation" id="feedbackExplanation"></p>
+          </div>
+          <button class="next-btn hidden" id="nextBtn">Seuraava →</button>
+        </div>
+      </div>
+
+      <!-- Exercise Set Screen -->
+      <div id="exerciseSetScreen" class="screen hidden">
+        <div class="exercise-set-card">
+          <div class="exercise-set-header">
+            <button class="back-to-start-btn" id="backToStartBtn">← Takaisin</button>
+            <h2 id="exerciseSetTitle"></h2>
+            <p id="exerciseSetInstructions" class="exercise-instructions"></p>
+          </div>
+
+          <!-- Drag postposition exercise -->
+          <div id="exerciseDrag" class="exercise-type-block hidden">
+            <div class="word-bank-box">
+              <h4>Sanasto – Word Bank</h4>
+              <div id="wordBank" class="word-bank"></div>
+            </div>
+            <div class="vocab-hint-toggle">
+              <button class="vocab-toggle-btn" id="vocabToggleBtn">📖 Show vocabulary hints</button>
+              <div id="vocabHints" class="vocab-hints hidden"></div>
+            </div>
+            <div id="dragItems" class="drag-items"></div>
+            <button class="check-all-btn" id="checkDragBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="dragScore"></div>
+          </div>
+
+          <!-- Write genitive + postposition exercise -->
+          <div id="exerciseWrite" class="exercise-type-block hidden">
+            <div class="note-box" id="writeNoteBox"></div>
+            <div class="vocab-hint-toggle">
+              <button class="vocab-toggle-btn" id="writeVocabToggleBtn">📖 Show vocabulary hints</button>
+              <div id="writeVocabHints" class="vocab-hints hidden"></div>
+            </div>
+            <div id="writeItems" class="write-items"></div>
+            <button class="check-all-btn" id="checkWriteBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="writeScore"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Mahtavaa!</h2>
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalQuestions">10</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+          <p class="score-message" id="scoreMessage"></p>
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Uudelleen</button>
+            <button class="home-btn" id="homeBtn">🏠 Takaisin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>

@@ -229,6 +229,59 @@
         "kieltolause",
         "kielioppi"
       ]
+    },
+    {
+      "id": "postpositions",
+      "title": "Postpositiot",
+      "titleEn": "Postpositions",
+      "description": "Practice Finnish postpositions (alla, päällä, vieressä, takana, etc.) and their use with cases!",
+      "icon": "⬇️",
+      "path": "postpositions/",
+      "questionCount": 0,
+      "difficulty": "intermediate",
+      "tags": [
+        "postpositiot",
+        "postpositions",
+        "paikka",
+        "sijamuodot",
+        "kielioppi",
+        "grammar"
+      ]
+    },
+    {
+      "id": "existential",
+      "title": "Eksistentiaalilauseet",
+      "titleEn": "Existential Sentences",
+      "description": "Practice Finnish existential sentences (on olemassa, pöydällä on kirja, kadulla on auto, etc.)",
+      "icon": "🪑",
+      "path": "existential/",
+      "questionCount": 0,
+      "difficulty": "intermediate",
+      "tags": [
+        "eksistentiaalilause",
+        "on olemassa",
+        "paikka",
+        "kielioppi",
+        "grammar"
+      ]
+    },
+    {
+      "id": "imperative",
+      "title": "Imperatiivi",
+      "titleEn": "Imperative Mood",
+      "description": "Practice Finnish imperative forms (commands, requests, suggestions) for all persons!",
+      "icon": "🗣️",
+      "path": "imperative/",
+      "questionCount": 0,
+      "difficulty": "intermediate",
+      "tags": [
+        "imperatiivi",
+        "imperative",
+        "käskyt",
+        "pyynnöt",
+        "kielioppi",
+        "grammar"
+      ]
     }
   ]
 }

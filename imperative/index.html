@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imperatiivi - Imperative</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../../" class="back-link">← Takaisin aiheisiin</a>
+
+      <header class="quiz-header">
+        <h1>⚡ Imperatiivi</h1>
+        <p class="subtitle" id="topicTitle">Finnish Imperative</p>
+      </header>
+
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">📝 Multiple Choice</button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Imperative Quiz</h2>
+          <p id="quizDescription">Practice Finnish imperatives</p>
+
+          <!-- Formula Box -->
+          <div class="formula-box">
+            <h3>🧠 How the Imperative Works</h3>
+            <p class="formula-intro">The imperative is used to give <strong>commands, instructions, warnings, and wishes</strong>. It's formed from the <strong>1st person singular</strong> (minä-form) by removing the final <strong>-n</strong>. For negative, add <strong>älä</strong> before the imperative form.</p>
+
+            <div class="formula-display">
+              <div class="formula-part verb-part">
+                <span class="part-label">VERB</span>
+                <span class="part-example">nukkua</span>
+                <span class="part-case">basic form</span>
+              </div>
+              <div class="formula-plus">→</div>
+              <div class="formula-part minä-part">
+                <span class="part-label">1ST PERSON</span>
+                <span class="part-example">nukun</span>
+                <span class="part-case">minä-form</span>
+              </div>
+              <div class="formula-plus">→</div>
+              <div class="formula-part result-part">
+                <span class="part-label">IMPERATIVE</span>
+                <span class="part-example">nuku!</span>
+                <span class="part-case">remove -n</span>
+              </div>
+            </div>
+
+            <div class="neg-formula-display">
+              <div class="neg-label">NEGATIVE:</div>
+              <div class="neg-chip">älä</div>
+              <div class="formula-plus">+</div>
+              <div class="neg-chip">nuku</div>
+              <div class="formula-equals">=</div>
+              <div class="neg-result">Älä nuku! <span>(Don't sleep!)</span></div>
+            </div>
+
+            <div class="formula-examples">
+              <div class="fex">
+                <span class="fex-verb">juoda</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-step">juon</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">juo!</span>
+                <span class="fex-en">drink!</span>
+                <span class="fex-neg">älä juo! = don't drink!</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">opiskella</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-step">opiskelen</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">opiskele!</span>
+                <span class="fex-en">study!</span>
+                <span class="fex-neg">älä opiskele! = don't study!</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">valita</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-step">valitsen</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">valitse!</span>
+                <span class="fex-en">choose!</span>
+                <span class="fex-neg">älä valitse! = don't choose!</span>
+              </div>
+            </div>
+
+            <div class="usage-notes">
+              <h4>📌 Used for:</h4>
+              <div class="usage-chips">
+                <span class="usage-chip">Instructions</span>
+                <span class="usage-chip">Warnings</span>
+                <span class="usage-chip">Signs</span>
+                <span class="usage-chip">Recipes</span>
+                <span class="usage-chip">Wishes</span>
+              </div>
+              <div class="polite-note">
+                💬 <strong>Polite forms:</strong> <em>ole hyvä</em> (please / here you go) &nbsp;·&nbsp; <em>ole kiltti</em> (be kind / please)
+              </div>
+              <div class="grammar-note">
+                📖 <strong>Grammar note:</strong> The object in an imperative sentence is usually in the <strong>nominative</strong> case. The negative imperative uses the <strong>same form</strong> as the positive.
+              </div>
+            </div>
+          </div>
+
+          <!-- Imperatives Reference Table -->
+          <div class="imper-table-box">
+            <h3>📋 Common Imperatives Reference</h3>
+            <div class="imper-grid">
+              <div class="imp-card">
+                <span class="imp-verb">nukkua</span>
+                <span class="imp-pos">nuku!</span>
+                <span class="imp-neg">älä nuku!</span>
+                <span class="imp-en">sleep / don't sleep</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">juoda</span>
+                <span class="imp-pos">juo!</span>
+                <span class="imp-neg">älä juo!</span>
+                <span class="imp-en">drink / don't drink</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">syödä</span>
+                <span class="imp-pos">syö!</span>
+                <span class="imp-neg">älä syö!</span>
+                <span class="imp-en">eat / don't eat</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">puhua</span>
+                <span class="imp-pos">puhu!</span>
+                <span class="imp-neg">älä puhu!</span>
+                <span class="imp-en">speak / don't speak</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">opiskella</span>
+                <span class="imp-pos">opiskele!</span>
+                <span class="imp-neg">älä opiskele!</span>
+                <span class="imp-en">study / don't study</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">kävellä</span>
+                <span class="imp-pos">kävele!</span>
+                <span class="imp-neg">älä kävele!</span>
+                <span class="imp-en">walk / don't walk</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">avata</span>
+                <span class="imp-pos">avaa!</span>
+                <span class="imp-neg">älä avaa!</span>
+                <span class="imp-en">open / don't open</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">siivota</span>
+                <span class="imp-pos">siivoa!</span>
+                <span class="imp-neg">älä siivoa!</span>
+                <span class="imp-en">clean / don't clean</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">valita</span>
+                <span class="imp-pos">valitse!</span>
+                <span class="imp-neg">älä valitse!</span>
+                <span class="imp-en">choose / don't choose</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">häiritä</span>
+                <span class="imp-pos">häiritse!</span>
+                <span class="imp-neg">älä häiritse!</span>
+                <span class="imp-en">disturb / don't disturb</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">ottaa</span>
+                <span class="imp-pos">ota!</span>
+                <span class="imp-neg">älä ota!</span>
+                <span class="imp-en">take / don't take</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">laittaa</span>
+                <span class="imp-pos">laita!</span>
+                <span class="imp-neg">älä laita!</span>
+                <span class="imp-en">put / don't put</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exercise Toggle -->
+          <div class="subtopic-selection">
+            <h3>🎯 Select Exercise Type</h3>
+            <div class="exercise-type-group">
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="questions" checked />
+                <span>📋 Standard Questions (MCQ / Written)</span>
+              </label>
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="question_sets" />
+                <span>📖 Exercises (Write / Drag &amp; Match)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Standard options -->
+          <div id="standardOptions">
+            <div class="subtopic-selection">
+              <h3>📚 Select Topic</h3>
+              <div class="subtopic-checkboxes" id="subtopicCheckboxes"></div>
+            </div>
+            <div class="question-count">
+              <label for="questionCount">Number of questions:</label>
+              <select id="questionCount">
+                <option value="5">5 questions</option>
+                <option value="10" selected>10 questions</option>
+                <option value="15">15 questions</option>
+                <option value="all">All questions</option>
+              </select>
+              <span class="available-count" id="availableCount"></span>
+            </div>
+          </div>
+
+          <!-- Set options -->
+          <div id="setOptions" class="hidden">
+            <div class="subtopic-selection">
+              <h3>📖 Select an Exercise</h3>
+              <div id="setList" class="set-list"></div>
+            </div>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita! 🚀</button>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <div class="progress-container">
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+          <div class="question-container">
+            <div class="question-type" id="questionType">Translate</div>
+            <div class="word-display">
+              <span class="word" id="wordDisplay"></span>
+              <span class="ending" id="endingDisplay"></span>
+            </div>
+            <p class="question-english" id="questionEnglish"></p>
+          </div>
+          <div class="options-container" id="optionsContainer"></div>
+          <div class="written-container hidden" id="writtenContainer">
+            <input type="text" id="writtenAnswer" placeholder="Kirjoita vastaus..." autocomplete="off" autocapitalize="none" />
+            <button class="submit-btn" id="submitAnswer">Tarkista ✓</button>
+          </div>
+          <div class="feedback hidden" id="feedback">
+            <span class="feedback-icon" id="feedbackIcon">✓</span>
+            <span class="feedback-text" id="feedbackText"></span>
+            <p class="feedback-explanation" id="feedbackExplanation"></p>
+          </div>
+          <button class="next-btn hidden" id="nextBtn">Seuraava →</button>
+        </div>
+      </div>
+
+      <!-- Exercise Set Screen -->
+      <div id="exerciseSetScreen" class="screen hidden">
+        <div class="exercise-set-card">
+          <div class="exercise-set-header">
+            <button class="back-to-start-btn" id="backToStartBtn">← Takaisin</button>
+            <h2 id="exerciseSetTitle"></h2>
+            <p id="exerciseSetInstructions" class="exercise-instructions"></p>
+          </div>
+
+          <!-- Write imperative exercise (Dos & Don'ts) -->
+          <div id="exerciseWrite" class="exercise-type-block hidden">
+            <div class="note-box" id="writeNoteBox"></div>
+            <div id="writeItems" class="write-items"></div>
+            <button class="check-all-btn" id="checkWriteBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="writeScore"></div>
+          </div>
+
+          <!-- Drag match exercise (Finnish advice translations) -->
+          <div id="exerciseDrag" class="exercise-type-block hidden">
+            <div id="dragMatchItems" class="drag-match-container"></div>
+            <button class="check-all-btn" id="checkDragBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="dragScore"></div>
+          </div>
+
+          <!-- Click to identify exercise -->
+          <div id="exerciseIdentify" class="exercise-type-block hidden">
+            <div class="identify-text-box" id="identifyTextBox"></div>
+            <div class="identify-info">
+              <span id="identifyCount" class="identify-count-badge">0 selected</span>
+              <span class="identify-target" id="identifyTarget"></span>
+            </div>
+            <button class="check-all-btn" id="checkIdentifyBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="identifyScore"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Mahtavaa!</h2>
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalQuestions">10</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+          <p class="score-message" id="scoreMessage"></p>
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Uudelleen</button>
+            <button class="home-btn" id="homeBtn">🏠 Takaisin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>

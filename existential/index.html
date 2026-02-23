@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eksistentiaalilause - Existential Sentences</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../../" class="back-link">← Takaisin aiheisiin</a>
+
+      <header class="quiz-header">
+        <h1>🏠 Eksistentiaalilause</h1>
+        <p class="subtitle" id="topicTitle">Existential Sentences</p>
+      </header>
+
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">📝 Multiple Choice</button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Existential Sentences Quiz</h2>
+          <p id="quizDescription">Practice Finnish existential sentences</p>
+
+          <!-- Formula Box -->
+          <div class="formula-box">
+            <h3>🧠 The Existential Formula</h3>
+            <div class="formula-display">
+              <div class="formula-part place">
+                <span class="part-label">PAIKKA</span>
+                <span class="part-example">talossa / lattialla</span>
+                <span class="part-case">-ssa / -lla</span>
+              </div>
+              <div class="formula-plus">+</div>
+              <div class="formula-part verb">
+                <span class="part-label">VERBI</span>
+                <span class="part-example">on / ei ole</span>
+                <span class="part-case">always 3rd sg.</span>
+              </div>
+              <div class="formula-plus">+</div>
+              <div class="formula-part object">
+                <span class="part-label">OBJEKTI</span>
+                <span class="part-example">sauna / maitoa</span>
+                <span class="part-case">nom. / part.</span>
+              </div>
+            </div>
+            <div class="formula-examples">
+              <div class="fex positive">
+                <span class="fex-icon">✅</span>
+                <span class="fex-fi">Talossa on sauna.</span>
+                <span class="fex-en">There is a sauna in the house.</span>
+              </div>
+              <div class="fex positive">
+                <span class="fex-icon">✅</span>
+                <span class="fex-fi">Jääkaapissa on maitoa.</span>
+                <span class="fex-en">There is milk in the fridge.</span>
+              </div>
+              <div class="fex negative">
+                <span class="fex-icon">❌</span>
+                <span class="fex-fi">Huoneessa ei ole pöytää.</span>
+                <span class="fex-en">There is no table in the room.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Object Form Box -->
+          <div class="object-box">
+            <h3>📦 Object Form Rules</h3>
+            <div class="object-rules">
+              <div class="object-rule nominative">
+                <span class="rule-icon">1️⃣</span>
+                <div class="rule-content">
+                  <strong>Nominative</strong> – single countable item (positive only)
+                  <em>Pöydällä on <u>kirja</u>.</em>
+                </div>
+              </div>
+              <div class="object-rule partitive">
+                <span class="rule-icon">🧊</span>
+                <div class="rule-content">
+                  <strong>Partitive</strong> – mass nouns, quantities, ALL negatives
+                  <em>Jääkaapissa on <u>maitoa</u>. / ei ole <u>pöytää</u>.</em>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Places Reference -->
+          <div class="places-box">
+            <h3>📍 Key Places</h3>
+            <div class="places-grid">
+              <div class="place-card"><span class="place-nom">talo</span><span class="place-arrow">→</span><span class="place-form">talossa</span><span class="place-en">in the house</span></div>
+              <div class="place-card"><span class="place-nom">huone</span><span class="place-arrow">→</span><span class="place-form">huoneessa</span><span class="place-en">in the room</span></div>
+              <div class="place-card"><span class="place-nom">jääkaappi</span><span class="place-arrow">→</span><span class="place-form">jääkaapissa</span><span class="place-en">in the fridge</span></div>
+              <div class="place-card"><span class="place-nom">Helsinki</span><span class="place-arrow">→</span><span class="place-form">Helsingissä</span><span class="place-en">in Helsinki</span></div>
+              <div class="place-card"><span class="place-nom">lattia</span><span class="place-arrow">→</span><span class="place-form">lattialla</span><span class="place-en">on the floor</span></div>
+              <div class="place-card"><span class="place-nom">pöytä</span><span class="place-arrow">→</span><span class="place-form">pöydällä</span><span class="place-en">on the table</span></div>
+              <div class="place-card"><span class="place-nom">seinä</span><span class="place-arrow">→</span><span class="place-form">seinällä</span><span class="place-en">on the wall</span></div>
+              <div class="place-card"><span class="place-nom">sänky</span><span class="place-arrow">→</span><span class="place-form">sängyllä</span><span class="place-en">on the bed</span></div>
+            </div>
+          </div>
+
+          <!-- Exercise Type Toggle -->
+          <div class="subtopic-selection">
+            <h3>🎯 Select Exercise Type</h3>
+            <div class="exercise-type-group">
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="questions" checked />
+                <span>📋 Standard Questions (MCQ / Written)</span>
+              </label>
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="question_sets" />
+                <span>📖 Exercises (Identify / True–False)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Standard Options -->
+          <div id="standardOptions">
+            <div class="subtopic-selection">
+              <h3>📚 Select Topic</h3>
+              <div class="subtopic-checkboxes" id="subtopicCheckboxes"></div>
+            </div>
+            <div class="question-count">
+              <label for="questionCount">Number of questions:</label>
+              <select id="questionCount">
+                <option value="5">5 questions</option>
+                <option value="10" selected>10 questions</option>
+                <option value="15">15 questions</option>
+                <option value="all">All questions</option>
+              </select>
+              <span class="available-count" id="availableCount"></span>
+            </div>
+          </div>
+
+          <!-- Exercise Set Options -->
+          <div id="setOptions" class="hidden">
+            <div class="subtopic-selection">
+              <h3>📖 Select an Exercise</h3>
+              <div id="setList" class="set-list"></div>
+            </div>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita! 🚀</button>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <div class="progress-container">
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+
+          <div class="question-container">
+            <div class="question-type" id="questionType">Identify</div>
+            <div class="word-display">
+              <span class="word" id="wordDisplay"></span>
+              <span class="ending" id="endingDisplay"></span>
+            </div>
+            <p class="question-english" id="questionEnglish"></p>
+          </div>
+
+          <div class="options-container" id="optionsContainer"></div>
+
+          <div class="written-container hidden" id="writtenContainer">
+            <input type="text" id="writtenAnswer" placeholder="Kirjoita vastaus..." autocomplete="off" autocapitalize="none" />
+            <button class="submit-btn" id="submitAnswer">Tarkista ✓</button>
+          </div>
+
+          <div class="feedback hidden" id="feedback">
+            <span class="feedback-icon" id="feedbackIcon">✓</span>
+            <span class="feedback-text" id="feedbackText">Correct!</span>
+            <p class="feedback-explanation" id="feedbackExplanation"></p>
+          </div>
+
+          <button class="next-btn hidden" id="nextBtn">Seuraava →</button>
+        </div>
+      </div>
+
+      <!-- Exercise Set Screen -->
+      <div id="exerciseSetScreen" class="screen hidden">
+        <div class="exercise-set-card">
+          <div class="exercise-set-header">
+            <button class="back-to-start-btn" id="backToStartBtn">← Takaisin</button>
+            <h2 id="exerciseSetTitle"></h2>
+            <p id="exerciseSetInstructions" class="exercise-instructions"></p>
+          </div>
+
+          <!-- Identify Existential Exercise -->
+          <div id="exerciseIdentify" class="exercise-type-block hidden">
+            <div id="identifyPairs"></div>
+            <button class="check-all-btn" id="checkIdentifyBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="identifyScore"></div>
+          </div>
+
+          <!-- True / False Exercise -->
+          <div id="exerciseTrueFalse" class="exercise-type-block hidden">
+            <div class="scene-box" id="sceneBox"></div>
+            <div id="trueFalseItems"></div>
+            <button class="check-all-btn" id="checkTrueFalseBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="trueFalseScore"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Mahtavaa!</h2>
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalQuestions">10</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+          <p class="score-message" id="scoreMessage">Keep practicing!</p>
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Uudelleen</button>
+            <button class="home-btn" id="homeBtn">🏠 Takaisin aiheisiin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

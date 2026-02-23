@@ -1,0 +1,137 @@
+{
+  "topic": "postpositions",
+  "title": "Postpositiot - Postpositions",
+  "description": "Practice Finnish postpositions – location words that follow the noun",
+  "instructions": "Learn and practice Finnish postpositions in context",
+  "subtopics": [
+    { "id": "all", "name": "All Exercises", "icon": "📚" },
+    { "id": "identify", "name": "Identify Postposition", "icon": "🔍" },
+    { "id": "translate", "name": "Translate", "icon": "🌐" },
+    { "id": "genitive", "name": "Genitive Form", "icon": "📝" },
+    { "id": "fill", "name": "Fill in the Gap", "icon": "✏️" }
+  ],
+  "rules": {
+    "structure": {
+      "description": "Postpositions come AFTER the noun. The noun must be in the GENITIVE case.",
+      "formula": "NOUN (genitive) + POSTPOSITION",
+      "examples": [
+        { "finnish": "koiran edessä", "english": "in front of the dog", "breakdown": "koira → koiran (gen) + edessä" },
+        { "finnish": "talon takana", "english": "behind the house", "breakdown": "talo → talon (gen) + takana" },
+        { "finnish": "pöydän vieressä", "english": "next to the table", "breakdown": "pöytä → pöydän (gen) + vieressä" }
+      ]
+    },
+    "postpositions": [
+      { "finnish": "edessä", "english": "in front of", "example_fi": "koiran edessä", "example_en": "in front of the dog" },
+      { "finnish": "takana", "english": "behind", "example_fi": "talon takana", "example_en": "behind the house" },
+      { "finnish": "vieressä", "english": "next to, beside", "example_fi": "pöydän vieressä", "example_en": "next to the table" },
+      { "finnish": "oikealla puolella", "english": "on the right side of", "example_fi": "kameran oikealla puolella", "example_en": "on the right of the camera" },
+      { "finnish": "vasemmalla puolella", "english": "on the left side of", "example_fi": "oven vasemmalla puolella", "example_en": "on the left of the door" },
+      { "finnish": "välissä", "english": "between, in between", "example_fi": "kenkien ja banaanin välissä", "example_en": "between the shoes and the banana" },
+      { "finnish": "keskellä", "english": "in the middle of", "example_fi": "huoneen keskellä", "example_en": "in the middle of the room" },
+      { "finnish": "ympärillä", "english": "around", "example_fi": "talon ympärillä", "example_en": "around the house" },
+      { "finnish": "ääressä", "english": "by, at, beside", "example_fi": "pöydän ääressä", "example_en": "by the table" },
+      { "finnish": "alla", "english": "under, beneath", "example_fi": "peiton alla", "example_en": "under the blanket" },
+      { "finnish": "päällä", "english": "on top of", "example_fi": "kirjan päällä", "example_en": "on top of the book" },
+      { "finnish": "sisällä", "english": "inside", "example_fi": "talon sisällä", "example_en": "inside the house" }
+    ]
+  },
+  "question_sets": [
+    {
+      "id": "set_drag_1",
+      "type": "drag_postposition",
+      "subtopic": "fill",
+      "title": "Raahaa sanat oikeisiin laatikoihin",
+      "instructions_fi": "Raahaa sanat oikeisiin laatikoihin.",
+      "instructions_en": "Drag the words to the correct boxes to complete each sentence.",
+      "vocabulary": [
+        { "word": "silmälasit", "meaning": "glasses" },
+        { "word": "koripallo", "meaning": "basketball" },
+        { "word": "kenkien", "meaning": "shoes (pl. gen.)" },
+        { "word": "banaanin", "meaning": "banana (gen.)" },
+        { "word": "farkkujen", "meaning": "jeans (pl. gen.)" },
+        { "word": "läppäri", "meaning": "laptop" },
+        { "word": "puu", "meaning": "tree" },
+        { "word": "ikkuna", "meaning": "window" },
+        { "word": "sänky", "meaning": "bed" },
+        { "word": "naulakko", "meaning": "coat stand" },
+        { "word": "matto", "meaning": "rug" },
+        { "word": "peitto", "meaning": "blanket" },
+        { "word": "laatikosto", "meaning": "drawer unit" }
+      ],
+      "items": [
+        { "number": 1, "sentence_fi": "Kamera on kissan", "sentence_en": "The camera is beside the cat.", "answer": "vieressä" },
+        { "number": 2, "sentence_fi": "Silmälasit ovat kirjan", "sentence_en": "The glasses are on top of the book.", "answer": "päällä" },
+        { "number": 3, "sentence_fi": "Koripallo on kenkien ja banaanin", "sentence_en": "The basketball is between the shoes and the banana.", "answer": "välissä" },
+        { "number": 4, "sentence_fi": "Valkoinen paperi on laatikon", "sentence_en": "The white paper is inside the box.", "answer": "sisällä" },
+        { "number": 5, "sentence_fi": "Työpöytä on sängyn", "sentence_en": "The desk is beside the bed.", "answer": "vieressä" },
+        { "number": 6, "sentence_fi": "Omena on farkkujen", "sentence_en": "The apple is under the jeans.", "answer": "alla" },
+        { "number": 7, "sentence_fi": "Nainen istuu läppärin", "sentence_en": "The woman sits by the laptop.", "answer": "ääressä" },
+        { "number": 8, "sentence_fi": "Puu näkyy ikkunan", "sentence_en": "The tree is visible behind the window.", "answer": "takana" },
+        { "number": 9, "sentence_fi": "Laatikosto on työpöydän", "sentence_en": "The drawer unit is beside the desk.", "answer": "vieressä" }
+      ],
+      "word_bank": ["vieressä", "päällä", "välissä", "sisällä", "vieressä", "alla", "ääressä", "takana", "vieressä", "edessä", "oikealla puolella"]
+    },
+    {
+      "id": "set_write_1",
+      "type": "write_postposition",
+      "subtopic": "fill",
+      "title": "Kirjoita postpositiot ja sanat genetiivissä",
+      "instructions_fi": "Kirjoita postpositiot ja sanat genetiivissä. Yksi sana per laatikko.",
+      "instructions_en": "Write the postpositions and the words they refer to in the genitive case. One word per box.",
+      "note": "Each answer has TWO boxes: the noun in genitive + the postposition. E.g. 'koiran' + 'edessä'",
+      "vocabulary": [
+        { "word": "naulakko", "meaning": "coat stand" },
+        { "word": "peitto", "meaning": "blanket" },
+        { "word": "matto", "meaning": "rug" },
+        { "word": "laatikosto", "meaning": "drawer unit" }
+      ],
+      "items": [
+        { "number": 1, "sentence_fi": "Banaani on ___ ___.", "sentence_en": "The banana is in front of the dog.", "answer_genitive": "koiran", "answer_postposition": "edessä" },
+        { "number": 2, "sentence_fi": "Hattu on ___ ___.", "sentence_en": "The hat is on top of the coat stand. (naulakko)", "answer_genitive": "naulakkon", "answer_postposition": "päällä" },
+        { "number": 3, "sentence_fi": "Kissa nukkuu ___ ___.", "sentence_en": "The cat is sleeping on the right side of the camera.", "answer_genitive": "kameran", "answer_postposition": "oikealla puolella" },
+        { "number": 4, "sentence_fi": "Nalle nukkuu ___ ___.", "sentence_en": "The teddy bear is sleeping under the blanket. (peitto)", "answer_genitive": "peiton", "answer_postposition": "alla" },
+        { "number": 5, "sentence_fi": "Sänky on ___ ___.", "sentence_en": "The bed is behind the woman.", "answer_genitive": "naisen", "answer_postposition": "takana" },
+        { "number": 6, "sentence_fi": "Nainen istuu ___ ___.", "sentence_en": "The woman sits by the table.", "answer_genitive": "pöydän", "answer_postposition": "ääressä" },
+        { "number": 7, "sentence_fi": "Koira makaa ___ ___.", "sentence_en": "The dog is lying on the rug. (matto)", "answer_genitive": "maton", "answer_postposition": "päällä" },
+        { "number": 8, "sentence_fi": "Kansiot ovat ___ ___.", "sentence_en": "The folders are inside the drawer unit. (laatikosto)", "answer_genitive": "laatikoston", "answer_postposition": "sisällä" }
+      ]
+    }
+  ],
+  "questions": [
+    { "id": 1, "subtopic": "translate", "type": "sentence", "sentence": "What does 'edessä' mean?", "english": "in front of", "answer": "in front of", "explanation": "edessä = in front of. Example: koiran edessä = in front of the dog." },
+    { "id": 2, "subtopic": "translate", "type": "sentence", "sentence": "What does 'takana' mean?", "english": "behind", "answer": "behind", "explanation": "takana = behind. Example: talon takana = behind the house." },
+    { "id": 3, "subtopic": "translate", "type": "sentence", "sentence": "What does 'vieressä' mean?", "english": "next to / beside", "answer": "next to", "explanation": "vieressä = next to, beside. Example: pöydän vieressä = next to the table." },
+    { "id": 4, "subtopic": "translate", "type": "sentence", "sentence": "What does 'alla' mean?", "english": "under", "answer": "under", "explanation": "alla = under, beneath. Example: pöydän alla = under the table." },
+    { "id": 5, "subtopic": "translate", "type": "sentence", "sentence": "What does 'päällä' mean?", "english": "on top of", "answer": "on top of", "explanation": "päällä = on top of. Example: kirjan päällä = on top of the book." },
+    { "id": 6, "subtopic": "translate", "type": "sentence", "sentence": "What does 'sisällä' mean?", "english": "inside", "answer": "inside", "explanation": "sisällä = inside. Example: talon sisällä = inside the house." },
+    { "id": 7, "subtopic": "translate", "type": "sentence", "sentence": "What does 'välissä' mean?", "english": "between", "answer": "between", "explanation": "välissä = between, in between. Example: tuolien välissä = between the chairs." },
+    { "id": 8, "subtopic": "translate", "type": "sentence", "sentence": "What does 'ääressä' mean?", "english": "by / at", "answer": "by", "explanation": "ääressä = by, at, beside. Example: pöydän ääressä = by the table." },
+    { "id": 9, "subtopic": "translate", "type": "sentence", "sentence": "What does 'keskellä' mean?", "english": "in the middle of", "answer": "in the middle of", "explanation": "keskellä = in the middle of. Example: huoneen keskellä = in the middle of the room." },
+    { "id": 10, "subtopic": "translate", "type": "sentence", "sentence": "What does 'ympärillä' mean?", "english": "around", "answer": "around", "explanation": "ympärillä = around. Example: talon ympärillä = around the house." },
+    { "id": 11, "subtopic": "translate", "type": "sentence", "sentence": "What does 'oikealla puolella' mean?", "english": "on the right side of", "answer": "on the right side of", "explanation": "oikealla puolella = on the right side of. Example: kameran oikealla puolella." },
+    { "id": 12, "subtopic": "translate", "type": "sentence", "sentence": "What does 'vasemmalla puolella' mean?", "english": "on the left side of", "answer": "on the left side of", "explanation": "vasemmalla puolella = on the left side of." },
+    { "id": 13, "subtopic": "genitive", "type": "genitive", "word": "koira", "ending": "→ genitive", "english": "dog → genitive", "answer": "koiran", "rule": "koira + n", "explanation": "koira → koiran. E.g. koiran edessä = in front of the dog." },
+    { "id": 14, "subtopic": "genitive", "type": "genitive", "word": "talo", "ending": "→ genitive", "english": "house → genitive", "answer": "talon", "rule": "talo + n", "explanation": "talo → talon. E.g. talon takana = behind the house." },
+    { "id": 15, "subtopic": "genitive", "type": "genitive", "word": "pöytä", "ending": "→ genitive", "english": "table → genitive", "answer": "pöydän", "rule": "pöytä → pöydän (KPT: t→d)", "explanation": "pöytä → pöydän (KPT: t → d). E.g. pöydän ääressä = by the table." },
+    { "id": 16, "subtopic": "genitive", "type": "genitive", "word": "kamera", "ending": "→ genitive", "english": "camera → genitive", "answer": "kameran", "rule": "kamera + n", "explanation": "kamera → kameran. E.g. kameran vieressä = beside the camera." },
+    { "id": 17, "subtopic": "genitive", "type": "genitive", "word": "nainen", "ending": "→ genitive", "english": "woman → genitive", "answer": "naisen", "rule": "nen → se + n", "explanation": "nainen → naisen (nen-type). E.g. naisen takana = behind the woman." },
+    { "id": 18, "subtopic": "genitive", "type": "genitive", "word": "peitto", "ending": "→ genitive", "english": "blanket → genitive", "answer": "peiton", "rule": "peitto → peiton (KPT: tt→t)", "explanation": "peitto → peiton (KPT). E.g. peiton alla = under the blanket." },
+    { "id": 19, "subtopic": "genitive", "type": "genitive", "word": "matto", "ending": "→ genitive", "english": "rug → genitive", "answer": "maton", "rule": "matto → maton (KPT: tt→t)", "explanation": "matto → maton (KPT). E.g. maton päällä = on the rug." },
+    { "id": 20, "subtopic": "genitive", "type": "genitive", "word": "ikkuna", "ending": "→ genitive", "english": "window → genitive", "answer": "ikkunan", "rule": "ikkuna + n", "explanation": "ikkuna → ikkunan. E.g. ikkunan takana = behind the window." },
+    { "id": 21, "subtopic": "fill", "type": "sentence", "sentence": "Koira on talon ___. (behind)", "english": "The dog is behind the house.", "answer": "takana", "explanation": "talon + takana = behind the house. Postposition follows the genitive noun." },
+    { "id": 22, "subtopic": "fill", "type": "sentence", "sentence": "Kissa on pöydän ___. (under)", "english": "The cat is under the table.", "answer": "alla", "explanation": "pöydän + alla = under the table." },
+    { "id": 23, "subtopic": "fill", "type": "sentence", "sentence": "Kirja on lampun ___. (next to)", "english": "The book is next to the lamp.", "answer": "vieressä", "explanation": "lampun + vieressä = next to the lamp." },
+    { "id": 24, "subtopic": "fill", "type": "sentence", "sentence": "Laukku on tuolin ___. (on top of)", "english": "The bag is on top of the chair.", "answer": "päällä", "explanation": "tuolin + päällä = on top of the chair." },
+    { "id": 25, "subtopic": "fill", "type": "sentence", "sentence": "Auto on talon ___. (in front of)", "english": "The car is in front of the house.", "answer": "edessä", "explanation": "talon + edessä = in front of the house." },
+    { "id": 26, "subtopic": "fill", "type": "sentence", "sentence": "Lapsi istuu pöydän ___. (by)", "english": "The child sits by the table.", "answer": "ääressä", "explanation": "pöydän + ääressä = by the table." },
+    { "id": 27, "subtopic": "fill", "type": "sentence", "sentence": "Avain on pahvilaatikon ___. (inside)", "english": "The key is inside the cardboard box.", "answer": "sisällä", "explanation": "pahvilaatikon + sisällä = inside the cardboard box." },
+    { "id": 28, "subtopic": "fill", "type": "sentence", "sentence": "Kahvila on kaupan ja pankin ___. (between)", "english": "The café is between the shop and the bank.", "answer": "välissä", "explanation": "kaupan ja pankin + välissä = between the shop and the bank. Both nouns take genitive with välissä." },
+    { "id": 29, "subtopic": "identify", "type": "identify", "word": "Koira on talon takana.", "question": "Which word is the postposition?", "answer": "takana", "explanation": "takana = behind. Follows talon (genitive of talo). Postpositions always come AFTER the noun." },
+    { "id": 30, "subtopic": "identify", "type": "identify", "word": "Kissa nukkuu sängyn alla.", "question": "Which word is the postposition?", "answer": "alla", "explanation": "alla = under. Follows sängyn (genitive of sänky = bed)." },
+    { "id": 31, "subtopic": "identify", "type": "identify", "word": "Kirja on pöydän päällä.", "question": "Which word is the postposition?", "answer": "päällä", "explanation": "päällä = on top of. Follows pöydän (genitive of pöytä = table)." },
+    { "id": 32, "subtopic": "identify", "type": "identify", "word": "Auto on tallin edessä.", "question": "Which word is the postposition?", "answer": "edessä", "explanation": "edessä = in front of. Follows tallin (genitive of talli = garage)." },
+    { "id": 33, "subtopic": "identify", "type": "identify", "word": "Lapsi istuu tuolin vieressä.", "question": "Which word is the postposition?", "answer": "vieressä", "explanation": "vieressä = next to. Follows tuolin (genitive of tuoli = chair)." },
+    { "id": 34, "subtopic": "identify", "type": "identify", "word": "Koira on maton päällä.", "question": "What does the postposition phrase mean in English?", "answer": "on the rug", "explanation": "maton (gen. of matto = rug) + päällä (on top of) = on the rug." },
+    { "id": 35, "subtopic": "identify", "type": "identify", "word": "Kukka on ikkunan vieressä.", "question": "What does the postposition phrase mean in English?", "answer": "next to the window", "explanation": "ikkunan (gen. of ikkuna = window) + vieressä (next to) = next to the window." }
+  ]
+}

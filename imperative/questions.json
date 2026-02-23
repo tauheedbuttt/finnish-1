@@ -1,0 +1,668 @@
+{
+  "topic": "imperatiivi",
+  "title": "Imperatiivi - Imperative",
+  "description": "Practice Finnish imperative forms – giving orders, instructions, warnings, and wishes",
+  "instructions": "Learn and practice the Finnish imperative (käskymuoto) in context",
+  "subtopics": [
+    { "id": "all", "name": "All Exercises", "icon": "📚" },
+    { "id": "identify", "name": "Identify Imperative", "icon": "🔍" },
+    { "id": "translate", "name": "Translate", "icon": "🌐" },
+    { "id": "form", "name": "Form Imperative", "icon": "📝" },
+    { "id": "fill", "name": "Fill in the Gap", "icon": "✏️" },
+    { "id": "drag", "name": "Drag & Match", "icon": "🔀" }
+  ],
+  "rules": {
+    "structure": {
+      "description": "The imperative is formed from the first person singular (minä-form). Remove the final -n to get the positive imperative. For negative, add 'älä' before the positive form.",
+      "formula_positive": "Verb → 1st person singular (minä) → remove -n → IMPERATIVE!",
+      "formula_negative": "älä + IMPERATIVE FORM",
+      "examples": [
+        {
+          "verb": "nukkua",
+          "step1": "nukun (1st person)",
+          "step2": "nuku! (remove -n)",
+          "negative": "älä nuku!",
+          "english_pos": "sleep!",
+          "english_neg": "don't sleep!"
+        },
+        {
+          "verb": "juoda",
+          "step1": "juon (1st person)",
+          "step2": "juo! (remove -n)",
+          "negative": "älä juo!",
+          "english_pos": "drink!",
+          "english_neg": "don't drink!"
+        },
+        {
+          "verb": "opiskella",
+          "step1": "opiskelen (1st person)",
+          "step2": "opiskele! (remove -n)",
+          "negative": "älä opiskele!",
+          "english_pos": "study!",
+          "english_neg": "don't study!"
+        }
+      ],
+      "notes": [
+        "The object in an imperative sentence is usually in the nominative case.",
+        "Negative imperative = positive imperative form (NOT a new form).",
+        "Polite expressions: 'ole hyvä' (please / here you go), 'ole kiltti' (be kind/please).",
+        "Imperatives are used in: warnings, signs, instructions, wishes, recipes."
+      ]
+    },
+    "common_imperatives": [
+      {
+        "verb": "nukkua",
+        "imperative": "nuku!",
+        "negative": "älä nuku!",
+        "english": "sleep / don't sleep"
+      },
+      {
+        "verb": "juoda",
+        "imperative": "juo!",
+        "negative": "älä juo!",
+        "english": "drink / don't drink"
+      },
+      {
+        "verb": "syödä",
+        "imperative": "syö!",
+        "negative": "älä syö!",
+        "english": "eat / don't eat"
+      },
+      {
+        "verb": "puhua",
+        "imperative": "puhu!",
+        "negative": "älä puhu!",
+        "english": "speak / don't speak"
+      },
+      {
+        "verb": "kävellä",
+        "imperative": "kävele!",
+        "negative": "älä kävele!",
+        "english": "walk / don't walk"
+      },
+      {
+        "verb": "avata",
+        "imperative": "avaa!",
+        "negative": "älä avaa!",
+        "english": "open / don't open"
+      },
+      {
+        "verb": "opiskella",
+        "imperative": "opiskele!",
+        "negative": "älä opiskele!",
+        "english": "study / don't study"
+      },
+      {
+        "verb": "siivota",
+        "imperative": "siivoa!",
+        "negative": "älä siivoa!",
+        "english": "clean / don't clean"
+      },
+      {
+        "verb": "valita",
+        "imperative": "valitse!",
+        "negative": "älä valitse!",
+        "english": "choose / don't choose"
+      },
+      {
+        "verb": "häiritä",
+        "imperative": "häiritse!",
+        "negative": "älä häiritse!",
+        "english": "disturb / don't disturb"
+      },
+      {
+        "verb": "mennä",
+        "imperative": "mene!",
+        "negative": "älä mene!",
+        "english": "go / don't go"
+      },
+      {
+        "verb": "tulla",
+        "imperative": "tule!",
+        "negative": "älä tule!",
+        "english": "come / don't come"
+      },
+      {
+        "verb": "ottaa",
+        "imperative": "ota!",
+        "negative": "älä ota!",
+        "english": "take / don't take"
+      },
+      {
+        "verb": "laittaa",
+        "imperative": "laita!",
+        "negative": "älä laita!",
+        "english": "put / don't put"
+      },
+      {
+        "verb": "käydä",
+        "imperative": "käy!",
+        "negative": "älä käy!",
+        "english": "go (visit) / don't go"
+      },
+      {
+        "verb": "matkustaa",
+        "imperative": "matkusta!",
+        "negative": "älä matkusta!",
+        "english": "travel / don't travel"
+      },
+      {
+        "verb": "roskata",
+        "imperative": "roskaa!",
+        "negative": "älä roskaa!",
+        "english": "litter / don't litter"
+      }
+    ]
+  },
+  "question_sets": [
+    {
+      "id": "set_identify_text_1",
+      "type": "click_to_identify",
+      "subtopic": "identify",
+      "title": "Harjoitus 1 – Tunnista imperatiivit tekstistä",
+      "instructions_fi": "Lue teksti ja merkitse kaikki imperatiivit klikkaamalla sanaa. Muista myös kielteiset muodot!",
+      "instructions_en": "Read the text and mark all imperative forms by clicking the word. There are 13 imperatives. Notice the negative forms too!",
+      "text_fi": "Laita levyt maton päälle. Etsi neljä pyöreää ruuvia. Älä käytä vielä puutappeja. Kierrä ruuvit paikoilleen. Kiinnitä sitten neljä kiskoa. Laita puutapit ja lyö ne alas vasaralla. Älä lyö vasaralla liian kovaa, jotta levy ei mene rikki. Rakenna laatikot seuraavaksi. Ota vasara ja lyö osat kiinni toisiinsa. Laita laatikot paikoilleen ja nosta laatikosto pystyyn. Hienoa, nyt se on valmis!",
+      "text_en": "Put the boards on the rug. Find four round screws. Don't use the wooden pegs yet. Screw them into place. Then attach four rails. Put in the wooden pegs and hammer them down. Don't hammer too hard, so the board doesn't break. Build the boxes next. Take a hammer and knock the parts together. Put the boxes in place and lift the drawer unit upright. Great, it's ready now!",
+      "correct_imperatives": [
+        "Laita",
+        "Etsi",
+        "käytä",
+        "Kierrä",
+        "Kiinnitä",
+        "Laita",
+        "lyö",
+        "lyö",
+        "Rakenna",
+        "Ota",
+        "lyö",
+        "Laita",
+        "nosta"
+      ],
+      "negative_imperatives": ["Älä käytä", "Älä lyö"],
+      "total_count": 13
+    },
+    {
+      "id": "set_write_imperatives_1",
+      "type": "write_imperative",
+      "subtopic": "form",
+      "title": "Harjoitus 2 – Kirjoita imperatiivi",
+      "instructions_fi": "Kirjoita verbit imperatiivissa. Esim. positiivinen: tanssia → tanssi! Negatiivinen: istua → älä istu!",
+      "instructions_en": "Write the verbs in the imperative form. E.g. Positive: tanssia → tanssi! Negative: istua → älä istu!",
+      "note": "NB: Can you understand the meaning of the sentence? Click the info icon to see the translation!",
+      "sections": [
+        {
+          "type": "positive",
+          "label": "Positive imperative (\"Dos\")",
+          "items": [
+            {
+              "number": 1,
+              "verb": "nukkua",
+              "meaning": "to sleep",
+              "context_fi": "___ 8 tuntia joka yö!",
+              "context_en": "___ 8 hours every night!",
+              "answer": "nuku",
+              "steps": ["nukun (1st person)", "nuku! (remove -n)"]
+            },
+            {
+              "number": 2,
+              "verb": "juoda",
+              "meaning": "to drink",
+              "context_fi": "___ paljon vettä!",
+              "context_en": "___ a lot of water!",
+              "answer": "juo",
+              "steps": ["juon (1st person)", "juo! (remove -n)"]
+            },
+            {
+              "number": 3,
+              "verb": "opiskella",
+              "meaning": "to study",
+              "context_fi": "___ suomea!",
+              "context_en": "___ Finnish!",
+              "answer": "opiskele",
+              "steps": ["opiskelen (1st person)", "opiskele! (remove -n)"]
+            },
+            {
+              "number": 4,
+              "verb": "siivota",
+              "meaning": "to clean",
+              "context_fi": "___ asunto kerran viikossa!",
+              "context_en": "___ the apartment once a week!",
+              "answer": "siivoa",
+              "steps": ["siivoaan (1st person)", "siivoa! (remove -n)"]
+            },
+            {
+              "number": 5,
+              "verb": "valita",
+              "meaning": "to choose",
+              "context_fi": "___ hyvä kurssi!",
+              "context_en": "___ a good course!",
+              "answer": "valitse",
+              "steps": ["valitsen (1st person)", "valitse! (remove -n)"]
+            }
+          ]
+        },
+        {
+          "type": "negative",
+          "label": "Negative imperative (\"Don'ts\")",
+          "items": [
+            {
+              "number": 1,
+              "verb": "puhua",
+              "meaning": "to speak",
+              "context_fi": "___ ___ liian nopeasti!",
+              "context_en": "___ ___ too fast!",
+              "answer": "älä puhu",
+              "steps": [
+                "puhun (1st person)",
+                "puhu (remove -n)",
+                "älä puhu! (add älä)"
+              ]
+            },
+            {
+              "number": 2,
+              "verb": "syödä",
+              "meaning": "to eat",
+              "context_fi": "___ ___ liian paljon salmiakkia!",
+              "context_en": "___ ___ too much salmiakki!",
+              "answer": "älä syö",
+              "steps": [
+                "syön (1st person)",
+                "syö (remove -n)",
+                "älä syö! (add älä)"
+              ]
+            },
+            {
+              "number": 3,
+              "verb": "kävellä",
+              "meaning": "to walk",
+              "context_fi": "___ ___ hiihtoladulla!",
+              "context_en": "___ ___ on the ski track!",
+              "answer": "älä kävele",
+              "steps": [
+                "kävelen (1st person)",
+                "kävele (remove -n)",
+                "älä kävele! (add älä)"
+              ]
+            },
+            {
+              "number": 4,
+              "verb": "avata",
+              "meaning": "to open",
+              "context_fi": "___ ___ ovea!",
+              "context_en": "___ ___ the door!",
+              "answer": "älä avaa",
+              "steps": [
+                "avaan (1st person)",
+                "avaa (remove -n)",
+                "älä avaa! (add älä)"
+              ]
+            },
+            {
+              "number": 5,
+              "verb": "häiritä",
+              "meaning": "to disturb",
+              "context_fi": "___ ___ meitä!",
+              "context_en": "___ ___ us!",
+              "answer": "älä häiritse",
+              "steps": [
+                "häiritsen (1st person)",
+                "häiritse (remove -n)",
+                "älä häiritse! (add älä)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "set_drag_translate_1",
+      "type": "drag_match",
+      "subtopic": "drag",
+      "title": "Harjoitus 3 – Suomalaiset neuvot",
+      "instructions_fi": "Raahaa käännökset oikeiden suomalaisten neuvojen viereen.",
+      "instructions_en": "Here are some 'dos and don'ts' from Finnish course students. Drag the translations next to the Finnish phrases.",
+      "items": [
+        { "id": 1, "finnish": "Käy saunassa!", "english": "Go to the sauna!" },
+        {
+          "id": 2,
+          "finnish": "Kävele metsässä!",
+          "english": "Walk in the forest!"
+        },
+        {
+          "id": 3,
+          "finnish": "Matkusta Lappiin!",
+          "english": "Travel to Lapland!"
+        },
+        {
+          "id": 4,
+          "finnish": "Tapaa joulupukki!",
+          "english": "Meet Santa Claus!"
+        },
+        { "id": 5, "finnish": "Opiskele suomea!", "english": "Study Finnish!" },
+        {
+          "id": 6,
+          "finnish": "Älä syö salmiakkia!",
+          "english": "Don't eat salmiakki!"
+        },
+        {
+          "id": 7,
+          "finnish": "Älä ole myöhässä!",
+          "english": "Don't be late!"
+        },
+        {
+          "id": 8,
+          "finnish": "Älä puhu liian paljon bussissa!",
+          "english": "Don't talk too much on the bus!"
+        },
+        { "id": 9, "finnish": "Älä roskaa!", "english": "Don't litter!" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "subtopic": "translate",
+      "type": "mcq",
+      "question": "What does 'nukkua' become in the positive imperative?",
+      "options": ["nukut", "nuku", "nukkuu", "nukkuа"],
+      "answer": "nuku",
+      "explanation": "nukkua → nukun (1st person) → remove -n → nuku! E.g. Nuku 8 tuntia joka yö! = Sleep 8 hours every night!"
+    },
+    {
+      "id": 2,
+      "subtopic": "translate",
+      "type": "mcq",
+      "question": "What does 'älä syö' mean?",
+      "options": ["eat!", "don't eat!", "don't drink!", "don't sleep!"],
+      "answer": "don't eat!",
+      "explanation": "syödä → syön → syö! (positive). Älä + syö = don't eat! E.g. Älä syö liian paljon salmiakkia! = Don't eat too much salmiakki!"
+    },
+    {
+      "id": 3,
+      "subtopic": "translate",
+      "type": "mcq",
+      "question": "What does 'Matkusta Lappiin!' mean?",
+      "options": [
+        "Travel to Lapland!",
+        "Stay in Lapland!",
+        "Leave Lapland!",
+        "Visit Helsinki!"
+      ],
+      "answer": "Travel to Lapland!",
+      "explanation": "matkustaa → matkustan → matkusta! = travel! Lappiin = to Lapland (illative case)."
+    },
+    {
+      "id": 4,
+      "subtopic": "translate",
+      "type": "mcq",
+      "question": "How do you say 'Don't litter!' in Finnish?",
+      "options": ["Älä roskaa!", "Roskaa!", "Älä siivoa!", "Älä kävele!"],
+      "answer": "Älä roskaa!",
+      "explanation": "roskata → roskaan → roskaa! (positive). Älä + roskaa = Älä roskaa! = Don't litter!"
+    },
+    {
+      "id": 5,
+      "subtopic": "translate",
+      "type": "mcq",
+      "question": "What does 'ole hyvä' mean?",
+      "options": ["be quiet", "please / here you go", "be careful", "hurry up"],
+      "answer": "please / here you go",
+      "explanation": "'Ole hyvä' is a polite expression meaning 'please' or 'here you go'. 'Ole kiltti' also means 'please / be kind'."
+    },
+    {
+      "id": 6,
+      "subtopic": "translate",
+      "type": "mcq",
+      "question": "What does 'Käy saunassa!' mean?",
+      "options": [
+        "Build a sauna!",
+        "Go to the sauna!",
+        "Don't go to the sauna!",
+        "Clean the sauna!"
+      ],
+      "answer": "Go to the sauna!",
+      "explanation": "käydä → käyn → käy! = go (visit)! Saunassa = in the sauna. Käy saunassa! = Go to the sauna!"
+    },
+    {
+      "id": 7,
+      "subtopic": "form",
+      "type": "write",
+      "question": "Write the positive imperative of 'juoda' (to drink).",
+      "answer": "juo",
+      "explanation": "juoda → juon (1st person) → remove -n → juo! E.g. Juo paljon vettä! = Drink a lot of water!"
+    },
+    {
+      "id": 8,
+      "subtopic": "form",
+      "type": "write",
+      "question": "Write the positive imperative of 'opiskella' (to study).",
+      "answer": "opiskele",
+      "explanation": "opiskella → opiskelen (1st person) → remove -n → opiskele! E.g. Opiskele suomea! = Study Finnish!"
+    },
+    {
+      "id": 9,
+      "subtopic": "form",
+      "type": "write",
+      "question": "Write the positive imperative of 'ottaa' (to take).",
+      "answer": "ota",
+      "explanation": "ottaa → otan (1st person) → remove -n → ota! E.g. Ota vasara! = Take the hammer!"
+    },
+    {
+      "id": 10,
+      "subtopic": "form",
+      "type": "write",
+      "question": "Write the positive imperative of 'laittaa' (to put/place).",
+      "answer": "laita",
+      "explanation": "laittaa → laitan (1st person) → remove -n → laita! E.g. Laita levyt paikoilleen! = Put the boards in place!"
+    },
+    {
+      "id": 11,
+      "subtopic": "form",
+      "type": "write",
+      "question": "Write the positive imperative of 'valita' (to choose).",
+      "answer": "valitse",
+      "explanation": "valita → valitsen (1st person) → remove -n → valitse! E.g. Valitse hyvä kurssi! = Choose a good course!"
+    },
+    {
+      "id": 12,
+      "subtopic": "form",
+      "type": "write",
+      "question": "Write the negative imperative of 'puhua' (to speak).",
+      "answer": "älä puhu",
+      "explanation": "puhua → puhun → puhu (positive imperative) → älä puhu! = Don't speak! E.g. Älä puhu liian nopeasti! = Don't speak too fast!"
+    },
+    {
+      "id": 13,
+      "subtopic": "form",
+      "type": "write",
+      "question": "Write the negative imperative of 'avata' (to open).",
+      "answer": "älä avaa",
+      "explanation": "avata → avaan → avaa (positive imperative) → älä avaa! = Don't open! E.g. Älä avaa ovea! = Don't open the door!"
+    },
+    {
+      "id": 14,
+      "subtopic": "form",
+      "type": "write",
+      "question": "Write the negative imperative of 'kävellä' (to walk).",
+      "answer": "älä kävele",
+      "explanation": "kävellä → kävelen → kävele (positive) → älä kävele! = Don't walk! E.g. Älä kävele hiihtoladulla! = Don't walk on the ski track!"
+    },
+    {
+      "id": 15,
+      "subtopic": "form",
+      "type": "mcq",
+      "question": "What is the correct negative imperative of 'mennä' (to go)?",
+      "options": ["älä mene", "älä menee", "ei mene", "mene ei"],
+      "answer": "älä mene",
+      "explanation": "mennä → menen → mene (positive) → älä mene! = Don't go! Remember: negative imperative = älä + positive imperative form."
+    },
+    {
+      "id": 16,
+      "subtopic": "form",
+      "type": "mcq",
+      "question": "How is the positive imperative formed from 'siivota' (to clean)?",
+      "options": ["siivota", "siivotaa", "siivoa", "siivoat"],
+      "answer": "siivoa",
+      "explanation": "siivota → siivoaan (1st person) → remove -n → siivoa! E.g. Siivoa asunto kerran viikossa! = Clean the apartment once a week!"
+    },
+    {
+      "id": 17,
+      "subtopic": "fill",
+      "type": "sentence",
+      "sentence": "___ paljon vettä! (juoda – drink)",
+      "english": "___ a lot of water!",
+      "answer": "juo",
+      "explanation": "juoda → juon → juo! = Drink! Juo paljon vettä! = Drink a lot of water!"
+    },
+    {
+      "id": 18,
+      "subtopic": "fill",
+      "type": "sentence",
+      "sentence": "___ suomea! (opiskella – study)",
+      "english": "___ Finnish!",
+      "answer": "opiskele",
+      "explanation": "opiskella → opiskelen → opiskele! = Study! Opiskele suomea! = Study Finnish!"
+    },
+    {
+      "id": 19,
+      "subtopic": "fill",
+      "type": "sentence",
+      "sentence": "Älä ___ liian nopeasti! (puhua – speak)",
+      "english": "Don't ___ too fast!",
+      "answer": "puhu",
+      "explanation": "puhua → puhun → puhu. Älä + puhu = Älä puhu! Remember: the form after 'älä' is always the positive imperative."
+    },
+    {
+      "id": 20,
+      "subtopic": "fill",
+      "type": "sentence",
+      "sentence": "Älä ___ ovea! (avata – open)",
+      "english": "Don't ___ the door!",
+      "answer": "avaa",
+      "explanation": "avata → avaan → avaa. Älä + avaa = Älä avaa ovea! = Don't open the door!"
+    },
+    {
+      "id": 21,
+      "subtopic": "fill",
+      "type": "sentence",
+      "sentence": "___ asunto kerran viikossa! (siivota – clean)",
+      "english": "___ the apartment once a week!",
+      "answer": "siivoa",
+      "explanation": "siivota → siivoaan → siivoa! = Clean! Siivoa asunto kerran viikossa! = Clean the apartment once a week!"
+    },
+    {
+      "id": 22,
+      "subtopic": "fill",
+      "type": "sentence",
+      "sentence": "Älä ___ liian paljon salmiakkia! (syödä – eat)",
+      "english": "Don't ___ too much salmiakki!",
+      "answer": "syö",
+      "explanation": "syödä → syön → syö! Älä syö = Don't eat. Salmiakki is a popular Finnish salty liquorice candy."
+    },
+    {
+      "id": 23,
+      "subtopic": "fill",
+      "type": "sentence",
+      "sentence": "___ hyvä kurssi! (valita – choose)",
+      "english": "___ a good course!",
+      "answer": "valitse",
+      "explanation": "valita → valitsen → valitse! = Choose! Valitse hyvä kurssi! = Choose a good course!"
+    },
+    {
+      "id": 24,
+      "subtopic": "fill",
+      "type": "sentence",
+      "sentence": "___ 8 tuntia joka yö! (nukkua – sleep)",
+      "english": "___ 8 hours every night!",
+      "answer": "nuku",
+      "explanation": "nukkua → nukun → nuku! = Sleep! Nuku 8 tuntia joka yö! = Sleep 8 hours every night!"
+    },
+    {
+      "id": 25,
+      "subtopic": "fill",
+      "type": "sentence",
+      "sentence": "Älä ___ meitä! (häiritä – disturb)",
+      "english": "Don't ___ us!",
+      "answer": "häiritse",
+      "explanation": "häiritä → häiritsen → häiritse! Älä häiritse! = Don't disturb! E.g. Älä häiritse meitä! = Don't disturb us!"
+    },
+    {
+      "id": 26,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Laita levyt maton päälle.",
+      "question": "Which word is the imperative?",
+      "answer": "Laita",
+      "explanation": "Laita = imperative of 'laittaa' (to put). Laitan (1st person) → remove -n → laita! = Put!"
+    },
+    {
+      "id": 27,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Älä käytä vielä puutappeja.",
+      "question": "Which word is the negative imperative verb?",
+      "answer": "käytä",
+      "explanation": "'Käytä' is the imperative form of 'käyttää' (to use). With 'älä' before it: Älä käytä! = Don't use!"
+    },
+    {
+      "id": 28,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Ota vasara ja lyö osat kiinni toisiinsa.",
+      "question": "How many imperatives are in this sentence?",
+      "answer": "2",
+      "explanation": "'Ota' (take! – from ottaa) and 'lyö' (hit/knock! – from lyödä) are both imperatives. Finnish can chain imperatives with 'ja' (and)."
+    },
+    {
+      "id": 29,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Rakenna laatikot seuraavaksi.",
+      "question": "What does 'Rakenna' mean and what verb does it come from?",
+      "answer": "Build – from 'rakentaa'",
+      "explanation": "Rakenna! = Build! From 'rakentaa' (to build). Rakennan (1st person) → remove -n → rakenna! = Build!"
+    },
+    {
+      "id": 30,
+      "subtopic": "identify",
+      "type": "identify",
+      "word": "Älä lyö vasaralla liian kovaa, jotta levy ei mene rikki.",
+      "question": "What does the negative imperative 'Älä lyö' mean?",
+      "answer": "Don't hit/knock",
+      "explanation": "lyödä → lyön → lyö! (positive). Älä + lyö = Älä lyö! = Don't hit/knock! The rest of the sentence means '...too hard, so the board doesn't break'."
+    },
+    {
+      "id": 31,
+      "subtopic": "identify",
+      "type": "mcq",
+      "question": "In which situation would you typically see or hear imperatives in Finnish?",
+      "options": [
+        "Describing past events",
+        "Giving instructions or warnings",
+        "Asking questions",
+        "Talking about the weather"
+      ],
+      "answer": "Giving instructions or warnings",
+      "explanation": "Imperatives are used in: instructions (recipes, manuals), warnings, general signs, and expressing wishes. E.g. 'Ei saa tupakoida' = No smoking."
+    },
+    {
+      "id": 32,
+      "subtopic": "identify",
+      "type": "mcq",
+      "question": "Which sentence is a correct negative imperative?",
+      "options": ["Ei kävele!", "Kävele ei!", "Älä kävele!", "Ei kävelet!"],
+      "answer": "Älä kävele!",
+      "explanation": "Negative imperative is always formed with 'älä' + positive imperative form. 'Ei' is used for other negative forms, not imperative."
+    },
+    {
+      "id": 33,
+      "subtopic": "identify",
+      "type": "mcq",
+      "question": "What case is the object usually in when used with an imperative?",
+      "options": ["Genitive", "Partitive", "Nominative", "Accusative"],
+      "answer": "Nominative",
+      "explanation": "In imperative sentences, the object is usually in the nominative case. E.g. 'Laita levyt maton päälle' – levyt (nominative plural of levy)."
+    }
+  ]
+}
