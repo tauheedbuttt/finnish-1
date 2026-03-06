@@ -1,16 +1,33 @@
 {
   "topic": "localcases",
-  "title": "Paikallissijat - Local Cases (Missä)",
-  "description": "Practice Finnish local cases - where something is located",
-  "instructions": "Add the correct ending (-ssa/-ssä or -lla/-llä) based on the location type",
+  "title": "Paikallissijat - Local Cases",
+  "description": "Practice Finnish local cases - Missä (where), Mistä (from where), Mihin (to where)",
+  "instructions": "Add the correct ending based on the location type and direction",
   "subtopics": [
-    { "id": "all", "name": "All Missä", "icon": "📚" },
-    { "id": "s-case", "name": "S-Case (-ssa/-ssä)", "icon": "🏠" },
-    { "id": "l-case", "name": "L-Case (-lla/-llä)", "icon": "🌳" },
+    { "id": "all", "name": "All Cases", "icon": "📚" },
+    { "id": "s-case", "name": "Missä: -ssa/-ssä", "icon": "🏠" },
+    { "id": "l-case", "name": "Missä: -lla/-llä", "icon": "🌳" },
+    { "id": "mista-s", "name": "Mistä: -sta/-stä", "icon": "⬅️" },
+    { "id": "mista-l", "name": "Mistä: -lta/-ltä", "icon": "↩️" },
+    { "id": "mihin-s", "name": "Mihin: -Vn/-seen/-hVn", "icon": "➡️" },
+    { "id": "mihin-l", "name": "Mihin: -lle", "icon": "↪️" },
     { "id": "special", "name": "Special Words", "icon": "⭐" },
     { "id": "cities", "name": "Cities & Countries", "icon": "🌍" }
   ],
   "rules": {
+    "overview": {
+      "description": "Finnish local cases show location and direction",
+      "cases": {
+        "missä": "Where (static) - no movement",
+        "mistä": "From where - movement away from",
+        "mihin": "To where - movement towards"
+      },
+      "types": {
+        "internal": "S-cases: -ssa/-stä/-Vn (inside places)",
+        "external": "L-cases: -lla/-lta/-lle (outside/surface places)"
+      },
+      "note": "Internal cases (S) use strong grade KPT, external cases (L) use weak grade KPT"
+    },
     "missä": {
       "description": "Missä = Where (in/at/on) - used with STATIC verbs",
       "static_verbs": [
@@ -23,6 +40,61 @@
         "työskennellä"
       ],
       "note": "No movement - staying in one place"
+    },
+    "mistä": {
+      "description": "Mistä = From where - used with verbs of LEAVING/COMING FROM",
+      "verbs": ["tulla", "lähteä", "mennä pois", "ottaa"],
+      "internal": {
+        "ending": "-sta / -stä",
+        "rule": "Attach to stem of word (coming from INSIDE)",
+        "examples": ["talosta", "kaupasta", "Suomesta"]
+      },
+      "external": {
+        "ending": "-lta / -ltä",
+        "rule": "Attach to stem of word (coming from OUTSIDE/surface)",
+        "examples": ["kadulta", "pöydältä", "rannalta"]
+      },
+      "vowel_harmony": {
+        "a/o/u": "-sta / -lta",
+        "ä/ö/y/e/i": "-stä / -ltä"
+      }
+    },
+    "mihin": {
+      "description": "Mihin = To where - used with verbs of GOING/MOVING TO",
+      "verbs": ["mennä", "tulla", "lähteä", "matkustaa", "muuttaa"],
+      "internal": {
+        "type_1_Vn": {
+          "rule": "Stem ends with 1 vowel → add 'n'",
+          "examples": [
+            { "word": "talo", "stem": "talo-", "mihin": "taloon" },
+            { "word": "nainen", "stem": "naise-", "mihin": "naiseen" },
+            { "word": "Suomi", "stem": "Suome-", "mihin": "Suomeen" }
+          ],
+          "special": "For si/ia/ea words, use long stem: uusi → uuteen, Italia → Italiaan"
+        },
+        "type_2_seen": {
+          "rule": "Stem ends with 2 identical vowels → add 'seen'",
+          "examples": [
+            { "word": "huone", "stem": "huonee-", "mihin": "huoneeseen" },
+            { "word": "Lontoo", "stem": "Lontoo-", "mihin": "Lontooseen" }
+          ]
+        },
+        "type_3_hVn": {
+          "rule": "Short words (1 syllable) ending in 2 vowels → add 'hVn' (V = last vowel)",
+          "examples": [
+            { "word": "maa", "mihin": "maahan" },
+            { "word": "suu", "mihin": "suuhun" },
+            { "word": "puu", "mihin": "puuhun" },
+            { "word": "työ", "mihin": "työhön" }
+          ],
+          "weekdays": "Weekdays ending with 'tai' → add 'hin': maanantaihin, tiistaihin"
+        }
+      },
+      "external": {
+        "ending": "-lle",
+        "rule": "Attach 'lle' to stem of word (going TO outside/surface)",
+        "examples": ["kadulle", "pöydälle", "rannalle"]
+      }
     },
     "s_case": {
       "ending": "-ssa / -ssä",
@@ -74,66 +146,260 @@
     "special_words": {
       "description": "Some words have special forms",
       "words": [
-        { "word": "koti", "missä": "kotona", "note": "at home (not kodissa)" },
-        { "word": "ulko", "missä": "ulkona", "note": "outside" },
-        { "word": "sisä", "missä": "sisällä", "note": "inside" }
+        {
+          "word": "koti",
+          "missä": "kotona",
+          "mistä": "kotoa",
+          "mihin": "kotiin",
+          "note": "at/from/to home"
+        },
+        {
+          "word": "ulko",
+          "missä": "ulkona",
+          "mistä": "ulkoa",
+          "mihin": "ulos",
+          "note": "outside"
+        },
+        {
+          "word": "sisä",
+          "missä": "sisällä",
+          "mistä": "sisältä",
+          "mihin": "sisään",
+          "note": "inside"
+        }
       ]
     }
   },
   "vocabulary": {
     "s_case_places": [
-      { "finnish": "kauppa", "english": "shop/store", "missä": "kaupassa" },
-      { "finnish": "koulu", "english": "school", "missä": "koulussa" },
+      {
+        "finnish": "kauppa",
+        "english": "shop/store",
+        "missä": "kaupassa",
+        "mistä": "kaupasta",
+        "mihin": "kauppaan"
+      },
+      {
+        "finnish": "koulu",
+        "english": "school",
+        "missä": "koulussa",
+        "mistä": "koulusta",
+        "mihin": "kouluun"
+      },
       {
         "finnish": "ravintola",
         "english": "restaurant",
-        "missä": "ravintolassa"
+        "missä": "ravintolassa",
+        "mistä": "ravintolasta",
+        "mihin": "ravintolaan"
       },
-      { "finnish": "kirkko", "english": "church", "missä": "kirkossa" },
-      { "finnish": "pankki", "english": "bank", "missä": "pankissa" },
-      { "finnish": "sairaala", "english": "hospital", "missä": "sairaalassa" },
-      { "finnish": "toimisto", "english": "office", "missä": "toimistossa" },
-      { "finnish": "keittiö", "english": "kitchen", "missä": "keittiössä" },
+      {
+        "finnish": "kirkko",
+        "english": "church",
+        "missä": "kirkossa",
+        "mistä": "kirkosta",
+        "mihin": "kirkkoon"
+      },
+      {
+        "finnish": "pankki",
+        "english": "bank",
+        "missä": "pankissa",
+        "mistä": "pankista",
+        "mihin": "pankkiin"
+      },
+      {
+        "finnish": "sairaala",
+        "english": "hospital",
+        "missä": "sairaalassa",
+        "mistä": "sairaalasta",
+        "mihin": "sairaalaan"
+      },
+      {
+        "finnish": "toimisto",
+        "english": "office",
+        "missä": "toimistossa",
+        "mistä": "toimistosta",
+        "mihin": "toimistoon"
+      },
+      {
+        "finnish": "keittiö",
+        "english": "kitchen",
+        "missä": "keittiössä",
+        "mistä": "keittiöstä",
+        "mihin": "keittiöön"
+      },
       {
         "finnish": "makuuhuone",
         "english": "bedroom",
-        "missä": "makuuhuoneessa"
+        "missä": "makuuhuoneessa",
+        "mistä": "makuuhuoneesta",
+        "mihin": "makuuhuoneeseen"
       },
       {
         "finnish": "olohuone",
         "english": "living room",
-        "missä": "olohuoneessa"
+        "missä": "olohuoneessa",
+        "mistä": "olohuoneesta",
+        "mihin": "olohuoneeseen"
       },
-      { "finnish": "auto", "english": "car", "missä": "autossa" },
-      { "finnish": "bussi", "english": "bus", "missä": "bussissa" },
-      { "finnish": "juna", "english": "train", "missä": "junassa" },
+      {
+        "finnish": "auto",
+        "english": "car",
+        "missä": "autossa",
+        "mistä": "autosta",
+        "mihin": "autoon"
+      },
+      {
+        "finnish": "bussi",
+        "english": "bus",
+        "missä": "bussissa",
+        "mistä": "bussista",
+        "mihin": "bussiin"
+      },
+      {
+        "finnish": "juna",
+        "english": "train",
+        "missä": "junassa",
+        "mistä": "junasta",
+        "mihin": "junaan"
+      },
       {
         "finnish": "lentokone",
         "english": "airplane",
-        "missä": "lentokoneessa"
+        "missä": "lentokoneessa",
+        "mistä": "lentokoneesta",
+        "mihin": "lentokoneeseen"
       }
     ],
     "l_case_places": [
-      { "finnish": "katu", "english": "street", "missä": "kadulla" },
-      { "finnish": "tori", "english": "market square", "missä": "torilla" },
-      { "finnish": "piha", "english": "yard", "missä": "pihalla" },
-      { "finnish": "ranta", "english": "beach/shore", "missä": "rannalla" },
-      { "finnish": "pöytä", "english": "table", "missä": "pöydällä" },
-      { "finnish": "lattia", "english": "floor", "missä": "lattialla" },
-      { "finnish": "seinä", "english": "wall", "missä": "seinällä" },
-      { "finnish": "ovi", "english": "door", "missä": "ovella" },
-      { "finnish": "ikkuna", "english": "window", "missä": "ikkunalla" },
-      { "finnish": "tunti", "english": "lesson/hour", "missä": "tunnilla" },
-      { "finnish": "luento", "english": "lecture", "missä": "luennolla" },
-      { "finnish": "posti", "english": "post office", "missä": "postilla" }
+      {
+        "finnish": "katu",
+        "english": "street",
+        "missä": "kadulla",
+        "mistä": "kadulta",
+        "mihin": "kadulle"
+      },
+      {
+        "finnish": "tori",
+        "english": "market square",
+        "missä": "torilla",
+        "mistä": "torilta",
+        "mihin": "torille"
+      },
+      {
+        "finnish": "piha",
+        "english": "yard",
+        "missä": "pihalla",
+        "mistä": "pihalta",
+        "mihin": "pihalle"
+      },
+      {
+        "finnish": "ranta",
+        "english": "beach/shore",
+        "missä": "rannalla",
+        "mistä": "rannalta",
+        "mihin": "rannalle"
+      },
+      {
+        "finnish": "pöytä",
+        "english": "table",
+        "missä": "pöydällä",
+        "mistä": "pöydältä",
+        "mihin": "pöydälle"
+      },
+      {
+        "finnish": "lattia",
+        "english": "floor",
+        "missä": "lattialla",
+        "mistä": "lattialta",
+        "mihin": "lattialle"
+      },
+      {
+        "finnish": "seinä",
+        "english": "wall",
+        "missä": "seinällä",
+        "mistä": "seinältä",
+        "mihin": "seinälle"
+      },
+      {
+        "finnish": "ovi",
+        "english": "door",
+        "missä": "ovella",
+        "mistä": "ovelta",
+        "mihin": "ovelle"
+      },
+      {
+        "finnish": "ikkuna",
+        "english": "window",
+        "missä": "ikkunalla",
+        "mistä": "ikkunalta",
+        "mihin": "ikkunalle"
+      },
+      {
+        "finnish": "tunti",
+        "english": "lesson/hour",
+        "missä": "tunnilla",
+        "mistä": "tunnilta",
+        "mihin": "tunnille"
+      },
+      {
+        "finnish": "luento",
+        "english": "lecture",
+        "missä": "luennolla",
+        "mistä": "luennolta",
+        "mihin": "luennolle"
+      },
+      {
+        "finnish": "posti",
+        "english": "post office",
+        "missä": "postilla",
+        "mistä": "postilta",
+        "mihin": "postille"
+      }
     ],
     "cities_countries": [
-      { "finnish": "Helsinki", "missä": "Helsingissä", "case": "s" },
-      { "finnish": "Turku", "missä": "Turussa", "case": "s" },
-      { "finnish": "Tampere", "missä": "Tampereella", "case": "l" },
-      { "finnish": "Suomi", "missä": "Suomessa", "case": "s" },
-      { "finnish": "Ruotsi", "missä": "Ruotsissa", "case": "s" },
-      { "finnish": "Venäjä", "missä": "Venäjällä", "case": "l" }
+      {
+        "finnish": "Helsinki",
+        "missä": "Helsingissä",
+        "mistä": "Helsingistä",
+        "mihin": "Helsinkiin",
+        "case": "s"
+      },
+      {
+        "finnish": "Turku",
+        "missä": "Turussa",
+        "mistä": "Turusta",
+        "mihin": "Turkuun",
+        "case": "s"
+      },
+      {
+        "finnish": "Tampere",
+        "missä": "Tampereella",
+        "mistä": "Tampereelta",
+        "mihin": "Tampereelle",
+        "case": "l"
+      },
+      {
+        "finnish": "Suomi",
+        "missä": "Suomessa",
+        "mistä": "Suomesta",
+        "mihin": "Suomeen",
+        "case": "s"
+      },
+      {
+        "finnish": "Ruotsi",
+        "missä": "Ruotsissa",
+        "mistä": "Ruotsista",
+        "mihin": "Ruotsiin",
+        "case": "s"
+      },
+      {
+        "finnish": "Venäjä",
+        "missä": "Venäjällä",
+        "mistä": "Venäjältä",
+        "mihin": "Venäjälle",
+        "case": "l"
+      }
     ]
   },
   "questions": [
@@ -929,6 +1195,668 @@
       "answer": "ne on rannalla",
       "rule": "olla + -lla (outside)",
       "explanation": "olla (ne) = on + ranta → rannalla (KPT: nt → nn)"
+    },
+
+    {
+      "id": 81,
+      "subtopic": "mista-s",
+      "type": "ending",
+      "word": "kauppa",
+      "english": "from the shop",
+      "answer": "kaupasta",
+      "rule": "-sta (from inside)",
+      "explanation": "kauppa + sta → kaupasta"
+    },
+    {
+      "id": 82,
+      "subtopic": "mista-s",
+      "type": "ending",
+      "word": "koulu",
+      "english": "from school",
+      "answer": "koulusta",
+      "rule": "-sta (from inside)",
+      "explanation": "koulu + sta → koulusta"
+    },
+    {
+      "id": 83,
+      "subtopic": "mista-s",
+      "type": "ending",
+      "word": "kirkko",
+      "english": "from the church",
+      "answer": "kirkosta",
+      "rule": "-sta (from inside, kk→k)",
+      "explanation": "kirkko + sta → kirkosta (KPT: kk → k)"
+    },
+    {
+      "id": 84,
+      "subtopic": "mista-s",
+      "type": "ending",
+      "word": "pankki",
+      "english": "from the bank",
+      "answer": "pankista",
+      "rule": "-sta (from inside, kk→k)",
+      "explanation": "pankki + sta → pankista (KPT: nkk → nk)"
+    },
+    {
+      "id": 85,
+      "subtopic": "mista-s",
+      "type": "ending",
+      "word": "toimisto",
+      "english": "from the office",
+      "answer": "toimistosta",
+      "rule": "-sta (from inside)",
+      "explanation": "toimisto + sta → toimistosta"
+    },
+    {
+      "id": 86,
+      "subtopic": "mista-s",
+      "type": "ending",
+      "word": "keittiö",
+      "english": "from the kitchen",
+      "answer": "keittiöstä",
+      "rule": "-stä (vowel harmony: ö)",
+      "explanation": "keittiö + stä → keittiöstä"
+    },
+    {
+      "id": 87,
+      "subtopic": "mista-s",
+      "type": "ending",
+      "word": "huone",
+      "english": "from the room",
+      "answer": "huoneesta",
+      "rule": "-sta → -esta (e-type)",
+      "explanation": "huone → huonee + sta → huoneesta"
+    },
+    {
+      "id": 88,
+      "subtopic": "mista-s",
+      "type": "ending",
+      "word": "auto",
+      "english": "from the car",
+      "answer": "autosta",
+      "rule": "-sta (from inside)",
+      "explanation": "auto + sta → autosta"
+    },
+    {
+      "id": 89,
+      "subtopic": "mista-s",
+      "type": "ending",
+      "word": "bussi",
+      "english": "from the bus",
+      "answer": "bussista",
+      "rule": "-sta (from inside)",
+      "explanation": "bussi + sta → bussista"
+    },
+    {
+      "id": 90,
+      "subtopic": "mista-s",
+      "type": "ending",
+      "word": "Suomi",
+      "english": "from Finland",
+      "answer": "Suomesta",
+      "rule": "-sta (from country)",
+      "explanation": "Suomi → Suome + sta → Suomesta"
+    },
+    {
+      "id": 91,
+      "subtopic": "mista-s",
+      "type": "ending",
+      "word": "Helsinki",
+      "english": "from Helsinki",
+      "answer": "Helsingistä",
+      "rule": "-stä (from city, nk→ng)",
+      "explanation": "Helsinki + stä → Helsingistä (KPT: nk → ng)"
+    },
+    {
+      "id": 92,
+      "subtopic": "mista-s",
+      "type": "ending",
+      "word": "Turku",
+      "english": "from Turku",
+      "answer": "Turusta",
+      "rule": "-sta (from city, k→∅)",
+      "explanation": "Turku + sta → Turusta (KPT: k disappears)"
+    },
+    {
+      "id": 93,
+      "subtopic": "mista-l",
+      "type": "ending",
+      "word": "katu",
+      "english": "from the street",
+      "answer": "kadulta",
+      "rule": "-lta (from outside, t→d)",
+      "explanation": "katu + lta → kadulta (KPT: t → d)"
+    },
+    {
+      "id": 94,
+      "subtopic": "mista-l",
+      "type": "ending",
+      "word": "tori",
+      "english": "from the market",
+      "answer": "torilta",
+      "rule": "-lta (from outside)",
+      "explanation": "tori + lta → torilta"
+    },
+    {
+      "id": 95,
+      "subtopic": "mista-l",
+      "type": "ending",
+      "word": "pöytä",
+      "english": "from the table",
+      "answer": "pöydältä",
+      "rule": "-ltä (from surface, t→d)",
+      "explanation": "pöytä + ltä → pöydältä (KPT: t → d)"
+    },
+    {
+      "id": 96,
+      "subtopic": "mista-l",
+      "type": "ending",
+      "word": "lattia",
+      "english": "from the floor",
+      "answer": "lattialta",
+      "rule": "-lta (from surface)",
+      "explanation": "lattia + lta → lattialta"
+    },
+    {
+      "id": 97,
+      "subtopic": "mista-l",
+      "type": "ending",
+      "word": "ranta",
+      "english": "from the beach",
+      "answer": "rannalta",
+      "rule": "-lta (from outside, nt→nn)",
+      "explanation": "ranta + lta → rannalta (KPT: nt → nn)"
+    },
+    {
+      "id": 98,
+      "subtopic": "mista-l",
+      "type": "ending",
+      "word": "tunti",
+      "english": "from the lesson",
+      "answer": "tunnilta",
+      "rule": "-lta (from activity, nt→nn)",
+      "explanation": "tunti + lta → tunnilta (KPT: nt → nn)"
+    },
+    {
+      "id": 99,
+      "subtopic": "mista-l",
+      "type": "ending",
+      "word": "Tampere",
+      "english": "from Tampere",
+      "answer": "Tampereelta",
+      "rule": "-lta (from L-case city)",
+      "explanation": "Tampere → Tamperee + lta → Tampereelta"
+    },
+    {
+      "id": 100,
+      "subtopic": "mista-l",
+      "type": "ending",
+      "word": "Venäjä",
+      "english": "from Russia",
+      "answer": "Venäjältä",
+      "rule": "-ltä (from L-case country)",
+      "explanation": "Venäjä + ltä → Venäjältä"
+    },
+    {
+      "id": 101,
+      "subtopic": "special",
+      "type": "special",
+      "word": "koti",
+      "english": "from home",
+      "answer": "kotoa",
+      "rule": "Special form (mistä)",
+      "explanation": "koti → kotoa (NOT kodista)"
+    },
+    {
+      "id": 102,
+      "subtopic": "special",
+      "type": "special",
+      "word": "ulko-",
+      "english": "from outside",
+      "answer": "ulkoa",
+      "rule": "Special form (mistä)",
+      "explanation": "ulko- → ulkoa"
+    },
+    {
+      "id": 103,
+      "subtopic": "special",
+      "type": "special",
+      "word": "sisä-",
+      "english": "from inside",
+      "answer": "sisältä",
+      "rule": "Special form (mistä)",
+      "explanation": "sisä- → sisältä"
+    },
+
+    {
+      "id": 104,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "kauppa",
+      "english": "to the shop",
+      "answer": "kauppaan",
+      "rule": "-Vn (1 vowel stem)",
+      "explanation": "kauppa → kauppa + an → kauppaan"
+    },
+    {
+      "id": 105,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "koulu",
+      "english": "to school",
+      "answer": "kouluun",
+      "rule": "-Vn (1 vowel stem)",
+      "explanation": "koulu → koulu + un → kouluun"
+    },
+    {
+      "id": 106,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "talo",
+      "english": "to the house",
+      "answer": "taloon",
+      "rule": "-Vn (1 vowel stem)",
+      "explanation": "talo → talo + on → taloon"
+    },
+    {
+      "id": 107,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "kirkko",
+      "english": "to the church",
+      "answer": "kirkkoon",
+      "rule": "-Vn (strong grade)",
+      "explanation": "kirkko → kirkko + on → kirkkoon (stays strong in illative)"
+    },
+    {
+      "id": 108,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "pankki",
+      "english": "to the bank",
+      "answer": "pankkiin",
+      "rule": "-Vn (strong grade)",
+      "explanation": "pankki → pankki + in → pankkiin (stays strong in illative)"
+    },
+    {
+      "id": 109,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "auto",
+      "english": "to the car",
+      "answer": "autoon",
+      "rule": "-Vn (1 vowel stem)",
+      "explanation": "auto → auto + on → autoon"
+    },
+    {
+      "id": 110,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "Suomi",
+      "english": "to Finland",
+      "answer": "Suomeen",
+      "rule": "-Vn (i-type: i→e)",
+      "explanation": "Suomi → Suome + en → Suomeen"
+    },
+    {
+      "id": 111,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "Helsinki",
+      "english": "to Helsinki",
+      "answer": "Helsinkiin",
+      "rule": "-Vn (strong grade)",
+      "explanation": "Helsinki → Helsinki + in → Helsinkiin (stays strong)"
+    },
+    {
+      "id": 112,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "Turku",
+      "english": "to Turku",
+      "answer": "Turkuun",
+      "rule": "-Vn (strong grade)",
+      "explanation": "Turku → Turku + un → Turkuun (stays strong)"
+    },
+    {
+      "id": 113,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "huone",
+      "english": "to the room",
+      "answer": "huoneeseen",
+      "rule": "-seen (2 vowel stem)",
+      "explanation": "huone → huonee + seen → huoneeseen"
+    },
+    {
+      "id": 114,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "perhe",
+      "english": "to the family",
+      "answer": "perheeseen",
+      "rule": "-seen (2 vowel stem)",
+      "explanation": "perhe → perhee + seen → perheeseen"
+    },
+    {
+      "id": 115,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "Lontoo",
+      "english": "to London",
+      "answer": "Lontooseen",
+      "rule": "-seen (2 vowel stem)",
+      "explanation": "Lontoo → Lontoo + seen → Lontooseen"
+    },
+    {
+      "id": 116,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "maa",
+      "english": "to the country/land",
+      "answer": "maahan",
+      "rule": "-hVn (short word)",
+      "explanation": "maa → maa + han → maahan (h + last vowel + n)"
+    },
+    {
+      "id": 117,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "suu",
+      "english": "to the mouth",
+      "answer": "suuhun",
+      "rule": "-hVn (short word)",
+      "explanation": "suu → suu + hun → suuhun (h + last vowel + n)"
+    },
+    {
+      "id": 118,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "puu",
+      "english": "to the tree",
+      "answer": "puuhun",
+      "rule": "-hVn (short word)",
+      "explanation": "puu → puu + hun → puuhun"
+    },
+    {
+      "id": 119,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "työ",
+      "english": "to work",
+      "answer": "työhön",
+      "rule": "-hVn (short word)",
+      "explanation": "työ → työ + hön → työhön"
+    },
+    {
+      "id": 120,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "maanantai",
+      "english": "on Monday (to)",
+      "answer": "maanantaihin",
+      "rule": "-hin (weekday)",
+      "explanation": "maanantai + hin → maanantaihin"
+    },
+    {
+      "id": 121,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "tiistai",
+      "english": "on Tuesday (to)",
+      "answer": "tiistaihin",
+      "rule": "-hin (weekday)",
+      "explanation": "tiistai + hin → tiistaihin"
+    },
+    {
+      "id": 122,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "uusi",
+      "english": "to the new (one)",
+      "answer": "uuteen",
+      "rule": "-Vn (si-word: long stem)",
+      "explanation": "uusi → uutee + n → uuteen"
+    },
+    {
+      "id": 123,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "Italia",
+      "english": "to Italy",
+      "answer": "Italiaan",
+      "rule": "-Vn (ia-word)",
+      "explanation": "Italia → Italiaa + n → Italiaan"
+    },
+    {
+      "id": 124,
+      "subtopic": "mihin-s",
+      "type": "ending",
+      "word": "nainen",
+      "english": "to the woman",
+      "answer": "naiseen",
+      "rule": "-Vn (nen-type)",
+      "explanation": "nainen → naise + en → naiseen"
+    },
+    {
+      "id": 125,
+      "subtopic": "mihin-l",
+      "type": "ending",
+      "word": "katu",
+      "english": "to the street",
+      "answer": "kadulle",
+      "rule": "-lle (to outside, t→d)",
+      "explanation": "katu + lle → kadulle (KPT: t → d)"
+    },
+    {
+      "id": 126,
+      "subtopic": "mihin-l",
+      "type": "ending",
+      "word": "tori",
+      "english": "to the market",
+      "answer": "torille",
+      "rule": "-lle (to outside)",
+      "explanation": "tori + lle → torille"
+    },
+    {
+      "id": 127,
+      "subtopic": "mihin-l",
+      "type": "ending",
+      "word": "pöytä",
+      "english": "to the table",
+      "answer": "pöydälle",
+      "rule": "-lle (to surface, t→d)",
+      "explanation": "pöytä + lle → pöydälle (KPT: t → d)"
+    },
+    {
+      "id": 128,
+      "subtopic": "mihin-l",
+      "type": "ending",
+      "word": "lattia",
+      "english": "to the floor",
+      "answer": "lattialle",
+      "rule": "-lle (to surface)",
+      "explanation": "lattia + lle → lattialle"
+    },
+    {
+      "id": 129,
+      "subtopic": "mihin-l",
+      "type": "ending",
+      "word": "ranta",
+      "english": "to the beach",
+      "answer": "rannalle",
+      "rule": "-lle (to outside, nt→nn)",
+      "explanation": "ranta + lle → rannalle (KPT: nt → nn)"
+    },
+    {
+      "id": 130,
+      "subtopic": "mihin-l",
+      "type": "ending",
+      "word": "tunti",
+      "english": "to the lesson",
+      "answer": "tunnille",
+      "rule": "-lle (to activity, nt→nn)",
+      "explanation": "tunti + lle → tunnille (KPT: nt → nn)"
+    },
+    {
+      "id": 131,
+      "subtopic": "mihin-l",
+      "type": "ending",
+      "word": "Tampere",
+      "english": "to Tampere",
+      "answer": "Tampereelle",
+      "rule": "-lle (to L-case city)",
+      "explanation": "Tampere → Tamperee + lle → Tampereelle"
+    },
+    {
+      "id": 132,
+      "subtopic": "mihin-l",
+      "type": "ending",
+      "word": "Venäjä",
+      "english": "to Russia",
+      "answer": "Venäjälle",
+      "rule": "-lle (to L-case country)",
+      "explanation": "Venäjä + lle → Venäjälle"
+    },
+    {
+      "id": 133,
+      "subtopic": "mihin-l",
+      "type": "ending",
+      "word": "asema",
+      "english": "to the station",
+      "answer": "asemalle",
+      "rule": "-lle (to outside)",
+      "explanation": "asema + lle → asemalle"
+    },
+    {
+      "id": 134,
+      "subtopic": "mihin-l",
+      "type": "ending",
+      "word": "lentokenttä",
+      "english": "to the airport",
+      "answer": "lentokentälle",
+      "rule": "-lle (to outside, tt→t)",
+      "explanation": "lentokenttä + lle → lentokentälle (KPT: tt → t)"
+    },
+    {
+      "id": 135,
+      "subtopic": "special",
+      "type": "special",
+      "word": "koti",
+      "english": "to home",
+      "answer": "kotiin",
+      "rule": "Special form (mihin)",
+      "explanation": "koti → kotiin (NOT kodiin)"
+    },
+    {
+      "id": 136,
+      "subtopic": "special",
+      "type": "special",
+      "word": "ulko-",
+      "english": "to outside",
+      "answer": "ulos",
+      "rule": "Special form (mihin)",
+      "explanation": "ulko- → ulos"
+    },
+    {
+      "id": 137,
+      "subtopic": "special",
+      "type": "special",
+      "word": "sisä-",
+      "english": "to inside",
+      "answer": "sisään",
+      "rule": "Special form (mihin)",
+      "explanation": "sisä- → sisään"
+    },
+    {
+      "id": 138,
+      "subtopic": "mista-s",
+      "type": "sentence",
+      "sentence": "I come from school",
+      "answer": "mä tuun koulusta",
+      "rule": "tulla + -sta",
+      "explanation": "tulla (mä) = tuun + koulu → koulusta"
+    },
+    {
+      "id": 139,
+      "subtopic": "mista-s",
+      "type": "sentence",
+      "sentence": "She comes from Finland",
+      "answer": "se tulee Suomesta",
+      "rule": "tulla + -sta",
+      "explanation": "tulla (se) = tulee + Suomi → Suomesta"
+    },
+    {
+      "id": 140,
+      "subtopic": "mista-l",
+      "type": "sentence",
+      "sentence": "Take the book from the table",
+      "answer": "ota kirja pöydältä",
+      "rule": "ottaa + -ltä",
+      "explanation": "ottaa + pöytä → pöydältä (from surface)"
+    },
+    {
+      "id": 141,
+      "subtopic": "mihin-s",
+      "type": "sentence",
+      "sentence": "I'm going to school",
+      "answer": "mä meen kouluun",
+      "rule": "mennä + -Vn",
+      "explanation": "mennä (mä) = meen + koulu → kouluun"
+    },
+    {
+      "id": 142,
+      "subtopic": "mihin-s",
+      "type": "sentence",
+      "sentence": "We're moving to Finland",
+      "answer": "me muutetaan Suomeen",
+      "rule": "muuttaa + -Vn",
+      "explanation": "muuttaa (me) = muutetaan + Suomi → Suomeen"
+    },
+    {
+      "id": 143,
+      "subtopic": "mihin-l",
+      "type": "sentence",
+      "sentence": "Put the book on the table",
+      "answer": "laita kirja pöydälle",
+      "rule": "laittaa + -lle",
+      "explanation": "laittaa + pöytä → pöydälle (to surface)"
+    },
+    {
+      "id": 144,
+      "subtopic": "special",
+      "type": "sentence",
+      "sentence": "I'm going home",
+      "answer": "mä meen kotiin",
+      "rule": "mennä + kotiin",
+      "explanation": "mennä (mä) = meen + koti → kotiin (special form)"
+    },
+    {
+      "id": 145,
+      "subtopic": "special",
+      "type": "sentence",
+      "sentence": "Come inside!",
+      "answer": "tule sisään",
+      "rule": "tulla + sisään",
+      "explanation": "tulla + sisä- → sisään (special form)"
+    },
+    {
+      "id": 146,
+      "subtopic": "special",
+      "type": "sentence",
+      "sentence": "Go outside!",
+      "answer": "mene ulos",
+      "rule": "mennä + ulos",
+      "explanation": "mennä + ulko- → ulos (special form)"
+    },
+    {
+      "id": 147,
+      "subtopic": "special",
+      "type": "sentence",
+      "sentence": "I came from home",
+      "answer": "mä tulin kotoa",
+      "rule": "tulla + kotoa",
+      "explanation": "tulla (past) + koti → kotoa (special form)"
     }
   ]
 }
