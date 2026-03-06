@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paikallissijat - Local Cases (Missä)</title>
+    <title>Paikallissijat - Local Cases</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,8 +13,8 @@
 
       <!-- Header -->
       <header class="quiz-header">
-        <h1>📍 Missä? - Where (in/at/on)</h1>
-        <p class="subtitle" id="topicTitle">Local Cases - Static Location</p>
+        <h1>📍 Paikallissijat - Local Cases</h1>
+        <p class="subtitle" id="topicTitle">Missä, Mistä, Mihin</p>
       </header>
 
       <!-- Mode Tabs -->
@@ -28,76 +28,84 @@
       <!-- Start Screen -->
       <div id="startScreen" class="screen">
         <div class="start-card">
-          <h2 id="quizTitle">Missä? Quiz</h2>
-          <p id="quizDescription">Practice Finnish location cases</p>
+          <h2 id="quizTitle">Paikallissijat Quiz</h2>
+          <p id="quizDescription">Practice Finnish location cases - where, from where, to where</p>
 
-          <!-- Main Rule -->
+          <!-- Overview -->
           <div class="rules-box main-rule">
-            <h3>📍 Missä = Where (static)</h3>
-            <p class="rules-note">
-              Used with <strong>static verbs</strong> - no movement!
-            </p>
-            <div class="verb-examples">
-              <span class="verb-tag">olla</span>
-              <span class="verb-tag">asua</span>
-              <span class="verb-tag">istua</span>
-              <span class="verb-tag">seistä</span>
-              <span class="verb-tag">nukkua</span>
-              <span class="verb-tag">työskennellä</span>
+            <h3>📍 Local Cases Overview</h3>
+            <div class="case-overview-grid">
+              <div class="case-overview-item">
+                <span class="case-question">Missä?</span>
+                <span class="case-meaning">Where (static)</span>
+              </div>
+              <div class="case-overview-item">
+                <span class="case-question">Mistä?</span>
+                <span class="case-meaning">From where</span>
+              </div>
+              <div class="case-overview-item">
+                <span class="case-question">Mihin?</span>
+                <span class="case-meaning">To where</span>
+              </div>
             </div>
+            <p class="rules-note" style="margin-top: 15px;">
+              <strong>Internal (S-cases)</strong> = inside places | <strong>External (L-cases)</strong> = outside/surface
+            </p>
           </div>
 
-          <!-- S-Case vs L-Case -->
-          <div class="case-comparison">
-            <!-- S-Case -->
-            <div class="case-box s-case-box">
-              <h3>🏠 S-Case: -ssa / -ssä</h3>
-              <div class="case-rules">
-                <div class="case-rule">
-                  <span class="rule-icon">🏢</span>
-                  <span class="rule-text">Closed places</span>
-                </div>
-                <div class="case-rule">
-                  <span class="rule-icon">📦</span>
-                  <span class="rule-text">Inside something</span>
-                </div>
-                <div class="case-rule">
-                  <span class="rule-icon">🌍</span>
-                  <span class="rule-text">Most cities & countries</span>
-                </div>
-                <div class="case-rule">
-                  <span class="rule-icon">🗺️</span>
-                  <span class="rule-text">Areas/regions</span>
-                </div>
-              </div>
-              <div class="case-examples">
-                <span>kaupa<strong>ssa</strong></span>
-                <span>Helsingi<strong>ssä</strong></span>
-                <span>auto<strong>ssa</strong></span>
-              </div>
-            </div>
+          <!-- Case Comparison Table -->
+          <div class="case-table-container">
+            <table class="case-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>🏠 Internal (S)</th>
+                  <th>🌳 External (L)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="case-label"><strong>Missä?</strong><br><span class="case-sublabel">Where</span></td>
+                  <td class="s-case-cell">-ssa / -ssä<br><span class="example">kaupassa</span></td>
+                  <td class="l-case-cell">-lla / -llä<br><span class="example">kadulla</span></td>
+                </tr>
+                <tr>
+                  <td class="case-label"><strong>Mistä?</strong><br><span class="case-sublabel">From</span></td>
+                  <td class="s-case-cell">-sta / -stä<br><span class="example">kaupasta</span></td>
+                  <td class="l-case-cell">-lta / -ltä<br><span class="example">kadulta</span></td>
+                </tr>
+                <tr>
+                  <td class="case-label"><strong>Mihin?</strong><br><span class="case-sublabel">To</span></td>
+                  <td class="s-case-cell">-Vn / -seen / -hVn<br><span class="example">kauppaan</span></td>
+                  <td class="l-case-cell">-lle<br><span class="example">kadulle</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-            <!-- L-Case -->
-            <div class="case-box l-case-box">
-              <h3>🌳 L-Case: -lla / -llä</h3>
-              <div class="case-rules">
-                <div class="case-rule">
-                  <span class="rule-icon">🌲</span>
-                  <span class="rule-text">Outside/open places</span>
-                </div>
-                <div class="case-rule">
-                  <span class="rule-icon">📋</span>
-                  <span class="rule-text">On a surface</span>
-                </div>
-                <div class="case-rule">
-                  <span class="rule-icon">🚪</span>
-                  <span class="rule-text">Near/at</span>
-                </div>
+          <!-- Mihin Rules -->
+          <div class="rules-box mihin-rule">
+            <h3>➡️ Mihin (To) - Internal Rules</h3>
+            <div class="mihin-types">
+              <div class="mihin-type">
+                <span class="type-label">-Vn</span>
+                <span class="type-desc">Stem ends with 1 vowel → add 'n'</span>
+                <span class="type-example">talo → taloon, Suomi → Suomeen</span>
               </div>
-              <div class="case-examples">
-                <span>kadu<strong>lla</strong></span>
-                <span>pöydä<strong>llä</strong></span>
-                <span>ranna<strong>lla</strong></span>
+              <div class="mihin-type">
+                <span class="type-label">-seen</span>
+                <span class="type-desc">Stem ends with 2 identical vowels</span>
+                <span class="type-example">huone → huoneeseen</span>
+              </div>
+              <div class="mihin-type">
+                <span class="type-label">-hVn</span>
+                <span class="type-desc">Short words (1 syllable) with 2 vowels</span>
+                <span class="type-example">maa → maahan, työ → työhön</span>
+              </div>
+              <div class="mihin-type">
+                <span class="type-label">-hin</span>
+                <span class="type-desc">Weekdays ending with 'tai'</span>
+                <span class="type-example">maanantai → maanantaihin</span>
               </div>
             </div>
           </div>
@@ -105,24 +113,30 @@
           <!-- Special Words -->
           <div class="rules-box special-box">
             <h3>⭐ Special Words</h3>
-            <div class="special-words">
-              <div class="special-word">
+            <div class="special-words-table">
+              <div class="special-word-row header">
+                <span>Word</span>
+                <span>Missä</span>
+                <span>Mistä</span>
+                <span>Mihin</span>
+              </div>
+              <div class="special-word-row">
                 <span class="word">koti</span>
-                <span class="arrow">→</span>
                 <span class="form">kotona</span>
-                <span class="meaning">(at home)</span>
+                <span class="form">kotoa</span>
+                <span class="form">kotiin</span>
               </div>
-              <div class="special-word">
+              <div class="special-word-row">
                 <span class="word">ulko-</span>
-                <span class="arrow">→</span>
                 <span class="form">ulkona</span>
-                <span class="meaning">(outside)</span>
+                <span class="form">ulkoa</span>
+                <span class="form">ulos</span>
               </div>
-              <div class="special-word">
+              <div class="special-word-row">
                 <span class="word">sisä-</span>
-                <span class="arrow">→</span>
                 <span class="form">sisällä</span>
-                <span class="meaning">(inside)</span>
+                <span class="form">sisältä</span>
+                <span class="form">sisään</span>
               </div>
             </div>
           </div>
@@ -130,8 +144,8 @@
           <!-- Vowel Harmony Note -->
           <div class="vowel-harmony-note">
             <strong>🔤 Vowel Harmony:</strong>
-            a/o/u → <strong>-ssa/-lla</strong> | ä/ö/y/e/i →
-            <strong>-ssä/-llä</strong>
+            a/o/u → <strong>-ssa/-sta/-lla/-lta</strong> | ä/ö/y/e/i →
+            <strong>-ssä/-stä/-llä/-ltä</strong>
           </div>
 
           <!-- Subtopic Selection -->
