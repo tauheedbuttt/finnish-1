@@ -61,6 +61,105 @@ body {
 }
 
 /* ========================================
+   Exam Practice Section
+======================================== */
+
+.exam-section {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 20px;
+}
+
+.exam-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.exam-section-header h2 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-bottom: 3px;
+}
+
+.exam-section-header p {
+  font-size: 0.88rem;
+  color: var(--text-light);
+}
+
+.exam-cards-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.exam-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: linear-gradient(135deg, #003580 0%, #0052cc 100%);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  flex: 1;
+  min-width: 260px;
+  max-width: 420px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 14px rgba(0,53,128,0.3);
+}
+
+.exam-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,53,128,0.35); }
+
+.exam-card-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.9);
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.exam-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.exam-card-desc {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.45;
+  margin-bottom: 14px;
+}
+
+.exam-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.exam-card-cta {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  border-radius: 12px;
+  transition: background 0.15s;
+}
+.exam-card:hover .exam-card-cta { background: rgba(255,255,255,0.3); }
+
+/* ========================================
    Topics Section
 ======================================== */
 
@@ -74,9 +173,8 @@ body {
 
 .section-title {
     color: var(--primary);
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
 }
 
 .topics-grid {
