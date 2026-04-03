@@ -1611,69 +1611,276 @@
         "Introduction",
         "Spoken Finnish"
       ],
-      "questions": [
-        {
-          "id": 1,
-          "prompt": "Mikä sinun nimesi on?",
-          "promptEn": "What is your name?",
-          "placeholder": "Minun nimeni on...",
-          "sample": "Minun nimeni on [oma nimi]. / My name is [your name]."
-        },
-        {
-          "id": 2,
-          "prompt": "Kuinka vanha sinä olet?",
-          "promptEn": "How old are you?",
-          "placeholder": "Minä olen ... vuotta vanha.",
-          "sample": "Minä olen [ikä] vuotta vanha. / I am [age] years old."
-        },
-        {
-          "id": 3,
-          "prompt": "Mitä kieliä sinä puhut?",
-          "promptEn": "What languages do you speak?",
-          "placeholder": "Minä puhun...",
-          "sample": "Minä puhun englantia ja [kielet]. / I speak English and [languages]."
-        }
-      ],
       "audio_pool": [
         {
           "file": "audio/q_intro_1.mp3",
-          "script": "Mikä sinun nimesi on?\n\nKuinka vanha sinä olet?\n\nMitä kieliä sinä puhut?"
+          "script": "Mikä sinun nimesi on?\n\nKuinka vanha sinä olet?\n\nMitä kieliä sinä puhut?",
+          "questions": [
+            {
+              "id": 1,
+              "prompt": "Mikä sinun nimesi on?",
+              "promptEn": "What is your name?",
+              "placeholder": "Minun nimeni on...",
+              "sample": "Minun nimeni on [oma nimi]."
+            },
+            {
+              "id": 2,
+              "prompt": "Kuinka vanha sinä olet?",
+              "promptEn": "How old are you?",
+              "placeholder": "Minä olen ... vuotta vanha.",
+              "sample": "Minä olen [ikä] vuotta vanha."
+            },
+            {
+              "id": 3,
+              "prompt": "Mitä kieliä sinä puhut?",
+              "promptEn": "What languages do you speak?",
+              "placeholder": "Minä puhun...",
+              "sample": "Minä puhun englantia ja [kielet]."
+            }
+          ]
         },
         {
           "file": "audio/q_intro_2.mp3",
-          "script": "Mikä sinun nimesi on?\n\nMistä sinä olet kotoisin?\n\nMitä kieliä sinä osaat?"
+          "script": "Mikä sinun nimesi on?\n\nMistä sinä olet kotoisin?\n\nMitä kieliä sinä osaat?",
+          "questions": [
+            {
+              "id": 1,
+              "prompt": "Mikä sinun nimesi on?",
+              "promptEn": "What is your name?",
+              "placeholder": "Minun nimeni on...",
+              "sample": "Minun nimeni on [oma nimi]."
+            },
+            {
+              "id": 2,
+              "prompt": "Mistä sinä olet kotoisin?",
+              "promptEn": "Where are you from?",
+              "placeholder": "Minä olen kotoisin...",
+              "sample": "Minä olen kotoisin [kaupunki/maa]:sta."
+            },
+            {
+              "id": 3,
+              "prompt": "Mitä kieliä sinä osaat?",
+              "promptEn": "What languages do you know?",
+              "placeholder": "Minä osaan...",
+              "sample": "Minä osaan englantia ja [kielet]."
+            }
+          ]
         },
         {
           "file": "audio/q_intro_3.mp3",
-          "script": "Mikä sinun nimesi on?\n\nMissä sinä asut?\n\nMitä sinä opiskelet?"
+          "script": "Mikä sinun nimesi on?\n\nMissä sinä asut?\n\nMitä sinä opiskelet?",
+          "questions": [
+            {
+              "id": 1,
+              "prompt": "Mikä sinun nimesi on?",
+              "promptEn": "What is your name?",
+              "placeholder": "Minun nimeni on...",
+              "sample": "Minun nimeni on [oma nimi]."
+            },
+            {
+              "id": 2,
+              "prompt": "Missä sinä asut?",
+              "promptEn": "Where do you live?",
+              "placeholder": "Minä asun...",
+              "sample": "Minä asun [kaupunki]:ssa."
+            },
+            {
+              "id": 3,
+              "prompt": "Mitä sinä opiskelet?",
+              "promptEn": "What do you study?",
+              "placeholder": "Minä opiskelen...",
+              "sample": "Minä opiskelen [aine] [yliopisto]:ssa."
+            }
+          ]
         },
         {
           "file": "audio/q_intro_4.mp3",
-          "script": "Mikä sinun nimesi on?\n\nMinkä ikäinen sinä olet?\n\nMitä sinä teet vapaa-ajalla?"
+          "script": "Mikä sinun nimesi on?\n\nMinkä ikäinen sinä olet?\n\nMitä sinä teet vapaa-ajalla?",
+          "questions": [
+            {
+              "id": 1,
+              "prompt": "Mikä sinun nimesi on?",
+              "promptEn": "What is your name?",
+              "placeholder": "Minun nimeni on...",
+              "sample": "Minun nimeni on [oma nimi]."
+            },
+            {
+              "id": 2,
+              "prompt": "Minkä ikäinen sinä olet?",
+              "promptEn": "How old are you?",
+              "placeholder": "Minä olen ... -vuotias.",
+              "sample": "Minä olen [ikä]-vuotias."
+            },
+            {
+              "id": 3,
+              "prompt": "Mitä sinä teet vapaa-ajalla?",
+              "promptEn": "What do you do in your free time?",
+              "placeholder": "Vapaa-ajalla minä...",
+              "sample": "Vapaa-ajalla minä [harrastus]."
+            }
+          ]
         },
         {
           "file": "audio/q_intro_5.mp3",
-          "script": "Mikä sinun nimesi on?\n\nOnko sinulla sisaruksia?\n\nMitä kieliä sinä puhut?"
+          "script": "Mikä sinun nimesi on?\n\nOnko sinulla sisaruksia?\n\nMitä kieliä sinä puhut?",
+          "questions": [
+            {
+              "id": 1,
+              "prompt": "Mikä sinun nimesi on?",
+              "promptEn": "What is your name?",
+              "placeholder": "Minun nimeni on...",
+              "sample": "Minun nimeni on [oma nimi]."
+            },
+            {
+              "id": 2,
+              "prompt": "Onko sinulla sisaruksia?",
+              "promptEn": "Do you have siblings?",
+              "placeholder": "Minulla on... / Minulla ei ole...",
+              "sample": "Minulla on [luku] veli/sisko. / Minulla ei ole sisaruksia."
+            },
+            {
+              "id": 3,
+              "prompt": "Mitä kieliä sinä puhut?",
+              "promptEn": "What languages do you speak?",
+              "placeholder": "Minä puhun...",
+              "sample": "Minä puhun englantia ja [kielet]."
+            }
+          ]
         },
         {
           "file": "audio/q_intro_6.mp3",
-          "script": "Mikä sinun nimesi on?\n\nKuinka kauan sinä olet opiskellut suomea?\n\nMitä kieliä sinä puhut?"
+          "script": "Mikä sinun nimesi on?\n\nKuinka kauan sinä olet opiskellut suomea?\n\nMitä kieliä sinä puhut?",
+          "questions": [
+            {
+              "id": 1,
+              "prompt": "Mikä sinun nimesi on?",
+              "promptEn": "What is your name?",
+              "placeholder": "Minun nimeni on...",
+              "sample": "Minun nimeni on [oma nimi]."
+            },
+            {
+              "id": 2,
+              "prompt": "Kuinka kauan sinä olet opiskellut suomea?",
+              "promptEn": "How long have you studied Finnish?",
+              "placeholder": "Minä olen opiskellut suomea...",
+              "sample": "Minä olen opiskellut suomea [aika]."
+            },
+            {
+              "id": 3,
+              "prompt": "Mitä kieliä sinä puhut?",
+              "promptEn": "What languages do you speak?",
+              "placeholder": "Minä puhun...",
+              "sample": "Minä puhun englantia ja [kielet]."
+            }
+          ]
         },
         {
           "file": "audio/q_intro_7.mp3",
-          "script": "Mistä sinä olet kotoisin?\n\nMissä sinä asut?\n\nMitä sinä opiskelet?"
+          "script": "Mistä sinä olet kotoisin?\n\nMissä sinä asut?\n\nMitä sinä opiskelet?",
+          "questions": [
+            {
+              "id": 1,
+              "prompt": "Mistä sinä olet kotoisin?",
+              "promptEn": "Where are you from?",
+              "placeholder": "Minä olen kotoisin...",
+              "sample": "Minä olen kotoisin [kaupunki/maa]:sta."
+            },
+            {
+              "id": 2,
+              "prompt": "Missä sinä asut?",
+              "promptEn": "Where do you live?",
+              "placeholder": "Minä asun...",
+              "sample": "Minä asun [kaupunki]:ssa."
+            },
+            {
+              "id": 3,
+              "prompt": "Mitä sinä opiskelet?",
+              "promptEn": "What do you study?",
+              "placeholder": "Minä opiskelen...",
+              "sample": "Minä opiskelen [aine] [yliopisto]:ssa."
+            }
+          ]
         },
         {
           "file": "audio/q_intro_8.mp3",
-          "script": "Mikä sinun nimesi on?\n\nKuinka vanha sinä olet?\n\nMissä sinä asut?"
+          "script": "Mikä sinun nimesi on?\n\nKuinka vanha sinä olet?\n\nMissä sinä asut?",
+          "questions": [
+            {
+              "id": 1,
+              "prompt": "Mikä sinun nimesi on?",
+              "promptEn": "What is your name?",
+              "placeholder": "Minun nimeni on...",
+              "sample": "Minun nimeni on [oma nimi]."
+            },
+            {
+              "id": 2,
+              "prompt": "Kuinka vanha sinä olet?",
+              "promptEn": "How old are you?",
+              "placeholder": "Minä olen ... vuotta vanha.",
+              "sample": "Minä olen [ikä] vuotta vanha."
+            },
+            {
+              "id": 3,
+              "prompt": "Missä sinä asut?",
+              "promptEn": "Where do you live?",
+              "placeholder": "Minä asun...",
+              "sample": "Minä asun [kaupunki]:ssa."
+            }
+          ]
         },
         {
           "file": "audio/q_intro_9.mp3",
-          "script": "Mikä sinun nimesi on?\n\nMitä sinä opiskelet?\n\nMitä kieliä sinä osaat?"
+          "script": "Mikä sinun nimesi on?\n\nMitä sinä opiskelet?\n\nMitä kieliä sinä osaat?",
+          "questions": [
+            {
+              "id": 1,
+              "prompt": "Mikä sinun nimesi on?",
+              "promptEn": "What is your name?",
+              "placeholder": "Minun nimeni on...",
+              "sample": "Minun nimeni on [oma nimi]."
+            },
+            {
+              "id": 2,
+              "prompt": "Mitä sinä opiskelet?",
+              "promptEn": "What do you study?",
+              "placeholder": "Minä opiskelen...",
+              "sample": "Minä opiskelen [aine] [yliopisto]:ssa."
+            },
+            {
+              "id": 3,
+              "prompt": "Mitä kieliä sinä osaat?",
+              "promptEn": "What languages do you know?",
+              "placeholder": "Minä osaan...",
+              "sample": "Minä osaan englantia ja [kielet]."
+            }
+          ]
         },
         {
           "file": "audio/q_intro_10.mp3",
-          "script": "Mikä sinun nimesi on?\n\nMinkä ikäinen sinä olet?\n\nMistä sinä olet kotoisin?"
+          "script": "Mikä sinun nimesi on?\n\nMinkä ikäinen sinä olet?\n\nMistä sinä olet kotoisin?",
+          "questions": [
+            {
+              "id": 1,
+              "prompt": "Mikä sinun nimesi on?",
+              "promptEn": "What is your name?",
+              "placeholder": "Minun nimeni on...",
+              "sample": "Minun nimeni on [oma nimi]."
+            },
+            {
+              "id": 2,
+              "prompt": "Minkä ikäinen sinä olet?",
+              "promptEn": "How old are you?",
+              "placeholder": "Minä olen ... -vuotias.",
+              "sample": "Minä olen [ikä]-vuotias."
+            },
+            {
+              "id": 3,
+              "prompt": "Mistä sinä olet kotoisin?",
+              "promptEn": "Where are you from?",
+              "placeholder": "Minä olen kotoisin...",
+              "sample": "Minä olen kotoisin [kaupunki/maa]:sta."
+            }
+          ]
         }
       ]
     },

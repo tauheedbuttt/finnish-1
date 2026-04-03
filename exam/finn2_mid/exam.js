@@ -96,6 +96,7 @@ class Exam {
         const picked = sec.audio_pool[Math.floor(Math.random() * sec.audio_pool.length)];
         clone.audio_file = picked.file;
         clone.audio_script = picked.script;
+        clone.questions = picked.questions;
       }
 
       return clone;
