@@ -15,7 +15,7 @@ class Exam {
 
   async init() {
     try {
-      const res = await fetch("exam.json");
+      const res = await fetch("exam.json?v=" + Date.now());
       this.data = await res.json();
       this.renderIntro();
       this.setupEventListeners();
