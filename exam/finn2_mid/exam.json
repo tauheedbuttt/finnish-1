@@ -3,11 +3,30 @@
   "title": "Finn 2 Välikoe",
   "titleEn": "Finn 2 Mid Exam – Practice",
   "description": "Practice exam covering Chapters 1–3. Questions are randomly selected from a large pool each time.",
-  "totalSections": 10,
+  "totalSections": 11,
   "syllabus": {
-    "ch1": ["Verb Types 1-5", "KPT", "Past Tense", "Local Cases - Missä", "Word Types (e/nen)", "Introduction", "Possessive Sentences"],
-    "ch2": ["Diphthongs", "Word Types (i)", "Existential Sentences", "Furniture", "Postpositions", "Imperative"],
-    "ch3": ["Local Cases - Mistä/Mihin", "Spoken Language", "Word Types Revise"]
+    "ch1": [
+      "Verb Types 1-5",
+      "KPT",
+      "Past Tense",
+      "Local Cases - Missä",
+      "Word Types (e/nen)",
+      "Introduction",
+      "Possessive Sentences"
+    ],
+    "ch2": [
+      "Diphthongs",
+      "Word Types (i)",
+      "Existential Sentences",
+      "Furniture",
+      "Postpositions",
+      "Imperative"
+    ],
+    "ch3": [
+      "Local Cases - Mistä/Mihin",
+      "Spoken Language",
+      "Word Types Revise"
+    ]
   },
   "sections": [
     {
@@ -19,53 +38,375 @@
       "type": "fill_in_blank",
       "points": 8,
       "items_per_exam": 8,
-      "topics": ["Verb Types", "KPT", "Past Tense", "Local Cases", "Partitive", "Possessive Suffixes"],
+      "topics": [
+        "Verb Types",
+        "KPT",
+        "Past Tense",
+        "Local Cases",
+        "Partitive",
+        "Possessive Suffixes"
+      ],
       "question_pool": [
-        { "id": 1, "before": "Minä", "after": "kahvia joka aamu.", "hint": "(juoda – minä, present)", "answer": "juon", "explanation": "juoda (type 2): minä juon." },
-        { "id": 2, "before": "Hän", "after": "töihin bussilla.", "hint": "(mennä – hän, present)", "answer": "menee", "explanation": "mennä (type 3): hän menee." },
-        { "id": 3, "before": "Me", "after": "suomea yliopistossa.", "hint": "(opiskella – me, present)", "answer": "opiskelemme", "explanation": "opiskella (type 3): me opiskelemme." },
-        { "id": 4, "before": "Sinä", "after": "kirjaa nyt.", "hint": "(lukea – sinä, present)", "answer": "luet", "explanation": "lukea (type 1): sinä luet." },
-        { "id": 5, "before": "Te", "after": "Tampereella.", "hint": "(asua – te, present)", "answer": "asutte", "explanation": "asua (type 1): te asutte." },
-        { "id": 6, "before": "He", "after": "englantia hyvin.", "hint": "(puhua – he, present)", "answer": "puhuvat", "explanation": "puhua (type 1): he puhuvat." },
-        { "id": 7, "before": "Minä", "after": "apua tehtävässä.", "hint": "(tarvita – minä, present, type 4)", "answer": "tarvitsen", "explanation": "tarvita (type 4): minä tarvitsen." },
-        { "id": 8, "before": "Lapsi", "after": "paljon öisin.", "hint": "(nukkua – hän, present)", "answer": "nukkuu", "explanation": "nukkua (type 1): hän/lapsi nukkuu." },
-        { "id": 9, "before": "Minä", "after": "lounasta töissä.", "hint": "(syödä – minä, present)", "answer": "syön", "explanation": "syödä (type 2): minä syön." },
-        { "id": 10, "before": "He", "after": "aina myöhässä.", "hint": "(tulla – he, present)", "answer": "tulevat", "explanation": "tulla (type 3): he tulevat." },
-        { "id": 11, "before": "Hän", "after": "aikaisin joka päivä.", "hint": "(herätä – hän, present, type 4)", "answer": "herää", "explanation": "herätä (type 4): hän herää." },
-        { "id": 12, "before": "Me", "after": "kahvia nyt.", "hint": "(juoda – me, present)", "answer": "juomme", "explanation": "juoda (type 2): me juomme." },
-        { "id": 13, "before": "Minä", "after": "kaupassa eilen.", "hint": "(käydä – minä, past tense)", "answer": "kävin", "explanation": "käydä past (imperfekti): minä kävin." },
-        { "id": 14, "before": "Hän", "after": "puuroa aamulla.", "hint": "(syödä – hän, past tense)", "answer": "söi", "explanation": "syödä past: hän söi." },
-        { "id": 15, "before": "Me", "after": "elokuviin viikonloppuna.", "hint": "(mennä – me, past tense)", "answer": "menimme", "explanation": "mennä past: me menimme." },
-        { "id": 16, "before": "Sinä", "after": "sairas viime viikolla.", "hint": "(olla – sinä, past tense)", "answer": "olit", "explanation": "olla past: sinä olit." },
-        { "id": 17, "before": "He", "after": "myöhässä tunnille.", "hint": "(tulla – he, past tense)", "answer": "tulivat", "explanation": "tulla past: he tulivat." },
-        { "id": 18, "before": "Minä", "after": "kirjan viime kuussa.", "hint": "(lukea – minä, past tense)", "answer": "luin", "explanation": "lukea past: minä luin." },
-        { "id": 19, "before": "Hän", "after": "paljon kokeeseen.", "hint": "(opiskella – hän, past tense)", "answer": "opiskeli", "explanation": "opiskella past: hän opiskeli." },
-        { "id": 20, "before": "Asun", "after": ".", "hint": "(Helsinki – inessive/missä? -ssä)", "answer": "Helsingissä", "explanation": "Helsinki → Helsingissä. KPT: k→ng, inessive -ssä." },
-        { "id": 21, "before": "Pekka asuu", "after": ".", "hint": "(Turku – inessive/missä? -ssa)", "answer": "Turussa", "explanation": "Turku → Turussa. Inessive -ssa." },
-        { "id": 22, "before": "Kirja on", "after": ".", "hint": "(pöytä – adessive/missä? surface -lla)", "answer": "pöydällä", "explanation": "pöytä → pöydällä. KPT: t→d, adessive -lla." },
-        { "id": 23, "before": "Lapset leikkivät", "after": ".", "hint": "(puisto – inessive/missä? -ssa)", "answer": "puistossa", "explanation": "puisto → puistossa. Inessive -ssa." },
-        { "id": 24, "before": "Hän työskentelee", "after": ".", "hint": "(sairaala – inessive/missä?)", "answer": "sairaalassa", "explanation": "sairaala → sairaalassa. Inessive -ssa." },
-        { "id": 25, "before": "Tulen", "after": ".", "hint": "(koulu – elative/mistä? -sta)", "answer": "koulusta", "explanation": "koulu → koulusta. Elative -sta." },
-        { "id": 26, "before": "Tulin", "after": ".", "hint": "(kauppa – elative/mistä? -sta)", "answer": "kaupasta", "explanation": "kauppa → kaupasta. Elative -sta." },
-        { "id": 27, "before": "Hän tuli", "after": ".", "hint": "(Helsinki – elative/mistä? -stä)", "answer": "Helsingistä", "explanation": "Helsinki → Helsingistä. KPT + elative -stä." },
-        { "id": 28, "before": "Otan kirjan", "after": ".", "hint": "(pöytä – ablative/mistä? surface -lta)", "answer": "pöydältä", "explanation": "pöytä → pöydältä. KPT + ablative -lta." },
-        { "id": 29, "before": "Menen", "after": "nyt.", "hint": "(kauppa – illative/mihin? double vowel+n)", "answer": "kauppaan", "explanation": "kauppa → kauppaan. Illative: double last vowel + n." },
-        { "id": 30, "before": "Lapset menevät", "after": ".", "hint": "(koulu – illative/mihin?)", "answer": "kouluun", "explanation": "koulu → kouluun. Illative: double u + n." },
-        { "id": 31, "before": "Hän meni", "after": ".", "hint": "(Helsinki – illative/mihin? -in)", "answer": "Helsinkiin", "explanation": "Helsinki → Helsinkiin. Illative: -in ending." },
-        { "id": 32, "before": "Panen kirjan", "after": ".", "hint": "(pöytä – allative/mihin? surface -lle)", "answer": "pöydälle", "explanation": "pöytä → pöydälle. KPT + allative -lle." },
-        { "id": 33, "before": "Hänellä on kolme", "after": ".", "hint": "(lapsi – partitive after number)", "answer": "lasta", "explanation": "lapsi → lasta. KPT: p→nothing, partitive -a." },
-        { "id": 34, "before": "En näe", "after": ".", "hint": "(auto – partitive after negation)", "answer": "autoa", "explanation": "auto → autoa. Partitive after negation." },
-        { "id": 35, "before": "Haluatko", "after": "?", "hint": "(kahvi – partitive, haluata takes partitive)", "answer": "kahvia", "explanation": "kahvi → kahvia. Partitive (haluata + partitive)." },
-        { "id": 36, "before": "Ostan kaksi", "after": ".", "hint": "(kirja – partitive after 2+)", "answer": "kirjaa", "explanation": "kirja → kirjaa. Partitive after numbers 2+." },
-        { "id": 37, "before": "Hänellä on viisi", "after": ".", "hint": "(euro – partitive after 5)", "answer": "euroa", "explanation": "euro → euroa. Partitive after numbers 2+." },
-        { "id": 38, "before": "En tarvitse", "after": ".", "hint": "(auto – partitive after negation)", "answer": "autoa", "explanation": "Negation always requires partitive: auto → autoa." },
-        { "id": 39, "before": "Ostan", "after": "kaupasta.", "hint": "(maito – partitive, quantity/uncountable)", "answer": "maitoa", "explanation": "maito → maitoa. Partitive for uncountable quantities." },
-        { "id": 40, "before": "Tämä on minun", "after": ".", "hint": "(kirja – possessive suffix -ni for minä)", "answer": "kirjani", "explanation": "kirja + -ni = kirjani (my book)." },
-        { "id": 41, "before": "Missä on sinun", "after": "?", "hint": "(hattu – possessive suffix -si for sinä)", "answer": "hattusi", "explanation": "hattu + -si = hattusi (your hat)." },
-        { "id": 42, "before": "Täydennä: 'Hänen", "after": "on iso.'", "hint": "(koira – possessive suffix -nsa/-nsä for hän)", "answer": "koiransa", "explanation": "koira + -nsa = koiransa (his/her dog)." },
-        { "id": 43, "before": "Minä", "after": "yliopistossa eilen.", "hint": "(olla – minä, past tense)", "answer": "olin", "explanation": "olla past: minä olin." },
-        { "id": 44, "before": "Lapset", "after": "puistossa koko päivän.", "hint": "(leikkiä – he, past tense)", "answer": "leikkivät", "explanation": "leikkiä (type 1): he leikkivät." },
-        { "id": 45, "before": "Sinulla", "after": "sanakirja?", "hint": "(olla – question form with -ko)", "answer": "onko", "explanation": "Olla question: onko sinulla...?" }
+        {
+          "id": 1,
+          "before": "Minä",
+          "after": "kahvia joka aamu.",
+          "hint": "(juoda – minä, present)",
+          "answer": "juon",
+          "explanation": "juoda (type 2): minä juon."
+        },
+        {
+          "id": 2,
+          "before": "Hän",
+          "after": "töihin bussilla.",
+          "hint": "(mennä – hän, present)",
+          "answer": "menee",
+          "explanation": "mennä (type 3): hän menee."
+        },
+        {
+          "id": 3,
+          "before": "Me",
+          "after": "suomea yliopistossa.",
+          "hint": "(opiskella – me, present)",
+          "answer": "opiskelemme",
+          "explanation": "opiskella (type 3): me opiskelemme."
+        },
+        {
+          "id": 4,
+          "before": "Sinä",
+          "after": "kirjaa nyt.",
+          "hint": "(lukea – sinä, present)",
+          "answer": "luet",
+          "explanation": "lukea (type 1): sinä luet."
+        },
+        {
+          "id": 5,
+          "before": "Te",
+          "after": "Tampereella.",
+          "hint": "(asua – te, present)",
+          "answer": "asutte",
+          "explanation": "asua (type 1): te asutte."
+        },
+        {
+          "id": 6,
+          "before": "He",
+          "after": "englantia hyvin.",
+          "hint": "(puhua – he, present)",
+          "answer": "puhuvat",
+          "explanation": "puhua (type 1): he puhuvat."
+        },
+        {
+          "id": 7,
+          "before": "Minä",
+          "after": "apua tehtävässä.",
+          "hint": "(tarvita – minä, present, type 4)",
+          "answer": "tarvitsen",
+          "explanation": "tarvita (type 4): minä tarvitsen."
+        },
+        {
+          "id": 8,
+          "before": "Lapsi",
+          "after": "paljon öisin.",
+          "hint": "(nukkua – hän, present)",
+          "answer": "nukkuu",
+          "explanation": "nukkua (type 1): hän/lapsi nukkuu."
+        },
+        {
+          "id": 9,
+          "before": "Minä",
+          "after": "lounasta töissä.",
+          "hint": "(syödä – minä, present)",
+          "answer": "syön",
+          "explanation": "syödä (type 2): minä syön."
+        },
+        {
+          "id": 10,
+          "before": "He",
+          "after": "aina myöhässä.",
+          "hint": "(tulla – he, present)",
+          "answer": "tulevat",
+          "explanation": "tulla (type 3): he tulevat."
+        },
+        {
+          "id": 11,
+          "before": "Hän",
+          "after": "aikaisin joka päivä.",
+          "hint": "(herätä – hän, present, type 4)",
+          "answer": "herää",
+          "explanation": "herätä (type 4): hän herää."
+        },
+        {
+          "id": 12,
+          "before": "Me",
+          "after": "kahvia nyt.",
+          "hint": "(juoda – me, present)",
+          "answer": "juomme",
+          "explanation": "juoda (type 2): me juomme."
+        },
+        {
+          "id": 13,
+          "before": "Minä",
+          "after": "kaupassa eilen.",
+          "hint": "(käydä – minä, past tense)",
+          "answer": "kävin",
+          "explanation": "käydä past (imperfekti): minä kävin."
+        },
+        {
+          "id": 14,
+          "before": "Hän",
+          "after": "puuroa aamulla.",
+          "hint": "(syödä – hän, past tense)",
+          "answer": "söi",
+          "explanation": "syödä past: hän söi."
+        },
+        {
+          "id": 15,
+          "before": "Me",
+          "after": "elokuviin viikonloppuna.",
+          "hint": "(mennä – me, past tense)",
+          "answer": "menimme",
+          "explanation": "mennä past: me menimme."
+        },
+        {
+          "id": 16,
+          "before": "Sinä",
+          "after": "sairas viime viikolla.",
+          "hint": "(olla – sinä, past tense)",
+          "answer": "olit",
+          "explanation": "olla past: sinä olit."
+        },
+        {
+          "id": 17,
+          "before": "He",
+          "after": "myöhässä tunnille.",
+          "hint": "(tulla – he, past tense)",
+          "answer": "tulivat",
+          "explanation": "tulla past: he tulivat."
+        },
+        {
+          "id": 18,
+          "before": "Minä",
+          "after": "kirjan viime kuussa.",
+          "hint": "(lukea – minä, past tense)",
+          "answer": "luin",
+          "explanation": "lukea past: minä luin."
+        },
+        {
+          "id": 19,
+          "before": "Hän",
+          "after": "paljon kokeeseen.",
+          "hint": "(opiskella – hän, past tense)",
+          "answer": "opiskeli",
+          "explanation": "opiskella past: hän opiskeli."
+        },
+        {
+          "id": 20,
+          "before": "Asun",
+          "after": ".",
+          "hint": "(Helsinki – inessive/missä? -ssä)",
+          "answer": "Helsingissä",
+          "explanation": "Helsinki → Helsingissä. KPT: k→ng, inessive -ssä."
+        },
+        {
+          "id": 21,
+          "before": "Pekka asuu",
+          "after": ".",
+          "hint": "(Turku – inessive/missä? -ssa)",
+          "answer": "Turussa",
+          "explanation": "Turku → Turussa. Inessive -ssa."
+        },
+        {
+          "id": 22,
+          "before": "Kirja on",
+          "after": ".",
+          "hint": "(pöytä – adessive/missä? surface -lla)",
+          "answer": "pöydällä",
+          "explanation": "pöytä → pöydällä. KPT: t→d, adessive -lla."
+        },
+        {
+          "id": 23,
+          "before": "Lapset leikkivät",
+          "after": ".",
+          "hint": "(puisto – inessive/missä? -ssa)",
+          "answer": "puistossa",
+          "explanation": "puisto → puistossa. Inessive -ssa."
+        },
+        {
+          "id": 24,
+          "before": "Hän työskentelee",
+          "after": ".",
+          "hint": "(sairaala – inessive/missä?)",
+          "answer": "sairaalassa",
+          "explanation": "sairaala → sairaalassa. Inessive -ssa."
+        },
+        {
+          "id": 25,
+          "before": "Tulen",
+          "after": ".",
+          "hint": "(koulu – elative/mistä? -sta)",
+          "answer": "koulusta",
+          "explanation": "koulu → koulusta. Elative -sta."
+        },
+        {
+          "id": 26,
+          "before": "Tulin",
+          "after": ".",
+          "hint": "(kauppa – elative/mistä? -sta)",
+          "answer": "kaupasta",
+          "explanation": "kauppa → kaupasta. Elative -sta."
+        },
+        {
+          "id": 27,
+          "before": "Hän tuli",
+          "after": ".",
+          "hint": "(Helsinki – elative/mistä? -stä)",
+          "answer": "Helsingistä",
+          "explanation": "Helsinki → Helsingistä. KPT + elative -stä."
+        },
+        {
+          "id": 28,
+          "before": "Otan kirjan",
+          "after": ".",
+          "hint": "(pöytä – ablative/mistä? surface -lta)",
+          "answer": "pöydältä",
+          "explanation": "pöytä → pöydältä. KPT + ablative -lta."
+        },
+        {
+          "id": 29,
+          "before": "Menen",
+          "after": "nyt.",
+          "hint": "(kauppa – illative/mihin? double vowel+n)",
+          "answer": "kauppaan",
+          "explanation": "kauppa → kauppaan. Illative: double last vowel + n."
+        },
+        {
+          "id": 30,
+          "before": "Lapset menevät",
+          "after": ".",
+          "hint": "(koulu – illative/mihin?)",
+          "answer": "kouluun",
+          "explanation": "koulu → kouluun. Illative: double u + n."
+        },
+        {
+          "id": 31,
+          "before": "Hän meni",
+          "after": ".",
+          "hint": "(Helsinki – illative/mihin? -in)",
+          "answer": "Helsinkiin",
+          "explanation": "Helsinki → Helsinkiin. Illative: -in ending."
+        },
+        {
+          "id": 32,
+          "before": "Panen kirjan",
+          "after": ".",
+          "hint": "(pöytä – allative/mihin? surface -lle)",
+          "answer": "pöydälle",
+          "explanation": "pöytä → pöydälle. KPT + allative -lle."
+        },
+        {
+          "id": 33,
+          "before": "Hänellä on kolme",
+          "after": ".",
+          "hint": "(lapsi – partitive after number)",
+          "answer": "lasta",
+          "explanation": "lapsi → lasta. KPT: p→nothing, partitive -a."
+        },
+        {
+          "id": 34,
+          "before": "En näe",
+          "after": ".",
+          "hint": "(auto – partitive after negation)",
+          "answer": "autoa",
+          "explanation": "auto → autoa. Partitive after negation."
+        },
+        {
+          "id": 35,
+          "before": "Haluatko",
+          "after": "?",
+          "hint": "(kahvi – partitive, haluata takes partitive)",
+          "answer": "kahvia",
+          "explanation": "kahvi → kahvia. Partitive (haluata + partitive)."
+        },
+        {
+          "id": 36,
+          "before": "Ostan kaksi",
+          "after": ".",
+          "hint": "(kirja – partitive after 2+)",
+          "answer": "kirjaa",
+          "explanation": "kirja → kirjaa. Partitive after numbers 2+."
+        },
+        {
+          "id": 37,
+          "before": "Hänellä on viisi",
+          "after": ".",
+          "hint": "(euro – partitive after 5)",
+          "answer": "euroa",
+          "explanation": "euro → euroa. Partitive after numbers 2+."
+        },
+        {
+          "id": 38,
+          "before": "En tarvitse",
+          "after": ".",
+          "hint": "(auto – partitive after negation)",
+          "answer": "autoa",
+          "explanation": "Negation always requires partitive: auto → autoa."
+        },
+        {
+          "id": 39,
+          "before": "Ostan",
+          "after": "kaupasta.",
+          "hint": "(maito – partitive, quantity/uncountable)",
+          "answer": "maitoa",
+          "explanation": "maito → maitoa. Partitive for uncountable quantities."
+        },
+        {
+          "id": 40,
+          "before": "Tämä on minun",
+          "after": ".",
+          "hint": "(kirja – possessive suffix -ni for minä)",
+          "answer": "kirjani",
+          "explanation": "kirja + -ni = kirjani (my book)."
+        },
+        {
+          "id": 41,
+          "before": "Missä on sinun",
+          "after": "?",
+          "hint": "(hattu – possessive suffix -si for sinä)",
+          "answer": "hattusi",
+          "explanation": "hattu + -si = hattusi (your hat)."
+        },
+        {
+          "id": 42,
+          "before": "Täydennä: 'Hänen",
+          "after": "on iso.'",
+          "hint": "(koira – possessive suffix -nsa/-nsä for hän)",
+          "answer": "koiransa",
+          "explanation": "koira + -nsa = koiransa (his/her dog)."
+        },
+        {
+          "id": 43,
+          "before": "Minä",
+          "after": "yliopistossa eilen.",
+          "hint": "(olla – minä, past tense)",
+          "answer": "olin",
+          "explanation": "olla past: minä olin."
+        },
+        {
+          "id": 44,
+          "before": "Lapset",
+          "after": "puistossa koko päivän.",
+          "hint": "(leikkiä – he, past tense)",
+          "answer": "leikkivät",
+          "explanation": "leikkiä (type 1): he leikkivät."
+        },
+        {
+          "id": 45,
+          "before": "Sinulla",
+          "after": "sanakirja?",
+          "hint": "(olla – question form with -ko)",
+          "answer": "onko",
+          "explanation": "Olla question: onko sinulla...?"
+        }
       ]
     },
     {
@@ -77,32 +418,298 @@
       "type": "mcq",
       "points": 6,
       "items_per_exam": 6,
-      "topics": ["Vocabulary - Transport"],
+      "topics": [
+        "Vocabulary - Transport"
+      ],
       "question_pool": [
-        { "id": 1, "question": "bus station", "options": ["linja-autoasema", "rautatieasema", "lentoasema", "satama"], "answer": "linja-autoasema", "explanation": "linja-auto = bus, asema = station." },
-        { "id": 2, "question": "platform / track (at a station)", "options": ["laituri", "lippu", "aikataulu", "lähtö"], "answer": "laituri", "explanation": "laituri = platform, pier, dock." },
-        { "id": 3, "question": "timetable / schedule", "options": ["lippu", "aikataulu", "reitti", "pysäkki"], "answer": "aikataulu", "explanation": "aika = time, taulu = table/board." },
-        { "id": 4, "question": "bus stop", "options": ["linja-autoasema", "pysäkki", "laituri", "terminaali"], "answer": "pysäkki", "explanation": "pysäkki = stop (bus/tram stop)." },
-        { "id": 5, "question": "one-way ticket", "options": ["menopaluu", "päiväkortti", "meno", "kuukausikortti"], "answer": "meno", "explanation": "meno = one-way; menopaluu = return ticket." },
-        { "id": 6, "question": "luggage / baggage (general)", "options": ["matkalaukku", "matkatavara", "laukku", "reppu"], "answer": "matkatavara", "explanation": "matkatavara = luggage (general); matkalaukku = suitcase." },
-        { "id": 7, "question": "railway station / train station", "options": ["linja-autoasema", "lentoasema", "rautatieasema", "satama"], "answer": "rautatieasema", "explanation": "rauta = iron, tie = road/way, asema = station." },
-        { "id": 8, "question": "airport", "options": ["satama", "rautatieasema", "linja-autoasema", "lentoasema"], "answer": "lentoasema", "explanation": "lento = flight, asema = station/terminal." },
-        { "id": 9, "question": "return ticket (round trip)", "options": ["meno", "meno-paluu", "kuukausikortti", "päiväkortti"], "answer": "meno-paluu", "explanation": "meno = going, paluu = return. meno-paluu = round trip." },
-        { "id": 10, "question": "ferry / boat", "options": ["juna", "bussi", "lautta", "lentokone"], "answer": "lautta", "explanation": "lautta = ferry. lautalla = by ferry." },
-        { "id": 11, "question": "harbour / port", "options": ["laituri", "satama", "asema", "terminaali"], "answer": "satama", "explanation": "satama = harbour/port." },
-        { "id": 12, "question": "taxi", "options": ["auto", "bussi", "taksi", "metro"], "answer": "taksi", "explanation": "taksi = taxi (borrowed word)." },
-        { "id": 13, "question": "subway / metro", "options": ["raitiovaunu", "metro", "bussi", "pikainen"], "answer": "metro", "explanation": "metro = subway/metro (borrowed word)." },
-        { "id": 14, "question": "tram", "options": ["metro", "juna", "raitiovaunu", "bussi"], "answer": "raitiovaunu", "explanation": "raitiovaunu = tram/streetcar. raitio = track, vaunu = wagon/car." },
-        { "id": 15, "question": "ticket (general)", "options": ["aikataulu", "laituri", "lippu", "reitti"], "answer": "lippu", "explanation": "lippu = ticket (also flag). bussilippu = bus ticket." },
-        { "id": 16, "question": "departure", "options": ["saapuminen", "lähtö", "vaihto", "odotus"], "answer": "lähtö", "explanation": "lähtö = departure; saapuminen = arrival." },
-        { "id": 17, "question": "arrival", "options": ["lähtö", "odotus", "vaihto", "saapuminen"], "answer": "saapuminen", "explanation": "saapuminen = arrival (from saapua = to arrive)." },
-        { "id": 18, "question": "connection / transfer (transport)", "options": ["jatkoyhteys", "pysäkki", "laituri", "lippu"], "answer": "jatkoyhteys", "explanation": "jatko = continuation, yhteys = connection." },
-        { "id": 19, "question": "delayed / late", "options": ["aikaisin", "ajoissa", "myöhässä", "nopeasti"], "answer": "myöhässä", "explanation": "myöhässä = late/delayed. Juna on myöhässä = the train is delayed." },
-        { "id": 20, "question": "train", "options": ["bussi", "laiva", "juna", "taksi"], "answer": "juna", "explanation": "juna = train. junalla = by train." },
-        { "id": 21, "question": "by bicycle", "options": ["bussilla", "junalla", "autolla", "polkupyörällä"], "answer": "polkupyörällä", "explanation": "polkupyörä = bicycle. polkupyörällä = by bicycle (adessive)." },
-        { "id": 22, "question": "suitcase", "options": ["reppu", "matkatavara", "matkalaukku", "laukku"], "answer": "matkalaukku", "explanation": "matkalaukku = suitcase. matka = trip, laukku = bag." },
-        { "id": 23, "question": "route / itinerary", "options": ["aikataulu", "pysäkki", "reitti", "laituri"], "answer": "reitti", "explanation": "reitti = route, itinerary." },
-        { "id": 24, "question": "waiting room", "options": ["odotussali", "laituri", "lipputoimisto", "terminaali"], "answer": "odotussali", "explanation": "odotus = waiting, sali = hall/room." }
+        {
+          "id": 1,
+          "question": "bus station",
+          "options": [
+            "linja-autoasema",
+            "rautatieasema",
+            "lentoasema",
+            "satama"
+          ],
+          "answer": "linja-autoasema",
+          "explanation": "linja-auto = bus, asema = station."
+        },
+        {
+          "id": 2,
+          "question": "platform / track (at a station)",
+          "options": [
+            "laituri",
+            "lippu",
+            "aikataulu",
+            "lähtö"
+          ],
+          "answer": "laituri",
+          "explanation": "laituri = platform, pier, dock."
+        },
+        {
+          "id": 3,
+          "question": "timetable / schedule",
+          "options": [
+            "lippu",
+            "aikataulu",
+            "reitti",
+            "pysäkki"
+          ],
+          "answer": "aikataulu",
+          "explanation": "aika = time, taulu = table/board."
+        },
+        {
+          "id": 4,
+          "question": "bus stop",
+          "options": [
+            "linja-autoasema",
+            "pysäkki",
+            "laituri",
+            "terminaali"
+          ],
+          "answer": "pysäkki",
+          "explanation": "pysäkki = stop (bus/tram stop)."
+        },
+        {
+          "id": 5,
+          "question": "one-way ticket",
+          "options": [
+            "menopaluu",
+            "päiväkortti",
+            "meno",
+            "kuukausikortti"
+          ],
+          "answer": "meno",
+          "explanation": "meno = one-way; menopaluu = return ticket."
+        },
+        {
+          "id": 6,
+          "question": "luggage / baggage (general)",
+          "options": [
+            "matkalaukku",
+            "matkatavara",
+            "laukku",
+            "reppu"
+          ],
+          "answer": "matkatavara",
+          "explanation": "matkatavara = luggage (general); matkalaukku = suitcase."
+        },
+        {
+          "id": 7,
+          "question": "railway station / train station",
+          "options": [
+            "linja-autoasema",
+            "lentoasema",
+            "rautatieasema",
+            "satama"
+          ],
+          "answer": "rautatieasema",
+          "explanation": "rauta = iron, tie = road/way, asema = station."
+        },
+        {
+          "id": 8,
+          "question": "airport",
+          "options": [
+            "satama",
+            "rautatieasema",
+            "linja-autoasema",
+            "lentoasema"
+          ],
+          "answer": "lentoasema",
+          "explanation": "lento = flight, asema = station/terminal."
+        },
+        {
+          "id": 9,
+          "question": "return ticket (round trip)",
+          "options": [
+            "meno",
+            "meno-paluu",
+            "kuukausikortti",
+            "päiväkortti"
+          ],
+          "answer": "meno-paluu",
+          "explanation": "meno = going, paluu = return. meno-paluu = round trip."
+        },
+        {
+          "id": 10,
+          "question": "ferry / boat",
+          "options": [
+            "juna",
+            "bussi",
+            "lautta",
+            "lentokone"
+          ],
+          "answer": "lautta",
+          "explanation": "lautta = ferry. lautalla = by ferry."
+        },
+        {
+          "id": 11,
+          "question": "harbour / port",
+          "options": [
+            "laituri",
+            "satama",
+            "asema",
+            "terminaali"
+          ],
+          "answer": "satama",
+          "explanation": "satama = harbour/port."
+        },
+        {
+          "id": 12,
+          "question": "taxi",
+          "options": [
+            "auto",
+            "bussi",
+            "taksi",
+            "metro"
+          ],
+          "answer": "taksi",
+          "explanation": "taksi = taxi (borrowed word)."
+        },
+        {
+          "id": 13,
+          "question": "subway / metro",
+          "options": [
+            "raitiovaunu",
+            "metro",
+            "bussi",
+            "pikainen"
+          ],
+          "answer": "metro",
+          "explanation": "metro = subway/metro (borrowed word)."
+        },
+        {
+          "id": 14,
+          "question": "tram",
+          "options": [
+            "metro",
+            "juna",
+            "raitiovaunu",
+            "bussi"
+          ],
+          "answer": "raitiovaunu",
+          "explanation": "raitiovaunu = tram/streetcar. raitio = track, vaunu = wagon/car."
+        },
+        {
+          "id": 15,
+          "question": "ticket (general)",
+          "options": [
+            "aikataulu",
+            "laituri",
+            "lippu",
+            "reitti"
+          ],
+          "answer": "lippu",
+          "explanation": "lippu = ticket (also flag). bussilippu = bus ticket."
+        },
+        {
+          "id": 16,
+          "question": "departure",
+          "options": [
+            "saapuminen",
+            "lähtö",
+            "vaihto",
+            "odotus"
+          ],
+          "answer": "lähtö",
+          "explanation": "lähtö = departure; saapuminen = arrival."
+        },
+        {
+          "id": 17,
+          "question": "arrival",
+          "options": [
+            "lähtö",
+            "odotus",
+            "vaihto",
+            "saapuminen"
+          ],
+          "answer": "saapuminen",
+          "explanation": "saapuminen = arrival (from saapua = to arrive)."
+        },
+        {
+          "id": 18,
+          "question": "connection / transfer (transport)",
+          "options": [
+            "jatkoyhteys",
+            "pysäkki",
+            "laituri",
+            "lippu"
+          ],
+          "answer": "jatkoyhteys",
+          "explanation": "jatko = continuation, yhteys = connection."
+        },
+        {
+          "id": 19,
+          "question": "delayed / late",
+          "options": [
+            "aikaisin",
+            "ajoissa",
+            "myöhässä",
+            "nopeasti"
+          ],
+          "answer": "myöhässä",
+          "explanation": "myöhässä = late/delayed. Juna on myöhässä = the train is delayed."
+        },
+        {
+          "id": 20,
+          "question": "train",
+          "options": [
+            "bussi",
+            "laiva",
+            "juna",
+            "taksi"
+          ],
+          "answer": "juna",
+          "explanation": "juna = train. junalla = by train."
+        },
+        {
+          "id": 21,
+          "question": "by bicycle",
+          "options": [
+            "bussilla",
+            "junalla",
+            "autolla",
+            "polkupyörällä"
+          ],
+          "answer": "polkupyörällä",
+          "explanation": "polkupyörä = bicycle. polkupyörällä = by bicycle (adessive)."
+        },
+        {
+          "id": 22,
+          "question": "suitcase",
+          "options": [
+            "reppu",
+            "matkatavara",
+            "matkalaukku",
+            "laukku"
+          ],
+          "answer": "matkalaukku",
+          "explanation": "matkalaukku = suitcase. matka = trip, laukku = bag."
+        },
+        {
+          "id": 23,
+          "question": "route / itinerary",
+          "options": [
+            "aikataulu",
+            "pysäkki",
+            "reitti",
+            "laituri"
+          ],
+          "answer": "reitti",
+          "explanation": "reitti = route, itinerary."
+        },
+        {
+          "id": 24,
+          "question": "waiting room",
+          "options": [
+            "odotussali",
+            "laituri",
+            "lipputoimisto",
+            "terminaali"
+          ],
+          "answer": "odotussali",
+          "explanation": "odotus = waiting, sali = hall/room."
+        }
       ]
     },
     {
@@ -115,29 +722,105 @@
       "points": 6,
       "do_picks": 3,
       "dont_picks": 3,
-      "topics": ["Imperative", "Verb Types", "Present Tense as Future"],
+      "topics": [
+        "Imperative",
+        "Verb Types",
+        "Present Tense as Future"
+      ],
       "note": "Finnish uses present tense for future plans: 'Menen huomenna kouluun.' = I am going to school tomorrow. Negative: 'En mene kouluun.' = I am not going to school.",
       "do_pool": [
-        { "id": 1, "english": "I will go to school / work tomorrow.", "sample_fi": "Menen huomenna kouluun. / Menen huomenna töihin." },
-        { "id": 2, "english": "I will eat vegetables tomorrow.", "sample_fi": "Syön huomenna kasviksia." },
-        { "id": 3, "english": "I will exercise / go to the gym.", "sample_fi": "Käyn huomenna salilla. / Harjoittelen huomenna." },
-        { "id": 4, "english": "I will study Finnish tomorrow.", "sample_fi": "Opiskelen huomenna suomea." },
-        { "id": 5, "english": "I will sleep early tomorrow.", "sample_fi": "Menen huomenna nukkumaan aikaisin." },
-        { "id": 6, "english": "I will call my friend tomorrow.", "sample_fi": "Soitan huomenna ystävälleni." },
-        { "id": 7, "english": "I will cook at home tomorrow.", "sample_fi": "Teen huomenna ruokaa kotona." },
-        { "id": 8, "english": "I will read a book tomorrow.", "sample_fi": "Luen huomenna kirjaa." },
-        { "id": 9, "english": "I will clean my room tomorrow.", "sample_fi": "Siivoan huomenna huoneeni." }
+        {
+          "id": 1,
+          "english": "I will go to school / work tomorrow.",
+          "sample_fi": "Menen huomenna kouluun. / Menen huomenna töihin."
+        },
+        {
+          "id": 2,
+          "english": "I will eat vegetables tomorrow.",
+          "sample_fi": "Syön huomenna kasviksia."
+        },
+        {
+          "id": 3,
+          "english": "I will exercise / go to the gym.",
+          "sample_fi": "Käyn huomenna salilla. / Harjoittelen huomenna."
+        },
+        {
+          "id": 4,
+          "english": "I will study Finnish tomorrow.",
+          "sample_fi": "Opiskelen huomenna suomea."
+        },
+        {
+          "id": 5,
+          "english": "I will sleep early tomorrow.",
+          "sample_fi": "Menen huomenna nukkumaan aikaisin."
+        },
+        {
+          "id": 6,
+          "english": "I will call my friend tomorrow.",
+          "sample_fi": "Soitan huomenna ystävälleni."
+        },
+        {
+          "id": 7,
+          "english": "I will cook at home tomorrow.",
+          "sample_fi": "Teen huomenna ruokaa kotona."
+        },
+        {
+          "id": 8,
+          "english": "I will read a book tomorrow.",
+          "sample_fi": "Luen huomenna kirjaa."
+        },
+        {
+          "id": 9,
+          "english": "I will clean my room tomorrow.",
+          "sample_fi": "Siivoan huomenna huoneeni."
+        }
       ],
       "dont_pool": [
-        { "id": 10, "english": "I won't eat fast food tomorrow.", "sample_fi": "En syö huomenna pikaruokaa." },
-        { "id": 11, "english": "I won't be late tomorrow.", "sample_fi": "En tule huomenna myöhässä." },
-        { "id": 12, "english": "I won't watch TV all day tomorrow.", "sample_fi": "En katso huomenna televisiota koko päivää." },
-        { "id": 13, "english": "I won't forget my keys tomorrow.", "sample_fi": "En unohda huomenna avaimiani." },
-        { "id": 14, "english": "I won't skip class tomorrow.", "sample_fi": "En jää huomenna pois tunnilta." },
-        { "id": 15, "english": "I won't eat too much sugar tomorrow.", "sample_fi": "En syö huomenna liian paljon sokeria." },
-        { "id": 16, "english": "I won't go to bed late tomorrow.", "sample_fi": "En mene huomenna nukkumaan myöhään." },
-        { "id": 17, "english": "I won't waste time tomorrow.", "sample_fi": "En tuhlaa huomenna aikaa." },
-        { "id": 18, "english": "I won't drink coffee after 6 pm tomorrow.", "sample_fi": "En juo huomenna kahvia kuuden jälkeen." }
+        {
+          "id": 10,
+          "english": "I won't eat fast food tomorrow.",
+          "sample_fi": "En syö huomenna pikaruokaa."
+        },
+        {
+          "id": 11,
+          "english": "I won't be late tomorrow.",
+          "sample_fi": "En tule huomenna myöhässä."
+        },
+        {
+          "id": 12,
+          "english": "I won't watch TV all day tomorrow.",
+          "sample_fi": "En katso huomenna televisiota koko päivää."
+        },
+        {
+          "id": 13,
+          "english": "I won't forget my keys tomorrow.",
+          "sample_fi": "En unohda huomenna avaimiani."
+        },
+        {
+          "id": 14,
+          "english": "I won't skip class tomorrow.",
+          "sample_fi": "En jää huomenna pois tunnilta."
+        },
+        {
+          "id": 15,
+          "english": "I won't eat too much sugar tomorrow.",
+          "sample_fi": "En syö huomenna liian paljon sokeria."
+        },
+        {
+          "id": 16,
+          "english": "I won't go to bed late tomorrow.",
+          "sample_fi": "En mene huomenna nukkumaan myöhään."
+        },
+        {
+          "id": 17,
+          "english": "I won't waste time tomorrow.",
+          "sample_fi": "En tuhlaa huomenna aikaa."
+        },
+        {
+          "id": 18,
+          "english": "I won't drink coffee after 6 pm tomorrow.",
+          "sample_fi": "En juo huomenna kahvia kuuden jälkeen."
+        }
       ]
     },
     {
@@ -145,29 +828,103 @@
       "number": 4,
       "title": "Tekstinymmärtäminen",
       "titleEn": "Reading Comprehension",
-      "instructions": "Read the text carefully, then answer the multiple-choice questions.",
+      "instructions": "Lue teksti huolellisesti ja vastaa kysymyksiin. (Read the text carefully and answer the questions in Finnish.)",
       "type": "comprehension",
       "points": 5,
       "items_per_exam": 5,
-      "topics": ["Reading", "Vocabulary", "Past Tense"],
+      "topics": [
+        "Reading",
+        "Vocabulary",
+        "Past Tense"
+      ],
       "passage_pool": [
         {
           "id": "p1",
           "title": "Marin matka",
           "text": "Minä olen Mari. Asun Tampereella, mutta käyn usein Helsingissä. Matkustan yleensä junalla, koska se on nopein ja mukavin tapa matkustaa. Juna-asema on lähellä kotiani, joten se on myös kätevä.\n\nViime viikonloppuna menin Helsinkiin tapaamaan ystäviäni. Ostin lipun internetistä etukäteen, koska se oli halvempi. Matka kesti noin kaksi tuntia. Helsingissä kävimme ravintolassa syömässä ja sitten menimme elokuviin. Se oli todella hauska päivä!\n\nHelsingissä asuu myös siskoni Tiina. Hänellä on pieni asunto Kallion kaupunginosassa. Tiinalla on kaksi kissaa. Minä pidän kissoista, mutta en voi pitää niitä kotona, koska minulla on allergia.",
           "vocabulary": [
-            { "word": "mukavin", "meaning": "most comfortable / most pleasant" },
-            { "word": "kätevä", "meaning": "convenient / handy" },
-            { "word": "etukäteen", "meaning": "in advance / beforehand" },
-            { "word": "kesti", "meaning": "lasted / took (time)" },
-            { "word": "allergia", "meaning": "allergy" }
+            {
+              "word": "mukavin",
+              "meaning": "most comfortable / most pleasant"
+            },
+            {
+              "word": "kätevä",
+              "meaning": "convenient / handy"
+            },
+            {
+              "word": "etukäteen",
+              "meaning": "in advance / beforehand"
+            },
+            {
+              "word": "kesti",
+              "meaning": "lasted / took (time)"
+            },
+            {
+              "word": "allergia",
+              "meaning": "allergy"
+            }
           ],
           "items": [
-            { "id": 1, "question": "Where does Mari live?", "options": ["Helsinki", "Tampere", "Turku", "Oulu"], "answer": "Tampere", "explanation": "'Asun Tampereella' = I live in Tampere." },
-            { "id": 2, "question": "How does Mari usually travel to Helsinki?", "options": ["by bus", "by car", "by train", "by plane"], "answer": "by train", "explanation": "'Matkustan yleensä junalla' = I usually travel by train." },
-            { "id": 3, "question": "Why did Mari buy her ticket online?", "options": ["It was faster", "It was cheaper", "The station was far", "She had no cash"], "answer": "It was cheaper", "explanation": "'koska se oli halvempi' = because it was cheaper." },
-            { "id": 4, "question": "How long did the journey take?", "options": ["about one hour", "about two hours", "about three hours", "about half an hour"], "answer": "about two hours", "explanation": "'Matka kesti noin kaksi tuntia' = The journey lasted about two hours." },
-            { "id": 5, "question": "Why can't Mari keep cats at home?", "options": ["She doesn't like them", "Her apartment is too small", "She has an allergy", "Pets are not allowed"], "answer": "She has an allergy", "explanation": "'minulla on allergia' = I have an allergy." }
+            {
+              "id": 1,
+              "question": "Missä Mari asuu?",
+              "options": [
+                "Helsingissä",
+                "Tampereella",
+                "Turussa",
+                "Oulussa"
+              ],
+              "answer": "Tampereella",
+              "explanation": "'Asun Tampereella' = I live in Tampere."
+            },
+            {
+              "id": 2,
+              "question": "Miten Mari yleensä matkustaa Helsinkiin?",
+              "options": [
+                "bussilla",
+                "autolla",
+                "junalla",
+                "lentokoneella"
+              ],
+              "answer": "junalla",
+              "explanation": "'Matkustan yleensä junalla' = I usually travel by train."
+            },
+            {
+              "id": 3,
+              "question": "Miksi Mari osti lipun internetistä?",
+              "options": [
+                "Se oli nopeampaa.",
+                "Se oli halvempi.",
+                "Asema oli kaukana.",
+                "Hänellä ei ollut käteistä."
+              ],
+              "answer": "Se oli halvempi.",
+              "explanation": "'koska se oli halvempi' = because it was cheaper."
+            },
+            {
+              "id": 4,
+              "question": "Kuinka kauan matka kesti?",
+              "options": [
+                "noin tunnin",
+                "noin kaksi tuntia",
+                "noin kolme tuntia",
+                "noin puoli tuntia"
+              ],
+              "answer": "noin kaksi tuntia",
+              "explanation": "'Matka kesti noin kaksi tuntia' = The journey lasted about two hours."
+            },
+            {
+              "id": 5,
+              "question": "Miksi Mari ei voi pitää kissoja kotona?",
+              "options": [
+                "Hän ei pidä kissoista.",
+                "Asunto on liian pieni.",
+                "Hänellä on allergia.",
+                "Lemmikkejä ei saa pitää."
+              ],
+              "answer": "Hänellä on allergia.",
+              "explanation": "'minulla on allergia' = I have an allergy."
+            }
           ]
         },
         {
@@ -175,18 +932,88 @@
           "title": "Aleksin päivä",
           "text": "Minä olen Aleksi ja olen opiskelija. Opiskelen tietotekniikkaa Turun yliopistossa. Asun pienessä asunnossa ystäväni Kimin kanssa.\n\nHerään yleensä kello seitsemän. Syön aamiaisen kotona ja juon kahvia. Sitten menen yliopistolle bussilla. Bussilla menee noin kaksikymmentä minuuttia.\n\nEilen minulla oli pitkä päivä. Olin yliopistolla kello kahdeksasta kolmeen. Sitten menin kirjastoon opiskelemaan koetta varten. Illalla söin pizzaa Kimin kanssa. Katsoimme myös elokuvan yhdessä. Menin nukkumaan myöhään, noin puoli kaksitoista.",
           "vocabulary": [
-            { "word": "tietotekniikka", "meaning": "information technology / computer science" },
-            { "word": "herätä", "meaning": "to wake up" },
-            { "word": "koe", "meaning": "exam / test" },
-            { "word": "yhdessä", "meaning": "together" },
-            { "word": "puoli kaksitoista", "meaning": "half past eleven (11:30)" }
+            {
+              "word": "tietotekniikka",
+              "meaning": "information technology / computer science"
+            },
+            {
+              "word": "herätä",
+              "meaning": "to wake up"
+            },
+            {
+              "word": "koe",
+              "meaning": "exam / test"
+            },
+            {
+              "word": "yhdessä",
+              "meaning": "together"
+            },
+            {
+              "word": "puoli kaksitoista",
+              "meaning": "half past eleven (11:30)"
+            }
           ],
           "items": [
-            { "id": 1, "question": "What does Aleksi study?", "options": ["Mathematics", "Languages", "Information Technology", "Medicine"], "answer": "Information Technology", "explanation": "'Opiskelen tietotekniikkaa' = I study information technology." },
-            { "id": 2, "question": "Who does Aleksi live with?", "options": ["Alone", "With his family", "With his friend Kimi", "With his sister"], "answer": "With his friend Kimi", "explanation": "'ystäväni Kimin kanssa' = with my friend Kimi." },
-            { "id": 3, "question": "How does Aleksi get to university?", "options": ["on foot", "by bicycle", "by car", "by bus"], "answer": "by bus", "explanation": "'menen yliopistolle bussilla' = I go to university by bus." },
-            { "id": 4, "question": "What did Aleksi do in the evening yesterday?", "options": ["He went to a restaurant", "He ate pizza and watched a movie", "He went to the gym", "He called a friend"], "answer": "He ate pizza and watched a movie", "explanation": "'söin pizzaa...Katsoimme myös elokuvan' = ate pizza... we also watched a movie." },
-            { "id": 5, "question": "What time did Aleksi go to bed?", "options": ["At 11 o'clock", "At 12 o'clock", "At 11:30", "At 10:30"], "answer": "At 11:30", "explanation": "'puoli kaksitoista' = half past eleven = 11:30." }
+            {
+              "id": 1,
+              "question": "Mitä Aleksi opiskelee?",
+              "options": [
+                "matematiikkaa",
+                "kieliä",
+                "tietotekniikkaa",
+                "lääketiedettä"
+              ],
+              "answer": "tietotekniikkaa",
+              "explanation": "'Opiskelen tietotekniikkaa' = I study information technology."
+            },
+            {
+              "id": 2,
+              "question": "Kenen kanssa Aleksi asuu?",
+              "options": [
+                "yksin",
+                "perheensä kanssa",
+                "ystävänsä Kimin kanssa",
+                "siskonsaan kanssa"
+              ],
+              "answer": "ystävänsä Kimin kanssa",
+              "explanation": "'ystäväni Kimin kanssa' = with my friend Kimi."
+            },
+            {
+              "id": 3,
+              "question": "Miten Aleksi menee yliopistoon?",
+              "options": [
+                "kävellen",
+                "polkupyörällä",
+                "autolla",
+                "bussilla"
+              ],
+              "answer": "bussilla",
+              "explanation": "'menen yliopistolle bussilla' = I go to university by bus."
+            },
+            {
+              "id": 4,
+              "question": "Mitä Aleksi teki illalla eilen?",
+              "options": [
+                "Hän meni ravintolaan.",
+                "Hän söi pizzaa ja katsoi elokuvan.",
+                "Hän kävi salilla.",
+                "Hän soitti ystävälle."
+              ],
+              "answer": "Hän söi pizzaa ja katsoi elokuvan.",
+              "explanation": "'söin pizzaa...Katsoimme myös elokuvan' = ate pizza and watched a movie."
+            },
+            {
+              "id": 5,
+              "question": "Mihin aikaan Aleksi meni nukkumaan?",
+              "options": [
+                "kello 11",
+                "kello 12",
+                "puoli kaksitoista",
+                "puoli yksitoista"
+              ],
+              "answer": "puoli kaksitoista",
+              "explanation": "'puoli kaksitoista' = half past eleven = 11:30."
+            }
           ]
         },
         {
@@ -194,18 +1021,88 @@
           "title": "Kaupassa",
           "text": "Sofia menee kauppaan joka viikko tiistaisin. Hän ostaa yleensä maitoa, leipää, hedelmiä ja vihanneksia. Sofian perhe on suuri: hänellä on aviomies ja kolme lasta.\n\nViime tiistaina kaupassa oli paljon ihmisiä. Sofia otti ostoskorin ja alkoi katsoa tuotteita. Hän löysi hyvän tarjouksen: jogurtit olivat puoleen hintaan! Sofia otti kuusi jogurttia.\n\nKassalla Sofia maksoi kortilla. Lasku oli 43 euroa. Se oli vähän enemmän kuin yleensä, koska hän osti myös kaksi pulloa mehoa. Kotiin päästyään hän laittoi ruoat jääkaappiin ja pakastimeen.",
           "vocabulary": [
-            { "word": "ostokortti", "meaning": "shopping basket" },
-            { "word": "tarjous", "meaning": "offer / deal / discount" },
-            { "word": "puoleen hintaan", "meaning": "at half price" },
-            { "word": "kassakone / kassalla", "meaning": "at the checkout / cash register" },
-            { "word": "pakastin", "meaning": "freezer" }
+            {
+              "word": "ostokortti",
+              "meaning": "shopping basket"
+            },
+            {
+              "word": "tarjous",
+              "meaning": "offer / deal / discount"
+            },
+            {
+              "word": "puoleen hintaan",
+              "meaning": "at half price"
+            },
+            {
+              "word": "kassakone / kassalla",
+              "meaning": "at the checkout / cash register"
+            },
+            {
+              "word": "pakastin",
+              "meaning": "freezer"
+            }
           ],
           "items": [
-            { "id": 1, "question": "When does Sofia go grocery shopping?", "options": ["Every Monday", "Every Tuesday", "Every Thursday", "Every Sunday"], "answer": "Every Tuesday", "explanation": "'joka viikko tiistaisin' = every week on Tuesdays." },
-            { "id": 2, "question": "How many children does Sofia have?", "options": ["one", "two", "three", "four"], "answer": "three", "explanation": "'kolme lasta' = three children." },
-            { "id": 3, "question": "What was on special offer?", "options": ["milk", "bread", "yoghurts", "juice"], "answer": "yoghurts", "explanation": "'jogurtit olivat puoleen hintaan' = yoghurts were at half price." },
-            { "id": 4, "question": "How did Sofia pay?", "options": ["with cash", "with a card", "with a voucher", "she didn't pay"], "answer": "with a card", "explanation": "'Sofia maksoi kortilla' = Sofia paid by card." },
-            { "id": 5, "question": "What was the total cost?", "options": ["33 euros", "43 euros", "53 euros", "34 euros"], "answer": "43 euros", "explanation": "'Lasku oli 43 euroa' = The bill was 43 euros." }
+            {
+              "id": 1,
+              "question": "Milloin Sofia käy kaupassa?",
+              "options": [
+                "joka maanantai",
+                "joka tiistai",
+                "joka torstai",
+                "joka sunnuntai"
+              ],
+              "answer": "joka tiistai",
+              "explanation": "'joka viikko tiistaisin' = every week on Tuesdays."
+            },
+            {
+              "id": 2,
+              "question": "Kuinka monta lasta Sofialla on?",
+              "options": [
+                "yksi",
+                "kaksi",
+                "kolme",
+                "neljä"
+              ],
+              "answer": "kolme",
+              "explanation": "'kolme lasta' = three children."
+            },
+            {
+              "id": 3,
+              "question": "Mikä oli tarjouksessa?",
+              "options": [
+                "maito",
+                "leipä",
+                "jogurtit",
+                "mehu"
+              ],
+              "answer": "jogurtit",
+              "explanation": "'jogurtit olivat puoleen hintaan' = yoghurts were at half price."
+            },
+            {
+              "id": 4,
+              "question": "Miten Sofia maksoi?",
+              "options": [
+                "käteisellä",
+                "kortilla",
+                "lahjakortilla",
+                "hän ei maksanut"
+              ],
+              "answer": "kortilla",
+              "explanation": "'Sofia maksoi kortilla' = Sofia paid by card."
+            },
+            {
+              "id": 5,
+              "question": "Paljonko lasku oli?",
+              "options": [
+                "33 euroa",
+                "43 euroa",
+                "53 euroa",
+                "34 euroa"
+              ],
+              "answer": "43 euroa",
+              "explanation": "'Lasku oli 43 euroa' = The bill was 43 euros."
+            }
           ]
         },
         {
@@ -213,18 +1110,88 @@
           "title": "Minun kotini",
           "text": "Minulla on kaksio Tampereen keskustassa. Asunnossani on olohuone, keittiö, makuuhuone ja kylpyhuone. Olohuoneessa on iso sohva, televisio ja kirjahylly. Ikkunasta näkee puiston.\n\nKeittiössä on ruokapöytä neljälle hengelle. Ruoanlaitosta pidän paljon, joten keittiö on minulle tärkeä huone. Minulla on paljon keittiövälineitä.\n\nAsuinkumppanini on Petra. Hän asuu kanssani jo kolmatta vuotta. Petra on siisti ja hyvä kokki. Me tulemme hyvin toimeen. Meillä on myös parveke, jolla istumme kesäisin kahvilla.",
           "vocabulary": [
-            { "word": "kaksio", "meaning": "two-room apartment (one bedroom)" },
-            { "word": "kirjahylly", "meaning": "bookshelf / bookcase" },
-            { "word": "ruoanlaitosta pidän", "meaning": "I like cooking" },
-            { "word": "asuinkumppani", "meaning": "flatmate / roommate" },
-            { "word": "parveke", "meaning": "balcony" }
+            {
+              "word": "kaksio",
+              "meaning": "two-room apartment (one bedroom)"
+            },
+            {
+              "word": "kirjahylly",
+              "meaning": "bookshelf / bookcase"
+            },
+            {
+              "word": "ruoanlaitosta pidän",
+              "meaning": "I like cooking"
+            },
+            {
+              "word": "asuinkumppani",
+              "meaning": "flatmate / roommate"
+            },
+            {
+              "word": "parveke",
+              "meaning": "balcony"
+            }
           ],
           "items": [
-            { "id": 1, "question": "What type of apartment does the narrator have?", "options": ["studio apartment", "two-room apartment", "three-room apartment", "a house"], "answer": "two-room apartment", "explanation": "kaksio = two-room apartment (one bedroom + living room)." },
-            { "id": 2, "question": "What can be seen from the window?", "options": ["the sea", "a park", "another building", "the street"], "answer": "a park", "explanation": "'Ikkunasta näkee puiston' = From the window you can see the park." },
-            { "id": 3, "question": "How many people can sit at the kitchen table?", "options": ["two", "three", "four", "six"], "answer": "four", "explanation": "'ruokapöytä neljälle hengelle' = dining table for four people." },
-            { "id": 4, "question": "How long has Petra lived with the narrator?", "options": ["one year", "two years", "almost three years", "four years"], "answer": "almost three years", "explanation": "'jo kolmatta vuotta' = already into the third year (almost 3 years)." },
-            { "id": 5, "question": "What do they do on the balcony in summer?", "options": ["exercise", "eat dinner", "drink coffee", "grow plants"], "answer": "drink coffee", "explanation": "'parveke, jolla istumme kesäisin kahvilla' = balcony where we sit with coffee in summer." }
+            {
+              "id": 1,
+              "question": "Minkälainen asunto kertojalla on?",
+              "options": [
+                "yksiö",
+                "kaksio",
+                "kolmio",
+                "omakotitalo"
+              ],
+              "answer": "kaksio",
+              "explanation": "kaksio = two-room apartment (one bedroom + living room)."
+            },
+            {
+              "id": 2,
+              "question": "Mitä ikkunasta näkee?",
+              "options": [
+                "meren",
+                "puiston",
+                "toisen rakennuksen",
+                "kadun"
+              ],
+              "answer": "puiston",
+              "explanation": "'Ikkunasta näkee puiston' = From the window you can see the park."
+            },
+            {
+              "id": 3,
+              "question": "Montako henkilöä mahtuu ruokapöytään?",
+              "options": [
+                "kaksi",
+                "kolme",
+                "neljä",
+                "kuusi"
+              ],
+              "answer": "neljä",
+              "explanation": "'ruokapöytä neljälle hengelle' = dining table for four people."
+            },
+            {
+              "id": 4,
+              "question": "Kuinka kauan Petra on asunut kertojan kanssa?",
+              "options": [
+                "vuoden",
+                "kaksi vuotta",
+                "lähes kolme vuotta",
+                "neljä vuotta"
+              ],
+              "answer": "lähes kolme vuotta",
+              "explanation": "'jo kolmatta vuotta' = already into the third year (almost 3 years)."
+            },
+            {
+              "id": 5,
+              "question": "Mitä he tekevät parvekkeella kesällä?",
+              "options": [
+                "harjoittelevat",
+                "syövät illallista",
+                "juovat kahvia",
+                "kasvattavat kasveja"
+              ],
+              "answer": "juovat kahvia",
+              "explanation": "'parveke, jolla istumme kesäisin kahvilla' = balcony where we sit with coffee in summer."
+            }
           ]
         }
       ]
@@ -234,36 +1201,254 @@
       "number": 5,
       "title": "Omistuslauseet",
       "titleEn": "Possessive Sentences",
-      "instructions": "Translate the sentences into Finnish using the possession structure (minulla on, sinulla on, hänellä on...).",
+      "instructions": "Kirjoita omistuslause. Käytä annettua henkilöä ja sanaa. (Write a possessive sentence using the given person and word. k = kysymys/question, ei = kielto/negative)",
       "type": "fill_in_blank_sentence",
       "points": 5,
       "items_per_exam": 5,
-      "topics": ["Possessive Sentences"],
+      "topics": [
+        "Possessive Sentences"
+      ],
       "question_pool": [
-        { "id": 1, "english": "I have a car.", "answer": "Minulla on auto.", "accepted": ["minulla on auto.", "minulla on auto"], "explanation": "minulla = I have (adessive of minä + on)" },
-        { "id": 2, "english": "Do you have time? (sinä)", "answer": "Onko sinulla aikaa?", "accepted": ["onko sinulla aikaa?", "onko sinulla aikaa"], "explanation": "Question with -ko: Onko sinulla + aikaa (partitive of aika)" },
-        { "id": 3, "english": "He doesn't have money.", "answer": "Hänellä ei ole rahaa.", "accepted": ["hänellä ei ole rahaa.", "hänellä ei ole rahaa"], "explanation": "Negative: hänellä + ei ole + rahaa (partitive after negative)" },
-        { "id": 4, "english": "We have a big house.", "answer": "Meillä on iso talo.", "accepted": ["meillä on iso talo.", "meillä on iso talo"], "explanation": "meillä = we have (adessive of me)" },
-        { "id": 5, "english": "She has a headache.", "answer": "Hänellä on päänsärky.", "accepted": ["hänellä on päänsärky.", "hänellä on päänsärky"], "explanation": "päänsärky = headache (pää = head, särky = ache)" },
-        { "id": 6, "english": "They have two children.", "answer": "Heillä on kaksi lasta.", "accepted": ["heillä on kaksi lasta.", "heillä on kaksi lasta"], "explanation": "heillä = they have (adessive of he). lasta = partitive of lapsi after number 2." },
-        { "id": 7, "english": "Do you (pl.) have a dictionary?", "answer": "Onko teillä sanakirja?", "accepted": ["onko teillä sanakirja?", "onko teillä sanakirja"], "explanation": "teillä = you all have (adessive of te)" },
-        { "id": 8, "english": "I don't have time.", "answer": "Minulla ei ole aikaa.", "accepted": ["minulla ei ole aikaa.", "minulla ei ole aikaa"], "explanation": "Negative possession: minulla ei ole + aikaa (partitive)" },
-        { "id": 9, "english": "He has a fever.", "answer": "Hänellä on kuume.", "accepted": ["hänellä on kuume.", "hänellä on kuume"], "explanation": "kuume = fever/temperature." },
-        { "id": 10, "english": "She has a dog and a cat.", "answer": "Hänellä on koira ja kissa.", "accepted": ["hänellä on koira ja kissa.", "hänellä on koira ja kissa"], "explanation": "hänellä on + nominative for definite items." },
-        { "id": 11, "english": "We don't have a car.", "answer": "Meillä ei ole autoa.", "accepted": ["meillä ei ole autoa.", "meillä ei ole autoa"], "explanation": "Negative: meillä ei ole + autoa (partitive)" },
-        { "id": 12, "english": "Do you have a pen? (sinä)", "answer": "Onko sinulla kynä?", "accepted": ["onko sinulla kynä?", "onko sinulla kynä"], "explanation": "sinulla = you have (adessive of sinä)" },
-        { "id": 13, "english": "I have a cold.", "answer": "Minulla on flunssa.", "accepted": ["minulla on flunssa.", "minulla on flunssa"], "explanation": "flunssa = cold (illness)." },
-        { "id": 14, "english": "They don't have enough money.", "answer": "Heillä ei ole tarpeeksi rahaa.", "accepted": ["heillä ei ole tarpeeksi rahaa.", "heillä ei ole tarpeeksi rahaa"], "explanation": "tarpeeksi = enough. rahaa = partitive of raha." },
-        { "id": 15, "english": "I have a question.", "answer": "Minulla on kysymys.", "accepted": ["minulla on kysymys.", "minulla on kysymys"], "explanation": "kysymys = question." },
-        { "id": 16, "english": "Do they have children?", "answer": "Onko heillä lapsia?", "accepted": ["onko heillä lapsia?", "onko heillä lapsia"], "explanation": "lapsia = partitive of lapset (used in question/indefinite)." },
-        { "id": 17, "english": "He has a new bicycle.", "answer": "Hänellä on uusi polkupyörä.", "accepted": ["hänellä on uusi polkupyörä.", "hänellä on uusi polkupyörä"], "explanation": "polkupyörä = bicycle. uusi = new." },
-        { "id": 18, "english": "We have homework.", "answer": "Meillä on läksyjä.", "accepted": ["meillä on läksyjä.", "meillä on läksyjä"], "explanation": "läksyjä = partitive plural of läksy (homework)." },
-        { "id": 19, "english": "She doesn't have a phone.", "answer": "Hänellä ei ole puhelinta.", "accepted": ["hänellä ei ole puhelinta.", "hänellä ei ole puhelinta"], "explanation": "puhelinta = partitive of puhelin after negation." },
-        { "id": 20, "english": "They have a big garden.", "answer": "Heillä on iso puutarha.", "accepted": ["heillä on iso puutarha.", "heillä on iso puutarha"], "explanation": "puutarha = garden." },
-        { "id": 21, "english": "Do you have a map? (sinä)", "answer": "Onko sinulla kartta?", "accepted": ["onko sinulla kartta?", "onko sinulla kartta"], "explanation": "kartta = map." },
-        { "id": 22, "english": "I have a stomachache.", "answer": "Minulla on vatsakipu.", "accepted": ["minulla on vatsakipu.", "minulla on vatsakipu"], "explanation": "vatsakipu = stomachache (vatsa = stomach, kipu = pain)." },
-        { "id": 23, "english": "He has an idea.", "answer": "Hänellä on idea.", "accepted": ["hänellä on idea.", "hänellä on idea"], "explanation": "idea = idea (borrowed word)." },
-        { "id": 24, "english": "We don't have enough food.", "answer": "Meillä ei ole tarpeeksi ruokaa.", "accepted": ["meillä ei ole tarpeeksi ruokaa.", "meillä ei ole tarpeeksi ruokaa"], "explanation": "ruokaa = partitive of ruoka after negation." }
+        {
+          "id": 1,
+          "prompt_fi": "minä – auto",
+          "answer": "Minulla on auto.",
+          "accepted": [
+            "minulla on auto.",
+            "minulla on auto"
+          ],
+          "explanation": "minulla = I have (adessive of minä + on)"
+        },
+        {
+          "id": 2,
+          "prompt_fi": "sinä – aika (k)",
+          "answer": "Onko sinulla aikaa?",
+          "accepted": [
+            "onko sinulla aikaa?",
+            "onko sinulla aikaa"
+          ],
+          "explanation": "Question -ko: Onko sinulla + aikaa (partitive of aika)"
+        },
+        {
+          "id": 3,
+          "prompt_fi": "hän – raha (ei)",
+          "answer": "Hänellä ei ole rahaa.",
+          "accepted": [
+            "hänellä ei ole rahaa.",
+            "hänellä ei ole rahaa"
+          ],
+          "explanation": "Negative: hänellä ei ole + rahaa (partitive)"
+        },
+        {
+          "id": 4,
+          "prompt_fi": "me – iso talo",
+          "answer": "Meillä on iso talo.",
+          "accepted": [
+            "meillä on iso talo.",
+            "meillä on iso talo"
+          ],
+          "explanation": "meillä = we have (adessive of me)"
+        },
+        {
+          "id": 5,
+          "prompt_fi": "hän – päänsärky",
+          "answer": "Hänellä on päänsärky.",
+          "accepted": [
+            "hänellä on päänsärky.",
+            "hänellä on päänsärky"
+          ],
+          "explanation": "päänsärky = headache (pää = head, särky = ache)"
+        },
+        {
+          "id": 6,
+          "prompt_fi": "he – kaksi lasta",
+          "answer": "Heillä on kaksi lasta.",
+          "accepted": [
+            "heillä on kaksi lasta.",
+            "heillä on kaksi lasta"
+          ],
+          "explanation": "heillä = they have; lasta = partitive of lapsi after 2."
+        },
+        {
+          "id": 7,
+          "prompt_fi": "te – sanakirja (k)",
+          "answer": "Onko teillä sanakirja?",
+          "accepted": [
+            "onko teillä sanakirja?",
+            "onko teillä sanakirja"
+          ],
+          "explanation": "teillä = you (pl.) have (adessive of te)"
+        },
+        {
+          "id": 8,
+          "prompt_fi": "minä – aika (ei)",
+          "answer": "Minulla ei ole aikaa.",
+          "accepted": [
+            "minulla ei ole aikaa.",
+            "minulla ei ole aikaa"
+          ],
+          "explanation": "Negative possession: minulla ei ole + aikaa (partitive)"
+        },
+        {
+          "id": 9,
+          "prompt_fi": "hän – kuume",
+          "answer": "Hänellä on kuume.",
+          "accepted": [
+            "hänellä on kuume.",
+            "hänellä on kuume"
+          ],
+          "explanation": "kuume = fever/temperature."
+        },
+        {
+          "id": 10,
+          "prompt_fi": "hän – koira ja kissa",
+          "answer": "Hänellä on koira ja kissa.",
+          "accepted": [
+            "hänellä on koira ja kissa.",
+            "hänellä on koira ja kissa"
+          ],
+          "explanation": "hänellä on + nominative for definite items."
+        },
+        {
+          "id": 11,
+          "prompt_fi": "me – auto (ei)",
+          "answer": "Meillä ei ole autoa.",
+          "accepted": [
+            "meillä ei ole autoa.",
+            "meillä ei ole autoa"
+          ],
+          "explanation": "Negative: meillä ei ole + autoa (partitive)"
+        },
+        {
+          "id": 12,
+          "prompt_fi": "sinä – kynä (k)",
+          "answer": "Onko sinulla kynä?",
+          "accepted": [
+            "onko sinulla kynä?",
+            "onko sinulla kynä"
+          ],
+          "explanation": "sinulla = you have (adessive of sinä)"
+        },
+        {
+          "id": 13,
+          "prompt_fi": "minä – flunssa",
+          "answer": "Minulla on flunssa.",
+          "accepted": [
+            "minulla on flunssa.",
+            "minulla on flunssa"
+          ],
+          "explanation": "flunssa = cold (illness)."
+        },
+        {
+          "id": 14,
+          "prompt_fi": "he – tarpeeksi rahaa (ei)",
+          "answer": "Heillä ei ole tarpeeksi rahaa.",
+          "accepted": [
+            "heillä ei ole tarpeeksi rahaa.",
+            "heillä ei ole tarpeeksi rahaa"
+          ],
+          "explanation": "tarpeeksi = enough. rahaa = partitive of raha."
+        },
+        {
+          "id": 15,
+          "prompt_fi": "minä – kysymys",
+          "answer": "Minulla on kysymys.",
+          "accepted": [
+            "minulla on kysymys.",
+            "minulla on kysymys"
+          ],
+          "explanation": "kysymys = question."
+        },
+        {
+          "id": 16,
+          "prompt_fi": "he – lapsia (k)",
+          "answer": "Onko heillä lapsia?",
+          "accepted": [
+            "onko heillä lapsia?",
+            "onko heillä lapsia"
+          ],
+          "explanation": "lapsia = partitive plural (indefinite in question)."
+        },
+        {
+          "id": 17,
+          "prompt_fi": "hän – uusi polkupyörä",
+          "answer": "Hänellä on uusi polkupyörä.",
+          "accepted": [
+            "hänellä on uusi polkupyörä.",
+            "hänellä on uusi polkupyörä"
+          ],
+          "explanation": "polkupyörä = bicycle. uusi = new."
+        },
+        {
+          "id": 18,
+          "prompt_fi": "me – läksyjä",
+          "answer": "Meillä on läksyjä.",
+          "accepted": [
+            "meillä on läksyjä.",
+            "meillä on läksyjä"
+          ],
+          "explanation": "läksyjä = partitive plural of läksy (homework)."
+        },
+        {
+          "id": 19,
+          "prompt_fi": "hän – puhelin (ei)",
+          "answer": "Hänellä ei ole puhelinta.",
+          "accepted": [
+            "hänellä ei ole puhelinta.",
+            "hänellä ei ole puhelinta"
+          ],
+          "explanation": "puhelinta = partitive of puhelin after negation."
+        },
+        {
+          "id": 20,
+          "prompt_fi": "he – iso puutarha",
+          "answer": "Heillä on iso puutarha.",
+          "accepted": [
+            "heillä on iso puutarha.",
+            "heillä on iso puutarha"
+          ],
+          "explanation": "puutarha = garden."
+        },
+        {
+          "id": 21,
+          "prompt_fi": "sinä – kartta (k)",
+          "answer": "Onko sinulla kartta?",
+          "accepted": [
+            "onko sinulla kartta?",
+            "onko sinulla kartta"
+          ],
+          "explanation": "kartta = map."
+        },
+        {
+          "id": 22,
+          "prompt_fi": "minä – vatsakipu",
+          "answer": "Minulla on vatsakipu.",
+          "accepted": [
+            "minulla on vatsakipu.",
+            "minulla on vatsakipu"
+          ],
+          "explanation": "vatsakipu = stomachache (vatsa = stomach, kipu = pain)."
+        },
+        {
+          "id": 23,
+          "prompt_fi": "hän – hyvä idea",
+          "answer": "Hänellä on hyvä idea.",
+          "accepted": [
+            "hänellä on hyvä idea.",
+            "hänellä on hyvä idea"
+          ],
+          "explanation": "idea = idea (borrowed word)."
+        },
+        {
+          "id": 24,
+          "prompt_fi": "me – tarpeeksi ruokaa (ei)",
+          "answer": "Meillä ei ole tarpeeksi ruokaa.",
+          "accepted": [
+            "meillä ei ole tarpeeksi ruokaa.",
+            "meillä ei ole tarpeeksi ruokaa"
+          ],
+          "explanation": "ruokaa = partitive of ruoka after negation."
+        }
       ]
     },
     {
@@ -274,93 +1459,456 @@
       "instructions": "Three professions are given as examples. Write 2 more professions in Finnish with their English meaning.",
       "type": "vocabulary_open",
       "points": 2,
-      "topics": ["Vocabulary - Professions"],
+      "topics": [
+        "Vocabulary - Professions"
+      ],
       "given": [
-        { "fi": "lääkäri", "en": "doctor" },
-        { "fi": "opettaja", "en": "teacher" },
-        { "fi": "poliisi", "en": "police officer" }
+        {
+          "fi": "lääkäri",
+          "en": "doctor"
+        },
+        {
+          "fi": "opettaja",
+          "en": "teacher"
+        },
+        {
+          "fi": "poliisi",
+          "en": "police officer"
+        }
       ],
       "accepted_answers": [
-        { "fi": "sairaanhoitaja", "en": "nurse" },
-        { "fi": "insinööri", "en": "engineer" },
-        { "fi": "arkkitehti", "en": "architect" },
-        { "fi": "juristi", "en": "lawyer" },
-        { "fi": "lakimies", "en": "lawyer" },
-        { "fi": "kokki", "en": "cook / chef" },
-        { "fi": "palomies", "en": "firefighter" },
-        { "fi": "toimittaja", "en": "journalist / reporter" },
-        { "fi": "myyjä", "en": "salesperson / shop assistant" },
-        { "fi": "puuseppä", "en": "carpenter" },
-        { "fi": "sähköasentaja", "en": "electrician" },
-        { "fi": "kampaaja", "en": "hairdresser" },
-        { "fi": "hammaslääkäri", "en": "dentist" },
-        { "fi": "eläinlääkäri", "en": "veterinarian / vet" },
-        { "fi": "kirjailija", "en": "writer / author" },
-        { "fi": "näyttelijä", "en": "actor" },
-        { "fi": "muusikko", "en": "musician" },
-        { "fi": "pilotti", "en": "pilot" },
-        { "fi": "psykologi", "en": "psychologist" },
-        { "fi": "farmaseutti", "en": "pharmacist" },
-        { "fi": "kätilö", "en": "midwife" },
-        { "fi": "fysioterapeutti", "en": "physiotherapist" },
-        { "fi": "sosionomi", "en": "social worker" },
-        { "fi": "parturi", "en": "barber" },
-        { "fi": "tanssija", "en": "dancer" },
-        { "fi": "urheilija", "en": "athlete / sportsperson" },
-        { "fi": "kirjanpitäjä", "en": "accountant" },
-        { "fi": "ekonomi", "en": "economist" },
-        { "fi": "pastori", "en": "pastor / priest" },
-        { "fi": "toimistotyöntekijä", "en": "office worker" }
+        {
+          "fi": "sairaanhoitaja",
+          "en": "nurse"
+        },
+        {
+          "fi": "insinööri",
+          "en": "engineer"
+        },
+        {
+          "fi": "arkkitehti",
+          "en": "architect"
+        },
+        {
+          "fi": "juristi",
+          "en": "lawyer"
+        },
+        {
+          "fi": "lakimies",
+          "en": "lawyer"
+        },
+        {
+          "fi": "kokki",
+          "en": "cook / chef"
+        },
+        {
+          "fi": "palomies",
+          "en": "firefighter"
+        },
+        {
+          "fi": "toimittaja",
+          "en": "journalist / reporter"
+        },
+        {
+          "fi": "myyjä",
+          "en": "salesperson / shop assistant"
+        },
+        {
+          "fi": "puuseppä",
+          "en": "carpenter"
+        },
+        {
+          "fi": "sähköasentaja",
+          "en": "electrician"
+        },
+        {
+          "fi": "kampaaja",
+          "en": "hairdresser"
+        },
+        {
+          "fi": "hammaslääkäri",
+          "en": "dentist"
+        },
+        {
+          "fi": "eläinlääkäri",
+          "en": "veterinarian / vet"
+        },
+        {
+          "fi": "kirjailija",
+          "en": "writer / author"
+        },
+        {
+          "fi": "näyttelijä",
+          "en": "actor"
+        },
+        {
+          "fi": "muusikko",
+          "en": "musician"
+        },
+        {
+          "fi": "pilotti",
+          "en": "pilot"
+        },
+        {
+          "fi": "psykologi",
+          "en": "psychologist"
+        },
+        {
+          "fi": "farmaseutti",
+          "en": "pharmacist"
+        },
+        {
+          "fi": "kätilö",
+          "en": "midwife"
+        },
+        {
+          "fi": "fysioterapeutti",
+          "en": "physiotherapist"
+        },
+        {
+          "fi": "sosionomi",
+          "en": "social worker"
+        },
+        {
+          "fi": "parturi",
+          "en": "barber"
+        },
+        {
+          "fi": "tanssija",
+          "en": "dancer"
+        },
+        {
+          "fi": "urheilija",
+          "en": "athlete / sportsperson"
+        },
+        {
+          "fi": "kirjanpitäjä",
+          "en": "accountant"
+        },
+        {
+          "fi": "ekonomi",
+          "en": "economist"
+        },
+        {
+          "fi": "pastori",
+          "en": "pastor / priest"
+        },
+        {
+          "fi": "toimistotyöntekijä",
+          "en": "office worker"
+        }
+      ]
+    },
+    {
+      "id": "q_audio",
+      "number": 7,
+      "title": "Kuuntele ja vastaa – Esittäytyminen",
+      "titleEn": "Listen & Answer – Introduction",
+      "instructions": "Kuuntele äänite ja vastaa kysymyksiin suomeksi. Listen to the audio and answer the questions in Finnish.",
+      "type": "audio_response",
+      "points": 3,
+      "topics": [
+        "Introduction",
+        "Spoken Finnish"
+      ],
+      "questions": [
+        {
+          "id": 1,
+          "prompt": "Mikä sinun nimesi on?",
+          "promptEn": "What is your name?",
+          "placeholder": "Minun nimeni on...",
+          "sample": "Minun nimeni on [oma nimi]. / My name is [your name]."
+        },
+        {
+          "id": 2,
+          "prompt": "Kuinka vanha sinä olet?",
+          "promptEn": "How old are you?",
+          "placeholder": "Minä olen ... vuotta vanha.",
+          "sample": "Minä olen [ikä] vuotta vanha. / I am [age] years old."
+        },
+        {
+          "id": 3,
+          "prompt": "Mitä kieliä sinä puhut?",
+          "promptEn": "What languages do you speak?",
+          "placeholder": "Minä puhun...",
+          "sample": "Minä puhun englantia ja [kielet]. / I speak English and [languages]."
+        }
+      ],
+      "audio_pool": [
+        {
+          "file": "audio/q_intro_1.mp3",
+          "script": "Mikä sinun nimesi on?\n\nKuinka vanha sinä olet?\n\nMitä kieliä sinä puhut?"
+        },
+        {
+          "file": "audio/q_intro_2.mp3",
+          "script": "Mikä sinun nimesi on?\n\nMistä sinä olet kotoisin?\n\nMitä kieliä sinä osaat?"
+        },
+        {
+          "file": "audio/q_intro_3.mp3",
+          "script": "Mikä sinun nimesi on?\n\nMissä sinä asut?\n\nMitä sinä opiskelet?"
+        },
+        {
+          "file": "audio/q_intro_4.mp3",
+          "script": "Mikä sinun nimesi on?\n\nMinkä ikäinen sinä olet?\n\nMitä sinä teet vapaa-ajalla?"
+        },
+        {
+          "file": "audio/q_intro_5.mp3",
+          "script": "Mikä sinun nimesi on?\n\nOnko sinulla sisaruksia?\n\nMitä kieliä sinä puhut?"
+        },
+        {
+          "file": "audio/q_intro_6.mp3",
+          "script": "Mikä sinun nimesi on?\n\nKuinka kauan sinä olet opiskellut suomea?\n\nMitä kieliä sinä puhut?"
+        },
+        {
+          "file": "audio/q_intro_7.mp3",
+          "script": "Mistä sinä olet kotoisin?\n\nMissä sinä asut?\n\nMitä sinä opiskelet?"
+        },
+        {
+          "file": "audio/q_intro_8.mp3",
+          "script": "Mikä sinun nimesi on?\n\nKuinka vanha sinä olet?\n\nMissä sinä asut?"
+        },
+        {
+          "file": "audio/q_intro_9.mp3",
+          "script": "Mikä sinun nimesi on?\n\nMitä sinä opiskelet?\n\nMitä kieliä sinä osaat?"
+        },
+        {
+          "file": "audio/q_intro_10.mp3",
+          "script": "Mikä sinun nimesi on?\n\nMinkä ikäinen sinä olet?\n\nMistä sinä olet kotoisin?"
+        }
       ]
     },
     {
       "id": "q7",
-      "number": 7,
+      "number": 8,
       "title": "Postpositiot – Täydennä",
       "titleEn": "Postpositions – Fill in the Blank",
       "instructions": "Fill in the correct postposition. The noun is already in the genitive form. Choose from the word bank.",
       "type": "fill_in_blank",
       "points": 6,
       "items_per_exam": 6,
-      "topics": ["Postpositions"],
+      "topics": [
+        "Postpositions"
+      ],
       "note": "Postpositions come AFTER the noun in genitive. Example: talon takana = behind the house.",
-      "word_bank": ["alla", "päällä", "edessä", "takana", "vieressä", "välissä", "sisällä", "ympärillä", "ääressä", "keskellä"],
+      "word_bank": [
+        "alla",
+        "päällä",
+        "edessä",
+        "takana",
+        "vieressä",
+        "välissä",
+        "sisällä",
+        "ympärillä",
+        "ääressä",
+        "keskellä"
+      ],
       "question_pool": [
-        { "id": 1, "before": "Koira nukkuu pöydän", "after": ".", "english": "The dog sleeps under the table.", "answer": "alla", "explanation": "alla = under" },
-        { "id": 2, "before": "Auto on talon", "after": ".", "english": "The car is in front of the house.", "answer": "edessä", "explanation": "edessä = in front of" },
-        { "id": 3, "before": "Kirja on tuolin", "after": ".", "english": "The book is on top of the chair.", "answer": "päällä", "explanation": "päällä = on top of" },
-        { "id": 4, "before": "Koulu on puiston", "after": ".", "english": "The school is next to the park.", "answer": "vieressä", "explanation": "vieressä = next to / beside" },
-        { "id": 5, "before": "Lapsi seisoo verhon", "after": ".", "english": "The child stands behind the curtain.", "answer": "takana", "explanation": "takana = behind" },
-        { "id": 6, "before": "Kissanpentu on laatikoiden", "after": ".", "english": "The kitten is between the boxes.", "answer": "välissä", "explanation": "välissä = between" },
-        { "id": 7, "before": "Lamppu roikkuu pöydän", "after": ".", "english": "The lamp hangs above the table.", "answer": "päällä", "explanation": "päällä = on/above" },
-        { "id": 8, "before": "He istuvat television", "after": ".", "english": "They sit in front of the television.", "answer": "edessä", "explanation": "edessä = in front of" },
-        { "id": 9, "before": "Kissa on sohvan", "after": ".", "english": "The cat is under the sofa.", "answer": "alla", "explanation": "alla = under" },
-        { "id": 10, "before": "Pankki on apteekin", "after": ".", "english": "The bank is next to the pharmacy.", "answer": "vieressä", "explanation": "vieressä = next to" },
-        { "id": 11, "before": "Lapset leikkivät talon", "after": ".", "english": "The children play around the house.", "answer": "ympärillä", "explanation": "ympärillä = around" },
-        { "id": 12, "before": "Ruoka on mikroaaltouunin", "after": ".", "english": "The food is inside the microwave.", "answer": "sisällä", "explanation": "sisällä = inside" },
-        { "id": 13, "before": "Hän istuu ikkunan", "after": ".", "english": "She sits by the window.", "answer": "ääressä", "explanation": "ääressä = by / at (close proximity)" },
-        { "id": 14, "before": "Pöytä on huoneen", "after": ".", "english": "The table is in the middle of the room.", "answer": "keskellä", "explanation": "keskellä = in the middle of" },
-        { "id": 15, "before": "Koira makaa sohvan", "after": ".", "english": "The dog lies behind the sofa.", "answer": "takana", "explanation": "takana = behind" },
-        { "id": 16, "before": "Avain on laukun", "after": ".", "english": "The key is inside the bag.", "answer": "sisällä", "explanation": "sisällä = inside" },
-        { "id": 17, "before": "Puu on talon", "after": ".", "english": "The tree is in front of the house.", "answer": "edessä", "explanation": "edessä = in front of" },
-        { "id": 18, "before": "Koira istuu tuolinten", "after": ".", "english": "The dog sits between the chairs.", "answer": "välissä", "explanation": "välissä = between" },
-        { "id": 19, "before": "Kissa istuu tietokoneen", "after": ".", "english": "The cat sits on top of the computer.", "answer": "päällä", "explanation": "päällä = on top of" },
-        { "id": 20, "before": "Bussi seisoo aseman", "after": ".", "english": "The bus stands in front of the station.", "answer": "edessä", "explanation": "edessä = in front of" },
-        { "id": 21, "before": "Hän seisoo koulun", "after": ".", "english": "He stands behind the school.", "answer": "takana", "explanation": "takana = behind" },
-        { "id": 22, "before": "Lamppu on pöydän", "after": ".", "english": "The lamp is under the table.", "answer": "alla", "explanation": "alla = under" },
-        { "id": 23, "before": "Puisto on rakennuksen", "after": ".", "english": "The park is around the building.", "answer": "ympärillä", "explanation": "ympärillä = around" },
-        { "id": 24, "before": "Hän istuu pianon", "after": ".", "english": "She sits by the piano.", "answer": "ääressä", "explanation": "ääressä = by / at" }
+        {
+          "id": 1,
+          "before": "Koira nukkuu pöydän",
+          "after": ".",
+          "english": "The dog sleeps under the table.",
+          "answer": "alla",
+          "explanation": "alla = under"
+        },
+        {
+          "id": 2,
+          "before": "Auto on talon",
+          "after": ".",
+          "english": "The car is in front of the house.",
+          "answer": "edessä",
+          "explanation": "edessä = in front of"
+        },
+        {
+          "id": 3,
+          "before": "Kirja on tuolin",
+          "after": ".",
+          "english": "The book is on top of the chair.",
+          "answer": "päällä",
+          "explanation": "päällä = on top of"
+        },
+        {
+          "id": 4,
+          "before": "Koulu on puiston",
+          "after": ".",
+          "english": "The school is next to the park.",
+          "answer": "vieressä",
+          "explanation": "vieressä = next to / beside"
+        },
+        {
+          "id": 5,
+          "before": "Lapsi seisoo verhon",
+          "after": ".",
+          "english": "The child stands behind the curtain.",
+          "answer": "takana",
+          "explanation": "takana = behind"
+        },
+        {
+          "id": 6,
+          "before": "Kissanpentu on laatikoiden",
+          "after": ".",
+          "english": "The kitten is between the boxes.",
+          "answer": "välissä",
+          "explanation": "välissä = between"
+        },
+        {
+          "id": 7,
+          "before": "Lamppu roikkuu pöydän",
+          "after": ".",
+          "english": "The lamp hangs above the table.",
+          "answer": "päällä",
+          "explanation": "päällä = on/above"
+        },
+        {
+          "id": 8,
+          "before": "He istuvat television",
+          "after": ".",
+          "english": "They sit in front of the television.",
+          "answer": "edessä",
+          "explanation": "edessä = in front of"
+        },
+        {
+          "id": 9,
+          "before": "Kissa on sohvan",
+          "after": ".",
+          "english": "The cat is under the sofa.",
+          "answer": "alla",
+          "explanation": "alla = under"
+        },
+        {
+          "id": 10,
+          "before": "Pankki on apteekin",
+          "after": ".",
+          "english": "The bank is next to the pharmacy.",
+          "answer": "vieressä",
+          "explanation": "vieressä = next to"
+        },
+        {
+          "id": 11,
+          "before": "Lapset leikkivät talon",
+          "after": ".",
+          "english": "The children play around the house.",
+          "answer": "ympärillä",
+          "explanation": "ympärillä = around"
+        },
+        {
+          "id": 12,
+          "before": "Ruoka on mikroaaltouunin",
+          "after": ".",
+          "english": "The food is inside the microwave.",
+          "answer": "sisällä",
+          "explanation": "sisällä = inside"
+        },
+        {
+          "id": 13,
+          "before": "Hän istuu ikkunan",
+          "after": ".",
+          "english": "She sits by the window.",
+          "answer": "ääressä",
+          "explanation": "ääressä = by / at (close proximity)"
+        },
+        {
+          "id": 14,
+          "before": "Pöytä on huoneen",
+          "after": ".",
+          "english": "The table is in the middle of the room.",
+          "answer": "keskellä",
+          "explanation": "keskellä = in the middle of"
+        },
+        {
+          "id": 15,
+          "before": "Koira makaa sohvan",
+          "after": ".",
+          "english": "The dog lies behind the sofa.",
+          "answer": "takana",
+          "explanation": "takana = behind"
+        },
+        {
+          "id": 16,
+          "before": "Avain on laukun",
+          "after": ".",
+          "english": "The key is inside the bag.",
+          "answer": "sisällä",
+          "explanation": "sisällä = inside"
+        },
+        {
+          "id": 17,
+          "before": "Puu on talon",
+          "after": ".",
+          "english": "The tree is in front of the house.",
+          "answer": "edessä",
+          "explanation": "edessä = in front of"
+        },
+        {
+          "id": 18,
+          "before": "Koira istuu tuolinten",
+          "after": ".",
+          "english": "The dog sits between the chairs.",
+          "answer": "välissä",
+          "explanation": "välissä = between"
+        },
+        {
+          "id": 19,
+          "before": "Kissa istuu tietokoneen",
+          "after": ".",
+          "english": "The cat sits on top of the computer.",
+          "answer": "päällä",
+          "explanation": "päällä = on top of"
+        },
+        {
+          "id": 20,
+          "before": "Bussi seisoo aseman",
+          "after": ".",
+          "english": "The bus stands in front of the station.",
+          "answer": "edessä",
+          "explanation": "edessä = in front of"
+        },
+        {
+          "id": 21,
+          "before": "Hän seisoo koulun",
+          "after": ".",
+          "english": "He stands behind the school.",
+          "answer": "takana",
+          "explanation": "takana = behind"
+        },
+        {
+          "id": 22,
+          "before": "Lamppu on pöydän",
+          "after": ".",
+          "english": "The lamp is under the table.",
+          "answer": "alla",
+          "explanation": "alla = under"
+        },
+        {
+          "id": 23,
+          "before": "Puisto on rakennuksen",
+          "after": ".",
+          "english": "The park is around the building.",
+          "answer": "ympärillä",
+          "explanation": "ympärillä = around"
+        },
+        {
+          "id": 24,
+          "before": "Hän istuu pianon",
+          "after": ".",
+          "english": "She sits by the piano.",
+          "answer": "ääressä",
+          "explanation": "ääressä = by / at"
+        }
       ]
     },
     {
       "id": "q8",
-      "number": 8,
+      "number": 9,
       "title": "Sanatyypit – Anna esimerkkejä",
       "titleEn": "Word Types – Give Examples",
       "instructions": "Give 2 example words for each word type. Write the nominative (base) form AND the genitive form. You may use the word bank below for ideas.",
       "type": "word_types",
       "points": 6,
-      "topics": ["Word Types", "Diphthongs"],
+      "topics": [
+        "Word Types",
+        "Diphthongs"
+      ],
       "note": "Genitive: e-type → add -en (huone→huoneen). i-type → -si changes to -d (vesi→veden). nen-type → -nen changes to -se (ihminen→ihmisen).",
       "word_bank_hint": "E-type: huone, perhe, piste, taide, tiede, lause | I-type: vesi, käsi, lapsi, uusi, kuusi, viisi | NEN-type: ihminen, nainen, suomalainen, punainen, ystävällinen, sininen",
       "word_types": [
@@ -369,24 +1917,88 @@
           "name": "E-tyyppi",
           "nameEn": "E-type words",
           "description": "Words whose stem ends in -e. Genitive: stem + en.",
-          "example": { "base": "huone", "genitive": "huoneen", "meaning": "room" },
+          "example": {
+            "base": "huone",
+            "genitive": "huoneen",
+            "meaning": "room"
+          },
           "rule": "huone → huone(stem) + en = huoneen",
           "accepted": [
-            { "base": "huone", "genitive": "huoneen", "meaning": "room" },
-            { "base": "piste", "genitive": "pisteen", "meaning": "point / dot" },
-            { "base": "liike", "genitive": "liikkeen", "meaning": "store / movement" },
-            { "base": "perhe", "genitive": "perheen", "meaning": "family" },
-            { "base": "taide", "genitive": "taiteen", "meaning": "art" },
-            { "base": "tiede", "genitive": "tieteen", "meaning": "science" },
-            { "base": "puhe", "genitive": "puheen", "meaning": "speech" },
-            { "base": "ohje", "genitive": "ohjeen", "meaning": "instruction" },
-            { "base": "lause", "genitive": "lauseen", "meaning": "sentence" },
-            { "base": "kirje", "genitive": "kirjeen", "meaning": "letter" },
-            { "base": "rakenne", "genitive": "rakenteen", "meaning": "structure" },
-            { "base": "asenne", "genitive": "asenteen", "meaning": "attitude" },
-            { "base": "kide", "genitive": "kiteen", "meaning": "crystal" },
-            { "base": "side", "genitive": "siteen", "meaning": "bandage / bond" },
-            { "base": "vide", "genitive": "videen", "meaning": "video" }
+            {
+              "base": "huone",
+              "genitive": "huoneen",
+              "meaning": "room"
+            },
+            {
+              "base": "piste",
+              "genitive": "pisteen",
+              "meaning": "point / dot"
+            },
+            {
+              "base": "liike",
+              "genitive": "liikkeen",
+              "meaning": "store / movement"
+            },
+            {
+              "base": "perhe",
+              "genitive": "perheen",
+              "meaning": "family"
+            },
+            {
+              "base": "taide",
+              "genitive": "taiteen",
+              "meaning": "art"
+            },
+            {
+              "base": "tiede",
+              "genitive": "tieteen",
+              "meaning": "science"
+            },
+            {
+              "base": "puhe",
+              "genitive": "puheen",
+              "meaning": "speech"
+            },
+            {
+              "base": "ohje",
+              "genitive": "ohjeen",
+              "meaning": "instruction"
+            },
+            {
+              "base": "lause",
+              "genitive": "lauseen",
+              "meaning": "sentence"
+            },
+            {
+              "base": "kirje",
+              "genitive": "kirjeen",
+              "meaning": "letter"
+            },
+            {
+              "base": "rakenne",
+              "genitive": "rakenteen",
+              "meaning": "structure"
+            },
+            {
+              "base": "asenne",
+              "genitive": "asenteen",
+              "meaning": "attitude"
+            },
+            {
+              "base": "kide",
+              "genitive": "kiteen",
+              "meaning": "crystal"
+            },
+            {
+              "base": "side",
+              "genitive": "siteen",
+              "meaning": "bandage / bond"
+            },
+            {
+              "base": "vide",
+              "genitive": "videen",
+              "meaning": "video"
+            }
           ]
         },
         {
@@ -394,19 +2006,63 @@
           "name": "I-tyyppi",
           "nameEn": "I-type words",
           "description": "Words ending in -si in nominative. The -si changes to -d- in other forms. Genitive: stem + den.",
-          "example": { "base": "vesi", "genitive": "veden", "meaning": "water" },
+          "example": {
+            "base": "vesi",
+            "genitive": "veden",
+            "meaning": "water"
+          },
           "rule": "vesi → ve- + den = veden (si → d)",
           "accepted": [
-            { "base": "vesi", "genitive": "veden", "meaning": "water" },
-            { "base": "käsi", "genitive": "käden", "meaning": "hand" },
-            { "base": "lapsi", "genitive": "lapsen", "meaning": "child" },
-            { "base": "uusi", "genitive": "uuden", "meaning": "new" },
-            { "base": "kuusi", "genitive": "kuuden", "meaning": "six / spruce tree" },
-            { "base": "viisi", "genitive": "viiden", "meaning": "five" },
-            { "base": "täysi", "genitive": "täyden", "meaning": "full" },
-            { "base": "lehti", "genitive": "lehden", "meaning": "leaf / newspaper" },
-            { "base": "vuosi", "genitive": "vuoden", "meaning": "year" },
-            { "base": "kuukausi", "genitive": "kuukauden", "meaning": "month" }
+            {
+              "base": "vesi",
+              "genitive": "veden",
+              "meaning": "water"
+            },
+            {
+              "base": "käsi",
+              "genitive": "käden",
+              "meaning": "hand"
+            },
+            {
+              "base": "lapsi",
+              "genitive": "lapsen",
+              "meaning": "child"
+            },
+            {
+              "base": "uusi",
+              "genitive": "uuden",
+              "meaning": "new"
+            },
+            {
+              "base": "kuusi",
+              "genitive": "kuuden",
+              "meaning": "six / spruce tree"
+            },
+            {
+              "base": "viisi",
+              "genitive": "viiden",
+              "meaning": "five"
+            },
+            {
+              "base": "täysi",
+              "genitive": "täyden",
+              "meaning": "full"
+            },
+            {
+              "base": "lehti",
+              "genitive": "lehden",
+              "meaning": "leaf / newspaper"
+            },
+            {
+              "base": "vuosi",
+              "genitive": "vuoden",
+              "meaning": "year"
+            },
+            {
+              "base": "kuukausi",
+              "genitive": "kuukauden",
+              "meaning": "month"
+            }
           ]
         },
         {
@@ -414,99 +2070,696 @@
           "name": "NEN-tyyppi",
           "nameEn": "NEN-type words",
           "description": "Words ending in -nen. The -nen changes to -se- in other forms. Genitive: -nen → -sen.",
-          "example": { "base": "ihminen", "genitive": "ihmisen", "meaning": "person / human" },
+          "example": {
+            "base": "ihminen",
+            "genitive": "ihmisen",
+            "meaning": "person / human"
+          },
           "rule": "ihminen → ihmise(stem) + n = ihmisen",
           "accepted": [
-            { "base": "ihminen", "genitive": "ihmisen", "meaning": "person / human" },
-            { "base": "nainen", "genitive": "naisen", "meaning": "woman" },
-            { "base": "suomalainen", "genitive": "suomalaisen", "meaning": "Finnish person" },
-            { "base": "punainen", "genitive": "punaisen", "meaning": "red" },
-            { "base": "sininen", "genitive": "sinisen", "meaning": "blue" },
-            { "base": "ystävällinen", "genitive": "ystävällisen", "meaning": "friendly" },
-            { "base": "kiinalainen", "genitive": "kiinalaisen", "meaning": "Chinese person" },
-            { "base": "englantilainen", "genitive": "englantilaisen", "meaning": "English person" },
-            { "base": "amerikkalainen", "genitive": "amerikkalaisen", "meaning": "American person" },
-            { "base": "ranskalainen", "genitive": "ranskalaisen", "meaning": "French person" },
-            { "base": "mielenkiintoinen", "genitive": "mielenkiintoisen", "meaning": "interesting" },
-            { "base": "vaarallinen", "genitive": "vaarallisen", "meaning": "dangerous" },
-            { "base": "ihana", "genitive": "ihanan", "meaning": "wonderful" },
-            { "base": "kaunis", "genitive": "kauniin", "meaning": "beautiful" }
+            {
+              "base": "ihminen",
+              "genitive": "ihmisen",
+              "meaning": "person / human"
+            },
+            {
+              "base": "nainen",
+              "genitive": "naisen",
+              "meaning": "woman"
+            },
+            {
+              "base": "suomalainen",
+              "genitive": "suomalaisen",
+              "meaning": "Finnish person"
+            },
+            {
+              "base": "punainen",
+              "genitive": "punaisen",
+              "meaning": "red"
+            },
+            {
+              "base": "sininen",
+              "genitive": "sinisen",
+              "meaning": "blue"
+            },
+            {
+              "base": "ystävällinen",
+              "genitive": "ystävällisen",
+              "meaning": "friendly"
+            },
+            {
+              "base": "kiinalainen",
+              "genitive": "kiinalaisen",
+              "meaning": "Chinese person"
+            },
+            {
+              "base": "englantilainen",
+              "genitive": "englantilaisen",
+              "meaning": "English person"
+            },
+            {
+              "base": "amerikkalainen",
+              "genitive": "amerikkalaisen",
+              "meaning": "American person"
+            },
+            {
+              "base": "ranskalainen",
+              "genitive": "ranskalaisen",
+              "meaning": "French person"
+            },
+            {
+              "base": "mielenkiintoinen",
+              "genitive": "mielenkiintoisen",
+              "meaning": "interesting"
+            },
+            {
+              "base": "vaarallinen",
+              "genitive": "vaarallisen",
+              "meaning": "dangerous"
+            },
+            {
+              "base": "ihana",
+              "genitive": "ihanan",
+              "meaning": "wonderful"
+            },
+            {
+              "base": "kaunis",
+              "genitive": "kauniin",
+              "meaning": "beautiful"
+            }
           ]
         }
       ]
     },
     {
       "id": "q9",
-      "number": 9,
+      "number": 10,
       "title": "Eksistentiaalilauseet ja Huonekalut",
       "titleEn": "Existential Sentences & Furniture",
       "instructions": "Choose the correct answer. Topics: existential sentence structure and furniture vocabulary.",
       "type": "mcq",
       "points": 5,
       "items_per_exam": 5,
-      "topics": ["Existential Sentences", "Furniture", "Local Cases - Missä"],
+      "topics": [
+        "Existential Sentences",
+        "Furniture",
+        "Local Cases - Missä"
+      ],
       "question_pool": [
-        { "id": 1, "question": "What does 'Pöydällä on kirja.' mean?", "options": ["The book is under the table.", "There is a book on the table.", "I have a book at the table.", "The table has a book."], "answer": "There is a book on the table.", "explanation": "Existential sentence: pöydällä (on the table) + on + kirja. Subject follows the verb." },
-        { "id": 2, "question": "Which word means 'sofa / couch'?", "options": ["tuoli", "sohva", "pöytä", "kaappi"], "answer": "sohva", "explanation": "sohva = sofa/couch. tuoli = chair, pöytä = table, kaappi = cabinet." },
-        { "id": 3, "question": "Complete: 'Olohuoneessa ___ televisio ja sohva.'", "options": ["olen", "on", "ovat", "ollut"], "answer": "on", "explanation": "Existential sentences use 'on' (is) even when listing multiple items." },
-        { "id": 4, "question": "What is the Finnish word for 'bookshelf'?", "options": ["hylly", "lipasto", "sänky", "peili"], "answer": "hylly", "explanation": "hylly = shelf/bookshelf. lipasto = chest of drawers, sänky = bed, peili = mirror." },
-        { "id": 5, "question": "Which sentence is an existential sentence?", "options": ["Minä olen kotona.", "Autolla on nopea.", "Kadulla on paljon ihmisiä.", "Hän on opiskelija."], "answer": "Kadulla on paljon ihmisiä.", "explanation": "Existential sentences: location + on + subject (often in partitive if indefinite/plural)." },
-        { "id": 6, "question": "What is 'makuuhuone' in English?", "options": ["kitchen", "bathroom", "bedroom", "living room"], "answer": "bedroom", "explanation": "makuuhuone = bedroom. makuu = sleeping (from maata = to lie), huone = room." },
-        { "id": 7, "question": "Translate: 'There is a lamp on the table.'", "options": ["Lamppu on pöytä.", "Pöydällä on lamppu.", "Lamppu on pöydällä alla.", "Minulla on lamppu pöydällä."], "answer": "Pöydällä on lamppu.", "explanation": "Existential: location (pöydällä) + on + subject (lamppu)." },
-        { "id": 8, "question": "What does 'nojatuoli' mean?", "options": ["dining chair", "armchair / recliner", "office chair", "stool"], "answer": "armchair / recliner", "explanation": "nojatuoli = armchair. noja = leaning, tuoli = chair." },
-        { "id": 9, "question": "Which word means 'chest of drawers / dresser'?", "options": ["sohva", "hylly", "lipasto", "kaappi"], "answer": "lipasto", "explanation": "lipasto = chest of drawers/dresser." },
-        { "id": 10, "question": "Translate: 'There are clothes in the wardrobe.'", "options": ["Kaapissa on vaatteita.", "Vaatteet ovat kaapissa.", "Minulla on vaatteet kaapissa.", "Kaappi on vaatteita."], "answer": "Kaapissa on vaatteita.", "explanation": "Existential: kaapissa (in the wardrobe) + on + vaatteita (partitive pl. = some clothes)." },
-        { "id": 11, "question": "What is the Finnish word for 'mirror'?", "options": ["peili", "ikkuna", "ovi", "lattia"], "answer": "peili", "explanation": "peili = mirror. ikkuna = window, ovi = door, lattia = floor." },
-        { "id": 12, "question": "What does 'ruokapöytä' mean?", "options": ["coffee table", "dining table", "desk", "bedside table"], "answer": "dining table", "explanation": "ruokapöytä = dining table. ruoka = food, pöytä = table." },
-        { "id": 13, "question": "Which sentence correctly uses the existential structure?", "options": ["Kirja on pöydälle.", "Pöydällä kirja on.", "Pöydällä on kirja.", "On kirja pöydällä."], "answer": "Pöydällä on kirja.", "explanation": "Correct word order for existential: Location + verb (on) + Subject." },
-        { "id": 14, "question": "What is 'kylpyhuone'?", "options": ["bedroom", "kitchen", "living room", "bathroom"], "answer": "bathroom", "explanation": "kylpyhuone = bathroom. kylpy = bath, huone = room." },
-        { "id": 15, "question": "What does 'verhot' mean?", "options": ["curtains", "pillows", "blankets", "rugs"], "answer": "curtains", "explanation": "verhot (pl.) = curtains. verho (sg.) = curtain." },
-        { "id": 16, "question": "Translate: 'There is a cat under the bed.'", "options": ["Sängyn alla on kissa.", "Kissa on sänky alla.", "Alla kissa on sänky.", "Sängyllä on kissa alla."], "answer": "Sängyn alla on kissa.", "explanation": "sängyn alla = under the bed (genitive + postposition). Then: on kissa." },
-        { "id": 17, "question": "What is 'yöpöytä'?", "options": ["desk", "coffee table", "bedside table", "kitchen table"], "answer": "bedside table", "explanation": "yöpöytä = bedside table. yö = night, pöytä = table." },
-        { "id": 18, "question": "In existential sentences, indefinite/plural subjects take which case?", "options": ["Nominative", "Genitive", "Partitive", "Accusative"], "answer": "Partitive", "explanation": "Indefinite/plural subjects in existential sentences use the partitive case." },
-        { "id": 19, "question": "What does 'keittiö' mean?", "options": ["living room", "bedroom", "kitchen", "hallway"], "answer": "kitchen", "explanation": "keittiö = kitchen." },
-        { "id": 20, "question": "Choose the correct existential sentence: 'There are books on the shelf.'", "options": ["Hyllyllä kirjat ovat.", "Hyllyllä on kirjoja.", "Kirjat ovat hyllyllä.", "Hylly on kirjoja."], "answer": "Hyllyllä on kirjoja.", "explanation": "kirjoja = partitive plural (indefinite). Existential: Hyllyllä (location) + on + kirjoja." },
-        { "id": 21, "question": "What does 'matto' mean?", "options": ["curtain", "rug / mat", "pillow", "blanket"], "answer": "rug / mat", "explanation": "matto = rug, mat, carpet." },
-        { "id": 22, "question": "What is 'olohuone'?", "options": ["bathroom", "bedroom", "kitchen", "living room"], "answer": "living room", "explanation": "olohuone = living room. olo = being/living, huone = room." },
-        { "id": 23, "question": "Translate: 'There is a television in the living room.'", "options": ["Televisio on olohuoneessa.", "Olohuoneessa on televisio.", "Minulla on televisio olohuoneessa.", "Television olohuoneessa on."], "answer": "Olohuoneessa on televisio.", "explanation": "Existential: Olohuoneessa (location) + on + televisio. (Both word orders can work here, but existential typically puts location first.)" },
-        { "id": 24, "question": "What is 'sohvatyyny'?", "options": ["sofa bed", "sofa cushion / throw pillow", "sofa cover", "armchair"], "answer": "sofa cushion / throw pillow", "explanation": "sohvatyyny = sofa cushion. sohva = sofa, tyyny = pillow/cushion." }
+        {
+          "id": 1,
+          "question": "What does 'Pöydällä on kirja.' mean?",
+          "options": [
+            "The book is under the table.",
+            "There is a book on the table.",
+            "I have a book at the table.",
+            "The table has a book."
+          ],
+          "answer": "There is a book on the table.",
+          "explanation": "Existential sentence: pöydällä (on the table) + on + kirja. Subject follows the verb."
+        },
+        {
+          "id": 2,
+          "question": "Which word means 'sofa / couch'?",
+          "options": [
+            "tuoli",
+            "sohva",
+            "pöytä",
+            "kaappi"
+          ],
+          "answer": "sohva",
+          "explanation": "sohva = sofa/couch. tuoli = chair, pöytä = table, kaappi = cabinet."
+        },
+        {
+          "id": 3,
+          "question": "Complete: 'Olohuoneessa ___ televisio ja sohva.'",
+          "options": [
+            "olen",
+            "on",
+            "ovat",
+            "ollut"
+          ],
+          "answer": "on",
+          "explanation": "Existential sentences use 'on' (is) even when listing multiple items."
+        },
+        {
+          "id": 4,
+          "question": "What is the Finnish word for 'bookshelf'?",
+          "options": [
+            "hylly",
+            "lipasto",
+            "sänky",
+            "peili"
+          ],
+          "answer": "hylly",
+          "explanation": "hylly = shelf/bookshelf. lipasto = chest of drawers, sänky = bed, peili = mirror."
+        },
+        {
+          "id": 5,
+          "question": "Which sentence is an existential sentence?",
+          "options": [
+            "Minä olen kotona.",
+            "Autolla on nopea.",
+            "Kadulla on paljon ihmisiä.",
+            "Hän on opiskelija."
+          ],
+          "answer": "Kadulla on paljon ihmisiä.",
+          "explanation": "Existential sentences: location + on + subject (often in partitive if indefinite/plural)."
+        },
+        {
+          "id": 6,
+          "question": "What is 'makuuhuone' in English?",
+          "options": [
+            "kitchen",
+            "bathroom",
+            "bedroom",
+            "living room"
+          ],
+          "answer": "bedroom",
+          "explanation": "makuuhuone = bedroom. makuu = sleeping (from maata = to lie), huone = room."
+        },
+        {
+          "id": 7,
+          "question": "Translate: 'There is a lamp on the table.'",
+          "options": [
+            "Lamppu on pöytä.",
+            "Pöydällä on lamppu.",
+            "Lamppu on pöydällä alla.",
+            "Minulla on lamppu pöydällä."
+          ],
+          "answer": "Pöydällä on lamppu.",
+          "explanation": "Existential: location (pöydällä) + on + subject (lamppu)."
+        },
+        {
+          "id": 8,
+          "question": "What does 'nojatuoli' mean?",
+          "options": [
+            "dining chair",
+            "armchair / recliner",
+            "office chair",
+            "stool"
+          ],
+          "answer": "armchair / recliner",
+          "explanation": "nojatuoli = armchair. noja = leaning, tuoli = chair."
+        },
+        {
+          "id": 9,
+          "question": "Which word means 'chest of drawers / dresser'?",
+          "options": [
+            "sohva",
+            "hylly",
+            "lipasto",
+            "kaappi"
+          ],
+          "answer": "lipasto",
+          "explanation": "lipasto = chest of drawers/dresser."
+        },
+        {
+          "id": 10,
+          "question": "Translate: 'There are clothes in the wardrobe.'",
+          "options": [
+            "Kaapissa on vaatteita.",
+            "Vaatteet ovat kaapissa.",
+            "Minulla on vaatteet kaapissa.",
+            "Kaappi on vaatteita."
+          ],
+          "answer": "Kaapissa on vaatteita.",
+          "explanation": "Existential: kaapissa (in the wardrobe) + on + vaatteita (partitive pl. = some clothes)."
+        },
+        {
+          "id": 11,
+          "question": "What is the Finnish word for 'mirror'?",
+          "options": [
+            "peili",
+            "ikkuna",
+            "ovi",
+            "lattia"
+          ],
+          "answer": "peili",
+          "explanation": "peili = mirror. ikkuna = window, ovi = door, lattia = floor."
+        },
+        {
+          "id": 12,
+          "question": "What does 'ruokapöytä' mean?",
+          "options": [
+            "coffee table",
+            "dining table",
+            "desk",
+            "bedside table"
+          ],
+          "answer": "dining table",
+          "explanation": "ruokapöytä = dining table. ruoka = food, pöytä = table."
+        },
+        {
+          "id": 13,
+          "question": "Which sentence correctly uses the existential structure?",
+          "options": [
+            "Kirja on pöydälle.",
+            "Pöydällä kirja on.",
+            "Pöydällä on kirja.",
+            "On kirja pöydällä."
+          ],
+          "answer": "Pöydällä on kirja.",
+          "explanation": "Correct word order for existential: Location + verb (on) + Subject."
+        },
+        {
+          "id": 14,
+          "question": "What is 'kylpyhuone'?",
+          "options": [
+            "bedroom",
+            "kitchen",
+            "living room",
+            "bathroom"
+          ],
+          "answer": "bathroom",
+          "explanation": "kylpyhuone = bathroom. kylpy = bath, huone = room."
+        },
+        {
+          "id": 15,
+          "question": "What does 'verhot' mean?",
+          "options": [
+            "curtains",
+            "pillows",
+            "blankets",
+            "rugs"
+          ],
+          "answer": "curtains",
+          "explanation": "verhot (pl.) = curtains. verho (sg.) = curtain."
+        },
+        {
+          "id": 16,
+          "question": "Translate: 'There is a cat under the bed.'",
+          "options": [
+            "Sängyn alla on kissa.",
+            "Kissa on sänky alla.",
+            "Alla kissa on sänky.",
+            "Sängyllä on kissa alla."
+          ],
+          "answer": "Sängyn alla on kissa.",
+          "explanation": "sängyn alla = under the bed (genitive + postposition). Then: on kissa."
+        },
+        {
+          "id": 17,
+          "question": "What is 'yöpöytä'?",
+          "options": [
+            "desk",
+            "coffee table",
+            "bedside table",
+            "kitchen table"
+          ],
+          "answer": "bedside table",
+          "explanation": "yöpöytä = bedside table. yö = night, pöytä = table."
+        },
+        {
+          "id": 18,
+          "question": "In existential sentences, indefinite/plural subjects take which case?",
+          "options": [
+            "Nominative",
+            "Genitive",
+            "Partitive",
+            "Accusative"
+          ],
+          "answer": "Partitive",
+          "explanation": "Indefinite/plural subjects in existential sentences use the partitive case."
+        },
+        {
+          "id": 19,
+          "question": "What does 'keittiö' mean?",
+          "options": [
+            "living room",
+            "bedroom",
+            "kitchen",
+            "hallway"
+          ],
+          "answer": "kitchen",
+          "explanation": "keittiö = kitchen."
+        },
+        {
+          "id": 20,
+          "question": "Choose the correct existential sentence: 'There are books on the shelf.'",
+          "options": [
+            "Hyllyllä kirjat ovat.",
+            "Hyllyllä on kirjoja.",
+            "Kirjat ovat hyllyllä.",
+            "Hylly on kirjoja."
+          ],
+          "answer": "Hyllyllä on kirjoja.",
+          "explanation": "kirjoja = partitive plural (indefinite). Existential: Hyllyllä (location) + on + kirjoja."
+        },
+        {
+          "id": 21,
+          "question": "What does 'matto' mean?",
+          "options": [
+            "curtain",
+            "rug / mat",
+            "pillow",
+            "blanket"
+          ],
+          "answer": "rug / mat",
+          "explanation": "matto = rug, mat, carpet."
+        },
+        {
+          "id": 22,
+          "question": "What is 'olohuone'?",
+          "options": [
+            "bathroom",
+            "bedroom",
+            "kitchen",
+            "living room"
+          ],
+          "answer": "living room",
+          "explanation": "olohuone = living room. olo = being/living, huone = room."
+        },
+        {
+          "id": 23,
+          "question": "Translate: 'There is a television in the living room.'",
+          "options": [
+            "Televisio on olohuoneessa.",
+            "Olohuoneessa on televisio.",
+            "Minulla on televisio olohuoneessa.",
+            "Television olohuoneessa on."
+          ],
+          "answer": "Olohuoneessa on televisio.",
+          "explanation": "Existential: Olohuoneessa (location) + on + televisio. (Both word orders can work here, but existential typically puts location first.)"
+        },
+        {
+          "id": 24,
+          "question": "What is 'sohvatyyny'?",
+          "options": [
+            "sofa bed",
+            "sofa cushion / throw pillow",
+            "sofa cover",
+            "armchair"
+          ],
+          "answer": "sofa cushion / throw pillow",
+          "explanation": "sohvatyyny = sofa cushion. sohva = sofa, tyyny = pillow/cushion."
+        }
       ]
     },
     {
       "id": "q10",
-      "number": 10,
+      "number": 11,
       "title": "Kielioppi-MCQ – Sekalainen",
       "titleEn": "Grammar MCQ – Mixed",
       "instructions": "Choose the correct answer. Topics: local cases (Mistä/Mihin), spoken Finnish, imperative, diphthongs.",
       "type": "mcq",
       "points": 5,
       "items_per_exam": 5,
-      "topics": ["Local Cases - Mistä/Mihin", "Spoken Language", "Imperative", "Diphthongs"],
+      "topics": [
+        "Local Cases - Mistä/Mihin",
+        "Spoken Language",
+        "Imperative",
+        "Diphthongs"
+      ],
       "question_pool": [
-        { "id": 1, "question": "Which case answers 'Mistä?' (from where?) for INSIDE places?", "options": ["Inessive (-ssa/-ssä)", "Elative (-sta/-stä)", "Illative (-hun/-hin/-hyn/-heen)", "Adessive (-lla/-llä)"], "answer": "Elative (-sta/-stä)", "explanation": "Mistä (inside) = Elative: koulusta (from school), Helsingistä (from Helsinki)." },
-        { "id": 2, "question": "What is the spoken Finnish (puhekieli) form of 'minä olen'?", "options": ["mä oon", "mä on", "mä olen", "minä oon"], "answer": "mä oon", "explanation": "Spoken Finnish: minä → mä, olen → oon." },
-        { "id": 3, "question": "What is the imperative (command) form of 'mennä' (to go) for sinä?", "options": ["mene!", "menee!", "menet!", "meni!"], "answer": "mene!", "explanation": "Imperative for sinä: remove -n from minä-form. menen → mene!" },
-        { "id": 4, "question": "Translate: 'I am coming FROM the library.' (Mistä?)", "options": ["Tulen kirjastoon.", "Tulen kirjastossa.", "Tulen kirjastolta.", "Tulen kirjastosta."], "answer": "Tulen kirjastosta.", "explanation": "Library = inside place → Elative -sta: kirjastosta." },
-        { "id": 5, "question": "What is the spoken Finnish form of 'sinä olet'?", "options": ["sä olet", "sä oot", "sie oot", "sinä oot"], "answer": "sä oot", "explanation": "Spoken Finnish: sinä → sä, olet → oot." },
-        { "id": 6, "question": "Which answers 'Mihin?' (to where?) for INSIDE places?", "options": ["Inessive (-ssa/-ssä)", "Elative (-sta/-stä)", "Illative (-hun/-hin/-hyn/-heen)", "Ablative (-lta/-ltä)"], "answer": "Illative (-hun/-hin/-hyn/-heen)", "explanation": "Mihin (into) = Illative: kouluun (to school), Helsinkiin (to Helsinki)." },
-        { "id": 7, "question": "Which of these words contains a diphthong?", "options": ["koulu", "kissa", "auto", "talo"], "answer": "auto", "explanation": "auto contains the diphthong 'au'. A diphthong = two vowels in the same syllable that don't split." },
-        { "id": 8, "question": "What is the negative imperative (don't!) form for 'syödä' (to eat)?", "options": ["Ei syö!", "Älä syö!", "En syö!", "Ei syödä!"], "answer": "Älä syö!", "explanation": "Negative imperative for sinä: Älä + verb stem. älä syö! = don't eat!" },
-        { "id": 9, "question": "Translate: 'I went TO Helsinki.' (Mihin?)", "options": ["Menin Helsingissä.", "Menin Helsingistä.", "Menin Helsinkiin.", "Menin Helsinki."], "answer": "Menin Helsinkiin.", "explanation": "To Helsinki = Illative: Helsinkiin. (Helsinki → Helsinkiin, -in ending for -ki stem)" },
-        { "id": 10, "question": "What is the spoken Finnish form of 'me olemme'?", "options": ["me ollaan", "me oon", "me oot", "me olemme"], "answer": "me ollaan", "explanation": "Spoken Finnish: me olemme → me ollaan (or just 'ollaan')." },
-        { "id": 11, "question": "Which word contains the diphthong 'ie'?", "options": ["talo", "tie", "puu", "koulu"], "answer": "tie", "explanation": "tie (road) = contains diphthong 'ie'. ie = two vowels in same syllable." },
-        { "id": 12, "question": "What is the imperative of 'ottaa' (to take) for sinä?", "options": ["ota!", "otat!", "ottaa!", "otit!"], "answer": "ota!", "explanation": "Imperative for sinä: stem of verb. ottaa → ota! (KPT: tt→t)" },
-        { "id": 13, "question": "Translate: 'She came FROM the store.' (Mistä, surface/outside place)", "options": ["Hän tuli kauppaan.", "Hän tuli kaupassa.", "Hän tuli kaupalta.", "Hän tuli kaupasta."], "answer": "Hän tuli kaupasta.", "explanation": "kauppa = inside place → Elative -sta: kaupasta. (kaupalta would be ablative, for surface places)" },
-        { "id": 14, "question": "Which of these is a diphthong?", "options": ["aa", "uo", "ee", "ii"], "answer": "uo", "explanation": "uo is a Finnish diphthong (two different vowels in the same syllable). aa, ee, ii are long vowels, not diphthongs." },
-        { "id": 15, "question": "What is the spoken Finnish form of 'he ovat'?", "options": ["ne on", "he on", "ne oon", "he oon"], "answer": "ne on", "explanation": "Spoken Finnish: he → ne, ovat → on. (ne on = they are, colloquial)" },
-        { "id": 16, "question": "What is the imperative of 'tulla' (to come) for sinä?", "options": ["tule!", "tulee!", "tulet!", "tuli!"], "answer": "tule!", "explanation": "Imperative for sinä: remove -n from minä form. tulen → tule!" },
-        { "id": 17, "question": "Translate: 'We are going TO school.' (Mihin?)", "options": ["Me menemme kouluun.", "Me menemme koulusta.", "Me menemme koulussa.", "Me menemme koulu."], "answer": "Me menemme kouluun.", "explanation": "To school = Illative: koulu → kouluun (double u + n)." },
-        { "id": 18, "question": "Which word contains the diphthong 'oi'?", "options": ["koira", "pallo", "talo", "kello"], "answer": "koira", "explanation": "koira (dog) contains diphthong 'oi'." },
-        { "id": 19, "question": "What is the spoken Finnish for 'minulla on'?", "options": ["mulla oon", "mulla on", "mä on", "minulla oon"], "answer": "mulla on", "explanation": "Spoken Finnish: minulla → mulla. 'on' stays the same. mulla on = I have." },
-        { "id": 20, "question": "Translate: 'Come here!' (command to sinä)", "options": ["Mene tänne!", "Tule tänne!", "Tulet tänne!", "Tuleeko tänne!"], "answer": "Tule tänne!", "explanation": "Imperative of tulla = tule! tänne = here (directional)." },
-        { "id": 21, "question": "Which case is used for 'FROM OUTSIDE/SURFACE places' (Mistä?)?", "options": ["Elative (-sta/-stä)", "Ablative (-lta/-ltä)", "Allative (-lle)", "Inessive (-ssa/-ssä)"], "answer": "Ablative (-lta/-ltä)", "explanation": "From surface/outside = Ablative: pöydältä (from the table), kadulta (from the street)." },
-        { "id": 22, "question": "Which of these is NOT a Finnish diphthong?", "options": ["ai", "ei", "oo", "äi"], "answer": "oo", "explanation": "oo is a long vowel, not a diphthong. Finnish diphthongs = two DIFFERENT vowels in one syllable: ai, ei, oi, ui, äi, öi, au, eu, ou, äy, öy, ie, uo, yö." },
-        { "id": 23, "question": "Translate: 'Don't run!' (negative command to sinä)", "options": ["Ei juosta!", "Älä juokse!", "En juokse!", "Juokse ei!"], "answer": "Älä juokse!", "explanation": "Negative imperative: Älä + verb stem. juosta → juokse! (stem) → Älä juokse!" },
-        { "id": 24, "question": "What is the spoken Finnish form of 'ei ole'?", "options": ["ei oo", "eoo", "e oo", "ei ole stays same"], "answer": "ei oo", "explanation": "Spoken Finnish: ole → oo. So 'ei ole' → 'ei oo'." }
+        {
+          "id": 1,
+          "question": "Which case answers 'Mistä?' (from where?) for INSIDE places?",
+          "options": [
+            "Inessive (-ssa/-ssä)",
+            "Elative (-sta/-stä)",
+            "Illative (-hun/-hin/-hyn/-heen)",
+            "Adessive (-lla/-llä)"
+          ],
+          "answer": "Elative (-sta/-stä)",
+          "explanation": "Mistä (inside) = Elative: koulusta (from school), Helsingistä (from Helsinki)."
+        },
+        {
+          "id": 2,
+          "question": "What is the spoken Finnish (puhekieli) form of 'minä olen'?",
+          "options": [
+            "mä oon",
+            "mä on",
+            "mä olen",
+            "minä oon"
+          ],
+          "answer": "mä oon",
+          "explanation": "Spoken Finnish: minä → mä, olen → oon."
+        },
+        {
+          "id": 3,
+          "question": "What is the imperative (command) form of 'mennä' (to go) for sinä?",
+          "options": [
+            "mene!",
+            "menee!",
+            "menet!",
+            "meni!"
+          ],
+          "answer": "mene!",
+          "explanation": "Imperative for sinä: remove -n from minä-form. menen → mene!"
+        },
+        {
+          "id": 4,
+          "question": "Translate: 'I am coming FROM the library.' (Mistä?)",
+          "options": [
+            "Tulen kirjastoon.",
+            "Tulen kirjastossa.",
+            "Tulen kirjastolta.",
+            "Tulen kirjastosta."
+          ],
+          "answer": "Tulen kirjastosta.",
+          "explanation": "Library = inside place → Elative -sta: kirjastosta."
+        },
+        {
+          "id": 5,
+          "question": "What is the spoken Finnish form of 'sinä olet'?",
+          "options": [
+            "sä olet",
+            "sä oot",
+            "sie oot",
+            "sinä oot"
+          ],
+          "answer": "sä oot",
+          "explanation": "Spoken Finnish: sinä → sä, olet → oot."
+        },
+        {
+          "id": 6,
+          "question": "Which answers 'Mihin?' (to where?) for INSIDE places?",
+          "options": [
+            "Inessive (-ssa/-ssä)",
+            "Elative (-sta/-stä)",
+            "Illative (-hun/-hin/-hyn/-heen)",
+            "Ablative (-lta/-ltä)"
+          ],
+          "answer": "Illative (-hun/-hin/-hyn/-heen)",
+          "explanation": "Mihin (into) = Illative: kouluun (to school), Helsinkiin (to Helsinki)."
+        },
+        {
+          "id": 7,
+          "question": "Which of these words contains a diphthong?",
+          "options": [
+            "koulu",
+            "kissa",
+            "auto",
+            "talo"
+          ],
+          "answer": "auto",
+          "explanation": "auto contains the diphthong 'au'. A diphthong = two vowels in the same syllable that don't split."
+        },
+        {
+          "id": 8,
+          "question": "What is the negative imperative (don't!) form for 'syödä' (to eat)?",
+          "options": [
+            "Ei syö!",
+            "Älä syö!",
+            "En syö!",
+            "Ei syödä!"
+          ],
+          "answer": "Älä syö!",
+          "explanation": "Negative imperative for sinä: Älä + verb stem. älä syö! = don't eat!"
+        },
+        {
+          "id": 9,
+          "question": "Translate: 'I went TO Helsinki.' (Mihin?)",
+          "options": [
+            "Menin Helsingissä.",
+            "Menin Helsingistä.",
+            "Menin Helsinkiin.",
+            "Menin Helsinki."
+          ],
+          "answer": "Menin Helsinkiin.",
+          "explanation": "To Helsinki = Illative: Helsinkiin. (Helsinki → Helsinkiin, -in ending for -ki stem)"
+        },
+        {
+          "id": 10,
+          "question": "What is the spoken Finnish form of 'me olemme'?",
+          "options": [
+            "me ollaan",
+            "me oon",
+            "me oot",
+            "me olemme"
+          ],
+          "answer": "me ollaan",
+          "explanation": "Spoken Finnish: me olemme → me ollaan (or just 'ollaan')."
+        },
+        {
+          "id": 11,
+          "question": "Which word contains the diphthong 'ie'?",
+          "options": [
+            "talo",
+            "tie",
+            "puu",
+            "koulu"
+          ],
+          "answer": "tie",
+          "explanation": "tie (road) = contains diphthong 'ie'. ie = two vowels in same syllable."
+        },
+        {
+          "id": 12,
+          "question": "What is the imperative of 'ottaa' (to take) for sinä?",
+          "options": [
+            "ota!",
+            "otat!",
+            "ottaa!",
+            "otit!"
+          ],
+          "answer": "ota!",
+          "explanation": "Imperative for sinä: stem of verb. ottaa → ota! (KPT: tt→t)"
+        },
+        {
+          "id": 13,
+          "question": "Translate: 'She came FROM the store.' (Mistä, surface/outside place)",
+          "options": [
+            "Hän tuli kauppaan.",
+            "Hän tuli kaupassa.",
+            "Hän tuli kaupalta.",
+            "Hän tuli kaupasta."
+          ],
+          "answer": "Hän tuli kaupasta.",
+          "explanation": "kauppa = inside place → Elative -sta: kaupasta. (kaupalta would be ablative, for surface places)"
+        },
+        {
+          "id": 14,
+          "question": "Which of these is a diphthong?",
+          "options": [
+            "aa",
+            "uo",
+            "ee",
+            "ii"
+          ],
+          "answer": "uo",
+          "explanation": "uo is a Finnish diphthong (two different vowels in the same syllable). aa, ee, ii are long vowels, not diphthongs."
+        },
+        {
+          "id": 15,
+          "question": "What is the spoken Finnish form of 'he ovat'?",
+          "options": [
+            "ne on",
+            "he on",
+            "ne oon",
+            "he oon"
+          ],
+          "answer": "ne on",
+          "explanation": "Spoken Finnish: he → ne, ovat → on. (ne on = they are, colloquial)"
+        },
+        {
+          "id": 16,
+          "question": "What is the imperative of 'tulla' (to come) for sinä?",
+          "options": [
+            "tule!",
+            "tulee!",
+            "tulet!",
+            "tuli!"
+          ],
+          "answer": "tule!",
+          "explanation": "Imperative for sinä: remove -n from minä form. tulen → tule!"
+        },
+        {
+          "id": 17,
+          "question": "Translate: 'We are going TO school.' (Mihin?)",
+          "options": [
+            "Me menemme kouluun.",
+            "Me menemme koulusta.",
+            "Me menemme koulussa.",
+            "Me menemme koulu."
+          ],
+          "answer": "Me menemme kouluun.",
+          "explanation": "To school = Illative: koulu → kouluun (double u + n)."
+        },
+        {
+          "id": 18,
+          "question": "Which word contains the diphthong 'oi'?",
+          "options": [
+            "koira",
+            "pallo",
+            "talo",
+            "kello"
+          ],
+          "answer": "koira",
+          "explanation": "koira (dog) contains diphthong 'oi'."
+        },
+        {
+          "id": 19,
+          "question": "What is the spoken Finnish for 'minulla on'?",
+          "options": [
+            "mulla oon",
+            "mulla on",
+            "mä on",
+            "minulla oon"
+          ],
+          "answer": "mulla on",
+          "explanation": "Spoken Finnish: minulla → mulla. 'on' stays the same. mulla on = I have."
+        },
+        {
+          "id": 20,
+          "question": "Translate: 'Come here!' (command to sinä)",
+          "options": [
+            "Mene tänne!",
+            "Tule tänne!",
+            "Tulet tänne!",
+            "Tuleeko tänne!"
+          ],
+          "answer": "Tule tänne!",
+          "explanation": "Imperative of tulla = tule! tänne = here (directional)."
+        },
+        {
+          "id": 21,
+          "question": "Which case is used for 'FROM OUTSIDE/SURFACE places' (Mistä?)?",
+          "options": [
+            "Elative (-sta/-stä)",
+            "Ablative (-lta/-ltä)",
+            "Allative (-lle)",
+            "Inessive (-ssa/-ssä)"
+          ],
+          "answer": "Ablative (-lta/-ltä)",
+          "explanation": "From surface/outside = Ablative: pöydältä (from the table), kadulta (from the street)."
+        },
+        {
+          "id": 22,
+          "question": "Which of these is NOT a Finnish diphthong?",
+          "options": [
+            "ai",
+            "ei",
+            "oo",
+            "äi"
+          ],
+          "answer": "oo",
+          "explanation": "oo is a long vowel, not a diphthong. Finnish diphthongs = two DIFFERENT vowels in one syllable: ai, ei, oi, ui, äi, öi, au, eu, ou, äy, öy, ie, uo, yö."
+        },
+        {
+          "id": 23,
+          "question": "Translate: 'Don't run!' (negative command to sinä)",
+          "options": [
+            "Ei juosta!",
+            "Älä juokse!",
+            "En juokse!",
+            "Juokse ei!"
+          ],
+          "answer": "Älä juokse!",
+          "explanation": "Negative imperative: Älä + verb stem. juosta → juokse! (stem) → Älä juokse!"
+        },
+        {
+          "id": 24,
+          "question": "What is the spoken Finnish form of 'ei ole'?",
+          "options": [
+            "ei oo",
+            "eoo",
+            "e oo",
+            "ei ole stays same"
+          ],
+          "answer": "ei oo",
+          "explanation": "Spoken Finnish: ole → oo. So 'ei ole' → 'ei oo'."
+        }
       ]
     }
   ]

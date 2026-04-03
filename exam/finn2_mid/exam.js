@@ -92,6 +92,12 @@ class Exam {
         clone.items = clone.items.map((item, i) => ({ ...item, displayNum: i + 1 }));
       }
 
+      if (sec.type === "audio_response" && sec.audio_pool) {
+        const picked = sec.audio_pool[Math.floor(Math.random() * sec.audio_pool.length)];
+        clone.audio_file = picked.file;
+        clone.audio_script = picked.script;
+      }
+
       return clone;
     });
   }
@@ -140,6 +146,7 @@ class Exam {
       case "fill_in_blank_sentence": this.buildFillInBlankSentence(contentEl, sec); break;
       case "vocabulary_open":        this.buildVocabOpen(contentEl, sec); break;
       case "word_types":             this.buildWordTypes(contentEl, sec); break;
+      case "audio_response":         this.buildAudioResponse(contentEl, sec); break;
     }
 
     return card;
@@ -332,7 +339,8 @@ class Exam {
 
       const enEl = document.createElement("div");
       enEl.className = "poss-en";
-      enEl.textContent = `${num}. ${item.english}`;
+      // Use Finnish prompt if available, fall back to english for any legacy items
+      enEl.textContent = `${num}. ${item.prompt_fi || item.english}`;
       div.appendChild(enEl);
 
       const input = document.createElement("input");
@@ -409,6 +417,108 @@ class Exam {
       sec.accepted_answers.map(a => `<strong>${a.fi}</strong> = ${a.en}`).join(", ")
     }`;
     el.appendChild(accepted);
+  }
+
+  buildAudioResponse(el, sec) {
+    // Audio player
+    const playerBox = document.createElement("div");
+    playerBox.className = "audio-player-box";
+
+    const playBtn = document.createElement("button");
+    playBtn.className = "audio-play-btn";
+    playBtn.innerHTML = "▶ Kuuntele – Play Audio";
+
+    const audio = document.createElement("audio");
+    audio.src = sec.audio_file;
+    audio.preload = "auto";
+
+    let playing = false;
+    playBtn.addEventListener("click", () => {
+      if (playing) {
+        audio.pause();
+        audio.currentTime = 0;
+        playBtn.innerHTML = "▶ Kuuntele – Play Audio";
+        playing = false;
+      } else {
+        audio.play();
+        playBtn.innerHTML = "⏹ Pysäytä – Stop";
+        playing = true;
+      }
+    });
+    audio.addEventListener("ended", () => {
+      playBtn.innerHTML = "▶ Toista uudelleen – Play Again";
+      playing = false;
+    });
+
+    const replayNote = document.createElement("p");
+    replayNote.className = "audio-replay-note";
+    replayNote.textContent = "You can play the audio multiple times.";
+
+    // Script toggle
+    const scriptToggle = document.createElement("button");
+    scriptToggle.className = "vocab-toggle-btn";
+    scriptToggle.textContent = "📄 Show audio script (spoiler)";
+    const scriptBox = document.createElement("pre");
+    scriptBox.className = "audio-script hidden";
+    scriptBox.textContent = sec.audio_script;
+    scriptToggle.addEventListener("click", () => {
+      scriptBox.classList.toggle("hidden");
+      scriptToggle.textContent = scriptBox.classList.contains("hidden")
+        ? "📄 Show audio script (spoiler)" : "📄 Hide script";
+    });
+
+    playerBox.appendChild(audio);
+    playerBox.appendChild(playBtn);
+    playerBox.appendChild(replayNote);
+    el.appendChild(playerBox);
+    el.appendChild(scriptToggle);
+    el.appendChild(scriptBox);
+
+    // Questions
+    sec.questions.forEach(q => {
+      const div = document.createElement("div");
+      div.className = "audio-q-item";
+
+      const prompt = document.createElement("div");
+      prompt.className = "audio-q-prompt";
+      prompt.innerHTML = `<span class="audio-q-num">${q.id}.</span> ${q.prompt} <span class="audio-q-en">(${q.promptEn})</span>`;
+      div.appendChild(prompt);
+
+      const input = document.createElement("input");
+      input.type = "text";
+      input.className = "fitb-input audio-q-input";
+      input.placeholder = q.placeholder;
+      input.dataset.sectionId = sec.id;
+      input.dataset.questionId = q.id;
+      input.dataset.sample = q.sample;
+      input.autocomplete = "off";
+      input.autocapitalize = "none";
+      div.appendChild(input);
+
+      const sample = document.createElement("div");
+      sample.className = "sample-answer";
+      sample.id = `audio-sample-${sec.id}-${q.id}`;
+      sample.innerHTML = `<strong>Sample:</strong> ${q.sample}`;
+      div.appendChild(sample);
+
+      el.appendChild(div);
+    });
+  }
+
+  gradeAudioResponse(sec) {
+    let filled = 0;
+    sec.questions.forEach(q => {
+      const input = document.querySelector(
+        `.audio-q-input[data-section-id="${sec.id}"][data-question-id="${q.id}"]`
+      );
+      if (!input) return;
+      input.disabled = true;
+      if (input.value.trim().length > 1) filled++;
+
+      const sample = document.getElementById(`audio-sample-${sec.id}-${q.id}`);
+      if (sample) sample.classList.add("visible");
+    });
+    return Math.round((filled / sec.questions.length) * sec.points);
   }
 
   buildWordTypes(el, sec) {
@@ -552,6 +662,7 @@ class Exam {
       case "fill_in_blank_sentence": earned = this.gradeFillInBlankSentence(sec); break;
       case "vocabulary_open":        earned = this.gradeVocabOpen(sec); break;
       case "word_types":             earned = this.gradeWordTypes(sec); break;
+      case "audio_response":         earned = this.gradeAudioResponse(sec); break;
     }
 
     return { earned: Math.min(earned, possible), possible };
