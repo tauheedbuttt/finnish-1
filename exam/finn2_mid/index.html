@@ -69,9 +69,25 @@
       </div>
 
       <div id="pastAttemptsSection" class="past-attempts-section hidden">
-        <h2>📚 Past Attempts</h2>
+        <div class="past-attempts-header">
+          <h2>📚 Past Attempts</h2>
+          <button class="delete-history-btn" id="deleteHistoryBtn" title="Delete all exam history">🗑️ Delete All</button>
+        </div>
         <div id="pastAttemptsList" class="sessions-list"></div>
         <a href="review.html" class="view-all-link">View All →</a>
+      </div>
+
+      <!-- Confirmation Modal -->
+      <div id="deleteConfirmModal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+          <h3>Delete All History?</h3>
+          <p>Are you sure you want to delete all exam attempts? This action cannot be undone.</p>
+          <div class="modal-actions">
+            <button class="modal-btn cancel" id="cancelDeleteBtn">Cancel</button>
+            <button class="modal-btn delete" id="confirmDeleteBtn">Delete All</button>
+          </div>
+        </div>
       </div>
     </div>
 
