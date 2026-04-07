@@ -318,41 +318,20 @@
         },
         {
           "id": 40,
-          "before": "Tämä on minun",
-          "after": ". (kirja – possessive suffix -ni for minä)",
-          "answer": "kirjani",
-          "explanation": "kirja + -ni = kirjani (my book)."
-        },
-        {
-          "id": 41,
-          "before": "Missä on sinun",
-          "after": "? (hattu – possessive suffix -si for sinä)",
-          "answer": "hattusi",
-          "explanation": "hattu + -si = hattusi (your hat)."
-        },
-        {
-          "id": 42,
-          "before": "Täydennä: 'Hänen",
-          "after": "on iso.' (koira – possessive suffix -nsa/-nsä for hän)",
-          "answer": "koiransa",
-          "explanation": "koira + -nsa = koiransa (his/her dog)."
-        },
-        {
-          "id": 43,
           "before": "Minä",
           "after": "yliopistossa eilen. (olla – minä, past tense)",
           "answer": "olin",
           "explanation": "olla past: minä olin."
         },
         {
-          "id": 44,
+          "id": 41,
           "before": "Lapset",
           "after": "puistossa koko päivän. (leikkiä – he, past tense)",
           "answer": "leikkivät",
           "explanation": "leikkiä (type 1): he leikkivät."
         },
         {
-          "id": 45,
+          "id": 42,
           "before": "Sinulla",
           "after": "sanakirja? (olla – question form with -ko)",
           "answer": "onko",
@@ -577,49 +556,49 @@
       "futureTimeExpressions": ["huomenna", "ylihuomenna"],
       "do_sentences_base": [
         {
-          "base": "Opiskelen suomea ",
-          "present": "Opiskelen suomea ",
-          "past": "Opiskelin suomea ",
+          "base": "Opiskelen suomea",
+          "present": "Opiskelen suomea",
+          "past": "Opiskelin suomea",
           "futureBase": "Opiskelen suomea"
         },
         {
-          "base": "Juon vettä ",
-          "present": "Juon vettä ",
-          "past": "Join vettä ",
+          "base": "Juon vettä",
+          "present": "Juon vettä",
+          "past": "Join vettä",
           "futureBase": "Juon vettä"
         },
         {
-          "base": "Menen kaupunkiin ",
-          "present": "Menen kaupunkiin ",
-          "past": "Menin kaupunkiin ",
+          "base": "Menen kaupunkiin",
+          "present": "Menen kaupunkiin",
+          "past": "Menin kaupunkiin",
           "futureBase": "Menen kaupunkiin"
         }
       ],
       "dont_sentences_base": [
         {
-          "base": "En pelaa peliä ",
-          "present": "En pelaa peliä ",
-          "past": "En pelannut peliä ",
+          "base": "En pelaa peliä",
+          "present": "En pelaa peliä",
+          "past": "En pelannut peliä",
           "futureBase": "En pelaa peliä"
         },
         {
-          "base": "En nuku myöhään ",
-          "present": "En nuku myöhään ",
-          "past": "En nukkunut myöhään ",
+          "base": "En nuku myöhään",
+          "present": "En nuku myöhään",
+          "past": "En nukkunut myöhään",
           "futureBase": "En nuku myöhään"
         },
         {
-          "base": "En käytä puhelinta ",
-          "present": "En käytä puhelinta ",
-          "past": "En käyttänyt puhelinta ",
+          "base": "En käytä puhelinta",
+          "present": "En käytä puhelinta",
+          "past": "En käyttänyt puhelinta",
           "futureBase": "En käytä puhelinta"
         }
       ],
-      "do_sentences": ["Opiskelen suomea ", "Juon vettä ", "Menen kaupunkiin "],
+      "do_sentences": ["Opiskelen suomea", "Juon vettä", "Menen kaupunkiin"],
       "dont_sentences": [
-        "En pelaa peliä ",
-        "En nuku myöhään ",
-        "En käytä puhelinta "
+        "En pelaa peliä",
+        "En nuku myöhään",
+        "En käytä puhelinta"
       ]
     },
     {
@@ -1807,7 +1786,6 @@
             "genitive": "huoneen",
             "meaning": "room"
           },
-          "rule": "huone → huone(stem) + en = huoneen",
           "accepted": [
             {
               "base": "huone",
@@ -1896,7 +1874,6 @@
             "genitive": "veden",
             "meaning": "water"
           },
-          "rule": "vesi → ve- + den = veden (si → d)",
           "accepted": [
             {
               "base": "vesi",
@@ -1960,7 +1937,6 @@
             "genitive": "ihmisen",
             "meaning": "person / human"
           },
-          "rule": "ihminen → ihmise(stem) + n = ihmisen",
           "accepted": [
             {
               "base": "ihminen",

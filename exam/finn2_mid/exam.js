@@ -163,7 +163,8 @@ class Exam {
               (selectedTense === "past" || selectedTense === "future") &&
               selectedTimeExpr
             ) {
-              return s[selectedTense] + " " + selectedTimeExpr + ".";
+              const baseSentence = selectedTense === "future" ? s.futureBase : s[selectedTense];
+              return baseSentence + " " + selectedTimeExpr + ".";
             }
             return s[selectedTense] || s.base;
           });
@@ -173,7 +174,8 @@ class Exam {
               (selectedTense === "past" || selectedTense === "future") &&
               selectedTimeExpr
             ) {
-              return s[selectedTense] + " " + selectedTimeExpr + ".";
+              const baseSentence = selectedTense === "future" ? s.futureBase : s[selectedTense];
+              return baseSentence + " " + selectedTimeExpr + ".";
             }
             return s[selectedTense] || s.base;
           });
