@@ -163,7 +163,8 @@ class Exam {
               (selectedTense === "past" || selectedTense === "future") &&
               selectedTimeExpr
             ) {
-              const baseSentence = selectedTense === "future" ? s.futureBase : s[selectedTense];
+              const baseSentence =
+                selectedTense === "future" ? s.futureBase : s[selectedTense];
               return baseSentence + " " + selectedTimeExpr + ".";
             }
             return s[selectedTense] || s.base;
@@ -174,7 +175,8 @@ class Exam {
               (selectedTense === "past" || selectedTense === "future") &&
               selectedTimeExpr
             ) {
-              const baseSentence = selectedTense === "future" ? s.futureBase : s[selectedTense];
+              const baseSentence =
+                selectedTense === "future" ? s.futureBase : s[selectedTense];
               return baseSentence + " " + selectedTimeExpr + ".";
             }
             return s[selectedTense] || s.base;
