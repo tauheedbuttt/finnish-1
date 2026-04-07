@@ -50,360 +50,315 @@
         {
           "id": 1,
           "before": "Minä",
-          "after": "kahvia joka aamu.",
-          "hint": "(juoda – minä, present)",
+          "after": "kahvia joka aamu. (juoda – minä, present)",
           "answer": "juon",
           "explanation": "juoda (type 2): minä juon."
         },
         {
           "id": 2,
           "before": "Hän",
-          "after": "töihin bussilla.",
-          "hint": "(mennä – hän, present)",
+          "after": "töihin bussilla. (mennä – hän, present)",
           "answer": "menee",
           "explanation": "mennä (type 3): hän menee."
         },
         {
           "id": 3,
           "before": "Me",
-          "after": "suomea yliopistossa.",
-          "hint": "(opiskella – me, present)",
+          "after": "suomea yliopistossa. (opiskella – me, present)",
           "answer": "opiskelemme",
           "explanation": "opiskella (type 3): me opiskelemme."
         },
         {
           "id": 4,
           "before": "Sinä",
-          "after": "kirjaa nyt.",
-          "hint": "(lukea – sinä, present)",
+          "after": "kirjaa nyt. (lukea – sinä, present)",
           "answer": "luet",
           "explanation": "lukea (type 1): sinä luet."
         },
         {
           "id": 5,
           "before": "Te",
-          "after": "Tampereella.",
-          "hint": "(asua – te, present)",
+          "after": "Tampereella. (asua – te, present)",
           "answer": "asutte",
           "explanation": "asua (type 1): te asutte."
         },
         {
           "id": 6,
           "before": "He",
-          "after": "englantia hyvin.",
-          "hint": "(puhua – he, present)",
+          "after": "englantia hyvin. (puhua – he, present)",
           "answer": "puhuvat",
           "explanation": "puhua (type 1): he puhuvat."
         },
         {
           "id": 7,
           "before": "Minä",
-          "after": "apua tehtävässä.",
-          "hint": "(tarvita – minä, present, type 4)",
+          "after": "apua tehtävässä. (tarvita – minä, present, type 4)",
           "answer": "tarvitsen",
           "explanation": "tarvita (type 4): minä tarvitsen."
         },
         {
           "id": 8,
           "before": "Lapsi",
-          "after": "paljon öisin.",
-          "hint": "(nukkua – hän, present)",
+          "after": "paljon öisin. (nukkua – hän, present)",
           "answer": "nukkuu",
           "explanation": "nukkua (type 1): hän/lapsi nukkuu."
         },
         {
           "id": 9,
           "before": "Minä",
-          "after": "lounasta töissä.",
-          "hint": "(syödä – minä, present)",
+          "after": "lounasta töissä. (syödä – minä, present)",
           "answer": "syön",
           "explanation": "syödä (type 2): minä syön."
         },
         {
           "id": 10,
           "before": "He",
-          "after": "aina myöhässä.",
-          "hint": "(tulla – he, present)",
+          "after": "aina myöhässä. (tulla – he, present)",
           "answer": "tulevat",
           "explanation": "tulla (type 3): he tulevat."
         },
         {
           "id": 11,
           "before": "Hän",
-          "after": "aikaisin joka päivä.",
-          "hint": "(herätä – hän, present, type 4)",
+          "after": "aikaisin joka päivä. (herätä – hän, present, type 4)",
           "answer": "herää",
           "explanation": "herätä (type 4): hän herää."
         },
         {
           "id": 12,
           "before": "Me",
-          "after": "kahvia nyt.",
-          "hint": "(juoda – me, present)",
+          "after": "kahvia nyt. (juoda – me, present)",
           "answer": "juomme",
           "explanation": "juoda (type 2): me juomme."
         },
         {
           "id": 13,
           "before": "Minä",
-          "after": "kaupassa eilen.",
-          "hint": "(käydä – minä, past tense)",
+          "after": "kaupassa eilen. (käydä – minä, past tense)",
           "answer": "kävin",
           "explanation": "käydä past (imperfekti): minä kävin."
         },
         {
           "id": 14,
           "before": "Hän",
-          "after": "puuroa aamulla.",
-          "hint": "(syödä – hän, past tense)",
+          "after": "puuroa aamulla. (syödä – hän, past tense)",
           "answer": "söi",
           "explanation": "syödä past: hän söi."
         },
         {
           "id": 15,
           "before": "Me",
-          "after": "elokuviin viikonloppuna.",
-          "hint": "(mennä – me, past tense)",
+          "after": "elokuviin viikonloppuna. (mennä – me, past tense)",
           "answer": "menimme",
           "explanation": "mennä past: me menimme."
         },
         {
           "id": 16,
           "before": "Sinä",
-          "after": "sairas viime viikolla.",
-          "hint": "(olla – sinä, past tense)",
+          "after": "sairas viime viikolla. (olla – sinä, past tense)",
           "answer": "olit",
           "explanation": "olla past: sinä olit."
         },
         {
           "id": 17,
           "before": "He",
-          "after": "myöhässä tunnille.",
-          "hint": "(tulla – he, past tense)",
+          "after": "myöhässä tunnille. (tulla – he, past tense)",
           "answer": "tulivat",
           "explanation": "tulla past: he tulivat."
         },
         {
           "id": 18,
           "before": "Minä",
-          "after": "kirjan viime kuussa.",
-          "hint": "(lukea – minä, past tense)",
+          "after": "kirjan viime kuussa. (lukea – minä, past tense)",
           "answer": "luin",
           "explanation": "lukea past: minä luin."
         },
         {
           "id": 19,
           "before": "Hän",
-          "after": "paljon kokeeseen.",
-          "hint": "(opiskella – hän, past tense)",
+          "after": "paljon kokeeseen. (opiskella – hän, past tense)",
           "answer": "opiskeli",
           "explanation": "opiskella past: hän opiskeli."
         },
         {
           "id": 20,
           "before": "Asun",
-          "after": ".",
-          "hint": "(Helsinki – inessive/missä? -ssä)",
+          "after": ". (Helsinki – inessive/missä? -ssä)",
           "answer": "Helsingissä",
           "explanation": "Helsinki → Helsingissä. KPT: k→ng, inessive -ssä."
         },
         {
           "id": 21,
           "before": "Pekka asuu",
-          "after": ".",
-          "hint": "(Turku – inessive/missä? -ssa)",
+          "after": ". (Turku – inessive/missä? -ssa)",
           "answer": "Turussa",
           "explanation": "Turku → Turussa. Inessive -ssa."
         },
         {
           "id": 22,
           "before": "Kirja on",
-          "after": ".",
-          "hint": "(pöytä – adessive/missä? surface -lla)",
+          "after": ". (pöytä – adessive/missä? surface -lla)",
           "answer": "pöydällä",
           "explanation": "pöytä → pöydällä. KPT: t→d, adessive -lla."
         },
         {
           "id": 23,
           "before": "Lapset leikkivät",
-          "after": ".",
-          "hint": "(puisto – inessive/missä? -ssa)",
+          "after": ". (puisto – inessive/missä? -ssa)",
           "answer": "puistossa",
           "explanation": "puisto → puistossa. Inessive -ssa."
         },
         {
           "id": 24,
           "before": "Hän työskentelee",
-          "after": ".",
-          "hint": "(sairaala – inessive/missä?)",
+          "after": ". (sairaala – inessive/missä?)",
           "answer": "sairaalassa",
           "explanation": "sairaala → sairaalassa. Inessive -ssa."
         },
         {
           "id": 25,
           "before": "Tulen",
-          "after": ".",
-          "hint": "(koulu – elative/mistä? -sta)",
+          "after": ". (koulu – elative/mistä? -sta)",
           "answer": "koulusta",
           "explanation": "koulu → koulusta. Elative -sta."
         },
         {
           "id": 26,
           "before": "Tulin",
-          "after": ".",
-          "hint": "(kauppa – elative/mistä? -sta)",
+          "after": ". (kauppa – elative/mistä? -sta)",
           "answer": "kaupasta",
           "explanation": "kauppa → kaupasta. Elative -sta."
         },
         {
           "id": 27,
           "before": "Hän tuli",
-          "after": ".",
-          "hint": "(Helsinki – elative/mistä? -stä)",
+          "after": ". (Helsinki – elative/mistä? -stä)",
           "answer": "Helsingistä",
           "explanation": "Helsinki → Helsingistä. KPT + elative -stä."
         },
         {
           "id": 28,
           "before": "Otan kirjan",
-          "after": ".",
-          "hint": "(pöytä – ablative/mistä? surface -lta)",
+          "after": ". (pöytä – ablative/mistä? surface -lta)",
           "answer": "pöydältä",
           "explanation": "pöytä → pöydältä. KPT + ablative -lta."
         },
         {
           "id": 29,
           "before": "Menen",
-          "after": "nyt.",
-          "hint": "(kauppa – illative/mihin? double vowel+n)",
+          "after": "nyt. (kauppa – illative/mihin? double vowel+n)",
           "answer": "kauppaan",
           "explanation": "kauppa → kauppaan. Illative: double last vowel + n."
         },
         {
           "id": 30,
           "before": "Lapset menevät",
-          "after": ".",
-          "hint": "(koulu – illative/mihin?)",
+          "after": ". (koulu – illative/mihin?)",
           "answer": "kouluun",
           "explanation": "koulu → kouluun. Illative: double u + n."
         },
         {
           "id": 31,
           "before": "Hän meni",
-          "after": ".",
-          "hint": "(Helsinki – illative/mihin? -in)",
+          "after": ". (Helsinki – illative/mihin? -in)",
           "answer": "Helsinkiin",
           "explanation": "Helsinki → Helsinkiin. Illative: -in ending."
         },
         {
           "id": 32,
           "before": "Panen kirjan",
-          "after": ".",
-          "hint": "(pöytä – allative/mihin? surface -lle)",
+          "after": ". (pöytä – allative/mihin? surface -lle)",
           "answer": "pöydälle",
           "explanation": "pöytä → pöydälle. KPT + allative -lle."
         },
         {
           "id": 33,
           "before": "Hänellä on kolme",
-          "after": ".",
-          "hint": "(lapsi – partitive after number)",
+          "after": ". (lapsi – partitive after number)",
           "answer": "lasta",
           "explanation": "lapsi → lasta. KPT: p→nothing, partitive -a."
         },
         {
           "id": 34,
           "before": "En näe",
-          "after": ".",
-          "hint": "(auto – partitive after negation)",
+          "after": ". (auto – partitive after negation)",
           "answer": "autoa",
           "explanation": "auto → autoa. Partitive after negation."
         },
         {
           "id": 35,
           "before": "Haluatko",
-          "after": "?",
-          "hint": "(kahvi – partitive, haluata takes partitive)",
+          "after": "? (kahvi – partitive, haluata takes partitive)",
           "answer": "kahvia",
           "explanation": "kahvi → kahvia. Partitive (haluata + partitive)."
         },
         {
           "id": 36,
           "before": "Ostan kaksi",
-          "after": ".",
-          "hint": "(kirja – partitive after 2+)",
+          "after": ". (kirja – partitive after 2+)",
           "answer": "kirjaa",
           "explanation": "kirja → kirjaa. Partitive after numbers 2+."
         },
         {
           "id": 37,
           "before": "Hänellä on viisi",
-          "after": ".",
-          "hint": "(euro – partitive after 5)",
+          "after": ". (euro – partitive after 5)",
           "answer": "euroa",
           "explanation": "euro → euroa. Partitive after numbers 2+."
         },
         {
           "id": 38,
           "before": "En tarvitse",
-          "after": ".",
-          "hint": "(auto – partitive after negation)",
+          "after": ". (auto – partitive after negation)",
           "answer": "autoa",
           "explanation": "Negation always requires partitive: auto → autoa."
         },
         {
           "id": 39,
           "before": "Ostan",
-          "after": "kaupasta.",
-          "hint": "(maito – partitive, quantity/uncountable)",
+          "after": "kaupasta. (maito – partitive, quantity/uncountable)",
           "answer": "maitoa",
           "explanation": "maito → maitoa. Partitive for uncountable quantities."
         },
         {
           "id": 40,
           "before": "Tämä on minun",
-          "after": ".",
-          "hint": "(kirja – possessive suffix -ni for minä)",
+          "after": ". (kirja – possessive suffix -ni for minä)",
           "answer": "kirjani",
           "explanation": "kirja + -ni = kirjani (my book)."
         },
         {
           "id": 41,
           "before": "Missä on sinun",
-          "after": "?",
-          "hint": "(hattu – possessive suffix -si for sinä)",
+          "after": "? (hattu – possessive suffix -si for sinä)",
           "answer": "hattusi",
           "explanation": "hattu + -si = hattusi (your hat)."
         },
         {
           "id": 42,
           "before": "Täydennä: 'Hänen",
-          "after": "on iso.'",
-          "hint": "(koira – possessive suffix -nsa/-nsä for hän)",
+          "after": "on iso.' (koira – possessive suffix -nsa/-nsä for hän)",
           "answer": "koiransa",
           "explanation": "koira + -nsa = koiransa (his/her dog)."
         },
         {
           "id": 43,
           "before": "Minä",
-          "after": "yliopistossa eilen.",
-          "hint": "(olla – minä, past tense)",
+          "after": "yliopistossa eilen. (olla – minä, past tense)",
           "answer": "olin",
           "explanation": "olla past: minä olin."
         },
         {
           "id": 44,
           "before": "Lapset",
-          "after": "puistossa koko päivän.",
-          "hint": "(leikkiä – he, past tense)",
+          "after": "puistossa koko päivän. (leikkiä – he, past tense)",
           "answer": "leikkivät",
           "explanation": "leikkiä (type 1): he leikkivät."
         },
         {
           "id": 45,
           "before": "Sinulla",
-          "after": "sanakirja?",
-          "hint": "(olla – question form with -ko)",
+          "after": "sanakirja? (olla – question form with -ko)",
           "answer": "onko",
           "explanation": "Olla question: onko sinulla...?"
         }

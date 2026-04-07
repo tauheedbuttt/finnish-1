@@ -182,7 +182,6 @@ class Exam {
       input.dataset.answer = item.answer.toLowerCase();
       input.dataset.sectionId = sec.id;
       input.dataset.itemId = item.id;
-      input.placeholder = item.hint || "";
       input.autocomplete = "off";
       input.autocapitalize = "none";
       row.appendChild(input);
