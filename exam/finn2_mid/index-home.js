@@ -17,18 +17,23 @@ class HomePage {
       const grid = document.getElementById("syllabusGrid");
       if (grid && this.exam.data) {
         const chMap = { ch1: "Ch1", ch2: "Ch2", ch3: "Ch3" };
-        this.exam.data.syllabus && Object.entries(this.exam.data.syllabus).forEach(([ch, topics]) => {
-          topics.forEach(t => {
-            const el = document.createElement("div");
-            el.className = "syllabus-tag";
-            el.innerHTML = `<span class="ch-badge">${chMap[ch]}</span>${t}`;
-            grid.appendChild(el);
+        this.exam.data.syllabus &&
+          Object.entries(this.exam.data.syllabus).forEach(([ch, topics]) => {
+            topics.forEach((t) => {
+              const el = document.createElement("div");
+              el.className = "syllabus-tag";
+              el.innerHTML = `<span class="ch-badge">${chMap[ch]}</span>${t}`;
+              grid.appendChild(el);
+            });
           });
-        });
       }
 
-      document.getElementById("introSections").textContent = this.exam.data.sections.length;
-      const total = this.exam.data.sections.reduce((s, sec) => s + (sec.points || 0), 0);
+      document.getElementById("introSections").textContent =
+        this.exam.data.sections.length;
+      const total = this.exam.data.sections.reduce(
+        (s, sec) => s + (sec.points || 0),
+        0,
+      );
       document.getElementById("introPoints").textContent = total;
 
       // Wire up start exam button
@@ -47,7 +52,9 @@ class HomePage {
   async loadStatsbyQuestionType() {
     try {
       const sessions = await getAllSessions();
-      const submittedSessions = sessions.filter(s => s.status === "submitted");
+      const submittedSessions = sessions.filter(
+        (s) => s.status === "submitted",
+      );
 
       if (submittedSessions.length === 0) {
         document.getElementById("statsSection").classList.add("hidden");
@@ -61,12 +68,12 @@ class HomePage {
       let totalQuestionsAttempted = 0;
       let totalQuestionsCorrect = 0;
 
-      submittedSessions.forEach(session => {
+      submittedSessions.forEach((session) => {
         // Count questions by type from selectedSections
         if (session.selectedSections) {
-          session.selectedSections.forEach(section => {
+          session.selectedSections.forEach((section) => {
             const sectionType = section.titleEn || section.id;
-            
+
             if (!typeStats[sectionType]) {
               typeStats[sectionType] = { attempted: 0, correct: 0 };
             }
@@ -80,9 +87,10 @@ class HomePage {
               // Count correct answers based on section type
               if (session.scores && session.scores[section.id]) {
                 const sectionScore = session.scores[section.id];
-                const earnedPct = sectionScore.possible > 0 
-                  ? (sectionScore.earned / sectionScore.possible)
-                  : 0;
+                const earnedPct =
+                  sectionScore.possible > 0
+                    ? sectionScore.earned / sectionScore.possible
+                    : 0;
                 const correctCount = Math.round(numQuestions * earnedPct);
                 typeStats[sectionType].correct += correctCount;
                 totalQuestionsCorrect += correctCount;
@@ -97,7 +105,10 @@ class HomePage {
       statsContainer.innerHTML = "";
 
       Object.entries(typeStats).forEach(([type, stats]) => {
-        const pct = stats.attempted > 0 ? Math.round((stats.correct / stats.attempted) * 100) : 0;
+        const pct =
+          stats.attempted > 0
+            ? Math.round((stats.correct / stats.attempted) * 100)
+            : 0;
         const card = document.createElement("div");
         card.className = "question-type-card";
         card.innerHTML = `
@@ -117,11 +128,14 @@ class HomePage {
       });
 
       // Update overall stats
-      const overallPct = totalQuestionsAttempted > 0 
-        ? Math.round((totalQuestionsCorrect / totalQuestionsAttempted) * 100) 
-        : 0;
-      document.getElementById("totalQuestionsAttempted").textContent = totalQuestionsAttempted;
-      document.getElementById("overallScore").textContent = `${totalQuestionsCorrect}/${totalQuestionsAttempted} (${overallPct}%)`;
+      const overallPct =
+        totalQuestionsAttempted > 0
+          ? Math.round((totalQuestionsCorrect / totalQuestionsAttempted) * 100)
+          : 0;
+      document.getElementById("totalQuestionsAttempted").textContent =
+        totalQuestionsAttempted;
+      document.getElementById("overallScore").textContent =
+        `${totalQuestionsCorrect}/${totalQuestionsAttempted} (${overallPct}%)`;
     } catch (e) {
       console.error("Failed to load stats by question type:", e);
     }
@@ -140,7 +154,7 @@ class HomePage {
         answers: {},
         scores: null,
         totalEarned: null,
-        totalPossible: null
+        totalPossible: null,
       };
 
       await saveSession(session);
@@ -179,7 +193,7 @@ class HomePage {
           month: "short",
           day: "numeric",
           hour: "2-digit",
-          minute: "2-digit"
+          minute: "2-digit",
         });
 
         let statusBadge = "";

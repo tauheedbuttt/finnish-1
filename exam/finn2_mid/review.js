@@ -23,7 +23,7 @@ async function loadSessions() {
     overallStatsSection.classList.remove("hidden");
 
     // Calculate overall stats from submitted sessions only
-    const submittedSessions = sessions.filter(s => s.status === "submitted");
+    const submittedSessions = sessions.filter((s) => s.status === "submitted");
     if (submittedSessions.length > 0) {
       const totalAttempts = submittedSessions.length;
       let totalEarned = 0;
@@ -31,7 +31,7 @@ async function loadSessions() {
       let highestScore = 0;
       let highestPct = 0;
 
-      submittedSessions.forEach(session => {
+      submittedSessions.forEach((session) => {
         const earned = session.totalEarned || 0;
         const possible = session.totalPossible || 0;
         const pct = possible > 0 ? (earned / possible) * 100 : 0;
@@ -44,12 +44,14 @@ async function loadSessions() {
         }
       });
 
-      const averagePct = totalPossible > 0 ? Math.round((totalEarned / totalPossible) * 100) : 0;
+      const averagePct =
+        totalPossible > 0 ? Math.round((totalEarned / totalPossible) * 100) : 0;
 
       // Update overall stats display
       document.getElementById("totalAttempts").textContent = totalAttempts;
       document.getElementById("averageScore").textContent = `${averagePct}%`;
-      document.getElementById("bestScore").textContent = `${highestScore} (${Math.round(highestPct)}%)`;
+      document.getElementById("bestScore").textContent =
+        `${highestScore} (${Math.round(highestPct)}%)`;
       document.getElementById("totalPointsEarned").textContent = totalEarned;
     }
 
@@ -65,7 +67,7 @@ async function loadSessions() {
         day: "numeric",
         year: "numeric",
         hour: "2-digit",
-        minute: "2-digit"
+        minute: "2-digit",
       });
 
       let statusBadge = "";
