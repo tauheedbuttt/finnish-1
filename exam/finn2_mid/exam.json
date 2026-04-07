@@ -576,29 +576,29 @@
       ],
       "dont_sentences_base": [
         {
-          "base": "En pelaa peliä",
-          "present": "En pelaa peliä",
-          "past": "En pelannut peliä",
-          "futureBase": "En pelaa peliä"
-        },
-        {
           "base": "En nuku myöhään",
           "present": "En nuku myöhään",
           "past": "En nukkunut myöhään",
           "futureBase": "En nuku myöhään"
         },
         {
-          "base": "En käytä puhelinta",
-          "present": "En käytä puhelinta",
-          "past": "En käyttänyt puhelinta",
-          "futureBase": "En käytä puhelinta"
+          "base": "En tule kaupunkiin",
+          "present": "En tule kaupunkiin",
+          "past": "En tullut kaupunkiin",
+          "futureBase": "En tule kaupunkiin"
+        },
+        {
+          "base": "En käy kaupassa",
+          "present": "En käy kaupassa",
+          "past": "En käynyt kaupassa",
+          "futureBase": "En käy kaupassa"
         }
       ],
-      "do_sentences": ["Opiskelen suomea", "Juon vettä", "Menen kaupunkiin"],
+      "do_sentences": ["Nukun", "Tulen kotiin", "Käyn kaupassa"],
       "dont_sentences": [
-        "En pelaa peliä",
         "En nuku myöhään",
-        "En käytä puhelinta"
+        "En tule kaupunkiin",
+        "En käy kaupassa"
       ]
     },
     {
