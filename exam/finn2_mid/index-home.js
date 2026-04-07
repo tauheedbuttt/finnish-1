@@ -174,7 +174,7 @@ class HomePage {
   async deleteAllHistory() {
     try {
       const sessions = await getAllSessions();
-      
+
       // Delete all sessions from IndexedDB
       for (const session of sessions) {
         await deleteSession(session.id);
