@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finn 2 Välikoe – Review</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="review.html" class="back-link">← Back to History</a>
+
+      <div id="resultsCard" class="results-card">
+        <h2>📋 Exam Review</h2>
+        <p class="results-subtitle">Your attempt on <span id="attemptDate">–</span></p>
+
+        <div class="score-display">
+          <div class="score-circle">
+            <span class="score-number" id="finalScore">0</span>
+            <span class="score-divider">/</span>
+            <span class="score-total" id="totalPoints">0</span>
+          </div>
+          <p class="score-percentage" id="scorePercentage">0%</p>
+          <p class="score-message" id="scoreMessage"></p>
+        </div>
+
+        <div class="section-scores" id="sectionScores"></div>
+
+        <div class="results-actions">
+          <button class="retry-btn" id="retryBtn">🔄 Try Again</button>
+          <button class="home-btn" id="homeBtn">🏠 Back to Home</button>
+        </div>
+      </div>
+
+      <div class="exam-header-bar">
+        <h2>Your Answers</h2>
+      </div>
+
+      <div id="sectionsContainer"></div>
+    </div>
+
+    <script src="db.js"></script>
+    <script src="exam.js"></script>
+    <script src="attempt-review.js"></script>
+  </body>
+</html>

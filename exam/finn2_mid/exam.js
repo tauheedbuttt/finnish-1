@@ -10,17 +10,35 @@ class Exam {
     this.sectionScores = {};
     // Stores the randomly selected questions for this run
     this.selectedSections = [];
+    this.onSubmit = null; // callback hook for submission
     this.init();
+  }
+
+  async loadData() {
+    // Only fetch if not already loaded
+    if (this.data) return this;
+
+    try {
+      const res = await fetch("exam.json?v=" + Date.now());
+      this.data = await res.json();
+      return this;
+    } catch (e) {
+      console.error("Failed to load exam data:", e);
+      throw e;
+    }
   }
 
   async init() {
     try {
-      const res = await fetch("exam.json?v=" + Date.now());
-      this.data = await res.json();
-      this.renderIntro();
-      this.setupEventListeners();
+      await this.loadData();
+      if (document.getElementById("introScreen")) {
+        this.renderIntro();
+      }
+      if (document.getElementById("startExamBtn")) {
+        this.setupEventListeners();
+      }
     } catch (e) {
-      console.error("Failed to load exam data:", e);
+      console.error("Failed to initialize exam:", e);
     }
   }
 
@@ -108,7 +126,10 @@ class Exam {
   ========================================== */
 
   buildExam() {
-    this.buildSelectedSections();
+    // Only randomize if selectedSections is empty (not loaded from IDB)
+    if (!this.selectedSections || this.selectedSections.length === 0) {
+      this.buildSelectedSections();
+    }
     const container = document.getElementById("sectionsContainer");
     container.innerHTML = "";
     this.selectedSections.forEach((sec, i) => {
@@ -151,6 +172,393 @@ class Exam {
     }
 
     return card;
+  }
+
+  /* ==========================================
+     SESSION MANAGEMENT
+  ========================================== */
+
+  /**
+   * Load selected sections from a saved session instead of randomizing.
+   */
+  loadSelectedSections(savedSections) {
+    this.selectedSections = savedSections;
+  }
+
+  /**
+   * Collect all user answers from the current DOM state.
+   * Returns a flat key-value map: "<sectionId>:<itemId>" => answer value
+   */
+  collectAnswers() {
+    const answers = {};
+
+    this.selectedSections.forEach(sec => {
+      switch (sec.type) {
+        case "fill_in_blank":
+        case "fill_in_blank_sentence":
+          sec.items.forEach(item => {
+            const input = document.querySelector(
+              `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`
+            );
+            if (input) {
+              answers[`${sec.id}:${item.id}`] = input.value;
+            }
+          });
+          break;
+
+        case "mcq":
+        case "comprehension":
+          sec.items.forEach(item => {
+            const radios = document.querySelectorAll(`input[name="mcq-${sec.id}-${item.id}"]`);
+            radios.forEach(r => {
+              if (r.checked) {
+                answers[`${sec.id}:${item.id}`] = r.value;
+              }
+            });
+          });
+          break;
+
+        case "sentence_writing":
+          if (sec.do_prompts) {
+            sec.do_prompts.forEach((prompt, idx) => {
+              const textarea = document.querySelector(
+                `textarea[data-section-id="${sec.id}"][data-prompt-id="${prompt.id}"]`
+              );
+              if (textarea) {
+                answers[`${sec.id}:do:${prompt.id}`] = textarea.value;
+              }
+            });
+          }
+          if (sec.dont_prompts) {
+            sec.dont_prompts.forEach((prompt, idx) => {
+              const textarea = document.querySelector(
+                `textarea[data-section-id="${sec.id}"][data-prompt-id="${prompt.id}"]`
+              );
+              if (textarea) {
+                answers[`${sec.id}:dont:${prompt.id}`] = textarea.value;
+              }
+            });
+          }
+          break;
+
+        case "vocabulary_open":
+          if (sec.items) {
+            sec.items.forEach((item, idx) => {
+              const fiInput = document.querySelector(
+                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="fi"]`
+              );
+              const enInput = document.querySelector(
+                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="en"]`
+              );
+              if (fiInput) answers[`${sec.id}:row${idx}:fi`] = fiInput.value;
+              if (enInput) answers[`${sec.id}:row${idx}:en`] = enInput.value;
+            });
+          }
+          break;
+
+        case "word_types":
+          if (sec.word_types) {
+            sec.word_types.forEach(wt => {
+              [1, 2].forEach(n => {
+                const baseInput = document.querySelector(
+                  `.wt-input[data-word-type="${wt.id}"][data-field="base"][data-row-num="${n}"]`
+                );
+                const genInput = document.querySelector(
+                  `.wt-input[data-word-type="${wt.id}"][data-field="genitive"][data-row-num="${n}"]`
+                );
+                if (baseInput) answers[`${wt.id}:base:${n}`] = baseInput.value;
+                if (genInput) answers[`${wt.id}:genitive:${n}`] = genInput.value;
+              });
+            });
+          }
+          break;
+
+        case "audio_response":
+          if (sec.questions) {
+            sec.questions.forEach((q, idx) => {
+              const textarea = document.querySelector(
+                `textarea[data-section-id="${sec.id}"][data-question-id="${q.id}"]`
+              );
+              if (textarea) {
+                answers[`${sec.id}:q${q.id}`] = textarea.value;
+              }
+            });
+          }
+          break;
+      }
+    });
+
+    return answers;
+  }
+
+  /**
+   * Restore user answers into the DOM from a saved answer map.
+   */
+  restoreAnswers(answers) {
+    if (!answers) return;
+
+    this.selectedSections.forEach(sec => {
+      switch (sec.type) {
+        case "fill_in_blank":
+        case "fill_in_blank_sentence":
+          sec.items.forEach(item => {
+            const input = document.querySelector(
+              `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`
+            );
+            const key = `${sec.id}:${item.id}`;
+            if (input && answers[key]) {
+              input.value = answers[key];
+            }
+          });
+          break;
+
+        case "mcq":
+        case "comprehension":
+          sec.items.forEach(item => {
+            const key = `${sec.id}:${item.id}`;
+            if (answers[key]) {
+              const radio = document.querySelector(
+                `input[name="mcq-${sec.id}-${item.id}"][value="${answers[key]}"]`
+              );
+              if (radio) {
+                radio.checked = true;
+              }
+            }
+          });
+          break;
+
+        case "sentence_writing":
+          if (sec.do_prompts) {
+            sec.do_prompts.forEach(prompt => {
+              const key = `${sec.id}:do:${prompt.id}`;
+              const textarea = document.querySelector(
+                `textarea[data-section-id="${sec.id}"][data-prompt-id="${prompt.id}"]`
+              );
+              if (textarea && answers[key]) {
+                textarea.value = answers[key];
+              }
+            });
+          }
+          if (sec.dont_prompts) {
+            sec.dont_prompts.forEach(prompt => {
+              const key = `${sec.id}:dont:${prompt.id}`;
+              const textarea = document.querySelector(
+                `textarea[data-section-id="${sec.id}"][data-prompt-id="${prompt.id}"]`
+              );
+              if (textarea && answers[key]) {
+                textarea.value = answers[key];
+              }
+            });
+          }
+          break;
+
+        case "vocabulary_open":
+          if (sec.items) {
+            sec.items.forEach((item, idx) => {
+              const fiKey = `${sec.id}:row${idx}:fi`;
+              const enKey = `${sec.id}:row${idx}:en`;
+              const fiInput = document.querySelector(
+                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="fi"]`
+              );
+              const enInput = document.querySelector(
+                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="en"]`
+              );
+              if (fiInput && answers[fiKey]) fiInput.value = answers[fiKey];
+              if (enInput && answers[enKey]) enInput.value = answers[enKey];
+            });
+          }
+          break;
+
+        case "word_types":
+          if (sec.word_types) {
+            sec.word_types.forEach(wt => {
+              [1, 2].forEach(n => {
+                const baseKey = `${wt.id}:base:${n}`;
+                const genKey = `${wt.id}:genitive:${n}`;
+                const baseInput = document.querySelector(
+                  `.wt-input[data-word-type="${wt.id}"][data-field="base"][data-row-num="${n}"]`
+                );
+                const genInput = document.querySelector(
+                  `.wt-input[data-word-type="${wt.id}"][data-field="genitive"][data-row-num="${n}"]`
+                );
+                if (baseInput && answers[baseKey]) baseInput.value = answers[baseKey];
+                if (genInput && answers[genKey]) genInput.value = answers[genKey];
+              });
+            });
+          }
+          break;
+
+        case "audio_response":
+          if (sec.questions) {
+            sec.questions.forEach(q => {
+              const key = `${sec.id}:q${q.id}`;
+              const textarea = document.querySelector(
+                `textarea[data-section-id="${sec.id}"][data-question-id="${q.id}"]`
+              );
+              if (textarea && answers[key]) {
+                textarea.value = answers[key];
+              }
+            });
+          }
+          break;
+      }
+    });
+  }
+
+  /**
+   * Apply grading visuals (correct/incorrect CSS) from saved scores.
+   * Used in review mode to show grading without re-computing.
+   */
+  applyGradingVisuals(session) {
+    if (!session.scores) return;
+
+    this.selectedSections.forEach(sec => {
+      const answers = session.answers || {};
+
+      // Skip if no answers for this section
+      if (!sec.id) return;
+
+      switch (sec.type) {
+        case "fill_in_blank":
+          sec.items.forEach(item => {
+            const input = document.querySelector(
+              `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`
+            );
+            if (!input) return;
+            const userVal = answers[`${sec.id}:${item.id}`]?.toLowerCase() || "";
+            const isCorrect = userVal === item.answer.toLowerCase();
+
+            input.classList.add(isCorrect ? "correct" : "incorrect");
+
+            const fb = document.getElementById(`fb-${sec.id}-${item.id}`);
+            if (fb) {
+              fb.className = `fitb-feedback ${isCorrect ? "correct" : "incorrect"}`;
+              fb.textContent = isCorrect
+                ? `✓ Correct!`
+                : `✗ Answer: ${item.answer}${item.explanation ? " — " + item.explanation : ""}`;
+            }
+          });
+          break;
+
+        case "mcq":
+        case "comprehension":
+          sec.items.forEach(item => {
+            const key = `${sec.id}:${item.id}`;
+            const selected = answers[key];
+            const isCorrect = selected === item.answer;
+
+            const radios = document.querySelectorAll(`input[name="mcq-${sec.id}-${item.id}"]`);
+            radios.forEach(r => {
+              const label = r.parentElement;
+              if (label) {
+                if (r.value === item.answer) label.classList.add("correct-answer");
+                else if (r.value === selected && !isCorrect) label.classList.add("incorrect");
+              }
+            });
+
+            const explanationDiv = document.getElementById(`mcq-explanation-${sec.id}-${item.id}`);
+            if (explanationDiv && item.explanation) {
+              explanationDiv.textContent = item.explanation;
+              explanationDiv.style.display = "block";
+            }
+          });
+          break;
+
+        case "sentence_writing":
+          // Presence grading only, show sample answers
+          if (sec.sample_answers) {
+            const sampleDiv = document.getElementById(`sentence-samples-${sec.id}`);
+            if (sampleDiv) {
+              sampleDiv.style.display = "block";
+            }
+          }
+          break;
+
+        case "fill_in_blank_sentence":
+          sec.items.forEach(item => {
+            const input = document.querySelector(
+              `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`
+            );
+            if (!input) return;
+            const userVal = answers[`${sec.id}:${item.id}`] || "";
+            const acceptedList = item.accepted || [];
+            const isCorrect = acceptedList.some(a => a.toLowerCase() === userVal.toLowerCase());
+
+            input.classList.add(isCorrect ? "correct" : "incorrect");
+
+            const fb = document.getElementById(`fb-${sec.id}-${item.id}`);
+            if (fb) {
+              fb.className = `fitb-feedback ${isCorrect ? "correct" : "incorrect"}`;
+              fb.textContent = isCorrect
+                ? `✓ Correct!`
+                : `✗ Expected: ${item.answer}${item.explanation ? " — " + item.explanation : ""}`;
+            }
+          });
+          break;
+
+        case "vocabulary_open":
+          // Only grade Finnish field
+          if (sec.items) {
+            sec.items.forEach((item, idx) => {
+              const fiKey = `${sec.id}:row${idx}:fi`;
+              const userVal = answers[fiKey]?.toLowerCase() || "";
+              const isCorrect = (sec.accepted_answers?.[idx]?.fi || "").toLowerCase() === userVal;
+
+              const fiInput = document.querySelector(
+                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="fi"]`
+              );
+              if (fiInput) {
+                fiInput.classList.add(isCorrect ? "correct" : "incorrect");
+              }
+            });
+          }
+          break;
+
+        case "word_types":
+          if (sec.word_types) {
+            sec.word_types.forEach(wt => {
+              // Build accepted map
+              const acceptedBases = wt.accepted.map(a => a.base.toLowerCase());
+              const acceptedMap = {};
+              wt.accepted.forEach(a => { acceptedMap[a.base.toLowerCase()] = a.genitive.toLowerCase(); });
+
+              [1, 2].forEach(n => {
+                const baseKey = `${wt.id}:base:${n}`;
+                const genKey = `${wt.id}:genitive:${n}`;
+                const userBase = (answers[baseKey] || "").toLowerCase();
+                const userGen = (answers[genKey] || "").toLowerCase();
+
+                const baseCorrect = acceptedBases.includes(userBase);
+                const genCorrect = baseCorrect && userGen === acceptedMap[userBase];
+
+                const baseInput = document.querySelector(
+                  `.wt-input[data-word-type="${wt.id}"][data-field="base"][data-row-num="${n}"]`
+                );
+                const genInput = document.querySelector(
+                  `.wt-input[data-word-type="${wt.id}"][data-field="genitive"][data-row-num="${n}"]`
+                );
+
+                if (baseInput) baseInput.classList.add(baseCorrect ? "correct" : "incorrect");
+                if (genInput) genInput.classList.add(genCorrect ? "correct" : "incorrect");
+              });
+
+              const acceptedEl = document.getElementById(`wt-accepted-${wt.id}`);
+              if (acceptedEl) acceptedEl.classList.add("visible");
+            });
+          }
+          break;
+
+        case "audio_response":
+          // Presence grading, show sample answers
+          if (sec.sample_answers) {
+            const sampleDiv = document.getElementById(`audio-samples-${sec.id}`);
+            if (sampleDiv) {
+              sampleDiv.style.display = "block";
+            }
+          }
+          break;
+      }
+    });
   }
 
   /* ==========================================
@@ -646,6 +1054,18 @@ class Exam {
       totalEarned += earned;
       totalPossible += possible;
     });
+
+    const finalAnswers = this.collectAnswers();
+
+    // Fire onSubmit callback if provided (used by exam.html for IDB save)
+    if (this.onSubmit) {
+      this.onSubmit({
+        answers: finalAnswers,
+        scores: this.sectionScores,
+        totalEarned,
+        totalPossible
+      });
+    }
 
     this.showResults(totalEarned, totalPossible);
   }

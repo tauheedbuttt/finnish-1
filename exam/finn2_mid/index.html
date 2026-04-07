@@ -10,90 +10,56 @@
     <div class="container">
       <a href="../../" class="back-link">← Back to Hub</a>
 
-      <!-- Intro Screen -->
-      <div id="introScreen" class="screen">
-        <header class="exam-intro-header">
-          <div class="exam-badge">📝 Practice Exam</div>
-          <h1>Finn 2 Välikoe</h1>
-          <p class="exam-subtitle">Finn 2 Mid Exam – Practice</p>
-        </header>
+      <header class="exam-intro-header">
+        <div class="exam-badge">📝 Practice Exam</div>
+        <h1>Finn 2 Välikoe</h1>
+        <p class="exam-subtitle">Finn 2 Mid Exam – Practice</p>
+      </header>
 
-        <div class="intro-card">
-          <div class="intro-meta">
-            <div class="meta-item">
-              <span class="meta-icon">📚</span>
-              <span class="meta-label">Sections</span>
-              <span class="meta-value" id="introSections">10</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-icon">⭐</span>
-              <span class="meta-label">Total Points</span>
-              <span class="meta-value" id="introPoints">–</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-icon">📖</span>
-              <span class="meta-label">Chapters</span>
-              <span class="meta-value">1–3</span>
-            </div>
+      <div class="intro-card">
+        <div class="intro-meta">
+          <div class="meta-item">
+            <span class="meta-icon">📚</span>
+            <span class="meta-label">Sections</span>
+            <span class="meta-value" id="introSections">10</span>
           </div>
-
-          <div class="syllabus-box">
-            <h3>📋 Topics Covered</h3>
-            <div class="syllabus-grid" id="syllabusGrid"></div>
+          <div class="meta-item">
+            <span class="meta-icon">⭐</span>
+            <span class="meta-label">Total Points</span>
+            <span class="meta-value" id="introPoints">–</span>
           </div>
-
-          <div class="intro-note">
-            <strong>Note:</strong> Audio/speaking section is not included. Fill in your answers and submit at the end to see your score and model answers.
+          <div class="meta-item">
+            <span class="meta-icon">📖</span>
+            <span class="meta-label">Chapters</span>
+            <span class="meta-value">1–3</span>
           </div>
-
-          <button class="start-exam-btn" id="startExamBtn">Aloita koe! 🚀</button>
         </div>
+
+        <div class="syllabus-box">
+          <h3>📋 Topics Covered</h3>
+          <div class="syllabus-grid" id="syllabusGrid"></div>
+        </div>
+
+        <div class="intro-note">
+          <strong>Note:</strong> Audio/speaking section is not included. Fill in your answers and submit at the end to see your score and model answers.
+        </div>
+
+        <button class="start-exam-btn" id="startExamBtn">Aloita koe! 🚀</button>
       </div>
 
-      <!-- Exam Screen -->
-      <div id="examScreen" class="screen hidden">
-        <div class="exam-header-bar">
-          <h2 id="examTitle">Finn 2 Välikoe</h2>
-          <div class="exam-progress-info">
-            <span id="sectionProgress">Section 1 / 10</span>
-          </div>
-        </div>
-
-        <div id="sectionsContainer"></div>
-
-        <div class="exam-submit-bar">
-          <p class="submit-warning">Once you submit, you cannot change your answers.</p>
-          <button class="submit-exam-btn" id="submitExamBtn">Palauta koe ✓</button>
-        </div>
+      <div id="emptyHistoryState" class="empty-state">
+        <p>📋 No attempts yet. Start your first exam above!</p>
       </div>
 
-      <!-- Results Screen -->
-      <div id="resultsScreen" class="screen hidden">
-        <div class="results-card">
-          <h2>🎉 Koe palautettu!</h2>
-          <p class="results-subtitle">Exam submitted – here are your results</p>
-
-          <div class="score-display">
-            <div class="score-circle">
-              <span class="score-number" id="finalScore">0</span>
-              <span class="score-divider">/</span>
-              <span class="score-total" id="totalPoints">0</span>
-            </div>
-            <p class="score-percentage" id="scorePercentage">0%</p>
-            <p class="score-message" id="scoreMessage"></p>
-          </div>
-
-          <div class="section-scores" id="sectionScores"></div>
-
-          <div class="results-actions">
-            <button class="retry-btn" id="retryBtn">🔄 Yritä uudelleen</button>
-            <button class="review-btn" id="reviewBtn">👁 Review Answers</button>
-            <button class="home-btn" id="homeBtn">🏠 Back to Hub</button>
-          </div>
-        </div>
+      <div id="pastAttemptsSection" class="past-attempts-section hidden">
+        <h2>📚 Past Attempts</h2>
+        <div id="pastAttemptsList" class="sessions-list"></div>
+        <a href="review.html" class="view-all-link">View All →</a>
       </div>
     </div>
 
+    <script src="db.js"></script>
     <script src="exam.js"></script>
+    <script src="index-home.js"></script>
   </body>
 </html>
