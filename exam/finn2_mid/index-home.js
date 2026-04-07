@@ -36,10 +36,94 @@ class HomePage {
         this.startNewExam();
       });
 
-      // Load and display past attempts
+      // Load and display past attempts & stats
       await this.loadPastAttempts();
+      await this.loadStatsbyQuestionType();
     } catch (e) {
       console.error("Failed to initialize home page:", e);
+    }
+  }
+
+  async loadStatsbyQuestionType() {
+    try {
+      const sessions = await getAllSessions();
+      const submittedSessions = sessions.filter(s => s.status === "submitted");
+
+      if (submittedSessions.length === 0) {
+        document.getElementById("statsSection").classList.add("hidden");
+        return;
+      }
+
+      document.getElementById("statsSection").classList.remove("hidden");
+
+      // Group stats by question type - count individual questions
+      const typeStats = {};
+      let totalQuestionsAttempted = 0;
+      let totalQuestionsCorrect = 0;
+
+      submittedSessions.forEach(session => {
+        // Count questions by type from selectedSections
+        if (session.selectedSections) {
+          session.selectedSections.forEach(section => {
+            const sectionType = section.titleEn || section.id;
+            
+            if (!typeStats[sectionType]) {
+              typeStats[sectionType] = { attempted: 0, correct: 0 };
+            }
+
+            // Count items/questions in this section
+            if (section.items && Array.isArray(section.items)) {
+              const numQuestions = section.items.length;
+              typeStats[sectionType].attempted += numQuestions;
+              totalQuestionsAttempted += numQuestions;
+
+              // Count correct answers based on section type
+              if (session.scores && session.scores[section.id]) {
+                const sectionScore = session.scores[section.id];
+                const earnedPct = sectionScore.possible > 0 
+                  ? (sectionScore.earned / sectionScore.possible)
+                  : 0;
+                const correctCount = Math.round(numQuestions * earnedPct);
+                typeStats[sectionType].correct += correctCount;
+                totalQuestionsCorrect += correctCount;
+              }
+            }
+          });
+        }
+      });
+
+      // Render question type stats
+      const statsContainer = document.getElementById("questionTypeStats");
+      statsContainer.innerHTML = "";
+
+      Object.entries(typeStats).forEach(([type, stats]) => {
+        const pct = stats.attempted > 0 ? Math.round((stats.correct / stats.attempted) * 100) : 0;
+        const card = document.createElement("div");
+        card.className = "question-type-card";
+        card.innerHTML = `
+          <div class="qt-header">
+            <span class="qt-name">${type}</span>
+            <span class="qt-score">${stats.correct}/${stats.attempted}</span>
+          </div>
+          <div class="qt-bar">
+            <div class="qt-progress" style="width: ${pct}%"></div>
+          </div>
+          <div class="qt-footer">
+            <span>Correct</span>
+            <span>${pct}%</span>
+          </div>
+        `;
+        statsContainer.appendChild(card);
+      });
+
+      // Update overall stats
+      const overallPct = totalQuestionsAttempted > 0 
+        ? Math.round((totalQuestionsCorrect / totalQuestionsAttempted) * 100) 
+        : 0;
+      document.getElementById("totalQuestionsAttempted").textContent = totalQuestionsAttempted;
+      document.getElementById("overallScore").textContent = `${totalQuestionsCorrect}/${totalQuestionsAttempted} (${overallPct}%)`;
+    } catch (e) {
+      console.error("Failed to load stats by question type:", e);
     }
   }
 

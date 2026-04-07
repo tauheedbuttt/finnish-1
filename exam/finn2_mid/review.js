@@ -9,15 +9,50 @@ async function loadSessions() {
 
     const emptyState = document.getElementById("emptyState");
     const sessionsList = document.getElementById("sessionsList");
+    const overallStatsSection = document.getElementById("overallStatsSection");
 
     if (sessions.length === 0) {
       emptyState.classList.remove("hidden");
       sessionsList.classList.add("hidden");
+      overallStatsSection.classList.add("hidden");
       return;
     }
 
     emptyState.classList.add("hidden");
     sessionsList.classList.remove("hidden");
+    overallStatsSection.classList.remove("hidden");
+
+    // Calculate overall stats from submitted sessions only
+    const submittedSessions = sessions.filter(s => s.status === "submitted");
+    if (submittedSessions.length > 0) {
+      const totalAttempts = submittedSessions.length;
+      let totalEarned = 0;
+      let totalPossible = 0;
+      let highestScore = 0;
+      let highestPct = 0;
+
+      submittedSessions.forEach(session => {
+        const earned = session.totalEarned || 0;
+        const possible = session.totalPossible || 0;
+        const pct = possible > 0 ? (earned / possible) * 100 : 0;
+
+        totalEarned += earned;
+        totalPossible += possible;
+        if (pct > highestPct) {
+          highestPct = pct;
+          highestScore = `${earned}/${possible}`;
+        }
+      });
+
+      const averagePct = totalPossible > 0 ? Math.round((totalEarned / totalPossible) * 100) : 0;
+
+      // Update overall stats display
+      document.getElementById("totalAttempts").textContent = totalAttempts;
+      document.getElementById("averageScore").textContent = `${averagePct}%`;
+      document.getElementById("bestScore").textContent = `${highestScore} (${Math.round(highestPct)}%)`;
+      document.getElementById("totalPointsEarned").textContent = totalEarned;
+    }
+
     sessionsList.innerHTML = "";
 
     sessions.forEach((session, idx) => {
