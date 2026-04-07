@@ -47,20 +47,25 @@ class Exam {
   ========================================== */
 
   renderIntro() {
-    const total = this.data.sections.reduce((s, sec) => s + (sec.points || 0), 0);
-    document.getElementById("introSections").textContent = this.data.sections.length;
+    const total = this.data.sections.reduce(
+      (s, sec) => s + (sec.points || 0),
+      0,
+    );
+    document.getElementById("introSections").textContent =
+      this.data.sections.length;
     document.getElementById("introPoints").textContent = total;
 
     const grid = document.getElementById("syllabusGrid");
     const chMap = { ch1: "Ch1", ch2: "Ch2", ch3: "Ch3" };
-    this.data.syllabus && Object.entries(this.data.syllabus).forEach(([ch, topics]) => {
-      topics.forEach(t => {
-        const el = document.createElement("div");
-        el.className = "syllabus-tag";
-        el.innerHTML = `<span class="ch-badge">${chMap[ch]}</span>${t}`;
-        grid.appendChild(el);
+    this.data.syllabus &&
+      Object.entries(this.data.syllabus).forEach(([ch, topics]) => {
+        topics.forEach((t) => {
+          const el = document.createElement("div");
+          el.className = "syllabus-tag";
+          el.innerHTML = `<span class="ch-badge">${chMap[ch]}</span>${t}`;
+          grid.appendChild(el);
+        });
       });
-    });
   }
 
   /* ==========================================
@@ -68,50 +73,164 @@ class Exam {
   ========================================== */
 
   buildSelectedSections() {
-    this.selectedSections = this.data.sections.map(sec => {
+    this.selectedSections = this.data.sections.map((sec) => {
       const clone = { ...sec };
 
       if (sec.type === "fill_in_blank" && sec.question_pool) {
-        clone.items = this.shuffle([...sec.question_pool]).slice(0, sec.items_per_exam || 8);
+        clone.items = this.shuffle([...sec.question_pool]).slice(
+          0,
+          sec.items_per_exam || 8,
+        );
         // Re-number items for display
-        clone.items = clone.items.map((item, i) => ({ ...item, displayNum: i + 1 }));
+        clone.items = clone.items.map((item, i) => ({
+          ...item,
+          displayNum: i + 1,
+        }));
       }
 
       if (sec.type === "mcq" && sec.question_pool) {
-        const picked = this.shuffle([...sec.question_pool]).slice(0, sec.items_per_exam || 6);
+        const picked = this.shuffle([...sec.question_pool]).slice(
+          0,
+          sec.items_per_exam || 6,
+        );
         // Shuffle options for each picked question
-        clone.items = picked.map(item => ({
+        clone.items = picked.map((item) => ({
           ...item,
-          options: this.shuffle([...item.options])
+          options: this.shuffle([...item.options]),
         }));
-        clone.items = clone.items.map((item, i) => ({ ...item, displayNum: i + 1 }));
+        clone.items = clone.items.map((item, i) => ({
+          ...item,
+          displayNum: i + 1,
+        }));
       }
 
       if (sec.type === "comprehension" && sec.passage_pool) {
         const passage = this.shuffle([...sec.passage_pool])[0];
         clone.passage = passage;
-        const picked = this.shuffle([...passage.items]).slice(0, sec.items_per_exam || 5);
-        clone.items = picked.map(item => ({
+        const picked = this.shuffle([...passage.items]).slice(
+          0,
+          sec.items_per_exam || 5,
+        );
+        clone.items = picked.map((item) => ({
           ...item,
-          options: this.shuffle([...item.options])
+          options: this.shuffle([...item.options]),
         }));
-        clone.items = clone.items.map((item, i) => ({ ...item, displayNum: i + 1 }));
+        clone.items = clone.items.map((item, i) => ({
+          ...item,
+          displayNum: i + 1,
+        }));
       }
 
       if (sec.type === "sentence_writing") {
-        const doPicks = sec.do_picks || 3;
-        const dontPicks = sec.dont_picks || 3;
-        clone.do_prompts = this.shuffle([...(sec.do_pool || [])]).slice(0, doPicks);
-        clone.dont_prompts = this.shuffle([...(sec.dont_pool || [])]).slice(0, dontPicks);
+        // Handle dynamic tenses if enabled
+        if (
+          sec.dynamicTenses &&
+          sec.do_sentences_base &&
+          sec.dont_sentences_base
+        ) {
+          const tenses = ["present", "past", "future"];
+          const selectedTense =
+            tenses[Math.floor(Math.random() * tenses.length)];
+          clone.selectedTense = selectedTense;
+
+          // Randomly select a time expression for past or future
+          let selectedTimeExpr = null;
+          if (
+            selectedTense === "past" &&
+            sec.pastTimeExpressions &&
+            sec.pastTimeExpressions.length > 0
+          ) {
+            selectedTimeExpr =
+              sec.pastTimeExpressions[
+                Math.floor(Math.random() * sec.pastTimeExpressions.length)
+              ];
+            clone.selectedTimeExpression = selectedTimeExpr;
+          } else if (
+            selectedTense === "future" &&
+            sec.futureTimeExpressions &&
+            sec.futureTimeExpressions.length > 0
+          ) {
+            selectedTimeExpr =
+              sec.futureTimeExpressions[
+                Math.floor(Math.random() * sec.futureTimeExpressions.length)
+              ];
+            clone.selectedTimeExpression = selectedTimeExpr;
+          }
+
+          // Map sentences to selected tense
+          clone.do_sentences = sec.do_sentences_base.map((s) => {
+            if (
+              (selectedTense === "past" || selectedTense === "future") &&
+              selectedTimeExpr
+            ) {
+              return s[selectedTense] + " " + selectedTimeExpr + ".";
+            }
+            return s[selectedTense] || s.base;
+          });
+
+          clone.dont_sentences = sec.dont_sentences_base.map((s) => {
+            if (
+              (selectedTense === "past" || selectedTense === "future") &&
+              selectedTimeExpr
+            ) {
+              return s[selectedTense] + " " + selectedTimeExpr + ".";
+            }
+            return s[selectedTense] || s.base;
+          });
+
+          // Map time expressions to descriptive text
+          const timeDescriptions = {
+            eilen: "1 day ago",
+            "eilen aamulla": "2 days ago (morning)",
+            huomenna: "1 day from now (tomorrow)",
+            ylihuomenna: "2 days from now (day after tomorrow)",
+          };
+
+          // Update instructions based on tense
+          let instructions = "";
+          if (selectedTense === "past") {
+            const timeDesc =
+              timeDescriptions[selectedTimeExpr] || selectedTimeExpr;
+            instructions = `Write 3 affirmative sentences and 3 negative sentences about things YOU DID ${timeDesc}.`;
+          } else if (selectedTense === "present") {
+            instructions =
+              "Write 3 affirmative sentences and 3 negative sentences about things YOU DO.";
+          } else if (selectedTense === "future") {
+            const timeDesc =
+              timeDescriptions[selectedTimeExpr] || selectedTimeExpr;
+            instructions = `Write 3 affirmative sentences and 3 negative sentences about things YOU WILL DO ${timeDesc}.`;
+          }
+
+          clone.instructions = instructions || clone.instructions;
+        } else {
+          // Fallback to original behavior
+          const doPicks = sec.do_picks || 3;
+          const dontPicks = sec.dont_picks || 3;
+          clone.do_prompts = this.shuffle([...(sec.do_pool || [])]).slice(
+            0,
+            doPicks,
+          );
+          clone.dont_prompts = this.shuffle([...(sec.dont_pool || [])]).slice(
+            0,
+            dontPicks,
+          );
+        }
       }
 
       if (sec.type === "fill_in_blank_sentence" && sec.question_pool) {
-        clone.items = this.shuffle([...sec.question_pool]).slice(0, sec.items_per_exam || 5);
-        clone.items = clone.items.map((item, i) => ({ ...item, displayNum: i + 1 }));
+        clone.items = this.shuffle([...sec.question_pool]).slice(
+          0,
+          sec.items_per_exam || 5,
+        );
+        clone.items = clone.items.map((item, i) => ({
+          ...item,
+          displayNum: i + 1,
+        }));
       }
 
       if (sec.type === "audio_response" && sec.audio_pool) {
-        const picked = sec.audio_pool[Math.floor(Math.random() * sec.audio_pool.length)];
+        const picked =
+          sec.audio_pool[Math.floor(Math.random() * sec.audio_pool.length)];
         clone.audio_file = picked.file;
         clone.audio_script = picked.script;
         clone.questions = picked.questions;
@@ -161,14 +280,30 @@ class Exam {
     const contentEl = card.querySelector(`#content-${sec.id}`);
 
     switch (sec.type) {
-      case "fill_in_blank":          this.buildFillInBlank(contentEl, sec); break;
-      case "mcq":                    this.buildMCQ(contentEl, sec); break;
-      case "comprehension":          this.buildComprehension(contentEl, sec); break;
-      case "sentence_writing":       this.buildSentenceWriting(contentEl, sec); break;
-      case "fill_in_blank_sentence": this.buildFillInBlankSentence(contentEl, sec); break;
-      case "vocabulary_open":        this.buildVocabOpen(contentEl, sec); break;
-      case "word_types":             this.buildWordTypes(contentEl, sec); break;
-      case "audio_response":         this.buildAudioResponse(contentEl, sec); break;
+      case "fill_in_blank":
+        this.buildFillInBlank(contentEl, sec);
+        break;
+      case "mcq":
+        this.buildMCQ(contentEl, sec);
+        break;
+      case "comprehension":
+        this.buildComprehension(contentEl, sec);
+        break;
+      case "sentence_writing":
+        this.buildSentenceWriting(contentEl, sec);
+        break;
+      case "fill_in_blank_sentence":
+        this.buildFillInBlankSentence(contentEl, sec);
+        break;
+      case "vocabulary_open":
+        this.buildVocabOpen(contentEl, sec);
+        break;
+      case "word_types":
+        this.buildWordTypes(contentEl, sec);
+        break;
+      case "audio_response":
+        this.buildAudioResponse(contentEl, sec);
+        break;
     }
 
     return card;
@@ -192,13 +327,13 @@ class Exam {
   collectAnswers() {
     const answers = {};
 
-    this.selectedSections.forEach(sec => {
+    this.selectedSections.forEach((sec) => {
       switch (sec.type) {
         case "fill_in_blank":
         case "fill_in_blank_sentence":
-          sec.items.forEach(item => {
+          sec.items.forEach((item) => {
             const input = document.querySelector(
-              `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`
+              `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`,
             );
             if (input) {
               answers[`${sec.id}:${item.id}`] = input.value;
@@ -208,9 +343,11 @@ class Exam {
 
         case "mcq":
         case "comprehension":
-          sec.items.forEach(item => {
-            const radios = document.querySelectorAll(`input[name="mcq-${sec.id}-${item.id}"]`);
-            radios.forEach(r => {
+          sec.items.forEach((item) => {
+            const radios = document.querySelectorAll(
+              `input[name="mcq-${sec.id}-${item.id}"]`,
+            );
+            radios.forEach((r) => {
               if (r.checked) {
                 answers[`${sec.id}:${item.id}`] = r.value;
               }
@@ -220,10 +357,10 @@ class Exam {
 
         case "sentence_writing":
           const doTextarea = document.querySelector(
-            `textarea[data-section-id="${sec.id}"][data-group-key="do"]`
+            `textarea[data-section-id="${sec.id}"][data-group-key="do"]`,
           );
           const dontTextarea = document.querySelector(
-            `textarea[data-section-id="${sec.id}"][data-group-key="dont"]`
+            `textarea[data-section-id="${sec.id}"][data-group-key="dont"]`,
           );
           if (doTextarea) {
             answers[`${sec.id}:do`] = doTextarea.value;
@@ -237,10 +374,10 @@ class Exam {
           if (sec.items) {
             sec.items.forEach((item, idx) => {
               const fiInput = document.querySelector(
-                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="fi"]`
+                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="fi"]`,
               );
               const enInput = document.querySelector(
-                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="en"]`
+                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="en"]`,
               );
               if (fiInput) answers[`${sec.id}:row${idx}:fi`] = fiInput.value;
               if (enInput) answers[`${sec.id}:row${idx}:en`] = enInput.value;
@@ -250,16 +387,17 @@ class Exam {
 
         case "word_types":
           if (sec.word_types) {
-            sec.word_types.forEach(wt => {
-              [1, 2].forEach(n => {
+            sec.word_types.forEach((wt) => {
+              [1, 2].forEach((n) => {
                 const baseInput = document.querySelector(
-                  `.wt-input[data-word-type="${wt.id}"][data-field="base"][data-row-num="${n}"]`
+                  `.wt-input[data-word-type="${wt.id}"][data-field="base"][data-row-num="${n}"]`,
                 );
                 const genInput = document.querySelector(
-                  `.wt-input[data-word-type="${wt.id}"][data-field="genitive"][data-row-num="${n}"]`
+                  `.wt-input[data-word-type="${wt.id}"][data-field="genitive"][data-row-num="${n}"]`,
                 );
                 if (baseInput) answers[`${wt.id}:base:${n}`] = baseInput.value;
-                if (genInput) answers[`${wt.id}:genitive:${n}`] = genInput.value;
+                if (genInput)
+                  answers[`${wt.id}:genitive:${n}`] = genInput.value;
               });
             });
           }
@@ -269,7 +407,7 @@ class Exam {
           if (sec.questions) {
             sec.questions.forEach((q, idx) => {
               const textarea = document.querySelector(
-                `textarea[data-section-id="${sec.id}"][data-question-id="${q.id}"]`
+                `textarea[data-section-id="${sec.id}"][data-question-id="${q.id}"]`,
               );
               if (textarea) {
                 answers[`${sec.id}:q${q.id}`] = textarea.value;
@@ -289,13 +427,13 @@ class Exam {
   restoreAnswers(answers) {
     if (!answers) return;
 
-    this.selectedSections.forEach(sec => {
+    this.selectedSections.forEach((sec) => {
       switch (sec.type) {
         case "fill_in_blank":
         case "fill_in_blank_sentence":
-          sec.items.forEach(item => {
+          sec.items.forEach((item) => {
             const input = document.querySelector(
-              `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`
+              `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`,
             );
             const key = `${sec.id}:${item.id}`;
             if (input && answers[key]) {
@@ -306,11 +444,11 @@ class Exam {
 
         case "mcq":
         case "comprehension":
-          sec.items.forEach(item => {
+          sec.items.forEach((item) => {
             const key = `${sec.id}:${item.id}`;
             if (answers[key]) {
               const radio = document.querySelector(
-                `input[name="mcq-${sec.id}-${item.id}"][value="${answers[key]}"]`
+                `input[name="mcq-${sec.id}-${item.id}"][value="${answers[key]}"]`,
               );
               if (radio) {
                 radio.checked = true;
@@ -323,10 +461,10 @@ class Exam {
           const doKey = `${sec.id}:do`;
           const dontKey = `${sec.id}:dont`;
           const doTextarea = document.querySelector(
-            `textarea[data-section-id="${sec.id}"][data-group-key="do"]`
+            `textarea[data-section-id="${sec.id}"][data-group-key="do"]`,
           );
           const dontTextarea = document.querySelector(
-            `textarea[data-section-id="${sec.id}"][data-group-key="dont"]`
+            `textarea[data-section-id="${sec.id}"][data-group-key="dont"]`,
           );
           if (doTextarea && answers[doKey]) {
             doTextarea.value = answers[doKey];
@@ -342,10 +480,10 @@ class Exam {
               const fiKey = `${sec.id}:row${idx}:fi`;
               const enKey = `${sec.id}:row${idx}:en`;
               const fiInput = document.querySelector(
-                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="fi"]`
+                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="fi"]`,
               );
               const enInput = document.querySelector(
-                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="en"]`
+                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="en"]`,
               );
               if (fiInput && answers[fiKey]) fiInput.value = answers[fiKey];
               if (enInput && answers[enKey]) enInput.value = answers[enKey];
@@ -355,18 +493,20 @@ class Exam {
 
         case "word_types":
           if (sec.word_types) {
-            sec.word_types.forEach(wt => {
-              [1, 2].forEach(n => {
+            sec.word_types.forEach((wt) => {
+              [1, 2].forEach((n) => {
                 const baseKey = `${wt.id}:base:${n}`;
                 const genKey = `${wt.id}:genitive:${n}`;
                 const baseInput = document.querySelector(
-                  `.wt-input[data-word-type="${wt.id}"][data-field="base"][data-row-num="${n}"]`
+                  `.wt-input[data-word-type="${wt.id}"][data-field="base"][data-row-num="${n}"]`,
                 );
                 const genInput = document.querySelector(
-                  `.wt-input[data-word-type="${wt.id}"][data-field="genitive"][data-row-num="${n}"]`
+                  `.wt-input[data-word-type="${wt.id}"][data-field="genitive"][data-row-num="${n}"]`,
                 );
-                if (baseInput && answers[baseKey]) baseInput.value = answers[baseKey];
-                if (genInput && answers[genKey]) genInput.value = answers[genKey];
+                if (baseInput && answers[baseKey])
+                  baseInput.value = answers[baseKey];
+                if (genInput && answers[genKey])
+                  genInput.value = answers[genKey];
               });
             });
           }
@@ -374,10 +514,10 @@ class Exam {
 
         case "audio_response":
           if (sec.questions) {
-            sec.questions.forEach(q => {
+            sec.questions.forEach((q) => {
               const key = `${sec.id}:q${q.id}`;
               const textarea = document.querySelector(
-                `textarea[data-section-id="${sec.id}"][data-question-id="${q.id}"]`
+                `textarea[data-section-id="${sec.id}"][data-question-id="${q.id}"]`,
               );
               if (textarea && answers[key]) {
                 textarea.value = answers[key];
@@ -396,7 +536,7 @@ class Exam {
   applyGradingVisuals(session) {
     if (!session.scores) return;
 
-    this.selectedSections.forEach(sec => {
+    this.selectedSections.forEach((sec) => {
       const answers = session.answers || {};
 
       // Skip if no answers for this section
@@ -404,12 +544,13 @@ class Exam {
 
       switch (sec.type) {
         case "fill_in_blank":
-          sec.items.forEach(item => {
+          sec.items.forEach((item) => {
             const input = document.querySelector(
-              `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`
+              `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`,
             );
             if (!input) return;
-            const userVal = answers[`${sec.id}:${item.id}`]?.toLowerCase() || "";
+            const userVal =
+              answers[`${sec.id}:${item.id}`]?.toLowerCase() || "";
             const isCorrect = userVal === item.answer.toLowerCase();
 
             input.classList.add(isCorrect ? "correct" : "incorrect");
@@ -426,21 +567,27 @@ class Exam {
 
         case "mcq":
         case "comprehension":
-          sec.items.forEach(item => {
+          sec.items.forEach((item) => {
             const key = `${sec.id}:${item.id}`;
             const selected = answers[key];
             const isCorrect = selected === item.answer;
 
-            const radios = document.querySelectorAll(`input[name="mcq-${sec.id}-${item.id}"]`);
-            radios.forEach(r => {
+            const radios = document.querySelectorAll(
+              `input[name="mcq-${sec.id}-${item.id}"]`,
+            );
+            radios.forEach((r) => {
               const label = r.parentElement;
               if (label) {
-                if (r.value === item.answer) label.classList.add("correct-answer");
-                else if (r.value === selected && !isCorrect) label.classList.add("incorrect");
+                if (r.value === item.answer)
+                  label.classList.add("correct-answer");
+                else if (r.value === selected && !isCorrect)
+                  label.classList.add("incorrect");
               }
             });
 
-            const explanationDiv = document.getElementById(`mcq-explanation-${sec.id}-${item.id}`);
+            const explanationDiv = document.getElementById(
+              `mcq-explanation-${sec.id}-${item.id}`,
+            );
             if (explanationDiv && item.explanation) {
               explanationDiv.textContent = item.explanation;
               explanationDiv.style.display = "block";
@@ -451,7 +598,9 @@ class Exam {
         case "sentence_writing":
           // Presence grading only, show sample answers
           if (sec.sample_answers) {
-            const sampleDiv = document.getElementById(`sentence-samples-${sec.id}`);
+            const sampleDiv = document.getElementById(
+              `sentence-samples-${sec.id}`,
+            );
             if (sampleDiv) {
               sampleDiv.style.display = "block";
             }
@@ -459,14 +608,16 @@ class Exam {
           break;
 
         case "fill_in_blank_sentence":
-          sec.items.forEach(item => {
+          sec.items.forEach((item) => {
             const input = document.querySelector(
-              `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`
+              `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`,
             );
             if (!input) return;
             const userVal = answers[`${sec.id}:${item.id}`] || "";
             const acceptedList = item.accepted || [];
-            const isCorrect = acceptedList.some(a => a.toLowerCase() === userVal.toLowerCase());
+            const isCorrect = acceptedList.some(
+              (a) => a.toLowerCase() === userVal.toLowerCase(),
+            );
 
             input.classList.add(isCorrect ? "correct" : "incorrect");
 
@@ -486,10 +637,12 @@ class Exam {
             sec.items.forEach((item, idx) => {
               const fiKey = `${sec.id}:row${idx}:fi`;
               const userVal = answers[fiKey]?.toLowerCase() || "";
-              const isCorrect = (sec.accepted_answers?.[idx]?.fi || "").toLowerCase() === userVal;
+              const isCorrect =
+                (sec.accepted_answers?.[idx]?.fi || "").toLowerCase() ===
+                userVal;
 
               const fiInput = document.querySelector(
-                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="fi"]`
+                `input[data-section-id="${sec.id}"][data-row="${idx}"][data-lang="fi"]`,
               );
               if (fiInput) {
                 fiInput.classList.add(isCorrect ? "correct" : "incorrect");
@@ -500,33 +653,44 @@ class Exam {
 
         case "word_types":
           if (sec.word_types) {
-            sec.word_types.forEach(wt => {
+            sec.word_types.forEach((wt) => {
               // Build accepted map
-              const acceptedBases = wt.accepted.map(a => a.base.toLowerCase());
+              const acceptedBases = wt.accepted.map((a) =>
+                a.base.toLowerCase(),
+              );
               const acceptedMap = {};
-              wt.accepted.forEach(a => { acceptedMap[a.base.toLowerCase()] = a.genitive.toLowerCase(); });
+              wt.accepted.forEach((a) => {
+                acceptedMap[a.base.toLowerCase()] = a.genitive.toLowerCase();
+              });
 
-              [1, 2].forEach(n => {
+              [1, 2].forEach((n) => {
                 const baseKey = `${wt.id}:base:${n}`;
                 const genKey = `${wt.id}:genitive:${n}`;
                 const userBase = (answers[baseKey] || "").toLowerCase();
                 const userGen = (answers[genKey] || "").toLowerCase();
 
                 const baseCorrect = acceptedBases.includes(userBase);
-                const genCorrect = baseCorrect && userGen === acceptedMap[userBase];
+                const genCorrect =
+                  baseCorrect && userGen === acceptedMap[userBase];
 
                 const baseInput = document.querySelector(
-                  `.wt-input[data-word-type="${wt.id}"][data-field="base"][data-row-num="${n}"]`
+                  `.wt-input[data-word-type="${wt.id}"][data-field="base"][data-row-num="${n}"]`,
                 );
                 const genInput = document.querySelector(
-                  `.wt-input[data-word-type="${wt.id}"][data-field="genitive"][data-row-num="${n}"]`
+                  `.wt-input[data-word-type="${wt.id}"][data-field="genitive"][data-row-num="${n}"]`,
                 );
 
-                if (baseInput) baseInput.classList.add(baseCorrect ? "correct" : "incorrect");
-                if (genInput) genInput.classList.add(genCorrect ? "correct" : "incorrect");
+                if (baseInput)
+                  baseInput.classList.add(
+                    baseCorrect ? "correct" : "incorrect",
+                  );
+                if (genInput)
+                  genInput.classList.add(genCorrect ? "correct" : "incorrect");
               });
 
-              const acceptedEl = document.getElementById(`wt-accepted-${wt.id}`);
+              const acceptedEl = document.getElementById(
+                `wt-accepted-${wt.id}`,
+              );
               if (acceptedEl) acceptedEl.classList.add("visible");
             });
           }
@@ -535,7 +699,9 @@ class Exam {
         case "audio_response":
           // Presence grading, show sample answers
           if (sec.sample_answers) {
-            const sampleDiv = document.getElementById(`audio-samples-${sec.id}`);
+            const sampleDiv = document.getElementById(
+              `audio-samples-${sec.id}`,
+            );
             if (sampleDiv) {
               sampleDiv.style.display = "block";
             }
@@ -554,11 +720,11 @@ class Exam {
       const bankDiv = document.createElement("div");
       bankDiv.className = "word-bank-row";
       bankDiv.innerHTML = `<strong>Word bank:</strong>
-        <div class="word-bank-chips">${sec.word_bank.map(w => `<span class="wb-chip">${w}</span>`).join("")}</div>`;
+        <div class="word-bank-chips">${sec.word_bank.map((w) => `<span class="wb-chip">${w}</span>`).join("")}</div>`;
       el.appendChild(bankDiv);
     }
 
-    sec.items.forEach(item => {
+    sec.items.forEach((item) => {
       const num = item.displayNum || item.id;
       const div = document.createElement("div");
       div.className = "fitb-item";
@@ -604,7 +770,7 @@ class Exam {
   }
 
   buildMCQ(el, sec) {
-    sec.items.forEach(item => {
+    sec.items.forEach((item) => {
       const num = item.displayNum || item.id;
       const div = document.createElement("div");
       div.className = "mcq-item";
@@ -614,7 +780,7 @@ class Exam {
       const opts = document.createElement("div");
       opts.className = "mcq-options";
 
-      item.options.forEach(opt => {
+      item.options.forEach((opt) => {
         const label = document.createElement("label");
         label.className = "mcq-option";
 
@@ -659,7 +825,7 @@ class Exam {
 
       const vocabList = document.createElement("div");
       vocabList.className = "vocab-list hidden";
-      passage.vocabulary.forEach(v => {
+      passage.vocabulary.forEach((v) => {
         const chip = document.createElement("span");
         chip.className = "vocab-chip";
         chip.innerHTML = `<strong>${v.word}</strong> = ${v.meaning}`;
@@ -669,7 +835,8 @@ class Exam {
       toggleBtn.addEventListener("click", () => {
         vocabList.classList.toggle("hidden");
         toggleBtn.textContent = vocabList.classList.contains("hidden")
-          ? "📖 Show vocabulary hints" : "📖 Hide vocabulary hints";
+          ? "📖 Show vocabulary hints"
+          : "📖 Hide vocabulary hints";
       });
 
       el.appendChild(toggleBtn);
@@ -686,12 +853,16 @@ class Exam {
 
       const title = document.createElement("div");
       title.className = `writing-group-title ${groupClass}`;
-      title.innerHTML = labelText + ' <button class="sample-hint-btn" type="button" title="Show/hide sample answers">?</button>';
+      title.innerHTML =
+        labelText +
+        ' <button class="sample-hint-btn" type="button" title="Show/hide sample answers">?</button>';
       group.appendChild(title);
 
       const tooltip = document.createElement("div");
       tooltip.className = "writing-samples-tooltip hidden";
-      tooltip.innerHTML = sentences.map((s, i) => `<div class="sample-line">${i + 1}. ${s}</div>`).join("");
+      tooltip.innerHTML = sentences
+        .map((s, i) => `<div class="sample-line">${i + 1}. ${s}</div>`)
+        .join("");
       group.appendChild(tooltip);
 
       const titleBtn = title.querySelector(".sample-hint-btn");
@@ -704,7 +875,8 @@ class Exam {
       textarea.className = "writing-input-large";
       textarea.dataset.sectionId = sec.id;
       textarea.dataset.groupKey = groupKey;
-      textarea.placeholder = "Write 3 sentences (one per line)\nKirjoita 3 lausetta (yksi per rivi)";
+      textarea.placeholder =
+        "Write 3 sentences (one per line)\nKirjoita 3 lausetta (yksi per rivi)";
       textarea.rows = 5;
       group.appendChild(textarea);
 
@@ -712,11 +884,16 @@ class Exam {
     };
 
     buildGroup(sec.do_sentences, "do-title", "✅ DO – Write 3 things:", "do");
-    buildGroup(sec.dont_sentences, "dont-title", "❌ DON'T – Write 3 things:", "dont");
+    buildGroup(
+      sec.dont_sentences,
+      "dont-title",
+      "❌ DON'T – Write 3 things:",
+      "dont",
+    );
   }
 
   buildFillInBlankSentence(el, sec) {
-    sec.items.forEach(item => {
+    sec.items.forEach((item) => {
       const num = item.displayNum || item.id;
       const div = document.createElement("div");
       div.className = "poss-item fitb-item";
@@ -735,7 +912,9 @@ class Exam {
       input.dataset.sectionId = sec.id;
       input.dataset.itemId = item.id;
       input.dataset.answer = item.answer.toLowerCase();
-      input.dataset.accepted = JSON.stringify(item.accepted.map(a => a.toLowerCase()));
+      input.dataset.accepted = JSON.stringify(
+        item.accepted.map((a) => a.toLowerCase()),
+      );
       input.autocomplete = "off";
       input.autocapitalize = "none";
       div.appendChild(input);
@@ -752,7 +931,7 @@ class Exam {
   buildVocabOpen(el, sec) {
     const givenDiv = document.createElement("div");
     givenDiv.className = "vocab-given";
-    sec.given.forEach(g => {
+    sec.given.forEach((g) => {
       const chip = document.createElement("div");
       chip.className = "vocab-given-chip";
       chip.innerHTML = `<span class="fi">${g.fi}</span><span class="en">${g.en}</span>`;
@@ -763,7 +942,7 @@ class Exam {
     const rows = document.createElement("div");
     rows.className = "vocab-open-rows";
 
-    [1, 2].forEach(n => {
+    [1, 2].forEach((n) => {
       const row = document.createElement("div");
       row.className = "vocab-open-row";
       row.innerHTML = `<span class="row-num">${n}.</span>`;
@@ -797,9 +976,9 @@ class Exam {
     const accepted = document.createElement("div");
     accepted.className = "vocab-accepted-list";
     accepted.id = `vocab-accepted-${sec.id}`;
-    accepted.innerHTML = `<strong>Accepted Finnish professions:</strong><br>${
-      sec.accepted_answers.map(a => `<strong>${a.fi}</strong> = ${a.en}`).join(", ")
-    }`;
+    accepted.innerHTML = `<strong>Accepted Finnish professions:</strong><br>${sec.accepted_answers
+      .map((a) => `<strong>${a.fi}</strong> = ${a.en}`)
+      .join(", ")}`;
     el.appendChild(accepted);
   }
 
@@ -848,7 +1027,8 @@ class Exam {
     scriptToggle.addEventListener("click", () => {
       scriptBox.classList.toggle("hidden");
       scriptToggle.textContent = scriptBox.classList.contains("hidden")
-        ? "📄 Show audio script (spoiler)" : "📄 Hide script";
+        ? "📄 Show audio script (spoiler)"
+        : "📄 Hide script";
     });
 
     playerBox.appendChild(audio);
@@ -859,7 +1039,7 @@ class Exam {
     el.appendChild(scriptBox);
 
     // Questions
-    sec.questions.forEach(q => {
+    sec.questions.forEach((q) => {
       const div = document.createElement("div");
       div.className = "audio-q-item";
 
@@ -891,9 +1071,9 @@ class Exam {
 
   gradeAudioResponse(sec) {
     let filled = 0;
-    sec.questions.forEach(q => {
+    sec.questions.forEach((q) => {
       const input = document.querySelector(
-        `.audio-q-input[data-section-id="${sec.id}"][data-question-id="${q.id}"]`
+        `.audio-q-input[data-section-id="${sec.id}"][data-question-id="${q.id}"]`,
       );
       if (!input) return;
       input.disabled = true;
@@ -913,7 +1093,7 @@ class Exam {
       el.appendChild(hintBox);
     }
 
-    sec.word_types.forEach(wt => {
+    sec.word_types.forEach((wt) => {
       const block = document.createElement("div");
       block.className = "word-type-block";
 
@@ -934,7 +1114,7 @@ class Exam {
       el.appendChild(block);
 
       const inputsEl = block.querySelector(`#wt-inputs-${wt.id}`);
-      [1, 2].forEach(n => {
+      [1, 2].forEach((n) => {
         const row = document.createElement("div");
         row.className = "wt-input-row";
         row.innerHTML = `<span class="wt-row-num">${n}.</span>`;
@@ -972,9 +1152,10 @@ class Exam {
       });
 
       const acceptedEl = block.querySelector(`#wt-accepted-${wt.id}`);
-      acceptedEl.innerHTML = `<strong>Accepted words:</strong> ${
-        wt.accepted.filter(a => a.meaning).map(a => `<strong>${a.base}</strong> → ${a.genitive} (${a.meaning})`).join(", ")
-      }`;
+      acceptedEl.innerHTML = `<strong>Accepted words:</strong> ${wt.accepted
+        .filter((a) => a.meaning)
+        .map((a) => `<strong>${a.base}</strong> → ${a.genitive} (${a.meaning})`)
+        .join(", ")}`;
     });
   }
 
@@ -998,7 +1179,9 @@ class Exam {
       this.submitted = false;
       this.sectionScores = {};
       this.buildExam();
-      document.getElementById("sectionsContainer").classList.remove("review-mode");
+      document
+        .getElementById("sectionsContainer")
+        .classList.remove("review-mode");
       const submitBar = document.getElementById("submitExamBtn").parentElement;
       submitBar.style.display = "";
       this.showScreen("examScreen");
@@ -1006,7 +1189,8 @@ class Exam {
 
     document.getElementById("reviewBtn").addEventListener("click", () => {
       document.getElementById("sectionsContainer").classList.add("review-mode");
-      document.getElementById("submitExamBtn").parentElement.style.display = "none";
+      document.getElementById("submitExamBtn").parentElement.style.display =
+        "none";
       this.showScreen("examScreen");
     });
 
@@ -1024,7 +1208,7 @@ class Exam {
     let totalEarned = 0;
     let totalPossible = 0;
 
-    this.selectedSections.forEach(sec => {
+    this.selectedSections.forEach((sec) => {
       const { earned, possible } = this.gradeSection(sec);
       this.sectionScores[sec.id] = { earned, possible, title: sec.titleEn };
       totalEarned += earned;
@@ -1039,7 +1223,7 @@ class Exam {
         answers: finalAnswers,
         scores: this.sectionScores,
         totalEarned,
-        totalPossible
+        totalPossible,
       });
     }
 
@@ -1051,14 +1235,30 @@ class Exam {
     let earned = 0;
 
     switch (sec.type) {
-      case "fill_in_blank":          earned = this.gradeFillInBlank(sec); break;
-      case "mcq":                    earned = this.gradeMCQ(sec); break;
-      case "comprehension":          earned = this.gradeMCQ(sec); break;
-      case "sentence_writing":       earned = this.gradeSentenceWriting(sec); break;
-      case "fill_in_blank_sentence": earned = this.gradeFillInBlankSentence(sec); break;
-      case "vocabulary_open":        earned = this.gradeVocabOpen(sec); break;
-      case "word_types":             earned = this.gradeWordTypes(sec); break;
-      case "audio_response":         earned = this.gradeAudioResponse(sec); break;
+      case "fill_in_blank":
+        earned = this.gradeFillInBlank(sec);
+        break;
+      case "mcq":
+        earned = this.gradeMCQ(sec);
+        break;
+      case "comprehension":
+        earned = this.gradeMCQ(sec);
+        break;
+      case "sentence_writing":
+        earned = this.gradeSentenceWriting(sec);
+        break;
+      case "fill_in_blank_sentence":
+        earned = this.gradeFillInBlankSentence(sec);
+        break;
+      case "vocabulary_open":
+        earned = this.gradeVocabOpen(sec);
+        break;
+      case "word_types":
+        earned = this.gradeWordTypes(sec);
+        break;
+      case "audio_response":
+        earned = this.gradeAudioResponse(sec);
+        break;
     }
 
     return { earned: Math.min(earned, possible), possible };
@@ -1067,9 +1267,9 @@ class Exam {
   gradeFillInBlank(sec) {
     let correct = 0;
     const total = sec.items.length;
-    sec.items.forEach(item => {
+    sec.items.forEach((item) => {
       const input = document.querySelector(
-        `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`
+        `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`,
       );
       if (!input) return;
       const userVal = input.value.trim().toLowerCase();
@@ -1093,15 +1293,19 @@ class Exam {
   gradeMCQ(sec) {
     let correct = 0;
     const total = sec.items.length;
-    sec.items.forEach(item => {
-      const radios = document.querySelectorAll(`input[name="mcq-${sec.id}-${item.id}"]`);
+    sec.items.forEach((item) => {
+      const radios = document.querySelectorAll(
+        `input[name="mcq-${sec.id}-${item.id}"]`,
+      );
       let selected = null;
-      radios.forEach(r => { if (r.checked) selected = r.value; });
+      radios.forEach((r) => {
+        if (r.checked) selected = r.value;
+      });
 
       const isCorrect = selected === item.answer;
       if (isCorrect) correct++;
 
-      radios.forEach(r => {
+      radios.forEach((r) => {
         r.disabled = true;
         const label = r.parentElement;
         if (r.value === item.answer) label.classList.add("correct-answer");
@@ -1119,10 +1323,10 @@ class Exam {
     const total = 2; // DO and DON'T groups
 
     const doTextarea = document.querySelector(
-      `textarea[data-section-id="${sec.id}"][data-group-key="do"]`
+      `textarea[data-section-id="${sec.id}"][data-group-key="do"]`,
     );
     const dontTextarea = document.querySelector(
-      `textarea[data-section-id="${sec.id}"][data-group-key="dont"]`
+      `textarea[data-section-id="${sec.id}"][data-group-key="dont"]`,
     );
 
     if (doTextarea) {
@@ -1141,17 +1345,21 @@ class Exam {
   gradeFillInBlankSentence(sec) {
     let correct = 0;
     const total = sec.items.length;
-    sec.items.forEach(item => {
+    sec.items.forEach((item) => {
       const input = document.querySelector(
-        `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`
+        `.fitb-input[data-section-id="${sec.id}"][data-item-id="${item.id}"]`,
       );
       if (!input) return;
       const userVal = input.value.trim().toLowerCase();
 
       let accepted = [item.answer.toLowerCase()];
-      try { accepted = JSON.parse(input.dataset.accepted); } catch (e) { /* */ }
+      try {
+        accepted = JSON.parse(input.dataset.accepted);
+      } catch (e) {
+        /* */
+      }
 
-      const isCorrect = accepted.some(a => userVal === a);
+      const isCorrect = accepted.some((a) => userVal === a);
       input.disabled = true;
       input.classList.add(isCorrect ? "correct" : "incorrect");
 
@@ -1169,11 +1377,11 @@ class Exam {
 
   gradeVocabOpen(sec) {
     let correct = 0;
-    const acceptedFi = sec.accepted_answers.map(a => a.fi.toLowerCase());
+    const acceptedFi = sec.accepted_answers.map((a) => a.fi.toLowerCase());
 
-    [1, 2].forEach(n => {
+    [1, 2].forEach((n) => {
       const fiInput = document.querySelector(
-        `.vocab-open-input[data-section-id="${sec.id}"][data-field="fi"][data-row-num="${n}"]`
+        `.vocab-open-input[data-section-id="${sec.id}"][data-field="fi"][data-row-num="${n}"]`,
       );
       if (!fiInput) return;
       const userFi = fiInput.value.trim().toLowerCase();
@@ -1183,7 +1391,7 @@ class Exam {
       fiInput.classList.add(isCorrect ? "correct" : "incorrect");
 
       const enInput = document.querySelector(
-        `.vocab-open-input[data-section-id="${sec.id}"][data-field="en"][data-row-num="${n}"]`
+        `.vocab-open-input[data-section-id="${sec.id}"][data-field="en"][data-row-num="${n}"]`,
       );
       if (enInput) enInput.disabled = true;
       if (isCorrect) correct++;
@@ -1199,17 +1407,19 @@ class Exam {
     let totalCorrect = 0;
     const totalPairs = sec.word_types.length * 2;
 
-    sec.word_types.forEach(wt => {
-      const acceptedBases = wt.accepted.map(a => a.base.toLowerCase());
+    sec.word_types.forEach((wt) => {
+      const acceptedBases = wt.accepted.map((a) => a.base.toLowerCase());
       const acceptedMap = {};
-      wt.accepted.forEach(a => { acceptedMap[a.base.toLowerCase()] = a.genitive.toLowerCase(); });
+      wt.accepted.forEach((a) => {
+        acceptedMap[a.base.toLowerCase()] = a.genitive.toLowerCase();
+      });
 
-      [1, 2].forEach(n => {
+      [1, 2].forEach((n) => {
         const baseInput = document.querySelector(
-          `.wt-input[data-word-type="${wt.id}"][data-field="base"][data-row-num="${n}"]`
+          `.wt-input[data-word-type="${wt.id}"][data-field="base"][data-row-num="${n}"]`,
         );
         const genInput = document.querySelector(
-          `.wt-input[data-word-type="${wt.id}"][data-field="genitive"][data-row-num="${n}"]`
+          `.wt-input[data-word-type="${wt.id}"][data-field="genitive"][data-row-num="${n}"]`,
         );
         if (!baseInput || !genInput) return;
 
@@ -1249,15 +1459,18 @@ class Exam {
       [75, "Hyvä! 🌟 Good job!"],
       [60, "Ihan hyvä! 💪 Keep it up!"],
       [40, "Harjoittele lisää! 📚 Practice more."],
-      [0,  "Jatka yrittämistä! 🌱 Keep trying!"]
+      [0, "Jatka yrittämistä! 🌱 Keep trying!"],
     ];
     document.getElementById("scoreMessage").textContent =
       msgs.find(([min]) => pct >= min)?.[1] || msgs.at(-1)[1];
 
     const scoresEl = document.getElementById("sectionScores");
     scoresEl.innerHTML = "";
-    this.selectedSections.forEach(sec => {
-      const { earned: e, possible: p } = this.sectionScores[sec.id] || { earned: 0, possible: sec.points };
+    this.selectedSections.forEach((sec) => {
+      const { earned: e, possible: p } = this.sectionScores[sec.id] || {
+        earned: 0,
+        possible: sec.points,
+      };
       const pctSec = Math.round((e / p) * 100);
       const cls = pctSec === 100 ? "full" : e > 0 ? "partial" : "zero";
       const row = document.createElement("div");
@@ -1276,7 +1489,9 @@ class Exam {
   ========================================== */
 
   showScreen(id) {
-    document.querySelectorAll(".screen").forEach(s => s.classList.add("hidden"));
+    document
+      .querySelectorAll(".screen")
+      .forEach((s) => s.classList.add("hidden"));
     document.getElementById(id).classList.remove("hidden");
     window.scrollTo(0, 0);
   }

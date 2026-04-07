@@ -561,20 +561,65 @@
       "number": 3,
       "title": "Kirjoita lauseet – Dos ja Don'ts",
       "titleEn": "Write Sentences – Dos and Don'ts",
-      "instructions": "Write 3 things you will do tomorrow (affirmative) and 3 things you won't do (negative). Use Finnish present tense — it also expresses future plans.",
+      "instructions": "Write 3 sentences in the affirmative box and 3 sentences in the negative box. Use the appropriate tense based on the context shown.",
       "type": "sentence_writing",
       "points": 6,
-      "topics": ["Present Tense", "Common Verbs", "Simple Sentences"],
-      "note": "Write 3 sentences in each box (separated by line breaks). Click the (?) icon to see sample answers. Graded on presence of written response.",
-      "do_sentences": [
-        "Opiskelen suomea.",
-        "Juon vettä.",
-        "Menen kaupunkiin."
+      "topics": [
+        "Present Tense",
+        "Past Tense",
+        "Future Tense",
+        "Common Verbs",
+        "Simple Sentences"
       ],
+      "note": "Write 3 sentences in each box (separated by line breaks). Click the (?) icon to see sample answers. Graded on presence of written response.",
+      "dynamicTenses": true,
+      "pastTimeExpressions": ["eilen", "eilen aamulla"],
+      "futureTimeExpressions": ["huomenna", "ylihuomenna"],
+      "do_sentences_base": [
+        {
+          "base": "Opiskelen suomea ",
+          "present": "Opiskelen suomea ",
+          "past": "Opiskelin suomea ",
+          "futureBase": "Opiskelen suomea"
+        },
+        {
+          "base": "Juon vettä ",
+          "present": "Juon vettä ",
+          "past": "Join vettä ",
+          "futureBase": "Juon vettä"
+        },
+        {
+          "base": "Menen kaupunkiin ",
+          "present": "Menen kaupunkiin ",
+          "past": "Menin kaupunkiin ",
+          "futureBase": "Menen kaupunkiin"
+        }
+      ],
+      "dont_sentences_base": [
+        {
+          "base": "En pelaa peliä ",
+          "present": "En pelaa peliä ",
+          "past": "En pelannut peliä ",
+          "futureBase": "En pelaa peliä"
+        },
+        {
+          "base": "En nuku myöhään ",
+          "present": "En nuku myöhään ",
+          "past": "En nukkunut myöhään ",
+          "futureBase": "En nuku myöhään"
+        },
+        {
+          "base": "En käytä puhelinta ",
+          "present": "En käytä puhelinta ",
+          "past": "En käyttänyt puhelinta ",
+          "futureBase": "En käytä puhelinta"
+        }
+      ],
+      "do_sentences": ["Opiskelen suomea ", "Juon vettä ", "Menen kaupunkiin "],
       "dont_sentences": [
-        "En pelaa peliä.",
-        "En nuku myöhään.",
-        "En käytä puhelinta."
+        "En pelaa peliä ",
+        "En nuku myöhään ",
+        "En käytä puhelinta "
       ]
     },
     {
