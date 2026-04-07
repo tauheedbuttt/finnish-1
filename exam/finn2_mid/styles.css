@@ -1161,10 +1161,33 @@ body {
   padding-top: 30px;
 }
 
-.past-attempts-section h2 {
-  font-size: 1.3rem;
+.past-attempts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+.past-attempts-header h2 {
+  font-size: 1.3rem;
   color: var(--text-dark);
+  margin: 0;
+}
+
+.delete-history-btn {
+  background: var(--error);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delete-history-btn:hover {
+  background: #c82333;
 }
 
 .sessions-list {
@@ -1178,6 +1201,104 @@ body {
   display: none;
 }
 
+/* ========================================
+   Confirmation Modal
+======================================== */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  border-radius: var(--radius);
+  padding: 32px;
+  max-width: 400px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-content h3 {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.modal-content p {
+  color: var(--text-mid);
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.modal-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.modal-btn.cancel {
+  background: var(--bg-light);
+  color: var(--text-dark);
+  border: 1px solid var(--border);
+}
+
+.modal-btn.cancel:hover {
+  background: #e0e0e0;
+}
+
+.modal-btn.delete {
+  background: var(--error);
+  color: white;
+}
+
+.modal-btn.delete:hover {
+  background: #c82333;
+}
 .overall-stats-section {
   margin-bottom: 32px;
 }

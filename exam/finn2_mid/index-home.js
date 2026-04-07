@@ -41,6 +41,9 @@ class HomePage {
         this.startNewExam();
       });
 
+      // Setup delete history modal
+      this.setupDeleteHistoryModal();
+
       // Load and display past attempts & stats
       await this.loadPastAttempts();
       await this.loadStatsbyQuestionType();
@@ -138,6 +141,50 @@ class HomePage {
         `${totalQuestionsCorrect}/${totalQuestionsAttempted} (${overallPct}%)`;
     } catch (e) {
       console.error("Failed to load stats by question type:", e);
+    }
+  }
+
+  setupDeleteHistoryModal() {
+    const deleteBtn = document.getElementById("deleteHistoryBtn");
+    const modal = document.getElementById("deleteConfirmModal");
+    const cancelBtn = document.getElementById("cancelDeleteBtn");
+    const confirmBtn = document.getElementById("confirmDeleteBtn");
+    const overlay = modal?.querySelector(".modal-overlay");
+
+    if (!deleteBtn) return;
+
+    deleteBtn.addEventListener("click", () => {
+      modal?.classList.remove("hidden");
+    });
+
+    cancelBtn?.addEventListener("click", () => {
+      modal?.classList.add("hidden");
+    });
+
+    overlay?.addEventListener("click", () => {
+      modal?.classList.add("hidden");
+    });
+
+    confirmBtn?.addEventListener("click", async () => {
+      await this.deleteAllHistory();
+      modal?.classList.add("hidden");
+    });
+  }
+
+  async deleteAllHistory() {
+    try {
+      const sessions = await getAllSessions();
+      
+      // Delete all sessions from IndexedDB
+      for (const session of sessions) {
+        await deleteSession(session.id);
+      }
+
+      // Reload page to refresh stats
+      window.location.reload();
+    } catch (e) {
+      console.error("Failed to delete history:", e);
+      alert("Error deleting history");
     }
   }
 
