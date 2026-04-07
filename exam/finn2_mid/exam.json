@@ -564,103 +564,17 @@
       "instructions": "Write 3 things you will do tomorrow (affirmative) and 3 things you won't do (negative). Use Finnish present tense — it also expresses future plans.",
       "type": "sentence_writing",
       "points": 6,
-      "do_picks": 3,
-      "dont_picks": 3,
-      "topics": ["Imperative", "Verb Types", "Present Tense as Future"],
-      "note": "Finnish uses present tense for future plans: 'Menen huomenna kouluun.' = I am going to school tomorrow. Negative: 'En mene kouluun.' = I am not going to school.",
-      "do_pool": [
-        {
-          "id": 1,
-          "english": "I will go to school / work tomorrow.",
-          "sample_fi": "Menen huomenna kouluun. / Menen huomenna töihin."
-        },
-        {
-          "id": 2,
-          "english": "I will eat vegetables tomorrow.",
-          "sample_fi": "Syön huomenna kasviksia."
-        },
-        {
-          "id": 3,
-          "english": "I will exercise / go to the gym.",
-          "sample_fi": "Käyn huomenna salilla. / Harjoittelen huomenna."
-        },
-        {
-          "id": 4,
-          "english": "I will study Finnish tomorrow.",
-          "sample_fi": "Opiskelen huomenna suomea."
-        },
-        {
-          "id": 5,
-          "english": "I will sleep early tomorrow.",
-          "sample_fi": "Menen huomenna nukkumaan aikaisin."
-        },
-        {
-          "id": 6,
-          "english": "I will call my friend tomorrow.",
-          "sample_fi": "Soitan huomenna ystävälleni."
-        },
-        {
-          "id": 7,
-          "english": "I will cook at home tomorrow.",
-          "sample_fi": "Teen huomenna ruokaa kotona."
-        },
-        {
-          "id": 8,
-          "english": "I will read a book tomorrow.",
-          "sample_fi": "Luen huomenna kirjaa."
-        },
-        {
-          "id": 9,
-          "english": "I will clean my room tomorrow.",
-          "sample_fi": "Siivoan huomenna huoneeni."
-        }
+      "topics": ["Present Tense", "Common Verbs", "Simple Sentences"],
+      "note": "Write 3 sentences in each box (separated by line breaks). Click the (?) icon to see sample answers. Graded on presence of written response.",
+      "do_sentences": [
+        "Opiskelen suomea.",
+        "Juon vettä.",
+        "Menen kaupunkiin."
       ],
-      "dont_pool": [
-        {
-          "id": 10,
-          "english": "I won't eat fast food tomorrow.",
-          "sample_fi": "En syö huomenna pikaruokaa."
-        },
-        {
-          "id": 11,
-          "english": "I won't be late tomorrow.",
-          "sample_fi": "En tule huomenna myöhässä."
-        },
-        {
-          "id": 12,
-          "english": "I won't watch TV all day tomorrow.",
-          "sample_fi": "En katso huomenna televisiota koko päivää."
-        },
-        {
-          "id": 13,
-          "english": "I won't forget my keys tomorrow.",
-          "sample_fi": "En unohda huomenna avaimiani."
-        },
-        {
-          "id": 14,
-          "english": "I won't skip class tomorrow.",
-          "sample_fi": "En jää huomenna pois tunnilta."
-        },
-        {
-          "id": 15,
-          "english": "I won't eat too much sugar tomorrow.",
-          "sample_fi": "En syö huomenna liian paljon sokeria."
-        },
-        {
-          "id": 16,
-          "english": "I won't go to bed late tomorrow.",
-          "sample_fi": "En mene huomenna nukkumaan myöhään."
-        },
-        {
-          "id": 17,
-          "english": "I won't waste time tomorrow.",
-          "sample_fi": "En tuhlaa huomenna aikaa."
-        },
-        {
-          "id": 18,
-          "english": "I won't drink coffee after 6 pm tomorrow.",
-          "sample_fi": "En juo huomenna kahvia kuuden jälkeen."
-        }
+      "dont_sentences": [
+        "En pelaa peliä.",
+        "En nuku myöhään.",
+        "En käytä puhelinta."
       ]
     },
     {

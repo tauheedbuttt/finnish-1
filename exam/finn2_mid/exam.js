@@ -219,25 +219,17 @@ class Exam {
           break;
 
         case "sentence_writing":
-          if (sec.do_prompts) {
-            sec.do_prompts.forEach((prompt, idx) => {
-              const textarea = document.querySelector(
-                `textarea[data-section-id="${sec.id}"][data-prompt-id="${prompt.id}"]`
-              );
-              if (textarea) {
-                answers[`${sec.id}:do:${prompt.id}`] = textarea.value;
-              }
-            });
+          const doTextarea = document.querySelector(
+            `textarea[data-section-id="${sec.id}"][data-group-key="do"]`
+          );
+          const dontTextarea = document.querySelector(
+            `textarea[data-section-id="${sec.id}"][data-group-key="dont"]`
+          );
+          if (doTextarea) {
+            answers[`${sec.id}:do`] = doTextarea.value;
           }
-          if (sec.dont_prompts) {
-            sec.dont_prompts.forEach((prompt, idx) => {
-              const textarea = document.querySelector(
-                `textarea[data-section-id="${sec.id}"][data-prompt-id="${prompt.id}"]`
-              );
-              if (textarea) {
-                answers[`${sec.id}:dont:${prompt.id}`] = textarea.value;
-              }
-            });
+          if (dontTextarea) {
+            answers[`${sec.id}:dont`] = dontTextarea.value;
           }
           break;
 
@@ -328,27 +320,19 @@ class Exam {
           break;
 
         case "sentence_writing":
-          if (sec.do_prompts) {
-            sec.do_prompts.forEach(prompt => {
-              const key = `${sec.id}:do:${prompt.id}`;
-              const textarea = document.querySelector(
-                `textarea[data-section-id="${sec.id}"][data-prompt-id="${prompt.id}"]`
-              );
-              if (textarea && answers[key]) {
-                textarea.value = answers[key];
-              }
-            });
+          const doKey = `${sec.id}:do`;
+          const dontKey = `${sec.id}:dont`;
+          const doTextarea = document.querySelector(
+            `textarea[data-section-id="${sec.id}"][data-group-key="do"]`
+          );
+          const dontTextarea = document.querySelector(
+            `textarea[data-section-id="${sec.id}"][data-group-key="dont"]`
+          );
+          if (doTextarea && answers[doKey]) {
+            doTextarea.value = answers[doKey];
           }
-          if (sec.dont_prompts) {
-            sec.dont_prompts.forEach(prompt => {
-              const key = `${sec.id}:dont:${prompt.id}`;
-              const textarea = document.querySelector(
-                `textarea[data-section-id="${sec.id}"][data-prompt-id="${prompt.id}"]`
-              );
-              if (textarea && answers[key]) {
-                textarea.value = answers[key];
-              }
-            });
+          if (dontTextarea && answers[dontKey]) {
+            dontTextarea.value = answers[dontKey];
           }
           break;
 
@@ -696,47 +680,39 @@ class Exam {
   }
 
   buildSentenceWriting(el, sec) {
-    const buildGroup = (prompts, groupClass, labelText) => {
+    const buildGroup = (sentences, groupClass, labelText, groupKey) => {
       const group = document.createElement("div");
       group.className = "writing-group";
 
       const title = document.createElement("div");
       title.className = `writing-group-title ${groupClass}`;
-      title.textContent = labelText;
+      title.innerHTML = labelText + ' <button class="sample-hint-btn" type="button" title="Show/hide sample answers">?</button>';
       group.appendChild(title);
 
-      prompts.forEach((p, i) => {
-        const div = document.createElement("div");
-        div.className = "writing-prompt";
+      const tooltip = document.createElement("div");
+      tooltip.className = "writing-samples-tooltip hidden";
+      tooltip.innerHTML = sentences.map((s, i) => `<div class="sample-line">${i + 1}. ${s}</div>`).join("");
+      group.appendChild(tooltip);
 
-        const promptEn = document.createElement("div");
-        promptEn.className = "prompt-en";
-        promptEn.textContent = `${i + 1}. ${p.english}`;
-        div.appendChild(promptEn);
-
-        const textarea = document.createElement("textarea");
-        textarea.className = "writing-input";
-        textarea.dataset.sectionId = sec.id;
-        textarea.dataset.promptId = p.id;
-        textarea.dataset.sampleFi = p.sample_fi;
-        textarea.placeholder = "Kirjoita suomeksi... (Write in Finnish)";
-        textarea.rows = 2;
-        div.appendChild(textarea);
-
-        const sample = document.createElement("div");
-        sample.className = "sample-answer";
-        sample.id = `sample-${sec.id}-${p.id}`;
-        sample.innerHTML = `<strong>Sample answer:</strong> ${p.sample_fi}`;
-        div.appendChild(sample);
-
-        group.appendChild(div);
+      const titleBtn = title.querySelector(".sample-hint-btn");
+      titleBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        tooltip.classList.toggle("hidden");
       });
+
+      const textarea = document.createElement("textarea");
+      textarea.className = "writing-input-large";
+      textarea.dataset.sectionId = sec.id;
+      textarea.dataset.groupKey = groupKey;
+      textarea.placeholder = "Write 3 sentences (one per line)\nKirjoita 3 lausetta (yksi per rivi)";
+      textarea.rows = 5;
+      group.appendChild(textarea);
 
       el.appendChild(group);
     };
 
-    buildGroup(sec.do_prompts, "do-title", "✅ DO – Things you will do:");
-    buildGroup(sec.dont_prompts, "dont-title", "❌ DON'T – Things you won't do:");
+    buildGroup(sec.do_sentences, "do-title", "✅ DO – Write 3 things:", "do");
+    buildGroup(sec.dont_sentences, "dont-title", "❌ DON'T – Write 3 things:", "dont");
   }
 
   buildFillInBlankSentence(el, sec) {
@@ -1140,20 +1116,24 @@ class Exam {
 
   gradeSentenceWriting(sec) {
     let filled = 0;
-    const allPrompts = [...(sec.do_prompts || []), ...(sec.dont_prompts || [])];
-    const total = allPrompts.length;
+    const total = 2; // DO and DON'T groups
 
-    allPrompts.forEach(p => {
-      const textarea = document.querySelector(
-        `textarea[data-section-id="${sec.id}"][data-prompt-id="${p.id}"]`
-      );
-      if (!textarea) return;
-      textarea.disabled = true;
-      if (textarea.value.trim().length > 2) filled++;
+    const doTextarea = document.querySelector(
+      `textarea[data-section-id="${sec.id}"][data-group-key="do"]`
+    );
+    const dontTextarea = document.querySelector(
+      `textarea[data-section-id="${sec.id}"][data-group-key="dont"]`
+    );
 
-      const sample = document.getElementById(`sample-${sec.id}-${p.id}`);
-      if (sample) sample.classList.add("visible");
-    });
+    if (doTextarea) {
+      doTextarea.disabled = true;
+      if (doTextarea.value.trim().length > 2) filled++;
+    }
+
+    if (dontTextarea) {
+      dontTextarea.disabled = true;
+      if (dontTextarea.value.trim().length > 2) filled++;
+    }
 
     return Math.round((filled / total) * sec.points);
   }
