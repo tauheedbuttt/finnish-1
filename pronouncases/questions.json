@@ -1,0 +1,295 @@
+{
+  "title": "Pronominit eri sijoissa",
+  "titleEn": "Personal Pronouns in Different Cases",
+  "description": "Master Finnish personal pronouns in all cases — partitive, genitive, local cases, and more",
+  "instructions": "Practice Finnish personal pronouns in all their case forms and learn when to use each case.",
+  "subtopics": [
+    { "id": "all", "name": "All Cases", "icon": "📚" },
+    { "id": "partitive", "name": "Partitive (mua, sua)", "icon": "📊" },
+    { "id": "genitive", "name": "Genitive (mun, sun)", "icon": "🔗" },
+    { "id": "elatiivi", "name": "Elatiivi (musta, susta)", "icon": "💭" },
+    { "id": "local", "name": "Local Cases (mulla, multa, mulle)", "icon": "📍" },
+    { "id": "location", "name": "Täällä, Tuolla, Siellä", "icon": "🗺️" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "subtopic": "partitive",
+      "mode": "mcq",
+      "text": "What is the partitive form of 'mä' (I)?",
+      "options": ["mua", "mun", "mulla", "mut"],
+      "correct": 0,
+      "explanation": "Partitive of mä = mua. 'Partitive is used with certain verbs like rakastaa (to love): Mä rakastan mua = wrong context, but: 'Hän rakastaa mua' (He loves me) — mua is the correct object form here."
+    },
+    {
+      "id": "q2",
+      "subtopic": "partitive",
+      "mode": "mcq",
+      "text": "What is the partitive form of 'sä' (you)?",
+      "options": ["sun", "sua", "sulle", "sut"],
+      "correct": 1,
+      "explanation": "Partitive of sä = sua. Example: 'Mä rakastan sua' (I love you). The partitive form of pronouns is used with verbs that require partitive objects."
+    },
+    {
+      "id": "q3",
+      "subtopic": "partitive",
+      "mode": "mcq",
+      "text": "Complete: 'Mä rakastan ___.' (I love them — he/ne)",
+      "options": ["heidät", "heille", "heitä", "heistä"],
+      "correct": 2,
+      "explanation": "'Mä rakastan heitä.' = I love them. 'Rakastaa' (to love) takes the partitive: heitä is the partitive of he/ne (they). (Spoken Finnish: niitä for ne.)"
+    },
+    {
+      "id": "q4",
+      "subtopic": "partitive",
+      "mode": "mcq",
+      "text": "What is the partitive form of 'me' (we)?",
+      "options": ["meidät", "meidän", "meitä", "meillä"],
+      "correct": 2,
+      "explanation": "Partitive of me = meitä. The pattern: mä→mua, sä→sua, me→meitä, te→teitä, he→heitä."
+    },
+    {
+      "id": "q5",
+      "subtopic": "genitive",
+      "mode": "mcq",
+      "text": "What is the genitive form of 'mä' (I) — used for possession?",
+      "options": ["mua", "mulla", "mun", "mut"],
+      "correct": 2,
+      "explanation": "Genitive of mä = mun. Used for possession: 'Mun talo on keltainen' (My house is yellow). Also used as subject in necessive structures: 'Mun täytyy mennä'."
+    },
+    {
+      "id": "q6",
+      "subtopic": "genitive",
+      "mode": "mcq",
+      "text": "Complete: '___ talo on keltainen.' (Our house is yellow)",
+      "options": ["meidät", "meidän", "meillä", "meistä"],
+      "correct": 1,
+      "explanation": "'Meidän talo on keltainen.' = Our house is yellow. Meidän = genitive of me (we). In formal Finnish: meidän ystävämme (our friend, with possessive suffix)."
+    },
+    {
+      "id": "q7",
+      "subtopic": "genitive",
+      "mode": "mcq",
+      "text": "What case is 'sun' and when do you use it?",
+      "options": [
+        "Partitive — used with verbs like rakastaa",
+        "Genitive — used for possession and necessive subjects",
+        "Accusative — used as a direct object",
+        "Elatiivi — used for opinions"
+      ],
+      "correct": 1,
+      "explanation": "'Sun' is the genitive of 'sä' (you). Used for: 1) Possession: 'Sun auto on hieno' (Your car is nice). 2) Necessive subject: 'Sun täytyy mennä' (You have to go)."
+    },
+    {
+      "id": "q8",
+      "subtopic": "elatiivi",
+      "mode": "mcq",
+      "text": "What is the elatiivi form of 'mä' (I) — and what is it used for?",
+      "options": [
+        "mua — used with love verbs",
+        "musta — used for opinions (in my opinion) and 'tykkää' (to like)",
+        "mun — used for possession",
+        "mulle — used meaning 'to me'"
+      ],
+      "correct": 1,
+      "explanation": "'Musta' = elatiivi of mä. Two main uses: 1) Opinion: 'Musta sauna on ihana' (In my opinion, sauna is wonderful). 2) With tykkää: 'Hän tykkää musta' (He likes me)."
+    },
+    {
+      "id": "q9",
+      "subtopic": "elatiivi",
+      "mode": "mcq",
+      "text": "Complete: 'He tykkää ___.' (They like you)",
+      "options": ["sua", "susta", "sulle", "sut"],
+      "correct": 1,
+      "explanation": "'He tykkää susta.' = They like you. 'Tykkää' (to like) always takes the elatiivi (-sta/-stä): susta = elatiivi of sä."
+    },
+    {
+      "id": "q10",
+      "subtopic": "elatiivi",
+      "mode": "mcq",
+      "text": "Complete: 'Ashok on rakastunut ___.' (Ashok is in love with you)",
+      "options": ["sua", "susta", "suhun", "sulle"],
+      "correct": 2,
+      "explanation": "'Ashok on rakastunut suhun.' = Ashok is in love with you. 'Rakastua' (to fall in love with) uses the illatiivi (suhun = into you). Note: rakastaa (to love) uses partitive (sua); rakastua johonkin uses illatiivi."
+    },
+    {
+      "id": "q11",
+      "subtopic": "local",
+      "mode": "mcq",
+      "text": "What is 'mulla' and what does it indicate?",
+      "options": [
+        "Partitive of mä — used with verbs",
+        "Adessive (adessiivi) of mä — used in 'I have' structure",
+        "Ablative of mä — meaning 'from me'",
+        "Allative of mä — meaning 'to me'"
+      ],
+      "correct": 1,
+      "explanation": "'Mulla' = adessive (adessiivi) of mä. Used in the 'have' structure: 'Mulla on kirja' (I have a book). Also: Teillä on ihana koira (You have a lovely dog)."
+    },
+    {
+      "id": "q12",
+      "subtopic": "local",
+      "mode": "mcq",
+      "text": "What is 'multa' and what does it mean?",
+      "options": [
+        "From me (ablative — multa, sulta, häneltä)",
+        "To me (allative — mulle)",
+        "In me (inessive — mussa)",
+        "My (genitive — mun)"
+      ],
+      "correct": 0,
+      "explanation": "'Multa' = ablative (ablatiivi) = from me. Example: 'Sain kirjan multa' (I got a book from me — wrong!) / 'Sain kirjan Ashokilta' (I got the book from Ashok). Question: Keneltä? (From whom?)"
+    },
+    {
+      "id": "q13",
+      "subtopic": "local",
+      "mode": "mcq",
+      "text": "What is 'mulle' and when do you use it?",
+      "options": [
+        "Ablative — from me",
+        "Adessive — I have",
+        "Allative — to me / for me",
+        "Partitive — of me"
+      ],
+      "correct": 2,
+      "explanation": "'Mulle' = allative (allatiivi) = to me / for me. Example: 'Onko tää mulle?' (Is this for me?). Question: Kenelle? (To/for whom?) Verbs with mulle: antaa (to give), sanoa (to say), lähettää (to send)."
+    },
+    {
+      "id": "q14",
+      "subtopic": "local",
+      "mode": "mcq",
+      "text": "Complete: 'Annan kirjan ___.' (I give the book to grandma)",
+      "options": ["isoäidillä", "isoäidiltä", "isoäidille", "isoäidistä"],
+      "correct": 2,
+      "explanation": "'Annan kirjan isoäidille.' = I give the book to grandma. 'Antaa' (to give) uses the allative (-lle) for the recipient. Pattern: mulle, sulle, hänelle, isoäidille."
+    },
+    {
+      "id": "q15",
+      "subtopic": "local",
+      "mode": "mcq",
+      "text": "Complete: 'Sain kirjan ___.' (I got the book from Ashok)",
+      "options": ["Ashokille", "Ashokilta", "Ashokissa", "Ashokia"],
+      "correct": 1,
+      "explanation": "'Sain kirjan Ashokilta.' = I got the book from Ashok. 'Saada' (to get/receive) uses the ablative (-lta/-ltä) for the source. Pattern: multa, sulta, häneltä, Ashokilta."
+    },
+    {
+      "id": "q16",
+      "subtopic": "local",
+      "mode": "mcq",
+      "text": "Match the question word to the pronoun form: Kenellä? → ___",
+      "options": ["mulle / sulle", "multa / sulta", "mulla / sulla", "mua / sua"],
+      "correct": 2,
+      "explanation": "'Kenellä?' (Who has?) → mulla / sulla (adessive). These are the 'have' forms. Keneltä? → multa/sulta (from). Kenelle? → mulle/sulle (to/for)."
+    },
+    {
+      "id": "q17",
+      "subtopic": "location",
+      "mode": "mcq",
+      "text": "What is the difference between 'täällä' and 'tässä'?",
+      "options": [
+        "Täällä = here in this spot; tässä = here in this general area",
+        "Täällä = here (general area); tässä = here (this exact spot)",
+        "They mean exactly the same thing",
+        "Täällä is formal; tässä is informal"
+      ],
+      "correct": 1,
+      "explanation": "Key distinction! 'Täällä' = here (general area) — e.g., in this room, this city. 'Tässä' = here (this exact spot) — e.g., handing something over, pointing to a specific thing."
+    },
+    {
+      "id": "q18",
+      "subtopic": "location",
+      "mode": "mcq",
+      "text": "What is the difference between 'tuolla' and 'siellä'?",
+      "options": [
+        "Tuolla = over there (visible); siellä = there (not here, not necessarily visible)",
+        "Tuolla = far away; siellä = close by",
+        "Tuolla is formal; siellä is informal",
+        "No difference — both mean 'there'"
+      ],
+      "correct": 0,
+      "explanation": "'Tuolla' = over there (something you can see/point to). 'Siellä' = there (not here, often not visible — like another room, city, or abstract place)."
+    },
+    {
+      "id": "q19",
+      "subtopic": "location",
+      "mode": "mcq",
+      "text": "What is the 'to there' direction form of 'siellä'?",
+      "options": ["sieltä", "siihen", "sinne", "siinä"],
+      "correct": 2,
+      "explanation": "'Sinne' = to there (direction toward that place). Full set: siellä (there) → sieltä (from there) → sinne (to there). Similar: täällä → täältä → tänne."
+    },
+    {
+      "id": "q20",
+      "subtopic": "location",
+      "mode": "mcq",
+      "text": "Complete: 'Tässä on se kirja.' What does this mean?",
+      "options": [
+        "The book is over there.",
+        "Here is the book. (handing it over / pointing to it exactly)",
+        "There is a book somewhere.",
+        "I'm looking for the book."
+      ],
+      "correct": 1,
+      "explanation": "'Tässä on se kirja.' = Here is the book. 'Tässä' indicates this exact spot — you're handing the book over or pointing to it precisely. Compare: 'Täällä on kirja' = There's a book here (somewhere in this general area)."
+    },
+    {
+      "id": "q21",
+      "subtopic": "partitive",
+      "mode": "mcq",
+      "text": "What is the accusative form of 'sä' (direct object)?",
+      "options": ["sun", "sua", "sut", "sulle"],
+      "correct": 2,
+      "explanation": "'Sut' = accusative of sä. Used as direct object in completed actions: 'Mä näin sut eilen' (I saw you yesterday). Note: accusative of pronouns adds -t; for nouns we use genitive."
+    },
+    {
+      "id": "q22",
+      "subtopic": "local",
+      "mode": "mcq",
+      "text": "What is the inessive (inessiivi) form of 'hän' — and what does it express?",
+      "options": [
+        "hänessä — qualities or things 'in' a person",
+        "hänelle — things you give to a person",
+        "häneltä — things you get from a person",
+        "häntä — verbs requiring partitive"
+      ],
+      "correct": 0,
+      "explanation": "'Hänessä' = inessive of hän. Used for qualities inside a person: 'Hänessä on monta hyvää asiaa' (There are many good things about her). A more abstract use of the 'in' case."
+    },
+    {
+      "id": "q23",
+      "subtopic": "genitive",
+      "mode": "mcq",
+      "text": "Which form of the pronoun is used as the SUBJECT in necessive sentences (täytyy)?",
+      "options": [
+        "Nominative: mä täytyy mennä",
+        "Genitive: mun täytyy mennä",
+        "Partitive: mua täytyy mennä",
+        "Accusative: mut täytyy mennä"
+      ],
+      "correct": 1,
+      "explanation": "'Mun täytyy mennä' = I have to go. In necessive sentences, the logical subject is in the GENITIVE case (mun, sun, hänen, meidän, teidän, heidän). This is one of the most important uses of the genitive!"
+    },
+    {
+      "id": "q24",
+      "subtopic": "elatiivi",
+      "mode": "mcq",
+      "text": "What are the two key uses of the elatiivi forms (musta, susta, siitä)?",
+      "options": [
+        "Possession and 'have' structure",
+        "Opinion expression (in my opinion) and 'tykkää/pidät' (to like)",
+        "Direct objects and indirect objects",
+        "Location and direction"
+      ],
+      "correct": 1,
+      "explanation": "Elatiivi (musta, susta, siitä, meistä, teistä, heistä) has two key uses: 1) Opinion: 'Musta kahvi on hyvää' (In my opinion, coffee is good). 2) With 'tykkää/pitää': 'Mä tykkään susta' (I like you)."
+    },
+    {
+      "id": "q25",
+      "subtopic": "location",
+      "mode": "written",
+      "text": "What is the 'from there' form of 'tuolla' (over there)?",
+      "correctAnswers": ["tuolta"],
+      "explanation": "tuolla (over there) → tuolta (from over there). Full set: tuolla → tuolta → tuonne. Compare: täällä → täältä → tänne; siellä → sieltä → sinne."
+    }
+  ]
+}

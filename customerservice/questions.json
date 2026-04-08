@@ -1,0 +1,288 @@
+{
+  "title": "Asiakaspalvelu",
+  "titleEn": "Customer Service Phrases",
+  "description": "Practice Finnish phrases for phone calls, hotel check-in, and restaurants",
+  "instructions": "Learn the most useful customer service phrases for real-life situations in Finland.",
+  "subtopics": [
+    { "id": "all", "name": "All Situations", "icon": "📚" },
+    { "id": "phone", "name": "Phone Calls", "icon": "📞" },
+    { "id": "hotel", "name": "At the Hotel", "icon": "🏨" },
+    { "id": "restaurant", "name": "At the Restaurant", "icon": "🍽️" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "subtopic": "phone",
+      "mode": "mcq",
+      "text": "How do you introduce yourself at the start of a Finnish phone call?",
+      "options": [
+        "Hei, kuka olet?",
+        "Täs on [nimi].",
+        "Minä olen [nimi].",
+        "Nimeni on [nimi]."
+      ],
+      "correct": 1,
+      "explanation": "'Täs on [nimi]' is the natural spoken Finnish way to start a call — literally 'This is [name].' It uses puhekieli (spoken language): täs = tässä."
+    },
+    {
+      "id": "q2",
+      "subtopic": "phone",
+      "mode": "mcq",
+      "text": "How do you say 'I'm calling to ask...' in Finnish?",
+      "options": [
+        "Mä haluaisin kysyä...",
+        "Soitan kysyäkseni...",
+        "Puhun kysymästä...",
+        "Täs on kysymys..."
+      ],
+      "correct": 1,
+      "explanation": "'Soitan kysyäkseni...' = I'm calling to ask... This is a formal/polite construction using the translative infinitive."
+    },
+    {
+      "id": "q3",
+      "subtopic": "phone",
+      "mode": "mcq",
+      "text": "How do you say 'I would like to book an appointment' on the phone?",
+      "options": [
+        "Haluaisin varata ajan.",
+        "Mun täytyy varata aika.",
+        "Voinko varata ajan?",
+        "All of the above are correct"
+      ],
+      "correct": 3,
+      "explanation": "All are correct! 'Haluaisin varata ajan' (I would like to book), 'Mun täytyy varata aika' (I need to book), 'Voinko varata ajan?' (Can I book?). They're just different levels of formality."
+    },
+    {
+      "id": "q4",
+      "subtopic": "phone",
+      "mode": "mcq",
+      "text": "You want to try Finnish on the phone. What do you say?",
+      "options": [
+        "Puhutaanko suomea?",
+        "Mä opiskelen suomea ja haluaisin yrittää käydä keskustelun suomeksi.",
+        "Suomi on vaikea kieli.",
+        "En osaa suomea hyvin."
+      ],
+      "correct": 1,
+      "explanation": "'Mä opiskelen suomea ja haluaisin yrittää käydä keskustelun suomeksi.' = I'm studying Finnish and I'd like to try having the conversation in Finnish. A great phrase to practice with native speakers!"
+    },
+    {
+      "id": "q5",
+      "subtopic": "phone",
+      "mode": "mcq",
+      "text": "How do you ask to switch to English on the phone?",
+      "options": [
+        "Puhutaanko englanniksi?",
+        "Voinko puhua englanniksi?",
+        "En ymmärrä.",
+        "Anteeksi, englanniksi?"
+      ],
+      "correct": 1,
+      "explanation": "'Voinko puhua englanniksi?' = Can I speak in English? This is polite and clear. You could also say 'Voisimmeko puhua englanniksi?' (more formal)."
+    },
+    {
+      "id": "q6",
+      "subtopic": "hotel",
+      "mode": "mcq",
+      "text": "How do you say 'Hello, I have a reservation for two nights' at a hotel?",
+      "options": [
+        "Hei, mulla on varaus kahdeksi yöksi.",
+        "Hei, mulla on varaus kahdessa yössä.",
+        "Hei, mulla on varaus kahden yön.",
+        "Hei, mulla on varaus kahdelle yölle."
+      ],
+      "correct": 0,
+      "explanation": "'Hei, mulla on varaus kahdeksi yöksi.' = Hello, I have a reservation for two nights. 'Kahdeksi yöksi' uses the translative case to express purpose/duration."
+    },
+    {
+      "id": "q7",
+      "subtopic": "hotel",
+      "mode": "mcq",
+      "text": "How do you say 'I have a reservation under the name Salo'?",
+      "options": [
+        "Mulla on varaus nimessä Salo.",
+        "Mulla on varaus nimellä Salo.",
+        "Mulla on varaus nimen Salo.",
+        "Mulla on varaus nimenä Salo."
+      ],
+      "correct": 1,
+      "explanation": "'Mulla on varaus nimellä Salo.' — 'Nimellä' uses the adessive case (-lla) to mean 'under the name'. This is a fixed expression."
+    },
+    {
+      "id": "q8",
+      "subtopic": "hotel",
+      "mode": "mcq",
+      "text": "The receptionist says 'Saisinko henkilöllisyystodistuksen?' What are they asking for?",
+      "options": [
+        "Your credit card",
+        "Your ID / identification",
+        "Your booking confirmation",
+        "Your luggage"
+      ],
+      "correct": 1,
+      "explanation": "'Saisinko henkilöllisyystodistuksen?' = May I see your ID? 'Henkilöllisyystodistus' = identity document/ID. 'Saisinko' is a polite conditional form of 'saada' (to get/receive)."
+    },
+    {
+      "id": "q9",
+      "subtopic": "hotel",
+      "mode": "mcq",
+      "text": "The receptionist says 'Katsotaas...' What does this mean?",
+      "options": [
+        "Please wait a moment",
+        "Let me check / Let's see",
+        "I'm sorry, we're full",
+        "Welcome!"
+      ],
+      "correct": 1,
+      "explanation": "'Katsotaas' = Let me check / Let's see. It comes from 'katsoa' (to look/check) + -taas (a softening particle). Very common in service situations."
+    },
+    {
+      "id": "q10",
+      "subtopic": "hotel",
+      "mode": "mcq",
+      "text": "The receptionist says 'Kirjoittaisitko henkilötiedot tähän lomakkeeseen?' What do they want you to do?",
+      "options": [
+        "Show your passport",
+        "Sign the receipt",
+        "Fill in your personal details on this form",
+        "Write your room number"
+      ],
+      "correct": 2,
+      "explanation": "'Kirjoittaisitko henkilötiedot tähän lomakkeeseen?' = Could you fill in your personal details on this form? 'Kirjoittaisitko' is a polite conditional question."
+    },
+    {
+      "id": "q11",
+      "subtopic": "restaurant",
+      "mode": "mcq",
+      "text": "How do you ask 'Do you have a table for two?' at a restaurant?",
+      "options": [
+        "Haluaisimme pöydän kahdelle.",
+        "Onko teillä pöytä kahdelle?",
+        "Hei, olisiko teillä tilaa kahdelle?",
+        "Meillä on kaksi henkilöä."
+      ],
+      "correct": 2,
+      "explanation": "'Hei, olisiko teillä tilaa kahdelle?' = Hello, do you have a table for two? 'Olisiko' is a polite conditional form. 'Tilaa' = room/space (partitive). This is the most natural phrasing."
+    },
+    {
+      "id": "q12",
+      "subtopic": "restaurant",
+      "mode": "mcq",
+      "text": "How do you say 'There are four of us, is there a table for us?'",
+      "options": [
+        "Meitä on neljä, löytyisikö meille pöytää?",
+        "Me olemme neljä, onko pöytä?",
+        "Neljä ihmistä haluaa pöytää.",
+        "Meitä on neljä, haluamme pöytää."
+      ],
+      "correct": 0,
+      "explanation": "'Meitä on neljä, löytyisikö meille pöytää?' = There are four of us, is there a table for us? 'Meitä' = us (partitive), 'löytyisikö' = would there be found (polite conditional of löytyä)."
+    },
+    {
+      "id": "q13",
+      "subtopic": "restaurant",
+      "mode": "mcq",
+      "text": "The staff says 'Nyt just on täyttä, mutta tuolta vapautuu kohta yksi pöytä.' What does this mean?",
+      "options": [
+        "We're fully booked, sorry",
+        "It's fully booked right now, but a table will be free soon",
+        "We have a table for you now",
+        "Please wait outside"
+      ],
+      "correct": 1,
+      "explanation": "'Nyt just on täyttä' = It's full right now. 'Tuolta vapautuu kohta yksi pöytä' = a table will be free soon. 'Vapautua' = to become free/available. Positive news!"
+    },
+    {
+      "id": "q14",
+      "subtopic": "restaurant",
+      "mode": "mcq",
+      "text": "The staff says 'Joo, valitkaa vaan mieleinen pöytä.' What should you do?",
+      "options": [
+        "Wait to be seated",
+        "Choose any table you like",
+        "Go to the bar",
+        "Check the menu first"
+      ],
+      "correct": 1,
+      "explanation": "'Joo, valitkaa vaan mieleinen pöytä.' = Yes, just choose any table you like. 'Valitkaa' is the polite imperative of 'valita' (to choose). 'Mieleinen' = one you like."
+    },
+    {
+      "id": "q15",
+      "subtopic": "restaurant",
+      "mode": "mcq",
+      "text": "The staff asks 'Jäättekö odottamaan?' What are they asking?",
+      "options": [
+        "Do you want to order now?",
+        "Will you wait?",
+        "Do you have a reservation?",
+        "Will you pay now?"
+      ],
+      "correct": 1,
+      "explanation": "'Jäättekö odottamaan?' = Will you wait? 'Jäädä' = to stay/remain, 'odottamaan' = to wait (illative form of the 3rd infinitive). They're asking if you'll wait for a table."
+    },
+    {
+      "id": "q16",
+      "subtopic": "phone",
+      "mode": "mcq",
+      "text": "What is the correct order for starting a Finnish phone call?",
+      "options": [
+        "State purpose → Say your name → Try Finnish",
+        "Say your name first → State why you're calling → Try Finnish first",
+        "Ask a question → Say your name → Wait",
+        "Greet → Say the company name → Ask"
+      ],
+      "correct": 1,
+      "explanation": "In Finnish phone calls: 1) Say your name first ('Täs on [nimi]'), 2) State why you're calling ('Soitan kysyäkseni...'), 3) Try Finnish first if you're studying it."
+    },
+    {
+      "id": "q17",
+      "subtopic": "hotel",
+      "mode": "written",
+      "text": "How do you say 'Hello and welcome!' in Finnish? (Said by receptionist)",
+      "correctAnswers": ["Hei ja tervetuloa!", "Hei ja tervetuloa"],
+      "explanation": "'Hei ja tervetuloa!' is the standard welcome greeting. 'Tervetuloa' = welcome (literally 'came well')."
+    },
+    {
+      "id": "q18",
+      "subtopic": "restaurant",
+      "mode": "mcq",
+      "text": "How do you say 'I don't have a reservation, but do you have a table for one?'",
+      "options": [
+        "Mulla ei oo varausta, mut olisko teillä tilaa yhdelle?",
+        "Mulla on varaus yhdelle.",
+        "Olisiko teillä pöytä vapaana?",
+        "Haluaisin pöydän."
+      ],
+      "correct": 0,
+      "explanation": "'Mulla ei oo varausta, mut olisko teillä tilaa yhdelle?' This is perfect spoken Finnish: 'ei oo' instead of 'ei ole', 'mut' instead of 'mutta'. Natural puhekieli!"
+    },
+    {
+      "id": "q19",
+      "subtopic": "hotel",
+      "mode": "mcq",
+      "text": "The receptionist says 'Joo, täältä löytyy varaus Salo-nimellä.' What does this mean?",
+      "options": [
+        "Sorry, there's no reservation for Salo",
+        "Yes, we have a reservation under the name Salo",
+        "Yes, Salo is your room number",
+        "Please spell your name"
+      ],
+      "correct": 1,
+      "explanation": "'Täältä löytyy varaus Salo-nimellä' = We have (lit. 'from here is found') a reservation under the name Salo. 'Löytyy' = is found/exists. Good news!"
+    },
+    {
+      "id": "q20",
+      "subtopic": "phone",
+      "mode": "mcq",
+      "text": "Which phrase is most polite for booking an appointment on the phone?",
+      "options": [
+        "Mä tahdon ajan.",
+        "Anna mulle aika.",
+        "Haluaisin varata ajan.",
+        "Mun täytyy varata aika."
+      ],
+      "correct": 2,
+      "explanation": "'Haluaisin varata ajan' is the most polite — 'haluaisin' is conditional ('I would like'). 'Mun täytyy varata aika' is more urgent ('I need to'). 'Mä tahdon' and 'anna mulle' are too direct."
+    }
+  ]
+}

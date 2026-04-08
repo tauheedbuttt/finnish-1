@@ -1,0 +1,284 @@
+{
+  "title": "Järjestysluvut",
+  "titleEn": "Ordinal Numbers",
+  "description": "Learn Finnish ordinal numbers (1st, 2nd, 3rd...) and how to express dates",
+  "instructions": "Practice forming ordinal numbers and using them in dates — an essential everyday skill!",
+  "subtopics": [
+    { "id": "all", "name": "All Topics", "icon": "📚" },
+    { "id": "formation", "name": "Formation Rules (+s)", "icon": "🔧" },
+    { "id": "irregular", "name": "Irregular Forms (1st, 2nd, 3rd)", "icon": "⚠️" },
+    { "id": "dates", "name": "Dates in Finnish", "icon": "📅" },
+    { "id": "questions", "name": "Question Words", "icon": "❓" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "subtopic": "formation",
+      "mode": "mcq",
+      "text": "What is the basic rule for forming ordinal numbers in Finnish (4th and higher)?",
+      "options": [
+        "Add -nen to the number",
+        "Add -s to the counting number",
+        "Add -inen to the number",
+        "Remove the last vowel and add -as"
+      ],
+      "correct": 1,
+      "explanation": "The basic rule: add -s to the counting number. Example: neljä (four) → neljäs (fourth). Simple!"
+    },
+    {
+      "id": "q2",
+      "subtopic": "formation",
+      "mode": "mcq",
+      "text": "What is 'neljäs' in English?",
+      "options": ["Fourteen", "Four", "Fourth", "Forty"],
+      "correct": 2,
+      "explanation": "'Neljäs' = fourth. Formed from neljä (four) + s = neljäs."
+    },
+    {
+      "id": "q3",
+      "subtopic": "formation",
+      "mode": "mcq",
+      "text": "What is 'seitsemäs' in English?",
+      "options": ["Seventh", "Seventeen", "Seven", "Seventy"],
+      "correct": 0,
+      "explanation": "'Seitsemäs' = seventh. Formed from seitsemän (seven) + s. But wait — seitsemän ends in -n, so drop the n: seitsemä + s = seitsemäs."
+    },
+    {
+      "id": "q4",
+      "subtopic": "formation",
+      "mode": "mcq",
+      "text": "Numbers ending in -n: what happens before adding -s?",
+      "options": [
+        "Nothing — just add -s",
+        "Double the n before adding -s",
+        "Drop the -n before adding -s",
+        "Replace -n with -nen"
+      ],
+      "correct": 2,
+      "explanation": "For numbers ending in -n (like kahdeksan = 8, yhdeksän = 9), drop the -n before adding -s. kahdeksan → kahdeksa + s = kahdeksas."
+    },
+    {
+      "id": "q5",
+      "subtopic": "formation",
+      "mode": "mcq",
+      "text": "Numbers ending in -si: what happens before adding -s?",
+      "options": [
+        "Add -s directly: viisis",
+        "Drop the -i before adding -s: viides",
+        "Replace -si with -nen: viisinen",
+        "The whole word changes completely"
+      ],
+      "correct": 1,
+      "explanation": "For numbers ending in -si (like viisi = 5, kuusi = 6), drop the -i before adding -s. viisi → viide + s = viides. The stem changes: viisi → viide-, kuusi → kuude-."
+    },
+    {
+      "id": "q6",
+      "subtopic": "formation",
+      "mode": "mcq",
+      "text": "What is 'kahdeksas' in English?",
+      "options": ["Eighteen", "Eighty", "Eighth", "Eighteenth"],
+      "correct": 2,
+      "explanation": "'Kahdeksas' = eighth. From kahdeksan (8): drop -n → kahdeksa + s = kahdeksas."
+    },
+    {
+      "id": "q7",
+      "subtopic": "formation",
+      "mode": "mcq",
+      "text": "What is 'viides' in English?",
+      "options": ["Five", "Fifteen", "Fifth", "Fiftieth"],
+      "correct": 2,
+      "explanation": "'Viides' = fifth. From viisi (5): drop -i, stem changes to viide- + s = viides."
+    },
+    {
+      "id": "q8",
+      "subtopic": "irregular",
+      "mode": "mcq",
+      "text": "What is the ordinal form of 1 (first) in Finnish?",
+      "options": ["yksi", "yksinen", "ensimmäinen", "ekanen"],
+      "correct": 2,
+      "explanation": "'Ensimmäinen' = first. This is completely irregular — does NOT follow the +s rule. Spoken Finnish: 'eka'."
+    },
+    {
+      "id": "q9",
+      "subtopic": "irregular",
+      "mode": "mcq",
+      "text": "What is the spoken Finnish word for 'first'?",
+      "options": ["yksi", "ensimmäinen", "eka", "ensin"],
+      "correct": 2,
+      "explanation": "'Eka' = first (spoken Finnish). 'Ensimmäinen' is the formal/written form. Both are commonly used."
+    },
+    {
+      "id": "q10",
+      "subtopic": "irregular",
+      "mode": "mcq",
+      "text": "What is 'toinen' in this context: 'Tämä on toinen kirja'?",
+      "options": ["Other/another", "Second", "Both A and B — 'toinen' means both!", "Two"],
+      "correct": 2,
+      "explanation": "'Toinen' means both 'second' AND 'other/another' depending on context. 'Toinen kirja' = the second book OR another book. Context tells you which meaning."
+    },
+    {
+      "id": "q11",
+      "subtopic": "irregular",
+      "mode": "mcq",
+      "text": "What is 'kolmas' in English?",
+      "options": ["Thirteen", "Third", "Three", "Thirty"],
+      "correct": 1,
+      "explanation": "'Kolmas' = third. This is semi-irregular — it doesn't simply add -s to kolme. The -e changes to -as: kolm + as = kolmas."
+    },
+    {
+      "id": "q12",
+      "subtopic": "irregular",
+      "mode": "mcq",
+      "text": "Match: 1st = ensimmäinen / eka, 2nd = toinen / toka, 3rd = ?",
+      "options": ["kolminen", "kolmas", "kolmanen", "kolmonen"],
+      "correct": 1,
+      "explanation": "3rd = kolmas. The first three ordinals are all irregular in Finnish. After that (4th, 5th...) the +s rule applies regularly."
+    },
+    {
+      "id": "q13",
+      "subtopic": "dates",
+      "mode": "mcq",
+      "text": "What is the formula for dates in Finnish?",
+      "options": [
+        "Month + ordinal number + kuuta",
+        "Ordinal number + month name + -ta (partitive)",
+        "Cardinal number + month name",
+        "Day number + month in genitive"
+      ],
+      "correct": 1,
+      "explanation": "Finnish dates: Ordinal number + month name + -ta. Since all Finnish months end in -kuu, the partitive is always -ta: tammikuuta, helmikuuta, etc."
+    },
+    {
+      "id": "q14",
+      "subtopic": "dates",
+      "mode": "mcq",
+      "text": "How do you say 'the 8th of June' in Finnish?",
+      "options": [
+        "kahdeksatta kesäkuuta",
+        "kahdeksas kesäkuuta",
+        "kahdeksan kesäkuu",
+        "kahdeksannen kesäkuuta"
+      ],
+      "correct": 1,
+      "explanation": "'Kahdeksas kesäkuuta' = the 8th of June. Ordinal (kahdeksas) + month in partitive (kesäkuuta = kesäkuu + -ta)."
+    },
+    {
+      "id": "q15",
+      "subtopic": "dates",
+      "mode": "mcq",
+      "text": "How do you say 'the 1st of January' in Finnish?",
+      "options": [
+        "yksi tammikuuta",
+        "ensimmäinen tammikuuta",
+        "ensimmäistä tammikuuta",
+        "ensi tammikuuta"
+      ],
+      "correct": 1,
+      "explanation": "'Ensimmäinen tammikuuta' = the 1st of January. The ordinal stays in nominative form as the date marker."
+    },
+    {
+      "id": "q16",
+      "subtopic": "dates",
+      "mode": "mcq",
+      "text": "Finnish writes dates with a period after the number. How is 15.5. read aloud?",
+      "options": [
+        "viistoista viides",
+        "viidestoista toukokuuta",
+        "viisitoista toukokuuta",
+        "viidestoista toukokuun"
+      ],
+      "correct": 1,
+      "explanation": "'Viidestoista toukokuuta' = 15th of May. 15 = viidestoista (5th + ten = viides + toista). The period after 15.5. tells you it's a date, not a decimal."
+    },
+    {
+      "id": "q17",
+      "subtopic": "dates",
+      "mode": "mcq",
+      "text": "How do you say 'My birthday is the 1st of September'?",
+      "options": [
+        "Mun syntymäpäivä on eka syyskuuta.",
+        "Mun syntymäpäivä on eka syyskuu.",
+        "Mun syntymäpäivä on ensimmäinen syyskuu.",
+        "Mun syntymäpäivä on yksi syyskuuta."
+      ],
+      "correct": 0,
+      "explanation": "'Mun syntymäpäivä on eka syyskuuta.' = My birthday is the 1st of September. 'Eka' is the spoken form of 'ensimmäinen'. 'Syyskuuta' = syyskuu + -ta (partitive)."
+    },
+    {
+      "id": "q18",
+      "subtopic": "dates",
+      "mode": "written",
+      "text": "How do you say 'the 2nd of February' in spoken Finnish? (Use toka)",
+      "correctAnswers": ["toka helmikuuta", "toinen helmikuuta"],
+      "explanation": "'Toka helmikuuta' (spoken) or 'toinen helmikuuta' (formal) = the 2nd of February."
+    },
+    {
+      "id": "q19",
+      "subtopic": "questions",
+      "mode": "mcq",
+      "text": "What question word do you use to ask 'when?' in Finnish?",
+      "options": ["Mikä?", "Missä?", "Milloin?", "Miten?"],
+      "correct": 2,
+      "explanation": "'Milloin?' = When? Used for asking about dates and times. Example: 'Milloin sun syntymäpäivä on?' (When is your birthday?)"
+    },
+    {
+      "id": "q20",
+      "subtopic": "questions",
+      "mode": "mcq",
+      "text": "What does 'Kuinka mones?' or 'Monesko?' mean?",
+      "options": [
+        "How many?",
+        "What position / What date? (How manyeth?)",
+        "Which one?",
+        "When?"
+      ],
+      "correct": 1,
+      "explanation": "'Monesko?' or 'Kuinka mones?' = What date? / What position? These are the question forms for ordinal numbers. Example: 'Monesko päivä tänään on?' (What's today's date?)"
+    },
+    {
+      "id": "q21",
+      "subtopic": "questions",
+      "mode": "mcq",
+      "text": "How do you ask 'When is your birthday?' in Finnish?",
+      "options": [
+        "Mikä on sun syntymäpäivä?",
+        "Milloin sun syntymäpäivä on?",
+        "Monesko on sun syntymäpäivä?",
+        "Kuinka vanha olet?"
+      ],
+      "correct": 1,
+      "explanation": "'Milloin sun syntymäpäivä on?' = When is your birthday? You can also say 'Koska sun syntymäpäivä on?' (slightly more informal)."
+    },
+    {
+      "id": "q22",
+      "subtopic": "formation",
+      "mode": "written",
+      "text": "What is the ordinal form of 'kymmenen' (ten)? → _____",
+      "correctAnswers": ["kymmenes"],
+      "explanation": "kymmenen → drop -n → kymmen + es = kymmenes (tenth)."
+    },
+    {
+      "id": "q23",
+      "subtopic": "irregular",
+      "mode": "mcq",
+      "text": "What are the spoken Finnish words for 1st and 2nd?",
+      "options": [
+        "ensi ja toka",
+        "eka ja toka",
+        "yksi ja kaksi",
+        "ensimmäinen ja toinen"
+      ],
+      "correct": 1,
+      "explanation": "Spoken Finnish: 1st = eka, 2nd = toka. These are common in everyday speech. Formal: ensimmäinen and toinen."
+    },
+    {
+      "id": "q24",
+      "subtopic": "dates",
+      "mode": "mcq",
+      "text": "What is the partitive ending for Finnish month names (like tammikuu)?",
+      "options": ["-a", "-ta", "-ssa", "-n"],
+      "correct": 1,
+      "explanation": "All Finnish months end in -kuu, so the partitive singular is always -ta: tammikuuta, helmikuuta, maaliskuuta... This makes dates easy once you know the months!"
+    }
+  ]
+}

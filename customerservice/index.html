@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asiakaspalvelu - Customer Service</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../" class="back-link">← Takaisin aiheisiin</a>
+
+      <header class="quiz-header">
+        <h1>📞 Asiakaspalvelu</h1>
+        <p class="subtitle" id="topicTitle">Customer Service Phrases in Finnish</p>
+      </header>
+
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">📝 Multiple Choice</button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Customer Service Quiz</h2>
+          <p id="quizDescription">Practice real-life Finnish service situations</p>
+
+          <div class="formula-box">
+            <h3>📞 Phone Call Structure</h3>
+            <p class="formula-intro">Finnish phone calls have a clear structure. Follow these steps to sound natural.</p>
+
+            <div class="formula-examples">
+              <div class="fex">
+                <span class="fex-verb">Step 1</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">Täs on [nimi].</span>
+                <span class="fex-en">This is [name]. — Say your name first!</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Step 2</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">Soitan kysyäkseni... / Haluaisin...</span>
+                <span class="fex-en">I'm calling to ask... / I would like...</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Step 3</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">Mä opiskelen suomea ja haluaisin yrittää...</span>
+                <span class="fex-en">Try Finnish first! (Or: Voinko puhua englanniksi?)</span>
+              </div>
+            </div>
+
+            <div class="usage-notes">
+              <h4>📌 Key Phrases:</h4>
+              <div class="usage-chips">
+                <span class="usage-chip">Haluaisin varata ajan</span>
+                <span class="usage-chip">Mulla on varaus</span>
+                <span class="usage-chip">Olisiko teillä tilaa?</span>
+                <span class="usage-chip">Voinko puhua englanniksi?</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="imper-table-box">
+            <h3>📋 Situation Reference</h3>
+            <div class="imper-grid">
+              <div class="imp-card">
+                <span class="imp-verb">📞 Phone</span>
+                <span class="imp-pos">Täs on [nimi].</span>
+                <span class="imp-en">This is [name].</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">📞 Phone</span>
+                <span class="imp-pos">Soitan kysyäkseni...</span>
+                <span class="imp-en">I'm calling to ask...</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">🏨 Hotel</span>
+                <span class="imp-pos">Mulla on varaus kahdeksi yöksi.</span>
+                <span class="imp-en">I have a reservation for two nights.</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">🏨 Hotel</span>
+                <span class="imp-pos">Nimellä Salo.</span>
+                <span class="imp-en">Under the name Salo.</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">🏨 Hotel</span>
+                <span class="imp-pos">Saisinko henkilöllisyystodistuksen?</span>
+                <span class="imp-en">May I see your ID?</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">🍽️ Restaurant</span>
+                <span class="imp-pos">Olisiko teillä tilaa kahdelle?</span>
+                <span class="imp-en">Do you have a table for two?</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">🍽️ Restaurant</span>
+                <span class="imp-pos">Jäättekö odottamaan?</span>
+                <span class="imp-en">Will you wait?</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">🍽️ Restaurant</span>
+                <span class="imp-pos">Valitkaa vaan mieleinen pöytä.</span>
+                <span class="imp-en">Just choose any table you like.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subtopic-selection">
+            <h3>🎯 Select Exercise Type</h3>
+            <div class="exercise-type-group">
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="questions" checked />
+                <span>📋 Standard Questions (MCQ / Written)</span>
+              </label>
+            </div>
+          </div>
+
+          <div id="standardOptions">
+            <div class="subtopic-selection">
+              <h3>📚 Select Topic</h3>
+              <div class="subtopic-checkboxes" id="subtopicCheckboxes"></div>
+            </div>
+            <div class="question-count">
+              <label for="questionCount">Number of questions:</label>
+              <select id="questionCount">
+                <option value="5">5 questions</option>
+                <option value="10" selected>10 questions</option>
+                <option value="15">15 questions</option>
+                <option value="all">All questions</option>
+              </select>
+              <span class="available-count" id="availableCount"></span>
+            </div>
+          </div>
+
+          <div id="setOptions" class="hidden">
+            <div class="subtopic-selection">
+              <h3>📖 Select an Exercise</h3>
+              <div id="setList" class="set-list"></div>
+            </div>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita! 🚀</button>
+        </div>
+      </div>
+
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <div class="progress-container">
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+          <div class="question-container">
+            <div class="question-type" id="questionType">Customer Service</div>
+            <div class="word-display">
+              <span class="word" id="wordDisplay"></span>
+              <span class="ending" id="endingDisplay"></span>
+            </div>
+            <p class="question-english" id="questionEnglish"></p>
+          </div>
+          <div class="options-container" id="optionsContainer"></div>
+          <div class="written-container hidden" id="writtenContainer">
+            <input type="text" id="writtenAnswer" placeholder="Kirjoita vastaus..." autocomplete="off" autocapitalize="none" />
+            <button class="submit-btn" id="submitAnswer">Tarkista ✓</button>
+          </div>
+          <div class="feedback hidden" id="feedback">
+            <span class="feedback-icon" id="feedbackIcon">✓</span>
+            <span class="feedback-text" id="feedbackText"></span>
+            <p class="feedback-explanation" id="feedbackExplanation"></p>
+          </div>
+          <button class="next-btn hidden" id="nextBtn">Seuraava →</button>
+        </div>
+      </div>
+
+      <div id="exerciseSetScreen" class="screen hidden">
+        <div class="exercise-set-card">
+          <div class="exercise-set-header">
+            <button class="back-to-start-btn" id="backToStartBtn">← Takaisin</button>
+            <h2 id="exerciseSetTitle"></h2>
+            <p id="exerciseSetInstructions" class="exercise-instructions"></p>
+          </div>
+          <div id="exerciseWrite" class="exercise-type-block hidden">
+            <div class="note-box" id="writeNoteBox"></div>
+            <div id="writeItems" class="write-items"></div>
+            <button class="check-all-btn" id="checkWriteBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="writeScore"></div>
+          </div>
+          <div id="exerciseDrag" class="exercise-type-block hidden">
+            <div id="dragMatchItems" class="drag-match-container"></div>
+            <button class="check-all-btn" id="checkDragBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="dragScore"></div>
+          </div>
+          <div id="exerciseIdentify" class="exercise-type-block hidden">
+            <div class="identify-text-box" id="identifyTextBox"></div>
+            <div class="identify-info">
+              <span id="identifyCount" class="identify-count-badge">0 selected</span>
+              <span class="identify-target" id="identifyTarget"></span>
+            </div>
+            <button class="check-all-btn" id="checkIdentifyBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="identifyScore"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Mahtavaa!</h2>
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalQuestions">10</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+          <p class="score-message" id="scoreMessage"></p>
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Uudelleen</button>
+            <button class="home-btn" id="homeBtn">🏠 Takaisin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+{
+  "title": "Kulkuvälineet",
+  "titleEn": "Means of Transport",
+  "description": "Learn how to talk about transport in Finnish — add -lla/-llä to say 'by vehicle'",
+  "instructions": "Practice transport vocabulary and the adessive case (-lla/-llä) used to express means of travel.",
+  "subtopics": [
+    { "id": "all", "name": "All Topics", "icon": "📚" },
+    { "id": "vocabulary", "name": "Transport Vocabulary", "icon": "🚌" },
+    { "id": "ending", "name": "Adding -lla/-llä", "icon": "🔤" },
+    { "id": "sentences", "name": "Full Sentences", "icon": "💬" },
+    { "id": "exception", "name": "On Foot (kävellen)", "icon": "🚶" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What is 'bussi' in English?",
+      "options": ["Train", "Bus", "Metro", "Bicycle"],
+      "correct": 1,
+      "explanation": "'Bussi' = bus. It's a loanword from English/Swedish, easy to remember!"
+    },
+    {
+      "id": "q2",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What is the Finnish word for 'train'?",
+      "options": ["ratikka", "juna", "laiva", "metro"],
+      "correct": 1,
+      "explanation": "'Juna' = train. Other options: ratikka = tram, laiva = ship/boat, metro = metro."
+    },
+    {
+      "id": "q3",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What does 'pyörä' mean?",
+      "options": ["Airplane", "Motorcycle", "Bicycle", "Tram"],
+      "correct": 2,
+      "explanation": "'Pyörä' = bicycle (literally 'wheel'). Motorcycle is 'moottoripyörä' (motor + wheel)."
+    },
+    {
+      "id": "q4",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What is 'lentokone' in English?",
+      "options": ["Helicopter", "Airplane", "Ship", "Rocket"],
+      "correct": 1,
+      "explanation": "'Lentokone' = airplane. 'Lento' = flight, 'kone' = machine. Literally 'flying machine'!"
+    },
+    {
+      "id": "q5",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What does 'laiva' mean?",
+      "options": ["Taxi", "Boat/Ship", "Tram", "Bus"],
+      "correct": 1,
+      "explanation": "'Laiva' = ship/boat. Common on Finnish-Swedish ferry routes: Helsinki → Stockholm by laiva!"
+    },
+    {
+      "id": "q6",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What is the Finnish word for 'tram'?",
+      "options": ["juna", "bussi", "ratikka", "metro"],
+      "correct": 2,
+      "explanation": "'Ratikka' = tram (puhekieli/spoken). The formal word is 'raitiovaunu'. Helsinki has a famous tram network!"
+    },
+    {
+      "id": "q7",
+      "subtopic": "ending",
+      "mode": "mcq",
+      "text": "What case ending is used in Finnish to express 'by means of transport'?",
+      "options": ["Partitive (-a/-ä)", "Adessive (-lla/-llä)", "Genitive (-n)", "Inessive (-ssa/-ssä)"],
+      "correct": 1,
+      "explanation": "The adessive case (-lla/-llä) is used to say 'by [transport]'. Example: bussi → bussilla (by bus)."
+    },
+    {
+      "id": "q8",
+      "subtopic": "ending",
+      "mode": "mcq",
+      "text": "How do you say 'by bus' in Finnish?",
+      "options": ["bussissa", "bussia", "bussille", "bussilla"],
+      "correct": 3,
+      "explanation": "bussi + lla = bussilla. The word 'bussi' has back vowels (u, i) so we use -lla (not -llä)."
+    },
+    {
+      "id": "q9",
+      "subtopic": "ending",
+      "mode": "mcq",
+      "text": "How do you say 'by bicycle' in Finnish?",
+      "options": ["pyörässä", "pyörällä", "pyörältä", "pyörää"],
+      "correct": 1,
+      "explanation": "pyörä + llä = pyörällä. 'Pyörä' contains front vowels (ö, ä) so we use -llä (vowel harmony!)."
+    },
+    {
+      "id": "q10",
+      "subtopic": "ending",
+      "mode": "mcq",
+      "text": "Which vowel harmony rule decides between -lla and -llä?",
+      "options": [
+        "Word length determines it",
+        "Words with a, o, u → -lla; words with ä, ö, y → -llä",
+        "All transport words use -lla",
+        "It depends on the first letter of the word"
+      ],
+      "correct": 1,
+      "explanation": "Vowel harmony: if the word contains back vowels (a, o, u) use -lla. If it contains front vowels (ä, ö, y) use -llä. Example: juna (a) → junalla; pyörä (ä) → pyörällä."
+    },
+    {
+      "id": "q11",
+      "subtopic": "ending",
+      "mode": "written",
+      "text": "Convert to 'by train': juna → ?",
+      "correctAnswers": ["junalla"],
+      "explanation": "juna + lla = junalla. 'Juna' has back vowel 'a', so we use -lla."
+    },
+    {
+      "id": "q12",
+      "subtopic": "ending",
+      "mode": "written",
+      "text": "Convert to 'by metro': metro → ?",
+      "correctAnswers": ["metrolla"],
+      "explanation": "metro + lla = metrolla. 'Metro' has back vowels (e and o), so we use -lla."
+    },
+    {
+      "id": "q13",
+      "subtopic": "ending",
+      "mode": "written",
+      "text": "Convert to 'by airplane': lentokone → ?",
+      "correctAnswers": ["lentokoneella"],
+      "explanation": "lentokone + ella = lentokoneella. Words ending in 'e' double the vowel before the case ending: lentokone → lentokone + e + lla = lentokoneella."
+    },
+    {
+      "id": "q14",
+      "subtopic": "ending",
+      "mode": "written",
+      "text": "Convert to 'by taxi': taksi → ?",
+      "correctAnswers": ["taksilla"],
+      "explanation": "taksi + lla = taksilla. 'Taksi' has back vowels, so -lla."
+    },
+    {
+      "id": "q15",
+      "subtopic": "sentences",
+      "mode": "mcq",
+      "text": "How do you say 'I go to university by bus'?",
+      "options": [
+        "Mä meen bussissa yliopistolle",
+        "Mä meen bussilla yliopistolle",
+        "Mä meen bussia yliopistolle",
+        "Mä meen bussille yliopistolle"
+      ],
+      "correct": 1,
+      "explanation": "'Mä meen bussilla yliopistolle.' The adessive -lla on bussi (bussilla) means 'by bus'. Note: yliopistolle (allative) = to the university."
+    },
+    {
+      "id": "q16",
+      "subtopic": "sentences",
+      "mode": "mcq",
+      "text": "How do you say 'I go by ship from Turku to Stockholm'?",
+      "options": [
+        "Mä meen laivalla Turusta Tukholmaan",
+        "Mä meen laivassa Turusta Tukholmaan",
+        "Mä meen laivalla Turku Tukholma",
+        "Mä meen laivan Turusta Tukholmaan"
+      ],
+      "correct": 0,
+      "explanation": "'Mä meen laivalla Turusta Tukholmaan.' Laivalla (by ship), Turusta (from Turku, elative -sta), Tukholmaan (to Stockholm, illative -an)."
+    },
+    {
+      "id": "q17",
+      "subtopic": "sentences",
+      "mode": "written",
+      "text": "Translate: 'I go by bike to work.' (Mä meen ___ töihin)",
+      "correctAnswers": ["pyörällä", "mä meen pyörällä töihin"],
+      "explanation": "pyörä + llä = pyörällä (by bike). 'Töihin' = to work (allative plural of työ)."
+    },
+    {
+      "id": "q18",
+      "subtopic": "sentences",
+      "mode": "mcq",
+      "text": "Complete: 'Mä meen ___ Helsinkiin.' (I go by train to Helsinki)",
+      "options": ["junassa", "junan", "junalla", "junalta"],
+      "correct": 2,
+      "explanation": "'Mä meen junalla Helsinkiin.' Junalla = by train (juna + lla). Helsinkiin = to Helsinki (illative)."
+    },
+    {
+      "id": "q19",
+      "subtopic": "sentences",
+      "mode": "mcq",
+      "text": "Complete: 'Mä meen ___ Saksaan.' (I go by airplane to Germany)",
+      "options": ["lentokoneella", "lentokoneessa", "lentokoneelta", "lentokoneelle"],
+      "correct": 0,
+      "explanation": "'Mä meen lentokoneella Saksaan.' Lentokoneella = by airplane. Saksaan = to Germany."
+    },
+    {
+      "id": "q20",
+      "subtopic": "exception",
+      "mode": "mcq",
+      "text": "How do you say 'on foot' in Finnish? (This is an exception!)",
+      "options": ["jalalla", "jalkalla", "kävellen", "kävelyllä"],
+      "correct": 2,
+      "explanation": "'Kävellen' = on foot. This is an exception — it does NOT use -lla/-llä. 'Kävellä' is the verb 'to walk', and kävellen is its instructive form."
+    },
+    {
+      "id": "q21",
+      "subtopic": "exception",
+      "mode": "mcq",
+      "text": "Why doesn't 'on foot' use -lla/-llä like other transport words?",
+      "options": [
+        "Walking is not transport",
+        "'Kävellen' comes from a verb (kävellä = to walk), not a noun transport word",
+        "Finnish has no word for walking",
+        "It's a loanword"
+      ],
+      "correct": 1,
+      "explanation": "All other transport words are nouns (bussi, juna, pyörä), so they get -lla/-llä. But 'on foot' uses the verb 'kävellä' (to walk) in its instructive form: kävellen. It has a different grammatical origin."
+    },
+    {
+      "id": "q22",
+      "subtopic": "exception",
+      "mode": "mcq",
+      "text": "Complete: 'Mä meen ___ kauppaan.' (I go on foot to the store)",
+      "options": ["jalalla", "kävellen", "jalan", "kävely"],
+      "correct": 1,
+      "explanation": "'Mä meen kävellen kauppaan.' = I go on foot to the store. Remember: kävellen, not jalalla!"
+    },
+    {
+      "id": "q23",
+      "subtopic": "ending",
+      "mode": "mcq",
+      "text": "How do you say 'by motorcycle'?",
+      "options": ["moottoripyörällä", "moottoripyörässä", "moottoripyörältä", "moottoripyörään"],
+      "correct": 0,
+      "explanation": "moottoripyörä + llä = moottoripyörällä. The word contains front vowels (ö, ä) so -llä is used."
+    },
+    {
+      "id": "q24",
+      "subtopic": "vocabulary",
+      "mode": "written",
+      "text": "What is the Finnish word for 'metro/subway'?",
+      "correctAnswers": ["metro"],
+      "explanation": "'Metro' is the same word in Finnish! It's a loanword used in Helsinki's public transport."
+    },
+    {
+      "id": "q25",
+      "subtopic": "sentences",
+      "mode": "mcq",
+      "text": "How do you say 'I go by metro from Pasila to the city centre'?",
+      "options": [
+        "Mä meen metrolla Pasilassa keskustaan",
+        "Mä meen metrolla Pasilasta keskustaan",
+        "Mä meen metrolla Pasilaan keskustasta",
+        "Mä meen metrossa Pasilasta keskustaan"
+      ],
+      "correct": 1,
+      "explanation": "'Mä meen metrolla Pasilasta keskustaan.' Metrolla = by metro. Pasilasta = from Pasila (elative -sta). Keskustaan = to the centre (illative -an)."
+    }
+  ]
+}

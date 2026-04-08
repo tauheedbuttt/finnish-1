@@ -1,5 +1,6 @@
 /* ========================================
-   Imperatiivi Quiz - JavaScript
+   Finnish Quiz Engine - Pattern 2
+   Supports both legacy and modern question formats
 ======================================== */
 
 class ImperatiivisQuiz {
@@ -28,13 +29,13 @@ class ImperatiivisQuiz {
     try {
       const res = await fetch("questions.json");
       const data = await res.json();
-      this.questions = data.questions || [];
+      this.questions = (data.questions || []).map(q => this.normalizeQuestion(q));
       this.questionSets = data.question_sets || [];
       this.subtopics = data.subtopics || [];
 
       document.getElementById("topicTitle").textContent = data.description;
       document.getElementById("quizTitle").textContent = data.title;
-      document.getElementById("quizDescription").textContent = data.instructions;
+      document.getElementById("quizDescription").textContent = data.instructions || data.description;
 
       this.populateSubtopicCheckboxes();
       this.populateSetList();
@@ -42,6 +43,24 @@ class ImperatiivisQuiz {
     } catch (e) {
       console.error("Error loading data:", e);
     }
+  }
+
+  /* Normalise both old (type/question/answer) and new (mode/text/correct-index) formats */
+  normalizeQuestion(q) {
+    const n = { ...q };
+    // Unify type field
+    if (!n.type && n.mode) n.type = n.mode;
+    // Unify question text field
+    if (!n.question) n.question = n.text || n.sentence || '';
+    // Resolve index-based correct answer to a string
+    if (n.options && typeof n.correct === 'number' && n.answer === undefined) {
+      n.answer = n.options[n.correct];
+    }
+    // Resolve correctAnswers array to a primary answer string
+    if (!n.answer && Array.isArray(n.correctAnswers) && n.correctAnswers.length > 0) {
+      n.answer = n.correctAnswers[0];
+    }
+    return n;
   }
 
   populateSubtopicCheckboxes() {
@@ -155,7 +174,7 @@ class ImperatiivisQuiz {
     });
     document.getElementById("backToStartBtn").addEventListener("click", () => this.showScreen("startScreen"));
     document.getElementById("retryBtn").addEventListener("click", () => this.showScreen("startScreen"));
-    document.getElementById("homeBtn").addEventListener("click", () => (window.location.href = "../../"));
+    document.getElementById("homeBtn").addEventListener("click", () => (window.location.href = "../"));
     document.getElementById("checkWriteBtn").addEventListener("click", () => this.checkWriteAnswers());
     document.getElementById("checkDragBtn").addEventListener("click", () => this.checkDragMatchAnswers());
     document.getElementById("checkIdentifyBtn").addEventListener("click", () => this.checkIdentifyAnswers());
@@ -186,30 +205,40 @@ class ImperatiivisQuiz {
     const endEl = document.getElementById("endingDisplay");
     const engEl = document.getElementById("questionEnglish");
 
-    if (q.type === "mcq" || q.type === "sentence") {
+    const qType = q.type || "mcq";
+    const qText = q.question || q.text || q.sentence || "";
+
+    if (qType === "mcq" || qType === "sentence") {
       typeEl.textContent = q.subtopic === "translate" ? "Käännä – Translate" :
                            q.subtopic === "fill" ? "Täydennä – Fill in" :
                            q.subtopic === "identify" ? "Tunnista – Identify" : "Harjoitus";
-      wordEl.textContent = "⚡";
+      wordEl.textContent = q.word || "❓";
       endEl.textContent = "";
-      engEl.textContent = q.question || q.sentence;
-    } else if (q.type === "write") {
+      engEl.textContent = qText;
+    } else if (qType === "written" || qType === "write") {
       typeEl.textContent = "Kirjoita – Write";
-      wordEl.textContent = "✍️";
+      wordEl.textContent = q.word || "✍️";
       endEl.textContent = "";
-      engEl.textContent = q.question;
-    } else if (q.type === "identify") {
+      engEl.textContent = qText;
+    } else if (qType === "identify") {
       typeEl.textContent = "Tunnista – Identify";
-      wordEl.textContent = q.word;
+      wordEl.textContent = q.word || "🔍";
       endEl.textContent = "";
-      engEl.textContent = q.question;
+      engEl.textContent = qText;
+    } else {
+      typeEl.textContent = "Harjoitus";
+      wordEl.textContent = q.word || "❓";
+      endEl.textContent = "";
+      engEl.textContent = qText;
     }
 
     document.getElementById("feedback").classList.add("hidden");
     document.getElementById("feedback").classList.remove("correct", "incorrect");
     document.getElementById("nextBtn").classList.add("hidden");
 
-    if (this.mode === "mcq" && (q.options || q.type === "mcq")) {
+    const showMCQ = this.mode === "mcq" && q.options &&
+                    qType !== "written" && qType !== "write";
+    if (showMCQ) {
       document.getElementById("optionsContainer").classList.remove("hidden");
       document.getElementById("writtenContainer").classList.add("hidden");
       this.buildOptions(q);
@@ -226,19 +255,7 @@ class ImperatiivisQuiz {
     container.innerHTML = "";
 
     const correct = q.answer;
-    let options;
-
-    if (q.options) {
-      // Use predefined options from JSON
-      options = this.shuffle([...q.options]);
-    } else {
-      // Auto-generate from same subtopic
-      const pool = this.questions
-        .filter((x) => x.id !== q.id && x.subtopic === q.subtopic && x.answer && x.answer !== correct)
-        .map((x) => x.answer)
-        .filter((a, i, arr) => arr.indexOf(a) === i);
-      options = this.shuffle([correct, ...this.shuffle(pool).slice(0, 3)]);
-    }
+    const options = this.shuffle([...q.options]);
 
     options.forEach((opt) => {
       const btn = document.createElement("button");
@@ -254,7 +271,7 @@ class ImperatiivisQuiz {
       b.classList.add("disabled");
       if (b.textContent === correct) b.classList.add("correct");
     });
-    const isCorrect = selected.toLowerCase().trim() === correct.toLowerCase().trim();
+    const isCorrect = selected.toLowerCase().trim() === (correct || "").toLowerCase().trim();
     if (isCorrect) { btn.classList.add("correct"); this.score++; }
     else btn.classList.add("incorrect");
     this.showFeedback(isCorrect, this.selectedQuestions[this.currentIndex]);
@@ -264,8 +281,18 @@ class ImperatiivisQuiz {
     const input = document.getElementById("writtenAnswer");
     const userAns = input.value.trim().toLowerCase();
     const q = this.selectedQuestions[this.currentIndex];
-    const correct = q.answer.toLowerCase();
-    const isCorrect = userAns === correct || userAns === correct.split("/")[0].trim();
+
+    let isCorrect = false;
+    if (Array.isArray(q.correctAnswers) && q.correctAnswers.length > 0) {
+      isCorrect = q.correctAnswers.some(a => {
+        const ca = a.toLowerCase().trim();
+        return userAns === ca || userAns === ca.split("/")[0].trim();
+      });
+    } else if (q.answer) {
+      const correct = q.answer.toLowerCase();
+      isCorrect = userAns === correct || userAns === correct.split("/")[0].trim();
+    }
+
     input.style.borderColor = isCorrect ? "#e8511a" : "#e53e3e";
     input.style.background = isCorrect ? "#fff3ee" : "#fff5f5";
     document.getElementById("submitAnswer").disabled = true;
@@ -278,8 +305,9 @@ class ImperatiivisQuiz {
     fb.classList.remove("hidden", "correct", "incorrect");
     fb.classList.add(isCorrect ? "correct" : "incorrect");
     document.getElementById("feedbackIcon").textContent = isCorrect ? "✓" : "✗";
+    const correctDisplay = Array.isArray(q.correctAnswers) ? q.correctAnswers[0] : q.answer;
     document.getElementById("feedbackText").textContent = isCorrect
-      ? "Oikein! 🎉" : `Väärin! Oikea vastaus: ${q.answer}`;
+      ? "Oikein! 🎉" : `Väärin! Oikea vastaus: ${correctDisplay}`;
     document.getElementById("feedbackExplanation").textContent = q.explanation || "";
     document.getElementById("nextBtn").classList.remove("hidden");
   }
@@ -317,7 +345,7 @@ class ImperatiivisQuiz {
     );
     document.getElementById("exerciseSetTitle").textContent = set.title;
     document.getElementById("exerciseSetInstructions").innerHTML =
-      `<strong>${set.instructions_fi}</strong><br>${set.instructions_en}`;
+      `<strong>${set.instructions_fi || set.instructions || ''}</strong><br>${set.instructions_en || ''}`;
 
     this.showScreen("exerciseSetScreen");
 
@@ -359,7 +387,6 @@ class ImperatiivisQuiz {
         const sentEl = document.createElement("div");
         sentEl.className = "write-sentence";
 
-        // Build context sentence with verb info
         const verbInfo = document.createElement("div");
         verbInfo.className = "verb-info";
         verbInfo.innerHTML = `<span class="verb-base">${item.verb}</span> <span class="verb-meaning">= ${item.meaning}</span>`;
@@ -369,7 +396,6 @@ class ImperatiivisQuiz {
 
         const parts = item.context_fi.split("___");
 
-        // For negative: two blanks (älä + verb)
         if (section.type === "negative") {
           const alaInput = document.createElement("input");
           alaInput.type = "text";
@@ -411,7 +437,7 @@ class ImperatiivisQuiz {
 
         const stepsEl = document.createElement("div");
         stepsEl.className = "steps-hint hidden";
-        item.steps.forEach((step) => {
+        (item.steps || []).forEach((step) => {
           const s = document.createElement("span");
           s.className = "step-chip";
           s.textContent = step;
@@ -472,7 +498,7 @@ class ImperatiivisQuiz {
     document.getElementById("checkWriteBtn").style.display = "none";
   }
 
-  /* --- Drag Match (Finnish advice → English) --- */
+  /* --- Drag Match --- */
 
   renderDragMatchExercise(set) {
     const block = document.getElementById("exerciseDrag");
@@ -481,21 +507,17 @@ class ImperatiivisQuiz {
     const container = document.getElementById("dragMatchItems");
     container.innerHTML = "";
 
-    // Shuffle translations for the right column
     const shuffledTranslations = this.shuffle([...set.items]);
 
-    // Left column: Finnish phrases (fixed)
     const leftCol = document.createElement("div");
     leftCol.className = "drag-match-col drag-match-left";
     leftCol.innerHTML = "<div class='drag-col-header'>🇫🇮 Suomi</div>";
 
-    // Right column: English translations (draggable)
     const rightCol = document.createElement("div");
     rightCol.className = "drag-match-col drag-match-right";
     rightCol.innerHTML = "<div class='drag-col-header'>🇬🇧 English</div>";
 
     set.items.forEach((item) => {
-      // Finnish card (fixed, has drop zone)
       const fiCard = document.createElement("div");
       fiCard.className = "match-fi-card";
       fiCard.dataset.id = item.id;
@@ -517,20 +539,15 @@ class ImperatiivisQuiz {
         const draggedId = e.dataTransfer.getData("text/plain");
         const draggedCard = document.querySelector(`.match-en-card[data-id="${draggedId}"]`);
         if (!draggedCard) return;
-
-        // If slot already has something, put it back in right column
         if (dropSlot.dataset.placedId) {
           const oldCard = document.querySelector(`.match-en-card[data-id="${dropSlot.dataset.placedId}"]`);
           if (oldCard) { oldCard.classList.remove("placed"); rightCol.appendChild(oldCard); }
         }
-
         dropSlot.dataset.placedId = draggedId;
         dropSlot.textContent = "";
         dropSlot.appendChild(draggedCard);
         draggedCard.classList.add("placed");
       });
-
-      // Touch support for drop slots
       dropSlot.addEventListener("touchstart", (e) => { e.preventDefault(); }, { passive: false });
 
       fiCard.appendChild(fiText);
@@ -538,7 +555,6 @@ class ImperatiivisQuiz {
       leftCol.appendChild(fiCard);
     });
 
-    // Draggable English translations
     shuffledTranslations.forEach((item) => {
       const enCard = document.createElement("div");
       enCard.className = "match-en-card";
@@ -551,8 +567,6 @@ class ImperatiivisQuiz {
         enCard.classList.add("dragging");
       });
       enCard.addEventListener("dragend", () => enCard.classList.remove("dragging"));
-
-      // Touch drag support
       enCard.addEventListener("touchstart", this.matchTouchStart.bind(this), { passive: true });
       enCard.addEventListener("touchmove", this.matchTouchMove.bind(this), { passive: false });
       enCard.addEventListener("touchend", this.matchTouchEnd.bind(this));
@@ -576,8 +590,8 @@ class ImperatiivisQuiz {
   matchTouchMove(e) {
     e.preventDefault();
     const touch = e.touches[0];
-    const el = document.elementFromPoint(touch.clientX, touch.clientY);
     document.querySelectorAll(".match-drop-slot").forEach((d) => d.classList.remove("drag-over"));
+    const el = document.elementFromPoint(touch.clientX, touch.clientY);
     if (el && (el.classList.contains("match-drop-slot") || el.closest(".match-drop-slot"))) {
       const slot = el.classList.contains("match-drop-slot") ? el : el.closest(".match-drop-slot");
       slot.classList.add("drag-over");
@@ -591,17 +605,16 @@ class ImperatiivisQuiz {
 
     const slot = target && (target.classList.contains("match-drop-slot") ? target : target.closest(".match-drop-slot"));
     if (slot && this._touchCard) {
-      const rightCol = document.querySelector(".drag-match-right");
+      const rCol = document.querySelector(".drag-match-right");
       if (slot.dataset.placedId) {
         const oldCard = document.querySelector(`.match-en-card[data-id="${slot.dataset.placedId}"]`);
-        if (oldCard) { oldCard.classList.remove("placed"); rightCol.appendChild(oldCard); }
+        if (oldCard) { oldCard.classList.remove("placed"); rCol.appendChild(oldCard); }
       }
       slot.dataset.placedId = this._touchCard.dataset.id;
       slot.textContent = "";
       slot.appendChild(this._touchCard);
       this._touchCard.classList.add("placed");
     }
-
     if (this._touchCard) this._touchCard.classList.remove("dragging");
     this._touchCard = null;
   }
@@ -616,7 +629,6 @@ class ImperatiivisQuiz {
       slot.classList.remove("drag-over");
       slot.classList.add(isCorrect ? "slot-correct" : "slot-incorrect");
       if (!isCorrect) {
-        // Find correct English text
         const correctSet = this.questionSets.find((s) => s.type === "drag_match");
         if (correctSet) {
           const correctItem = correctSet.items.find((i) => i.id === correctId);
@@ -646,12 +658,11 @@ class ImperatiivisQuiz {
     textBox.innerHTML = "";
 
     this._identifyCorrect = new Set(set.correct_imperatives.map((w) => w.toLowerCase()));
-    this._identifyNegative = new Set(set.negative_imperatives.map((w) => w.toLowerCase()));
+    this._identifyNegative = new Set((set.negative_imperatives || []).map((w) => w.toLowerCase()));
 
     document.getElementById("identifyTarget").textContent =
       `Find all ${set.total_count} imperatives (including negative forms)`;
 
-    // Tokenise text: split on spaces and punctuation but keep punctuation attached
     const words = set.text_fi.split(/(\s+)/);
     let selected = new Set();
 
@@ -660,8 +671,6 @@ class ImperatiivisQuiz {
         textBox.appendChild(document.createTextNode(token));
         return;
       }
-
-      // Strip trailing punctuation for comparison
       const clean = token.replace(/[.,!?;:]+$/, "").toLowerCase();
       const punctuation = token.slice(clean.length);
 
@@ -679,8 +688,7 @@ class ImperatiivisQuiz {
           selected.add(clean);
           span.classList.add("selected");
         }
-        document.getElementById("identifyCount").textContent =
-          `${selected.size} selected`;
+        document.getElementById("identifyCount").textContent = `${selected.size} selected`;
       });
 
       textBox.appendChild(span);

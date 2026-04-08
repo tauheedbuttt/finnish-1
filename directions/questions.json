@@ -1,0 +1,259 @@
+{
+  "title": "Suunnistus",
+  "titleEn": "Giving Directions",
+  "description": "Learn Finnish direction vocabulary and how to give and understand directions",
+  "instructions": "Practice direction words, location terms, and imperative forms used when giving directions in Finnish.",
+  "subtopics": [
+    { "id": "all", "name": "All Topics", "icon": "📚" },
+    { "id": "vocabulary", "name": "Direction Vocabulary", "icon": "🗺️" },
+    { "id": "imperative", "name": "Imperative for Directions", "icon": "👉" },
+    { "id": "giving", "name": "Giving Full Directions", "icon": "🚶" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What does 'vasemmalle' mean?",
+      "options": ["On the left", "To the left", "On the right", "To the right"],
+      "correct": 1,
+      "explanation": "'Vasemmalle' = to the left (direction of movement, allative). 'Vasemmalla' = on the left (location, adessive). Example: Käänny vasemmalle! (Turn to the left!)"
+    },
+    {
+      "id": "q2",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What does 'oikealla' mean?",
+      "options": ["To the right", "On the right", "Straight ahead", "To the left"],
+      "correct": 1,
+      "explanation": "'Oikealla' = on the right (location). 'Oikealle' = to the right (direction). The -lla ending shows location; -lle shows direction toward."
+    },
+    {
+      "id": "q3",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What does 'eteenpäin' mean?",
+      "options": ["Backward", "To the left", "Forward / Straight ahead", "Past/by"],
+      "correct": 2,
+      "explanation": "'Eteenpäin' = forward / straight ahead. 'Eteen' = to the front, 'päin' = toward. Used in 'kävele eteenpäin' (walk forward)."
+    },
+    {
+      "id": "q4",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What is a 'risteys' in Finnish?",
+      "options": ["Traffic lights", "Street", "Crossing / intersection", "Bridge"],
+      "correct": 2,
+      "explanation": "'Risteys' = crossing / intersection. 'Ensimmäisestä risteyksestä oikealle' = turn right at the first intersection."
+    },
+    {
+      "id": "q5",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What are 'liikennevalot'?",
+      "options": ["Traffic lights", "Street signs", "Pedestrian crossings", "Speed bumps"],
+      "correct": 0,
+      "explanation": "'Liikennevalot' = traffic lights. 'Liikenne' = traffic, 'valot' = lights (plural of valo)."
+    },
+    {
+      "id": "q6",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What is the difference between 'vasemmalla' and 'vasemmalle'?",
+      "options": [
+        "No difference — they mean the same thing",
+        "Vasemmalla = on the left (location); vasemmalle = to the left (direction toward)",
+        "Vasemmalla = turn left; vasemmalle = go left",
+        "Vasemmalla is formal; vasemmalle is informal"
+      ],
+      "correct": 1,
+      "explanation": "Key distinction! -lla/-llä = location (adessive): vasemmalla = on the left (where it is). -lle/-lle = direction toward (allative): vasemmalle = to the left (where you're going)."
+    },
+    {
+      "id": "q7",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What does 'suoraan' mean?",
+      "options": ["Slowly", "Straight (ahead)", "Nearby", "Far away"],
+      "correct": 1,
+      "explanation": "'Suoraan' = straight. Often used with 'eteenpäin': 'mene suoraan eteenpäin' (go straight ahead). 'Suoraan' can also mean 'directly' in other contexts."
+    },
+    {
+      "id": "q8",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What does 'lähellä' mean?",
+      "options": ["Far away", "Close by / nearby", "Next to", "In between"],
+      "correct": 1,
+      "explanation": "'Lähellä' = close by / nearby. Opposite: 'kaukana' = far away. Example: 'Onko se lähellä?' (Is it nearby?)"
+    },
+    {
+      "id": "q9",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "How do you say '[X distance] away' in Finnish?",
+      "options": [
+        "[distance] + kaukana",
+        "[distance] + päässä",
+        "[distance] + etäisyydellä",
+        "[distance] + lähellä"
+      ],
+      "correct": 1,
+      "explanation": "[distance] + päässä = [X] away. Example: 'kaksi kilometriä päässä' = two kilometers away. 'Päässä' comes from 'pää' (end/head)."
+    },
+    {
+      "id": "q10",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What does 'ohi' mean in directions?",
+      "options": ["Turn", "Past / by", "Stop", "Around"],
+      "correct": 1,
+      "explanation": "'Ohi' = past / by. Example: 'Mene kaupan ohi' (Go past the store). 'Ohi' indicates passing something without entering."
+    },
+    {
+      "id": "q11",
+      "subtopic": "imperative",
+      "mode": "mcq",
+      "text": "How do you form the imperative for directions? (from 'mennä' - to go)",
+      "options": [
+        "Take mä form, remove n: menet → mene!",
+        "Take basic form: mennä!",
+        "Take hän form: menee!",
+        "Add -kaa to the stem: menkaa!"
+      ],
+      "correct": 0,
+      "explanation": "Imperative for directions: take the sä form (you), remove the personal ending -t. mennä → sä menet → remove -t → Mene! (Go!)"
+    },
+    {
+      "id": "q12",
+      "subtopic": "imperative",
+      "mode": "mcq",
+      "text": "What is the imperative of 'kävellä' (to walk)?",
+      "options": ["kävele!", "kävellä!", "kävelee!", "kävely!"],
+      "correct": 0,
+      "explanation": "kävellä → sä kävelet → remove -t → Kävele! (Walk!). This is the direction-giving imperative."
+    },
+    {
+      "id": "q13",
+      "subtopic": "imperative",
+      "mode": "mcq",
+      "text": "What is the imperative of 'kääntyä' (to turn)?",
+      "options": ["käänny!", "kääntyä!", "kääntyy!", "kääntyö!"],
+      "correct": 0,
+      "explanation": "kääntyä → sä käännyt → remove -t → Käänny! (Turn!). Note the vowel change: kääntyä → käännyt → käänny."
+    },
+    {
+      "id": "q14",
+      "subtopic": "imperative",
+      "mode": "mcq",
+      "text": "How do you say 'Don't turn!' in Finnish (negative imperative)?",
+      "options": ["ei käänny!", "älä kääntyä!", "älä käänny!", "ei kääntyy!"],
+      "correct": 2,
+      "explanation": "Negative imperative: add 'älä' before the positive imperative form. Käänny! (Turn!) → Älä käänny! (Don't turn!)"
+    },
+    {
+      "id": "q15",
+      "subtopic": "imperative",
+      "mode": "mcq",
+      "text": "How do you say 'Walk!' in Finnish (as a direction instruction)?",
+      "options": ["Kävellä!", "Kävelkää!", "Kävele!", "Kävely!"],
+      "correct": 2,
+      "explanation": "'Kävele!' = Walk! (imperative). The informal singular imperative is used for giving directions to one person."
+    },
+    {
+      "id": "q16",
+      "subtopic": "giving",
+      "mode": "mcq",
+      "text": "How do you say 'Turn right at the first intersection'?",
+      "options": [
+        "Käänny ensimmäinen risteys oikealla",
+        "Käänny ensimmäisestä risteyksestä oikealle",
+        "Käänny ensimmäiseen risteykseen oikealla",
+        "Käänny risteykselle ensimmäinen oikealle"
+      ],
+      "correct": 1,
+      "explanation": "'Käänny ensimmäisestä risteyksestä oikealle.' Ensimmäisestä risteyksestä = from the first intersection (elative). Oikealle = to the right (allative)."
+    },
+    {
+      "id": "q17",
+      "subtopic": "giving",
+      "mode": "mcq",
+      "text": "In the sample directions: 'Käänny pohjoiseen. Kävele eteenpäin.' What do these two sentences mean?",
+      "options": [
+        "Walk north. Turn forward.",
+        "Turn north. Walk forward.",
+        "Go north. Walk straight.",
+        "Turn left. Go north."
+      ],
+      "correct": 1,
+      "explanation": "'Käänny' = turn (from kääntyä). 'Pohjoiseen' = to the north (illative: pohjoinen → pohjoiseen). 'Kävele eteenpäin' = walk forward. So: Turn north. Walk forward."
+    },
+    {
+      "id": "q18",
+      "subtopic": "giving",
+      "mode": "mcq",
+      "text": "'Olet perillä!' — what does this phrase mean?",
+      "options": [
+        "You're lost!",
+        "You have arrived! / You're there!",
+        "Turn around!",
+        "You're close!"
+      ],
+      "correct": 1,
+      "explanation": "'Olet perillä!' = You have arrived! / You're there! 'Perillä' is an adverb meaning 'at the destination'. Used at the end of giving directions."
+    },
+    {
+      "id": "q19",
+      "subtopic": "vocabulary",
+      "mode": "written",
+      "text": "How do you say 'straight ahead' in Finnish?",
+      "correctAnswers": ["eteenpäin", "suoraan", "suoraan eteenpäin"],
+      "explanation": "'Eteenpäin' or 'suoraan eteenpäin' = straight ahead. Both are commonly used in directions."
+    },
+    {
+      "id": "q20",
+      "subtopic": "giving",
+      "mode": "mcq",
+      "text": "Which imperative form is used for giving directions to one person?",
+      "options": [
+        "Plural imperative (kävellä kaa!)",
+        "Singular imperative (kävele!)",
+        "Conditional (kävelisit)",
+        "Infinitive (kävellä)"
+      ],
+      "correct": 1,
+      "explanation": "The singular imperative (kävele!, käänny!, mene!) is used for directions to one person. This is the most natural form for giving directions."
+    },
+    {
+      "id": "q21",
+      "subtopic": "vocabulary",
+      "mode": "mcq",
+      "text": "What is the Finnish word for 'street'?",
+      "options": ["tie", "katu", "reitti", "polku"],
+      "correct": 1,
+      "explanation": "'Katu' = street (in a city). 'Tie' = road (more general, often outside cities). 'Reitti' = route. 'Polku' = path/trail."
+    },
+    {
+      "id": "q22",
+      "subtopic": "imperative",
+      "mode": "written",
+      "text": "Form the imperative of 'mennä' (to go): sä menet → _____!",
+      "correctAnswers": ["mene", "mene!"],
+      "explanation": "mennä → sä menet → remove -t → Mene! (Go!). The imperative is just the sä form without the -t ending."
+    },
+    {
+      "id": "q23",
+      "subtopic": "giving",
+      "mode": "mcq",
+      "text": "How do you give this instruction: 'Walk past the store'?",
+      "options": [
+        "Kävele kauppaan.",
+        "Kävele kaupan ohi.",
+        "Kävele kaupalle.",
+        "Kävele kaupassa."
+      ],
+      "correct": 1,
+      "explanation": "'Kävele kaupan ohi.' = Walk past the store. 'Ohi' = past/by. 'Kaupan' is the genitive of 'kauppa' (store) — genitive is used before postpositions like 'ohi'."
+    }
+  ]
+}

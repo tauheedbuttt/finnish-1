@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Järjestysluvut - Ordinal Numbers</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../" class="back-link">← Takaisin aiheisiin</a>
+
+      <header class="quiz-header">
+        <h1>📅 Järjestysluvut</h1>
+        <p class="subtitle" id="topicTitle">Ordinal Numbers in Finnish</p>
+      </header>
+
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">📝 Multiple Choice</button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Ordinal Numbers Quiz</h2>
+          <p id="quizDescription">Practice Finnish ordinal numbers and dates</p>
+
+          <div class="formula-box">
+            <h3>🔢 How to Form Ordinal Numbers</h3>
+            <p class="formula-intro">Add <strong>-s</strong> to the counting number (with some exceptions).</p>
+
+            <div class="formula-display">
+              <div class="formula-part verb-part">
+                <span class="part-label">NUMBER</span>
+                <span class="part-example">neljä</span>
+                <span class="part-case">four</span>
+              </div>
+              <div class="formula-plus">+</div>
+              <div class="formula-part minä-part">
+                <span class="part-label">ENDING</span>
+                <span class="part-example">-s</span>
+                <span class="part-case">ordinal suffix</span>
+              </div>
+              <div class="formula-plus">=</div>
+              <div class="formula-part result-part">
+                <span class="part-label">ORDINAL</span>
+                <span class="part-example">neljäs</span>
+                <span class="part-case">fourth</span>
+              </div>
+            </div>
+
+            <div class="neg-formula-display">
+              <div class="neg-label">DATES:</div>
+              <div class="neg-chip">ordinal</div>
+              <div class="formula-plus">+</div>
+              <div class="neg-chip">month + -ta</div>
+              <div class="formula-equals">=</div>
+              <div class="neg-result">kahdeksas kesäkuuta <span>= 8th of June</span></div>
+            </div>
+
+            <div class="formula-examples">
+              <div class="fex">
+                <span class="fex-verb">Ends in -n → drop n</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">kahdeksan → kahdeksas (8th)</span>
+                <span class="fex-en">drop -n, then add -s</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Ends in -si → drop i</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">viisi → viides (5th)</span>
+                <span class="fex-en">stem changes: viisi → viide-</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Irregular: 1st, 2nd, 3rd</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">ensimmäinen / eka, toinen / toka, kolmas</span>
+                <span class="fex-en">must memorise these!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="imper-table-box">
+            <h3>📋 Ordinal Numbers 1–10</h3>
+            <div class="imper-grid">
+              <div class="imp-card">
+                <span class="imp-verb">1st</span>
+                <span class="imp-pos">ensimmäinen</span>
+                <span class="imp-neg">eka (spoken)</span>
+                <span class="imp-en">first</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">2nd</span>
+                <span class="imp-pos">toinen</span>
+                <span class="imp-neg">toka (spoken)</span>
+                <span class="imp-en">second</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">3rd</span>
+                <span class="imp-pos">kolmas</span>
+                <span class="imp-en">third</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">4th</span>
+                <span class="imp-pos">neljäs</span>
+                <span class="imp-en">fourth</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">5th</span>
+                <span class="imp-pos">viides</span>
+                <span class="imp-en">fifth</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">6th</span>
+                <span class="imp-pos">kuudes</span>
+                <span class="imp-en">sixth</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">7th</span>
+                <span class="imp-pos">seitsemäs</span>
+                <span class="imp-en">seventh</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">8th</span>
+                <span class="imp-pos">kahdeksas</span>
+                <span class="imp-en">eighth</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">9th</span>
+                <span class="imp-pos">yhdeksäs</span>
+                <span class="imp-en">ninth</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">10th</span>
+                <span class="imp-pos">kymmenes</span>
+                <span class="imp-en">tenth</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subtopic-selection">
+            <h3>🎯 Select Exercise Type</h3>
+            <div class="exercise-type-group">
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="questions" checked />
+                <span>📋 Standard Questions (MCQ / Written)</span>
+              </label>
+            </div>
+          </div>
+
+          <div id="standardOptions">
+            <div class="subtopic-selection">
+              <h3>📚 Select Topic</h3>
+              <div class="subtopic-checkboxes" id="subtopicCheckboxes"></div>
+            </div>
+            <div class="question-count">
+              <label for="questionCount">Number of questions:</label>
+              <select id="questionCount">
+                <option value="5">5 questions</option>
+                <option value="10" selected>10 questions</option>
+                <option value="15">15 questions</option>
+                <option value="all">All questions</option>
+              </select>
+              <span class="available-count" id="availableCount"></span>
+            </div>
+          </div>
+
+          <div id="setOptions" class="hidden">
+            <div class="subtopic-selection">
+              <h3>📖 Select an Exercise</h3>
+              <div id="setList" class="set-list"></div>
+            </div>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita! 🚀</button>
+        </div>
+      </div>
+
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <div class="progress-container">
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+          <div class="question-container">
+            <div class="question-type" id="questionType">Ordinal Numbers</div>
+            <div class="word-display">
+              <span class="word" id="wordDisplay"></span>
+              <span class="ending" id="endingDisplay"></span>
+            </div>
+            <p class="question-english" id="questionEnglish"></p>
+          </div>
+          <div class="options-container" id="optionsContainer"></div>
+          <div class="written-container hidden" id="writtenContainer">
+            <input type="text" id="writtenAnswer" placeholder="Kirjoita vastaus..." autocomplete="off" autocapitalize="none" />
+            <button class="submit-btn" id="submitAnswer">Tarkista ✓</button>
+          </div>
+          <div class="feedback hidden" id="feedback">
+            <span class="feedback-icon" id="feedbackIcon">✓</span>
+            <span class="feedback-text" id="feedbackText"></span>
+            <p class="feedback-explanation" id="feedbackExplanation"></p>
+          </div>
+          <button class="next-btn hidden" id="nextBtn">Seuraava →</button>
+        </div>
+      </div>
+
+      <div id="exerciseSetScreen" class="screen hidden">
+        <div class="exercise-set-card">
+          <div class="exercise-set-header">
+            <button class="back-to-start-btn" id="backToStartBtn">← Takaisin</button>
+            <h2 id="exerciseSetTitle"></h2>
+            <p id="exerciseSetInstructions" class="exercise-instructions"></p>
+          </div>
+          <div id="exerciseWrite" class="exercise-type-block hidden">
+            <div class="note-box" id="writeNoteBox"></div>
+            <div id="writeItems" class="write-items"></div>
+            <button class="check-all-btn" id="checkWriteBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="writeScore"></div>
+          </div>
+          <div id="exerciseDrag" class="exercise-type-block hidden">
+            <div id="dragMatchItems" class="drag-match-container"></div>
+            <button class="check-all-btn" id="checkDragBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="dragScore"></div>
+          </div>
+          <div id="exerciseIdentify" class="exercise-type-block hidden">
+            <div class="identify-text-box" id="identifyTextBox"></div>
+            <div class="identify-info">
+              <span id="identifyCount" class="identify-count-badge">0 selected</span>
+              <span class="identify-target" id="identifyTarget"></span>
+            </div>
+            <button class="check-all-btn" id="checkIdentifyBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="identifyScore"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Mahtavaa!</h2>
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalQuestions">10</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+          <p class="score-message" id="scoreMessage"></p>
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Uudelleen</button>
+            <button class="home-btn" id="homeBtn">🏠 Takaisin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>

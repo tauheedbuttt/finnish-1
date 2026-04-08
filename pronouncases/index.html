@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pronominit eri sijoissa - Pronoun Cases</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../" class="back-link">← Takaisin aiheisiin</a>
+
+      <header class="quiz-header">
+        <h1>🔤 Pronominit eri sijoissa</h1>
+        <p class="subtitle" id="topicTitle">Personal Pronouns in Different Cases</p>
+      </header>
+
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">📝 Multiple Choice</button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Pronoun Cases Quiz</h2>
+          <p id="quizDescription">Practice Finnish personal pronouns in all their case forms</p>
+
+          <div class="formula-box">
+            <h3>🔤 Pronoun Case Overview</h3>
+            <p class="formula-intro">Finnish personal pronouns change form depending on their grammatical role. Learn the key forms and when to use them.</p>
+
+            <div class="formula-examples">
+              <div class="fex">
+                <span class="fex-verb">Partitive (mua/sua)</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">Mä rakastan sua.</span>
+                <span class="fex-en">I love you. (with love/like verbs)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Genitive (mun/sun)</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">Mun talo on keltainen.</span>
+                <span class="fex-en">My house is yellow. (possession + täytyy)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Elatiivi (musta/susta)</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">Musta kahvi on hyvää.</span>
+                <span class="fex-en">In my opinion, coffee is good. (+ tykkää)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Adessive (mulla/sulla)</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">Mulla on kirja.</span>
+                <span class="fex-en">I have a book. (kenellä?)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Ablative (multa/sulta)</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">Sain kirjan multa.</span>
+                <span class="fex-en">from me (keneltä?)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Allative (mulle/sulle)</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">Onko tää mulle?</span>
+                <span class="fex-en">to/for me (kenelle?)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="imper-table-box">
+            <h3>📋 Full Pronoun Case Table (Spoken Finnish)</h3>
+            <div class="imper-grid">
+              <div class="imp-card">
+                <span class="imp-verb">Partitiivi</span>
+                <span class="imp-pos">mua · sua · sitä</span>
+                <span class="imp-neg">meitä · teitä · heitä</span>
+                <span class="imp-en">with love/like verbs</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Genetiivi</span>
+                <span class="imp-pos">mun · sun · hänen</span>
+                <span class="imp-neg">meidän · teidän · heidän</span>
+                <span class="imp-en">possession; täytyy subject</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Elatiivi</span>
+                <span class="imp-pos">musta · susta · siitä</span>
+                <span class="imp-neg">meistä · teistä · heistä</span>
+                <span class="imp-en">opinion; tykkää</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Adessiivi</span>
+                <span class="imp-pos">mulla · sulla · hänellä</span>
+                <span class="imp-neg">meillä · teillä · heillä</span>
+                <span class="imp-en">kenellä? → have</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Ablatiivi</span>
+                <span class="imp-pos">multa · sulta · häneltä</span>
+                <span class="imp-neg">meiltä · teiltä · heiltä</span>
+                <span class="imp-en">keneltä? → from</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Allatiivi</span>
+                <span class="imp-pos">mulle · sulle · hänelle</span>
+                <span class="imp-neg">meille · teille · heille</span>
+                <span class="imp-en">kenelle? → to/for</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Akkusatiivi</span>
+                <span class="imp-pos">mut · sut · hänet</span>
+                <span class="imp-neg">meidät · teidät · heidät</span>
+                <span class="imp-en">direct object (completed)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Inessiivi</span>
+                <span class="imp-pos">mussa · sussa · hänessä</span>
+                <span class="imp-neg">meissä · teissä · heissä</span>
+                <span class="imp-en">qualities in a person</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="imper-table-box">
+            <h3>🗺️ Location Words</h3>
+            <div class="imper-grid">
+              <div class="imp-card">
+                <span class="imp-verb">täällä</span>
+                <span class="imp-pos">here (general)</span>
+                <span class="imp-neg">täältä · tänne</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">tuolla</span>
+                <span class="imp-pos">over there (visible)</span>
+                <span class="imp-neg">tuolta · tuonne</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">siellä</span>
+                <span class="imp-pos">there (not here)</span>
+                <span class="imp-neg">sieltä · sinne</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">tässä</span>
+                <span class="imp-pos">here (exact spot)</span>
+                <span class="imp-neg">tästä · tähän</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subtopic-selection">
+            <h3>🎯 Select Exercise Type</h3>
+            <div class="exercise-type-group">
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="questions" checked />
+                <span>📋 Standard Questions (MCQ / Written)</span>
+              </label>
+            </div>
+          </div>
+
+          <div id="standardOptions">
+            <div class="subtopic-selection">
+              <h3>📚 Select Topic</h3>
+              <div class="subtopic-checkboxes" id="subtopicCheckboxes"></div>
+            </div>
+            <div class="question-count">
+              <label for="questionCount">Number of questions:</label>
+              <select id="questionCount">
+                <option value="5">5 questions</option>
+                <option value="10" selected>10 questions</option>
+                <option value="15">15 questions</option>
+                <option value="all">All questions</option>
+              </select>
+              <span class="available-count" id="availableCount"></span>
+            </div>
+          </div>
+
+          <div id="setOptions" class="hidden">
+            <div class="subtopic-selection">
+              <h3>📖 Select an Exercise</h3>
+              <div id="setList" class="set-list"></div>
+            </div>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita! 🚀</button>
+        </div>
+      </div>
+
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <div class="progress-container">
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+          <div class="question-container">
+            <div class="question-type" id="questionType">Pronoun Cases</div>
+            <div class="word-display">
+              <span class="word" id="wordDisplay"></span>
+              <span class="ending" id="endingDisplay"></span>
+            </div>
+            <p class="question-english" id="questionEnglish"></p>
+          </div>
+          <div class="options-container" id="optionsContainer"></div>
+          <div class="written-container hidden" id="writtenContainer">
+            <input type="text" id="writtenAnswer" placeholder="Kirjoita vastaus..." autocomplete="off" autocapitalize="none" />
+            <button class="submit-btn" id="submitAnswer">Tarkista ✓</button>
+          </div>
+          <div class="feedback hidden" id="feedback">
+            <span class="feedback-icon" id="feedbackIcon">✓</span>
+            <span class="feedback-text" id="feedbackText"></span>
+            <p class="feedback-explanation" id="feedbackExplanation"></p>
+          </div>
+          <button class="next-btn hidden" id="nextBtn">Seuraava →</button>
+        </div>
+      </div>
+
+      <div id="exerciseSetScreen" class="screen hidden">
+        <div class="exercise-set-card">
+          <div class="exercise-set-header">
+            <button class="back-to-start-btn" id="backToStartBtn">← Takaisin</button>
+            <h2 id="exerciseSetTitle"></h2>
+            <p id="exerciseSetInstructions" class="exercise-instructions"></p>
+          </div>
+          <div id="exerciseWrite" class="exercise-type-block hidden">
+            <div class="note-box" id="writeNoteBox"></div>
+            <div id="writeItems" class="write-items"></div>
+            <button class="check-all-btn" id="checkWriteBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="writeScore"></div>
+          </div>
+          <div id="exerciseDrag" class="exercise-type-block hidden">
+            <div id="dragMatchItems" class="drag-match-container"></div>
+            <button class="check-all-btn" id="checkDragBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="dragScore"></div>
+          </div>
+          <div id="exerciseIdentify" class="exercise-type-block hidden">
+            <div class="identify-text-box" id="identifyTextBox"></div>
+            <div class="identify-info">
+              <span id="identifyCount" class="identify-count-badge">0 selected</span>
+              <span class="identify-target" id="identifyTarget"></span>
+            </div>
+            <button class="check-all-btn" id="checkIdentifyBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="identifyScore"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Mahtavaa!</h2>
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalQuestions">10</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+          <p class="score-message" id="scoreMessage"></p>
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Uudelleen</button>
+            <button class="home-btn" id="homeBtn">🏠 Takaisin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>

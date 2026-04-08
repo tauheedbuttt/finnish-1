@@ -359,6 +359,61 @@
       "questionCount": 14,
       "difficulty": "advanced",
       "tags": ["kpt", "verb types", "consonant gradation", "chapters 4-6"]
+    },
+    {
+      "id": "transport",
+      "title": "Kulkuvälineet",
+      "titleEn": "Means of Transport",
+      "description": "Learn to say 'by bus, by train, by bicycle' — add -lla/-llä to any vehicle word!",
+      "icon": "🚌",
+      "path": "transport/",
+      "questionCount": 25,
+      "difficulty": "beginner",
+      "tags": ["kulkuvälineet", "transport", "adessiivi", "lla", "chapters 4-6"]
+    },
+    {
+      "id": "customerservice",
+      "title": "Asiakaspalvelu",
+      "titleEn": "Customer Service Phrases",
+      "description": "Practice Finnish phrases for phone calls, hotel check-in, and restaurant situations",
+      "icon": "📞",
+      "path": "customerservice/",
+      "questionCount": 20,
+      "difficulty": "intermediate",
+      "tags": ["asiakaspalvelu", "puhelin", "hotelli", "ravintola", "chapters 4-6"]
+    },
+    {
+      "id": "ordinalnumbers",
+      "title": "Järjestysluvut",
+      "titleEn": "Ordinal Numbers & Dates",
+      "description": "Learn Finnish ordinal numbers (1st, 2nd, 3rd...) and how to express dates — eka tammikuuta!",
+      "icon": "📅",
+      "path": "ordinalnumbers/",
+      "questionCount": 24,
+      "difficulty": "intermediate",
+      "tags": ["järjestysluvut", "ordinals", "päivämäärät", "dates", "chapters 5-6"]
+    },
+    {
+      "id": "directions",
+      "title": "Suunnistus",
+      "titleEn": "Giving Directions",
+      "description": "Learn Finnish direction vocabulary and imperative forms — vasemmalle, oikealle, eteenpäin!",
+      "icon": "🗺️",
+      "path": "directions/",
+      "questionCount": 23,
+      "difficulty": "intermediate",
+      "tags": ["suunnistus", "directions", "imperatiivi", "vasemmalle", "chapters 6"]
+    },
+    {
+      "id": "pronouncases",
+      "title": "Pronominit eri sijoissa",
+      "titleEn": "Personal Pronouns in All Cases",
+      "description": "Master Finnish personal pronouns in all case forms — mua, mun, musta, mulla, multa, mulle!",
+      "icon": "🔤",
+      "path": "pronouncases/",
+      "questionCount": 25,
+      "difficulty": "advanced",
+      "tags": ["pronominit", "sijamuodot", "mua", "mun", "musta", "mulla", "chapters 6"]
     }
   ]
 }
