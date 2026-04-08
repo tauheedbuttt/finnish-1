@@ -282,6 +282,83 @@
         "kielioppi",
         "grammar"
       ]
+    },
+    {
+      "id": "intonation",
+      "title": "Intonation",
+      "titleEn": "Intonation - Pitch & Melody",
+      "description": "Learn Finnish intonation patterns - falling vs. continuation pitch and how they affect meaning",
+      "icon": "🎵",
+      "path": "intonation/",
+      "questionCount": 10,
+      "difficulty": "beginner",
+      "tags": ["intonation", "pronunciation", "listening", "chapters 4-6"]
+    },
+    {
+      "id": "imperfect",
+      "title": "Positive Imperfect Tense",
+      "titleEn": "Past Tense - Imperfekti",
+      "description": "Master the imperfect tense for talking about completed past actions - the storytelling tense!",
+      "icon": "⏮️",
+      "path": "imperfect/",
+      "questionCount": 14,
+      "difficulty": "intermediate",
+      "tags": ["imperfekti", "past tense", "verbs", "chapters 4-6"]
+    },
+    {
+      "id": "opinion",
+      "title": "Expressing Opinion",
+      "titleEn": "Sharing Your Thoughts in Finnish",
+      "description": "Learn how to express opinions using musta/mielestä and talk about likes and dislikes",
+      "icon": "💭",
+      "path": "opinion/",
+      "questionCount": 14,
+      "difficulty": "beginner",
+      "tags": ["opinion", "musta", "mielestä", "tykkää", "pidät", "chapters 4-6"]
+    },
+    {
+      "id": "svosentence",
+      "title": "SVO Sentence",
+      "titleEn": "Subject-Verb-Object Sentences",
+      "description": "Master the most common Finnish sentence pattern and understand object cases (partitive, nominative, genitive)",
+      "icon": "📐",
+      "path": "svosentence/",
+      "questionCount": 14,
+      "difficulty": "intermediate",
+      "tags": ["svo", "sentence structure", "cases", "objects", "chapters 4-6"]
+    },
+    {
+      "id": "predicative",
+      "title": "Predicative Sentence",
+      "titleEn": "Describing with Olla - Adjective Cases",
+      "description": "Learn predicative sentences and how countable/uncountable subjects affect adjective cases",
+      "icon": "🔤",
+      "path": "predicative/",
+      "questionCount": 14,
+      "difficulty": "intermediate",
+      "tags": ["predicative", "olla", "adjectives", "countable", "uncountable", "chapters 4-6"]
+    },
+    {
+      "id": "necessive",
+      "title": "Necessive Structure",
+      "titleEn": "Must Do / Have To - Necessity Expressions",
+      "description": "Express what you MUST do or HAVE TO do: Genitive + Must verb + Basic form verb",
+      "icon": "🔐",
+      "path": "necessive/",
+      "questionCount": 14,
+      "difficulty": "intermediate",
+      "tags": ["necessive", "täytyy", "must", "necessity", "chapters 4-6"]
+    },
+    {
+      "id": "kpt-advanced",
+      "title": "KPT Change - Advanced",
+      "titleEn": "Reverse KPT (Types 3, 4, 6)",
+      "description": "Master KPT changes in Verb Types 3, 4, and 6 - opposite of Type 1!",
+      "icon": "🔄",
+      "path": "kpt-advanced/",
+      "questionCount": 14,
+      "difficulty": "advanced",
+      "tags": ["kpt", "verb types", "consonant gradation", "chapters 4-6"]
     }
   ]
 }

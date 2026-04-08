@@ -1,0 +1,198 @@
+{
+  "title": "Necessive Structure",
+  "titleEn": "Must Do / Have To - Necessity Expressions",
+  "description": "Express what you MUST do or HAVE TO do: Genitive + Must verb + Basic form verb",
+  "subtopics": [
+    { "id": "pattern", "name": "Basic Pattern", "icon": "🔐" },
+    { "id": "genitive", "name": "Genitive Subject", "icon": "👤" },
+    { "id": "verbs", "name": "Must Verbs (täytyy/pitää/pakko)", "icon": "⚙️" },
+    { "id": "negative", "name": "Negative Forms", "icon": "❌" },
+    { "id": "questions", "name": "Asking About Necessity", "icon": "❓" },
+    { "id": "similar", "name": "Similar Structures (kannattaa, on hyvä)", "icon": "💡" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "subtopic": "pattern",
+      "mode": "mcq",
+      "text": "What is the basic formula for the necessive structure?",
+      "options": [
+        "Nominative + must verb + conjugated verb",
+        "Genitive + must verb + basic form verb",
+        "Accusative + must verb + past tense",
+        "Partitive + must verb + plural verb"
+      ],
+      "correct": 1,
+      "explanation": "Formula: Genitive + must verb (täytyy/pitää/on pakko) + basic form (infinitive). Example: 'Mun täytyy mennä' (I must go)."
+    },
+    {
+      "id": "q2",
+      "subtopic": "genitive",
+      "mode": "written",
+      "text": "List the genitive forms of personal pronouns for the necessive structure: I, you, he/she, we, you plural, they.",
+      "correctAnswers": [
+        "mun",
+        "sun",
+        "hänen",
+        "meidän",
+        "teidän",
+        "heiden"
+      ],
+      "explanation": "Genitive forms: mun (I), sun (you), hänen (he/she), meidän (we), teidän (you plural), heiden (they). These are the subject forms for necessive sentences."
+    },
+    {
+      "id": "q3",
+      "subtopic": "genitive",
+      "mode": "written",
+      "text": "Write: 'Lisa must buy a phone.' Use proper genitive form with a name.",
+      "correctAnswers": [
+        "Liisan täytyy ostaa puhelin",
+        "genitive lisaa+n",
+        "basic form ostaa"
+      ],
+      "explanation": "Name Lisa → genitive Lisan. 'Liisan täytyy ostaa puhelin.' The second verb 'ostaa' stays in basic form, never conjugated."
+    },
+    {
+      "id": "q4",
+      "subtopic": "verbs",
+      "mode": "mcq",
+      "text": "Which of these is NOT a valid 'must' verb in the necessive structure?",
+      "options": [
+        "täytyy (most common)",
+        "pitää (also common)",
+        "on pakko (also valid)",
+        "joutuu (to be forced to - different structure)"
+      ],
+      "correct": 3,
+      "explanation": "'Joutuu' is close but uses a different structure. The three main necessive verbs are: täytyy, pitää, and on pakko. All mean the same thing."
+    },
+    {
+      "id": "q5",
+      "subtopic": "verbs",
+      "mode": "written",
+      "text": "Express 'I must go' in three different ways using three different must verbs.",
+      "correctAnswers": [
+        "Mun täytyy mennä",
+        "Mun pitää mennä",
+        "Mun on pakko mennä"
+      ],
+      "explanation": "All three are correct and mean the same: 1) Mun täytyy mennä 2) Mun pitää mennä 3) Mun on pakko mennä. Choose whichever feels natural!"
+    },
+    {
+      "id": "q6",
+      "subtopic": "pattern",
+      "mode": "mcq",
+      "text": "What happens to the second verb in a necessive sentence?",
+      "options": [
+        "It gets conjugated with personal endings",
+        "It stays in basic form (infinitive), never conjugated",
+        "It gets an -i marker",
+        "It becomes past tense"
+      ],
+      "correct": 1,
+      "explanation": "The second verb NEVER changes: 'Mun täytyy mennä' (I must go), 'Sun täytyy ostaa' (You must buy), 'Hän täytyy lukea' (He must read)."
+    },
+    {
+      "id": "q7",
+      "subtopic": "negative",
+      "mode": "mcq",
+      "text": "How do you say 'You don't have to leave' in Finnish?",
+      "options": [
+        "Sun ei täytyy lähteä",
+        "Sun ei ole täytyy lähteä",
+        "Sun ei tarvitse lähteä",
+        "Sun tarvitsee ei lähteä"
+      ],
+      "correct": 2,
+      "explanation": "In NEGATIVE, you must use 'ei tarvitse' (not 'ei täytyy'): 'Sun ei tarvitse lähteä' = You don't have to leave. This is a fixed structure!"
+    },
+    {
+      "id": "q8",
+      "subtopic": "negative",
+      "mode": "written",
+      "text": "Write two sentences: (1) 'I must study' and (2) 'I don't have to study'",
+      "correctAnswers": [
+        "Mun täytyy opiskella",
+        "Mun ei tarvitse opiskella"
+      ],
+      "explanation": "Positive: 'Mun täytyy opiskella' (I must study). Negative: 'Mun ei tarvitse opiskella' (I don't have to study). Note the change: täytyy → ei tarvitse."
+    },
+    {
+      "id": "q9",
+      "subtopic": "questions",
+      "mode": "mcq",
+      "text": "How do you ask 'Do you have to go?' in Finnish?",
+      "options": [
+        "Täytyykö sun mennä?",
+        "Täyttääkö sun mennen?",
+        "Sun täytyy mennä?",
+        "Mennäänkö täytyä?"
+      ],
+      "correct": 0,
+      "explanation": "Add -ko/-kö to the must verb: 'Täytyykö sun mennä?' = Do you have to go? The main verb stays in basic form."
+    },
+    {
+      "id": "q10",
+      "subtopic": "questions",
+      "mode": "written",
+      "text": "Ask: 'Do we have to wait?' in Finnish.",
+      "correctAnswers": [
+        "Täytyykö meidän odottaa",
+        "Pitääkö meidän odottaa",
+        "Onko meidän pakko odottaa"
+      ],
+      "explanation": "All three questions are valid: 1) Täytyykö meidän odottaa? 2) Pitääkö meidän odottaa? 3) Onko meidän pakko odottaa?"
+    },
+    {
+      "id": "q11",
+      "subtopic": "similar",
+      "mode": "mcq",
+      "text": "What does 'kannattaa' mean in the context of a sentence like 'Sun kannattaa lukea tää kirja'?",
+      "options": [
+        "You must read this book (obligation)",
+        "You should read this book / It's worth reading (recommendation)",
+        "You can read this book (possibility)",
+        "You will read this book (future)"
+      ],
+      "correct": 1,
+      "explanation": "'Kannattaa' means 'is worth doing / you should.' It's softer than täytyy—a recommendation, not an obligation. Same structure: genitive + kannattaa + basic form."
+    },
+    {
+      "id": "q12",
+      "subtopic": "similar",
+      "mode": "written",
+      "text": "Write: 'You should watch this movie.' Use 'kannattaa' (worth doing).",
+      "correctAnswers": [
+        "Sun kannattaa katsoa tää elokuva",
+        "recommendedation not obligation"
+      ],
+      "explanation": "'Sun kannattaa katsoa tää elokuva' = You should watch this movie (it's worth it). Softer than: 'Sun täytyy katsoa tää elokuva' (you must)."
+    },
+    {
+      "id": "q13",
+      "subtopic": "practice",
+      "mode": "mcq",
+      "text": "What is the main difference between 'täytyy', 'pitää', and 'kannattaa'?",
+      "options": [
+        "They use different verb conjugations",
+        "They all mean exactly the same thing",
+        "täytyy/pitää = MUST (obligation), kannattaa = SHOULD (recommendation)",
+        "Only täytyy is correct, others are wrong"
+      ],
+      "correct": 2,
+      "explanation": "täytyy/pitää express obligation (MUST). kannattaa is softer, expressing recommendations (SHOULD). All use the same structure."
+    },
+    {
+      "id": "q14",
+      "subtopic": "practice",
+      "mode": "written",
+      "text": "Create a mini dialogue. Person A asks if Person B has to go. Person B answers yes and explains where they must go.",
+      "correctAnswers": [
+        "A: Täytyykö sun mennä",
+        "B: Joo, mun täytyy mennä",
+        "location or reason"
+      ],
+      "explanation": "Example: A: 'Täytyykö sun mennä?' B: 'Joo, mun täytyy mennä kauppaan' (Yes, I must go to the store). The second sentence doesn't need to repeat the structure completely."
+    }
+  ]
+}

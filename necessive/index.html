@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nesessiivisrakenne - Must / Have To</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../" class="back-link">← Takaisin aiheisiin</a>
+
+      <header class="quiz-header">
+        <h1>🔐 Nesessiivisrakenne</h1>
+        <p class="subtitle" id="topicTitle">Must / Have To Structures</p>
+      </header>
+
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">📝 Multiple Choice</button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Necessive Structure Quiz</h2>
+          <p id="quizDescription">Practice must / have to expressions</p>
+
+          <div class="formula-box">
+            <h3>🧠 How the Necessive Structure Works</h3>
+            <p class="formula-intro">Express necessity (must, have to) with: <strong>Genitive subject + must verb + basic form verb</strong>. The second verb <strong>never conjugates</strong> — it always stays in basic form!</p>
+
+            <div class="formula-display">
+              <div class="formula-part verb-part">
+                <span class="part-label">SUBJECT</span>
+                <span class="part-example">mun</span>
+                <span class="part-case">genitive form</span>
+              </div>
+              <div class="formula-plus">+</div>
+              <div class="formula-part minä-part">
+                <span class="part-label">MUST VERB</span>
+                <span class="part-example">täytyy</span>
+                <span class="part-case">frozen 3rd person</span>
+              </div>
+              <div class="formula-plus">+</div>
+              <div class="formula-part result-part">
+                <span class="part-label">ACTION</span>
+                <span class="part-example">mennä</span>
+                <span class="part-case">basic form always!</span>
+              </div>
+            </div>
+
+            <div class="neg-formula-display">
+              <div class="neg-label">NEGATIVE:</div>
+              <div class="neg-chip">mun</div>
+              <div class="formula-plus">+</div>
+              <div class="neg-chip">ei tarvitse</div>
+              <div class="formula-plus">+</div>
+              <div class="neg-chip">mennä</div>
+              <div class="formula-equals">=</div>
+              <div class="neg-result">I don't have to go <span>(NOT "ei täytyy"!)</span></div>
+            </div>
+
+            <div class="formula-examples">
+              <div class="fex">
+                <span class="fex-verb">Mun täytyy mennä.</span>
+                <span class="fex-en">I must go.</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Mun pitää ostaa kahvia.</span>
+                <span class="fex-en">I must buy coffee. (same as täytyy)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Mun on pakko odottaa.</span>
+                <span class="fex-en">I have to wait. (same meaning)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Sun ei tarvitse lähteä.</span>
+                <span class="fex-en">You don't have to leave. (negative = ei tarvitse!)</span>
+              </div>
+            </div>
+
+            <div class="usage-notes">
+              <h4>📌 Key Points:</h4>
+              <div class="usage-chips">
+                <span class="usage-chip">täytyy = pitää = on pakko</span>
+                <span class="usage-chip">Negative: ei tarvitse</span>
+                <span class="usage-chip">2nd verb: always basic form</span>
+                <span class="usage-chip">Softer: kannattaa (should)</span>
+              </div>
+              <div class="grammar-note">
+                📖 <strong>Object in necessive:</strong> Usually nominative (Täytyy ostaa kirja), but partitive wins if there's a reason (Täytyy opiskella suomea — partitive verb!).
+              </div>
+            </div>
+          </div>
+
+          <div class="imper-table-box">
+            <h3>📋 Genitive Subject Forms</h3>
+            <div class="imper-grid">
+              <div class="imp-card">
+                <span class="imp-verb">mä / minä</span>
+                <span class="imp-pos">mun täytyy</span>
+                <span class="imp-en">I must</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">sä / sinä</span>
+                <span class="imp-pos">sun täytyy</span>
+                <span class="imp-en">You must</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">hän / se</span>
+                <span class="imp-pos">hänen täytyy</span>
+                <span class="imp-en">He/She must</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">me</span>
+                <span class="imp-pos">meidän täytyy</span>
+                <span class="imp-en">We must</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">te</span>
+                <span class="imp-pos">teidän täytyy</span>
+                <span class="imp-en">You (pl.) must</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">he / ne</span>
+                <span class="imp-pos">heidän täytyy</span>
+                <span class="imp-en">They must</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Liisa (name)</span>
+                <span class="imp-pos">Liisan täytyy</span>
+                <span class="imp-en">Lisa must</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">negative form</span>
+                <span class="imp-pos">ei tarvitse</span>
+                <span class="imp-en">don't have to (not ei täytyy!)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subtopic-selection">
+            <h3>🎯 Select Exercise Type</h3>
+            <div class="exercise-type-group">
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="questions" checked />
+                <span>📋 Standard Questions (MCQ / Written)</span>
+              </label>
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="question_sets" />
+                <span>📖 Exercises (Write / Drag &amp; Match)</span>
+              </label>
+            </div>
+          </div>
+
+          <div id="standardOptions">
+            <div class="subtopic-selection">
+              <h3>📚 Select Topic</h3>
+              <div class="subtopic-checkboxes" id="subtopicCheckboxes"></div>
+            </div>
+            <div class="question-count">
+              <label for="questionCount">Number of questions:</label>
+              <select id="questionCount">
+                <option value="5">5 questions</option>
+                <option value="10" selected>10 questions</option>
+                <option value="15">15 questions</option>
+                <option value="all">All questions</option>
+              </select>
+              <span class="available-count" id="availableCount"></span>
+            </div>
+          </div>
+
+          <div id="setOptions" class="hidden">
+            <div class="subtopic-selection">
+              <h3>📖 Select an Exercise</h3>
+              <div id="setList" class="set-list"></div>
+            </div>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita! 🚀</button>
+        </div>
+      </div>
+
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <div class="progress-container">
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+          <div class="question-container">
+            <div class="question-type" id="questionType">Must / Have To</div>
+            <div class="word-display">
+              <span class="word" id="wordDisplay"></span>
+              <span class="ending" id="endingDisplay"></span>
+            </div>
+            <p class="question-english" id="questionEnglish"></p>
+          </div>
+          <div class="options-container" id="optionsContainer"></div>
+          <div class="written-container hidden" id="writtenContainer">
+            <input type="text" id="writtenAnswer" placeholder="Kirjoita vastaus..." autocomplete="off" autocapitalize="none" />
+            <button class="submit-btn" id="submitAnswer">Tarkista ✓</button>
+          </div>
+          <div class="feedback hidden" id="feedback">
+            <span class="feedback-icon" id="feedbackIcon">✓</span>
+            <span class="feedback-text" id="feedbackText"></span>
+            <p class="feedback-explanation" id="feedbackExplanation"></p>
+          </div>
+          <button class="next-btn hidden" id="nextBtn">Seuraava →</button>
+        </div>
+      </div>
+
+      <div id="exerciseSetScreen" class="screen hidden">
+        <div class="exercise-set-card">
+          <div class="exercise-set-header">
+            <button class="back-to-start-btn" id="backToStartBtn">← Takaisin</button>
+            <h2 id="exerciseSetTitle"></h2>
+            <p id="exerciseSetInstructions" class="exercise-instructions"></p>
+          </div>
+          <div id="exerciseWrite" class="exercise-type-block hidden">
+            <div class="note-box" id="writeNoteBox"></div>
+            <div id="writeItems" class="write-items"></div>
+            <button class="check-all-btn" id="checkWriteBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="writeScore"></div>
+          </div>
+          <div id="exerciseDrag" class="exercise-type-block hidden">
+            <div id="dragMatchItems" class="drag-match-container"></div>
+            <button class="check-all-btn" id="checkDragBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="dragScore"></div>
+          </div>
+          <div id="exerciseIdentify" class="exercise-type-block hidden">
+            <div class="identify-text-box" id="identifyTextBox"></div>
+            <div class="identify-info">
+              <span id="identifyCount" class="identify-count-badge">0 selected</span>
+              <span class="identify-target" id="identifyTarget"></span>
+            </div>
+            <button class="check-all-btn" id="checkIdentifyBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="identifyScore"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Mahtavaa!</h2>
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalQuestions">10</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+          <p class="score-message" id="scoreMessage"></p>
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Uudelleen</button>
+            <button class="home-btn" id="homeBtn">🏠 Takaisin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>

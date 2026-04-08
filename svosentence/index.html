@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVO Sentence - Object Cases</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../" class="back-link">← Takaisin aiheisiin</a>
+
+      <header class="quiz-header">
+        <h1>📐 SVO Lause</h1>
+        <p class="subtitle" id="topicTitle">Subject–Verb–Object Sentences</p>
+      </header>
+
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">📝 Multiple Choice</button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">SVO Sentence Quiz</h2>
+          <p id="quizDescription">Master Finnish object cases</p>
+
+          <div class="formula-box">
+            <h3>🧠 Which Case for the Object?</h3>
+            <p class="formula-intro">The SVO sentence is Finnish's most common pattern. The object can be in <strong>partitive</strong>, <strong>nominative</strong>, or <strong>genitive</strong> — the rule depends on the context. <strong>Partitive always wins</strong> if there's a reason for it!</p>
+
+            <div class="formula-display">
+              <div class="formula-part verb-part">
+                <span class="part-label">PARTITIVE</span>
+                <span class="part-example">kirjaa</span>
+                <span class="part-case">negative / ongoing / uncountable</span>
+              </div>
+              <div class="formula-plus">|</div>
+              <div class="formula-part minä-part">
+                <span class="part-label">NOMINATIVE</span>
+                <span class="part-example">kirja</span>
+                <span class="part-case">command / passive / must</span>
+              </div>
+              <div class="formula-plus">|</div>
+              <div class="formula-part result-part">
+                <span class="part-label">GENITIVE</span>
+                <span class="part-example">kirjan</span>
+                <span class="part-case">finished / countable (default)</span>
+              </div>
+            </div>
+
+            <div class="neg-formula-display">
+              <div class="neg-label">RULE:</div>
+              <div class="neg-chip">Negative?</div>
+              <div class="formula-plus">→</div>
+              <div class="neg-chip">PARTITIVE</div>
+              <div class="formula-equals">always!</div>
+            </div>
+
+            <div class="formula-examples">
+              <div class="fex">
+                <span class="fex-verb">En osta kirjaa.</span>
+                <span class="fex-en">I don't buy a book. (negative → partitive)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Osta kirja!</span>
+                <span class="fex-en">Buy the book! (command → nominative)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Luin kirjan.</span>
+                <span class="fex-en">I read the book. (finished → genitive)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Luen kirjaa.</span>
+                <span class="fex-en">I'm reading a book. (ongoing → partitive)</span>
+              </div>
+            </div>
+
+            <div class="usage-notes">
+              <h4>📌 Decision Order (partitive wins at each step):</h4>
+              <div class="usage-chips">
+                <span class="usage-chip">1. Negative? → Partitive</span>
+                <span class="usage-chip">2. Uncountable? → Partitive</span>
+                <span class="usage-chip">3. Partitive verb? → Partitive</span>
+                <span class="usage-chip">4. Command? → Nominative</span>
+                <span class="usage-chip">5. Passive? → Nominative</span>
+                <span class="usage-chip">6. Must (täytyy)? → Nominative</span>
+                <span class="usage-chip">7. Default → Genitive</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="imper-table-box">
+            <h3>📋 Object Case Examples</h3>
+            <div class="imper-grid">
+              <div class="imp-card">
+                <span class="imp-verb">En juo kahvia.</span>
+                <span class="imp-pos">partitive</span>
+                <span class="imp-en">I don't drink coffee. (negative)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Otan kahvia.</span>
+                <span class="imp-pos">partitive</span>
+                <span class="imp-en">I take some coffee. (uncountable)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Luen kirjaa.</span>
+                <span class="imp-pos">partitive</span>
+                <span class="imp-en">I'm reading a book. (ongoing)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Opiskelen suomea.</span>
+                <span class="imp-pos">partitive</span>
+                <span class="imp-en">I study Finnish. (partitive verb)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Osta kirja!</span>
+                <span class="imp-pos">nominative</span>
+                <span class="imp-en">Buy the book! (command)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Täytyy ostaa kirja.</span>
+                <span class="imp-pos">nominative</span>
+                <span class="imp-en">Must buy a book. (necessive)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Luin kirjan.</span>
+                <span class="imp-pos">genitive</span>
+                <span class="imp-en">I read the book. (finished)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Ostan auton.</span>
+                <span class="imp-pos">genitive</span>
+                <span class="imp-en">I buy a car. (one whole item)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subtopic-selection">
+            <h3>🎯 Select Exercise Type</h3>
+            <div class="exercise-type-group">
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="questions" checked />
+                <span>📋 Standard Questions (MCQ / Written)</span>
+              </label>
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="question_sets" />
+                <span>📖 Exercises (Write / Drag &amp; Match)</span>
+              </label>
+            </div>
+          </div>
+
+          <div id="standardOptions">
+            <div class="subtopic-selection">
+              <h3>📚 Select Topic</h3>
+              <div class="subtopic-checkboxes" id="subtopicCheckboxes"></div>
+            </div>
+            <div class="question-count">
+              <label for="questionCount">Number of questions:</label>
+              <select id="questionCount">
+                <option value="5">5 questions</option>
+                <option value="10" selected>10 questions</option>
+                <option value="15">15 questions</option>
+                <option value="all">All questions</option>
+              </select>
+              <span class="available-count" id="availableCount"></span>
+            </div>
+          </div>
+
+          <div id="setOptions" class="hidden">
+            <div class="subtopic-selection">
+              <h3>📖 Select an Exercise</h3>
+              <div id="setList" class="set-list"></div>
+            </div>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita! 🚀</button>
+        </div>
+      </div>
+
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <div class="progress-container">
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+          <div class="question-container">
+            <div class="question-type" id="questionType">Object Case</div>
+            <div class="word-display">
+              <span class="word" id="wordDisplay"></span>
+              <span class="ending" id="endingDisplay"></span>
+            </div>
+            <p class="question-english" id="questionEnglish"></p>
+          </div>
+          <div class="options-container" id="optionsContainer"></div>
+          <div class="written-container hidden" id="writtenContainer">
+            <input type="text" id="writtenAnswer" placeholder="Kirjoita vastaus..." autocomplete="off" autocapitalize="none" />
+            <button class="submit-btn" id="submitAnswer">Tarkista ✓</button>
+          </div>
+          <div class="feedback hidden" id="feedback">
+            <span class="feedback-icon" id="feedbackIcon">✓</span>
+            <span class="feedback-text" id="feedbackText"></span>
+            <p class="feedback-explanation" id="feedbackExplanation"></p>
+          </div>
+          <button class="next-btn hidden" id="nextBtn">Seuraava →</button>
+        </div>
+      </div>
+
+      <div id="exerciseSetScreen" class="screen hidden">
+        <div class="exercise-set-card">
+          <div class="exercise-set-header">
+            <button class="back-to-start-btn" id="backToStartBtn">← Takaisin</button>
+            <h2 id="exerciseSetTitle"></h2>
+            <p id="exerciseSetInstructions" class="exercise-instructions"></p>
+          </div>
+          <div id="exerciseWrite" class="exercise-type-block hidden">
+            <div class="note-box" id="writeNoteBox"></div>
+            <div id="writeItems" class="write-items"></div>
+            <button class="check-all-btn" id="checkWriteBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="writeScore"></div>
+          </div>
+          <div id="exerciseDrag" class="exercise-type-block hidden">
+            <div id="dragMatchItems" class="drag-match-container"></div>
+            <button class="check-all-btn" id="checkDragBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="dragScore"></div>
+          </div>
+          <div id="exerciseIdentify" class="exercise-type-block hidden">
+            <div class="identify-text-box" id="identifyTextBox"></div>
+            <div class="identify-info">
+              <span id="identifyCount" class="identify-count-badge">0 selected</span>
+              <span class="identify-target" id="identifyTarget"></span>
+            </div>
+            <button class="check-all-btn" id="checkIdentifyBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="identifyScore"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Mahtavaa!</h2>
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalQuestions">10</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+          <p class="score-message" id="scoreMessage"></p>
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Uudelleen</button>
+            <button class="home-btn" id="homeBtn">🏠 Takaisin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>

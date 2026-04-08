@@ -1,0 +1,142 @@
+{
+  "topic": "intonation",
+  "title": "Intonation - Pitch & Melody",
+  "description": "Learn Finnish intonation patterns - falling vs. continuation pitch and how they affect meaning",
+  "instructions": "Master the pitch patterns and melodies in Finnish speech",
+  "subtopics": [
+    { "id": "all", "name": "All Topics", "icon": "📚" },
+    { "id": "terminal", "name": "Terminal Intonation (Falling)", "icon": "📉" },
+    { "id": "continuation", "name": "Continuation Intonation", "icon": "📈" },
+    { "id": "questions", "name": "Questions in Finnish", "icon": "❓" },
+    { "id": "audio", "name": "Audio Listening", "icon": "🎧" }
+  ],
+  "rules": {
+    "structure": {
+      "description": "Finnish intonation has two main patterns: falling pitch (terminal) signals the end of a turn, while flat or rising pitch (continuation) signals the speaker has more to say. Unlike English, Finnish grammar (not pitch) marks questions.",
+      "terminal_intonation": "Pitch drops at the END of a phrase. Signals: 'I'm finished, your turn to speak.'",
+      "continuation_intonation": "Pitch stays flat or rises slightly. Signals: 'I have more to say, wait for me.'",
+      "questions_marked_by": "Grammar endings (-ko/-kö suffix) and question words (mikä, missä, milloin, kuka) – NOT pitch!",
+      "key_points": [
+        "Terminal (falling) = finished speaking",
+        "Continuation (flat/rising) = still talking",
+        "Questions use -ko/-kö suffix, NOT pitch",
+        "Practice with longer phrases, not single words"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "subtopic": "terminal",
+      "type": "mcq",
+      "text": "What does falling intonation at the end of a sentence signal?",
+      "options": [
+        "That you're finished speaking and it's the listener's turn to respond",
+        "That you're asking a question",
+        "That the listener should ask for clarification",
+        "That you want to continue speaking immediately"
+      ],
+      "correct": 0,
+      "explanation": "Terminal intonation (falling pitch) signals completion—the speaker is finished and it's the listener's turn."
+    },
+    {
+      "id": 2,
+      "subtopic": "continuation",
+      "type": "mcq",
+      "text": "What does continuation intonation (flat or rising) tell the listener?",
+      "options": [
+        "The sentence is a question",
+        "The speaker still has more to say and hasn't finished yet",
+        "The listener should interrupt",
+        "The sentence is incomplete and grammatically wrong"
+      ],
+      "correct": 1,
+      "explanation": "Continuation intonation keeps the pitch flat or slightly rising, signaling the speaker isn't finished and has more to say."
+    },
+    {
+      "id": 3,
+      "subtopic": "questions",
+      "type": "mcq",
+      "text": "How do Finnish speakers typically mark YES/NO questions?",
+      "options": [
+        "By raising the pitch significantly at the end",
+        "By using the -ko/-kö suffix on the main word, not by pitch",
+        "By speaking much faster",
+        "By repeating the last word twice"
+      ],
+      "correct": 1,
+      "explanation": "Finnish uses grammar (the -ko/-kö suffix) to mark questions, NOT pitch changes."
+    },
+    {
+      "id": 4,
+      "subtopic": "questions",
+      "type": "written",
+      "text": "Write the Finnish question 'Should we go for coffee?' and explain what marks it as a question.",
+      "answer": "Mennäänkö kahville",
+      "answers": ["Mennäänkö kahville", "-ko marks it"],
+      "explanation": "'Mennäänkö kahville?' The -ko suffix marks it as a question. The pitch can be falling or rising—the grammar does the work."
+    },
+    {
+      "id": 5,
+      "subtopic": "audio",
+      "type": "audio",
+      "text": "Listen to this sentence. Is the pitch falling (terminal) or rising (continuation)?",
+      "audio": "tts_Mennä_20260408_183915.mp3",
+      "options": ["Falling - speaker finished", "Rising/Flat - speaker continues"],
+      "correct": 0,
+      "explanation": "'Mennään vaan' (Let's go) ends with falling intonation, signaling the speaker is finished."
+    },
+    {
+      "id": 6,
+      "subtopic": "audio",
+      "type": "audio",
+      "text": "Listen to this story beginning. What intonation pattern does it use?",
+      "audio": "tts_Me_ol_20260408_183920.mp3",
+      "options": ["Falling - story is finished", "Continuation - story is continuing"],
+      "correct": 1,
+      "explanation": "The story beginning uses continuation intonation (flat/slightly rising) because the speaker hasn't finished the story yet."
+    },
+    {
+      "id": 7,
+      "subtopic": "questions",
+      "type": "audio",
+      "text": "Listen to this exchange. Identify what makes the question clear.",
+      "audio": "tts_Mitä__20260408_183928.mp3",
+      "options": ["Rising pitch", "The -ko suffix on 'mennäänkö'", "Loud volume", "Speaking faster"],
+      "correct": 1,
+      "explanation": "The question is marked by grammar (-ko/-kö), not by rising pitch. Even though both sentences fall, the grammar marks which is the question."
+    },
+    {
+      "id": 8,
+      "subtopic": "terminal",
+      "type": "written",
+      "text": "Name two situations where you use falling intonation in Finnish.",
+      "answer": "ending statement, completing thought",
+      "answers": ["end of statement", "completing thought", "finishing your turn", "ready for response"],
+      "explanation": "Terminal intonation marks the end of a thought or turn in conversation."
+    },
+    {
+      "id": 9,
+      "subtopic": "continuation",
+      "type": "written",
+      "text": "Describe when you would use continuation intonation in Finnish.",
+      "answer": "telling story, listing items",
+      "answers": ["telling story", "listing items", "explaining", "not finished"],
+      "explanation": "Use continuation intonation when you're in the middle of speaking and have more to say."
+    },
+    {
+      "id": 10,
+      "subtopic": "terminal",
+      "type": "mcq",
+      "text": "When practicing Finnish intonation, what should you focus on?",
+      "options": [
+        "Memorizing single word pronunciation",
+        "Repeating and comparing longer phrases to native speakers",
+        "Raising your voice volume",
+        "Speaking as fast as possible"
+      ],
+      "correct": 1,
+      "explanation": "The best way to practice intonation is to repeat longer phrases and compare your pitch curves to native speakers. Single words won't help!"
+    }
+  ]
+}

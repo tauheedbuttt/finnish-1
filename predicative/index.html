@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predikatiivi - Predicative Sentence</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../" class="back-link">← Takaisin aiheisiin</a>
+
+      <header class="quiz-header">
+        <h1>🔤 Predikatiivi</h1>
+        <p class="subtitle" id="topicTitle">Describing with Olla</p>
+      </header>
+
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">📝 Multiple Choice</button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Predicative Quiz</h2>
+          <p id="quizDescription">Practice adjective cases with olla</p>
+
+          <div class="formula-box">
+            <h3>🧠 How Predicative Sentences Work</h3>
+            <p class="formula-intro">Pattern: <strong>Subject + olla + adjective</strong>. The adjective case depends on whether the subject is <strong>countable</strong> (nominative) or <strong>uncountable</strong> (partitive). <strong>Negation does NOT change the case!</strong></p>
+
+            <div class="formula-display">
+              <div class="formula-part verb-part">
+                <span class="part-label">UNCOUNTABLE</span>
+                <span class="part-example">kahvi</span>
+                <span class="part-case">coffee, water, love...</span>
+              </div>
+              <div class="formula-plus">→</div>
+              <div class="formula-part result-part">
+                <span class="part-label">ADJECTIVE</span>
+                <span class="part-example">PARTITIVE</span>
+                <span class="part-case">hyvää, kylmää...</span>
+              </div>
+            </div>
+
+            <div class="formula-display" style="margin-top:0.5rem">
+              <div class="formula-part minä-part">
+                <span class="part-label">COUNTABLE</span>
+                <span class="part-example">auto</span>
+                <span class="part-case">car, table, person...</span>
+              </div>
+              <div class="formula-plus">→</div>
+              <div class="formula-part result-part">
+                <span class="part-label">ADJECTIVE</span>
+                <span class="part-example">NOMINATIVE</span>
+                <span class="part-case">uusi, iso, kaunis...</span>
+              </div>
+            </div>
+
+            <div class="neg-formula-display">
+              <div class="neg-label">KEY RULE:</div>
+              <div class="neg-chip">Negative</div>
+              <div class="formula-equals">does NOT change the case!</div>
+            </div>
+
+            <div class="formula-examples">
+              <div class="fex">
+                <span class="fex-verb">Kahvi on hyvää.</span>
+                <span class="fex-en">Coffee is good. (uncountable → partitive)</span>
+                <span class="fex-neg">Kahvi ei ole hyvää. (still partitive!)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Auto on uusi.</span>
+                <span class="fex-en">The car is new. (countable → nominative)</span>
+                <span class="fex-neg">Auto ei ole uusi. (still nominative!)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Talot ovat isoja.</span>
+                <span class="fex-en">The houses are big. (plural → plural partitive)</span>
+              </div>
+            </div>
+
+            <div class="usage-notes">
+              <h4>📌 Countable vs. Uncountable:</h4>
+              <div class="usage-chips">
+                <span class="usage-chip">Uncountable: kahvi, vesi, rakkaus</span>
+                <span class="usage-chip">Countable: auto, talo, ihminen</span>
+                <span class="usage-chip">Plural → plural partitive</span>
+                <span class="usage-chip">Neg doesn't change case!</span>
+              </div>
+              <div class="grammar-note">
+                📖 <strong>Question words:</strong> Millaista kahvi on? (uncountable) &nbsp;·&nbsp; Millainen auto on? (countable) &nbsp;·&nbsp; Millaisia talot ovat? (plural)
+              </div>
+            </div>
+          </div>
+
+          <div class="imper-table-box">
+            <h3>📋 Predicative Examples</h3>
+            <div class="imper-grid">
+              <div class="imp-card">
+                <span class="imp-verb">kahvi (uncountable)</span>
+                <span class="imp-pos">Kahvi on hyvää.</span>
+                <span class="imp-neg">Kahvi ei ole hyvää.</span>
+                <span class="imp-en">Coffee is / isn't good.</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">vesi (uncountable)</span>
+                <span class="imp-pos">Vesi on kylmää.</span>
+                <span class="imp-neg">Vesi ei ole kylmää.</span>
+                <span class="imp-en">Water is / isn't cold.</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">auto (countable)</span>
+                <span class="imp-pos">Auto on uusi.</span>
+                <span class="imp-neg">Auto ei ole uusi.</span>
+                <span class="imp-en">The car is / isn't new.</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">talo (countable)</span>
+                <span class="imp-pos">Talo on iso.</span>
+                <span class="imp-neg">Talo ei ole iso.</span>
+                <span class="imp-en">The house is / isn't big.</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">talot (plural)</span>
+                <span class="imp-pos">Talot ovat isoja.</span>
+                <span class="imp-neg">Talot eivät ole isoja.</span>
+                <span class="imp-en">Houses are / aren't big.</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">housut (always plural)</span>
+                <span class="imp-pos">Housut ovat isot.</span>
+                <span class="imp-en">The pants are big. (pl. nom)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subtopic-selection">
+            <h3>🎯 Select Exercise Type</h3>
+            <div class="exercise-type-group">
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="questions" checked />
+                <span>📋 Standard Questions (MCQ / Written)</span>
+              </label>
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="question_sets" />
+                <span>📖 Exercises (Write / Drag &amp; Match)</span>
+              </label>
+            </div>
+          </div>
+
+          <div id="standardOptions">
+            <div class="subtopic-selection">
+              <h3>📚 Select Topic</h3>
+              <div class="subtopic-checkboxes" id="subtopicCheckboxes"></div>
+            </div>
+            <div class="question-count">
+              <label for="questionCount">Number of questions:</label>
+              <select id="questionCount">
+                <option value="5">5 questions</option>
+                <option value="10" selected>10 questions</option>
+                <option value="15">15 questions</option>
+                <option value="all">All questions</option>
+              </select>
+              <span class="available-count" id="availableCount"></span>
+            </div>
+          </div>
+
+          <div id="setOptions" class="hidden">
+            <div class="subtopic-selection">
+              <h3>📖 Select an Exercise</h3>
+              <div id="setList" class="set-list"></div>
+            </div>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita! 🚀</button>
+        </div>
+      </div>
+
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <div class="progress-container">
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+          <div class="question-container">
+            <div class="question-type" id="questionType">Predicative</div>
+            <div class="word-display">
+              <span class="word" id="wordDisplay"></span>
+              <span class="ending" id="endingDisplay"></span>
+            </div>
+            <p class="question-english" id="questionEnglish"></p>
+          </div>
+          <div class="options-container" id="optionsContainer"></div>
+          <div class="written-container hidden" id="writtenContainer">
+            <input type="text" id="writtenAnswer" placeholder="Kirjoita vastaus..." autocomplete="off" autocapitalize="none" />
+            <button class="submit-btn" id="submitAnswer">Tarkista ✓</button>
+          </div>
+          <div class="feedback hidden" id="feedback">
+            <span class="feedback-icon" id="feedbackIcon">✓</span>
+            <span class="feedback-text" id="feedbackText"></span>
+            <p class="feedback-explanation" id="feedbackExplanation"></p>
+          </div>
+          <button class="next-btn hidden" id="nextBtn">Seuraava →</button>
+        </div>
+      </div>
+
+      <div id="exerciseSetScreen" class="screen hidden">
+        <div class="exercise-set-card">
+          <div class="exercise-set-header">
+            <button class="back-to-start-btn" id="backToStartBtn">← Takaisin</button>
+            <h2 id="exerciseSetTitle"></h2>
+            <p id="exerciseSetInstructions" class="exercise-instructions"></p>
+          </div>
+          <div id="exerciseWrite" class="exercise-type-block hidden">
+            <div class="note-box" id="writeNoteBox"></div>
+            <div id="writeItems" class="write-items"></div>
+            <button class="check-all-btn" id="checkWriteBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="writeScore"></div>
+          </div>
+          <div id="exerciseDrag" class="exercise-type-block hidden">
+            <div id="dragMatchItems" class="drag-match-container"></div>
+            <button class="check-all-btn" id="checkDragBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="dragScore"></div>
+          </div>
+          <div id="exerciseIdentify" class="exercise-type-block hidden">
+            <div class="identify-text-box" id="identifyTextBox"></div>
+            <div class="identify-info">
+              <span id="identifyCount" class="identify-count-badge">0 selected</span>
+              <span class="identify-target" id="identifyTarget"></span>
+            </div>
+            <button class="check-all-btn" id="checkIdentifyBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="identifyScore"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Mahtavaa!</h2>
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalQuestions">10</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+          <p class="score-message" id="scoreMessage"></p>
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Uudelleen</button>
+            <button class="home-btn" id="homeBtn">🏠 Takaisin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>

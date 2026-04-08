@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mielipide - Expressing Opinion</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../" class="back-link">← Takaisin aiheisiin</a>
+
+      <header class="quiz-header">
+        <h1>💭 Mielipide</h1>
+        <p class="subtitle" id="topicTitle">Expressing Opinion in Finnish</p>
+      </header>
+
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">📝 Multiple Choice</button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Opinion Quiz</h2>
+          <p id="quizDescription">Practice expressing opinions in Finnish</p>
+
+          <div class="formula-box">
+            <h3>🧠 Two Ways to Express Opinion</h3>
+            <p class="formula-intro">There are two equally valid ways to share your opinion in Finnish. Both use a form of the personal pronoun + opinion word.</p>
+
+            <div class="formula-display">
+              <div class="formula-part verb-part">
+                <span class="part-label">METHOD 1</span>
+                <span class="part-example">musta</span>
+                <span class="part-case">pronoun stem + -sta/-stä</span>
+              </div>
+              <div class="formula-plus">+</div>
+              <div class="formula-part result-part">
+                <span class="part-label">OPINION</span>
+                <span class="part-example">kahvi on hyvää</span>
+                <span class="part-case">coffee is good</span>
+              </div>
+            </div>
+
+            <div class="formula-display" style="margin-top:0.5rem">
+              <div class="formula-part minä-part">
+                <span class="part-label">METHOD 2</span>
+                <span class="part-example">mun mielestä</span>
+                <span class="part-case">genitive + mielestä</span>
+              </div>
+              <div class="formula-plus">+</div>
+              <div class="formula-part result-part">
+                <span class="part-label">OPINION</span>
+                <span class="part-example">kahvi on hyvää</span>
+                <span class="part-case">coffee is good</span>
+              </div>
+            </div>
+
+            <div class="neg-formula-display">
+              <div class="neg-label">LIKES:</div>
+              <div class="neg-chip">mä tykkään</div>
+              <div class="formula-plus">/</div>
+              <div class="neg-chip">mä pidän</div>
+              <div class="formula-plus">+</div>
+              <div class="neg-chip">kahvista</div>
+              <div class="formula-equals">=</div>
+              <div class="neg-result">I like coffee <span>(-sta/-stä always!)</span></div>
+            </div>
+
+            <div class="formula-examples">
+              <div class="fex">
+                <span class="fex-verb">mulla → musta</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">Musta sauna on ihana.</span>
+                <span class="fex-en">In my opinion, sauna is wonderful.</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">mun mielestä</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">Mun mielestä sauna on ihana.</span>
+                <span class="fex-en">In my opinion, sauna is wonderful. (same!)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Liisa → Liisan mielestä</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">Liisan mielestä kahvi on hyvää.</span>
+                <span class="fex-en">In Lisa's opinion, coffee is good.</span>
+              </div>
+            </div>
+
+            <div class="usage-notes">
+              <h4>📌 Pronoun Forms:</h4>
+              <div class="usage-chips">
+                <span class="usage-chip">mulla → musta</span>
+                <span class="usage-chip">sulla → susta</span>
+                <span class="usage-chip">sillä → siitä</span>
+                <span class="usage-chip">meillä → meistä</span>
+              </div>
+              <div class="grammar-note">
+                📖 <strong>Watch out!</strong> "Musta" also means <em>black</em>. Context tells you which: "Musta musta kahvi on hyvää" = In my opinion, black coffee is good.
+              </div>
+            </div>
+          </div>
+
+          <div class="imper-table-box">
+            <h3>📋 Opinion Forms Reference</h3>
+            <div class="imper-grid">
+              <div class="imp-card">
+                <span class="imp-verb">mä / minä</span>
+                <span class="imp-pos">musta</span>
+                <span class="imp-neg">mun mielestä</span>
+                <span class="imp-en">in my opinion</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">sä / sinä</span>
+                <span class="imp-pos">susta</span>
+                <span class="imp-neg">sun mielestä</span>
+                <span class="imp-en">in your opinion</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">hän / se</span>
+                <span class="imp-pos">siitä</span>
+                <span class="imp-neg">hänen mielestä</span>
+                <span class="imp-en">in his/her opinion</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">me</span>
+                <span class="imp-pos">meistä</span>
+                <span class="imp-neg">meidän mielestä</span>
+                <span class="imp-en">in our opinion</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">te</span>
+                <span class="imp-pos">teistä</span>
+                <span class="imp-neg">teidän mielestä</span>
+                <span class="imp-en">in your (pl.) opinion</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">he / ne</span>
+                <span class="imp-pos">heistä / niistä</span>
+                <span class="imp-neg">heidän mielestä</span>
+                <span class="imp-en">in their opinion</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Liisa (name)</span>
+                <span class="imp-pos">Liisasta</span>
+                <span class="imp-neg">Liisan mielestä</span>
+                <span class="imp-en">in Lisa's opinion</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">tykkää / pidät</span>
+                <span class="imp-pos">+ -sta/-stä</span>
+                <span class="imp-en">to like (always -sta!)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subtopic-selection">
+            <h3>🎯 Select Exercise Type</h3>
+            <div class="exercise-type-group">
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="questions" checked />
+                <span>📋 Standard Questions (MCQ / Written)</span>
+              </label>
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="question_sets" />
+                <span>📖 Exercises (Write / Drag &amp; Match)</span>
+              </label>
+            </div>
+          </div>
+
+          <div id="standardOptions">
+            <div class="subtopic-selection">
+              <h3>📚 Select Topic</h3>
+              <div class="subtopic-checkboxes" id="subtopicCheckboxes"></div>
+            </div>
+            <div class="question-count">
+              <label for="questionCount">Number of questions:</label>
+              <select id="questionCount">
+                <option value="5">5 questions</option>
+                <option value="10" selected>10 questions</option>
+                <option value="15">15 questions</option>
+                <option value="all">All questions</option>
+              </select>
+              <span class="available-count" id="availableCount"></span>
+            </div>
+          </div>
+
+          <div id="setOptions" class="hidden">
+            <div class="subtopic-selection">
+              <h3>📖 Select an Exercise</h3>
+              <div id="setList" class="set-list"></div>
+            </div>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita! 🚀</button>
+        </div>
+      </div>
+
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <div class="progress-container">
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+          <div class="question-container">
+            <div class="question-type" id="questionType">Opinion</div>
+            <div class="word-display">
+              <span class="word" id="wordDisplay"></span>
+              <span class="ending" id="endingDisplay"></span>
+            </div>
+            <p class="question-english" id="questionEnglish"></p>
+          </div>
+          <div class="options-container" id="optionsContainer"></div>
+          <div class="written-container hidden" id="writtenContainer">
+            <input type="text" id="writtenAnswer" placeholder="Kirjoita vastaus..." autocomplete="off" autocapitalize="none" />
+            <button class="submit-btn" id="submitAnswer">Tarkista ✓</button>
+          </div>
+          <div class="feedback hidden" id="feedback">
+            <span class="feedback-icon" id="feedbackIcon">✓</span>
+            <span class="feedback-text" id="feedbackText"></span>
+            <p class="feedback-explanation" id="feedbackExplanation"></p>
+          </div>
+          <button class="next-btn hidden" id="nextBtn">Seuraava →</button>
+        </div>
+      </div>
+
+      <div id="exerciseSetScreen" class="screen hidden">
+        <div class="exercise-set-card">
+          <div class="exercise-set-header">
+            <button class="back-to-start-btn" id="backToStartBtn">← Takaisin</button>
+            <h2 id="exerciseSetTitle"></h2>
+            <p id="exerciseSetInstructions" class="exercise-instructions"></p>
+          </div>
+          <div id="exerciseWrite" class="exercise-type-block hidden">
+            <div class="note-box" id="writeNoteBox"></div>
+            <div id="writeItems" class="write-items"></div>
+            <button class="check-all-btn" id="checkWriteBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="writeScore"></div>
+          </div>
+          <div id="exerciseDrag" class="exercise-type-block hidden">
+            <div id="dragMatchItems" class="drag-match-container"></div>
+            <button class="check-all-btn" id="checkDragBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="dragScore"></div>
+          </div>
+          <div id="exerciseIdentify" class="exercise-type-block hidden">
+            <div class="identify-text-box" id="identifyTextBox"></div>
+            <div class="identify-info">
+              <span id="identifyCount" class="identify-count-badge">0 selected</span>
+              <span class="identify-target" id="identifyTarget"></span>
+            </div>
+            <button class="check-all-btn" id="checkIdentifyBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="identifyScore"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Mahtavaa!</h2>
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalQuestions">10</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+          <p class="score-message" id="scoreMessage"></p>
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Uudelleen</button>
+            <button class="home-btn" id="homeBtn">🏠 Takaisin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>

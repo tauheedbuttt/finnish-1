@@ -1,0 +1,203 @@
+{
+  "title": "SVO Sentence",
+  "titleEn": "Subject-Verb-Object Sentences",
+  "description": "Master the most common Finnish sentence pattern: Subject + Verb + Object, and understand object cases (partitive, nominative, genitive)",
+  "subtopics": [
+    { "id": "pattern", "name": "SVO Pattern Basics", "icon": "📐" },
+    { "id": "transitive", "name": "Transitive vs. Intransitive Verbs", "icon": "🔗" },
+    { "id": "partitive", "name": "Partitive Object", "icon": "📊" },
+    { "id": "nominative", "name": "Nominative Object", "icon": "🎯" },
+    { "id": "genitive", "name": "Genitive Object", "icon": "✅" },
+    { "id": "practice", "name": "Decision Making", "icon": "🧩" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "subtopic": "pattern",
+      "mode": "mcq",
+      "text": "What does SVO stand for?",
+      "options": [
+        "Simple Verb Order",
+        "Subject-Verb-Object",
+        "Standard Vowel Order",
+        "Structure-Verb-Outcome"
+      ],
+      "correct": 1,
+      "explanation": "SVO = Subject-Verb-Object. This is the basic sentence structure: Who (subject) + What do they do (verb) + What do they act on (object)."
+    },
+    {
+      "id": "q2",
+      "subtopic": "pattern",
+      "mode": "written",
+      "text": "Identify the subject, verb, and object in: 'Lisa ostaa kirjan' (Lisa buys a book).",
+      "correctAnswers": [
+        "Lisa = subject",
+        "ostaa = verb",
+        "kirjan = object",
+        "subject verb object"
+      ],
+      "explanation": "Lisa (subject) = who? ostaa (verb) = does what? kirjan (object) = acts on what? This is the SVO pattern."
+    },
+    {
+      "id": "q3",
+      "subtopic": "transitive",
+      "mode": "mcq",
+      "text": "What is a transitive verb?",
+      "options": [
+        "A verb that describes movement",
+        "A verb that can have an object (someone or something receives the action)",
+        "A verb that has many syllables",
+        "A verb that ends in -ta/-tä"
+      ],
+      "correct": 1,
+      "explanation": "Transitive verbs can have objects. Example: ostaa (buy) can have an object—you buy SOMETHING. Intransitive verbs cannot: olla (to be) cannot have an object."
+    },
+    {
+      "id": "q4",
+      "subtopic": "transitive",
+      "mode": "mcq",
+      "text": "Which of these is an INTRANSITIVE verb (cannot have an object)?",
+      "options": [
+        "syödä (to eat)",
+        "lukea (to read)",
+        "asua (to live)",
+        "juoda (to drink)"
+      ],
+      "correct": 2,
+      "explanation": "'Asua' is intransitive—you don't 'live' SOMETHING. You live IN a place (uses local case). The others are transitive and can have objects."
+    },
+    {
+      "id": "q5",
+      "subtopic": "partitive",
+      "mode": "mcq",
+      "text": "When should you use the PARTITIVE case for the object?",
+      "options": [
+        "Always, for all objects",
+        "Only when the subject is negative",
+        "When the sentence is negative, or the object is indefinite/uncountable, or the verb requires partitive",
+        "Only for plural objects"
+      ],
+      "correct": 2,
+      "explanation": "Partitive is used for: negative sentences, indefinite quantities (uncountable), and partitive verbs (opiskella, tahtoa). Example: En osta kirjaa (I don't buy a book)."
+    },
+    {
+      "id": "q6",
+      "subtopic": "partitive",
+      "mode": "written",
+      "text": "Why is 'Luen kirjaa' (I'm reading a book) in partitive, not genitive?",
+      "correctAnswers": [
+        "action not finished",
+        "ongoing action",
+        "process",
+        "still reading"
+      ],
+      "explanation": "The action is NOT finished—you're in the middle of reading. Partitive shows the action is incomplete. When finished: 'Luin kirjan' (genitive)."
+    },
+    {
+      "id": "q7",
+      "subtopic": "nominative",
+      "mode": "mcq",
+      "text": "When do you use NOMINATIVE case for the object?",
+      "options": [
+        "Always for all objects",
+        "For imperative (commands), passive voice, and necessity structures",
+        "Only for plural objects",
+        "Only after certain verbs"
+      ],
+      "correct": 1,
+      "explanation": "Nominative is used in commands (Osta kirja!), passive (Ostetaan kirja), and necessity (Täytyy ostaa kirja). But partitive can override these rules!"
+    },
+    {
+      "id": "q8",
+      "subtopic": "nominative",
+      "mode": "written",
+      "text": "Write the imperative (command): 'Buy the book!' in Finnish. What case is the object?",
+      "correctAnswers": [
+        "Osta kirja",
+        "nominative",
+        "command form"
+      ],
+      "explanation": "Osta (buy!) + kirja (nominative). But if you said 'Osta kahta kirjaa!' (Buy two books), the partitive takes over because of the number."
+    },
+    {
+      "id": "q9",
+      "subtopic": "genitive",
+      "mode": "mcq",
+      "text": "When do you use GENITIVE case for the object?",
+      "options": [
+        "For all countable nouns",
+        "For actions that are finished/completed, or countable whole items",
+        "For all negative sentences",
+        "Never—genitive isn't used for objects"
+      ],
+      "correct": 1,
+      "explanation": "Genitive is the 'default' for finished actions and countable items. 'Luin kirjan' (I read the book—finished). 'Ostan auton' (I buy a car—one whole car)."
+    },
+    {
+      "id": "q10",
+      "subtopic": "genitive",
+      "mode": "written",
+      "text": "Translate: 'I washed the car.' What case is the object and why?",
+      "correctAnswers": [
+        "Pesin auton",
+        "genitive",
+        "action finished",
+        "complete action"
+      ],
+      "explanation": "'Pesin auton' uses genitive because the action is FINISHED—the car is now clean. Genitive indicates completed action with a clear result."
+    },
+    {
+      "id": "q11",
+      "subtopic": "practice",
+      "mode": "mcq",
+      "text": "Which sentence correctly uses the object case?",
+      "options": [
+        "Mä opiskelen suomea (I study Finnish - partitive)",
+        "Mä opiskelen suomen (I study Finnish - genitive)",
+        "Mä opiskelen suomi (I study Finnish - nominative)",
+        "All three are equally correct"
+      ],
+      "correct": 0,
+      "explanation": "'Opiskella' is a partitive verb, so it ALWAYS requires partitive, even without other reasons. 'Mä opiskelen suomea' is correct."
+    },
+    {
+      "id": "q12",
+      "subtopic": "practice",
+      "mode": "written",
+      "text": "Explain why 'Otan kahvia' (I take coffee) uses partitive instead of genitive.",
+      "correctAnswers": [
+        "indefinite quantity",
+        "uncountable",
+        "not specific amount"
+      ],
+      "explanation": "'Kahvi' is uncountable (a mass noun). You can't say 'three coffees' in the same way. Indefinite quantity = partitive. 'Otan kahvia' = I take some coffee."
+    },
+    {
+      "id": "q13",
+      "subtopic": "practice",
+      "mode": "mcq",
+      "text": "What case should the object be in this sentence? 'Ei osta kirja_' (Doesn't buy a book)",
+      "options": [
+        "Nominative: Ei osta kirja",
+        "Partitive: Ei osta kirjaa",
+        "Genitive: Ei osta kirjan",
+        "Any case works here"
+      ],
+      "correct": 1,
+      "explanation": "Negative sentences ALWAYS use partitive: 'Ei osta kirjaa.' This is one of the strongest partitive rules—negative wins over everything!"
+    },
+    {
+      "id": "q14",
+      "subtopic": "practice",
+      "mode": "written",
+      "text": "Create 3 SVO sentences with different object cases. Explain why each case is used.",
+      "correctAnswers": [
+        "negative partitive",
+        "finished genitive",
+        "ongoing partitive",
+        "reasons"
+      ],
+      "explanation": "Example answers: 'En juo kahvia' (partitive=negative), 'Joi kahvin' (genitive=finished action), 'Juon kahvia' (partitive=ongoing/habitual)."
+    }
+  ]
+}

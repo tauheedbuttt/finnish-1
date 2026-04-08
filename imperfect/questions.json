@@ -1,0 +1,200 @@
+{
+  "title": "Positive Imperfect Tense",
+  "titleEn": "Past Tense - Imperfekti",
+  "description": "Master the imperfect tense (imperfekti) for talking about completed past actions - the storytelling tense!",
+  "subtopics": [
+    { "id": "formation", "name": "Basic Formation", "icon": "🔧" },
+    { "id": "vowels", "name": "Vowel Changes", "icon": "🔄" },
+    { "id": "types", "name": "Verb Type Differences", "icon": "📋" },
+    { "id": "practice", "name": "Practical Usage", "icon": "💬" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "subtopic": "formation",
+      "mode": "mcq",
+      "text": "What is the basic formula for forming the imperfect tense?",
+      "options": [
+        "Verb stem + 'u' + personal ending",
+        "Verb stem + 'i' + personal ending",
+        "Verb stem + 'a' + personal ending",
+        "Verb stem + 'o' + personal ending"
+      ],
+      "correct": 1,
+      "explanation": "The imperfect is formed by inserting the marker 'i' between the verb stem and the personal ending. Example: nuku + i + n = nukuin (I slept)."
+    },
+    {
+      "id": "q2",
+      "subtopic": "formation",
+      "mode": "mcq",
+      "text": "What is special about the 3rd person singular (hän) in the imperfect?",
+      "options": [
+        "It uses the same ending as 1st person",
+        "It has NO personal ending - just stem + 'i'",
+        "It uses a double personal ending",
+        "It uses the suffix '-ko'"
+      ],
+      "correct": 1,
+      "explanation": "In imperfect, 3rd person singular has no ending: hän nuk-ui (she slept), not nukuin. This is different from present tense (nukkuu)."
+    },
+    {
+      "id": "q3",
+      "subtopic": "vowels",
+      "mode": "mcq",
+      "text": "Which vowels DROP when you add the 'i' marker in imperfect?",
+      "options": [
+        "Only back vowels (o, u, ö, y)",
+        "Only front vowels (a, ä, e, i)",
+        "All vowels drop",
+        "No vowels drop"
+      ],
+      "correct": 1,
+      "explanation": "Front vowels (a, ä, e, i) disappear when you insert 'i'. Back vowels (o, u, ö, y) stay. Example: odotan → odotin (the 'a' drops)."
+    },
+    {
+      "id": "q4",
+      "subtopic": "vowels",
+      "mode": "written",
+      "text": "Form the imperfect 1st person for: nukkua (to sleep). Show your work.",
+      "correctAnswers": [
+        "nukuin",
+        "nuku + i + n = nukuin"
+      ],
+      "explanation": "nukkua → stem is 'nuku' (no vowel drop for back vowel 'u') + i + n = nukuin. The double 'kk' stays because this is type 1 verb in present form."
+    },
+    {
+      "id": "q5",
+      "subtopic": "vowels",
+      "mode": "written",
+      "text": "Form the imperfect 1st person for: odotan (to wait). Show your work.",
+      "correctAnswers": [
+        "odotin",
+        "odota + drop a + i + n = odotin"
+      ],
+      "explanation": "odotan → stem is 'odota' but 'a' drops → odo + i + n = odotin. The front vowel 'a' is removed when inserting 'i'."
+    },
+    {
+      "id": "q6",
+      "subtopic": "vowels",
+      "mode": "mcq",
+      "text": "What happens to diphthongs (two vowels together) in imperfect?",
+      "options": [
+        "Both vowels drop",
+        "Both vowels stay",
+        "Only the first vowel of the diphthong drops, then 'i' is added",
+        "The vowels reverse order"
+      ],
+      "correct": 2,
+      "explanation": "Drop the FIRST vowel of the diphthong. Example: vie (take) → drop 'i' → ve + i + n = vein. Another: syö → drop 'y' → sö + i + n = söin."
+    },
+    {
+      "id": "q7",
+      "subtopic": "vowels",
+      "mode": "written",
+      "text": "Form the imperfect 1st person for: juoda (to drink). Show your work.",
+      "correctAnswers": [
+        "join",
+        "juo + drop u + i + n = join",
+        "joi + n = join"
+      ],
+      "explanation": "juoda → stem 'juo' (diphthong) → drop 'u' → jo + i + n = join. The first vowel of 'uo' drops when you insert 'i'."
+    },
+    {
+      "id": "q8",
+      "subtopic": "types",
+      "mode": "mcq",
+      "text": "What marker does Verb Type 4 use instead of 'i' in the imperfect?",
+      "options": [
+        "The 'u' marker",
+        "The 'si' marker",
+        "The 'a' marker",
+        "No marker at all"
+      ],
+      "correct": 1,
+      "explanation": "Type 4 verbs (like haluta, tietää) use '-si-' instead of '-i-' in imperfect. Example: haluan → halusin (I wanted), not haluiin."
+    },
+    {
+      "id": "q9",
+      "subtopic": "types",
+      "mode": "written",
+      "text": "Conjugate 'haluta' (to want) in the imperfect for mä (1st person). Identify the verb type.",
+      "correctAnswers": [
+        "halusin",
+        "type 4",
+        "halua-si-n"
+      ],
+      "explanation": "haluta is Type 4, so use '-si-' marker: halua + si + n = halusin. NOT 'haluiin' (which would use the Type 1 pattern)."
+    },
+    {
+      "id": "q10",
+      "subtopic": "practice",
+      "mode": "mcq",
+      "text": "Which sentence correctly uses the imperfect to describe a completed action?",
+      "options": [
+        "Mä olin kotona viikonloppuna" (I was home over the weekend)",
+        "Mä olen kotona joka viikonloppu" (I am home every weekend)",
+        "Mä olen kotona nyt" (I am home now)",
+        "Mä olisin kotona jos..." (I would be home if...)"
+      ],
+      "correct": 0,
+      "explanation": "The imperfect (olin) is correct here because you're talking about a specific past time (viikonloppuna = over the weekend). The action is completed."
+    },
+    {
+      "id": "q11",
+      "subtopic": "practice",
+      "mode": "written",
+      "text": "Write 3 sentences about what you did last weekend using the imperfect tense. Use verbs: mennä, syödä, katsoa.",
+      "correctAnswers": [
+        "menin",
+        "söin",
+        "katsoin",
+        "imperfect"
+      ],
+      "explanation": "Examples: 'Mä menin kauppaan.' 'Mä söin pizzaa.' 'Mä katsoin elokuvan.' All use imperfect for past completed actions with time context."
+    },
+    {
+      "id": "q12",
+      "subtopic": "practice",
+      "mode": "mcq",
+      "text": "Which of these has the WRONG imperfect form?",
+      "options": [
+        "Hän luki kirjan (She read a book)",
+        "Me mentiin ulos (We went out - spoken form)",
+        "Mä puhuin Liisalle (I spoke to Lisa)",
+        "Hän olet kotona (She was home)"
+      ],
+      "correct": 3,
+      "explanation": "'Hän olet' is wrong—it mixes person forms. Correct: 'Hän oli kotona' (she was home). The others are all correct imperfect forms."
+    },
+    {
+      "id": "q13",
+      "subtopic": "types",
+      "mode": "written",
+      "text": "What is special about irregular verbs like 'olla' in the imperfect? Provide the full conjugation for 'olla'.",
+      "correctAnswers": [
+        "olin",
+        "olit",
+        "oli",
+        "oltiin",
+        "olitte",
+        "irregular",
+        "memorize"
+      ],
+      "explanation": "Irregular verbs don't follow the standard pattern. 'Olla': mä olin, sä olit, hän oli, me oltiin, te olitte, ne oli. These must be memorized!"
+    },
+    {
+      "id": "q14",
+      "subtopic": "practice",
+      "mode": "mcq",
+      "text": "When should you use imperfect tense?",
+      "options": [
+        "For actions happening right now",
+        "For actions that were completed in a specific past time",
+        "For actions that might happen in the future",
+        "For actions that are still happening"
+      ],
+      "correct": 1,
+      "explanation": "The imperfect describes finished, completed past actions. Usually there's a time marker (eilen = yesterday, viime kesänä = last summer) indicating when it happened."
+    }
+  ]
+}

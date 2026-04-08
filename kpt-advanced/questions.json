@@ -1,0 +1,205 @@
+{
+  "title": "KPT Change - Advanced",
+  "titleEn": "Reverse KPT (Types 3, 4, 6)",
+  "description": "Master KPT changes in Verb Types 3, 4, and 6 - opposite of Type 1!",
+  "subtopics": [
+    { "id": "type1-review", "name": "Type 1 Review (Standard KPT)", "icon": "📝" },
+    { "id": "reverse-pattern", "name": "Reverse KPT Pattern", "icon": "🔄" },
+    { "id": "type3", "name": "Type 3 (-lah/-lä verbs)", "icon": "👂" },
+    { "id": "type4", "name": "Type 4 (Tricky Forms)", "icon": "⚠️" },
+    { "id": "type6", "name": "Type 6 & Complex Forms", "icon": "🔧" },
+    { "id": "practice", "name": "Mixed Practice", "icon": "🧩" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "subtopic": "type1-review",
+      "mode": "mcq",
+      "text": "In Type 1 verbs, when does KPT change occur (strong vs. weak consonant)?",
+      "options": [
+        "Basic form has strong, personal forms have weak",
+        "Basic form has weak, personal forms have strong",
+        "3rd person (hän/ne) has strong, other forms have weak",
+        "Only in past tense"
+      ],
+      "correct": 2,
+      "explanation": "Type 1: Strong in 3rd person (hän nukkuu) and weak in other forms (en nuku). This is the 'normal' KPT pattern you learned first."
+    },
+    {
+      "id": "q2",
+      "subtopic": "type1-review",
+      "mode": "written",
+      "text": "Give an example of a Type 1 verb showing KPT change. Show: basic form + 3rd person strong + 1st person weak.",
+      "correctAnswers": [
+        "nukkua",
+        "nukkuu",
+        "nukun",
+        "kk strong tt weak"
+      ],
+      "explanation": "Example: nukkua (to sleep) → nukkuu (strong kk) vs. nukun (weak single k). The double consonant appears in 3rd person."
+    },
+    {
+      "id": "q3",
+      "subtopic": "reverse-pattern",
+      "mode": "mcq",
+      "text": "In reverse KPT (Types 3, 4, 6), which pattern is opposite to Type 1?",
+      "options": [
+        "Basic form has strong, personal forms have weak",
+        "Basic form has weak, personal forms have strong",
+        "3rd person has weak, others have strong",
+        "KPT doesn't apply at all"
+      ],
+      "correct": 1,
+      "explanation": "REVERSE: Basic form (infinitive) has weak consonant, personal forms all have strong consonant. This is backwards from Type 1!"
+    },
+    {
+      "id": "q4",
+      "subtopic": "type3",
+      "mode": "mcq",
+      "text": "Which Type 3 verbs show reverse KPT change?",
+      "options": [
+        "All Type 3 verbs",
+        "Only those ending in -lah/-lä",
+        "Only those ending in -nah/-nä",
+        "Type 3 verbs never have KPT change"
+      ],
+      "correct": 1,
+      "explanation": "Only Type 3 verbs ending in -lah/-lä have reverse KPT. Other Type 3 endings (-nah/-nä, -stah/-stä, -rah/-rä) do NOT have KPT change."
+    },
+    {
+      "id": "q5",
+      "subtopic": "type3",
+      "mode": "written",
+      "text": "Conjugate 'kuunnella' (to listen) showing reverse KPT: basic form + 1st person present + 3rd person present (spoken).",
+      "correctAnswers": [
+        "kuunnella",
+        "kuuntelen",
+        "kuuntelee",
+        "weak in basic",
+        "strong in personal"
+      ],
+      "explanation": "kuunnella (basic, weak single 'n') → kuuntelen (1st, strong 'nn') → kuuntelee (3rd, strong 'nn'). All personal forms are strong!"
+    },
+    {
+      "id": "q6",
+      "subtopic": "type3",
+      "mode": "mcq",
+      "text": "In spoken Finnish, what is the special 'we' form (me-form) for Type 3 -lah/-lä verbs?",
+      "options": [
+        "It follows the strong pattern like other forms",
+        "It goes back to the weak form from the basic form",
+        "It uses a double ending",
+        "It's irregular and must be memorized"
+      ],
+      "correct": 1,
+      "explanation": "Spoken me-form returns to weak: 'kuunnellaan' (weak form, like the basic). This is a quirk of spoken Finnish pronunciation."
+    },
+    {
+      "id": "q7",
+      "subtopic": "type4",
+      "mode": "mcq",
+      "text": "Give an example of a Type 4 verb showing reverse KPT change.",
+      "options": [
+        "tykkää (to like)",
+        "haluta (to want)",
+        "haluta → halusin (imperfect)",
+        "All of the above show Type 4 behavior"
+      ],
+      "correct": 0,
+      "explanation": "tykkää (basic, weak 'k') → tykkään (1st person, strong 'kk'). All personal forms get the strong consonant, opposite of Type 1."
+    },
+    {
+      "id": "q8",
+      "subtopic": "type4",
+      "mode": "written",
+      "text": "Conjugate 'tykkää' (to like) in present tense for: mä, sä, hän, me. Show the reverse KPT pattern.",
+      "correctAnswers": [
+        "tykkään",
+        "tykkäät",
+        "tykkää",
+        "tykätään"
+      ],
+      "explanation": "All forms have strong 'kk': tykkään, tykkäät, tykkää, tykätään (spoken). The weak form (tykkä-) never appears in personal forms."
+    },
+    {
+      "id": "q9",
+      "subtopic": "type4",
+      "mode": "mcq",
+      "text": "Type 4 verbs like 'maata' (to lie) have a special case. What is it?",
+      "options": [
+        "No special case, they follow normal reverse KPT",
+        "The basic form hides the strong consonant: maata has stem 'makaa' (double k appears!)",
+        "They use passive voice differently",
+        "They don't conjugate normally"
+      ],
+      "correct": 1,
+      "explanation": "Tricky Type 4 verbs: maata → makaa (I lie), koota → kokoa (I gather), pelätä → pelkää (I fear). The double consonant appears in stem even though basic form looks different!"
+    },
+    {
+      "id": "q10",
+      "subtopic": "type4",
+      "mode": "written",
+      "text": "List three tricky Type 4 verbs with their 1st person forms. Show the hidden double consonant.",
+      "correctAnswers": [
+        "maata makaa",
+        "koota kokoa",
+        "pelätä pelkää"
+      ],
+      "explanation": "These must be memorized: maata/makaa (to lie/I lie), koota/kokoa (to gather/I gather), pelätä/pelkää (to fear/I fear). The pattern isn't obvious from the basic form!"
+    },
+    {
+      "id": "q11",
+      "subtopic": "type6",
+      "mode": "mcq",
+      "text": "Type 6 verbs ending in -eta/-etä also follow reverse KPT. Which is an example?",
+      "options": [
+        "pidetä (to hold)",
+        "kirjoittaa (to write)",
+        "kuunnella (to listen)",
+        "haluta (to want)"
+      ],
+      "correct": 0,
+      "explanation": "pidetä (Type 6) shows reverse KPT: pidetä (basic, weak) → piden (1st person, strong 'p'). Type 6 verbs have unique consonant patterns like h, j, r."
+    },
+    {
+      "id": "q12",
+      "subtopic": "type6",
+      "mode": "written",
+      "text": "Explain why Type 6 verbs are often learned separately. Give examples of the unique consonant patterns.",
+      "correctAnswers": [
+        "unique consonants",
+        "h j e",
+        "r j e",
+        "l j e",
+        "memorize"
+      ],
+      "explanation": "Type 6 has unusual consonant-vowel combinations like h+e, j+e, r+e. These don't follow obvious patterns, so it's best to memorize them as you learn each verb."
+    },
+    {
+      "id": "q13",
+      "subtopic": "practice",
+      "mode": "mcq",
+      "text": "Which sentence correctly uses the verb conjugation for Type 3 'kuunnella'?",
+      "options": [
+        "Hän kuunnela musaa (wrong form)",
+        "Hän kuuntelee musiikkia (correct form - he listens to music)",
+        "Hän kuunnellaa musiikkia (overcorrected)",
+        "Hän kuuntellen musiikkia (wrong form)"
+      ],
+      "correct": 1,
+      "explanation": "'Kuuntelee' is the correct 3rd person present form showing strong 'nn'. The basic form 'kuunnella' shows weak single 'n'."
+    },
+    {
+      "id": "q14",
+      "subtopic": "practice",
+      "mode": "written",
+      "text": "Compare Type 1 vs. Reverse KPT: Show one example of each with their strong/weak forms labeled.",
+      "correctAnswers": [
+        "type 1: nukkua strong 3rd nukkuu weak 1st nukun",
+        "reverse: kuunnella weak basic strong personal",
+        "opposite patterns"
+      ],
+      "explanation": "Type 1: nukkua → nukkuu (strong in 3rd) vs. nukun (weak in 1st). Reverse: kuunnella (weak basic) → kuuntelee (strong in all personal forms). Complete opposites!"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "title": "Expressing Opinion",
+  "titleEn": "Sharing Your Thoughts in Finnish",
+  "description": "Learn how to express opinions using musta/mielestä and talk about likes and dislikes",
+  "subtopics": [
+    { "id": "musta", "name": "Using -sta/-stä (Musta Method)", "icon": "💭" },
+    { "id": "mielesta", "name": "Using Genitive + Mielestä", "icon": "🤔" },
+    { "id": "likes", "name": "Tykkää & Pidät (To Like)", "icon": "❤️" },
+    { "id": "asking", "name": "Asking for Opinions", "icon": "❓" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "subtopic": "musta",
+      "mode": "mcq",
+      "text": "What does 'musta' mean in the context of opinions?",
+      "options": [
+        "In my opinion",
+        "Black (the color)",
+        "From me",
+        "I think maybe"
+      ],
+      "correct": 0,
+      "explanation": "'Musta' means 'in my opinion' when expressing opinions. Note: it also means 'black,' but context makes it clear which meaning is intended."
+    },
+    {
+      "id": "q2",
+      "subtopic": "musta",
+      "mode": "mcq",
+      "text": "Which pronouns can you add -sta/-stä directly to?",
+      "options": [
+        "mä, sä, hän directly",
+        "You must use pronoun stems: mulla → musta, sulla → susta",
+        "Only hän forms allow -sta/-stä",
+        "You never use -sta/-stä with personal pronouns"
+      ],
+      "correct": 1,
+      "explanation": "You can't add -sta to 'mä' directly. You must use the pronoun STEM: mulla → musta, sulla → susta, sillä → siitä."
+    },
+    {
+      "id": "q3",
+      "subtopic": "musta",
+      "mode": "written",
+      "text": "How do you say 'In his opinion, coffee is good'? Use the -sta/-stä method.",
+      "correctAnswers": [
+        "Siitä kahvi on hyvää",
+        "Hänen/Siitä kahvi on hyvää"
+      ],
+      "explanation": "Take the pronoun stem 'sillä' → add -sta → siitä. 'Siitä kahvi on hyvää' expresses his opinion about coffee."
+    },
+    {
+      "id": "q4",
+      "subtopic": "mielesta",
+      "mode": "mcq",
+      "text": "What is 'mielestä'?",
+      "options": [
+        "A type of coffee",
+        "Genitive form + mielestä = another way to say 'in [person]'s opinion'",
+        "A verb meaning to think",
+        "A question word"
+      ],
+      "correct": 1,
+      "explanation": "'Mielestä' comes from 'mieli' (mind/opinion). Formula: Genitive + mielestä. Example: Mun mielestä = In my opinion."
+    },
+    {
+      "id": "q5",
+      "subtopic": "mielesta",
+      "mode": "written",
+      "text": "Express 'In my opinion, sauna is wonderful' using the mielestä method.",
+      "correctAnswers": [
+        "Mun mielestä sauna on ihana",
+        "Minun mielestä sauna on ihana"
+      ],
+      "explanation": "Take genitive (mun/minun) + mielestä + opinion. 'Mun mielestä sauna on ihana' = In my opinion, sauna is wonderful."
+    },
+    {
+      "id": "q6",
+      "subtopic": "mielesta",
+      "mode": "mcq",
+      "text": "With a name like Lisa, how do you form the opinion construction?",
+      "options": [
+        "Lisan mielestä (add -n to genitive)",
+        "Lisa mielestä (no change)",
+        "Lisaa mielestä (add -a)",
+        "Lisat mielestä (plural form)"
+      ],
+      "correct": 0,
+      "explanation": "Names need genitive form. Lisa → Lisan (genitive). Then: Lisan mielestä = In Lisa's opinion."
+    },
+    {
+      "id": "q7",
+      "subtopic": "likes",
+      "mode": "mcq",
+      "text": "What case must follow 'tykkää' and 'pitää' (to like)?",
+      "options": [
+        "Nominative case",
+        "Accusative case",
+        "The -sta/-stä suffix (elative case)",
+        "Genitive case"
+      ],
+      "correct": 2,
+      "explanation": "Both tykkää and pidät ALWAYS require the -sta/-stä suffix. Example: Mä tykkään kahvista (I like coffee). Mistä tykkäät? (What do you like?)"
+    },
+    {
+      "id": "q8",
+      "subtopic": "likes",
+      "mode": "written",
+      "text": "Write two sentences: 'I like chocolate' and 'I like coffee' using both tykkää and pidät.",
+      "correctAnswers": [
+        "tykkään suklaasta",
+        "pidän suklaasta",
+        "tykkään kahvista",
+        "pidän kahvista"
+      ],
+      "explanation": "Both work identically: 'Mä tykkään suklaasta' and 'Mä pidän suklaasta' mean the same thing. Use whichever feels natural!"
+    },
+    {
+      "id": "q9",
+      "subtopic": "asking",
+      "mode": "mcq",
+      "text": "Which is the correct way to ask someone's opinion about coffee?",
+      "options": [
+        "Mitä mieltä sinä olet kahvista?",
+        "Mitä sinä olet kahvin?",
+        "Onko kahvi sinun?",
+        "Missä kahvi on?"
+      ],
+      "correct": 0,
+      "explanation": "'Mitä mieltä sinä olet [noun]-sta/-stä?' is the standard question form. It means 'What do you think about [noun]?'"
+    },
+    {
+      "id": "q10",
+      "subtopic": "asking",
+      "mode": "written",
+      "text": "Ask your friend 'What do you think about Turku?' Use the proper question format.",
+      "correctAnswers": [
+        "Mitä mieltä olet Turusta",
+        "Mitä mieltä sinä olet Turusta"
+      ],
+      "explanation": "'Mitä mieltä olet Turusta?' is the correct form. The object takes -sta/-stä suffix to match the question format."
+    },
+    {
+      "id": "q11",
+      "subtopic": "asking",
+      "mode": "mcq",
+      "text": "What does 'Onko Turku sinun mielestä kiva kaupunki?' mean?",
+      "options": [
+        "Where is Turku in your opinion?",
+        "Is Turku in your opinion a nice city?",
+        "Do you live in Turku?",
+        "What is Turku called in your opinion?"
+      ],
+      "correct": 1,
+      "explanation": "This is an alternative way to ask for opinion: 'Onko [noun] sinun mielestä [adjective]?' = 'Is [noun] in your opinion [adjective]?'"
+    },
+    {
+      "id": "q12",
+      "subtopic": "musta",
+      "mode": "written",
+      "text": "Complete the sentence: 'In our opinion, exercise is important.' Use the -sta/-stä method.",
+      "correctAnswers": [
+        "Meistä liikunta on tärkeää",
+        "Meistä liikunta on tärkeää."
+      ],
+      "explanation": "Me → meistä (adding -sta/-stä). 'Meistä liikunta on tärkeää' = In our opinion, exercise is important."
+    },
+    {
+      "id": "q13",
+      "subtopic": "practice",
+      "mode": "mcq",
+      "text": "Which pair correctly shows the difference between COLOR and OPINION?",
+      "options": [
+        "Musta auto = the car's color; Musta auto on kaunis = just the color",
+        "Musta auto on kaunis = black car is beautiful; Musta auto on kaunis = in my opinion the car is beautiful (both are the same)",
+        "Musta auto = black car; Musta kahvi on hyvää = in my opinion, coffee is good (different meanings based on context)",
+        "Musta = only black, never means opinion"
+      ],
+      "correct": 2,
+      "explanation": "Context determines meaning! 'Musta auto' = the car is black. 'Musta kahvi on hyvää' = in my opinion, coffee is good. The grammar is identical."
+    },
+    {
+      "id": "q14",
+      "subtopic": "asking",
+      "mode": "mcq",
+      "text": "When asking 'What is your favorite food?', what is the Finnish word for 'favorite'?",
+      "options": [
+        "parasta",
+        "lempiruoka (lempi + ruoka)",
+        "suosikki",
+        "paras"
+      ],
+      "correct": 1,
+      "explanation": "'Lempi' means 'favorite' when used in compounds. 'Mikä sinun lempiruoka on?' = What is your favorite food? Other lempi compounds: lempijuoma (favorite drink)."
+    }
+  ]
+}

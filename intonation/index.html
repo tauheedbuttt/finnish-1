@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intonation - Finnish Pitch Patterns</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../" class="back-link">← Takaisin aiheisiin</a>
+
+      <header class="quiz-header">
+        <h1>🎵 Intonation</h1>
+        <p class="subtitle" id="topicTitle">Finnish Pitch & Melody</p>
+      </header>
+
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">📝 Multiple Choice</button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <!-- Start Screen -->
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Intonation Quiz</h2>
+          <p id="quizDescription">Master Finnish pitch patterns</p>
+
+          <!-- Formula Box -->
+          <div class="formula-box">
+            <h3>🧠 How Finnish Intonation Works</h3>
+            <p class="formula-intro">Finnish intonation is about <strong>sentence endings</strong>, not dramatic pitch changes. Grammar (not pitch!) marks questions. There are two main patterns:</p>
+
+            <div class="formula-display">
+              <div class="formula-part verb-part">
+                <span class="part-label">TERMINAL</span>
+                <span class="part-example">Pitch ↘</span>
+                <span class="part-case">falling at end</span>
+              </div>
+              <div class="formula-plus">=</div>
+              <div class="formula-part result-part">
+                <span class="part-label">MEANING</span>
+                <span class="part-example">I'm done.</span>
+                <span class="part-case">your turn to speak</span>
+              </div>
+            </div>
+
+            <div class="formula-display" style="margin-top:0.5rem">
+              <div class="formula-part minä-part">
+                <span class="part-label">CONTINUATION</span>
+                <span class="part-example">Pitch →↗</span>
+                <span class="part-case">flat or rising</span>
+              </div>
+              <div class="formula-plus">=</div>
+              <div class="formula-part result-part">
+                <span class="part-label">MEANING</span>
+                <span class="part-example">I have more...</span>
+                <span class="part-case">still speaking</span>
+              </div>
+            </div>
+
+            <div class="neg-formula-display">
+              <div class="neg-label">QUESTIONS:</div>
+              <div class="neg-chip">mennään</div>
+              <div class="formula-plus">+</div>
+              <div class="neg-chip">-ko</div>
+              <div class="formula-equals">=</div>
+              <div class="neg-result">Mennäänkö? <span>(grammar marks it, NOT pitch!)</span></div>
+            </div>
+
+            <div class="formula-examples">
+              <div class="fex">
+                <span class="fex-verb">Mennään vaan.</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">pitch ↘</span>
+                <span class="fex-en">Let's go. (terminal)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Me oltiin viikonloppuna...</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">pitch →</span>
+                <span class="fex-en">We were over the weekend... (continuation)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">Mennäänkö kahville?</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">pitch ↘</span>
+                <span class="fex-en">Shall we go for coffee? (-ko = question!)</span>
+              </div>
+            </div>
+
+            <div class="usage-notes">
+              <h4>📌 Key Points:</h4>
+              <div class="usage-chips">
+                <span class="usage-chip">Terminal = done speaking</span>
+                <span class="usage-chip">Continuation = more to come</span>
+                <span class="usage-chip">Questions fall like statements!</span>
+                <span class="usage-chip">-ko/-kö marks questions</span>
+              </div>
+              <div class="grammar-note">
+                📖 <strong>Question words</strong> that also mark questions (no -ko needed): <em>mikä</em> (what), <em>missä</em> (where), <em>milloin</em> (when), <em>kuka</em> (who)
+              </div>
+            </div>
+          </div>
+
+          <!-- Intonation Reference Table -->
+          <div class="imper-table-box">
+            <h3>📋 Intonation Pattern Examples</h3>
+            <div class="imper-grid">
+              <div class="imp-card">
+                <span class="imp-verb">Joo, mennään.</span>
+                <span class="imp-pos">↘ Terminal</span>
+                <span class="imp-en">Yeah, let's go.</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Mennäänkö?</span>
+                <span class="imp-pos">↘ Falls too!</span>
+                <span class="imp-en">Shall we go? (-ko = question)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Me oltiin laivalla,</span>
+                <span class="imp-pos">→ Continuation</span>
+                <span class="imp-en">We were on the boat, [and...]</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">se oli hauska reissu.</span>
+                <span class="imp-pos">↘ Terminal</span>
+                <span class="imp-en">it was a fun trip. [done]</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Kuitti?</span>
+                <span class="imp-pos">↗ Rising</span>
+                <span class="imp-en">Receipt? (casual question, rising)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">Missä se on?</span>
+                <span class="imp-pos">↘ Falls</span>
+                <span class="imp-en">Where is it? (question word = no -ko)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exercise Toggle -->
+          <div class="subtopic-selection">
+            <h3>🎯 Select Exercise Type</h3>
+            <div class="exercise-type-group">
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="questions" checked />
+                <span>📋 Standard Questions (MCQ / Written)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Standard options -->
+          <div id="standardOptions">
+            <div class="subtopic-selection">
+              <h3>📚 Select Topic</h3>
+              <div class="subtopic-checkboxes" id="subtopicCheckboxes"></div>
+            </div>
+            <div class="question-count">
+              <label for="questionCount">Number of questions:</label>
+              <select id="questionCount">
+                <option value="5">5 questions</option>
+                <option value="10" selected>10 questions</option>
+                <option value="all">All questions</option>
+              </select>
+              <span class="available-count" id="availableCount"></span>
+            </div>
+          </div>
+
+          <div id="setOptions" class="hidden">
+            <div class="subtopic-selection">
+              <h3>📖 Select an Exercise</h3>
+              <div id="setList" class="set-list"></div>
+            </div>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita! 🚀</button>
+        </div>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <div class="progress-container">
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+          <div class="question-container">
+            <div class="question-type" id="questionType">Intonation</div>
+            <div class="word-display">
+              <span class="word" id="wordDisplay"></span>
+              <span class="ending" id="endingDisplay"></span>
+            </div>
+            <p class="question-english" id="questionEnglish"></p>
+          </div>
+          <div class="options-container" id="optionsContainer"></div>
+          <div class="written-container hidden" id="writtenContainer">
+            <input type="text" id="writtenAnswer" placeholder="Kirjoita vastaus..." autocomplete="off" autocapitalize="none" />
+            <button class="submit-btn" id="submitAnswer">Tarkista ✓</button>
+          </div>
+          <div class="feedback hidden" id="feedback">
+            <span class="feedback-icon" id="feedbackIcon">✓</span>
+            <span class="feedback-text" id="feedbackText"></span>
+            <p class="feedback-explanation" id="feedbackExplanation"></p>
+          </div>
+          <button class="next-btn hidden" id="nextBtn">Seuraava →</button>
+        </div>
+      </div>
+
+      <!-- Exercise Set Screen -->
+      <div id="exerciseSetScreen" class="screen hidden">
+        <div class="exercise-set-card">
+          <div class="exercise-set-header">
+            <button class="back-to-start-btn" id="backToStartBtn">← Takaisin</button>
+            <h2 id="exerciseSetTitle"></h2>
+            <p id="exerciseSetInstructions" class="exercise-instructions"></p>
+          </div>
+          <div id="exerciseWrite" class="exercise-type-block hidden">
+            <div class="note-box" id="writeNoteBox"></div>
+            <div id="writeItems" class="write-items"></div>
+            <button class="check-all-btn" id="checkWriteBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="writeScore"></div>
+          </div>
+          <div id="exerciseDrag" class="exercise-type-block hidden">
+            <div id="dragMatchItems" class="drag-match-container"></div>
+            <button class="check-all-btn" id="checkDragBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="dragScore"></div>
+          </div>
+          <div id="exerciseIdentify" class="exercise-type-block hidden">
+            <div class="identify-text-box" id="identifyTextBox"></div>
+            <div class="identify-info">
+              <span id="identifyCount" class="identify-count-badge">0 selected</span>
+              <span class="identify-target" id="identifyTarget"></span>
+            </div>
+            <button class="check-all-btn" id="checkIdentifyBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="identifyScore"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Mahtavaa!</h2>
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalQuestions">10</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+          <p class="score-message" id="scoreMessage"></p>
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Uudelleen</button>
+            <button class="home-btn" id="homeBtn">🏠 Takaisin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>

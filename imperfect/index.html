@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imperfekti - Past Tense</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../" class="back-link">← Takaisin aiheisiin</a>
+
+      <header class="quiz-header">
+        <h1>⏮️ Imperfekti</h1>
+        <p class="subtitle" id="topicTitle">Finnish Past Tense</p>
+      </header>
+
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="mcq">📝 Multiple Choice</button>
+        <button class="mode-tab" data-mode="written">✍️ Written</button>
+      </div>
+
+      <div id="startScreen" class="screen">
+        <div class="start-card">
+          <h2 id="quizTitle">Imperfekti Quiz</h2>
+          <p id="quizDescription">Practice Finnish past tense</p>
+
+          <div class="formula-box">
+            <h3>🧠 How the Imperfect Works</h3>
+            <p class="formula-intro">The imperfect (imperfekti) is used for <strong>completed, finished past actions</strong>. Insert <strong>-i-</strong> between the verb stem and the personal ending. Type 4 verbs use <strong>-si-</strong> instead. 3rd person singular has <strong>no personal ending</strong>.</p>
+
+            <div class="formula-display">
+              <div class="formula-part verb-part">
+                <span class="part-label">STEM</span>
+                <span class="part-example">nuku</span>
+                <span class="part-case">from nukkua</span>
+              </div>
+              <div class="formula-plus">+</div>
+              <div class="formula-part minä-part">
+                <span class="part-label">MARKER</span>
+                <span class="part-example">-i-</span>
+                <span class="part-case">past tense</span>
+              </div>
+              <div class="formula-plus">+</div>
+              <div class="formula-part result-part">
+                <span class="part-label">ENDING</span>
+                <span class="part-example">-n</span>
+                <span class="part-case">= nukuin</span>
+              </div>
+            </div>
+
+            <div class="neg-formula-display">
+              <div class="neg-label">TYPE 4:</div>
+              <div class="neg-chip">halua</div>
+              <div class="formula-plus">+</div>
+              <div class="neg-chip">-si-</div>
+              <div class="formula-equals">=</div>
+              <div class="neg-result">halusin <span>(I wanted)</span></div>
+            </div>
+
+            <div class="formula-examples">
+              <div class="fex">
+                <span class="fex-verb">nukkua</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-step">nuku+i+n</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">nukuin</span>
+                <span class="fex-en">I slept</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">odottaa</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-step">odota → drop a → odotin</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">odotin</span>
+                <span class="fex-en">I waited (a drops)</span>
+              </div>
+              <div class="fex">
+                <span class="fex-verb">syödä</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-step">syö → drop y → sö+i+n</span>
+                <span class="fex-arrow">→</span>
+                <span class="fex-fi">söin</span>
+                <span class="fex-en">I ate (diphthong: drop 1st)</span>
+              </div>
+            </div>
+
+            <div class="usage-notes">
+              <h4>📌 Vowel Change Rules:</h4>
+              <div class="usage-chips">
+                <span class="usage-chip">O/Ö/U/Y → stay</span>
+                <span class="usage-chip">A/Ä/E/I → drop</span>
+                <span class="usage-chip">Diphthong → drop 1st vowel</span>
+                <span class="usage-chip">hän/se: no -n ending</span>
+              </div>
+              <div class="grammar-note">
+                📖 <strong>Irregular verbs to memorize:</strong> olla → olin/olit/oli/oltiin &nbsp;·&nbsp; käydä → kävin/kävit/kävi/käytiin
+              </div>
+            </div>
+          </div>
+
+          <div class="imper-table-box">
+            <h3>📋 Common Past Tense Forms</h3>
+            <div class="imper-grid">
+              <div class="imp-card">
+                <span class="imp-verb">nukkua</span>
+                <span class="imp-pos">nukuin · nukkui</span>
+                <span class="imp-en">I slept · slept (3rd)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">puhua</span>
+                <span class="imp-pos">puhuin · puhui</span>
+                <span class="imp-en">I spoke</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">odottaa</span>
+                <span class="imp-pos">odotin · odotti</span>
+                <span class="imp-en">I waited (a drops)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">syödä</span>
+                <span class="imp-pos">söin · söi</span>
+                <span class="imp-en">I ate (y drops)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">juoda</span>
+                <span class="imp-pos">join · joi</span>
+                <span class="imp-en">I drank (u drops)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">viedä</span>
+                <span class="imp-pos">vein · vei</span>
+                <span class="imp-en">I took (i drops)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">haluta</span>
+                <span class="imp-pos">halusin · halusi</span>
+                <span class="imp-en">I wanted (Type 4: -si-)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">tietää</span>
+                <span class="imp-pos">tiesin · tiesi</span>
+                <span class="imp-en">I knew (Type 4: -si-)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">olla</span>
+                <span class="imp-pos">olin · oli · oltiin</span>
+                <span class="imp-en">was / were (irregular!)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">käydä</span>
+                <span class="imp-pos">kävin · käytiin</span>
+                <span class="imp-en">visited (irregular!)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">mennä</span>
+                <span class="imp-pos">menin · mentiin</span>
+                <span class="imp-en">went (spoken: mentiin=we)</span>
+              </div>
+              <div class="imp-card">
+                <span class="imp-verb">tulla</span>
+                <span class="imp-pos">tulin · tultiin</span>
+                <span class="imp-en">came (spoken: tultiin=we)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="subtopic-selection">
+            <h3>🎯 Select Exercise Type</h3>
+            <div class="exercise-type-group">
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="questions" checked />
+                <span>📋 Standard Questions (MCQ / Written)</span>
+              </label>
+              <label class="exercise-type-label">
+                <input type="radio" name="exerciseType" value="question_sets" />
+                <span>📖 Exercises (Write / Drag &amp; Match)</span>
+              </label>
+            </div>
+          </div>
+
+          <div id="standardOptions">
+            <div class="subtopic-selection">
+              <h3>📚 Select Topic</h3>
+              <div class="subtopic-checkboxes" id="subtopicCheckboxes"></div>
+            </div>
+            <div class="question-count">
+              <label for="questionCount">Number of questions:</label>
+              <select id="questionCount">
+                <option value="5">5 questions</option>
+                <option value="10" selected>10 questions</option>
+                <option value="15">15 questions</option>
+                <option value="all">All questions</option>
+              </select>
+              <span class="available-count" id="availableCount"></span>
+            </div>
+          </div>
+
+          <div id="setOptions" class="hidden">
+            <div class="subtopic-selection">
+              <h3>📖 Select an Exercise</h3>
+              <div id="setList" class="set-list"></div>
+            </div>
+          </div>
+
+          <button class="start-btn" id="startBtn">Aloita! 🚀</button>
+        </div>
+      </div>
+
+      <div id="quizScreen" class="screen hidden">
+        <div class="quiz-card">
+          <div class="progress-container">
+            <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+            <span class="progress-text" id="progressText">1/10</span>
+          </div>
+          <div class="question-container">
+            <div class="question-type" id="questionType">Past Tense</div>
+            <div class="word-display">
+              <span class="word" id="wordDisplay"></span>
+              <span class="ending" id="endingDisplay"></span>
+            </div>
+            <p class="question-english" id="questionEnglish"></p>
+          </div>
+          <div class="options-container" id="optionsContainer"></div>
+          <div class="written-container hidden" id="writtenContainer">
+            <input type="text" id="writtenAnswer" placeholder="Kirjoita vastaus..." autocomplete="off" autocapitalize="none" />
+            <button class="submit-btn" id="submitAnswer">Tarkista ✓</button>
+          </div>
+          <div class="feedback hidden" id="feedback">
+            <span class="feedback-icon" id="feedbackIcon">✓</span>
+            <span class="feedback-text" id="feedbackText"></span>
+            <p class="feedback-explanation" id="feedbackExplanation"></p>
+          </div>
+          <button class="next-btn hidden" id="nextBtn">Seuraava →</button>
+        </div>
+      </div>
+
+      <div id="exerciseSetScreen" class="screen hidden">
+        <div class="exercise-set-card">
+          <div class="exercise-set-header">
+            <button class="back-to-start-btn" id="backToStartBtn">← Takaisin</button>
+            <h2 id="exerciseSetTitle"></h2>
+            <p id="exerciseSetInstructions" class="exercise-instructions"></p>
+          </div>
+
+          <!-- Exercise: Click to Identify -->
+          <div id="exerciseIdentify" class="exercise-type-block hidden">
+            <div class="identify-text-box" id="identifyTextBox"></div>
+            <div class="identify-info">
+              <span id="identifyCount" class="identify-count-badge">0 selected</span>
+              <span class="identify-target" id="identifyTarget"></span>
+            </div>
+            <button class="check-all-btn" id="checkIdentifyBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="identifyScore"></div>
+          </div>
+
+          <!-- Exercise: Drag Match Forms (present → imperfect) -->
+          <div id="exerciseDragForms" class="exercise-type-block hidden">
+            <div class="drag-forms-layout">
+              <div id="dragFormsLeft" class="drag-forms-left"></div>
+              <div id="dragFormsPool" class="drag-forms-pool">
+                <div class="pool-header">🔀 Pool – drag from here</div>
+                <div id="poolCards" class="pool-cards"></div>
+              </div>
+            </div>
+            <button class="check-all-btn" id="checkDragFormsBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="dragFormsScore"></div>
+          </div>
+
+          <!-- Exercise: Fill in Rules (sectioned fill-in by grammar rule) -->
+          <div id="exerciseFillRules" class="exercise-type-block hidden">
+            <div id="fillRulesContent"></div>
+            <button class="check-all-btn" id="checkFillRulesBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="fillRulesScore"></div>
+          </div>
+
+          <!-- Exercise: Choose and Conjugate (word bank + fill blanks) -->
+          <div id="exerciseChooseConj" class="exercise-type-block hidden">
+            <div class="word-bank-label">📚 Word bank:</div>
+            <div id="wordBank" class="word-bank"></div>
+            <div id="chooseConjText" class="choose-conj-text"></div>
+            <button class="check-all-btn" id="checkChooseConjBtn">Tarkista vastaukset ✓</button>
+            <div class="exercise-score hidden" id="chooseConjScore"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="resultsScreen" class="screen hidden">
+        <div class="results-card">
+          <h2>🎉 Mahtavaa!</h2>
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalQuestions">10</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+          </div>
+          <p class="score-message" id="scoreMessage"></p>
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Uudelleen</button>
+            <button class="home-btn" id="homeBtn">🏠 Takaisin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
+  </body>
+</html>

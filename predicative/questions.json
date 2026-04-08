@@ -1,0 +1,201 @@
+{
+  "title": "Predicative Sentence",
+  "titleEn": "Describing with Olla - Adjective Cases",
+  "description": "Learn predicative sentences: Subject + olla + adjective description, and how countable/uncountable subjects affect adjective cases",
+  "subtopics": [
+    { "id": "pattern", "name": "Predicative Pattern", "icon": "🔤" },
+    { "id": "countable", "name": "Countable vs. Uncountable", "icon": "📦" },
+    { "id": "uncountable-adj", "name": "Uncountable → Partitive Adjective", "icon": "💧" },
+    { "id": "countable-adj", "name": "Countable → Nominative Adjective", "icon": "🪑" },
+    { "id": "negative", "name": "Negative Sentences", "icon": "❌" },
+    { "id": "plural", "name": "Plural Sentences", "icon": "📋" }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "subtopic": "pattern",
+      "mode": "mcq",
+      "text": "What is the basic pattern of a predicative sentence?",
+      "options": [
+        "Subject + Object + Verb",
+        "Subject + olla (to be) + adjective/description",
+        "Verb + Subject + Adjective",
+        "Adjective + Subject + Verb"
+      ],
+      "correct": 1,
+      "explanation": "The pattern is: Subject + olla + something that describes the subject. The describing word is the 'predicative' (predikatiivi)."
+    },
+    {
+      "id": "q2",
+      "subtopic": "countable",
+      "mode": "mcq",
+      "text": "What is a COUNTABLE word?",
+      "options": [
+        "A word you can count: 1, 2, 3... and if you break it, it's no longer the same thing",
+        "A word that appears in plural form",
+        "A word with many letters",
+        "A word that means numbers"
+      ],
+      "correct": 0,
+      "explanation": "Countable: pöytä (table), auto (car), ihminen (person). If you break a table into pieces, it's not a table anymore."
+    },
+    {
+      "id": "q3",
+      "subtopic": "countable",
+      "mode": "mcq",
+      "text": "What is an UNCOUNTABLE word?",
+      "options": [
+        "A word you cannot say in plural",
+        "A mass word, food, drink, or divisible thing—break it and it's still the same substance",
+        "A word that sounds weird",
+        "Any abstract noun"
+      ],
+      "correct": 1,
+      "explanation": "Uncountable: kahvi (coffee), vesi (water), spagetti (spaghetti), rakkaus (love). Break water into parts—it's still water, just less of it."
+    },
+    {
+      "id": "q4",
+      "subtopic": "uncountable-adj",
+      "mode": "mcq",
+      "text": "When the subject is UNCOUNTABLE, what case must the adjective be in?",
+      "options": [
+        "Nominative case",
+        "Partitive case",
+        "Genitive case",
+        "Accusative case"
+      ],
+      "correct": 1,
+      "explanation": "Uncountable subject → adjective in PARTITIVE. 'Kahvi on hyvää' (Coffee is good - hyvää is partitive). This is the main rule for predicatives."
+    },
+    {
+      "id": "q5",
+      "subtopic": "uncountable-adj",
+      "mode": "written",
+      "text": "Write the sentence: 'Water is cold.' Identify the subject and the adjective case.",
+      "correctAnswers": [
+        "Vesi on kylmää",
+        "subject: vesi (uncountable)",
+        "adjective: kylmää (partitive)"
+      ],
+      "explanation": "'Vesi' (water) is uncountable, so the adjective 'kylmää' (cold) must be in partitive form. Answer: 'Vesi on kylmää.'"
+    },
+    {
+      "id": "q6",
+      "subtopic": "countable-adj",
+      "mode": "mcq",
+      "text": "When the subject is COUNTABLE, what case must the adjective be in?",
+      "options": [
+        "Partitive case",
+        "Nominative case",
+        "Genitive case",
+        "Accusative case"
+      ],
+      "correct": 1,
+      "explanation": "Countable subject → adjective in NOMINATIVE. 'Talo on iso' (The house is big - iso is nominative)."
+    },
+    {
+      "id": "q7",
+      "subtopic": "countable-adj",
+      "mode": "written",
+      "text": "Write the sentence: 'My car is new.' Identify the subject and the adjective case.",
+      "correctAnswers": [
+        "Mun auto on uusi",
+        "subject: auto (countable)",
+        "adjective: uusi (nominative)"
+      ],
+      "explanation": "'Auto' (car) is countable, so the adjective 'uusi' (new) must be in nominative. Answer: 'Mun auto on uusi.'"
+    },
+    {
+      "id": "q8",
+      "subtopic": "negative",
+      "mode": "mcq",
+      "text": "When you make a predicative sentence NEGATIVE, what happens to the adjective case?",
+      "options": [
+        "It changes to the opposite case",
+        "It changes to genitive",
+        "It stays the SAME—negative doesn't change the case!",
+        "It becomes partitive for all subjects"
+      ],
+      "correct": 2,
+      "explanation": "This is important: NEGATIVE DOES NOT CHANGE THE CASE! 'Kahvi on hyvää' (positive) and 'Kahvi ei ole hyvää' (negative) both use partitive."
+    },
+    {
+      "id": "q9",
+      "subtopic": "negative",
+      "mode": "written",
+      "text": "Write the negative form of: 'Coffee is good.' Keep the same adjective case.",
+      "correctAnswers": [
+        "Kahvi ei ole hyvää",
+        "partitive stays the same"
+      ],
+      "explanation": "'Kahvi ei ole hyvää' - even though it's negative, 'hyvää' stays in partitive because 'kahvi' is still uncountable. The case doesn't change!"
+    },
+    {
+      "id": "q10",
+      "subtopic": "plural",
+      "mode": "mcq",
+      "text": "How do you ask 'What are the houses like?' in Finnish?",
+      "options": [
+        "Millainen talot ovat?",
+        "Millaisia talot ovat?",
+        "Millaista talot ovat?",
+        "Minkälaisia talot ovat?"
+      ],
+      "correct": 1,
+      "explanation": "Plural countable subjects use plural partitive in the question: 'Millaisia...?' The answer uses plural partitive: 'Talot ovat isoja' (houses are big)."
+    },
+    {
+      "id": "q11",
+      "subtopic": "plural",
+      "mode": "written",
+      "text": "Write: 'The houses are big.' Identify the adjective case (plural).",
+      "correctAnswers": [
+        "Talot ovat isoja",
+        "plural partitive",
+        "isoja"
+      ],
+      "explanation": "Plural countable subject 'talot' → adjective in plural partitive 'isoja'. Answer: 'Talot ovat isoja.'"
+    },
+    {
+      "id": "q12",
+      "subtopic": "pattern",
+      "mode": "mcq",
+      "text": "Which question form asks about an uncountable subject?",
+      "options": [
+        "Millainen kahvi on?",
+        "Millaisia kahvi ovat?",
+        "Millaista kahvi on?",
+        "Millaisissa kahvi?"
+      ],
+      "correct": 2,
+      "explanation": "Uncountable subjects use the question: 'Millaista...?' (partitive form). Answer: 'Kahvi on hyvää' (also partitive)."
+    },
+    {
+      "id": "q13",
+      "subtopic": "practice",
+      "mode": "mcq",
+      "text": "Which sentence is CORRECT?",
+      "options": [
+        "Nämä housut ovat iso (These pants are big - wrong case)",
+        "Nämä housut ovat isoja (These pants are big - correct, plural partitive)",
+        "Nämä housut on isoja (correct verb form is incorrect)",
+        "Nämä housut olevat isoja (wrong verb form)"
+      ],
+      "correct": 1,
+      "explanation": "'Housut' is always plural and countable, so the adjective must be plural partitive: 'isoja'. The verb is 'ovat' (plural). Answer: 'Nämä housut ovat isoja.'"
+    },
+    {
+      "id": "q14",
+      "subtopic": "practice",
+      "mode": "written",
+      "text": "Explain why 'Banaani on keltainen' (A banana is yellow) uses nominative, but 'Banaaniksi on keltaista' (As banana substance) would use partitive.",
+      "correctAnswers": [
+        "countable vs uncountable",
+        "singular vs mass",
+        "one banana countable",
+        "banana substance uncountable"
+      ],
+      "explanation": "'Banaani' (one banana) is countable → nominative. If treating banana as a substance/mass (uncountable) → partitive. Context determines if it's countable or uncountable!"
+    }
+  ]
+}
