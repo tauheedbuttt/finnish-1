@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finn 2 Loppukoe – Exam</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Home</a>
+
+      <div class="exam-header-bar">
+        <h2 id="examTitle">Finn 2 Loppukoe</h2>
+        <div class="exam-progress-info">
+          <span id="sectionProgress">Loading...</span>
+        </div>
+      </div>
+
+      <div id="sectionsContainer"></div>
+
+      <div id="resultsContainer" class="hidden">
+        <div class="results-card">
+          <h2>🎉 Koe palautettu!</h2>
+          <p class="results-subtitle">Exam submitted – here are your results</p>
+
+          <div class="score-display">
+            <div class="score-circle">
+              <span class="score-number" id="finalScore">0</span>
+              <span class="score-divider">/</span>
+              <span class="score-total" id="totalPoints">0</span>
+            </div>
+            <p class="score-percentage" id="scorePercentage">0%</p>
+            <p class="score-message" id="scoreMessage"></p>
+          </div>
+
+          <div class="section-scores" id="sectionScores"></div>
+
+          <div class="results-actions">
+            <button class="retry-btn" id="retryBtn">🔄 Yritä uudelleen</button>
+            <button class="review-btn" id="reviewBtn">👁 Review Answers</button>
+            <button class="home-btn" id="homeBtn">🏠 Back to Home</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="examSubmitBar" class="exam-submit-bar">
+        <p class="submit-warning">Once you submit, you cannot change your answers.</p>
+        <button class="submit-exam-btn" id="submitExamBtn">Palauta koe ✓</button>
+      </div>
+    </div>
+
+    <script src="db.js"></script>
+    <script src="exam.js"></script>
+    <script src="exam-session.js"></script>
+  </body>
+</html>

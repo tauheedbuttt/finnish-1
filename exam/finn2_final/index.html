@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finn 2 Loppukoe – Practice Exam</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../../" class="back-link">← Back to Hub</a>
+
+      <header class="exam-intro-header">
+        <div class="exam-badge">📝 Practice Exam</div>
+        <h1>Finn 2 Loppukoe</h1>
+        <p class="exam-subtitle">Finn 2 Final Exam – Practice</p>
+      </header>
+
+      <div class="intro-card">
+        <div class="intro-meta">
+          <div class="meta-item">
+            <span class="meta-icon">📚</span>
+            <span class="meta-label">Sections</span>
+            <span class="meta-value" id="introSections">10</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-icon">⭐</span>
+            <span class="meta-label">Total Points</span>
+            <span class="meta-value" id="introPoints">–</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-icon">📖</span>
+            <span class="meta-label">Chapters</span>
+            <span class="meta-value">4–6</span>
+          </div>
+        </div>
+
+        <div class="syllabus-box">
+          <h3>📋 Topics Covered</h3>
+          <div class="syllabus-grid" id="syllabusGrid"></div>
+        </div>
+
+        <div class="intro-note">
+          <strong>Note:</strong> Audio/speaking section is not included. Fill in
+          your answers and submit at the end to see your score and model
+          answers.
+        </div>
+
+        <button class="start-exam-btn" id="startExamBtn">Aloita koe! 🚀</button>
+      </div>
+
+      <div id="statsSection" class="stats-section hidden">
+        <h2>📊 Your Performance by Question Type</h2>
+        <div id="questionTypeStats" class="question-type-stats"></div>
+        <div class="stats-summary">
+          <div class="summary-item">
+            <span class="summary-label">Total Questions Attempted</span>
+            <span class="summary-value" id="totalQuestionsAttempted">0</span>
+          </div>
+          <div class="summary-item">
+            <span class="summary-label">Overall Score</span>
+            <span class="summary-value" id="overallScore">0%</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="emptyHistoryState" class="empty-state">
+        <p>📋 No attempts yet. Start your first exam above!</p>
+      </div>
+
+      <div id="pastAttemptsSection" class="past-attempts-section hidden">
+        <div class="past-attempts-header">
+          <h2>📚 Past Attempts</h2>
+          <button
+            class="delete-history-btn"
+            id="deleteHistoryBtn"
+            title="Delete all exam history"
+          >
+            🗑️ Delete All
+          </button>
+        </div>
+        <div id="pastAttemptsList" class="sessions-list"></div>
+        <a href="review.html" class="view-all-link">View All →</a>
+      </div>
+
+      <!-- Confirmation Modal -->
+      <div id="deleteConfirmModal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+          <h3>Delete All History?</h3>
+          <p>
+            Are you sure you want to delete all exam attempts? This action
+            cannot be undone.
+          </p>
+          <div class="modal-actions">
+            <button class="modal-btn cancel" id="cancelDeleteBtn">
+              Cancel
+            </button>
+            <button class="modal-btn delete" id="confirmDeleteBtn">
+              Delete All
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="db.js"></script>
+    <script src="exam.js"></script>
+    <script src="index-home.js"></script>
+  </body>
+</html>
